@@ -14,19 +14,19 @@
 #include "java/lang/annotation/Annotation.h"
 #include "org/apache/lucene/document/NumberTools.h"
 
-inline jint OrgApacheLuceneDocumentNumberTools_get_RADIX();
+inline jint OrgApacheLuceneDocumentNumberTools_get_RADIX(void);
 #define OrgApacheLuceneDocumentNumberTools_RADIX 36
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneDocumentNumberTools, RADIX, jint)
 
-inline jchar OrgApacheLuceneDocumentNumberTools_get_NEGATIVE_PREFIX();
+inline jchar OrgApacheLuceneDocumentNumberTools_get_NEGATIVE_PREFIX(void);
 #define OrgApacheLuceneDocumentNumberTools_NEGATIVE_PREFIX '-'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneDocumentNumberTools, NEGATIVE_PREFIX, jchar)
 
-inline jchar OrgApacheLuceneDocumentNumberTools_get_POSITIVE_PREFIX();
+inline jchar OrgApacheLuceneDocumentNumberTools_get_POSITIVE_PREFIX(void);
 #define OrgApacheLuceneDocumentNumberTools_POSITIVE_PREFIX '0'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneDocumentNumberTools, POSITIVE_PREFIX, jchar)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentNumberTools__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentNumberTools__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneDocumentNumberTools)
 

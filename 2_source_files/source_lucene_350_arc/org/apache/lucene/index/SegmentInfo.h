@@ -126,6 +126,10 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir
 
 - (void)writeWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)output;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentInfo)
@@ -133,19 +137,19 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentInfo)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentInfo, name_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentInfo, dir_, OrgApacheLuceneStoreDirectory *)
 
-inline jint OrgApacheLuceneIndexSegmentInfo_get_NO();
+inline jint OrgApacheLuceneIndexSegmentInfo_get_NO(void);
 #define OrgApacheLuceneIndexSegmentInfo_NO -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfo, NO, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfo_get_YES();
+inline jint OrgApacheLuceneIndexSegmentInfo_get_YES(void);
 #define OrgApacheLuceneIndexSegmentInfo_YES 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfo, YES, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfo_get_CHECK_DIR();
+inline jint OrgApacheLuceneIndexSegmentInfo_get_CHECK_DIR(void);
 #define OrgApacheLuceneIndexSegmentInfo_CHECK_DIR 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfo, CHECK_DIR, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfo_get_WITHOUT_GEN();
+inline jint OrgApacheLuceneIndexSegmentInfo_get_WITHOUT_GEN(void);
 #define OrgApacheLuceneIndexSegmentInfo_WITHOUT_GEN 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfo, WITHOUT_GEN, jint)
 

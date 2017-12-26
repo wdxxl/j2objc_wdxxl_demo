@@ -61,7 +61,7 @@
 
 void OrgApacheLuceneIndexIndexFormatTooOldException_initWithNSString_withNSString_(OrgApacheLuceneIndexIndexFormatTooOldException *self, NSString *resourceDesc, NSString *version_) {
   OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(self, JreStrcat("$$$$$", @"Format version is not supported (resource: ", resourceDesc, @"): ", version_, @". This version of Lucene only supports indexes created with release 1.9 and later."));
-  JreAssert((resourceDesc != nil), (@"org/apache/lucene/index/IndexFormatTooOldException.java:32 condition failed: assert resourceDesc != null;"));
+  JreAssert(resourceDesc != nil, @"org/apache/lucene/index/IndexFormatTooOldException.java:32 condition failed: assert resourceDesc != null;");
 }
 
 OrgApacheLuceneIndexIndexFormatTooOldException *new_OrgApacheLuceneIndexIndexFormatTooOldException_initWithNSString_withNSString_(NSString *resourceDesc, NSString *version_) {
@@ -86,7 +86,7 @@ OrgApacheLuceneIndexIndexFormatTooOldException *create_OrgApacheLuceneIndexIndex
 
 void OrgApacheLuceneIndexIndexFormatTooOldException_initWithNSString_withInt_withInt_withInt_(OrgApacheLuceneIndexIndexFormatTooOldException *self, NSString *resourceDesc, jint version_, jint minVersion, jint maxVersion) {
   OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(self, JreStrcat("$$$I$I$I$", @"Format version is not supported (resource: ", resourceDesc, @"): ", version_, @" (needs to be between ", minVersion, @" and ", maxVersion, @"). This version of Lucene only supports indexes created with release 1.9 and later."));
-  JreAssert((resourceDesc != nil), (@"org/apache/lucene/index/IndexFormatTooOldException.java:45 condition failed: assert resourceDesc != null;"));
+  JreAssert(resourceDesc != nil, @"org/apache/lucene/index/IndexFormatTooOldException.java:45 condition failed: assert resourceDesc != null;");
 }
 
 OrgApacheLuceneIndexIndexFormatTooOldException *new_OrgApacheLuceneIndexIndexFormatTooOldException_initWithNSString_withInt_withInt_withInt_(NSString *resourceDesc, jint version_, jint minVersion, jint maxVersion) {

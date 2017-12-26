@@ -160,6 +160,10 @@
 
 - (void)waitReadyWithOrgApacheLuceneIndexDocumentsWriterThreadState:(OrgApacheLuceneIndexDocumentsWriterThreadState *)state;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexDocumentsWriter)
@@ -177,56 +181,56 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocumentsWriter, byteBlockAllocator_, Or
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocumentsWriter, perDocAllocator_, OrgApacheLuceneIndexDocumentsWriter_ByteBlockAllocator *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocumentsWriter, waitQueue_, OrgApacheLuceneIndexDocumentsWriter_WaitQueue *)
 
-inline OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocumentsWriter_get_defaultIndexingChain();
+inline OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocumentsWriter_get_defaultIndexingChain(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocumentsWriter_defaultIndexingChain;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexDocumentsWriter, defaultIndexingChain, OrgApacheLuceneIndexDocumentsWriter_IndexingChain *)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_SHIFT();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_SHIFT(void);
 #define OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_SHIFT 15
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, BYTE_BLOCK_SHIFT, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_SIZE();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_SIZE(void);
 #define OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_SIZE 32768
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, BYTE_BLOCK_SIZE, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_MASK();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_MASK(void);
 #define OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_MASK 32767
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, BYTE_BLOCK_MASK, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_NOT_MASK();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_BYTE_BLOCK_NOT_MASK(void);
 #define OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_NOT_MASK -32768
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, BYTE_BLOCK_NOT_MASK, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_INT_BLOCK_SHIFT();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_INT_BLOCK_SHIFT(void);
 #define OrgApacheLuceneIndexDocumentsWriter_INT_BLOCK_SHIFT 13
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, INT_BLOCK_SHIFT, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_INT_BLOCK_SIZE();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_INT_BLOCK_SIZE(void);
 #define OrgApacheLuceneIndexDocumentsWriter_INT_BLOCK_SIZE 8192
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, INT_BLOCK_SIZE, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_INT_BLOCK_MASK();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_INT_BLOCK_MASK(void);
 #define OrgApacheLuceneIndexDocumentsWriter_INT_BLOCK_MASK 8191
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, INT_BLOCK_MASK, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_PER_DOC_BLOCK_SIZE();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_PER_DOC_BLOCK_SIZE(void);
 #define OrgApacheLuceneIndexDocumentsWriter_PER_DOC_BLOCK_SIZE 1024
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, PER_DOC_BLOCK_SIZE, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_CHAR_BLOCK_SHIFT();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_CHAR_BLOCK_SHIFT(void);
 #define OrgApacheLuceneIndexDocumentsWriter_CHAR_BLOCK_SHIFT 14
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, CHAR_BLOCK_SHIFT, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_CHAR_BLOCK_SIZE();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_CHAR_BLOCK_SIZE(void);
 #define OrgApacheLuceneIndexDocumentsWriter_CHAR_BLOCK_SIZE 16384
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, CHAR_BLOCK_SIZE, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_CHAR_BLOCK_MASK();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_CHAR_BLOCK_MASK(void);
 #define OrgApacheLuceneIndexDocumentsWriter_CHAR_BLOCK_MASK 16383
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, CHAR_BLOCK_MASK, jint)
 
-inline jint OrgApacheLuceneIndexDocumentsWriter_get_MAX_TERM_LENGTH();
+inline jint OrgApacheLuceneIndexDocumentsWriter_get_MAX_TERM_LENGTH(void);
 #define OrgApacheLuceneIndexDocumentsWriter_MAX_TERM_LENGTH 16383
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexDocumentsWriter, MAX_TERM_LENGTH, jint)
 
@@ -284,9 +288,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocumentsWriter_DocState, maxTermPrefix_
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexDocumentsWriter_DocState_init(OrgApacheLuceneIndexDocumentsWriter_DocState *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexDocumentsWriter_DocState *new_OrgApacheLuceneIndexDocumentsWriter_DocState_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexDocumentsWriter_DocState *new_OrgApacheLuceneIndexDocumentsWriter_DocState_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexDocumentsWriter_DocState *create_OrgApacheLuceneIndexDocumentsWriter_DocState_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexDocumentsWriter_DocState *create_OrgApacheLuceneIndexDocumentsWriter_DocState_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDocumentsWriter_DocState)
 
@@ -334,6 +338,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDocumentsWriter_DocWriter)
 
 @class IOSByteArray;
 @class OrgApacheLuceneIndexDocumentsWriter;
+@class OrgApacheLuceneStoreRAMDirectory;
 
 @interface OrgApacheLuceneIndexDocumentsWriter_PerDocBuffer : OrgApacheLuceneStoreRAMFile
 
@@ -346,6 +351,12 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDocumentsWriter_DocWriter)
 - (instancetype)initWithOrgApacheLuceneIndexDocumentsWriter:(OrgApacheLuceneIndexDocumentsWriter *)outer$;
 
 - (void)recycle;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneStoreRAMDirectory:(OrgApacheLuceneStoreRAMDirectory *)arg0 NS_UNAVAILABLE;
 
 @end
 

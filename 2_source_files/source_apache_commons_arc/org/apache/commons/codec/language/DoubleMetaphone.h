@@ -64,9 +64,9 @@ J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageDoubleMetaphone)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecLanguageDoubleMetaphone_init(OrgApacheCommonsCodecLanguageDoubleMetaphone *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageDoubleMetaphone *new_OrgApacheCommonsCodecLanguageDoubleMetaphone_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageDoubleMetaphone *new_OrgApacheCommonsCodecLanguageDoubleMetaphone_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageDoubleMetaphone *create_OrgApacheCommonsCodecLanguageDoubleMetaphone_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageDoubleMetaphone *create_OrgApacheCommonsCodecLanguageDoubleMetaphone_init(void);
 
 FOUNDATION_EXPORT jboolean OrgApacheCommonsCodecLanguageDoubleMetaphone_containsWithNSString_withInt_withInt_withNSStringArray_(NSString *value, jint start, jint length, IOSObjectArray *criteria);
 
@@ -109,6 +109,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecLanguageDoubleMetaphone)
 - (NSString *)getPrimary;
 
 - (jboolean)isComplete;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

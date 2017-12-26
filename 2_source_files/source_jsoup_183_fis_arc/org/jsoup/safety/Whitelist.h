@@ -92,21 +92,21 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSafetyWhitelist)
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_none();
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_none(void);
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_simpleText();
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_simpleText(void);
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_basic();
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_basic(void);
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_basicWithImages();
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_basicWithImages(void);
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_relaxed();
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *OrgJsoupSafetyWhitelist_relaxed(void);
 
 FOUNDATION_EXPORT void OrgJsoupSafetyWhitelist_init(OrgJsoupSafetyWhitelist *self);
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *new_OrgJsoupSafetyWhitelist_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *new_OrgJsoupSafetyWhitelist_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *create_OrgJsoupSafetyWhitelist_init();
+FOUNDATION_EXPORT OrgJsoupSafetyWhitelist *create_OrgJsoupSafetyWhitelist_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist)
 

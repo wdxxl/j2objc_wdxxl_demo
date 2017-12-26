@@ -43,13 +43,13 @@ J2OBJC_IGNORE_DESIGNATED_END
     return element;
   }
   @catch (ComGoogleGsonStreamMalformedJsonException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -60,10 +60,10 @@ J2OBJC_IGNORE_DESIGNATED_END
     return ComGoogleGsonInternalStreams_parseWithComGoogleGsonStreamJsonReader_(json);
   }
   @catch (JavaLangStackOverflowError *e) {
-    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(JreStrcat("$@$", @"Failed parsing JSON source: ", json, @" to Json"), e);
+    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(JreStrcat("$@$", @"Failed parsing JSON source: ", json, @" to Json"), e);
   }
   @catch (JavaLangOutOfMemoryError *e) {
-    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(JreStrcat("$@$", @"Failed parsing JSON source: ", json, @" to Json"), e);
+    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(JreStrcat("$@$", @"Failed parsing JSON source: ", json, @" to Json"), e);
   }
   @finally {
     [json setLenientWithBoolean:lenient];

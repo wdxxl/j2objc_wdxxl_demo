@@ -124,7 +124,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, queue_, OrgApacheLuceneIn
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, payloadBuffer_, IOSByteArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, docMaps_, IOSObjectArray *)
 
-inline jint OrgApacheLuceneIndexSegmentMerger_get_MAX_RAW_MERGE_DOCS();
+inline jint OrgApacheLuceneIndexSegmentMerger_get_MAX_RAW_MERGE_DOCS(void);
 #define OrgApacheLuceneIndexSegmentMerger_MAX_RAW_MERGE_DOCS 4192
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentMerger, MAX_RAW_MERGE_DOCS, jint)
 
@@ -214,8 +214,8 @@ __attribute__((unused)) static OrgApacheLuceneIndexSegmentMerger_1 *create_OrgAp
   id<JavaUtilCollection> files = [((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info)) files];
   OrgApacheLuceneIndexCompoundFileWriter *cfsWriter = new_OrgApacheLuceneIndexCompoundFileWriter_initWithOrgApacheLuceneStoreDirectory_withNSString_withOrgApacheLuceneIndexSegmentMerger_CheckAbort_(directory_, fileName, checkAbort_);
   for (NSString * __strong file in nil_chk(files)) {
-    JreAssert((!OrgApacheLuceneIndexIndexFileNames_matchesExtensionWithNSString_withNSString_(file, OrgApacheLuceneIndexIndexFileNames_DELETES_EXTENSION)), (JreStrcat("$$", @".del file is not allowed in .cfs: ", file)));
-    JreAssert((!OrgApacheLuceneIndexIndexFileNames_isSeparateNormsFileWithNSString_(file)), (JreStrcat("$$", @"separate norms file (.s[0-9]+) is not allowed in .cfs: ", file)));
+    JreAssert(!OrgApacheLuceneIndexIndexFileNames_matchesExtensionWithNSString_withNSString_(file, OrgApacheLuceneIndexIndexFileNames_DELETES_EXTENSION), JreStrcat("$$", @".del file is not allowed in .cfs: ", file));
+    JreAssert(!OrgApacheLuceneIndexIndexFileNames_isSeparateNormsFileWithNSString_(file), JreStrcat("$$", @"separate norms file (.s[0-9]+) is not allowed in .cfs: ", file));
     [cfsWriter addFileWithNSString:file];
   }
   [cfsWriter close];
@@ -288,7 +288,7 @@ __attribute__((unused)) static OrgApacheLuceneIndexSegmentMerger_1 *create_OrgAp
 }
 
 - (jboolean)getAnyNonBulkMerges {
-  JreAssert((matchedCount_ <= [((id<JavaUtilList>) nil_chk(readers_)) size]), (@"org/apache/lucene/index/SegmentMerger.java:620 condition failed: assert matchedCount <= readers.size();"));
+  JreAssert(matchedCount_ <= [((id<JavaUtilList>) nil_chk(readers_)) size], @"org/apache/lucene/index/SegmentMerger.java:620 condition failed: assert matchedCount <= readers.size();");
   return matchedCount_ != [((id<JavaUtilList>) nil_chk(readers_)) size];
 }
 
@@ -667,7 +667,7 @@ void OrgApacheLuceneIndexSegmentMerger_mergeTermInfosWithOrgApacheLuceneIndexFor
       (void) IOSObjectArray_Set(self->docMaps_, i, docMap);
     }
     base += [reader numDocs];
-    JreAssert(([reader numDocs] == [reader maxDoc] - smi->delCount_), (@"org/apache/lucene/index/SegmentMerger.java:508 condition failed: assert reader.numDocs() == reader.maxDoc() - smi.delCount;"));
+    JreAssert([reader numDocs] == [reader maxDoc] - smi->delCount_, @"org/apache/lucene/index/SegmentMerger.java:508 condition failed: assert reader.numDocs() == reader.maxDoc() - smi.delCount;");
     if ([smi next]) (void) [((OrgApacheLuceneIndexSegmentMergeQueue *) nil_chk(self->queue_)) addWithId:smi];
     else [smi close];
   }
@@ -706,7 +706,7 @@ jint OrgApacheLuceneIndexSegmentMerger_appendPostingsWithOrgApacheLuceneIndexFor
   for (jint i = 0; i < n; i++) {
     OrgApacheLuceneIndexSegmentMergeInfo *smi = IOSObjectArray_Get(smis, i);
     id<OrgApacheLuceneIndexTermPositions> postings = [((OrgApacheLuceneIndexSegmentMergeInfo *) nil_chk(smi)) getPositions];
-    JreAssert((postings != nil), (@"org/apache/lucene/index/SegmentMerger.java:575 condition failed: assert postings != null;"));
+    JreAssert(postings != nil, @"org/apache/lucene/index/SegmentMerger.java:575 condition failed: assert postings != null;");
     jint base = smi->base_;
     IOSIntArray *docMap = [smi getDocMap];
     [((id<OrgApacheLuceneIndexTermPositions>) nil_chk(postings)) seekWithOrgApacheLuceneIndexTermEnum:smi->termEnum_];

@@ -34,7 +34,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexNoMergeScheduler)
 
-inline OrgApacheLuceneIndexMergeScheduler *OrgApacheLuceneIndexNoMergeScheduler_get_INSTANCE();
+inline OrgApacheLuceneIndexMergeScheduler *OrgApacheLuceneIndexNoMergeScheduler_get_INSTANCE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexMergeScheduler *OrgApacheLuceneIndexNoMergeScheduler_INSTANCE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexNoMergeScheduler, INSTANCE, OrgApacheLuceneIndexMergeScheduler *)

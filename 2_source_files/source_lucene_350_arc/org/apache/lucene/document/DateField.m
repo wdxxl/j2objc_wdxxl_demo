@@ -22,19 +22,19 @@
 
 @end
 
-inline jint OrgApacheLuceneDocumentDateField_get_DATE_LEN();
+inline jint OrgApacheLuceneDocumentDateField_get_DATE_LEN(void);
 inline jint OrgApacheLuceneDocumentDateField_set_DATE_LEN(jint value);
-inline jint *OrgApacheLuceneDocumentDateField_getRef_DATE_LEN();
+inline jint *OrgApacheLuceneDocumentDateField_getRef_DATE_LEN(void);
 static jint OrgApacheLuceneDocumentDateField_DATE_LEN;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneDocumentDateField, DATE_LEN, jint)
 
 __attribute__((unused)) static void OrgApacheLuceneDocumentDateField_init(OrgApacheLuceneDocumentDateField *self);
 
-__attribute__((unused)) static OrgApacheLuceneDocumentDateField *new_OrgApacheLuceneDocumentDateField_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneDocumentDateField *new_OrgApacheLuceneDocumentDateField_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneDocumentDateField *create_OrgApacheLuceneDocumentDateField_init();
+__attribute__((unused)) static OrgApacheLuceneDocumentDateField *create_OrgApacheLuceneDocumentDateField_init(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentDateField__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentDateField__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneDocumentDateField)
 

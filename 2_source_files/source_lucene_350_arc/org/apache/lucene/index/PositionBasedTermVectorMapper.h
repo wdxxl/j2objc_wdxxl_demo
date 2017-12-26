@@ -46,15 +46,20 @@ withOrgApacheLuceneIndexTermVectorOffsetInfoArray:(IOSObjectArray *)offsets
                         withBoolean:(jboolean)storeOffsets
                         withBoolean:(jboolean)storePositions;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithBoolean:(jboolean)arg0
+                    withBoolean:(jboolean)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexPositionBasedTermVectorMapper)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexPositionBasedTermVectorMapper_init(OrgApacheLuceneIndexPositionBasedTermVectorMapper *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexPositionBasedTermVectorMapper *new_OrgApacheLuceneIndexPositionBasedTermVectorMapper_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexPositionBasedTermVectorMapper *new_OrgApacheLuceneIndexPositionBasedTermVectorMapper_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexPositionBasedTermVectorMapper *create_OrgApacheLuceneIndexPositionBasedTermVectorMapper_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexPositionBasedTermVectorMapper *create_OrgApacheLuceneIndexPositionBasedTermVectorMapper_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexPositionBasedTermVectorMapper_initWithBoolean_(OrgApacheLuceneIndexPositionBasedTermVectorMapper *self, jboolean ignoringOffsets);
 
@@ -89,6 +94,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexPositionBasedTermVectorMapper)
 
 - (void)addTermWithNSString:(NSString *)term
 withOrgApacheLuceneIndexTermVectorOffsetInfo:(OrgApacheLuceneIndexTermVectorOffsetInfo *)info;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

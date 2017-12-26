@@ -50,7 +50,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserTokeniser, charsBuilder_, JavaLangStringBuilde
 J2OBJC_FIELD_SETTER(OrgJsoupParserTokeniser, lastStartTag_, NSString *)
 J2OBJC_FIELD_SETTER(OrgJsoupParserTokeniser, charRefHolder_, IOSCharArray *)
 
-inline IOSCharArray *OrgJsoupParserTokeniser_get_notCharRefCharsSorted();
+inline IOSCharArray *OrgJsoupParserTokeniser_get_notCharRefCharsSorted(void);
 static IOSCharArray *OrgJsoupParserTokeniser_notCharRefCharsSorted;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTokeniser, notCharRefCharsSorted, IOSCharArray *)
 

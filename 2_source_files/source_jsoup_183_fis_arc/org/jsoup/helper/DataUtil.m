@@ -33,27 +33,27 @@
 
 @end
 
-inline JavaUtilRegexPattern *OrgJsoupHelperDataUtil_get_charsetPattern();
+inline JavaUtilRegexPattern *OrgJsoupHelperDataUtil_get_charsetPattern(void);
 static JavaUtilRegexPattern *OrgJsoupHelperDataUtil_charsetPattern;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperDataUtil, charsetPattern, JavaUtilRegexPattern *)
 
-inline jint OrgJsoupHelperDataUtil_get_bufferSize();
+inline jint OrgJsoupHelperDataUtil_get_bufferSize(void);
 #define OrgJsoupHelperDataUtil_bufferSize 131072
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupHelperDataUtil, bufferSize, jint)
 
-inline jint OrgJsoupHelperDataUtil_get_UNICODE_BOM();
+inline jint OrgJsoupHelperDataUtil_get_UNICODE_BOM(void);
 #define OrgJsoupHelperDataUtil_UNICODE_BOM 65279
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupHelperDataUtil, UNICODE_BOM, jint)
 
-inline IOSCharArray *OrgJsoupHelperDataUtil_get_mimeBoundaryChars();
+inline IOSCharArray *OrgJsoupHelperDataUtil_get_mimeBoundaryChars(void);
 static IOSCharArray *OrgJsoupHelperDataUtil_mimeBoundaryChars;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperDataUtil, mimeBoundaryChars, IOSCharArray *)
 
 __attribute__((unused)) static void OrgJsoupHelperDataUtil_init(OrgJsoupHelperDataUtil *self);
 
-__attribute__((unused)) static OrgJsoupHelperDataUtil *new_OrgJsoupHelperDataUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperDataUtil *new_OrgJsoupHelperDataUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperDataUtil *create_OrgJsoupHelperDataUtil_init();
+__attribute__((unused)) static OrgJsoupHelperDataUtil *create_OrgJsoupHelperDataUtil_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgJsoupHelperDataUtil)
 

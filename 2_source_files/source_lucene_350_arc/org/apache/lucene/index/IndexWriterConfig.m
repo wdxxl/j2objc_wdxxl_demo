@@ -92,7 +92,7 @@ jint OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_READER_TERMS_INDEX_DIVISOR;
     return [super java_clone];
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -491,10 +491,6 @@ OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterC
   return OrgApacheLuceneIndexIndexWriterConfig_OpenMode_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneIndexIndexWriterConfig_OpenMode;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -517,9 +513,9 @@ OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterC
 
 + (void)initialize {
   if (self == [OrgApacheLuceneIndexIndexWriterConfig_OpenMode class]) {
-    JreEnum(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, CREATE) = new_OrgApacheLuceneIndexIndexWriterConfig_OpenMode_initWithNSString_withInt_(@"CREATE", 0);
-    JreEnum(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, APPEND) = new_OrgApacheLuceneIndexIndexWriterConfig_OpenMode_initWithNSString_withInt_(@"APPEND", 1);
-    JreEnum(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, CREATE_OR_APPEND) = new_OrgApacheLuceneIndexIndexWriterConfig_OpenMode_initWithNSString_withInt_(@"CREATE_OR_APPEND", 2);
+    JreEnum(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, CREATE) = new_OrgApacheLuceneIndexIndexWriterConfig_OpenMode_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, APPEND) = new_OrgApacheLuceneIndexIndexWriterConfig_OpenMode_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, CREATE_OR_APPEND) = new_OrgApacheLuceneIndexIndexWriterConfig_OpenMode_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneIndexIndexWriterConfig_OpenMode)
   }
 }

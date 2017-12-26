@@ -26,15 +26,15 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecNetQCodec, charset_, JavaNioCharsetCharset *)
 
-inline JavaUtilBitSet *OrgApacheCommonsCodecNetQCodec_get_PRINTABLE_CHARS();
+inline JavaUtilBitSet *OrgApacheCommonsCodecNetQCodec_get_PRINTABLE_CHARS(void);
 static JavaUtilBitSet *OrgApacheCommonsCodecNetQCodec_PRINTABLE_CHARS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecNetQCodec, PRINTABLE_CHARS, JavaUtilBitSet *)
 
-inline jbyte OrgApacheCommonsCodecNetQCodec_get_BLANK();
+inline jbyte OrgApacheCommonsCodecNetQCodec_get_BLANK(void);
 #define OrgApacheCommonsCodecNetQCodec_BLANK 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQCodec, BLANK, jbyte)
 
-inline jbyte OrgApacheCommonsCodecNetQCodec_get_UNDERSCORE();
+inline jbyte OrgApacheCommonsCodecNetQCodec_get_UNDERSCORE(void);
 #define OrgApacheCommonsCodecNetQCodec_UNDERSCORE 95
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQCodec, UNDERSCORE, jbyte)
 
@@ -128,7 +128,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self encodeTextWithNSString:str withNSString:charset];
   }
   @catch (JavaIoUnsupportedEncodingException *e) {
-    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 
@@ -147,7 +147,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self decodeTextWithNSString:str];
   }
   @catch (JavaIoUnsupportedEncodingException *e) {
-    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 

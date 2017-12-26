@@ -64,9 +64,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilAverageGuessMemoryModel_1)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilAverageGuessMemoryModel_1_init(OrgApacheLuceneUtilAverageGuessMemoryModel_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilAverageGuessMemoryModel_1 *new_OrgApacheLuceneUtilAverageGuessMemoryModel_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilAverageGuessMemoryModel_1 *new_OrgApacheLuceneUtilAverageGuessMemoryModel_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilAverageGuessMemoryModel_1 *create_OrgApacheLuceneUtilAverageGuessMemoryModel_1_init();
+__attribute__((unused)) static OrgApacheLuceneUtilAverageGuessMemoryModel_1 *create_OrgApacheLuceneUtilAverageGuessMemoryModel_1_init(void);
 
 @implementation OrgApacheLuceneUtilAverageGuessMemoryModel
 

@@ -14,9 +14,9 @@
 
 __attribute__((unused)) static void OrgApacheCommonsCodecDigestMessageDigestAlgorithms_init(OrgApacheCommonsCodecDigestMessageDigestAlgorithms *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecDigestMessageDigestAlgorithms *new_OrgApacheCommonsCodecDigestMessageDigestAlgorithms_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecDigestMessageDigestAlgorithms *new_OrgApacheCommonsCodecDigestMessageDigestAlgorithms_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecDigestMessageDigestAlgorithms *create_OrgApacheCommonsCodecDigestMessageDigestAlgorithms_init();
+__attribute__((unused)) static OrgApacheCommonsCodecDigestMessageDigestAlgorithms *create_OrgApacheCommonsCodecDigestMessageDigestAlgorithms_init(void);
 
 NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_MD2 = @"MD2";
 NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_MD5 = @"MD5";

@@ -38,9 +38,9 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentDateField)
 
-FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentDateField_MIN_DATE_STRING();
+FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentDateField_MIN_DATE_STRING(void);
 
-FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentDateField_MAX_DATE_STRING();
+FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentDateField_MAX_DATE_STRING(void);
 
 FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentDateField_dateToStringWithJavaUtilDate_(JavaUtilDate *date);
 

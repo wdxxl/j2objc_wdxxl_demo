@@ -33,6 +33,10 @@
 
 - (void)reset;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneAnalysisTokenStream:(OrgApacheLuceneAnalysisTokenStream *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisLimitTokenCountFilter)

@@ -33,23 +33,23 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPacked64, shifts_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPacked64, readMasks_, IOSLongArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPacked64, writeMasks_, IOSLongArray *)
 
-inline jint OrgApacheLuceneUtilPackedPacked64_get_ENTRY_SIZE();
+inline jint OrgApacheLuceneUtilPackedPacked64_get_ENTRY_SIZE(void);
 #define OrgApacheLuceneUtilPackedPacked64_ENTRY_SIZE 65
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked64, ENTRY_SIZE, jint)
 
-inline jint OrgApacheLuceneUtilPackedPacked64_get_FAC_BITPOS();
+inline jint OrgApacheLuceneUtilPackedPacked64_get_FAC_BITPOS(void);
 #define OrgApacheLuceneUtilPackedPacked64_FAC_BITPOS 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked64, FAC_BITPOS, jint)
 
-inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_get_SHIFTS();
+inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_get_SHIFTS(void);
 static IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_SHIFTS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPacked64, SHIFTS, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_get_MASKS();
+inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_get_MASKS(void);
 static IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_MASKS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPacked64, MASKS, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_get_WRITE_MASKS();
+inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_get_WRITE_MASKS(void);
 static IOSObjectArray *OrgApacheLuceneUtilPackedPacked64_WRITE_MASKS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPacked64, WRITE_MASKS, IOSObjectArray *)
 
@@ -95,7 +95,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilPackedPacked64)
   jint elementPos = (jint) (JreURShift64(majorBitPos, OrgApacheLuceneUtilPackedPacked64_BLOCK_BITS));
   jint bitPos = (jint) (majorBitPos & OrgApacheLuceneUtilPackedPacked64_MOD_MASK);
   jint base = bitPos * OrgApacheLuceneUtilPackedPacked64_FAC_BITPOS;
-  JreAssert((elementPos < ((IOSLongArray *) nil_chk(blocks_))->size_), (JreStrcat("$I$I", @"elementPos: ", elementPos, @"; blocks.len: ", blocks_->size_)));
+  JreAssert(elementPos < ((IOSLongArray *) nil_chk(blocks_))->size_, JreStrcat("$I$I", @"elementPos: ", elementPos, @"; blocks.len: ", blocks_->size_));
   return (JreURShift64((JreLShift64(IOSLongArray_Get(blocks_, elementPos), IOSIntArray_Get(nil_chk(shifts_), base))), IOSIntArray_Get(shifts_, base + 1))) | ((JreURShift64(IOSLongArray_Get(blocks_, elementPos + 1), IOSIntArray_Get(shifts_, base + 2))) & IOSLongArray_Get(nil_chk(readMasks_), bitPos));
 }
 

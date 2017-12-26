@@ -46,19 +46,19 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharTokenizer, offsetAtt_, id<OrgApac
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharTokenizer, charUtils_, OrgApacheLuceneUtilCharacterUtils *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharTokenizer, ioBuffer_, OrgApacheLuceneUtilCharacterUtils_CharacterBuffer *)
 
-inline jint OrgApacheLuceneAnalysisCharTokenizer_get_MAX_WORD_LEN();
+inline jint OrgApacheLuceneAnalysisCharTokenizer_get_MAX_WORD_LEN(void);
 #define OrgApacheLuceneAnalysisCharTokenizer_MAX_WORD_LEN 255
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisCharTokenizer, MAX_WORD_LEN, jint)
 
-inline jint OrgApacheLuceneAnalysisCharTokenizer_get_IO_BUFFER_SIZE();
+inline jint OrgApacheLuceneAnalysisCharTokenizer_get_IO_BUFFER_SIZE(void);
 #define OrgApacheLuceneAnalysisCharTokenizer_IO_BUFFER_SIZE 4096
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisCharTokenizer, IO_BUFFER_SIZE, jint)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneAnalysisCharTokenizer_get_isTokenCharMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneAnalysisCharTokenizer_get_isTokenCharMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneAnalysisCharTokenizer_isTokenCharMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisCharTokenizer, isTokenCharMethod, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneAnalysisCharTokenizer_get_normalizeMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneAnalysisCharTokenizer_get_normalizeMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneAnalysisCharTokenizer_normalizeMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisCharTokenizer, normalizeMethod, OrgApacheLuceneUtilVirtualMethod *)
 
@@ -66,25 +66,25 @@ __attribute__((unused)) static jboolean OrgApacheLuceneAnalysisCharTokenizer_inc
 
 __attribute__((unused)) static jboolean OrgApacheLuceneAnalysisCharTokenizer_useOldAPIWithOrgApacheLuceneUtilVersion_(OrgApacheLuceneAnalysisCharTokenizer *self, OrgApacheLuceneUtilVersion *matchVersion);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$6(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$7();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$7(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$8();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$8(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$9();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharTokenizer__Annotations$9(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisCharTokenizer)
 
@@ -169,7 +169,7 @@ withOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttr
     bufferIndex_ += JavaLangCharacter_charCountWithInt_(c);
     if ([self isTokenCharWithInt:c]) {
       if (length == 0) {
-        JreAssert((start == -1), (@"org/apache/lucene/analysis/CharTokenizer.java:291 condition failed: assert start == -1;"));
+        JreAssert(start == -1, @"org/apache/lucene/analysis/CharTokenizer.java:291 condition failed: assert start == -1;");
         start = offset_ + bufferIndex_ - 1;
       }
       else if (length >= ((IOSCharArray *) nil_chk(buffer))->size_ - 1) {
@@ -181,7 +181,7 @@ withOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttr
     else if (length > 0) break;
   }
   (void) [termAtt_ setLengthWithInt:length];
-  JreAssert((start != -1), (@"org/apache/lucene/analysis/CharTokenizer.java:304 condition failed: assert start != -1;"));
+  JreAssert(start != -1, @"org/apache/lucene/analysis/CharTokenizer.java:304 condition failed: assert start != -1;");
   [((id<OrgApacheLuceneAnalysisTokenattributesOffsetAttribute>) nil_chk(offsetAtt_)) setOffsetWithInt:[self correctOffsetWithInt:start] withInt:finalOffset_ = [self correctOffsetWithInt:start + length]];
   return true;
 }
@@ -348,7 +348,7 @@ jboolean OrgApacheLuceneAnalysisCharTokenizer_incrementTokenOld(OrgApacheLuceneA
     jchar c = IOSCharArray_Get(nil_chk(oldIoBuffer), self->bufferIndex_++);
     if ([self isTokenCharWithChar:c]) {
       if (length == 0) {
-        JreAssert((start == -1), (@"org/apache/lucene/analysis/CharTokenizer.java:343 condition failed: assert start == -1;"));
+        JreAssert(start == -1, @"org/apache/lucene/analysis/CharTokenizer.java:343 condition failed: assert start == -1;");
         start = self->offset_ + self->bufferIndex_ - 1;
       }
       else if (length == ((IOSCharArray *) nil_chk(buffer))->size_) {
@@ -360,7 +360,7 @@ jboolean OrgApacheLuceneAnalysisCharTokenizer_incrementTokenOld(OrgApacheLuceneA
     else if (length > 0) break;
   }
   (void) [self->termAtt_ setLengthWithInt:length];
-  JreAssert((start != -1), (@"org/apache/lucene/analysis/CharTokenizer.java:359 condition failed: assert start != -1;"));
+  JreAssert(start != -1, @"org/apache/lucene/analysis/CharTokenizer.java:359 condition failed: assert start != -1;");
   [((id<OrgApacheLuceneAnalysisTokenattributesOffsetAttribute>) nil_chk(self->offsetAtt_)) setOffsetWithInt:[self correctOffsetWithInt:start] withInt:[self correctOffsetWithInt:start + length]];
   return true;
 }

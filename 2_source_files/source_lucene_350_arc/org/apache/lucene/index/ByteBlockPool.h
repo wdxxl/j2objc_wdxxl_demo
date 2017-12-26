@@ -43,6 +43,10 @@
 
 - (void)reset;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexByteBlockPool)
@@ -50,17 +54,17 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneIndexByteBlockPool)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexByteBlockPool, buffers_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexByteBlockPool, buffer_, IOSByteArray *)
 
-inline IOSIntArray *OrgApacheLuceneIndexByteBlockPool_get_nextLevelArray();
+inline IOSIntArray *OrgApacheLuceneIndexByteBlockPool_get_nextLevelArray(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneIndexByteBlockPool_nextLevelArray;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexByteBlockPool, nextLevelArray, IOSIntArray *)
 
-inline IOSIntArray *OrgApacheLuceneIndexByteBlockPool_get_levelSizeArray();
+inline IOSIntArray *OrgApacheLuceneIndexByteBlockPool_get_levelSizeArray(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneIndexByteBlockPool_levelSizeArray;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexByteBlockPool, levelSizeArray, IOSIntArray *)
 
-inline jint OrgApacheLuceneIndexByteBlockPool_get_FIRST_LEVEL_SIZE();
+inline jint OrgApacheLuceneIndexByteBlockPool_get_FIRST_LEVEL_SIZE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexByteBlockPool_FIRST_LEVEL_SIZE;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexByteBlockPool, FIRST_LEVEL_SIZE, jint)

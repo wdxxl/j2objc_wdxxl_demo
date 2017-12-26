@@ -29,6 +29,10 @@
 - (void)putWithOrgApacheLuceneUtilDoubleBarrelLRUCache_CloneableKey:(OrgApacheLuceneUtilDoubleBarrelLRUCache_CloneableKey *)key
                                                              withId:(id)value;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilDoubleBarrelLRUCache)

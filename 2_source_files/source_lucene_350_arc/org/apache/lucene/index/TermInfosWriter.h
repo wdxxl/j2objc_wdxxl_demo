@@ -55,6 +55,10 @@ withOrgApacheLuceneIndexTermInfo:(OrgApacheLuceneIndexTermInfo *)ti;
 - (void)addWithOrgApacheLuceneIndexTerm:(OrgApacheLuceneIndexTerm *)term
        withOrgApacheLuceneIndexTermInfo:(OrgApacheLuceneIndexTermInfo *)ti;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermInfosWriter)
@@ -62,15 +66,15 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermInfosWriter)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosWriter, utf16Result1_, OrgApacheLuceneUtilUnicodeUtil_UTF16Result *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosWriter, utf16Result2_, OrgApacheLuceneUtilUnicodeUtil_UTF16Result *)
 
-inline jint OrgApacheLuceneIndexTermInfosWriter_get_FORMAT();
+inline jint OrgApacheLuceneIndexTermInfosWriter_get_FORMAT(void);
 #define OrgApacheLuceneIndexTermInfosWriter_FORMAT -3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermInfosWriter, FORMAT, jint)
 
-inline jint OrgApacheLuceneIndexTermInfosWriter_get_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES();
+inline jint OrgApacheLuceneIndexTermInfosWriter_get_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES(void);
 #define OrgApacheLuceneIndexTermInfosWriter_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES -4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermInfosWriter, FORMAT_VERSION_UTF8_LENGTH_IN_BYTES, jint)
 
-inline jint OrgApacheLuceneIndexTermInfosWriter_get_FORMAT_CURRENT();
+inline jint OrgApacheLuceneIndexTermInfosWriter_get_FORMAT_CURRENT(void);
 #define OrgApacheLuceneIndexTermInfosWriter_FORMAT_CURRENT -4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermInfosWriter, FORMAT_CURRENT, jint)
 

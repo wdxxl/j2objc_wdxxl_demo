@@ -65,7 +65,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchParallelMultiSearcher, executor_, id<Ja
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchParallelMultiSearcher, searchables_ParallelMultiSearcher_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchParallelMultiSearcher, starts_ParallelMultiSearcher_, IOSIntArray *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchParallelMultiSearcher__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchParallelMultiSearcher__Annotations$0(void);
 
 @interface OrgApacheLuceneSearchParallelMultiSearcher_1 : NSObject < JavaUtilConcurrentCallable > {
  @public
@@ -537,7 +537,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchParallelMultiSearcher_Docu
     @throw new_OrgApacheLuceneUtilThreadInterruptedException_initWithJavaLangInterruptedException_(e);
   }
   @catch (JavaUtilConcurrentExecutionException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
   @finally {
     --numTasks_;

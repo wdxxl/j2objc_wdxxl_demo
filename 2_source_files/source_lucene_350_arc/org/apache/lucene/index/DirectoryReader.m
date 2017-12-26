@@ -16,6 +16,7 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/StringBuilder.h"
 #include "java/lang/System.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/UnsupportedOperationException.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/util/ArrayList.h"
@@ -120,7 +121,7 @@ __attribute__((unused)) static OrgApacheLuceneIndexDirectoryReader *OrgApacheLuc
 
 __attribute__((unused)) static jint OrgApacheLuceneIndexDirectoryReader_readerIndexWithInt_(OrgApacheLuceneIndexDirectoryReader *self, jint n);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexDirectoryReader__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexDirectoryReader__Annotations$0(void);
 
 @interface OrgApacheLuceneIndexDirectoryReader_1 : OrgApacheLuceneIndexSegmentInfos_FindSegmentsFile {
  @public
@@ -319,7 +320,7 @@ __attribute__((unused)) static id<OrgApacheLuceneIndexTermDocs> OrgApacheLuceneI
       return OrgApacheLuceneIndexDirectoryReader_cloneWithBoolean_(self, readOnly_);
     }
     @catch (JavaLangException *ex) {
-      @throw new_JavaLangRuntimeException_initWithNSException_(ex);
+      @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(ex);
     }
   }
 }
@@ -884,7 +885,7 @@ void OrgApacheLuceneIndexDirectoryReader_initWithOrgApacheLuceneStoreDirectory_w
           @try {
             [((OrgApacheLuceneIndexSegmentReader *) nil_chk(IOSObjectArray_Get(readers, i))) close];
           }
-          @catch (NSException *ignore) {
+          @catch (JavaLangThrowable *ignore) {
           }
         }
       }
@@ -921,7 +922,7 @@ void OrgApacheLuceneIndexDirectoryReader_initWithOrgApacheLuceneIndexIndexWriter
     jboolean success = false;
     @try {
       OrgApacheLuceneIndexSegmentInfo *info = [infos infoWithInt:i];
-      JreAssert((((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info))->dir_ == dir), (@"org/apache/lucene/index/DirectoryReader.java:156 condition failed: assert info.dir == dir;"));
+      JreAssert(((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info))->dir_ == dir, @"org/apache/lucene/index/DirectoryReader.java:156 condition failed: assert info.dir == dir;");
       OrgApacheLuceneIndexSegmentReader *reader = [((OrgApacheLuceneIndexIndexWriter_ReaderPool *) nil_chk(writer->readerPool_)) getReadOnlyCloneWithOrgApacheLuceneIndexSegmentInfo:info withBoolean:true withInt:termInfosIndexDivisor];
       if ([((OrgApacheLuceneIndexSegmentReader *) nil_chk(reader)) numDocs] > 0 || [writer getKeepFullyDeletedSegments]) {
         (void) JreVolatileStrongAssign(&reader->readerFinishedListeners_, JreLoadVolatileId(&self->readerFinishedListeners_));
@@ -940,7 +941,7 @@ void OrgApacheLuceneIndexDirectoryReader_initWithOrgApacheLuceneIndexIndexWriter
           @try {
             [((OrgApacheLuceneIndexSegmentReader *) nil_chk(reader)) close];
           }
-          @catch (NSException *ignore) {
+          @catch (JavaLangThrowable *ignore) {
           }
         }
       }
@@ -968,7 +969,7 @@ void OrgApacheLuceneIndexDirectoryReader_initWithOrgApacheLuceneStoreDirectory_w
   self->readOnly_ = readOnly;
   self->segmentInfos_ = infos;
   self->termInfosIndexDivisor_ = termInfosIndexDivisor;
-  JreAssert((readerFinishedListeners != nil), (@"org/apache/lucene/index/DirectoryReader.java:194 condition failed: assert readerFinishedListeners != null;"));
+  JreAssert(readerFinishedListeners != nil, @"org/apache/lucene/index/DirectoryReader.java:194 condition failed: assert readerFinishedListeners != null;");
   (void) JreVolatileStrongAssign(&self->readerFinishedListeners_, readerFinishedListeners);
   self->applyAllDeletes_ = false;
   id<JavaUtilMap> segmentReaders = new_JavaUtilHashMap_init();
@@ -991,7 +992,7 @@ void OrgApacheLuceneIndexDirectoryReader_initWithOrgApacheLuceneStoreDirectory_w
     @try {
       OrgApacheLuceneIndexSegmentReader *newReader;
       if (IOSObjectArray_Get(newReaders, i) == nil || [((OrgApacheLuceneIndexSegmentInfo *) nil_chk([infos infoWithInt:i])) getUseCompoundFile] != [((OrgApacheLuceneIndexSegmentInfo *) nil_chk([((OrgApacheLuceneIndexSegmentReader *) nil_chk(IOSObjectArray_Get(newReaders, i))) getSegmentInfo])) getUseCompoundFile]) {
-        JreAssert((!doClone), (@"org/apache/lucene/index/DirectoryReader.java:232 condition failed: assert !doClone;"));
+        JreAssert(!doClone, @"org/apache/lucene/index/DirectoryReader.java:232 condition failed: assert !doClone;");
         newReader = OrgApacheLuceneIndexSegmentReader_getWithBoolean_withOrgApacheLuceneIndexSegmentInfo_withInt_(readOnly, [infos infoWithInt:i], termInfosIndexDivisor);
         (void) JreVolatileStrongAssign(&((OrgApacheLuceneIndexSegmentReader *) nil_chk(newReader))->readerFinishedListeners_, readerFinishedListeners);
         *IOSBooleanArray_GetRef(readerShared, i) = false;
@@ -1004,7 +1005,7 @@ void OrgApacheLuceneIndexDirectoryReader_initWithOrgApacheLuceneStoreDirectory_w
           [((OrgApacheLuceneIndexSegmentReader *) nil_chk(IOSObjectArray_Get(newReaders, i))) incRef];
         }
         else {
-          JreAssert((JreLoadVolatileId(&newReader->readerFinishedListeners_) == readerFinishedListeners), (@"org/apache/lucene/index/DirectoryReader.java:247 condition failed: assert newReader.readerFinishedListeners == readerFinishedListeners;"));
+          JreAssert(JreLoadVolatileId(&newReader->readerFinishedListeners_) == readerFinishedListeners, @"org/apache/lucene/index/DirectoryReader.java:247 condition failed: assert newReader.readerFinishedListeners == readerFinishedListeners;");
           *IOSBooleanArray_GetRef(readerShared, i) = false;
           (void) IOSObjectArray_Set(newReaders, i, newReader);
         }
@@ -1083,14 +1084,14 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexDirectoryReader_cloneWithBo
     }
     ((OrgApacheLuceneIndexDirectoryReader *) nil_chk(newReader))->writer_ = self->writer_;
     if (!openReadOnly && self->writeLock_ != nil) {
-      JreAssert((self->writer_ == nil), (@"org/apache/lucene/index/DirectoryReader.java:376 condition failed: assert writer == null;"));
+      JreAssert(self->writer_ == nil, @"org/apache/lucene/index/DirectoryReader.java:376 condition failed: assert writer == null;");
       newReader->writeLock_ = self->writeLock_;
       newReader->hasChanges_ = self->hasChanges_;
       newReader->hasDeletions_ = self->hasDeletions_;
       self->writeLock_ = nil;
       self->hasChanges_ = false;
     }
-    JreAssert((JreLoadVolatileId(&newReader->readerFinishedListeners_) != nil), (@"org/apache/lucene/index/DirectoryReader.java:383 condition failed: assert newReader.readerFinishedListeners != null;"));
+    JreAssert(JreLoadVolatileId(&newReader->readerFinishedListeners_) != nil, @"org/apache/lucene/index/DirectoryReader.java:383 condition failed: assert newReader.readerFinishedListeners != null;");
     return newReader;
   }
 }
@@ -1100,7 +1101,7 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexDirectoryReader_doOpenIfCha
 }
 
 OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexDirectoryReader_doOpenFromWriterWithBoolean_withOrgApacheLuceneIndexIndexCommit_(OrgApacheLuceneIndexDirectoryReader *self, jboolean openReadOnly, OrgApacheLuceneIndexIndexCommit *commit) {
-  JreAssert((self->readOnly_), (@"org/apache/lucene/index/DirectoryReader.java:414 condition failed: assert readOnly;"));
+  JreAssert(self->readOnly_, @"org/apache/lucene/index/DirectoryReader.java:414 condition failed: assert readOnly;");
   if (!openReadOnly) {
     @throw new_JavaLangIllegalArgumentException_initWithNSString_(@"a reader obtained from IndexWriter.getReader() can only be reopened with openReadOnly=true (got false)");
   }
@@ -1121,7 +1122,7 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexDirectoryReader_doOpenFromW
 
 OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexDirectoryReader_doOpenIfChangedWithBoolean_withOrgApacheLuceneIndexIndexCommit_(OrgApacheLuceneIndexDirectoryReader *self, jboolean openReadOnly, OrgApacheLuceneIndexIndexCommit *commit) {
   [self ensureOpen];
-  JreAssert((commit == nil || openReadOnly), (@"org/apache/lucene/index/DirectoryReader.java:443 condition failed: assert commit == null || openReadOnly;"));
+  JreAssert(commit == nil || openReadOnly, @"org/apache/lucene/index/DirectoryReader.java:443 condition failed: assert commit == null || openReadOnly;");
   if (self->writer_ != nil) {
     return OrgApacheLuceneIndexDirectoryReader_doOpenFromWriterWithBoolean_withOrgApacheLuceneIndexIndexCommit_(self, openReadOnly, commit);
   }
@@ -1134,9 +1135,9 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexDirectoryReader_doOpenNoWri
   @synchronized(self) {
     if (commit == nil) {
       if (self->hasChanges_) {
-        JreAssert((self->readOnly_ == false), (@"org/apache/lucene/index/DirectoryReader.java:459 condition failed: assert readOnly == false;"));
-        JreAssert((self->writeLock_ != nil), (@"org/apache/lucene/index/DirectoryReader.java:461 condition failed: assert writeLock != null;"));
-        JreAssert(([self isCurrent]), (@"org/apache/lucene/index/DirectoryReader.java:464 condition failed: assert isCurrent();"));
+        JreAssert(self->readOnly_ == false, @"org/apache/lucene/index/DirectoryReader.java:459 condition failed: assert readOnly == false;");
+        JreAssert(self->writeLock_ != nil, @"org/apache/lucene/index/DirectoryReader.java:461 condition failed: assert writeLock != null;");
+        JreAssert([self isCurrent], @"org/apache/lucene/index/DirectoryReader.java:464 condition failed: assert isCurrent();");
         if (openReadOnly) {
           return OrgApacheLuceneIndexDirectoryReader_cloneWithBoolean_(self, openReadOnly);
         }
@@ -1775,8 +1776,8 @@ id<OrgApacheLuceneIndexTermDocs> OrgApacheLuceneIndexDirectoryReader_MultiTermDo
   id<OrgApacheLuceneIndexTermDocs> result = IOSObjectArray_Get(nil_chk(self->readerTermDocs_), i);
   if (result == nil) result = IOSObjectArray_Set(self->readerTermDocs_, i, [self termDocsWithOrgApacheLuceneIndexIndexReader:IOSObjectArray_Get(nil_chk(self->readers_), i)]);
   if (self->smi_ != nil) {
-    JreAssert((self->smi_->ord_ == i), (@"org/apache/lucene/index/DirectoryReader.java:1309 condition failed: assert(smi.ord == i);"));
-    JreAssert((([((OrgApacheLuceneIndexTerm *) nil_chk([((OrgApacheLuceneIndexTermEnum *) nil_chk(self->smi_->termEnum_)) term])) isEqual:self->term_])), (@"org/apache/lucene/index/DirectoryReader.java:1310 condition failed: assert(smi.termEnum.term().equals(term));"));
+    JreAssert(self->smi_->ord_ == i, @"org/apache/lucene/index/DirectoryReader.java:1309 condition failed: assert(smi.ord == i);");
+    JreAssert(([((OrgApacheLuceneIndexTerm *) nil_chk([((OrgApacheLuceneIndexTermEnum *) nil_chk(self->smi_->termEnum_)) term])) isEqual:self->term_]), @"org/apache/lucene/index/DirectoryReader.java:1310 condition failed: assert(smi.termEnum.term().equals(term));");
     [result seekWithOrgApacheLuceneIndexTermEnum:((OrgApacheLuceneIndexSegmentMergeInfo *) nil_chk(self->smi_))->termEnum_];
   }
   else {

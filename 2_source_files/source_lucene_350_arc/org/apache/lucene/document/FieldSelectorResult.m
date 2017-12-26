@@ -27,10 +27,6 @@ OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelector
   return OrgApacheLuceneDocumentFieldSelectorResult_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneDocumentFieldSelectorResult;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -57,13 +53,13 @@ OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelector
 
 + (void)initialize {
   if (self == [OrgApacheLuceneDocumentFieldSelectorResult class]) {
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LOAD) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"LOAD", 0);
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LAZY_LOAD) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"LAZY_LOAD", 1);
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, NO_LOAD) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"NO_LOAD", 2);
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LOAD_AND_BREAK) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"LOAD_AND_BREAK", 3);
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, SIZE) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"SIZE", 4);
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, SIZE_AND_BREAK) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"SIZE_AND_BREAK", 5);
-    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LATENT) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"LATENT", 6);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LOAD) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LAZY_LOAD) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, NO_LOAD) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LOAD_AND_BREAK) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 3);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, SIZE) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 4);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, SIZE_AND_BREAK) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 5);
+    JreEnum(OrgApacheLuceneDocumentFieldSelectorResult, LATENT) = new_OrgApacheLuceneDocumentFieldSelectorResult_initWithNSString_withInt_(@"", 6);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneDocumentFieldSelectorResult)
   }
 }

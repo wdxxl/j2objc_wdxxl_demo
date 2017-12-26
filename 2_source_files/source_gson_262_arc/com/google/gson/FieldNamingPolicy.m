@@ -29,7 +29,7 @@ __attribute__((unused)) static ComGoogleGsonFieldNamingPolicy *new_ComGoogleGson
 
 __attribute__((unused)) static NSString *ComGoogleGsonFieldNamingPolicy_modifyStringWithChar_withNSString_withInt_(jchar firstCharacter, NSString *srcString, jint indexOfSubstring);
 
-@interface ComGoogleGsonFieldNamingPolicy_1 : ComGoogleGsonFieldNamingPolicy < NSCopying >
+@interface ComGoogleGsonFieldNamingPolicy_1 : ComGoogleGsonFieldNamingPolicy
 
 - (NSString *)translateNameWithJavaLangReflectField:(JavaLangReflectField *)f;
 
@@ -41,7 +41,7 @@ __attribute__((unused)) static void ComGoogleGsonFieldNamingPolicy_1_initWithNSS
 
 __attribute__((unused)) static ComGoogleGsonFieldNamingPolicy_1 *new_ComGoogleGsonFieldNamingPolicy_1_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface ComGoogleGsonFieldNamingPolicy_2 : ComGoogleGsonFieldNamingPolicy < NSCopying >
+@interface ComGoogleGsonFieldNamingPolicy_2 : ComGoogleGsonFieldNamingPolicy
 
 - (NSString *)translateNameWithJavaLangReflectField:(JavaLangReflectField *)f;
 
@@ -53,7 +53,7 @@ __attribute__((unused)) static void ComGoogleGsonFieldNamingPolicy_2_initWithNSS
 
 __attribute__((unused)) static ComGoogleGsonFieldNamingPolicy_2 *new_ComGoogleGsonFieldNamingPolicy_2_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface ComGoogleGsonFieldNamingPolicy_3 : ComGoogleGsonFieldNamingPolicy < NSCopying >
+@interface ComGoogleGsonFieldNamingPolicy_3 : ComGoogleGsonFieldNamingPolicy
 
 - (NSString *)translateNameWithJavaLangReflectField:(JavaLangReflectField *)f;
 
@@ -65,7 +65,7 @@ __attribute__((unused)) static void ComGoogleGsonFieldNamingPolicy_3_initWithNSS
 
 __attribute__((unused)) static ComGoogleGsonFieldNamingPolicy_3 *new_ComGoogleGsonFieldNamingPolicy_3_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface ComGoogleGsonFieldNamingPolicy_4 : ComGoogleGsonFieldNamingPolicy < NSCopying >
+@interface ComGoogleGsonFieldNamingPolicy_4 : ComGoogleGsonFieldNamingPolicy
 
 - (NSString *)translateNameWithJavaLangReflectField:(JavaLangReflectField *)f;
 
@@ -77,7 +77,7 @@ __attribute__((unused)) static void ComGoogleGsonFieldNamingPolicy_4_initWithNSS
 
 __attribute__((unused)) static ComGoogleGsonFieldNamingPolicy_4 *new_ComGoogleGsonFieldNamingPolicy_4_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface ComGoogleGsonFieldNamingPolicy_5 : ComGoogleGsonFieldNamingPolicy < NSCopying >
+@interface ComGoogleGsonFieldNamingPolicy_5 : ComGoogleGsonFieldNamingPolicy
 
 - (NSString *)translateNameWithJavaLangReflectField:(JavaLangReflectField *)f;
 
@@ -118,10 +118,6 @@ ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_values_[5];
   return ComGoogleGsonFieldNamingPolicy_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LNSString;", 0x8, 0, 1, -1, -1, -1, -1 },
@@ -152,11 +148,11 @@ ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_values_[5];
 
 + (void)initialize {
   if (self == [ComGoogleGsonFieldNamingPolicy class]) {
-    JreEnum(ComGoogleGsonFieldNamingPolicy, IDENTITY) = new_ComGoogleGsonFieldNamingPolicy_1_initWithNSString_withInt_(@"IDENTITY", 0);
-    JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE) = new_ComGoogleGsonFieldNamingPolicy_2_initWithNSString_withInt_(@"UPPER_CAMEL_CASE", 1);
-    JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE_WITH_SPACES) = new_ComGoogleGsonFieldNamingPolicy_3_initWithNSString_withInt_(@"UPPER_CAMEL_CASE_WITH_SPACES", 2);
-    JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_UNDERSCORES) = new_ComGoogleGsonFieldNamingPolicy_4_initWithNSString_withInt_(@"LOWER_CASE_WITH_UNDERSCORES", 3);
-    JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_DASHES) = new_ComGoogleGsonFieldNamingPolicy_5_initWithNSString_withInt_(@"LOWER_CASE_WITH_DASHES", 4);
+    JreEnum(ComGoogleGsonFieldNamingPolicy, IDENTITY) = new_ComGoogleGsonFieldNamingPolicy_1_initWithNSString_withInt_(@"", 0);
+    JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE) = new_ComGoogleGsonFieldNamingPolicy_2_initWithNSString_withInt_(@"", 1);
+    JreEnum(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE_WITH_SPACES) = new_ComGoogleGsonFieldNamingPolicy_3_initWithNSString_withInt_(@"", 2);
+    JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_UNDERSCORES) = new_ComGoogleGsonFieldNamingPolicy_4_initWithNSString_withInt_(@"", 3);
+    JreEnum(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_DASHES) = new_ComGoogleGsonFieldNamingPolicy_5_initWithNSString_withInt_(@"", 4);
     J2OBJC_SET_INITIALIZED(ComGoogleGsonFieldNamingPolicy)
   }
 }

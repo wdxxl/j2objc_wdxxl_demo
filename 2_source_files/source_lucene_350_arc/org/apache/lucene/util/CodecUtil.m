@@ -19,15 +19,15 @@
 
 @end
 
-inline jint OrgApacheLuceneUtilCodecUtil_get_CODEC_MAGIC();
+inline jint OrgApacheLuceneUtilCodecUtil_get_CODEC_MAGIC(void);
 #define OrgApacheLuceneUtilCodecUtil_CODEC_MAGIC 1071082519
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilCodecUtil, CODEC_MAGIC, jint)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilCodecUtil_init(OrgApacheLuceneUtilCodecUtil *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilCodecUtil *new_OrgApacheLuceneUtilCodecUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilCodecUtil *new_OrgApacheLuceneUtilCodecUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilCodecUtil *create_OrgApacheLuceneUtilCodecUtil_init();
+__attribute__((unused)) static OrgApacheLuceneUtilCodecUtil *create_OrgApacheLuceneUtilCodecUtil_init(void);
 
 @implementation OrgApacheLuceneUtilCodecUtil
 

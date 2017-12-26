@@ -88,9 +88,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchSpansNearSpansOrdered_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchSpansNearSpansOrdered_1_init(OrgApacheLuceneSearchSpansNearSpansOrdered_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchSpansNearSpansOrdered_1 *new_OrgApacheLuceneSearchSpansNearSpansOrdered_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchSpansNearSpansOrdered_1 *new_OrgApacheLuceneSearchSpansNearSpansOrdered_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchSpansNearSpansOrdered_1 *create_OrgApacheLuceneSearchSpansNearSpansOrdered_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchSpansNearSpansOrdered_1 *create_OrgApacheLuceneSearchSpansNearSpansOrdered_1_init(void);
 
 @implementation OrgApacheLuceneSearchSpansNearSpansOrdered
 
@@ -339,7 +339,7 @@ jboolean OrgApacheLuceneSearchSpansNearSpansOrdered_toSameDoc(OrgApacheLuceneSea
     }
   }
   for (jint i = 0; i < self->subSpansByDoc_->size_; i++) {
-    JreAssert(([((OrgApacheLuceneSearchSpansSpans *) nil_chk(IOSObjectArray_Get(self->subSpansByDoc_, i))) doc] == maxDoc), (JreStrcat("$@$I$I", @" NearSpansOrdered.toSameDoc() spans ", IOSObjectArray_Get(self->subSpansByDoc_, 0), @"\n at doc ", [((OrgApacheLuceneSearchSpansSpans *) nil_chk(IOSObjectArray_Get(self->subSpansByDoc_, i))) doc], @", but should be at ", maxDoc)));
+    JreAssert([((OrgApacheLuceneSearchSpansSpans *) nil_chk(IOSObjectArray_Get(self->subSpansByDoc_, i))) doc] == maxDoc, JreStrcat("$@$I$I", @" NearSpansOrdered.toSameDoc() spans ", IOSObjectArray_Get(self->subSpansByDoc_, 0), @"\n at doc ", [((OrgApacheLuceneSearchSpansSpans *) nil_chk(IOSObjectArray_Get(self->subSpansByDoc_, i))) doc], @", but should be at ", maxDoc));
   }
   self->inSameDoc_ = true;
   return true;
@@ -347,7 +347,7 @@ jboolean OrgApacheLuceneSearchSpansNearSpansOrdered_toSameDoc(OrgApacheLuceneSea
 
 jboolean OrgApacheLuceneSearchSpansNearSpansOrdered_docSpansOrderedWithOrgApacheLuceneSearchSpansSpans_withOrgApacheLuceneSearchSpansSpans_(OrgApacheLuceneSearchSpansSpans *spans1, OrgApacheLuceneSearchSpansSpans *spans2) {
   OrgApacheLuceneSearchSpansNearSpansOrdered_initialize();
-  JreAssert(([((OrgApacheLuceneSearchSpansSpans *) nil_chk(spans1)) doc] == [((OrgApacheLuceneSearchSpansSpans *) nil_chk(spans2)) doc]), (JreStrcat("$I$I", @"doc1 ", [spans1 doc], @" != doc2 ", [spans2 doc])));
+  JreAssert([((OrgApacheLuceneSearchSpansSpans *) nil_chk(spans1)) doc] == [((OrgApacheLuceneSearchSpansSpans *) nil_chk(spans2)) doc], JreStrcat("$I$I", @"doc1 ", [spans1 doc], @" != doc2 ", [spans2 doc]));
   jint start1 = [spans1 start];
   jint start2 = [spans2 start];
   return (start1 == start2) ? ([spans1 end] < [spans2 end]) : (start1 < start2);
@@ -426,7 +426,7 @@ jboolean OrgApacheLuceneSearchSpansNearSpansOrdered_shrinkToAfterShortestMatch(O
     if (self->collectPayloads_ && possiblePayload != nil) {
       [possibleMatchPayloads addAllWithJavaUtilCollection:possiblePayload];
     }
-    JreAssert((prevStart <= self->matchStart_), (@"org/apache/lucene/search/spans/NearSpansOrdered.java:315 condition failed: assert prevStart <= matchStart;"));
+    JreAssert(prevStart <= self->matchStart_, @"org/apache/lucene/search/spans/NearSpansOrdered.java:315 condition failed: assert prevStart <= matchStart;");
     if (self->matchStart_ > prevEnd) {
       matchSlop += (self->matchStart_ - prevEnd);
     }

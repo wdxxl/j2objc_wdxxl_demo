@@ -41,6 +41,10 @@
                   withInt:(jint)off
                   withInt:(jint)len;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneAnalysisCharStream:(OrgApacheLuceneAnalysisCharStream *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisMappingCharFilter)

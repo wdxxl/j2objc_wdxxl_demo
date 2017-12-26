@@ -28,7 +28,7 @@
 
 @end
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneUtilAttributeImpl_get_toStringMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneUtilAttributeImpl_get_toStringMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneUtilAttributeImpl_toStringMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilAttributeImpl, toStringMethod, OrgApacheLuceneUtilVirtualMethod *)
 
@@ -36,11 +36,11 @@ __attribute__((unused)) static NSString *OrgApacheLuceneUtilAttributeImpl_reflec
 
 __attribute__((unused)) static jboolean OrgApacheLuceneUtilAttributeImpl_assertExternalClassWithIOSClass_(OrgApacheLuceneUtilAttributeImpl *self, IOSClass *clazz);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilAttributeImpl__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilAttributeImpl__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilAttributeImpl__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilAttributeImpl__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilAttributeImpl__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilAttributeImpl__Annotations$2(void);
 
 @interface OrgApacheLuceneUtilAttributeImpl_1 : NSObject < OrgApacheLuceneUtilAttributeReflector > {
  @public
@@ -101,7 +101,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   }
   IOSClass *interf = [((JavaLangRefWeakReference *) nil_chk([interfaces getFirst])) get];
   if (enableBackwards_ && [((OrgApacheLuceneUtilVirtualMethod *) nil_chk(OrgApacheLuceneUtilAttributeImpl_toStringMethod)) isOverriddenAsOfWithIOSClass:clazz]) {
-    JreAssert((OrgApacheLuceneUtilAttributeImpl_assertExternalClassWithIOSClass_(self, clazz)), (@"no Lucene/Solr classes should fallback to toString() parsing"));
+    JreAssert(OrgApacheLuceneUtilAttributeImpl_assertExternalClassWithIOSClass_(self, clazz), @"no Lucene/Solr classes should fallback to toString() parsing");
     {
       IOSObjectArray *a__ = [((NSString *) nil_chk([self description])) java_split:@","];
       NSString * const *b__ = ((IOSObjectArray *) nil_chk(a__))->buffer_;
@@ -127,7 +127,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     }
   }
   @catch (JavaLangIllegalAccessException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -142,7 +142,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     clone = [super java_clone];
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
   return clone;
 }

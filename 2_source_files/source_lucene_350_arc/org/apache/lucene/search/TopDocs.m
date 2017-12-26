@@ -235,7 +235,7 @@ OrgApacheLuceneSearchTopDocs *OrgApacheLuceneSearchTopDocs_mergeWithOrgApacheLuc
   IOSObjectArray *hits = [IOSObjectArray newArrayWithLength:JavaLangMath_minWithInt_withInt_(topN, availHitCount) type:OrgApacheLuceneSearchScoreDoc_class_()];
   jint hitUpto = 0;
   while (hitUpto < hits->size_) {
-    JreAssert(([queue size] > 0), (@"org/apache/lucene/search/TopDocs.java:232 condition failed: assert queue.size() > 0;"));
+    JreAssert([queue size] > 0, @"org/apache/lucene/search/TopDocs.java:232 condition failed: assert queue.size() > 0;");
     OrgApacheLuceneSearchTopDocs_ShardRef *ref = [queue pop];
     OrgApacheLuceneSearchScoreDoc *hit = IOSObjectArray_Get(nil_chk(((OrgApacheLuceneSearchTopDocs *) nil_chk(IOSObjectArray_Get(shardHits, ((OrgApacheLuceneSearchTopDocs_ShardRef *) nil_chk(ref))->shardIndex_)))->scoreDocs_), ref->hitIndex_++);
     ((OrgApacheLuceneSearchScoreDoc *) nil_chk(hit))->shardIndex_ = ref->shardIndex_;
@@ -311,7 +311,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopDocs_ShardRef)
 
 - (jboolean)lessThanWithId:(OrgApacheLuceneSearchTopDocs_ShardRef *)first
                     withId:(OrgApacheLuceneSearchTopDocs_ShardRef *)second {
-  JreAssert((first != second), (@"org/apache/lucene/search/TopDocs.java:95 condition failed: assert first != second;"));
+  JreAssert(first != second, @"org/apache/lucene/search/TopDocs.java:95 condition failed: assert first != second;");
   jfloat firstScore = ((OrgApacheLuceneSearchScoreDoc *) nil_chk(IOSObjectArray_Get(nil_chk(IOSObjectArray_Get(nil_chk(shardHits_), ((OrgApacheLuceneSearchTopDocs_ShardRef *) nil_chk(first))->shardIndex_)), first->hitIndex_)))->score_;
   jfloat secondScore = ((OrgApacheLuceneSearchScoreDoc *) nil_chk(IOSObjectArray_Get(nil_chk(IOSObjectArray_Get(shardHits_, ((OrgApacheLuceneSearchTopDocs_ShardRef *) nil_chk(second))->shardIndex_)), second->hitIndex_)))->score_;
   if (firstScore < secondScore) {
@@ -328,7 +328,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopDocs_ShardRef)
       return false;
     }
     else {
-      JreAssert((first->hitIndex_ != second->hitIndex_), (@"org/apache/lucene/search/TopDocs.java:112 condition failed: assert first.hitIndex != second.hitIndex;"));
+      JreAssert(first->hitIndex_ != second->hitIndex_, @"org/apache/lucene/search/TopDocs.java:112 condition failed: assert first.hitIndex != second.hitIndex;");
       return first->hitIndex_ < second->hitIndex_;
     }
   }
@@ -383,7 +383,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopDocs_ScoreMergeSortQueu
 
 - (jboolean)lessThanWithId:(OrgApacheLuceneSearchTopDocs_ShardRef *)first
                     withId:(OrgApacheLuceneSearchTopDocs_ShardRef *)second {
-  JreAssert((first != second), (@"org/apache/lucene/search/TopDocs.java:160 condition failed: assert first != second;"));
+  JreAssert(first != second, @"org/apache/lucene/search/TopDocs.java:160 condition failed: assert first != second;");
   OrgApacheLuceneSearchFieldDoc *firstFD = (OrgApacheLuceneSearchFieldDoc *) cast_chk(IOSObjectArray_Get(nil_chk(IOSObjectArray_Get(nil_chk(shardHits_), ((OrgApacheLuceneSearchTopDocs_ShardRef *) nil_chk(first))->shardIndex_)), first->hitIndex_), [OrgApacheLuceneSearchFieldDoc class]);
   OrgApacheLuceneSearchFieldDoc *secondFD = (OrgApacheLuceneSearchFieldDoc *) cast_chk(IOSObjectArray_Get(nil_chk(IOSObjectArray_Get(shardHits_, ((OrgApacheLuceneSearchTopDocs_ShardRef *) nil_chk(second))->shardIndex_)), second->hitIndex_), [OrgApacheLuceneSearchFieldDoc class]);
   for (jint compIDX = 0; compIDX < ((IOSObjectArray *) nil_chk(comparators_))->size_; compIDX++) {
@@ -400,7 +400,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopDocs_ScoreMergeSortQueu
     return false;
   }
   else {
-    JreAssert((first->hitIndex_ != second->hitIndex_), (@"org/apache/lucene/search/TopDocs.java:188 condition failed: assert first.hitIndex != second.hitIndex;"));
+    JreAssert(first->hitIndex_ != second->hitIndex_, @"org/apache/lucene/search/TopDocs.java:188 condition failed: assert first.hitIndex != second.hitIndex;");
     return first->hitIndex_ < second->hitIndex_;
   }
 }

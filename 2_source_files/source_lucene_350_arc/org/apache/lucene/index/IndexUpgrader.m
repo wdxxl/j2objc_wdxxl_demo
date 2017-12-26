@@ -40,7 +40,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexUpgrader, dir_, OrgApacheLuceneStor
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexUpgrader, infoStream_, JavaIoPrintStream *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexUpgrader, iwc_, OrgApacheLuceneIndexIndexWriterConfig *)
 
-__attribute__((unused)) static void OrgApacheLuceneIndexIndexUpgrader_printUsage();
+__attribute__((unused)) static void OrgApacheLuceneIndexIndexUpgrader_printUsage(void);
 
 @implementation OrgApacheLuceneIndexIndexUpgrader
 

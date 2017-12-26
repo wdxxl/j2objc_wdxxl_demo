@@ -63,7 +63,7 @@ withOrgApacheLuceneIndexFieldInfo_IndexOptions:(OrgApacheLuceneIndexFieldInfo_In
       self->storePayloads_ = false;
     }
   }
-  JreAssert((self->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !self->storePayloads_), (@"org/apache/lucene/index/FieldInfo.java:108 condition failed: assert this.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !this.storePayloads;"));
+  JreAssert(self->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !self->storePayloads_, @"org/apache/lucene/index/FieldInfo.java:108 condition failed: assert this.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !this.storePayloads;");
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -117,7 +117,7 @@ void OrgApacheLuceneIndexFieldInfo_initWithNSString_withBoolean_withInt_withBool
     self->omitNorms_ = true;
     self->indexOptions_ = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS);
   }
-  JreAssert((indexOptions == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !storePayloads), (@"org/apache/lucene/index/FieldInfo.java:71 condition failed: assert indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !storePayloads;"));
+  JreAssert(indexOptions == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !storePayloads, @"org/apache/lucene/index/FieldInfo.java:71 condition failed: assert indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !storePayloads;");
 }
 
 OrgApacheLuceneIndexFieldInfo *new_OrgApacheLuceneIndexFieldInfo_initWithNSString_withBoolean_withInt_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withOrgApacheLuceneIndexFieldInfo_IndexOptions_(NSString *na, jboolean tk, jint nu, jboolean storeTermVector, jboolean storePositionWithTermVector, jboolean storeOffsetWithTermVector, jboolean omitNorms, jboolean storePayloads, OrgApacheLuceneIndexFieldInfo_IndexOptions *indexOptions) {
@@ -144,10 +144,6 @@ OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexO
   return OrgApacheLuceneIndexFieldInfo_IndexOptions_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneIndexFieldInfo_IndexOptions;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -170,9 +166,9 @@ OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexO
 
 + (void)initialize {
   if (self == [OrgApacheLuceneIndexFieldInfo_IndexOptions class]) {
-    JreEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY) = new_OrgApacheLuceneIndexFieldInfo_IndexOptions_initWithNSString_withInt_(@"DOCS_ONLY", 0);
-    JreEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS) = new_OrgApacheLuceneIndexFieldInfo_IndexOptions_initWithNSString_withInt_(@"DOCS_AND_FREQS", 1);
-    JreEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) = new_OrgApacheLuceneIndexFieldInfo_IndexOptions_initWithNSString_withInt_(@"DOCS_AND_FREQS_AND_POSITIONS", 2);
+    JreEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY) = new_OrgApacheLuceneIndexFieldInfo_IndexOptions_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS) = new_OrgApacheLuceneIndexFieldInfo_IndexOptions_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) = new_OrgApacheLuceneIndexFieldInfo_IndexOptions_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneIndexFieldInfo_IndexOptions)
   }
 }

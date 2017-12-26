@@ -34,12 +34,12 @@
     doc_ = [((OrgApacheLuceneIndexStoredFieldsWriter *) nil_chk(storedFieldsWriter_)) getPerDoc];
     ((OrgApacheLuceneIndexStoredFieldsWriter_PerDoc *) nil_chk(doc_))->docID_ = ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->docID_;
     [((OrgApacheLuceneIndexFieldsWriter *) nil_chk(localFieldsWriter_)) setFieldsStreamWithOrgApacheLuceneStoreIndexOutput:doc_->fdt_];
-    JreAssert((((OrgApacheLuceneIndexStoredFieldsWriter_PerDoc *) nil_chk(doc_))->numStoredFields_ == 0), (JreStrcat("$I", @"doc.numStoredFields=", doc_->numStoredFields_)));
-    JreAssert((0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(doc_->fdt_)) length]), (@"org/apache/lucene/index/StoredFieldsWriterPerThread.java:54 condition failed: assert 0 == doc.fdt.length();"));
-    JreAssert((0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(((OrgApacheLuceneIndexStoredFieldsWriter_PerDoc *) nil_chk(doc_))->fdt_)) getFilePointer]), (@"org/apache/lucene/index/StoredFieldsWriterPerThread.java:55 condition failed: assert 0 == doc.fdt.getFilePointer();"));
+    JreAssert(((OrgApacheLuceneIndexStoredFieldsWriter_PerDoc *) nil_chk(doc_))->numStoredFields_ == 0, JreStrcat("$I", @"doc.numStoredFields=", doc_->numStoredFields_));
+    JreAssert(0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(doc_->fdt_)) length], @"org/apache/lucene/index/StoredFieldsWriterPerThread.java:54 condition failed: assert 0 == doc.fdt.length();");
+    JreAssert(0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(((OrgApacheLuceneIndexStoredFieldsWriter_PerDoc *) nil_chk(doc_))->fdt_)) getFilePointer], @"org/apache/lucene/index/StoredFieldsWriterPerThread.java:55 condition failed: assert 0 == doc.fdt.getFilePointer();");
   }
   [((OrgApacheLuceneIndexFieldsWriter *) nil_chk(localFieldsWriter_)) writeFieldWithOrgApacheLuceneIndexFieldInfo:fieldInfo withOrgApacheLuceneDocumentFieldable:field];
-  JreAssert(([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"StoredFieldsWriterPerThread.processFields.writeField"]), (@"org/apache/lucene/index/StoredFieldsWriterPerThread.java:59 condition failed: assert docState.testPoint(\"StoredFieldsWriterPerThread.processFields.writeField\");"));
+  JreAssert([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"StoredFieldsWriterPerThread.processFields.writeField"], @"org/apache/lucene/index/StoredFieldsWriterPerThread.java:59 condition failed: assert docState.testPoint(\"StoredFieldsWriterPerThread.processFields.writeField\");");
   ((OrgApacheLuceneIndexStoredFieldsWriter_PerDoc *) nil_chk(doc_))->numStoredFields_++;
 }
 

@@ -52,35 +52,35 @@
 
 @end
 
-inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_COMMENT();
+inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_COMMENT(void);
 static NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_COMMENT = @"//";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, COMMENT, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_DOUBLE_QUOTE();
+inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_DOUBLE_QUOTE(void);
 static NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_DOUBLE_QUOTE = @"\"";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, DOUBLE_QUOTE, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_MULTILINE_COMMENT_END();
+inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_MULTILINE_COMMENT_END(void);
 static NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_MULTILINE_COMMENT_END = @"*/";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, MULTILINE_COMMENT_END, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_MULTILINE_COMMENT_START();
+inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_MULTILINE_COMMENT_START(void);
 static NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_MULTILINE_COMMENT_START = @"/*";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, MULTILINE_COMMENT_START, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_RESOURCE_FILE();
+inline NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_RESOURCE_FILE(void);
 static NSString *OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_RESOURCE_FILE = @"org/apache/commons/codec/language/dmrules.txt";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, RESOURCE_FILE, NSString *)
 
-inline jint OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_MAX_LENGTH();
+inline jint OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_MAX_LENGTH(void);
 #define OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_MAX_LENGTH 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, MAX_LENGTH, jint)
 
-inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_RULES();
+inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_RULES(void);
 static id<JavaUtilMap> OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_RULES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, RULES, id<JavaUtilMap>)
 
-inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_FOLDINGS();
+inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_get_FOLDINGS(void);
 static id<JavaUtilMap> OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_FOLDINGS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex, FOLDINGS, id<JavaUtilMap>)
 
@@ -124,9 +124,9 @@ J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch, l
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch_init(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch *new_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch *new_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch *create_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch *create_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_Branch)
 
@@ -186,9 +186,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1)
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1_init(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1 *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1 *new_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1 *new_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1 *create_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1 *create_OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex)
 
@@ -383,7 +383,7 @@ void OrgApacheCommonsCodecLanguageDaitchMokotoffSoundex_parseRulesWithJavaUtilSc
             [rules addWithId:r];
           }
           @catch (JavaLangIllegalArgumentException *e) {
-            @throw new_JavaLangIllegalStateException_initWithNSString_withNSException_(JreStrcat("$I$$", @"Problem parsing line '", currentLine, @"' in ", location), e);
+            @throw new_JavaLangIllegalStateException_initWithNSString_withJavaLangThrowable_(JreStrcat("$I$$", @"Problem parsing line '", currentLine, @"' in ", location), e);
           }
         }
       }

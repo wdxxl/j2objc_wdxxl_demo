@@ -81,31 +81,31 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserHtmlTreeBuilder, pendingTableCharacters_, id<J
 J2OBJC_FIELD_SETTER(OrgJsoupParserHtmlTreeBuilder, emptyEnd_, OrgJsoupParserToken_EndTag *)
 J2OBJC_FIELD_SETTER(OrgJsoupParserHtmlTreeBuilder, specificScopeTarget_, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagsScriptStyle();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagsScriptStyle(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagsScriptStyle;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagsScriptStyle, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchList();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchList(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagSearchList;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagSearchList, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchButton();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchButton(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagSearchButton;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagSearchButton, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchTableScope();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchTableScope(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagSearchTableScope;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagSearchTableScope, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchSelectScope();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchSelectScope(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagSearchSelectScope;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagSearchSelectScope, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchEndTags();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchEndTags(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagSearchEndTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagSearchEndTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchSpecial();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagSearchSpecial(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagSearchSpecial;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagSearchSpecial, IOSObjectArray *)
 
@@ -396,7 +396,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (OrgJsoupNodesElement *)aboveOnStackWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)el {
-  JreAssert(([self onStackWithOrgJsoupNodesElement:el]), (@"org/jsoup/parser/HtmlTreeBuilder.java:356 condition failed: assert onStack(el);"));
+  JreAssert([self onStackWithOrgJsoupNodesElement:el], @"org/jsoup/parser/HtmlTreeBuilder.java:356 condition failed: assert onStack(el);");
   for (jint pos = [((JavaUtilArrayList *) nil_chk(stack_)) size] - 1; pos >= 0; pos--) {
     OrgJsoupNodesElement *next = [((JavaUtilArrayList *) nil_chk(stack_)) getWithInt:pos];
     if (next == el) {

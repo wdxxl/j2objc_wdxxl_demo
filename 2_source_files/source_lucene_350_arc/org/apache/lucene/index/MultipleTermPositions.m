@@ -103,9 +103,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMultipleTermPositions_IntQueue, _array_,
 
 __attribute__((unused)) static void OrgApacheLuceneIndexMultipleTermPositions_IntQueue_init(OrgApacheLuceneIndexMultipleTermPositions_IntQueue *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexMultipleTermPositions_IntQueue *new_OrgApacheLuceneIndexMultipleTermPositions_IntQueue_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexMultipleTermPositions_IntQueue *new_OrgApacheLuceneIndexMultipleTermPositions_IntQueue_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexMultipleTermPositions_IntQueue *create_OrgApacheLuceneIndexMultipleTermPositions_IntQueue_init();
+__attribute__((unused)) static OrgApacheLuceneIndexMultipleTermPositions_IntQueue *create_OrgApacheLuceneIndexMultipleTermPositions_IntQueue_init(void);
 
 __attribute__((unused)) static void OrgApacheLuceneIndexMultipleTermPositions_IntQueue_addWithInt_(OrgApacheLuceneIndexMultipleTermPositions_IntQueue *self, jint i);
 

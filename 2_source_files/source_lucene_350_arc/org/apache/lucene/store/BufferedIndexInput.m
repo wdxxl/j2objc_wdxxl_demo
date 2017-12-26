@@ -34,9 +34,9 @@ __attribute__((unused)) static void OrgApacheLuceneStoreBufferedIndexInput_check
 
 __attribute__((unused)) static void OrgApacheLuceneStoreBufferedIndexInput_refill(OrgApacheLuceneStoreBufferedIndexInput *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreBufferedIndexInput__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreBufferedIndexInput__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreBufferedIndexInput__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreBufferedIndexInput__Annotations$1(void);
 
 @implementation OrgApacheLuceneStoreBufferedIndexInput
 
@@ -69,7 +69,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)setBufferSizeWithInt:(jint)newSize {
-  JreAssert((buffer_ == nil || bufferSize_ == buffer_->size_), (JreStrcat("$@$I$I", @"buffer=", buffer_, @" bufferSize=", bufferSize_, @" buffer.length=", (buffer_ != nil ? buffer_->size_ : 0))));
+  JreAssert(buffer_ == nil || bufferSize_ == buffer_->size_, JreStrcat("$@$I$I", @"buffer=", buffer_, @" bufferSize=", bufferSize_, @" buffer.length=", (buffer_ != nil ? buffer_->size_ : 0)));
   if (newSize != bufferSize_) {
     OrgApacheLuceneStoreBufferedIndexInput_checkBufferSizeWithInt_(self, newSize);
     bufferSize_ = newSize;
@@ -248,7 +248,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)copyBytesWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)outArg
                                             withLong:(jlong)numBytes {
-  JreAssert((numBytes >= 0), (JreStrcat("$J", @"numBytes=", numBytes)));
+  JreAssert(numBytes >= 0, JreStrcat("$J", @"numBytes=", numBytes));
   while (numBytes > 0) {
     if (bufferLength_ == bufferPosition_) {
       OrgApacheLuceneStoreBufferedIndexInput_refill(self);

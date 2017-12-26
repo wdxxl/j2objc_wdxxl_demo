@@ -99,20 +99,33 @@ withOrgApacheCommonsCodecBinaryBaseNCodec_Context:(OrgApacheCommonsCodecBinaryBa
 
 + (IOSByteArray *)toIntegerBytesWithJavaMathBigInteger:(JavaMathBigInteger *)bigInt;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0
+                    withInt:(jint)arg1
+                    withInt:(jint)arg2
+                    withInt:(jint)arg3 NS_UNAVAILABLE;
+
+- (instancetype)initWithInt:(jint)arg0
+                    withInt:(jint)arg1
+                    withInt:(jint)arg2
+                    withInt:(jint)arg3
+                   withByte:(jbyte)arg4 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecBinaryBase64)
 
-inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_CHUNK_SEPARATOR();
+inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_CHUNK_SEPARATOR(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSByteArray *OrgApacheCommonsCodecBinaryBase64_CHUNK_SEPARATOR;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBase64, CHUNK_SEPARATOR, IOSByteArray *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecBinaryBase64_init(OrgApacheCommonsCodecBinaryBase64 *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase64 *new_OrgApacheCommonsCodecBinaryBase64_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase64 *new_OrgApacheCommonsCodecBinaryBase64_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase64 *create_OrgApacheCommonsCodecBinaryBase64_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase64 *create_OrgApacheCommonsCodecBinaryBase64_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecBinaryBase64_initWithBoolean_(OrgApacheCommonsCodecBinaryBase64 *self, jboolean urlSafe);
 

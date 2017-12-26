@@ -127,7 +127,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
 }
 
 - (void)shrinkHashWithInt:(jint)targetSize {
-  JreAssert((postingsCompacted_ || numPostings_ == 0), (@"org/apache/lucene/index/TermsHashPerField.java:95 condition failed: assert postingsCompacted || numPostings == 0;"));
+  JreAssert(postingsCompacted_ || numPostings_ == 0, @"org/apache/lucene/index/TermsHashPerField.java:95 condition failed: assert postingsCompacted || numPostings == 0;");
   jint newSize = 4;
   if (newSize != ((IOSIntArray *) nil_chk(postingsHash_))->size_) {
     jlong previousSize = postingsHash_->size_;
@@ -146,7 +146,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
 
 - (void)reset {
   if (!postingsCompacted_) OrgApacheLuceneIndexTermsHashPerField_compactPostings(self);
-  JreAssert((numPostings_ <= ((IOSIntArray *) nil_chk(postingsHash_))->size_), (@"org/apache/lucene/index/TermsHashPerField.java:118 condition failed: assert numPostings <= postingsHash.length;"));
+  JreAssert(numPostings_ <= ((IOSIntArray *) nil_chk(postingsHash_))->size_, @"org/apache/lucene/index/TermsHashPerField.java:118 condition failed: assert numPostings <= postingsHash.length;");
   if (numPostings_ > 0) {
     JavaUtilArrays_fillWithIntArray_withInt_withInt_withInt_(postingsHash_, 0, numPostings_, -1);
     numPostings_ = 0;
@@ -169,7 +169,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
 - (void)initReaderWithOrgApacheLuceneIndexByteSliceReader:(OrgApacheLuceneIndexByteSliceReader *)reader
                                                   withInt:(jint)termID
                                                   withInt:(jint)stream {
-  JreAssert((stream < streamCount_), (@"org/apache/lucene/index/TermsHashPerField.java:142 condition failed: assert stream < streamCount;"));
+  JreAssert(stream < streamCount_, @"org/apache/lucene/index/TermsHashPerField.java:142 condition failed: assert stream < streamCount;");
   jint intStart = IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->intStarts_), termID);
   IOSIntArray *ints = IOSObjectArray_Get(nil_chk(((OrgApacheLuceneIndexIntBlockPool *) nil_chk(intPool_))->buffers_), JreRShift32(intStart, OrgApacheLuceneIndexDocumentsWriter_INT_BLOCK_SHIFT));
   jint upto = intStart & OrgApacheLuceneIndexDocumentsWriter_INT_BLOCK_MASK;
@@ -214,7 +214,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
 - (void)addWithInt:(jint)textStart {
   jint code = textStart;
   jint hashPos = code & postingsHashMask_;
-  JreAssert((!postingsCompacted_), (@"org/apache/lucene/index/TermsHashPerField.java:288 condition failed: assert !postingsCompacted;"));
+  JreAssert(!postingsCompacted_, @"org/apache/lucene/index/TermsHashPerField.java:288 condition failed: assert !postingsCompacted;");
   jint termID = IOSIntArray_Get(nil_chk(postingsHash_), hashPos);
   if (termID != -1 && IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->textStarts_), termID) != textStart) {
     jint inc = ((JreRShift32(code, 8)) + code) | 1;
@@ -230,9 +230,9 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
     if (termID >= ((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->size_) {
       OrgApacheLuceneIndexTermsHashPerField_growParallelPostingsArray(self);
     }
-    JreAssert((termID >= 0), (@"org/apache/lucene/index/TermsHashPerField.java:315 condition failed: assert termID >= 0;"));
+    JreAssert(termID >= 0, @"org/apache/lucene/index/TermsHashPerField.java:315 condition failed: assert termID >= 0;");
     *IOSIntArray_GetRef(nil_chk(((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->textStarts_), termID) = textStart;
-    JreAssert((IOSIntArray_Get(nil_chk(postingsHash_), hashPos) == -1), (@"org/apache/lucene/index/TermsHashPerField.java:319 condition failed: assert postingsHash[hashPos] == -1;"));
+    JreAssert(IOSIntArray_Get(nil_chk(postingsHash_), hashPos) == -1, @"org/apache/lucene/index/TermsHashPerField.java:319 condition failed: assert postingsHash[hashPos] == -1;");
     *IOSIntArray_GetRef(postingsHash_, hashPos) = termID;
     if (numPostings_ == postingsHashHalfSize_) [self rehashPostingsWithInt:2 * postingsHashSize_];
     if (numPostingInt_ + ((OrgApacheLuceneIndexIntBlockPool *) nil_chk(intPool_))->intUpto_ > OrgApacheLuceneIndexDocumentsWriter_INT_BLOCK_SIZE) [intPool_ nextBuffer];
@@ -257,7 +257,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
 }
 
 - (void)add {
-  JreAssert((!postingsCompacted_), (@"org/apache/lucene/index/TermsHashPerField.java:358 condition failed: assert !postingsCompacted;"));
+  JreAssert(!postingsCompacted_, @"org/apache/lucene/index/TermsHashPerField.java:358 condition failed: assert !postingsCompacted;");
   IOSCharArray *tokenText = [((id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>) nil_chk(termAtt_)) buffer];
   jint tokenTextLen = [((id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>) nil_chk(termAtt_)) java_length];
   jint downto = tokenTextLen;
@@ -310,14 +310,14 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
     if (termID >= ((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->size_) {
       OrgApacheLuceneIndexTermsHashPerField_growParallelPostingsArray(self);
     }
-    JreAssert((termID != -1), (@"org/apache/lucene/index/TermsHashPerField.java:443 condition failed: assert termID != -1;"));
+    JreAssert(termID != -1, @"org/apache/lucene/index/TermsHashPerField.java:443 condition failed: assert termID != -1;");
     IOSCharArray *text = charPool_->buffer_;
     jint textUpto = charPool_->charUpto_;
     *IOSIntArray_GetRef(nil_chk(((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->textStarts_), termID) = textUpto + charPool_->charOffset_;
     charPool_->charUpto_ += textLen1;
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(tokenText, 0, text, textUpto, tokenTextLen);
     *IOSCharArray_GetRef(nil_chk(text), textUpto + tokenTextLen) = (jint) 0xffff;
-    JreAssert((IOSIntArray_Get(nil_chk(postingsHash_), hashPos) == -1), (@"org/apache/lucene/index/TermsHashPerField.java:452 condition failed: assert postingsHash[hashPos] == -1;"));
+    JreAssert(IOSIntArray_Get(nil_chk(postingsHash_), hashPos) == -1, @"org/apache/lucene/index/TermsHashPerField.java:452 condition failed: assert postingsHash[hashPos] == -1;");
     *IOSIntArray_GetRef(postingsHash_, hashPos) = termID;
     if (numPostings_ == postingsHashHalfSize_) {
       [self rehashPostingsWithInt:2 * postingsHashSize_];
@@ -349,7 +349,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
                 withByte:(jbyte)b {
   jint upto = IOSIntArray_Get(nil_chk(intUptos_), intUptoStart_ + stream);
   IOSByteArray *bytes = IOSObjectArray_Get(nil_chk(((OrgApacheLuceneIndexByteBlockPool *) nil_chk(bytePool_))->buffers_), JreRShift32(upto, OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_SHIFT));
-  JreAssert((bytes != nil), (@"org/apache/lucene/index/TermsHashPerField.java:498 condition failed: assert bytes != null;"));
+  JreAssert(bytes != nil, @"org/apache/lucene/index/TermsHashPerField.java:498 condition failed: assert bytes != null;");
   jint offset = upto & OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_MASK;
   if (IOSByteArray_Get(nil_chk(bytes), offset) != 0) {
     offset = [bytePool_ allocSliceWithByteArray:bytes withInt:offset];
@@ -370,7 +370,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
 
 - (void)writeVIntWithInt:(jint)stream
                  withInt:(jint)i {
-  JreAssert((stream < streamCount_), (@"org/apache/lucene/index/TermsHashPerField.java:518 condition failed: assert stream < streamCount;"));
+  JreAssert(stream < streamCount_, @"org/apache/lucene/index/TermsHashPerField.java:518 condition failed: assert stream < streamCount;");
   while ((i & ~(jint) 0x7F) != 0) {
     [self writeByteWithInt:stream withByte:(jbyte) ((i & (jint) 0x7f) | (jint) 0x80)];
     JreURShiftAssignInt(&i, 7);
@@ -408,7 +408,7 @@ __attribute__((unused)) static jint OrgApacheLuceneIndexTermsHashPerField_1_comp
       }
       else code = IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(postingsArray_))->textStarts_), termID);
       jint hashPos = code & newMask;
-      JreAssert((hashPos >= 0), (@"org/apache/lucene/index/TermsHashPerField.java:563 condition failed: assert hashPos >= 0;"));
+      JreAssert(hashPos >= 0, @"org/apache/lucene/index/TermsHashPerField.java:563 condition failed: assert hashPos >= 0;");
       if (IOSIntArray_Get(newHash, hashPos) != -1) {
         jint inc = ((JreRShift32(code, 8)) + code) | 1;
         do {
@@ -563,14 +563,14 @@ void OrgApacheLuceneIndexTermsHashPerField_compactPostings(OrgApacheLuceneIndexT
       upto++;
     }
   }
-  JreAssert((upto == self->numPostings_), (JreStrcat("$I$I", @"upto=", upto, @" numPostings=", self->numPostings_)));
+  JreAssert(upto == self->numPostings_, JreStrcat("$I$I", @"upto=", upto, @" numPostings=", self->numPostings_));
   self->postingsCompacted_ = true;
 }
 
 jboolean OrgApacheLuceneIndexTermsHashPerField_postingEqualsWithInt_withCharArray_withInt_(OrgApacheLuceneIndexTermsHashPerField *self, jint termID, IOSCharArray *tokenText, jint tokenTextLen) {
   jint textStart = IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexParallelPostingsArray *) nil_chk(self->postingsArray_))->textStarts_), termID);
   IOSCharArray *text = IOSObjectArray_Get(nil_chk(((OrgApacheLuceneIndexCharBlockPool *) nil_chk(((OrgApacheLuceneIndexTermsHashPerThread *) nil_chk(self->perThread_))->charPool_))->buffers_), JreRShift32(textStart, OrgApacheLuceneIndexDocumentsWriter_CHAR_BLOCK_SHIFT));
-  JreAssert((text != nil), (@"org/apache/lucene/index/TermsHashPerField.java:246 condition failed: assert text != null;"));
+  JreAssert(text != nil, @"org/apache/lucene/index/TermsHashPerField.java:246 condition failed: assert text != null;");
   jint pos = textStart & OrgApacheLuceneIndexDocumentsWriter_CHAR_BLOCK_MASK;
   jint tokenPos = 0;
   for (; tokenPos < tokenTextLen; pos++, tokenPos++) if (IOSCharArray_Get(nil_chk(tokenText), tokenPos) != IOSCharArray_Get(nil_chk(text), pos)) return false;
@@ -678,7 +678,7 @@ OrgApacheLuceneIndexTermsHashPerField_1 *create_OrgApacheLuceneIndexTermsHashPer
 }
 
 jint OrgApacheLuceneIndexTermsHashPerField_1_comparePostingsWithCharArray_withInt_withCharArray_withInt_(OrgApacheLuceneIndexTermsHashPerField_1 *self, IOSCharArray *text1, jint pos1, IOSCharArray *text2, jint pos2) {
-  JreAssert((text1 != text2 || pos1 != pos2), (@"org/apache/lucene/index/TermsHashPerField.java:218 condition failed: assert text1 != text2 || pos1 != pos2;"));
+  JreAssert(text1 != text2 || pos1 != pos2, @"org/apache/lucene/index/TermsHashPerField.java:218 condition failed: assert text1 != text2 || pos1 != pos2;");
   while (true) {
     jchar c1 = IOSCharArray_Get(nil_chk(text1), pos1++);
     jchar c2 = IOSCharArray_Get(nil_chk(text2), pos2++);
@@ -687,6 +687,6 @@ jint OrgApacheLuceneIndexTermsHashPerField_1_comparePostingsWithCharArray_withIn
       else if ((jint) 0xffff == c1) return -1;
       else return c1 - c2;
     }
-    else JreAssert((c1 != (jint) 0xffff), (@"org/apache/lucene/index/TermsHashPerField.java:233 condition failed: assert c1 != 0xffff;"));
+    else JreAssert(c1 != (jint) 0xffff, @"org/apache/lucene/index/TermsHashPerField.java:233 condition failed: assert c1 != 0xffff;");
   }
 }

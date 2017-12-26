@@ -54,7 +54,7 @@
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLinkedTreeMap, entrySet_, ComGoogleGsonInternalLinkedTreeMap_EntrySet *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLinkedTreeMap, keySet_LinkedTreeMap_, ComGoogleGsonInternalLinkedTreeMap_KeySet *)
 
-inline id<JavaUtilComparator> ComGoogleGsonInternalLinkedTreeMap_get_NATURAL_ORDER();
+inline id<JavaUtilComparator> ComGoogleGsonInternalLinkedTreeMap_get_NATURAL_ORDER(void);
 static id<JavaUtilComparator> ComGoogleGsonInternalLinkedTreeMap_NATURAL_ORDER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalLinkedTreeMap, NATURAL_ORDER, id<JavaUtilComparator>)
 
@@ -67,6 +67,8 @@ __attribute__((unused)) static void ComGoogleGsonInternalLinkedTreeMap_rebalance
 __attribute__((unused)) static void ComGoogleGsonInternalLinkedTreeMap_rotateLeftWithComGoogleGsonInternalLinkedTreeMap_Node_(ComGoogleGsonInternalLinkedTreeMap *self, ComGoogleGsonInternalLinkedTreeMap_Node *root);
 
 __attribute__((unused)) static void ComGoogleGsonInternalLinkedTreeMap_rotateRightWithComGoogleGsonInternalLinkedTreeMap_Node_(ComGoogleGsonInternalLinkedTreeMap *self, ComGoogleGsonInternalLinkedTreeMap_Node *root);
+
+__attribute__((unused)) static id ComGoogleGsonInternalLinkedTreeMap_writeReplace(ComGoogleGsonInternalLinkedTreeMap *self);
 
 @interface ComGoogleGsonInternalLinkedTreeMap_1 : NSObject < JavaUtilComparator >
 
@@ -81,9 +83,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalLinkedTreeMap_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalLinkedTreeMap_1_init(ComGoogleGsonInternalLinkedTreeMap_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalLinkedTreeMap_1 *new_ComGoogleGsonInternalLinkedTreeMap_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalLinkedTreeMap_1 *new_ComGoogleGsonInternalLinkedTreeMap_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalLinkedTreeMap_1 *create_ComGoogleGsonInternalLinkedTreeMap_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalLinkedTreeMap_1 *create_ComGoogleGsonInternalLinkedTreeMap_1_init(void);
 
 @interface ComGoogleGsonInternalLinkedTreeMap_LinkedTreeMapIterator : NSObject < JavaUtilIterator > {
  @public
@@ -364,7 +366,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (id)writeReplace {
-  return new_JavaUtilLinkedHashMap_initWithJavaUtilMap_(self);
+  return ComGoogleGsonInternalLinkedTreeMap_writeReplace(self);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -482,7 +484,7 @@ void ComGoogleGsonInternalLinkedTreeMap_replaceInParentWithComGoogleGsonInternal
       parent->left_ = replacement;
     }
     else {
-      JreAssert((parent->right_ == node), (@"com/google/gson/internal/LinkedTreeMap.java:295 condition failed: assert (parent.right == node);"));
+      JreAssert(parent->right_ == node, @"com/google/gson/internal/LinkedTreeMap.java:295 condition failed: assert (parent.right == node);");
       parent->right_ = replacement;
     }
   }
@@ -508,7 +510,7 @@ void ComGoogleGsonInternalLinkedTreeMap_rebalanceWithComGoogleGsonInternalLinked
         ComGoogleGsonInternalLinkedTreeMap_rotateLeftWithComGoogleGsonInternalLinkedTreeMap_Node_(self, node);
       }
       else {
-        JreAssert((rightDelta == 1), (@"com/google/gson/internal/LinkedTreeMap.java:328 condition failed: assert (rightDelta == 1);"));
+        JreAssert(rightDelta == 1, @"com/google/gson/internal/LinkedTreeMap.java:328 condition failed: assert (rightDelta == 1);");
         ComGoogleGsonInternalLinkedTreeMap_rotateRightWithComGoogleGsonInternalLinkedTreeMap_Node_(self, right);
         ComGoogleGsonInternalLinkedTreeMap_rotateLeftWithComGoogleGsonInternalLinkedTreeMap_Node_(self, node);
       }
@@ -526,7 +528,7 @@ void ComGoogleGsonInternalLinkedTreeMap_rebalanceWithComGoogleGsonInternalLinked
         ComGoogleGsonInternalLinkedTreeMap_rotateRightWithComGoogleGsonInternalLinkedTreeMap_Node_(self, node);
       }
       else {
-        JreAssert((leftDelta == -1), (@"com/google/gson/internal/LinkedTreeMap.java:346 condition failed: assert (leftDelta == -1);"));
+        JreAssert(leftDelta == -1, @"com/google/gson/internal/LinkedTreeMap.java:346 condition failed: assert (leftDelta == -1);");
         ComGoogleGsonInternalLinkedTreeMap_rotateLeftWithComGoogleGsonInternalLinkedTreeMap_Node_(self, left);
         ComGoogleGsonInternalLinkedTreeMap_rotateRightWithComGoogleGsonInternalLinkedTreeMap_Node_(self, node);
       }
@@ -541,7 +543,7 @@ void ComGoogleGsonInternalLinkedTreeMap_rebalanceWithComGoogleGsonInternalLinked
       }
     }
     else {
-      JreAssert(((delta == -1 || delta == 1)), (@"com/google/gson/internal/LinkedTreeMap.java:361 condition failed: assert (delta == -1 || delta == 1);"));
+      JreAssert((delta == -1 || delta == 1), @"com/google/gson/internal/LinkedTreeMap.java:361 condition failed: assert (delta == -1 || delta == 1);");
       node->height_ = JavaLangMath_maxWithInt_withInt_(leftHeight, rightHeight) + 1;
       if (!insert) {
         break;
@@ -580,6 +582,10 @@ void ComGoogleGsonInternalLinkedTreeMap_rotateRightWithComGoogleGsonInternalLink
   root->parent_ = pivot;
   root->height_ = JavaLangMath_maxWithInt_withInt_(right != nil ? right->height_ : 0, pivotRight != nil ? pivotRight->height_ : 0) + 1;
   pivot->height_ = JavaLangMath_maxWithInt_withInt_(root->height_, pivotLeft != nil ? pivotLeft->height_ : 0) + 1;
+}
+
+id ComGoogleGsonInternalLinkedTreeMap_writeReplace(ComGoogleGsonInternalLinkedTreeMap *self) {
+  return new_JavaUtilLinkedHashMap_initWithJavaUtilMap_(self);
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedTreeMap)

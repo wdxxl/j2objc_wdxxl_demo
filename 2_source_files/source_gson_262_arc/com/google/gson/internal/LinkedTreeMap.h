@@ -85,9 +85,9 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLinkedTreeMap, header_, ComGoogleGsonIn
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalLinkedTreeMap_init(ComGoogleGsonInternalLinkedTreeMap *self);
 
-FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap *new_ComGoogleGsonInternalLinkedTreeMap_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap *new_ComGoogleGsonInternalLinkedTreeMap_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap *create_ComGoogleGsonInternalLinkedTreeMap_init();
+FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap *create_ComGoogleGsonInternalLinkedTreeMap_init(void);
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalLinkedTreeMap_initWithJavaUtilComparator_(ComGoogleGsonInternalLinkedTreeMap *self, id<JavaUtilComparator> comparator);
 
@@ -159,9 +159,9 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLinkedTreeMap_Node, value_, id)
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalLinkedTreeMap_Node_init(ComGoogleGsonInternalLinkedTreeMap_Node *self);
 
-FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap_Node *new_ComGoogleGsonInternalLinkedTreeMap_Node_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap_Node *new_ComGoogleGsonInternalLinkedTreeMap_Node_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap_Node *create_ComGoogleGsonInternalLinkedTreeMap_Node_init();
+FOUNDATION_EXPORT ComGoogleGsonInternalLinkedTreeMap_Node *create_ComGoogleGsonInternalLinkedTreeMap_Node_init(void);
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalLinkedTreeMap_Node_initWithComGoogleGsonInternalLinkedTreeMap_Node_withId_withComGoogleGsonInternalLinkedTreeMap_Node_withComGoogleGsonInternalLinkedTreeMap_Node_(ComGoogleGsonInternalLinkedTreeMap_Node *self, ComGoogleGsonInternalLinkedTreeMap_Node *parent, id key, ComGoogleGsonInternalLinkedTreeMap_Node *next, ComGoogleGsonInternalLinkedTreeMap_Node *prev);
 
@@ -200,6 +200,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap_Node)
 #pragma mark Package-Private
 
 - (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -242,6 +246,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalLinkedTreeMap_EntrySet)
 #pragma mark Package-Private
 
 - (instancetype)initWithComGoogleGsonInternalLinkedTreeMap:(ComGoogleGsonInternalLinkedTreeMap *)outer$;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

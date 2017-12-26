@@ -24,6 +24,7 @@
 @class JavaLangFloat;
 @class JavaLangInteger;
 @class JavaLangLong;
+@class OrgApacheLuceneSearchMultiTermQuery;
 
 @interface OrgApacheLuceneSearchNumericRangeFilter : OrgApacheLuceneSearchMultiTermQueryWrapperFilter
 
@@ -92,6 +93,10 @@
                                                      withJavaLangLong:(JavaLangLong *)max
                                                           withBoolean:(jboolean)minInclusive
                                                           withBoolean:(jboolean)maxInclusive OBJC_METHOD_FAMILY_NONE;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchMultiTermQuery:(OrgApacheLuceneSearchMultiTermQuery *)arg0 NS_UNAVAILABLE;
 
 @end
 

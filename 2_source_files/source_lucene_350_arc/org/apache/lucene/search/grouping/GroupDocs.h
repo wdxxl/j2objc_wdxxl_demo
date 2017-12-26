@@ -35,6 +35,10 @@ withOrgApacheLuceneSearchScoreDocArray:(IOSObjectArray *)scoreDocs
                        withId:(id)groupValue
             withNSObjectArray:(IOSObjectArray *)groupSortValues;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingGroupDocs)

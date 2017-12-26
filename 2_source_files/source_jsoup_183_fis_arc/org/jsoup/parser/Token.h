@@ -137,9 +137,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserToken_Doctype, systemIdentifier_, JavaLangStri
 
 FOUNDATION_EXPORT void OrgJsoupParserToken_Doctype_init(OrgJsoupParserToken_Doctype *self);
 
-FOUNDATION_EXPORT OrgJsoupParserToken_Doctype *new_OrgJsoupParserToken_Doctype_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserToken_Doctype *new_OrgJsoupParserToken_Doctype_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserToken_Doctype *create_OrgJsoupParserToken_Doctype_init();
+FOUNDATION_EXPORT OrgJsoupParserToken_Doctype *create_OrgJsoupParserToken_Doctype_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Doctype)
 
@@ -232,9 +232,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserToken_StartTag)
 
 FOUNDATION_EXPORT void OrgJsoupParserToken_StartTag_init(OrgJsoupParserToken_StartTag *self);
 
-FOUNDATION_EXPORT OrgJsoupParserToken_StartTag *new_OrgJsoupParserToken_StartTag_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserToken_StartTag *new_OrgJsoupParserToken_StartTag_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserToken_StartTag *create_OrgJsoupParserToken_StartTag_init();
+FOUNDATION_EXPORT OrgJsoupParserToken_StartTag *create_OrgJsoupParserToken_StartTag_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_StartTag)
 
@@ -259,9 +259,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserToken_EndTag)
 
 FOUNDATION_EXPORT void OrgJsoupParserToken_EndTag_init(OrgJsoupParserToken_EndTag *self);
 
-FOUNDATION_EXPORT OrgJsoupParserToken_EndTag *new_OrgJsoupParserToken_EndTag_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserToken_EndTag *new_OrgJsoupParserToken_EndTag_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserToken_EndTag *create_OrgJsoupParserToken_EndTag_init();
+FOUNDATION_EXPORT OrgJsoupParserToken_EndTag *create_OrgJsoupParserToken_EndTag_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_EndTag)
 
@@ -299,9 +299,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserToken_Comment, data_, JavaLangStringBuilder *)
 
 FOUNDATION_EXPORT void OrgJsoupParserToken_Comment_init(OrgJsoupParserToken_Comment *self);
 
-FOUNDATION_EXPORT OrgJsoupParserToken_Comment *new_OrgJsoupParserToken_Comment_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserToken_Comment *new_OrgJsoupParserToken_Comment_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserToken_Comment *create_OrgJsoupParserToken_Comment_init();
+FOUNDATION_EXPORT OrgJsoupParserToken_Comment *create_OrgJsoupParserToken_Comment_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Comment)
 
@@ -334,9 +334,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserToken_Character)
 
 FOUNDATION_EXPORT void OrgJsoupParserToken_Character_init(OrgJsoupParserToken_Character *self);
 
-FOUNDATION_EXPORT OrgJsoupParserToken_Character *new_OrgJsoupParserToken_Character_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserToken_Character *new_OrgJsoupParserToken_Character_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserToken_Character *create_OrgJsoupParserToken_Character_init();
+FOUNDATION_EXPORT OrgJsoupParserToken_Character *create_OrgJsoupParserToken_Character_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Character)
 
@@ -361,9 +361,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserToken_EOF)
 
 FOUNDATION_EXPORT void OrgJsoupParserToken_EOF_init(OrgJsoupParserToken_EOF *self);
 
-FOUNDATION_EXPORT OrgJsoupParserToken_EOF *new_OrgJsoupParserToken_EOF_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserToken_EOF *new_OrgJsoupParserToken_EOF_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserToken_EOF *create_OrgJsoupParserToken_EOF_init();
+FOUNDATION_EXPORT OrgJsoupParserToken_EOF *create_OrgJsoupParserToken_EOF_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_EOF)
 
@@ -387,17 +387,13 @@ typedef NS_ENUM(NSUInteger, OrgJsoupParserToken_TokenType_Enum) {
   OrgJsoupParserToken_TokenType_Enum_EOF = 5,
 };
 
-@interface OrgJsoupParserToken_TokenType : JavaLangEnum < NSCopying >
+@interface OrgJsoupParserToken_TokenType : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgJsoupParserToken_TokenType *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -406,25 +402,25 @@ J2OBJC_STATIC_INIT(OrgJsoupParserToken_TokenType)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_values_[];
 
-inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_Doctype();
+inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_Doctype(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserToken_TokenType, Doctype)
 
-inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_StartTag();
+inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_StartTag(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserToken_TokenType, StartTag)
 
-inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_EndTag();
+inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_EndTag(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserToken_TokenType, EndTag)
 
-inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_Comment();
+inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_Comment(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserToken_TokenType, Comment)
 
-inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_Character();
+inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_Character(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserToken_TokenType, Character)
 
-inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_EOF();
+inline OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_get_EOF(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserToken_TokenType, EOF)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgJsoupParserToken_TokenType_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgJsoupParserToken_TokenType_values(void);
 
 FOUNDATION_EXPORT OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_valueOfWithNSString_(NSString *name);
 

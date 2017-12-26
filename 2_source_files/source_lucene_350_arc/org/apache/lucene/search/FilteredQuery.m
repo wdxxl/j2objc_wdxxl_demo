@@ -218,7 +218,7 @@ OrgApacheLuceneSearchFilteredQuery *create_OrgApacheLuceneSearchFilteredQuery_in
 
 OrgApacheLuceneSearchScorer *OrgApacheLuceneSearchFilteredQuery_getFilteredScorerWithOrgApacheLuceneIndexIndexReader_withOrgApacheLuceneSearchSimilarity_withOrgApacheLuceneSearchWeight_withOrgApacheLuceneSearchWeight_withOrgApacheLuceneSearchFilter_(OrgApacheLuceneIndexIndexReader *indexReader, OrgApacheLuceneSearchSimilarity *similarity, OrgApacheLuceneSearchWeight *weight, OrgApacheLuceneSearchWeight *wrapperWeight, OrgApacheLuceneSearchFilter *filter) {
   OrgApacheLuceneSearchFilteredQuery_initialize();
-  JreAssert((filter != nil), (@"org/apache/lucene/search/FilteredQuery.java:134 condition failed: assert filter != null;"));
+  JreAssert(filter != nil, @"org/apache/lucene/search/FilteredQuery.java:134 condition failed: assert filter != null;");
   OrgApacheLuceneSearchDocIdSet *filterDocIdSet = [((OrgApacheLuceneSearchFilter *) nil_chk(filter)) getDocIdSetWithOrgApacheLuceneIndexIndexReader:indexReader];
   if (filterDocIdSet == nil) {
     return nil;

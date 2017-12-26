@@ -22,7 +22,7 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneMessagesMessageImpl, key_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneMessagesMessageImpl, arguments_, IOSObjectArray *)
 
-inline jlong OrgApacheLuceneMessagesMessageImpl_get_serialVersionUID();
+inline jlong OrgApacheLuceneMessagesMessageImpl_get_serialVersionUID(void);
 #define OrgApacheLuceneMessagesMessageImpl_serialVersionUID -3077643314630884523LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneMessagesMessageImpl, serialVersionUID, jlong)
 

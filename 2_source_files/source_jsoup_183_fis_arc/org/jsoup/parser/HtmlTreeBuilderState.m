@@ -40,7 +40,7 @@
 
 @end
 
-inline NSString *OrgJsoupParserHtmlTreeBuilderState_get_nullString();
+inline NSString *OrgJsoupParserHtmlTreeBuilderState_get_nullString(void);
 inline NSString *OrgJsoupParserHtmlTreeBuilderState_set_nullString(NSString *value);
 static NSString *OrgJsoupParserHtmlTreeBuilderState_nullString;
 J2OBJC_STATIC_FIELD_OBJ(OrgJsoupParserHtmlTreeBuilderState, nullString, NSString *)
@@ -57,7 +57,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_handleRcD
 
 __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_handleRawtextWithOrgJsoupParserToken_StartTag_withOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserToken_StartTag *startTag, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_1 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_1 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -70,7 +70,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_1_initWit
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_1 *new_OrgJsoupParserHtmlTreeBuilderState_1_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_2 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_2 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -88,7 +88,7 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_2 *new_OrgJsou
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_2_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_2 *self, OrgJsoupParserToken *t, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_3 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_3 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -101,7 +101,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_3_initWit
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_3 *new_OrgJsoupParserHtmlTreeBuilderState_3_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_4 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_4 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -119,7 +119,7 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_4 *new_OrgJsou
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_4_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_4 *self, OrgJsoupParserToken *t, OrgJsoupParserTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_5 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_5 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -137,7 +137,7 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_5 *new_OrgJsou
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_5_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_5 *self, OrgJsoupParserToken *t, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_6 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_6 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -155,7 +155,7 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_6 *new_OrgJsou
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_6_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_6 *self, OrgJsoupParserToken *t, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_7 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_7 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -171,7 +171,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_7_initWit
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_7 *new_OrgJsoupParserHtmlTreeBuilderState_7_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_8 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_8 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -184,7 +184,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_8_initWit
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_8 *new_OrgJsoupParserHtmlTreeBuilderState_8_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_9 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_9 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -200,7 +200,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_9_initWit
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_9 *new_OrgJsoupParserHtmlTreeBuilderState_9_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_10 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_10 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -213,7 +213,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_10_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_10 *new_OrgJsoupParserHtmlTreeBuilderState_10_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_11 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_11 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -226,7 +226,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_11_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_11 *new_OrgJsoupParserHtmlTreeBuilderState_11_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_12 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_12 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -244,7 +244,7 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_12 *new_OrgJso
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_12_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_12 *self, OrgJsoupParserToken *t, OrgJsoupParserTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_13 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_13 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -267,7 +267,7 @@ __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_13_ex
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_13_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_13 *self, OrgJsoupParserToken *t, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_14 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_14 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -290,7 +290,7 @@ __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_14_an
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_14_handleMissingTrWithOrgJsoupParserToken_withOrgJsoupParserTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_14 *self, OrgJsoupParserToken *t, OrgJsoupParserTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_15 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_15 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -312,7 +312,7 @@ __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_15_an
 
 __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_15_closeCellWithOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_15 *self, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_16 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_16 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -330,7 +330,7 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_16 *new_OrgJso
 
 __attribute__((unused)) static jboolean OrgJsoupParserHtmlTreeBuilderState_16_anythingElseWithOrgJsoupParserToken_withOrgJsoupParserHtmlTreeBuilder_(OrgJsoupParserHtmlTreeBuilderState_16 *self, OrgJsoupParserToken *t, OrgJsoupParserHtmlTreeBuilder *tb);
 
-@interface OrgJsoupParserHtmlTreeBuilderState_17 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_17 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -343,7 +343,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_17_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_17 *new_OrgJsoupParserHtmlTreeBuilderState_17_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_18 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_18 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -356,7 +356,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_18_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_18 *new_OrgJsoupParserHtmlTreeBuilderState_18_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_19 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_19 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -369,7 +369,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_19_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_19 *new_OrgJsoupParserHtmlTreeBuilderState_19_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_20 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_20 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -382,7 +382,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_20_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_20 *new_OrgJsoupParserHtmlTreeBuilderState_20_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_21 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_21 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -395,7 +395,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_21_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_21 *new_OrgJsoupParserHtmlTreeBuilderState_21_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_22 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_22 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -408,7 +408,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_22_initWi
 
 __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_22 *new_OrgJsoupParserHtmlTreeBuilderState_22_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserHtmlTreeBuilderState_23 : OrgJsoupParserHtmlTreeBuilderState < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState_23 : OrgJsoupParserHtmlTreeBuilderState
 
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
@@ -429,79 +429,79 @@ __attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_23 *new_OrgJso
 
 J2OBJC_STATIC_INIT(OrgJsoupParserHtmlTreeBuilderState_Constants)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartToHead();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartToHead(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartToHead;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartToHead, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartPClosers();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartPClosers(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartPClosers;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartPClosers, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_Headings();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_Headings(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_Headings;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, Headings, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartPreListing();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartPreListing(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartPreListing;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartPreListing, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartLiBreakers();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartLiBreakers(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartLiBreakers;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartLiBreakers, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_DdDt();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_DdDt(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_DdDt;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, DdDt, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_Formatters();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_Formatters(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_Formatters;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, Formatters, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartApplets();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartApplets(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartApplets;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartApplets, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartEmptyFormatters();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartEmptyFormatters(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartEmptyFormatters;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartEmptyFormatters, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartMedia();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartMedia(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartMedia;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartMedia, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartInputAttribs();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartInputAttribs(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartInputAttribs;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartInputAttribs, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartOptions();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartOptions(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartOptions;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartOptions, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartRuby();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartRuby(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartRuby;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartRuby, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartDrop();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyStartDrop(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyStartDrop;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyStartDrop, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyEndClosers();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyEndClosers(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyEndClosers;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyEndClosers, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyEndAdoptionFormatters();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyEndAdoptionFormatters(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyEndAdoptionFormatters;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyEndAdoptionFormatters, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyEndTableFosters();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_get_InBodyEndTableFosters(void);
 static IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_Constants_InBodyEndTableFosters;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilderState_Constants, InBodyEndTableFosters, IOSObjectArray *)
 
 __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_Constants_init(OrgJsoupParserHtmlTreeBuilderState_Constants *self);
 
-__attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_Constants *new_OrgJsoupParserHtmlTreeBuilderState_Constants_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_Constants *new_OrgJsoupParserHtmlTreeBuilderState_Constants_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_Constants *create_OrgJsoupParserHtmlTreeBuilderState_Constants_init();
+__attribute__((unused)) static OrgJsoupParserHtmlTreeBuilderState_Constants *create_OrgJsoupParserHtmlTreeBuilderState_Constants_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserHtmlTreeBuilderState_Constants)
 
@@ -542,10 +542,6 @@ OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_values_[2
 
 + (OrgJsoupParserHtmlTreeBuilderState *)valueOfWithNSString:(NSString *)name {
   return OrgJsoupParserHtmlTreeBuilderState_valueOfWithNSString_(name);
-}
-
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -601,29 +597,29 @@ OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_values_[2
 
 + (void)initialize {
   if (self == [OrgJsoupParserHtmlTreeBuilderState class]) {
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, Initial) = new_OrgJsoupParserHtmlTreeBuilderState_1_initWithNSString_withInt_(@"Initial", 0);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHtml) = new_OrgJsoupParserHtmlTreeBuilderState_2_initWithNSString_withInt_(@"BeforeHtml", 1);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHead) = new_OrgJsoupParserHtmlTreeBuilderState_3_initWithNSString_withInt_(@"BeforeHead", 2);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHead) = new_OrgJsoupParserHtmlTreeBuilderState_4_initWithNSString_withInt_(@"InHead", 3);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHeadNoscript) = new_OrgJsoupParserHtmlTreeBuilderState_5_initWithNSString_withInt_(@"InHeadNoscript", 4);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterHead) = new_OrgJsoupParserHtmlTreeBuilderState_6_initWithNSString_withInt_(@"AfterHead", 5);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InBody) = new_OrgJsoupParserHtmlTreeBuilderState_7_initWithNSString_withInt_(@"InBody", 6);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, Text) = new_OrgJsoupParserHtmlTreeBuilderState_8_initWithNSString_withInt_(@"Text", 7);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTable) = new_OrgJsoupParserHtmlTreeBuilderState_9_initWithNSString_withInt_(@"InTable", 8);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableText) = new_OrgJsoupParserHtmlTreeBuilderState_10_initWithNSString_withInt_(@"InTableText", 9);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCaption) = new_OrgJsoupParserHtmlTreeBuilderState_11_initWithNSString_withInt_(@"InCaption", 10);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InColumnGroup) = new_OrgJsoupParserHtmlTreeBuilderState_12_initWithNSString_withInt_(@"InColumnGroup", 11);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableBody) = new_OrgJsoupParserHtmlTreeBuilderState_13_initWithNSString_withInt_(@"InTableBody", 12);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InRow) = new_OrgJsoupParserHtmlTreeBuilderState_14_initWithNSString_withInt_(@"InRow", 13);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCell) = new_OrgJsoupParserHtmlTreeBuilderState_15_initWithNSString_withInt_(@"InCell", 14);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelect) = new_OrgJsoupParserHtmlTreeBuilderState_16_initWithNSString_withInt_(@"InSelect", 15);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelectInTable) = new_OrgJsoupParserHtmlTreeBuilderState_17_initWithNSString_withInt_(@"InSelectInTable", 16);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterBody) = new_OrgJsoupParserHtmlTreeBuilderState_18_initWithNSString_withInt_(@"AfterBody", 17);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InFrameset) = new_OrgJsoupParserHtmlTreeBuilderState_19_initWithNSString_withInt_(@"InFrameset", 18);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterFrameset) = new_OrgJsoupParserHtmlTreeBuilderState_20_initWithNSString_withInt_(@"AfterFrameset", 19);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterBody) = new_OrgJsoupParserHtmlTreeBuilderState_21_initWithNSString_withInt_(@"AfterAfterBody", 20);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterFrameset) = new_OrgJsoupParserHtmlTreeBuilderState_22_initWithNSString_withInt_(@"AfterAfterFrameset", 21);
-    JreEnum(OrgJsoupParserHtmlTreeBuilderState, ForeignContent) = new_OrgJsoupParserHtmlTreeBuilderState_23_initWithNSString_withInt_(@"ForeignContent", 22);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, Initial) = new_OrgJsoupParserHtmlTreeBuilderState_1_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHtml) = new_OrgJsoupParserHtmlTreeBuilderState_2_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHead) = new_OrgJsoupParserHtmlTreeBuilderState_3_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHead) = new_OrgJsoupParserHtmlTreeBuilderState_4_initWithNSString_withInt_(@"", 3);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHeadNoscript) = new_OrgJsoupParserHtmlTreeBuilderState_5_initWithNSString_withInt_(@"", 4);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterHead) = new_OrgJsoupParserHtmlTreeBuilderState_6_initWithNSString_withInt_(@"", 5);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InBody) = new_OrgJsoupParserHtmlTreeBuilderState_7_initWithNSString_withInt_(@"", 6);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, Text) = new_OrgJsoupParserHtmlTreeBuilderState_8_initWithNSString_withInt_(@"", 7);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTable) = new_OrgJsoupParserHtmlTreeBuilderState_9_initWithNSString_withInt_(@"", 8);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableText) = new_OrgJsoupParserHtmlTreeBuilderState_10_initWithNSString_withInt_(@"", 9);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCaption) = new_OrgJsoupParserHtmlTreeBuilderState_11_initWithNSString_withInt_(@"", 10);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InColumnGroup) = new_OrgJsoupParserHtmlTreeBuilderState_12_initWithNSString_withInt_(@"", 11);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableBody) = new_OrgJsoupParserHtmlTreeBuilderState_13_initWithNSString_withInt_(@"", 12);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InRow) = new_OrgJsoupParserHtmlTreeBuilderState_14_initWithNSString_withInt_(@"", 13);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCell) = new_OrgJsoupParserHtmlTreeBuilderState_15_initWithNSString_withInt_(@"", 14);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelect) = new_OrgJsoupParserHtmlTreeBuilderState_16_initWithNSString_withInt_(@"", 15);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelectInTable) = new_OrgJsoupParserHtmlTreeBuilderState_17_initWithNSString_withInt_(@"", 16);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterBody) = new_OrgJsoupParserHtmlTreeBuilderState_18_initWithNSString_withInt_(@"", 17);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, InFrameset) = new_OrgJsoupParserHtmlTreeBuilderState_19_initWithNSString_withInt_(@"", 18);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterFrameset) = new_OrgJsoupParserHtmlTreeBuilderState_20_initWithNSString_withInt_(@"", 19);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterBody) = new_OrgJsoupParserHtmlTreeBuilderState_21_initWithNSString_withInt_(@"", 20);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterFrameset) = new_OrgJsoupParserHtmlTreeBuilderState_22_initWithNSString_withInt_(@"", 21);
+    JreEnum(OrgJsoupParserHtmlTreeBuilderState, ForeignContent) = new_OrgJsoupParserHtmlTreeBuilderState_23_initWithNSString_withInt_(@"", 22);
     OrgJsoupParserHtmlTreeBuilderState_nullString = NSString_java_valueOfChar_(0x0000);
     J2OBJC_SET_INITIALIZED(OrgJsoupParserHtmlTreeBuilderState)
   }

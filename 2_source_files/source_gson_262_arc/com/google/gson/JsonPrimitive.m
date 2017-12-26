@@ -34,7 +34,7 @@
 
 J2OBJC_FIELD_SETTER(ComGoogleGsonJsonPrimitive, value_, id)
 
-inline IOSObjectArray *ComGoogleGsonJsonPrimitive_get_PRIMITIVE_TYPES();
+inline IOSObjectArray *ComGoogleGsonJsonPrimitive_get_PRIMITIVE_TYPES(void);
 static IOSObjectArray *ComGoogleGsonJsonPrimitive_PRIMITIVE_TYPES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonJsonPrimitive, PRIMITIVE_TYPES, IOSObjectArray *)
 

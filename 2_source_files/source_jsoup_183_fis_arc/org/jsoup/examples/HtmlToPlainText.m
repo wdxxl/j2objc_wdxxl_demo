@@ -22,11 +22,11 @@
 #include "org/jsoup/select/NodeTraversor.h"
 #include "org/jsoup/select/NodeVisitor.h"
 
-inline NSString *OrgJsoupExamplesHtmlToPlainText_get_userAgent();
+inline NSString *OrgJsoupExamplesHtmlToPlainText_get_userAgent(void);
 static NSString *OrgJsoupExamplesHtmlToPlainText_userAgent = @"Mozilla/5.0 (jsoup)";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupExamplesHtmlToPlainText, userAgent, NSString *)
 
-inline jint OrgJsoupExamplesHtmlToPlainText_get_timeout();
+inline jint OrgJsoupExamplesHtmlToPlainText_get_timeout(void);
 #define OrgJsoupExamplesHtmlToPlainText_timeout 5000
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupExamplesHtmlToPlainText, timeout, jint)
 
@@ -54,7 +54,7 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupExamplesHtmlToPlainText_FormattingVisitor)
 
 J2OBJC_FIELD_SETTER(OrgJsoupExamplesHtmlToPlainText_FormattingVisitor, accum_, JavaLangStringBuilder *)
 
-inline jint OrgJsoupExamplesHtmlToPlainText_FormattingVisitor_get_maxWidth();
+inline jint OrgJsoupExamplesHtmlToPlainText_FormattingVisitor_get_maxWidth(void);
 #define OrgJsoupExamplesHtmlToPlainText_FormattingVisitor_maxWidth 80
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupExamplesHtmlToPlainText_FormattingVisitor, maxWidth, jint)
 

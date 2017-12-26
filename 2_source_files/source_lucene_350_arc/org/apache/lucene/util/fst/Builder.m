@@ -108,7 +108,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstBuilder_compileAllTarg
 
 - (void)addWithOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)input
                                     withId:(id)output {
-  JreAssert(([((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) getInputType] == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE1)), (@"org/apache/lucene/util/fst/Builder.java:271 condition failed: assert fst.getInputType() == FST.INPUT_TYPE.BYTE1;"));
+  JreAssert([((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) getInputType] == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE1), @"org/apache/lucene/util/fst/Builder.java:271 condition failed: assert fst.getInputType() == FST.INPUT_TYPE.BYTE1;");
   [((OrgApacheLuceneUtilIntsRef *) nil_chk(scratchIntsRef_)) growWithInt:((OrgApacheLuceneUtilBytesRef *) nil_chk(input))->length_];
   for (jint i = 0; i < input->length_; i++) {
     *IOSIntArray_GetRef(nil_chk(scratchIntsRef_->ints_), i) = IOSByteArray_Get(nil_chk(input->bytes_), i + input->offset_) & (jint) 0xFF;
@@ -121,7 +121,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstBuilder_compileAllTarg
                  withInt:(jint)offset
                  withInt:(jint)length
                   withId:(id)output {
-  JreAssert(([((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) getInputType] == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4)), (@"org/apache/lucene/util/fst/Builder.java:283 condition failed: assert fst.getInputType() == FST.INPUT_TYPE.BYTE4;"));
+  JreAssert([((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) getInputType] == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4), @"org/apache/lucene/util/fst/Builder.java:283 condition failed: assert fst.getInputType() == FST.INPUT_TYPE.BYTE4;");
   jint charIdx = offset;
   jint intIdx = 0;
   jint charLimit = offset + length;
@@ -138,7 +138,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstBuilder_compileAllTarg
 
 - (void)addWithJavaLangCharSequence:(id<JavaLangCharSequence>)s
                              withId:(id)output {
-  JreAssert(([((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) getInputType] == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4)), (@"org/apache/lucene/util/fst/Builder.java:301 condition failed: assert fst.getInputType() == FST.INPUT_TYPE.BYTE4;"));
+  JreAssert([((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) getInputType] == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4), @"org/apache/lucene/util/fst/Builder.java:301 condition failed: assert fst.getInputType() == FST.INPUT_TYPE.BYTE4;");
   jint charIdx = 0;
   jint intIdx = 0;
   jint charLimit = [((id<JavaLangCharSequence>) nil_chk(s)) java_length];
@@ -155,8 +155,8 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstBuilder_compileAllTarg
 
 - (void)addWithOrgApacheLuceneUtilIntsRef:(OrgApacheLuceneUtilIntsRef *)input
                                    withId:(id)output {
-  JreAssert((((OrgApacheLuceneUtilIntsRef *) nil_chk(lastInput_))->length_ == 0 || [((OrgApacheLuceneUtilIntsRef *) nil_chk(input)) compareToWithId:lastInput_] >= 0), (JreStrcat("$@$@", @"inputs are added out of order lastInput=", lastInput_, @" vs input=", input)));
-  JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, output)), (@"org/apache/lucene/util/fst/Builder.java:322 condition failed: assert validOutput(output);"));
+  JreAssert(((OrgApacheLuceneUtilIntsRef *) nil_chk(lastInput_))->length_ == 0 || [((OrgApacheLuceneUtilIntsRef *) nil_chk(input)) compareToWithId:lastInput_] >= 0, JreStrcat("$@$@", @"inputs are added out of order lastInput=", lastInput_, @" vs input=", input));
+  JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, output), @"org/apache/lucene/util/fst/Builder.java:322 condition failed: assert validOutput(output);");
   if (((OrgApacheLuceneUtilIntsRef *) nil_chk(input))->length_ == 0) {
     ((OrgApacheLuceneUtilFstBuilder_UnCompiledNode *) nil_chk(IOSObjectArray_Get(nil_chk(frontier_), 0)))->inputCount_++;
     ((OrgApacheLuceneUtilFstBuilder_UnCompiledNode *) nil_chk(IOSObjectArray_Get(frontier_, 0)))->isFinal_ = true;
@@ -195,14 +195,14 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstBuilder_compileAllTarg
     OrgApacheLuceneUtilFstBuilder_UnCompiledNode *node = IOSObjectArray_Get(nil_chk(frontier_), idx);
     OrgApacheLuceneUtilFstBuilder_UnCompiledNode *parentNode = IOSObjectArray_Get(frontier_, idx - 1);
     id lastOutput = [((OrgApacheLuceneUtilFstBuilder_UnCompiledNode *) nil_chk(parentNode)) getLastOutputWithInt:IOSIntArray_Get(nil_chk(input->ints_), input->offset_ + idx - 1)];
-    JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, lastOutput)), (@"org/apache/lucene/util/fst/Builder.java:385 condition failed: assert validOutput(lastOutput);"));
+    JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, lastOutput), @"org/apache/lucene/util/fst/Builder.java:385 condition failed: assert validOutput(lastOutput);");
     id commonOutputPrefix;
     id wordSuffix;
     if (lastOutput != NO_OUTPUT_) {
       commonOutputPrefix = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(fst_))->outputs_)) commonWithId:output withId:lastOutput];
-      JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, commonOutputPrefix)), (@"org/apache/lucene/util/fst/Builder.java:392 condition failed: assert validOutput(commonOutputPrefix);"));
+      JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, commonOutputPrefix), @"org/apache/lucene/util/fst/Builder.java:392 condition failed: assert validOutput(commonOutputPrefix);");
       wordSuffix = [fst_->outputs_ subtractWithId:lastOutput withId:commonOutputPrefix];
-      JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, wordSuffix)), (@"org/apache/lucene/util/fst/Builder.java:394 condition failed: assert validOutput(wordSuffix);"));
+      JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, wordSuffix), @"org/apache/lucene/util/fst/Builder.java:394 condition failed: assert validOutput(wordSuffix);");
       [parentNode setLastOutputWithInt:IOSIntArray_Get(nil_chk(input->ints_), input->offset_ + idx - 1) withId:commonOutputPrefix];
       [((OrgApacheLuceneUtilFstBuilder_UnCompiledNode *) nil_chk(node)) prependOutputWithId:wordSuffix];
     }
@@ -210,7 +210,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstBuilder_compileAllTarg
       commonOutputPrefix = wordSuffix = NO_OUTPUT_;
     }
     output = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(fst_))->outputs_)) subtractWithId:output withId:commonOutputPrefix];
-    JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, output)), (@"org/apache/lucene/util/fst/Builder.java:402 condition failed: assert validOutput(output);"));
+    JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(self, output), @"org/apache/lucene/util/fst/Builder.java:402 condition failed: assert validOutput(output);");
   }
   if (lastInput_->length_ == input->length_ && prefixLenPlus1 == 1 + input->length_) {
     lastNode->output_ = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(fst_))->outputs_)) mergeWithId:lastNode->output_ withId:output];
@@ -362,7 +362,7 @@ OrgApacheLuceneUtilFstBuilder_CompiledNode *OrgApacheLuceneUtilFstBuilder_compil
   else {
     address = [((OrgApacheLuceneUtilFstFST *) nil_chk(self->fst_)) addNodeWithOrgApacheLuceneUtilFstBuilder_UnCompiledNode:n];
   }
-  JreAssert((address != -2), (@"org/apache/lucene/util/fst/Builder.java:166 condition failed: assert address != -2;"));
+  JreAssert(address != -2, @"org/apache/lucene/util/fst/Builder.java:166 condition failed: assert address != -2;");
   [((OrgApacheLuceneUtilFstBuilder_UnCompiledNode *) nil_chk(n)) clear];
   OrgApacheLuceneUtilFstBuilder_CompiledNode *fn = new_OrgApacheLuceneUtilFstBuilder_CompiledNode_init();
   fn->address_ = address;
@@ -370,7 +370,7 @@ OrgApacheLuceneUtilFstBuilder_CompiledNode *OrgApacheLuceneUtilFstBuilder_compil
 }
 
 void OrgApacheLuceneUtilFstBuilder_compilePrevTailWithInt_(OrgApacheLuceneUtilFstBuilder *self, jint prefixLenPlus1) {
-  JreAssert((prefixLenPlus1 >= 1), (@"org/apache/lucene/util/fst/Builder.java:176 condition failed: assert prefixLenPlus1 >= 1;"));
+  JreAssert(prefixLenPlus1 >= 1, @"org/apache/lucene/util/fst/Builder.java:176 condition failed: assert prefixLenPlus1 >= 1;");
   for (jint idx = ((OrgApacheLuceneUtilIntsRef *) nil_chk(self->lastInput_))->length_; idx >= prefixLenPlus1; idx--) {
     jboolean doPrune = false;
     jboolean doCompile = false;
@@ -570,15 +570,15 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilFstBuilder_CompiledNode)
 }
 
 - (id)getLastOutputWithInt:(jint)labelToMatch {
-  JreAssert((numArcs_ > 0), (@"org/apache/lucene/util/fst/Builder.java:539 condition failed: assert numArcs > 0;"));
-  JreAssert((((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_ == labelToMatch), (@"org/apache/lucene/util/fst/Builder.java:540 condition failed: assert arcs[numArcs-1].label == labelToMatch;"));
+  JreAssert(numArcs_ > 0, @"org/apache/lucene/util/fst/Builder.java:539 condition failed: assert numArcs > 0;");
+  JreAssert(((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_ == labelToMatch, @"org/apache/lucene/util/fst/Builder.java:540 condition failed: assert arcs[numArcs-1].label == labelToMatch;");
   return ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(arcs_, numArcs_ - 1)))->output_;
 }
 
 - (void)addArcWithInt:(jint)label
 withOrgApacheLuceneUtilFstBuilder_Node:(id<OrgApacheLuceneUtilFstBuilder_Node>)target {
-  JreAssert((label >= 0), (@"org/apache/lucene/util/fst/Builder.java:545 condition failed: assert label >= 0;"));
-  JreAssert((numArcs_ == 0 || label > ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_), (JreStrcat("$I$I$I", @"arc[-1].label=", ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_, @" new label=", label, @" numArcs=", numArcs_)));
+  JreAssert(label >= 0, @"org/apache/lucene/util/fst/Builder.java:545 condition failed: assert label >= 0;");
+  JreAssert(numArcs_ == 0 || label > ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_, JreStrcat("$I$I$I", @"arc[-1].label=", ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_, @" new label=", label, @" numArcs=", numArcs_));
   if (numArcs_ == arcs_->size_) {
     IOSObjectArray *newArcs = [IOSObjectArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(numArcs_ + 1, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF)) type:OrgApacheLuceneUtilFstBuilder_Arc_class_()];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(arcs_, 0, newArcs, 0, ((IOSObjectArray *) nil_chk(arcs_))->size_);
@@ -598,9 +598,9 @@ withOrgApacheLuceneUtilFstBuilder_Node:(id<OrgApacheLuceneUtilFstBuilder_Node>)t
 withOrgApacheLuceneUtilFstBuilder_Node:(id<OrgApacheLuceneUtilFstBuilder_Node>)target
                     withId:(id)nextFinalOutput
                withBoolean:(jboolean)isFinal {
-  JreAssert((numArcs_ > 0), (@"org/apache/lucene/util/fst/Builder.java:564 condition failed: assert numArcs > 0;"));
+  JreAssert(numArcs_ > 0, @"org/apache/lucene/util/fst/Builder.java:564 condition failed: assert numArcs > 0;");
   OrgApacheLuceneUtilFstBuilder_Arc *arc = IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1);
-  JreAssert((((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(arc))->label_ == labelToMatch), (JreStrcat("$I$I", @"arc.label=", arc->label_, @" vs ", labelToMatch)));
+  JreAssert(((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(arc))->label_ == labelToMatch, JreStrcat("$I$I", @"arc.label=", arc->label_, @" vs ", labelToMatch));
   arc->target_ = target;
   arc->nextFinalOutput_ = nextFinalOutput;
   arc->isFinal_ = isFinal;
@@ -608,30 +608,30 @@ withOrgApacheLuceneUtilFstBuilder_Node:(id<OrgApacheLuceneUtilFstBuilder_Node>)t
 
 - (void)deleteLastWithInt:(jint)label
 withOrgApacheLuceneUtilFstBuilder_Node:(id<OrgApacheLuceneUtilFstBuilder_Node>)target {
-  JreAssert((numArcs_ > 0), (@"org/apache/lucene/util/fst/Builder.java:574 condition failed: assert numArcs > 0;"));
-  JreAssert((label == ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_), (@"org/apache/lucene/util/fst/Builder.java:575 condition failed: assert label == arcs[numArcs-1].label;"));
-  JreAssert((target == ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(arcs_, numArcs_ - 1)))->target_), (@"org/apache/lucene/util/fst/Builder.java:576 condition failed: assert target == arcs[numArcs-1].target;"));
+  JreAssert(numArcs_ > 0, @"org/apache/lucene/util/fst/Builder.java:574 condition failed: assert numArcs > 0;");
+  JreAssert(label == ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1)))->label_, @"org/apache/lucene/util/fst/Builder.java:575 condition failed: assert label == arcs[numArcs-1].label;");
+  JreAssert(target == ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(arcs_, numArcs_ - 1)))->target_, @"org/apache/lucene/util/fst/Builder.java:576 condition failed: assert target == arcs[numArcs-1].target;");
   numArcs_--;
 }
 
 - (void)setLastOutputWithInt:(jint)labelToMatch
                       withId:(id)newOutput {
-  JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(nil_chk(owner_), newOutput)), (@"org/apache/lucene/util/fst/Builder.java:581 condition failed: assert owner.validOutput(newOutput);"));
-  JreAssert((numArcs_ > 0), (@"org/apache/lucene/util/fst/Builder.java:582 condition failed: assert numArcs > 0;"));
+  JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(nil_chk(owner_), newOutput), @"org/apache/lucene/util/fst/Builder.java:581 condition failed: assert owner.validOutput(newOutput);");
+  JreAssert(numArcs_ > 0, @"org/apache/lucene/util/fst/Builder.java:582 condition failed: assert numArcs > 0;");
   OrgApacheLuceneUtilFstBuilder_Arc *arc = IOSObjectArray_Get(nil_chk(arcs_), numArcs_ - 1);
-  JreAssert((((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(arc))->label_ == labelToMatch), (@"org/apache/lucene/util/fst/Builder.java:584 condition failed: assert arc.label == labelToMatch;"));
+  JreAssert(((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(arc))->label_ == labelToMatch, @"org/apache/lucene/util/fst/Builder.java:584 condition failed: assert arc.label == labelToMatch;");
   arc->output_ = newOutput;
 }
 
 - (void)prependOutputWithId:(id)outputPrefix {
-  JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(nil_chk(owner_), outputPrefix)), (@"org/apache/lucene/util/fst/Builder.java:590 condition failed: assert owner.validOutput(outputPrefix);"));
+  JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(nil_chk(owner_), outputPrefix), @"org/apache/lucene/util/fst/Builder.java:590 condition failed: assert owner.validOutput(outputPrefix);");
   for (jint arcIdx = 0; arcIdx < numArcs_; arcIdx++) {
     ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), arcIdx)))->output_ = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(owner_->fst_))->outputs_)) addWithId:outputPrefix withId:((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(arcs_, arcIdx)))->output_];
-    JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(owner_, ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), arcIdx)))->output_)), (@"org/apache/lucene/util/fst/Builder.java:594 condition failed: assert owner.validOutput(arcs[arcIdx].output);"));
+    JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(owner_, ((OrgApacheLuceneUtilFstBuilder_Arc *) nil_chk(IOSObjectArray_Get(nil_chk(arcs_), arcIdx)))->output_), @"org/apache/lucene/util/fst/Builder.java:594 condition failed: assert owner.validOutput(arcs[arcIdx].output);");
   }
   if (isFinal_) {
     output_ = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(owner_->fst_))->outputs_)) addWithId:outputPrefix withId:output_];
-    JreAssert((OrgApacheLuceneUtilFstBuilder_validOutputWithId_(owner_, output_)), (@"org/apache/lucene/util/fst/Builder.java:599 condition failed: assert owner.validOutput(output);"));
+    JreAssert(OrgApacheLuceneUtilFstBuilder_validOutputWithId_(owner_, output_), @"org/apache/lucene/util/fst/Builder.java:599 condition failed: assert owner.validOutput(output);");
   }
 }
 

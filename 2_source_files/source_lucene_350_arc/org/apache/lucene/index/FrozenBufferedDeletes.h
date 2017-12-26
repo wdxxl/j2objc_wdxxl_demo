@@ -48,6 +48,10 @@
 
 - (jboolean)any;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexFrozenBufferedDeletes)
@@ -56,7 +60,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFrozenBufferedDeletes, terms_, OrgApache
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFrozenBufferedDeletes, queries_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFrozenBufferedDeletes, queryLimits_, IOSIntArray *)
 
-inline jint OrgApacheLuceneIndexFrozenBufferedDeletes_get_BYTES_PER_DEL_QUERY();
+inline jint OrgApacheLuceneIndexFrozenBufferedDeletes_get_BYTES_PER_DEL_QUERY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexFrozenBufferedDeletes_BYTES_PER_DEL_QUERY;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexFrozenBufferedDeletes, BYTES_PER_DEL_QUERY, jint)

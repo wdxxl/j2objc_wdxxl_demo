@@ -35,9 +35,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupExamplesHtmlToPlainText)
 
 FOUNDATION_EXPORT void OrgJsoupExamplesHtmlToPlainText_init(OrgJsoupExamplesHtmlToPlainText *self);
 
-FOUNDATION_EXPORT OrgJsoupExamplesHtmlToPlainText *new_OrgJsoupExamplesHtmlToPlainText_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupExamplesHtmlToPlainText *new_OrgJsoupExamplesHtmlToPlainText_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupExamplesHtmlToPlainText *create_OrgJsoupExamplesHtmlToPlainText_init();
+FOUNDATION_EXPORT OrgJsoupExamplesHtmlToPlainText *create_OrgJsoupExamplesHtmlToPlainText_init(void);
 
 FOUNDATION_EXPORT void OrgJsoupExamplesHtmlToPlainText_mainWithNSStringArray_(IOSObjectArray *args);
 

@@ -38,16 +38,16 @@
 
 J2OBJC_STATIC_INIT(ComGoogleGsonJsonNull)
 
-inline ComGoogleGsonJsonNull *ComGoogleGsonJsonNull_get_INSTANCE();
+inline ComGoogleGsonJsonNull *ComGoogleGsonJsonNull_get_INSTANCE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonJsonNull *ComGoogleGsonJsonNull_INSTANCE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonJsonNull, INSTANCE, ComGoogleGsonJsonNull *)
 
 FOUNDATION_EXPORT void ComGoogleGsonJsonNull_init(ComGoogleGsonJsonNull *self);
 
-FOUNDATION_EXPORT ComGoogleGsonJsonNull *new_ComGoogleGsonJsonNull_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonJsonNull *new_ComGoogleGsonJsonNull_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonJsonNull *create_ComGoogleGsonJsonNull_init();
+FOUNDATION_EXPORT ComGoogleGsonJsonNull *create_ComGoogleGsonJsonNull_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonNull)
 

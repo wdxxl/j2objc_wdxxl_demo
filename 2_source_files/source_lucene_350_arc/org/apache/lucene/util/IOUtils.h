@@ -57,12 +57,12 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilIOUtils)
 
-inline NSString *OrgApacheLuceneUtilIOUtils_get_UTF_8();
+inline NSString *OrgApacheLuceneUtilIOUtils_get_UTF_8(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneUtilIOUtils_UTF_8;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilIOUtils, UTF_8, NSString *)
 
-inline JavaNioCharsetCharset *OrgApacheLuceneUtilIOUtils_get_CHARSET_UTF_8();
+inline JavaNioCharsetCharset *OrgApacheLuceneUtilIOUtils_get_CHARSET_UTF_8(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheLuceneUtilIOUtils_CHARSET_UTF_8;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilIOUtils, CHARSET_UTF_8, JavaNioCharsetCharset *)

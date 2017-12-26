@@ -60,6 +60,10 @@
 
 - (id<JavaUtilList>)wrapCommitsWithJavaUtilList:(id<JavaUtilList>)commits;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSnapshotDeletionPolicy)
@@ -127,6 +131,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexSnapshotDeletionPolicy)
                                withOrgApacheLuceneIndexIndexCommit:(OrgApacheLuceneIndexIndexCommit *)cp;
 
 - (jboolean)shouldDeleteWithNSString:(NSString *)segmentsFileName;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

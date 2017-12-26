@@ -37,24 +37,24 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilBitVector, bits_, IOSByteArray *)
 
-inline IOSByteArray *OrgApacheLuceneUtilBitVector_get_BYTE_COUNTS();
+inline IOSByteArray *OrgApacheLuceneUtilBitVector_get_BYTE_COUNTS(void);
 static IOSByteArray *OrgApacheLuceneUtilBitVector_BYTE_COUNTS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBitVector, BYTE_COUNTS, IOSByteArray *)
 
-inline NSString *OrgApacheLuceneUtilBitVector_get_CODEC();
+inline NSString *OrgApacheLuceneUtilBitVector_get_CODEC(void);
 inline NSString *OrgApacheLuceneUtilBitVector_set_CODEC(NSString *value);
 static NSString *OrgApacheLuceneUtilBitVector_CODEC = @"BitVector";
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneUtilBitVector, CODEC, NSString *)
 
-inline jint OrgApacheLuceneUtilBitVector_get_VERSION_PRE();
+inline jint OrgApacheLuceneUtilBitVector_get_VERSION_PRE(void);
 #define OrgApacheLuceneUtilBitVector_VERSION_PRE -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilBitVector, VERSION_PRE, jint)
 
-inline jint OrgApacheLuceneUtilBitVector_get_VERSION_START();
+inline jint OrgApacheLuceneUtilBitVector_get_VERSION_START(void);
 #define OrgApacheLuceneUtilBitVector_VERSION_START 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilBitVector, VERSION_START, jint)
 
-inline jint OrgApacheLuceneUtilBitVector_get_VERSION_CURRENT();
+inline jint OrgApacheLuceneUtilBitVector_get_VERSION_CURRENT(void);
 #define OrgApacheLuceneUtilBitVector_VERSION_CURRENT 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilBitVector, VERSION_CURRENT, jint)
 
@@ -133,7 +133,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilBitVector)
 }
 
 - (jboolean)getWithInt:(jint)bit {
-  JreAssert((bit >= 0 && bit < size_), (JreStrcat("$I$I", @"bit ", bit, @" is out of bounds 0..", (size_ - 1))));
+  JreAssert(bit >= 0 && bit < size_, JreStrcat("$I$I", @"bit ", bit, @" is out of bounds 0..", (size_ - 1)));
   return (IOSByteArray_Get(nil_chk(bits_), JreRShift32(bit, 3)) & (JreLShift32(1, (bit & 7)))) != 0;
 }
 

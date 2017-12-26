@@ -64,6 +64,15 @@
                                    withJavaUtilList:(id<JavaUtilList>)prohibitedScorers
                                             withInt:(jint)maxCoord;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg0
+                        withOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchBooleanScorer)
@@ -102,9 +111,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanScorer_Bucket, next_, OrgApacheL
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchBooleanScorer_Bucket_init(OrgApacheLuceneSearchBooleanScorer_Bucket *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_Bucket *new_OrgApacheLuceneSearchBooleanScorer_Bucket_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_Bucket *new_OrgApacheLuceneSearchBooleanScorer_Bucket_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_Bucket *create_OrgApacheLuceneSearchBooleanScorer_Bucket_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_Bucket *create_OrgApacheLuceneSearchBooleanScorer_Bucket_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanScorer_Bucket)
 
@@ -138,19 +147,19 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchBooleanScorer_BucketTable)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanScorer_BucketTable, buckets_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanScorer_BucketTable, first_, OrgApacheLuceneSearchBooleanScorer_Bucket *)
 
-inline jint OrgApacheLuceneSearchBooleanScorer_BucketTable_get_SIZE();
+inline jint OrgApacheLuceneSearchBooleanScorer_BucketTable_get_SIZE(void);
 #define OrgApacheLuceneSearchBooleanScorer_BucketTable_SIZE 2048
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchBooleanScorer_BucketTable, SIZE, jint)
 
-inline jint OrgApacheLuceneSearchBooleanScorer_BucketTable_get_MASK();
+inline jint OrgApacheLuceneSearchBooleanScorer_BucketTable_get_MASK(void);
 #define OrgApacheLuceneSearchBooleanScorer_BucketTable_MASK 2047
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchBooleanScorer_BucketTable, MASK, jint)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchBooleanScorer_BucketTable_init(OrgApacheLuceneSearchBooleanScorer_BucketTable *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_BucketTable *new_OrgApacheLuceneSearchBooleanScorer_BucketTable_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_BucketTable *new_OrgApacheLuceneSearchBooleanScorer_BucketTable_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_BucketTable *create_OrgApacheLuceneSearchBooleanScorer_BucketTable_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanScorer_BucketTable *create_OrgApacheLuceneSearchBooleanScorer_BucketTable_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanScorer_BucketTable)
 
@@ -177,6 +186,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanScorer_BucketTable)
                                         withBoolean:(jboolean)prohibited
                  withOrgApacheLuceneSearchCollector:(OrgApacheLuceneSearchCollector *)collector
    withOrgApacheLuceneSearchBooleanScorer_SubScorer:(OrgApacheLuceneSearchBooleanScorer_SubScorer *)next;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

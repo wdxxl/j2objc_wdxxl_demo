@@ -75,15 +75,15 @@
 J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection, req_, id<OrgJsoupConnection_Request>)
 J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection, res_, id<OrgJsoupConnection_Response>)
 
-inline NSString *OrgJsoupHelperHttpConnection_get_CONTENT_TYPE();
+inline NSString *OrgJsoupHelperHttpConnection_get_CONTENT_TYPE(void);
 static NSString *OrgJsoupHelperHttpConnection_CONTENT_TYPE = @"Content-Type";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperHttpConnection, CONTENT_TYPE, NSString *)
 
-inline NSString *OrgJsoupHelperHttpConnection_get_MULTIPART_FORM_DATA();
+inline NSString *OrgJsoupHelperHttpConnection_get_MULTIPART_FORM_DATA(void);
 static NSString *OrgJsoupHelperHttpConnection_MULTIPART_FORM_DATA = @"multipart/form-data";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperHttpConnection, MULTIPART_FORM_DATA, NSString *)
 
-inline NSString *OrgJsoupHelperHttpConnection_get_FORM_URL_ENCODED();
+inline NSString *OrgJsoupHelperHttpConnection_get_FORM_URL_ENCODED(void);
 static NSString *OrgJsoupHelperHttpConnection_FORM_URL_ENCODED = @"application/x-www-form-urlencoded";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperHttpConnection, FORM_URL_ENCODED, NSString *)
 
@@ -93,9 +93,9 @@ __attribute__((unused)) static NSString *OrgJsoupHelperHttpConnection_encodeMime
 
 __attribute__((unused)) static void OrgJsoupHelperHttpConnection_init(OrgJsoupHelperHttpConnection *self);
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection *new_OrgJsoupHelperHttpConnection_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperHttpConnection *new_OrgJsoupHelperHttpConnection_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection *create_OrgJsoupHelperHttpConnection_init();
+__attribute__((unused)) static OrgJsoupHelperHttpConnection *create_OrgJsoupHelperHttpConnection_init(void);
 
 @interface OrgJsoupHelperHttpConnection_Base ()
 
@@ -137,9 +137,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection_Request, postDataCharset_, NSSt
 
 __attribute__((unused)) static void OrgJsoupHelperHttpConnection_Request_init(OrgJsoupHelperHttpConnection_Request *self);
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_Request *new_OrgJsoupHelperHttpConnection_Request_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_Request *new_OrgJsoupHelperHttpConnection_Request_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_Request *create_OrgJsoupHelperHttpConnection_Request_init();
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_Request *create_OrgJsoupHelperHttpConnection_Request_init(void);
 
 @interface OrgJsoupHelperHttpConnection_Response () {
  @public
@@ -182,20 +182,20 @@ J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection_Response, charset_, NSString *)
 J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection_Response, contentType_, NSString *)
 J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection_Response, req_, id<OrgJsoupConnection_Request>)
 
-inline jint OrgJsoupHelperHttpConnection_Response_get_MAX_REDIRECTS();
+inline jint OrgJsoupHelperHttpConnection_Response_get_MAX_REDIRECTS(void);
 #define OrgJsoupHelperHttpConnection_Response_MAX_REDIRECTS 20
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupHelperHttpConnection_Response, MAX_REDIRECTS, jint)
 
-inline JavaxNetSslSSLSocketFactory *OrgJsoupHelperHttpConnection_Response_get_sslSocketFactory();
+inline JavaxNetSslSSLSocketFactory *OrgJsoupHelperHttpConnection_Response_get_sslSocketFactory(void);
 inline JavaxNetSslSSLSocketFactory *OrgJsoupHelperHttpConnection_Response_set_sslSocketFactory(JavaxNetSslSSLSocketFactory *value);
 static JavaxNetSslSSLSocketFactory *OrgJsoupHelperHttpConnection_Response_sslSocketFactory;
 J2OBJC_STATIC_FIELD_OBJ(OrgJsoupHelperHttpConnection_Response, sslSocketFactory, JavaxNetSslSSLSocketFactory *)
 
-inline NSString *OrgJsoupHelperHttpConnection_Response_get_LOCATION();
+inline NSString *OrgJsoupHelperHttpConnection_Response_get_LOCATION(void);
 static NSString *OrgJsoupHelperHttpConnection_Response_LOCATION = @"Location";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperHttpConnection_Response, LOCATION, NSString *)
 
-inline JavaUtilRegexPattern *OrgJsoupHelperHttpConnection_Response_get_xmlContentTypeRxp();
+inline JavaUtilRegexPattern *OrgJsoupHelperHttpConnection_Response_get_xmlContentTypeRxp(void);
 static JavaUtilRegexPattern *OrgJsoupHelperHttpConnection_Response_xmlContentTypeRxp;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperHttpConnection_Response, xmlContentTypeRxp, JavaUtilRegexPattern *)
 
@@ -207,9 +207,9 @@ __attribute__((unused)) static OrgJsoupHelperHttpConnection_Response *create_Org
 
 __attribute__((unused)) static JavaNetHttpURLConnection *OrgJsoupHelperHttpConnection_Response_createConnectionWithOrgJsoupConnection_Request_(id<OrgJsoupConnection_Request> req);
 
-__attribute__((unused)) static id<JavaxNetSslHostnameVerifier> OrgJsoupHelperHttpConnection_Response_getInsecureVerifier();
+__attribute__((unused)) static id<JavaxNetSslHostnameVerifier> OrgJsoupHelperHttpConnection_Response_getInsecureVerifier(void);
 
-__attribute__((unused)) static void OrgJsoupHelperHttpConnection_Response_initUnSecureTSL();
+__attribute__((unused)) static void OrgJsoupHelperHttpConnection_Response_initUnSecureTSL(void);
 
 __attribute__((unused)) static void OrgJsoupHelperHttpConnection_Response_setupFromConnectionWithJavaNetHttpURLConnection_withOrgJsoupConnection_Response_(OrgJsoupHelperHttpConnection_Response *self, JavaNetHttpURLConnection *conn, id<OrgJsoupConnection_Response> previousResponse);
 
@@ -234,9 +234,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupHelperHttpConnection_Response_1)
 
 __attribute__((unused)) static void OrgJsoupHelperHttpConnection_Response_1_init(OrgJsoupHelperHttpConnection_Response_1 *self);
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_1 *new_OrgJsoupHelperHttpConnection_Response_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_1 *new_OrgJsoupHelperHttpConnection_Response_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_1 *create_OrgJsoupHelperHttpConnection_Response_1_init();
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_1 *create_OrgJsoupHelperHttpConnection_Response_1_init(void);
 
 @interface OrgJsoupHelperHttpConnection_Response_2 : NSObject < JavaxNetSslX509TrustManager >
 
@@ -256,9 +256,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupHelperHttpConnection_Response_2)
 
 __attribute__((unused)) static void OrgJsoupHelperHttpConnection_Response_2_init(OrgJsoupHelperHttpConnection_Response_2 *self);
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_2 *new_OrgJsoupHelperHttpConnection_Response_2_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_2 *new_OrgJsoupHelperHttpConnection_Response_2_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_2 *create_OrgJsoupHelperHttpConnection_Response_2_init();
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_2 *create_OrgJsoupHelperHttpConnection_Response_2_init(void);
 
 @interface OrgJsoupHelperHttpConnection_KeyVal () {
  @public
@@ -277,9 +277,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupHelperHttpConnection_KeyVal, stream_, JavaIoInputStr
 
 __attribute__((unused)) static void OrgJsoupHelperHttpConnection_KeyVal_init(OrgJsoupHelperHttpConnection_KeyVal *self);
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_KeyVal *new_OrgJsoupHelperHttpConnection_KeyVal_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_KeyVal *new_OrgJsoupHelperHttpConnection_KeyVal_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperHttpConnection_KeyVal *create_OrgJsoupHelperHttpConnection_KeyVal_init();
+__attribute__((unused)) static OrgJsoupHelperHttpConnection_KeyVal *create_OrgJsoupHelperHttpConnection_KeyVal_init(void);
 
 NSString *OrgJsoupHelperHttpConnection_CONTENT_ENCODING = @"Content-Encoding";
 
@@ -319,7 +319,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     (void) [((id<OrgJsoupConnection_Request>) nil_chk(req_)) urlWithJavaNetURL:new_JavaNetURL_initWithNSString_(OrgJsoupHelperHttpConnection_encodeUrlWithNSString_(url))];
   }
   @catch (JavaNetMalformedURLException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSString_withNSException_(JreStrcat("$$", @"Malformed URL: ", url), e);
+    @throw new_JavaLangIllegalArgumentException_initWithNSString_withJavaLangThrowable_(JreStrcat("$$", @"Malformed URL: ", url), e);
   }
   return self;
 }

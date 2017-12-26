@@ -54,7 +54,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreBufferedIndexOutput)
 
-inline jint OrgApacheLuceneStoreBufferedIndexOutput_get_BUFFER_SIZE();
+inline jint OrgApacheLuceneStoreBufferedIndexOutput_get_BUFFER_SIZE(void);
 #define OrgApacheLuceneStoreBufferedIndexOutput_BUFFER_SIZE 16384
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreBufferedIndexOutput, BUFFER_SIZE, jint)
 

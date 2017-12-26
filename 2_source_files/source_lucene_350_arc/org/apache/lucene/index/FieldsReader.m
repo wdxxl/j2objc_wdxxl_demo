@@ -14,6 +14,7 @@
 #include "java/lang/Double.h"
 #include "java/lang/Float.h"
 #include "java/lang/Integer.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/util/zip/DataFormatException.h"
 #include "org/apache/lucene/analysis/TokenStream.h"
@@ -204,7 +205,7 @@ __attribute__((unused)) static OrgApacheLuceneIndexFieldsReader_LazyField *creat
 
 __attribute__((unused)) static OrgApacheLuceneStoreIndexInput *OrgApacheLuceneIndexFieldsReader_LazyField_getFieldStream(OrgApacheLuceneIndexFieldsReader_LazyField *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexFieldsReader_LazyField__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexFieldsReader_LazyField__Annotations$0(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFieldsReader_LazyField)
 
@@ -289,9 +290,9 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFieldsReader_LazyField)
     OrgApacheLuceneIndexFieldInfo *fi = [((OrgApacheLuceneIndexFieldInfos *) nil_chk(fieldInfos_)) fieldInfoWithInt:fieldNumber];
     OrgApacheLuceneDocumentFieldSelectorResult *acceptField = fieldSelector == nil ? JreLoadEnum(OrgApacheLuceneDocumentFieldSelectorResult, LOAD) : [fieldSelector acceptWithNSString:((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->name_];
     jint bits = [fieldsStream_ readByte] & (jint) 0xFF;
-    JreAssert((bits <= (OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_MASK | OrgApacheLuceneIndexFieldsWriter_FIELD_IS_COMPRESSED | OrgApacheLuceneIndexFieldsWriter_FIELD_IS_TOKENIZED | OrgApacheLuceneIndexFieldsWriter_FIELD_IS_BINARY)), (JreStrcat("$$", @"bits=", JavaLangInteger_toHexStringWithInt_(bits))));
+    JreAssert(bits <= (OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_MASK | OrgApacheLuceneIndexFieldsWriter_FIELD_IS_COMPRESSED | OrgApacheLuceneIndexFieldsWriter_FIELD_IS_TOKENIZED | OrgApacheLuceneIndexFieldsWriter_FIELD_IS_BINARY), JreStrcat("$$", @"bits=", JavaLangInteger_toHexStringWithInt_(bits)));
     jboolean compressed = (bits & OrgApacheLuceneIndexFieldsWriter_FIELD_IS_COMPRESSED) != 0;
-    JreAssert(((compressed ? (format_ < OrgApacheLuceneIndexFieldsWriter_FORMAT_LUCENE_3_0_NO_COMPRESSED_FIELDS) : true)), (@"compressed fields are only allowed in indexes of version <= 2.9"));
+    JreAssert((compressed ? (format_ < OrgApacheLuceneIndexFieldsWriter_FORMAT_LUCENE_3_0_NO_COMPRESSED_FIELDS) : true), @"compressed fields are only allowed in indexes of version <= 2.9");
     jboolean tokenize = (bits & OrgApacheLuceneIndexFieldsWriter_FIELD_IS_TOKENIZED) != 0;
     jboolean binary = (bits & OrgApacheLuceneIndexFieldsWriter_FIELD_IS_BINARY) != 0;
     jint numeric = bits & OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_MASK;
@@ -332,7 +333,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFieldsReader_LazyField)
   while (count < numDocs) {
     jlong offset;
     jint docID = docStoreOffset_ + startDocID + count + 1;
-    JreAssert((docID <= numTotalDocs_), (@"org/apache/lucene/index/FieldsReader.java:290 condition failed: assert docID <= numTotalDocs;"));
+    JreAssert(docID <= numTotalDocs_, @"org/apache/lucene/index/FieldsReader.java:290 condition failed: assert docID <= numTotalDocs;");
     if (docID < numTotalDocs_) offset = [indexStream_ readLong];
     else offset = [((OrgApacheLuceneStoreIndexInput *) nil_chk(fieldsStream_)) length];
     *IOSIntArray_GetRef(nil_chk(lengths), count++) = (jint) (offset - lastOffset);
@@ -550,7 +551,7 @@ void OrgApacheLuceneIndexFieldsReader_initWithOrgApacheLuceneStoreDirectory_with
     if (docStoreOffset != -1) {
       self->docStoreOffset_ = docStoreOffset;
       self->size_ = size;
-      JreAssert((((jint) (indexSize / 8)) >= size + self->docStoreOffset_), (JreStrcat("$J$I$I", @"indexSize=", indexSize, @" size=", size, @" docStoreOffset=", docStoreOffset)));
+      JreAssert(((jint) (indexSize / 8)) >= size + self->docStoreOffset_, JreStrcat("$J$I$I", @"indexSize=", indexSize, @" size=", size, @" docStoreOffset=", docStoreOffset));
     }
     else {
       self->docStoreOffset_ = 0;
@@ -627,7 +628,7 @@ void OrgApacheLuceneIndexFieldsReader_skipFieldBytesWithBoolean_withBoolean_with
 }
 
 OrgApacheLuceneDocumentNumericField *OrgApacheLuceneIndexFieldsReader_loadNumericFieldWithOrgApacheLuceneIndexFieldInfo_withInt_(OrgApacheLuceneIndexFieldsReader *self, OrgApacheLuceneIndexFieldInfo *fi, jint numeric) {
-  JreAssert((numeric != 0), (@"org/apache/lucene/index/FieldsReader.java:339 condition failed: assert numeric != 0;"));
+  JreAssert(numeric != 0, @"org/apache/lucene/index/FieldsReader.java:339 condition failed: assert numeric != 0;");
   switch (numeric) {
     case OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_INT:
     return [new_OrgApacheLuceneDocumentNumericField_initWithNSString_withOrgApacheLuceneDocumentField_Store_withBoolean_(((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->name_, JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), fi->isIndexed_) setIntValueWithInt:[((OrgApacheLuceneStoreIndexInput *) nil_chk(self->fieldsStream_)) readInt]];
@@ -749,7 +750,7 @@ IOSByteArray *OrgApacheLuceneIndexFieldsReader_uncompressWithByteArray_(OrgApach
   }
   @catch (JavaUtilZipDataFormatException *e) {
     OrgApacheLuceneIndexCorruptIndexException *newException = new_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$$", @"field data are in wrong format: ", [e description]));
-    (void) [newException initCauseWithNSException:e];
+    (void) [newException initCauseWithJavaLangThrowable:e];
     @throw newException;
   }
 }
@@ -826,7 +827,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexFieldsReader)
         }
       }
       @catch (JavaIoIOException *e) {
-        @throw new_OrgApacheLuceneIndexFieldReaderException_initWithNSException_(e);
+        @throw new_OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(e);
       }
       if (cacheResult_) {
         fieldsData_ = value;
@@ -879,7 +880,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexFieldsReader)
         }
       }
       @catch (JavaIoIOException *e) {
-        @throw new_OrgApacheLuceneIndexFieldReaderException_initWithNSException_(e);
+        @throw new_OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(e);
       }
       binaryOffset_ = 0;
       binaryLength_ = toRead_;

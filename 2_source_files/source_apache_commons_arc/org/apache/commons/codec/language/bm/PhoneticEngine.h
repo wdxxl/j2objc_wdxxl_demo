@@ -49,6 +49,10 @@ withOrgApacheCommonsCodecLanguageBmLanguages_LanguageSet:(OrgApacheCommonsCodecL
 
 - (jboolean)isConcat;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmPhoneticEngine)
@@ -91,6 +95,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecLanguageBmPhoneticEngine)
 - (id<JavaUtilSet>)getPhonemes;
 
 - (NSString *)makeString;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

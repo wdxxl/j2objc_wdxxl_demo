@@ -43,9 +43,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreNativeFSLockFactory)
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreNativeFSLockFactory_init(OrgApacheLuceneStoreNativeFSLockFactory *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNativeFSLockFactory *new_OrgApacheLuceneStoreNativeFSLockFactory_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneStoreNativeFSLockFactory *new_OrgApacheLuceneStoreNativeFSLockFactory_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNativeFSLockFactory *create_OrgApacheLuceneStoreNativeFSLockFactory_init();
+FOUNDATION_EXPORT OrgApacheLuceneStoreNativeFSLockFactory *create_OrgApacheLuceneStoreNativeFSLockFactory_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreNativeFSLockFactory_initWithNSString_(OrgApacheLuceneStoreNativeFSLockFactory *self, NSString *lockDirName);
 
@@ -86,6 +86,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreNativeFSLockFactory)
 - (void)release__;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -237,13 +237,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchConstantScoreQuery)
                                                                withBoolean:(jboolean)topScorer {
   OrgApacheLuceneSearchDocIdSetIterator *disi;
   if (this$0_->filter_ != nil) {
-    JreAssert((this$0_->query_ == nil), (@"org/apache/lucene/search/ConstantScoreQuery.java:138 condition failed: assert query == null;"));
+    JreAssert(this$0_->query_ == nil, @"org/apache/lucene/search/ConstantScoreQuery.java:138 condition failed: assert query == null;");
     OrgApacheLuceneSearchDocIdSet *dis = [this$0_->filter_ getDocIdSetWithOrgApacheLuceneIndexIndexReader:reader];
     if (dis == nil) return nil;
     disi = [dis iterator];
   }
   else {
-    JreAssert((this$0_->query_ != nil && innerWeight_ != nil), (@"org/apache/lucene/search/ConstantScoreQuery.java:144 condition failed: assert query != null && innerWeight != null;"));
+    JreAssert(this$0_->query_ != nil && innerWeight_ != nil, @"org/apache/lucene/search/ConstantScoreQuery.java:144 condition failed: assert query != null && innerWeight != null;");
     disi = [((OrgApacheLuceneSearchWeight *) nil_chk(innerWeight_)) scorerWithOrgApacheLuceneIndexIndexReader:reader withBoolean:scoreDocsInOrder withBoolean:topScorer];
   }
   if (disi == nil) return nil;

@@ -33,35 +33,35 @@
 
 J2OBJC_FIELD_SETTER(OrgJsoupParserTag, tagName_, NSString *)
 
-inline id<JavaUtilMap> OrgJsoupParserTag_get_tags();
+inline id<JavaUtilMap> OrgJsoupParserTag_get_tags(void);
 static id<JavaUtilMap> OrgJsoupParserTag_tags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, tags, id<JavaUtilMap>)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_blockTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_blockTags(void);
 static IOSObjectArray *OrgJsoupParserTag_blockTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, blockTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_inlineTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_inlineTags(void);
 static IOSObjectArray *OrgJsoupParserTag_inlineTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, inlineTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_emptyTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_emptyTags(void);
 static IOSObjectArray *OrgJsoupParserTag_emptyTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, emptyTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_formatAsInlineTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_formatAsInlineTags(void);
 static IOSObjectArray *OrgJsoupParserTag_formatAsInlineTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, formatAsInlineTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_preserveWhitespaceTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_preserveWhitespaceTags(void);
 static IOSObjectArray *OrgJsoupParserTag_preserveWhitespaceTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, preserveWhitespaceTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_formListedTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_formListedTags(void);
 static IOSObjectArray *OrgJsoupParserTag_formListedTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, formListedTags, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupParserTag_get_formSubmitTags();
+inline IOSObjectArray *OrgJsoupParserTag_get_formSubmitTags(void);
 static IOSObjectArray *OrgJsoupParserTag_formSubmitTags;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTag, formSubmitTags, IOSObjectArray *)
 

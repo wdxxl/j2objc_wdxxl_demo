@@ -19,9 +19,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneDocumentCompressionTools_init(OrgApacheLuceneDocumentCompressionTools *self);
 
-__attribute__((unused)) static OrgApacheLuceneDocumentCompressionTools *new_OrgApacheLuceneDocumentCompressionTools_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneDocumentCompressionTools *new_OrgApacheLuceneDocumentCompressionTools_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneDocumentCompressionTools *create_OrgApacheLuceneDocumentCompressionTools_init();
+__attribute__((unused)) static OrgApacheLuceneDocumentCompressionTools *create_OrgApacheLuceneDocumentCompressionTools_init(void);
 
 @implementation OrgApacheLuceneDocumentCompressionTools
 

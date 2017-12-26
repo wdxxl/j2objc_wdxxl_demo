@@ -53,12 +53,12 @@ withOrgApacheLuceneStoreLockFactory:(OrgApacheLuceneStoreLockFactory *)lockFacto
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneStoreMMapDirectory)
 
-inline jint OrgApacheLuceneStoreMMapDirectory_get_DEFAULT_MAX_BUFF();
+inline jint OrgApacheLuceneStoreMMapDirectory_get_DEFAULT_MAX_BUFF(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneStoreMMapDirectory_DEFAULT_MAX_BUFF;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneStoreMMapDirectory, DEFAULT_MAX_BUFF, jint)
 
-inline jboolean OrgApacheLuceneStoreMMapDirectory_get_UNMAP_SUPPORTED();
+inline jboolean OrgApacheLuceneStoreMMapDirectory_get_UNMAP_SUPPORTED(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jboolean OrgApacheLuceneStoreMMapDirectory_UNMAP_SUPPORTED;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneStoreMMapDirectory, UNMAP_SUPPORTED, jboolean)

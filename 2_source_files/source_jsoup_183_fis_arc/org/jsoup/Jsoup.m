@@ -25,9 +25,9 @@
 
 __attribute__((unused)) static void OrgJsoupJsoup_init(OrgJsoupJsoup *self);
 
-__attribute__((unused)) static OrgJsoupJsoup *new_OrgJsoupJsoup_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupJsoup *new_OrgJsoupJsoup_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupJsoup *create_OrgJsoupJsoup_init();
+__attribute__((unused)) static OrgJsoupJsoup *create_OrgJsoupJsoup_init(void);
 
 @implementation OrgJsoupJsoup
 

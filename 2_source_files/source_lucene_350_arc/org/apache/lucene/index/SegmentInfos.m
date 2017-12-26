@@ -22,6 +22,7 @@
 #include "java/lang/StringBuilder.h"
 #include "java/lang/System.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/util/ArrayList.h"
 #include "java/util/Arrays.h"
@@ -79,26 +80,26 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentInfos, segmentSet_, id<JavaUtilSe
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentInfos, cachedUnmodifiableList_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentInfos, cachedUnmodifiableSet_, id<JavaUtilSet>)
 
-inline JavaIoPrintStream *OrgApacheLuceneIndexSegmentInfos_get_infoStream();
+inline JavaIoPrintStream *OrgApacheLuceneIndexSegmentInfos_get_infoStream(void);
 inline JavaIoPrintStream *OrgApacheLuceneIndexSegmentInfos_set_infoStream(JavaIoPrintStream *value);
 static JavaIoPrintStream *OrgApacheLuceneIndexSegmentInfos_infoStream;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneIndexSegmentInfos, infoStream, JavaIoPrintStream *)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_defaultGenFileRetryCount();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_defaultGenFileRetryCount(void);
 inline jint OrgApacheLuceneIndexSegmentInfos_set_defaultGenFileRetryCount(jint value);
-inline jint *OrgApacheLuceneIndexSegmentInfos_getRef_defaultGenFileRetryCount();
+inline jint *OrgApacheLuceneIndexSegmentInfos_getRef_defaultGenFileRetryCount(void);
 static jint OrgApacheLuceneIndexSegmentInfos_defaultGenFileRetryCount = 10;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexSegmentInfos, defaultGenFileRetryCount, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_defaultGenFileRetryPauseMsec();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_defaultGenFileRetryPauseMsec(void);
 inline jint OrgApacheLuceneIndexSegmentInfos_set_defaultGenFileRetryPauseMsec(jint value);
-inline jint *OrgApacheLuceneIndexSegmentInfos_getRef_defaultGenFileRetryPauseMsec();
+inline jint *OrgApacheLuceneIndexSegmentInfos_getRef_defaultGenFileRetryPauseMsec(void);
 static jint OrgApacheLuceneIndexSegmentInfos_defaultGenFileRetryPauseMsec = 50;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexSegmentInfos, defaultGenFileRetryPauseMsec, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_defaultGenLookaheadCount();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_defaultGenLookaheadCount(void);
 inline jint OrgApacheLuceneIndexSegmentInfos_set_defaultGenLookaheadCount(jint value);
-inline jint *OrgApacheLuceneIndexSegmentInfos_getRef_defaultGenLookaheadCount();
+inline jint *OrgApacheLuceneIndexSegmentInfos_getRef_defaultGenLookaheadCount(void);
 static jint OrgApacheLuceneIndexSegmentInfos_defaultGenLookaheadCount = 10;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexSegmentInfos, defaultGenLookaheadCount, jint)
 
@@ -116,7 +117,7 @@ __attribute__((unused)) static void OrgApacheLuceneIndexSegmentInfos_prepareComm
 
 __attribute__((unused)) static void OrgApacheLuceneIndexSegmentInfos_finishCommitWithOrgApacheLuceneStoreDirectory_(OrgApacheLuceneIndexSegmentInfos *self, OrgApacheLuceneStoreDirectory *dir);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexSegmentInfos__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexSegmentInfos__Annotations$0(void);
 
 @interface OrgApacheLuceneIndexSegmentInfos_1 : OrgApacheLuceneIndexSegmentInfos_FindSegmentsFile {
  @public
@@ -217,7 +218,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       [((id<JavaUtilSet>) nil_chk(segmentSet_)) removeWithId:info];
     }
   }
-  JreAssert(([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size]), (@"org/apache/lucene/index/SegmentInfos.java:425 condition failed: assert segmentSet.size() == segments.size();"));
+  JreAssert([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size], @"org/apache/lucene/index/SegmentInfos.java:425 condition failed: assert segmentSet.size() == segments.size();");
 }
 
 - (id)java_clone {
@@ -234,7 +235,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return sis;
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSString_withNSException_(@"should not happen", e);
+    @throw new_JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_(@"should not happen", e);
   }
 }
 
@@ -389,7 +390,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   jboolean inserted = false;
   jint newSegIdx = 0;
   for (jint segIdx = 0, cnt = [((id<JavaUtilList>) nil_chk(segments_)) size]; segIdx < cnt; segIdx++) {
-    JreAssert((segIdx >= newSegIdx), (@"org/apache/lucene/index/SegmentInfos.java:1024 condition failed: assert segIdx >= newSegIdx;"));
+    JreAssert(segIdx >= newSegIdx, @"org/apache/lucene/index/SegmentInfos.java:1024 condition failed: assert segIdx >= newSegIdx;");
     OrgApacheLuceneIndexSegmentInfo *info = [((id<JavaUtilList>) nil_chk(segments_)) getWithInt:segIdx];
     if ([mergedAway containsWithId:info]) {
       if (!inserted && !dropSegment) {
@@ -411,7 +412,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     [((id<JavaUtilSet>) nil_chk(segmentSet_)) addWithId:merge->info_];
   }
   [((id<JavaUtilSet>) nil_chk(segmentSet_)) removeAllWithJavaUtilCollection:mergedAway];
-  JreAssert(([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size]), (@"org/apache/lucene/index/SegmentInfos.java:1056 condition failed: assert segmentSet.size() == segments.size();"));
+  JreAssert([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size], @"org/apache/lucene/index/SegmentInfos.java:1056 condition failed: assert segmentSet.size() == segments.size();");
 }
 
 - (id<JavaUtilList>)createBackupSegmentInfosWithBoolean:(jboolean)cloneChildren {
@@ -460,7 +461,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   }
   [((id<JavaUtilList>) nil_chk(segments_)) addWithId:si];
   [((id<JavaUtilSet>) nil_chk(segmentSet_)) addWithId:si];
-  JreAssert(([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size]), (@"org/apache/lucene/index/SegmentInfos.java:1109 condition failed: assert segmentSet.size() == segments.size();"));
+  JreAssert([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size], @"org/apache/lucene/index/SegmentInfos.java:1109 condition failed: assert segmentSet.size() == segments.size();");
 }
 
 - (void)addAllWithJavaLangIterable:(id<JavaLangIterable>)sis {
@@ -483,7 +484,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)removeWithInt:(jint)index {
   [((id<JavaUtilSet>) nil_chk(segmentSet_)) removeWithId:[((id<JavaUtilList>) nil_chk(segments_)) removeWithInt:index]];
-  JreAssert(([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size]), (@"org/apache/lucene/index/SegmentInfos.java:1132 condition failed: assert segmentSet.size() == segments.size();"));
+  JreAssert([((id<JavaUtilSet>) nil_chk(segmentSet_)) size] == [((id<JavaUtilList>) nil_chk(segments_)) size], @"org/apache/lucene/index/SegmentInfos.java:1132 condition failed: assert segmentSet.size() == segments.size();");
 }
 
 - (jboolean)containsWithOrgApacheLuceneIndexSegmentInfo:(OrgApacheLuceneIndexSegmentInfo *)si {
@@ -855,7 +856,7 @@ void OrgApacheLuceneIndexSegmentInfos_writeWithOrgApacheLuceneStoreDirectory_(Or
       @try {
         [directory deleteFileWithNSString:segmentFileName];
       }
-      @catch (NSException *t) {
+      @catch (JavaLangThrowable *t) {
       }
     }
   }
@@ -925,13 +926,13 @@ void OrgApacheLuceneIndexSegmentInfos_rollbackCommitWithOrgApacheLuceneStoreDire
     @try {
       [self->pendingSegnOutput_ close];
     }
-    @catch (NSException *t) {
+    @catch (JavaLangThrowable *t) {
     }
     @try {
       NSString *segmentFileName = OrgApacheLuceneIndexIndexFileNames_fileNameFromGenerationWithNSString_withNSString_withLong_(OrgApacheLuceneIndexIndexFileNames_SEGMENTS, @"", self->generation_);
       [((OrgApacheLuceneStoreDirectory *) nil_chk(dir)) deleteFileWithNSString:segmentFileName];
     }
-    @catch (NSException *t) {
+    @catch (JavaLangThrowable *t) {
     }
     self->pendingSegnOutput_ = nil;
   }
@@ -965,7 +966,7 @@ void OrgApacheLuceneIndexSegmentInfos_finishCommitWithOrgApacheLuceneStoreDirect
       @try {
         [dir deleteFileWithNSString:fileName];
       }
-      @catch (NSException *t) {
+      @catch (JavaLangThrowable *t) {
       }
     }
   }
@@ -984,7 +985,7 @@ void OrgApacheLuceneIndexSegmentInfos_finishCommitWithOrgApacheLuceneStoreDirect
   @catch (OrgApacheLuceneUtilThreadInterruptedException *t) {
     @throw t;
   }
-  @catch (NSException *t) {
+  @catch (JavaLangThrowable *t) {
   }
 }
 

@@ -88,15 +88,15 @@ withOrgApacheLuceneSearchBooleanClause_Occur:(OrgApacheLuceneSearchBooleanClause
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchBooleanQuery)
 
-FOUNDATION_EXPORT jint OrgApacheLuceneSearchBooleanQuery_getMaxClauseCount();
+FOUNDATION_EXPORT jint OrgApacheLuceneSearchBooleanQuery_getMaxClauseCount(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchBooleanQuery_setMaxClauseCountWithInt_(jint maxClauseCount);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchBooleanQuery_init(OrgApacheLuceneSearchBooleanQuery *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery *new_OrgApacheLuceneSearchBooleanQuery_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery *new_OrgApacheLuceneSearchBooleanQuery_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery *create_OrgApacheLuceneSearchBooleanQuery_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery *create_OrgApacheLuceneSearchBooleanQuery_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchBooleanQuery_initWithBoolean_(OrgApacheLuceneSearchBooleanQuery *self, jboolean disableCoord);
 
@@ -115,11 +115,27 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanQuery)
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneSearchBooleanQuery_TooManyClauses : JavaLangRuntimeException
 
 #pragma mark Public
 
 - (instancetype)init;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -127,9 +143,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchBooleanQuery_TooManyClauses)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchBooleanQuery_TooManyClauses_init(OrgApacheLuceneSearchBooleanQuery_TooManyClauses *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery_TooManyClauses *new_OrgApacheLuceneSearchBooleanQuery_TooManyClauses_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery_TooManyClauses *new_OrgApacheLuceneSearchBooleanQuery_TooManyClauses_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery_TooManyClauses *create_OrgApacheLuceneSearchBooleanQuery_TooManyClauses_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanQuery_TooManyClauses *create_OrgApacheLuceneSearchBooleanQuery_TooManyClauses_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanQuery_TooManyClauses)
 
@@ -180,6 +196,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanQuery_TooManyClauses)
 - (jboolean)scoresDocsOutOfOrder;
 
 - (jfloat)sumOfSquaredWeights;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

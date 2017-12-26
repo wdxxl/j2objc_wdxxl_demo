@@ -48,16 +48,16 @@
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternalBindTimeTypeAdapter)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTimeTypeAdapter_get_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTimeTypeAdapter_get_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTimeTypeAdapter_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTimeTypeAdapter, FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalBindTimeTypeAdapter_init(ComGoogleGsonInternalBindTimeTypeAdapter *self);
 
-FOUNDATION_EXPORT ComGoogleGsonInternalBindTimeTypeAdapter *new_ComGoogleGsonInternalBindTimeTypeAdapter_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonInternalBindTimeTypeAdapter *new_ComGoogleGsonInternalBindTimeTypeAdapter_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonInternalBindTimeTypeAdapter *create_ComGoogleGsonInternalBindTimeTypeAdapter_init();
+FOUNDATION_EXPORT ComGoogleGsonInternalBindTimeTypeAdapter *create_ComGoogleGsonInternalBindTimeTypeAdapter_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindTimeTypeAdapter)
 

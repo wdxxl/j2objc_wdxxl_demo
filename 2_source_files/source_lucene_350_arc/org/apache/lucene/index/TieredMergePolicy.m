@@ -636,7 +636,7 @@ OrgApacheLuceneIndexTieredMergePolicy *create_OrgApacheLuceneIndexTieredMergePol
 
 jboolean OrgApacheLuceneIndexTieredMergePolicy_isMergedWithOrgApacheLuceneIndexSegmentInfo_(OrgApacheLuceneIndexTieredMergePolicy *self, OrgApacheLuceneIndexSegmentInfo *info) {
   OrgApacheLuceneIndexIndexWriter *w = [((OrgApacheLuceneUtilSetOnce *) nil_chk(self->writer_)) get];
-  JreAssert((w != nil), (@"org/apache/lucene/index/TieredMergePolicy.java:623 condition failed: assert w != null;"));
+  JreAssert(w != nil, @"org/apache/lucene/index/TieredMergePolicy.java:623 condition failed: assert w != null;");
   jboolean hasDeletions = [((OrgApacheLuceneIndexIndexWriter *) nil_chk(w)) numDeletedDocsWithOrgApacheLuceneIndexSegmentInfo:info] > 0;
   return !hasDeletions && ![((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info)) hasSeparateNorms] && info->dir_ == [w getDirectory] && ([info getUseCompoundFile] == self->useCompoundFile_ || self->noCFSRatio_ < 1.0);
 }
@@ -645,7 +645,7 @@ jlong OrgApacheLuceneIndexTieredMergePolicy_sizeWithOrgApacheLuceneIndexSegmentI
   jlong byteSize = [((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info)) sizeInBytesWithBoolean:true];
   jint delCount = [((OrgApacheLuceneIndexIndexWriter *) nil_chk([((OrgApacheLuceneUtilSetOnce *) nil_chk(self->writer_)) get])) numDeletedDocsWithOrgApacheLuceneIndexSegmentInfo:info];
   jdouble delRatio = (info->docCount_ <= 0 ? 0.0f : ((jdouble) delCount / (jdouble) info->docCount_));
-  JreAssert((delRatio <= 1.0), (@"org/apache/lucene/index/TieredMergePolicy.java:636 condition failed: assert delRatio <= 1.0;"));
+  JreAssert(delRatio <= 1.0, @"org/apache/lucene/index/TieredMergePolicy.java:636 condition failed: assert delRatio <= 1.0;");
   return JreFpToLong((byteSize * (1.0 - delRatio)));
 }
 
@@ -689,7 +689,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexTieredMergePolicy)
     }
   }
   @catch (JavaIoIOException *ioe) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(ioe);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(ioe);
   }
 }
 

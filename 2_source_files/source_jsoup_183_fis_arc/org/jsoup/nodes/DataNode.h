@@ -21,6 +21,7 @@
 #include "org/jsoup/nodes/Node.h"
 
 @class JavaLangStringBuilder;
+@class OrgJsoupNodesAttributes;
 @class OrgJsoupNodesDocument_OutputSettings;
 
 @interface OrgJsoupNodesDataNode : OrgJsoupNodesNode
@@ -50,6 +51,15 @@
 - (void)outerHtmlTailWithJavaLangStringBuilder:(JavaLangStringBuilder *)accum
                                        withInt:(jint)depth
       withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *)outArg;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
 
 @end
 

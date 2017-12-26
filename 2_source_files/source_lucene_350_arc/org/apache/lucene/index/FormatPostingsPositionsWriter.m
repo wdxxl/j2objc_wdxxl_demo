@@ -34,8 +34,8 @@
              withByteArray:(IOSByteArray *)payload
                    withInt:(jint)payloadOffset
                    withInt:(jint)payloadLength {
-  JreAssert((!omitTermFreqAndPositions_), (@"omitTermFreqAndPositions is true"));
-  JreAssert((out_ != nil), (@"org/apache/lucene/index/FormatPostingsPositionsWriter.java:56 condition failed: assert out != null;"));
+  JreAssert(!omitTermFreqAndPositions_, @"omitTermFreqAndPositions is true");
+  JreAssert(out_ != nil, @"org/apache/lucene/index/FormatPostingsPositionsWriter.java:56 condition failed: assert out != null;");
   jint delta = position - lastPosition_;
   lastPosition_ = position;
   if (storePayloads_) {

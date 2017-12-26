@@ -20,7 +20,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedDirect8, values_, IOSByteArray *)
 
-inline jint OrgApacheLuceneUtilPackedDirect8_get_BITS_PER_VALUE();
+inline jint OrgApacheLuceneUtilPackedDirect8_get_BITS_PER_VALUE(void);
 #define OrgApacheLuceneUtilPackedDirect8_BITS_PER_VALUE 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedDirect8, BITS_PER_VALUE, jint)
 

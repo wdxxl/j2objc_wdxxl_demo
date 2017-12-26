@@ -39,6 +39,13 @@ withOrgApacheLuceneSearchPhraseQuery_PostingsAndFreqArray:(IOSObjectArray *)post
                                             withInt:(jint)slop
                                       withByteArray:(IOSByteArray *)norms;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg0
+withOrgApacheLuceneSearchPhraseQuery_PostingsAndFreqArray:(IOSObjectArray *)arg1
+                withOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg2
+                                      withByteArray:(IOSByteArray *)arg3 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchSloppyPhraseScorer)

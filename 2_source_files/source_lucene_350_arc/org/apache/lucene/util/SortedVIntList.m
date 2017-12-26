@@ -28,15 +28,15 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilSortedVIntList, bytes_, IOSByteArray *)
 
-inline jint OrgApacheLuceneUtilSortedVIntList_get_VB1();
+inline jint OrgApacheLuceneUtilSortedVIntList_get_VB1(void);
 #define OrgApacheLuceneUtilSortedVIntList_VB1 127
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilSortedVIntList, VB1, jint)
 
-inline jint OrgApacheLuceneUtilSortedVIntList_get_BIT_SHIFT();
+inline jint OrgApacheLuceneUtilSortedVIntList_get_BIT_SHIFT(void);
 #define OrgApacheLuceneUtilSortedVIntList_BIT_SHIFT 7
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilSortedVIntList, BIT_SHIFT, jint)
 
-inline jint OrgApacheLuceneUtilSortedVIntList_get_MAX_BYTES_PER_INT();
+inline jint OrgApacheLuceneUtilSortedVIntList_get_MAX_BYTES_PER_INT(void);
 #define OrgApacheLuceneUtilSortedVIntList_MAX_BYTES_PER_INT 5
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilSortedVIntList, MAX_BYTES_PER_INT, jint)
 

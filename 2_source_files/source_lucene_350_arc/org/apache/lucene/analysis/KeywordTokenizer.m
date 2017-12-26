@@ -26,7 +26,7 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisKeywordTokenizer, termAtt_, id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisKeywordTokenizer, offsetAtt_, id<OrgApacheLuceneAnalysisTokenattributesOffsetAttribute>)
 
-inline jint OrgApacheLuceneAnalysisKeywordTokenizer_get_DEFAULT_BUFFER_SIZE();
+inline jint OrgApacheLuceneAnalysisKeywordTokenizer_get_DEFAULT_BUFFER_SIZE(void);
 #define OrgApacheLuceneAnalysisKeywordTokenizer_DEFAULT_BUFFER_SIZE 256
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisKeywordTokenizer, DEFAULT_BUFFER_SIZE, jint)
 

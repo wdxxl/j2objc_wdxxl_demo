@@ -68,9 +68,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm, term_, OrgAp
 
 __attribute__((unused)) static void OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm_init(OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm *new_OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm *new_OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm *create_OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm_init();
+__attribute__((unused)) static OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm *create_OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchTopTermsRewrite_ScoreTerm)
 

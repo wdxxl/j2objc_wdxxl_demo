@@ -89,24 +89,24 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 void OrgApacheLuceneAnalysisTokenStream_init(OrgApacheLuceneAnalysisTokenStream *self) {
   OrgApacheLuceneUtilAttributeSource_init(self);
-  JreAssert((OrgApacheLuceneAnalysisTokenStream_assertFinal(self)), (@"org/apache/lucene/analysis/TokenStream.java:92 condition failed: assert assertFinal();"));
+  JreAssert(OrgApacheLuceneAnalysisTokenStream_assertFinal(self), @"org/apache/lucene/analysis/TokenStream.java:92 condition failed: assert assertFinal();");
 }
 
 void OrgApacheLuceneAnalysisTokenStream_initWithOrgApacheLuceneUtilAttributeSource_(OrgApacheLuceneAnalysisTokenStream *self, OrgApacheLuceneUtilAttributeSource *input) {
   OrgApacheLuceneUtilAttributeSource_initWithOrgApacheLuceneUtilAttributeSource_(self, input);
-  JreAssert((OrgApacheLuceneAnalysisTokenStream_assertFinal(self)), (@"org/apache/lucene/analysis/TokenStream.java:100 condition failed: assert assertFinal();"));
+  JreAssert(OrgApacheLuceneAnalysisTokenStream_assertFinal(self), @"org/apache/lucene/analysis/TokenStream.java:100 condition failed: assert assertFinal();");
 }
 
 void OrgApacheLuceneAnalysisTokenStream_initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory_(OrgApacheLuceneAnalysisTokenStream *self, OrgApacheLuceneUtilAttributeSource_AttributeFactory *factory) {
   OrgApacheLuceneUtilAttributeSource_initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory_(self, factory);
-  JreAssert((OrgApacheLuceneAnalysisTokenStream_assertFinal(self)), (@"org/apache/lucene/analysis/TokenStream.java:108 condition failed: assert assertFinal();"));
+  JreAssert(OrgApacheLuceneAnalysisTokenStream_assertFinal(self), @"org/apache/lucene/analysis/TokenStream.java:108 condition failed: assert assertFinal();");
 }
 
 jboolean OrgApacheLuceneAnalysisTokenStream_assertFinal(OrgApacheLuceneAnalysisTokenStream *self) {
   @try {
     IOSClass *clazz = [self java_getClass];
     if (![clazz desiredAssertionStatus]) return true;
-    JreAssert(([clazz isAnonymousClass] || ([clazz getModifiers] & (JavaLangReflectModifier_FINAL | JavaLangReflectModifier_PRIVATE)) != 0 || JavaLangReflectModifier_isFinalWithInt_([((JavaLangReflectMethod *) nil_chk([clazz getMethod:@"incrementToken" parameterTypes:[IOSObjectArray newArrayWithLength:0 type:IOSClass_class_()]])) getModifiers])), (@"TokenStream implementation classes or at least their incrementToken() implementation must be final"));
+    JreAssert([clazz isAnonymousClass] || ([clazz getModifiers] & (JavaLangReflectModifier_FINAL | JavaLangReflectModifier_PRIVATE)) != 0 || JavaLangReflectModifier_isFinalWithInt_([((JavaLangReflectMethod *) nil_chk([clazz getMethod:@"incrementToken" parameterTypes:[IOSObjectArray newArrayWithLength:0 type:IOSClass_class_()]])) getModifiers]), @"TokenStream implementation classes or at least their incrementToken() implementation must be final");
     return true;
   }
   @catch (JavaLangNoSuchMethodException *nsme) {

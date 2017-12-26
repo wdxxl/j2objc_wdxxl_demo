@@ -42,6 +42,10 @@
 - (instancetype)initWithNSString:(NSString *)resourceDesc
                     withNSString:(NSString *)version_;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexIndexFormatTooOldException)

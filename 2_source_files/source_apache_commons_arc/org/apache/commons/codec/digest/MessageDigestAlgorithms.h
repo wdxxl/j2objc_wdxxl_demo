@@ -22,32 +22,32 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecDigestMessageDigestAlgorithms)
 
-inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_MD2();
+inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_MD2(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_MD2;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMessageDigestAlgorithms, MD2, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_MD5();
+inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_MD5(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_MD5;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMessageDigestAlgorithms, MD5, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_1();
+inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_1(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_SHA_1;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMessageDigestAlgorithms, SHA_1, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_256();
+inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_256(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_SHA_256;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMessageDigestAlgorithms, SHA_256, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_384();
+inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_384(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_SHA_384;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMessageDigestAlgorithms, SHA_384, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_512();
+inline NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_get_SHA_512(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMessageDigestAlgorithms_SHA_512;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMessageDigestAlgorithms, SHA_512, NSString *)

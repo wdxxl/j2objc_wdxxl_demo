@@ -480,7 +480,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     clone = (OrgJsoupNodesDocument_OutputSettings *) cast_chk([super java_clone], [OrgJsoupNodesDocument_OutputSettings class]);
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
   (void) [((OrgJsoupNodesDocument_OutputSettings *) nil_chk(clone)) charsetWithNSString:[((JavaNioCharsetCharset *) nil_chk(charset_)) name]];
   clone->escapeMode_ = OrgJsoupNodesEntities_EscapeMode_valueOfWithNSString_([((OrgJsoupNodesEntities_EscapeMode *) nil_chk(escapeMode_)) name]);
@@ -580,10 +580,6 @@ OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSetting
   return OrgJsoupNodesDocument_OutputSettings_Syntax_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgJsoupNodesDocument_OutputSettings_Syntax;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -605,8 +601,8 @@ OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSetting
 
 + (void)initialize {
   if (self == [OrgJsoupNodesDocument_OutputSettings_Syntax class]) {
-    JreEnum(OrgJsoupNodesDocument_OutputSettings_Syntax, html) = new_OrgJsoupNodesDocument_OutputSettings_Syntax_initWithNSString_withInt_(@"html", 0);
-    JreEnum(OrgJsoupNodesDocument_OutputSettings_Syntax, xml) = new_OrgJsoupNodesDocument_OutputSettings_Syntax_initWithNSString_withInt_(@"xml", 1);
+    JreEnum(OrgJsoupNodesDocument_OutputSettings_Syntax, html) = new_OrgJsoupNodesDocument_OutputSettings_Syntax_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgJsoupNodesDocument_OutputSettings_Syntax, xml) = new_OrgJsoupNodesDocument_OutputSettings_Syntax_initWithNSString_withInt_(@"", 1);
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesDocument_OutputSettings_Syntax)
   }
 }
@@ -662,10 +658,6 @@ OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_values_[3];
   return OrgJsoupNodesDocument_QuirksMode_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgJsoupNodesDocument_QuirksMode;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -688,9 +680,9 @@ OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_values_[3];
 
 + (void)initialize {
   if (self == [OrgJsoupNodesDocument_QuirksMode class]) {
-    JreEnum(OrgJsoupNodesDocument_QuirksMode, noQuirks) = new_OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(@"noQuirks", 0);
-    JreEnum(OrgJsoupNodesDocument_QuirksMode, quirks) = new_OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(@"quirks", 1);
-    JreEnum(OrgJsoupNodesDocument_QuirksMode, limitedQuirks) = new_OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(@"limitedQuirks", 2);
+    JreEnum(OrgJsoupNodesDocument_QuirksMode, noQuirks) = new_OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgJsoupNodesDocument_QuirksMode, quirks) = new_OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgJsoupNodesDocument_QuirksMode, limitedQuirks) = new_OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesDocument_QuirksMode)
   }
 }

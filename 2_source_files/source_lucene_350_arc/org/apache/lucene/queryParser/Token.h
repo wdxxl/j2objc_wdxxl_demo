@@ -56,9 +56,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserToken, specialToken_, OrgApacheLuc
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserToken_init(OrgApacheLuceneQueryParserToken *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserToken *new_OrgApacheLuceneQueryParserToken_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserToken *new_OrgApacheLuceneQueryParserToken_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserToken *create_OrgApacheLuceneQueryParserToken_init();
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserToken *create_OrgApacheLuceneQueryParserToken_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserToken_initWithInt_(OrgApacheLuceneQueryParserToken *self, jint kind);
 

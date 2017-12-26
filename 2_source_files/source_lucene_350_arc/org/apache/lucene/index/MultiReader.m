@@ -58,7 +58,7 @@ __attribute__((unused)) static void OrgApacheLuceneIndexMultiReader_initialize__
 
 __attribute__((unused)) static jint OrgApacheLuceneIndexMultiReader_readerIndexWithInt_(OrgApacheLuceneIndexMultiReader *self, jint n);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexMultiReader__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexMultiReader__Annotations$0(void);
 
 @implementation OrgApacheLuceneIndexMultiReader
 
@@ -90,7 +90,7 @@ __attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexMultiReader__
       return [self doOpenIfChangedWithBoolean:true];
     }
     @catch (JavaLangException *ex) {
-      @throw new_JavaLangRuntimeException_initWithNSException_(ex);
+      @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(ex);
     }
   }
 }

@@ -42,6 +42,11 @@
 
 - (id<OrgJsoupConnection>)submit;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
+                             withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupNodesFormElement)

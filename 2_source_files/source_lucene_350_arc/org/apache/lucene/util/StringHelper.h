@@ -37,7 +37,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilStringHelper)
 
-inline OrgApacheLuceneUtilStringInterner *OrgApacheLuceneUtilStringHelper_get_interner();
+inline OrgApacheLuceneUtilStringInterner *OrgApacheLuceneUtilStringHelper_get_interner(void);
 inline OrgApacheLuceneUtilStringInterner *OrgApacheLuceneUtilStringHelper_set_interner(OrgApacheLuceneUtilStringInterner *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilStringInterner *OrgApacheLuceneUtilStringHelper_interner;
@@ -47,7 +47,7 @@ FOUNDATION_EXPORT NSString *OrgApacheLuceneUtilStringHelper_internWithNSString_(
 
 FOUNDATION_EXPORT jint OrgApacheLuceneUtilStringHelper_bytesDifferenceWithByteArray_withInt_withByteArray_withInt_(IOSByteArray *bytes1, jint len1, IOSByteArray *bytes2, jint len2);
 
-FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilStringHelper_getVersionComparator();
+FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilStringHelper_getVersionComparator(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilStringHelper)
 

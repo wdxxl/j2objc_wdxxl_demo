@@ -26,41 +26,41 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecCharEncoding)
 
-inline NSString *OrgApacheCommonsCodecCharEncoding_get_ISO_8859_1();
+inline NSString *OrgApacheCommonsCodecCharEncoding_get_ISO_8859_1(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecCharEncoding_ISO_8859_1;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharEncoding, ISO_8859_1, NSString *)
 
-inline NSString *OrgApacheCommonsCodecCharEncoding_get_US_ASCII();
+inline NSString *OrgApacheCommonsCodecCharEncoding_get_US_ASCII(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecCharEncoding_US_ASCII;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharEncoding, US_ASCII, NSString *)
 
-inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_16();
+inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_16(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecCharEncoding_UTF_16;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharEncoding, UTF_16, NSString *)
 
-inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_16BE();
+inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_16BE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecCharEncoding_UTF_16BE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharEncoding, UTF_16BE, NSString *)
 
-inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_16LE();
+inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_16LE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecCharEncoding_UTF_16LE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharEncoding, UTF_16LE, NSString *)
 
-inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_8();
+inline NSString *OrgApacheCommonsCodecCharEncoding_get_UTF_8(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecCharEncoding_UTF_8;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharEncoding, UTF_8, NSString *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecCharEncoding_init(OrgApacheCommonsCodecCharEncoding *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecCharEncoding *new_OrgApacheCommonsCodecCharEncoding_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecCharEncoding *new_OrgApacheCommonsCodecCharEncoding_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecCharEncoding *create_OrgApacheCommonsCodecCharEncoding_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecCharEncoding *create_OrgApacheCommonsCodecCharEncoding_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecCharEncoding)
 

@@ -15,6 +15,8 @@
 
 @end
 
+__attribute__((unused)) static void OrgApacheLuceneIndexTerm_readObjectWithJavaIoObjectInputStream_(OrgApacheLuceneIndexTerm *self, JavaIoObjectInputStream *inArg);
+
 @implementation OrgApacheLuceneIndexTerm
 
 - (instancetype)initWithNSString:(NSString *)fld
@@ -88,8 +90,7 @@
 }
 
 - (void)readObjectWithJavaIoObjectInputStream:(JavaIoObjectInputStream *)inArg {
-  [((JavaIoObjectInputStream *) nil_chk(inArg)) defaultReadObject];
-  field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(field_);
+  OrgApacheLuceneIndexTerm_readObjectWithJavaIoObjectInputStream_(self, inArg);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -171,6 +172,11 @@ OrgApacheLuceneIndexTerm *new_OrgApacheLuceneIndexTerm_initWithNSString_withNSSt
 
 OrgApacheLuceneIndexTerm *create_OrgApacheLuceneIndexTerm_initWithNSString_withNSString_withBoolean_(NSString *fld, NSString *txt, jboolean intern) {
   J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexTerm, initWithNSString_withNSString_withBoolean_, fld, txt, intern)
+}
+
+void OrgApacheLuceneIndexTerm_readObjectWithJavaIoObjectInputStream_(OrgApacheLuceneIndexTerm *self, JavaIoObjectInputStream *inArg) {
+  [((JavaIoObjectInputStream *) nil_chk(inArg)) defaultReadObject];
+  self->field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(self->field_);
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexTerm)

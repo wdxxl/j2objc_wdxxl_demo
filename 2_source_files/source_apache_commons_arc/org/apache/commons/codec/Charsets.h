@@ -32,41 +32,41 @@
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecCharsets)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_ISO_8859_1();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_ISO_8859_1(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_ISO_8859_1;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharsets, ISO_8859_1, JavaNioCharsetCharset *)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_US_ASCII();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_US_ASCII(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_US_ASCII;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharsets, US_ASCII, JavaNioCharsetCharset *)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_16();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_16(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_UTF_16;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharsets, UTF_16, JavaNioCharsetCharset *)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_16BE();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_16BE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_UTF_16BE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharsets, UTF_16BE, JavaNioCharsetCharset *)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_16LE();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_16LE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_UTF_16LE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharsets, UTF_16LE, JavaNioCharsetCharset *)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_8();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_get_UTF_8(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_UTF_8;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecCharsets, UTF_8, JavaNioCharsetCharset *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecCharsets_init(OrgApacheCommonsCodecCharsets *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecCharsets *new_OrgApacheCommonsCodecCharsets_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecCharsets *new_OrgApacheCommonsCodecCharsets_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecCharsets *create_OrgApacheCommonsCodecCharsets_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecCharsets *create_OrgApacheCommonsCodecCharsets_init(void);
 
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecCharsets_toCharsetWithJavaNioCharsetCharset_(JavaNioCharsetCharset *charset);
 

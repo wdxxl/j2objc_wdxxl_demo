@@ -38,7 +38,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilParameter)
 
-inline id<JavaUtilMap> OrgApacheLuceneUtilParameter_get_allParameters();
+inline id<JavaUtilMap> OrgApacheLuceneUtilParameter_get_allParameters(void);
 inline id<JavaUtilMap> OrgApacheLuceneUtilParameter_set_allParameters(id<JavaUtilMap> value);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<JavaUtilMap> OrgApacheLuceneUtilParameter_allParameters;

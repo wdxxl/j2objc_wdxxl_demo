@@ -45,16 +45,16 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecNetRFC1522Codec)
 
-inline jchar OrgApacheCommonsCodecNetRFC1522Codec_get_SEP();
+inline jchar OrgApacheCommonsCodecNetRFC1522Codec_get_SEP(void);
 #define OrgApacheCommonsCodecNetRFC1522Codec_SEP '?'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetRFC1522Codec, SEP, jchar)
 
-inline NSString *OrgApacheCommonsCodecNetRFC1522Codec_get_POSTFIX();
+inline NSString *OrgApacheCommonsCodecNetRFC1522Codec_get_POSTFIX(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecNetRFC1522Codec_POSTFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecNetRFC1522Codec, POSTFIX, NSString *)
 
-inline NSString *OrgApacheCommonsCodecNetRFC1522Codec_get_PREFIX();
+inline NSString *OrgApacheCommonsCodecNetRFC1522Codec_get_PREFIX(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecNetRFC1522Codec_PREFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecNetRFC1522Codec, PREFIX, NSString *)

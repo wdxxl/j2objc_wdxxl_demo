@@ -94,7 +94,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApach
         if (storePositions) {
           IOSIntArray *positions = [((id<OrgApacheLuceneIndexTermPositionVector>) nil_chk(tpVector)) getTermPositionsWithInt:j];
           if (positions == nil) @throw new_JavaLangIllegalStateException_initWithNSString_(@"Trying to write positions that are null!");
-          JreAssert((positions->size_ == termFreq), (@"org/apache/lucene/index/TermVectorsWriter.java:135 condition failed: assert positions.length == termFreq;"));
+          JreAssert(positions->size_ == termFreq, @"org/apache/lucene/index/TermVectorsWriter.java:135 condition failed: assert positions.length == termFreq;");
           jint lastPosition = 0;
           for (jint k = 0; k < positions->size_; k++) {
             jint position = IOSIntArray_Get(positions, k);
@@ -105,7 +105,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApach
         if (storeOffsets) {
           IOSObjectArray *offsets = [((id<OrgApacheLuceneIndexTermPositionVector>) nil_chk(tpVector)) getOffsetsWithInt:j];
           if (offsets == nil) @throw new_JavaLangIllegalStateException_initWithNSString_(@"Trying to write offsets that are null!");
-          JreAssert((offsets->size_ == termFreq), (@"org/apache/lucene/index/TermVectorsWriter.java:150 condition failed: assert offsets.length == termFreq;"));
+          JreAssert(offsets->size_ == termFreq, @"org/apache/lucene/index/TermVectorsWriter.java:150 condition failed: assert offsets.length == termFreq;");
           jint lastEndOffset = 0;
           for (jint k = 0; k < offsets->size_; k++) {
             jint startOffset = [((OrgApacheLuceneIndexTermVectorOffsetInfo *) nil_chk(IOSObjectArray_Get(offsets, k))) getStartOffset];
@@ -145,8 +145,8 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApach
   }
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvd_)) copyBytesWithOrgApacheLuceneStoreDataInput:[((OrgApacheLuceneIndexTermVectorsReader *) nil_chk(reader)) getTvdStream] withLong:tvdPosition - tvdStart];
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvf_)) copyBytesWithOrgApacheLuceneStoreDataInput:[reader getTvfStream] withLong:tvfPosition - tvfStart];
-  JreAssert(([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvd_)) getFilePointer] == tvdPosition), (@"org/apache/lucene/index/TermVectorsWriter.java:196 condition failed: assert tvd.getFilePointer() == tvdPosition;"));
-  JreAssert(([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvf_)) getFilePointer] == tvfPosition), (@"org/apache/lucene/index/TermVectorsWriter.java:197 condition failed: assert tvf.getFilePointer() == tvfPosition;"));
+  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvd_)) getFilePointer] == tvdPosition, @"org/apache/lucene/index/TermVectorsWriter.java:196 condition failed: assert tvd.getFilePointer() == tvdPosition;");
+  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvf_)) getFilePointer] == tvfPosition, @"org/apache/lucene/index/TermVectorsWriter.java:197 condition failed: assert tvf.getFilePointer() == tvfPosition;");
 }
 
 - (void)close {

@@ -45,11 +45,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardClassicTokenizer, typeAtt_, i
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisStandardClassicTokenizer_init__WithJavaIoReader_withOrgApacheLuceneUtilVersion_(OrgApacheLuceneAnalysisStandardClassicTokenizer *self, JavaIoReader *input, OrgApacheLuceneUtilVersion *matchVersion);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer__Annotations$2(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisStandardClassicTokenizer)
 

@@ -40,11 +40,11 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalBindJsonTreeWriter, stack_JsonTreeWrite
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalBindJsonTreeWriter, pendingName_, NSString *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalBindJsonTreeWriter, product_, ComGoogleGsonJsonElement *)
 
-inline JavaIoWriter *ComGoogleGsonInternalBindJsonTreeWriter_get_UNWRITABLE_WRITER();
+inline JavaIoWriter *ComGoogleGsonInternalBindJsonTreeWriter_get_UNWRITABLE_WRITER(void);
 static JavaIoWriter *ComGoogleGsonInternalBindJsonTreeWriter_UNWRITABLE_WRITER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindJsonTreeWriter, UNWRITABLE_WRITER, JavaIoWriter *)
 
-inline ComGoogleGsonJsonPrimitive *ComGoogleGsonInternalBindJsonTreeWriter_get_SENTINEL_CLOSED();
+inline ComGoogleGsonJsonPrimitive *ComGoogleGsonInternalBindJsonTreeWriter_get_SENTINEL_CLOSED(void);
 static ComGoogleGsonJsonPrimitive *ComGoogleGsonInternalBindJsonTreeWriter_SENTINEL_CLOSED;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindJsonTreeWriter, SENTINEL_CLOSED, ComGoogleGsonJsonPrimitive *)
 
@@ -70,9 +70,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindJsonTreeWriter_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindJsonTreeWriter_1_init(ComGoogleGsonInternalBindJsonTreeWriter_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindJsonTreeWriter_1 *new_ComGoogleGsonInternalBindJsonTreeWriter_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindJsonTreeWriter_1 *new_ComGoogleGsonInternalBindJsonTreeWriter_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindJsonTreeWriter_1 *create_ComGoogleGsonInternalBindJsonTreeWriter_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindJsonTreeWriter_1 *create_ComGoogleGsonInternalBindJsonTreeWriter_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindJsonTreeWriter)
 

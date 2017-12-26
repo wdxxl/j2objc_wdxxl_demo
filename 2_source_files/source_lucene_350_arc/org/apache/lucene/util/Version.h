@@ -43,7 +43,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneUtilVersion_Enum) {
   OrgApacheLuceneUtilVersion_Enum_LUCENE_CURRENT = 12,
 };
 
-@interface OrgApacheLuceneUtilVersion : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneUtilVersion : JavaLangEnum
 
 #pragma mark Public
 
@@ -53,10 +53,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneUtilVersion_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilVersion)
@@ -64,46 +60,46 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneUtilVersion)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_values_[];
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_20();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_20(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_20)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_21();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_21(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_21)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_22();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_22(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_22)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_23();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_23(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_23)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_24();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_24(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_24)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_29();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_29(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_29)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_30();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_30(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_30)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_31();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_31(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_31)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_32();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_32(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_32)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_33();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_33(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_33)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_34();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_34(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_34)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_35();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_35(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_35)
 
-inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_CURRENT();
+inline OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_get_LUCENE_CURRENT(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilVersion, LUCENE_CURRENT)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneUtilVersion_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneUtilVersion_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_valueOfWithNSString_(NSString *name);
 

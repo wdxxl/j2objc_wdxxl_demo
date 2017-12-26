@@ -47,16 +47,16 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexTermVectorOffsetInfo)
 
-inline IOSObjectArray *OrgApacheLuceneIndexTermVectorOffsetInfo_get_EMPTY_OFFSET_INFO();
+inline IOSObjectArray *OrgApacheLuceneIndexTermVectorOffsetInfo_get_EMPTY_OFFSET_INFO(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneIndexTermVectorOffsetInfo_EMPTY_OFFSET_INFO;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexTermVectorOffsetInfo, EMPTY_OFFSET_INFO, IOSObjectArray *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexTermVectorOffsetInfo_init(OrgApacheLuceneIndexTermVectorOffsetInfo *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexTermVectorOffsetInfo *new_OrgApacheLuceneIndexTermVectorOffsetInfo_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexTermVectorOffsetInfo *new_OrgApacheLuceneIndexTermVectorOffsetInfo_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexTermVectorOffsetInfo *create_OrgApacheLuceneIndexTermVectorOffsetInfo_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexTermVectorOffsetInfo *create_OrgApacheLuceneIndexTermVectorOffsetInfo_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexTermVectorOffsetInfo_initWithInt_withInt_(OrgApacheLuceneIndexTermVectorOffsetInfo *self, jint startOffset, jint endOffset);
 

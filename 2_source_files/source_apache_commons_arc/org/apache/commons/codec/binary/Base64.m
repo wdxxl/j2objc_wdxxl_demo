@@ -34,35 +34,35 @@ J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecBinaryBase64, encodeTable_, IOSByteArra
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecBinaryBase64, decodeTable_, IOSByteArray *)
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecBinaryBase64, lineSeparator_, IOSByteArray *)
 
-inline jint OrgApacheCommonsCodecBinaryBase64_get_BITS_PER_ENCODED_BYTE();
+inline jint OrgApacheCommonsCodecBinaryBase64_get_BITS_PER_ENCODED_BYTE(void);
 #define OrgApacheCommonsCodecBinaryBase64_BITS_PER_ENCODED_BYTE 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBase64, BITS_PER_ENCODED_BYTE, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBase64_get_BYTES_PER_UNENCODED_BLOCK();
+inline jint OrgApacheCommonsCodecBinaryBase64_get_BYTES_PER_UNENCODED_BLOCK(void);
 #define OrgApacheCommonsCodecBinaryBase64_BYTES_PER_UNENCODED_BLOCK 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBase64, BYTES_PER_UNENCODED_BLOCK, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBase64_get_BYTES_PER_ENCODED_BLOCK();
+inline jint OrgApacheCommonsCodecBinaryBase64_get_BYTES_PER_ENCODED_BLOCK(void);
 #define OrgApacheCommonsCodecBinaryBase64_BYTES_PER_ENCODED_BLOCK 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBase64, BYTES_PER_ENCODED_BLOCK, jint)
 
-inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_STANDARD_ENCODE_TABLE();
+inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_STANDARD_ENCODE_TABLE(void);
 static IOSByteArray *OrgApacheCommonsCodecBinaryBase64_STANDARD_ENCODE_TABLE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBase64, STANDARD_ENCODE_TABLE, IOSByteArray *)
 
-inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_URL_SAFE_ENCODE_TABLE();
+inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_URL_SAFE_ENCODE_TABLE(void);
 static IOSByteArray *OrgApacheCommonsCodecBinaryBase64_URL_SAFE_ENCODE_TABLE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBase64, URL_SAFE_ENCODE_TABLE, IOSByteArray *)
 
-inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_DECODE_TABLE();
+inline IOSByteArray *OrgApacheCommonsCodecBinaryBase64_get_DECODE_TABLE(void);
 static IOSByteArray *OrgApacheCommonsCodecBinaryBase64_DECODE_TABLE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBase64, DECODE_TABLE, IOSByteArray *)
 
-inline jint OrgApacheCommonsCodecBinaryBase64_get_MASK_6BITS();
+inline jint OrgApacheCommonsCodecBinaryBase64_get_MASK_6BITS(void);
 #define OrgApacheCommonsCodecBinaryBase64_MASK_6BITS 63
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBase64, MASK_6BITS, jint)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecBinaryBase64__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecBinaryBase64__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheCommonsCodecBinaryBase64)
 

@@ -11,6 +11,7 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/System.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "org/apache/lucene/search/NRTManager.h"
 #include "org/apache/lucene/search/NRTManagerReopenThread.h"
 #include "org/apache/lucene/util/ThreadInterruptedException.h"
@@ -94,12 +95,12 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNRTManagerReopenThread, manager_, OrgAp
         [((OrgApacheLuceneSearchNRTManager *) nil_chk(manager_)) maybeReopenWithBoolean:waitingNeedsDeletes_];
       }
       @catch (JavaIoIOException *ioe) {
-        @throw new_JavaLangRuntimeException_initWithNSException_(ioe);
+        @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(ioe);
       }
     }
   }
-  @catch (NSException *t) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(t);
+  @catch (JavaLangThrowable *t) {
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(t);
   }
 }
 

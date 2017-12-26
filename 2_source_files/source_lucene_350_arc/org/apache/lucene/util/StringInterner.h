@@ -36,9 +36,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilStringInterner)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilStringInterner_init(OrgApacheLuceneUtilStringInterner *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilStringInterner *new_OrgApacheLuceneUtilStringInterner_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilStringInterner *new_OrgApacheLuceneUtilStringInterner_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilStringInterner *create_OrgApacheLuceneUtilStringInterner_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilStringInterner *create_OrgApacheLuceneUtilStringInterner_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilStringInterner)
 

@@ -35,7 +35,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisStandardStandardTokenizerInterface)
 
-inline jint OrgApacheLuceneAnalysisStandardStandardTokenizerInterface_get_YYEOF();
+inline jint OrgApacheLuceneAnalysisStandardStandardTokenizerInterface_get_YYEOF(void);
 #define OrgApacheLuceneAnalysisStandardStandardTokenizerInterface_YYEOF -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardStandardTokenizerInterface, YYEOF, jint)
 

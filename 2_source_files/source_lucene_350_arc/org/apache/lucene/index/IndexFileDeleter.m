@@ -194,7 +194,7 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)refreshWithNSString:(NSString *)segmentName {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:333 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:333 condition failed: assert locked();");
   IOSObjectArray *files = [((OrgApacheLuceneStoreDirectory *) nil_chk(directory_)) listAll];
   OrgApacheLuceneIndexIndexFileNameFilter *filter = OrgApacheLuceneIndexIndexFileNameFilter_getFilter();
   NSString *segmentPrefix1;
@@ -219,13 +219,13 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)refresh {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:366 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:366 condition failed: assert locked();");
   deletable_ = nil;
   [self refreshWithNSString:nil];
 }
 
 - (void)close {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:373 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:373 condition failed: assert locked();");
   jint size = [((id<JavaUtilList>) nil_chk(lastFiles_)) size];
   if (size > 0) {
     for (jint i = 0; i < size; i++) {
@@ -237,7 +237,7 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)revisitPolicy {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:395 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:395 condition failed: assert locked();");
   if (infoStream_ != nil) {
     OrgApacheLuceneIndexIndexFileDeleter_messageWithNSString_(self, @"now revisitPolicy");
   }
@@ -248,7 +248,7 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)deletePendingFiles {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:407 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:407 condition failed: assert locked();");
   if (deletable_ != nil) {
     id<JavaUtilList> oldDeletable = deletable_;
     deletable_ = nil;
@@ -264,7 +264,7 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 
 - (void)checkpointWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)segmentInfos
                                            withBoolean:(jboolean)isCommit {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:442 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:442 condition failed: assert locked();");
   if (infoStream_ != nil) {
     OrgApacheLuceneIndexIndexFileDeleter_messageWithNSString_(self, JreStrcat("$$$I$ZC", @"now checkpoint \"", [((OrgApacheLuceneIndexSegmentInfos *) nil_chk(segmentInfos)) getCurrentSegmentFileName], @"\" [", [segmentInfos size], @" segments ; isCommit = ", isCommit, ']'));
   }
@@ -286,21 +286,21 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 
 - (void)incRefWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)segmentInfos
                                        withBoolean:(jboolean)isCommit {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:477 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:477 condition failed: assert locked();");
   for (NSString * __strong fileName in nil_chk([((OrgApacheLuceneIndexSegmentInfos *) nil_chk(segmentInfos)) filesWithOrgApacheLuceneStoreDirectory:directory_ withBoolean:isCommit])) {
     [self incRefWithNSString:fileName];
   }
 }
 
 - (void)incRefWithJavaUtilCollection:(id<JavaUtilCollection>)files {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:486 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:486 condition failed: assert locked();");
   for (NSString * __strong file in nil_chk(files)) {
     [self incRefWithNSString:file];
   }
 }
 
 - (void)incRefWithNSString:(NSString *)fileName {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:493 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:493 condition failed: assert locked();");
   OrgApacheLuceneIndexIndexFileDeleter_RefCount *rc = OrgApacheLuceneIndexIndexFileDeleter_getRefCountWithNSString_(self, fileName);
   if (infoStream_ != nil && OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS) {
     OrgApacheLuceneIndexIndexFileDeleter_messageWithNSString_(self, JreStrcat("$$$I", @"  IncRef \"", fileName, @"\": pre-incr count is ", ((OrgApacheLuceneIndexIndexFileDeleter_RefCount *) nil_chk(rc))->count_));
@@ -309,14 +309,14 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)decRefWithJavaUtilCollection:(id<JavaUtilCollection>)files {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:502 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:502 condition failed: assert locked();");
   for (NSString * __strong file in nil_chk(files)) {
     [self decRefWithNSString:file];
   }
 }
 
 - (void)decRefWithNSString:(NSString *)fileName {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:509 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:509 condition failed: assert locked();");
   OrgApacheLuceneIndexIndexFileDeleter_RefCount *rc = OrgApacheLuceneIndexIndexFileDeleter_getRefCountWithNSString_(self, fileName);
   if (infoStream_ != nil && OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS) {
     OrgApacheLuceneIndexIndexFileDeleter_messageWithNSString_(self, JreStrcat("$$$I", @"  DecRef \"", fileName, @"\": pre-decr count is ", ((OrgApacheLuceneIndexIndexFileDeleter_RefCount *) nil_chk(rc))->count_));
@@ -328,14 +328,14 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)decRefWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)segmentInfos {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:523 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:523 condition failed: assert locked();");
   for (NSString * __strong file in nil_chk([((OrgApacheLuceneIndexSegmentInfos *) nil_chk(segmentInfos)) filesWithOrgApacheLuceneStoreDirectory:directory_ withBoolean:false])) {
     [self decRefWithNSString:file];
   }
 }
 
 - (jboolean)existsWithNSString:(NSString *)fileName {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:530 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:530 condition failed: assert locked();");
   if (![((id<JavaUtilMap>) nil_chk(refCounts_)) containsKeyWithId:fileName]) {
     return false;
   }
@@ -349,14 +349,14 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)deleteFilesWithJavaUtilList:(id<JavaUtilList>)files {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:551 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:551 condition failed: assert locked();");
   for (NSString * __strong file in nil_chk(files)) {
     [self deleteFileWithNSString:file];
   }
 }
 
 - (void)deleteNewFilesWithJavaUtilCollection:(id<JavaUtilCollection>)files {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:560 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:560 condition failed: assert locked();");
   for (NSString * __strong fileName in nil_chk(files)) {
     if (![((id<JavaUtilMap>) nil_chk(refCounts_)) containsKeyWithId:fileName]) {
       if (infoStream_ != nil) {
@@ -368,7 +368,7 @@ jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS = false;
 }
 
 - (void)deleteFileWithNSString:(NSString *)fileName {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:573 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:573 condition failed: assert locked();");
   @try {
     if (infoStream_ != nil) {
       OrgApacheLuceneIndexIndexFileDeleter_messageWithNSString_(self, JreStrcat("$$C", @"delete \"", fileName, '"'));
@@ -614,7 +614,7 @@ void OrgApacheLuceneIndexIndexFileDeleter_deleteCommits(OrgApacheLuceneIndexInde
 }
 
 OrgApacheLuceneIndexIndexFileDeleter_RefCount *OrgApacheLuceneIndexIndexFileDeleter_getRefCountWithNSString_(OrgApacheLuceneIndexIndexFileDeleter *self, NSString *fileName) {
-  JreAssert((OrgApacheLuceneIndexIndexFileDeleter_locked(self)), (@"org/apache/lucene/index/IndexFileDeleter.java:539 condition failed: assert locked();"));
+  JreAssert(OrgApacheLuceneIndexIndexFileDeleter_locked(self), @"org/apache/lucene/index/IndexFileDeleter.java:539 condition failed: assert locked();");
   OrgApacheLuceneIndexIndexFileDeleter_RefCount *rc;
   if (![((id<JavaUtilMap>) nil_chk(self->refCounts_)) containsKeyWithId:fileName]) {
     rc = new_OrgApacheLuceneIndexIndexFileDeleter_RefCount_initWithNSString_(fileName);
@@ -640,13 +640,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexIndexFileDeleter)
     initDone_ = true;
   }
   else {
-    JreAssert((count_ > 0), (JreStrcat("$$$C", [((JavaLangThread *) nil_chk(JavaLangThread_currentThread())) getName], @": RefCount is 0 pre-increment for file \"", fileName_, '"')));
+    JreAssert(count_ > 0, JreStrcat("$$$C", [((JavaLangThread *) nil_chk(JavaLangThread_currentThread())) getName], @": RefCount is 0 pre-increment for file \"", fileName_, '"'));
   }
   return ++count_;
 }
 
 - (jint)DecRef {
-  JreAssert((count_ > 0), (JreStrcat("$$$C", [((JavaLangThread *) nil_chk(JavaLangThread_currentThread())) getName], @": RefCount is 0 pre-decrement for file \"", fileName_, '"')));
+  JreAssert(count_ > 0, JreStrcat("$$$C", [((JavaLangThread *) nil_chk(JavaLangThread_currentThread())) getName], @": RefCount is 0 pre-decrement for file \"", fileName_, '"'));
   return --count_;
 }
 

@@ -20,9 +20,9 @@
 
 __attribute__((unused)) static void OrgJsoupSelectCollector_init(OrgJsoupSelectCollector *self);
 
-__attribute__((unused)) static OrgJsoupSelectCollector *new_OrgJsoupSelectCollector_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupSelectCollector *new_OrgJsoupSelectCollector_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupSelectCollector *create_OrgJsoupSelectCollector_init();
+__attribute__((unused)) static OrgJsoupSelectCollector *create_OrgJsoupSelectCollector_init(void);
 
 @interface OrgJsoupSelectCollector_Accumulator : NSObject < OrgJsoupSelectNodeVisitor > {
  @public

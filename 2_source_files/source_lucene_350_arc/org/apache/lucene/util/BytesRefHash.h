@@ -77,15 +77,15 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilBytesRefHash)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilBytesRefHash, pool_, OrgApacheLuceneUtilByteBlockPool *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilBytesRefHash, bytesStart_, IOSIntArray *)
 
-inline jint OrgApacheLuceneUtilBytesRefHash_get_DEFAULT_CAPACITY();
+inline jint OrgApacheLuceneUtilBytesRefHash_get_DEFAULT_CAPACITY(void);
 #define OrgApacheLuceneUtilBytesRefHash_DEFAULT_CAPACITY 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilBytesRefHash, DEFAULT_CAPACITY, jint)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilBytesRefHash_init(OrgApacheLuceneUtilBytesRefHash *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRefHash *new_OrgApacheLuceneUtilBytesRefHash_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRefHash *new_OrgApacheLuceneUtilBytesRefHash_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRefHash *create_OrgApacheLuceneUtilBytesRefHash_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRefHash *create_OrgApacheLuceneUtilBytesRefHash_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilBytesRefHash_initWithOrgApacheLuceneUtilByteBlockPool_(OrgApacheLuceneUtilBytesRefHash *self, OrgApacheLuceneUtilByteBlockPool *pool);
 
@@ -110,11 +110,27 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBytesRefHash)
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneUtilBytesRefHash_MaxBytesLengthExceededException : JavaLangRuntimeException
 
 #pragma mark Package-Private
 
 - (instancetype)initWithNSString:(NSString *)message;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -185,6 +201,10 @@ withJavaUtilConcurrentAtomicAtomicLong:(JavaUtilConcurrentAtomicAtomicLong *)byt
 
 - (IOSIntArray *)init__ OBJC_METHOD_FAMILY_NONE;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilBytesRefHash_TrackingDirectBytesStartArray)
@@ -223,6 +243,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBytesRefHash_TrackingDirectBytesSt
 - (IOSIntArray *)grow;
 
 - (IOSIntArray *)init__ OBJC_METHOD_FAMILY_NONE;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

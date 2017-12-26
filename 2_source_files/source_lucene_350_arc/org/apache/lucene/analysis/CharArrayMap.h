@@ -102,6 +102,10 @@
 
 - (id<JavaUtilSet>)originalKeySet;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisCharArrayMap)
@@ -126,7 +130,7 @@ FOUNDATION_EXPORT OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCh
 
 FOUNDATION_EXPORT OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCharArrayMap_copy__WithOrgApacheLuceneUtilVersion_withJavaUtilMap_(OrgApacheLuceneUtilVersion *matchVersion, id<JavaUtilMap> map);
 
-FOUNDATION_EXPORT OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCharArrayMap_emptyMap();
+FOUNDATION_EXPORT OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCharArrayMap_emptyMap(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArrayMap)
 
@@ -161,6 +165,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArrayMap)
 
 - (id)setValueWithId:(id)value;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisCharArrayMap_EntryIterator)
@@ -194,6 +202,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArrayMap_EntryIterator)
 
 #pragma mark Package-Private
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisCharArrayMap_EntrySet)
@@ -208,7 +220,9 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArrayMap_EntrySet)
 @class IOSCharArray;
 @class OrgApacheLuceneAnalysisCharArrayMap;
 @class OrgApacheLuceneAnalysisCharArrayMap_EntrySet;
+@class OrgApacheLuceneUtilVersion;
 @protocol JavaLangCharSequence;
+@protocol JavaUtilMap;
 
 @interface OrgApacheLuceneAnalysisCharArrayMap_UnmodifiableCharArrayMap : OrgApacheLuceneAnalysisCharArrayMap
 
@@ -235,6 +249,16 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArrayMap_EntrySet)
 - (instancetype)initWithOrgApacheLuceneAnalysisCharArrayMap:(OrgApacheLuceneAnalysisCharArrayMap *)map;
 
 - (OrgApacheLuceneAnalysisCharArrayMap_EntrySet *)createEntrySet;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneUtilVersion:(OrgApacheLuceneUtilVersion *)arg0
+                                           withInt:(jint)arg1
+                                       withBoolean:(jboolean)arg2 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilVersion:(OrgApacheLuceneUtilVersion *)arg0
+                                   withJavaUtilMap:(id<JavaUtilMap>)arg1
+                                       withBoolean:(jboolean)arg2 NS_UNAVAILABLE;
 
 @end
 

@@ -14,7 +14,7 @@
 #include "org/apache/lucene/search/function/ReverseOrdFieldSource.h"
 #include "org/apache/lucene/search/function/ValueSource.h"
 
-inline jint OrgApacheLuceneSearchFunctionReverseOrdFieldSource_get_hcode();
+inline jint OrgApacheLuceneSearchFunctionReverseOrdFieldSource_get_hcode(void);
 static jint OrgApacheLuceneSearchFunctionReverseOrdFieldSource_hcode;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneSearchFunctionReverseOrdFieldSource, hcode, jint)
 

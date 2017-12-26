@@ -46,6 +46,10 @@
 
 - (jlong)getPointer;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilPagedBytes)
@@ -100,6 +104,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilPagedBytes)
 
 - (IOSObjectArray *)getBlocks;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilPagedBytes_Reader)
@@ -144,6 +152,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilPagedBytes_Reader)
 
 - (instancetype)initWithOrgApacheLuceneUtilPagedBytes:(OrgApacheLuceneUtilPagedBytes *)outer$;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilPagedBytes_PagedBytesDataInput)
@@ -181,6 +193,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilPagedBytes_PagedBytesDataInput)
 - (void)writeBytesWithByteArray:(IOSByteArray *)b
                         withInt:(jint)offset
                         withInt:(jint)length;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

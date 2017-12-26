@@ -16,7 +16,7 @@ __attribute__((unused)) static void ComGoogleGsonLongSerializationPolicy_initWit
 
 __attribute__((unused)) static ComGoogleGsonLongSerializationPolicy *new_ComGoogleGsonLongSerializationPolicy_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface ComGoogleGsonLongSerializationPolicy_1 : ComGoogleGsonLongSerializationPolicy < NSCopying >
+@interface ComGoogleGsonLongSerializationPolicy_1 : ComGoogleGsonLongSerializationPolicy
 
 - (ComGoogleGsonJsonElement *)serializeWithJavaLangLong:(JavaLangLong *)value;
 
@@ -28,7 +28,7 @@ __attribute__((unused)) static void ComGoogleGsonLongSerializationPolicy_1_initW
 
 __attribute__((unused)) static ComGoogleGsonLongSerializationPolicy_1 *new_ComGoogleGsonLongSerializationPolicy_1_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface ComGoogleGsonLongSerializationPolicy_2 : ComGoogleGsonLongSerializationPolicy < NSCopying >
+@interface ComGoogleGsonLongSerializationPolicy_2 : ComGoogleGsonLongSerializationPolicy
 
 - (ComGoogleGsonJsonElement *)serializeWithJavaLangLong:(JavaLangLong *)value;
 
@@ -60,10 +60,6 @@ ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_value
   return ComGoogleGsonLongSerializationPolicy_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LComGoogleGsonJsonElement;", 0x401, 0, 1, -1, -1, -1, -1 },
@@ -87,8 +83,8 @@ ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_value
 
 + (void)initialize {
   if (self == [ComGoogleGsonLongSerializationPolicy class]) {
-    JreEnum(ComGoogleGsonLongSerializationPolicy, DEFAULT) = new_ComGoogleGsonLongSerializationPolicy_1_initWithNSString_withInt_(@"DEFAULT", 0);
-    JreEnum(ComGoogleGsonLongSerializationPolicy, STRING) = new_ComGoogleGsonLongSerializationPolicy_2_initWithNSString_withInt_(@"STRING", 1);
+    JreEnum(ComGoogleGsonLongSerializationPolicy, DEFAULT) = new_ComGoogleGsonLongSerializationPolicy_1_initWithNSString_withInt_(@"", 0);
+    JreEnum(ComGoogleGsonLongSerializationPolicy, STRING) = new_ComGoogleGsonLongSerializationPolicy_2_initWithNSString_withInt_(@"", 1);
     J2OBJC_SET_INITIALIZED(ComGoogleGsonLongSerializationPolicy)
   }
 }

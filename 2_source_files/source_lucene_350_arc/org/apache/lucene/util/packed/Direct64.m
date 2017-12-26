@@ -20,7 +20,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedDirect64, values_, IOSLongArray *)
 
-inline jint OrgApacheLuceneUtilPackedDirect64_get_BITS_PER_VALUE();
+inline jint OrgApacheLuceneUtilPackedDirect64_get_BITS_PER_VALUE(void);
 #define OrgApacheLuceneUtilPackedDirect64_BITS_PER_VALUE 64
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedDirect64, BITS_PER_VALUE, jint)
 

@@ -67,6 +67,10 @@
 
 - (jint)getTotStateCount;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilFstBuilder)
@@ -115,9 +119,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilFstBuilder_Arc, nextFinalOutput_, id)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilFstBuilder_Arc_init(OrgApacheLuceneUtilFstBuilder_Arc *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_Arc *new_OrgApacheLuceneUtilFstBuilder_Arc_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_Arc *new_OrgApacheLuceneUtilFstBuilder_Arc_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_Arc *create_OrgApacheLuceneUtilFstBuilder_Arc_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_Arc *create_OrgApacheLuceneUtilFstBuilder_Arc_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstBuilder_Arc)
 
@@ -160,9 +164,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilFstBuilder_CompiledNode)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilFstBuilder_CompiledNode_init(OrgApacheLuceneUtilFstBuilder_CompiledNode *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_CompiledNode *new_OrgApacheLuceneUtilFstBuilder_CompiledNode_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_CompiledNode *new_OrgApacheLuceneUtilFstBuilder_CompiledNode_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_CompiledNode *create_OrgApacheLuceneUtilFstBuilder_CompiledNode_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstBuilder_CompiledNode *create_OrgApacheLuceneUtilFstBuilder_CompiledNode_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstBuilder_CompiledNode)
 
@@ -212,6 +216,10 @@ withOrgApacheLuceneUtilFstBuilder_Node:(id<OrgApacheLuceneUtilFstBuilder_Node>)t
 
 - (void)setLastOutputWithInt:(jint)labelToMatch
                       withId:(id)newOutput;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

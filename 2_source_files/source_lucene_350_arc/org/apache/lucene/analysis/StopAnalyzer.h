@@ -50,7 +50,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisStopAnalyzer)
 
-inline id<JavaUtilSet> OrgApacheLuceneAnalysisStopAnalyzer_get_ENGLISH_STOP_WORDS_SET();
+inline id<JavaUtilSet> OrgApacheLuceneAnalysisStopAnalyzer_get_ENGLISH_STOP_WORDS_SET(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<JavaUtilSet> OrgApacheLuceneAnalysisStopAnalyzer_ENGLISH_STOP_WORDS_SET;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStopAnalyzer, ENGLISH_STOP_WORDS_SET, id<JavaUtilSet>)

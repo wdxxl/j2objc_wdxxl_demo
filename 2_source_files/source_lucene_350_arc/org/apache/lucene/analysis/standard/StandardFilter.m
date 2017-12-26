@@ -30,17 +30,17 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardStandardFilter, matchVersion_
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardStandardFilter, typeAtt_, id<OrgApacheLuceneAnalysisTokenattributesTypeAttribute>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardStandardFilter, termAtt_, id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>)
 
-inline NSString *OrgApacheLuceneAnalysisStandardStandardFilter_get_APOSTROPHE_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardStandardFilter_get_APOSTROPHE_TYPE(void);
 static NSString *OrgApacheLuceneAnalysisStandardStandardFilter_APOSTROPHE_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardStandardFilter, APOSTROPHE_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardStandardFilter_get_ACRONYM_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardStandardFilter_get_ACRONYM_TYPE(void);
 static NSString *OrgApacheLuceneAnalysisStandardStandardFilter_ACRONYM_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardStandardFilter, ACRONYM_TYPE, NSString *)
 
 __attribute__((unused)) static jboolean OrgApacheLuceneAnalysisStandardStandardFilter_incrementTokenClassic(OrgApacheLuceneAnalysisStandardStandardFilter *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardFilter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardFilter__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisStandardStandardFilter)
 

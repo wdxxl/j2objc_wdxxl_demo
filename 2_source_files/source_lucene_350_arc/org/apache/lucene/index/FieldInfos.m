@@ -5,6 +5,7 @@
 
 #include "J2ObjC_source.h"
 #include "java/io/IOException.h"
+#include "java/lang/Throwable.h"
 #include "java/util/ArrayList.h"
 #include "java/util/Collection.h"
 #include "java/util/HashMap.h"
@@ -167,7 +168,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     else {
       [fi updateWithBoolean:isIndexed withBoolean:storeTermVector withBoolean:storePositionWithTermVector withBoolean:storeOffsetWithTermVector withBoolean:omitNorms withBoolean:storePayloads withOrgApacheLuceneIndexFieldInfo_IndexOptions:indexOptions];
     }
-    JreAssert((fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_), (@"org/apache/lucene/index/FieldInfos.java:249 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;"));
+    JreAssert(fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_, @"org/apache/lucene/index/FieldInfos.java:249 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;");
     return fi;
   }
 }
@@ -238,7 +239,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   [output writeVIntWithInt:[self size]];
   for (jint i = 0; i < [self size]; i++) {
     OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithInt:i];
-    JreAssert((((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_), (@"org/apache/lucene/index/FieldInfos.java:331 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;"));
+    JreAssert(((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_, @"org/apache/lucene/index/FieldInfos.java:331 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;");
     jbyte bits = (jint) 0x0;
     if (fi->isIndexed_) bits |= OrgApacheLuceneIndexFieldInfos_IS_INDEXED;
     if (fi->storeTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_TERMVECTOR;
@@ -366,7 +367,7 @@ void OrgApacheLuceneIndexFieldInfos_initWithOrgApacheLuceneStoreDirectory_withNS
         @try {
           OrgApacheLuceneIndexFieldInfos_readWithOrgApacheLuceneStoreIndexInput_withNSString_(self, input, name);
         }
-        @catch (NSException *t) {
+        @catch (JavaLangThrowable *t) {
           @throw ioe;
         }
       }

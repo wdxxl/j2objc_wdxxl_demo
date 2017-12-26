@@ -131,10 +131,6 @@ OrgJsoupConnection_Method *OrgJsoupConnection_Method_values_[5];
   return OrgJsoupConnection_Method_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "Z", 0x11, -1, -1, -1, -1, -1, -1 },
@@ -162,11 +158,11 @@ OrgJsoupConnection_Method *OrgJsoupConnection_Method_values_[5];
 
 + (void)initialize {
   if (self == [OrgJsoupConnection_Method class]) {
-    JreEnum(OrgJsoupConnection_Method, GET) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(false, @"GET", 0);
-    JreEnum(OrgJsoupConnection_Method, POST) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(true, @"POST", 1);
-    JreEnum(OrgJsoupConnection_Method, PUT) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(true, @"PUT", 2);
-    JreEnum(OrgJsoupConnection_Method, DELETE) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(false, @"DELETE", 3);
-    JreEnum(OrgJsoupConnection_Method, PATCH) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(true, @"PATCH", 4);
+    JreEnum(OrgJsoupConnection_Method, GET) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(false, @"", 0);
+    JreEnum(OrgJsoupConnection_Method, POST) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(true, @"", 1);
+    JreEnum(OrgJsoupConnection_Method, PUT) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(true, @"", 2);
+    JreEnum(OrgJsoupConnection_Method, DELETE) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(false, @"", 3);
+    JreEnum(OrgJsoupConnection_Method, PATCH) = new_OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(true, @"", 4);
     J2OBJC_SET_INITIALIZED(OrgJsoupConnection_Method)
   }
 }

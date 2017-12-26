@@ -165,67 +165,67 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneIndexSegmentInfos)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentInfos, pendingSegnOutput_, OrgApacheLuceneStoreChecksumIndexOutput *)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_LOCKLESS();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_LOCKLESS(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_LOCKLESS -2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_LOCKLESS, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_SINGLE_NORM_FILE();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_SINGLE_NORM_FILE(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_SINGLE_NORM_FILE -3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_SINGLE_NORM_FILE, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_SHARED_DOC_STORE();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_SHARED_DOC_STORE(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_SHARED_DOC_STORE -4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_SHARED_DOC_STORE, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_CHECKSUM();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_CHECKSUM(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_CHECKSUM -5
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_CHECKSUM, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_DEL_COUNT();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_DEL_COUNT(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_DEL_COUNT -6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_DEL_COUNT, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_HAS_PROX();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_HAS_PROX(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_HAS_PROX -7
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_HAS_PROX, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_USER_DATA();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_USER_DATA(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_USER_DATA -8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_USER_DATA, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_DIAGNOSTICS();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_DIAGNOSTICS(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_DIAGNOSTICS -9
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_DIAGNOSTICS, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_HAS_VECTORS();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_HAS_VECTORS(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_HAS_VECTORS -10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_HAS_VECTORS, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_3_1();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_3_1(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_3_1 -11
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_3_1, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_CURRENT_FORMAT();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_CURRENT_FORMAT(void);
 #define OrgApacheLuceneIndexSegmentInfos_CURRENT_FORMAT -11
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, CURRENT_FORMAT, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_MINIMUM();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_MINIMUM(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_MINIMUM -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_MINIMUM, jint)
 
-inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_MAXIMUM();
+inline jint OrgApacheLuceneIndexSegmentInfos_get_FORMAT_MAXIMUM(void);
 #define OrgApacheLuceneIndexSegmentInfos_FORMAT_MAXIMUM -11
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentInfos, FORMAT_MAXIMUM, jint)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexSegmentInfos_init(OrgApacheLuceneIndexSegmentInfos *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexSegmentInfos *new_OrgApacheLuceneIndexSegmentInfos_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexSegmentInfos *new_OrgApacheLuceneIndexSegmentInfos_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexSegmentInfos *create_OrgApacheLuceneIndexSegmentInfos_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexSegmentInfos *create_OrgApacheLuceneIndexSegmentInfos_init(void);
 
 FOUNDATION_EXPORT jlong OrgApacheLuceneIndexSegmentInfos_getCurrentSegmentGenerationWithNSStringArray_(IOSObjectArray *files);
 
@@ -245,17 +245,17 @@ FOUNDATION_EXPORT void OrgApacheLuceneIndexSegmentInfos_setInfoStreamWithJavaIoP
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexSegmentInfos_setDefaultGenFileRetryCountWithInt_(jint count);
 
-FOUNDATION_EXPORT jint OrgApacheLuceneIndexSegmentInfos_getDefaultGenFileRetryCount();
+FOUNDATION_EXPORT jint OrgApacheLuceneIndexSegmentInfos_getDefaultGenFileRetryCount(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexSegmentInfos_setDefaultGenFileRetryPauseMsecWithInt_(jint msec);
 
-FOUNDATION_EXPORT jint OrgApacheLuceneIndexSegmentInfos_getDefaultGenFileRetryPauseMsec();
+FOUNDATION_EXPORT jint OrgApacheLuceneIndexSegmentInfos_getDefaultGenFileRetryPauseMsec(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexSegmentInfos_setDefaultGenLookaheadCountWithInt_(jint count);
 
-FOUNDATION_EXPORT jint OrgApacheLuceneIndexSegmentInfos_getDefaultGenLookahedCount();
+FOUNDATION_EXPORT jint OrgApacheLuceneIndexSegmentInfos_getDefaultGenLookahedCount(void);
 
-FOUNDATION_EXPORT JavaIoPrintStream *OrgApacheLuceneIndexSegmentInfos_getInfoStream();
+FOUNDATION_EXPORT JavaIoPrintStream *OrgApacheLuceneIndexSegmentInfos_getInfoStream(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexSegmentInfos)
 

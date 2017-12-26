@@ -34,7 +34,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexNoDeletionPolicy)
 
-inline id<OrgApacheLuceneIndexIndexDeletionPolicy> OrgApacheLuceneIndexNoDeletionPolicy_get_INSTANCE();
+inline id<OrgApacheLuceneIndexIndexDeletionPolicy> OrgApacheLuceneIndexNoDeletionPolicy_get_INSTANCE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneIndexIndexDeletionPolicy> OrgApacheLuceneIndexNoDeletionPolicy_INSTANCE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexNoDeletionPolicy, INSTANCE, id<OrgApacheLuceneIndexIndexDeletionPolicy>)

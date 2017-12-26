@@ -26,11 +26,11 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchScorer, similarity_, OrgApacheLuceneSearchSimilarity *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchScorer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchScorer__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchScorer__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchScorer__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchScorer__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchScorer__Annotations$2(void);
 
 @implementation OrgApacheLuceneSearchScorer
 

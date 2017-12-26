@@ -21,9 +21,9 @@
 #include "org/apache/commons/codec/net/URLCodec.h"
 #include "org/apache/commons/codec/net/Utils.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecNetURLCodec__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecNetURLCodec__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecNetURLCodec__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecNetURLCodec__Annotations$1(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheCommonsCodecNetURLCodec)
 
@@ -76,7 +76,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self encodeWithNSString:str withNSString:[self getDefaultCharset]];
   }
   @catch (JavaIoUnsupportedEncodingException *e) {
-    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 
@@ -96,7 +96,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self decodeWithNSString:str withNSString:[self getDefaultCharset]];
   }
   @catch (JavaIoUnsupportedEncodingException *e) {
-    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 
@@ -288,7 +288,7 @@ IOSByteArray *OrgApacheCommonsCodecNetURLCodec_decodeUrlWithByteArray_(IOSByteAr
         [buffer writeWithInt:(jchar) ((JreLShift32(u, 4)) + l)];
       }
       @catch (JavaLangArrayIndexOutOfBoundsException *e) {
-        @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_(@"Invalid URL encoding: ", e);
+        @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_(@"Invalid URL encoding: ", e);
       }
     }
     else {

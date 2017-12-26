@@ -81,17 +81,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneSearchSpansSpanPositionCheckQuery_Acc
   OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_Enum_NO_AND_ADVANCE = 2,
 };
 
-@interface OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -100,16 +96,16 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_values_[];
 
-inline OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_get_YES();
+inline OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_get_YES(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, YES)
 
-inline OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_get_NO();
+inline OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_get_NO(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO)
 
-inline OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_get_NO_AND_ADVANCE();
+inline OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_get_NO_AND_ADVANCE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO_AND_ADVANCE)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_valueOfWithNSString_(NSString *name);
 
@@ -156,6 +152,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_Acce
 #pragma mark Protected
 
 - (jboolean)doNext;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

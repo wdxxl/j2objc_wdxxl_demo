@@ -68,7 +68,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)skipBytesWithInt:(jint)count {
   pos_ += count;
-  JreAssert((pos_ <= limit_), (@"org/apache/lucene/store/ByteArrayDataInput.java:62 condition failed: assert pos <= limit;"));
+  JreAssert(pos_ <= limit_, @"org/apache/lucene/store/ByteArrayDataInput.java:62 condition failed: assert pos <= limit;");
 }
 
 - (jshort)readShort {
@@ -76,12 +76,12 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jint)readInt {
-  JreAssert((pos_ + 4 <= limit_), (@"org/apache/lucene/store/ByteArrayDataInput.java:72 condition failed: assert pos+4 <= limit;"));
+  JreAssert(pos_ + 4 <= limit_, @"org/apache/lucene/store/ByteArrayDataInput.java:72 condition failed: assert pos+4 <= limit;");
   return (JreLShift32((IOSByteArray_Get(nil_chk(bytes_), pos_++) & (jint) 0xFF), 24)) | (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xFF), 16)) | (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xFF), 8)) | (IOSByteArray_Get(bytes_, pos_++) & (jint) 0xFF);
 }
 
 - (jlong)readLong {
-  JreAssert((pos_ + 8 <= limit_), (@"org/apache/lucene/store/ByteArrayDataInput.java:79 condition failed: assert pos+8 <= limit;"));
+  JreAssert(pos_ + 8 <= limit_, @"org/apache/lucene/store/ByteArrayDataInput.java:79 condition failed: assert pos+8 <= limit;");
   jint i1 = (JreLShift32((IOSByteArray_Get(nil_chk(bytes_), pos_++) & (jint) 0xff), 24)) | (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff), 16)) | (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff), 8)) | (IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff);
   jint i2 = (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff), 24)) | (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff), 16)) | (JreLShift32((IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff), 8)) | (IOSByteArray_Get(bytes_, pos_++) & (jint) 0xff);
   return (JreLShift64(((jlong) i1), 32)) | (i2 & (jlong) 0xFFFFFFFFLL);
@@ -119,7 +119,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (void)readBytesWithByteArray:(IOSByteArray *)b
                        withInt:(jint)offset
                        withInt:(jint)len {
-  JreAssert((pos_ + len <= limit_), (@"org/apache/lucene/store/ByteArrayDataInput.java:123 condition failed: assert pos + len <= limit;"));
+  JreAssert(pos_ + len <= limit_, @"org/apache/lucene/store/ByteArrayDataInput.java:123 condition failed: assert pos + len <= limit;");
   JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(bytes_, pos_, b, offset, len);
   pos_ += len;
 }
@@ -218,7 +218,7 @@ OrgApacheLuceneStoreByteArrayDataInput *create_OrgApacheLuceneStoreByteArrayData
 }
 
 jboolean OrgApacheLuceneStoreByteArrayDataInput_checkBounds(OrgApacheLuceneStoreByteArrayDataInput *self) {
-  JreAssert((self->pos_ < self->limit_), (@"org/apache/lucene/store/ByteArrayDataInput.java:129 condition failed: assert pos < limit;"));
+  JreAssert(self->pos_ < self->limit_, @"org/apache/lucene/store/ByteArrayDataInput.java:129 condition failed: assert pos < limit;");
   return true;
 }
 

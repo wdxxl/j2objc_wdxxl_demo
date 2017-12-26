@@ -225,6 +225,15 @@
 
 + (jboolean)preserveWhitespaceWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)node;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgJsoupNodesElement)

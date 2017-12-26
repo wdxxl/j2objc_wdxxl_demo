@@ -45,6 +45,8 @@ __attribute__((unused)) static OrgApacheLuceneSearchNumericRangeQuery *new_OrgAp
 
 __attribute__((unused)) static OrgApacheLuceneSearchNumericRangeQuery *create_OrgApacheLuceneSearchNumericRangeQuery_initWithNSString_withInt_withOrgApacheLuceneDocumentNumericField_DataType_withNSNumber_withNSNumber_withBoolean_withBoolean_(NSString *field, jint precisionStep, OrgApacheLuceneDocumentNumericField_DataType *dataType, NSNumber *min, NSNumber *max, jboolean minInclusive, jboolean maxInclusive);
 
+__attribute__((unused)) static void OrgApacheLuceneSearchNumericRangeQuery_readObjectWithJavaIoObjectInputStream_(OrgApacheLuceneSearchNumericRangeQuery *self, JavaIoObjectInputStream *inArg);
+
 @interface OrgApacheLuceneSearchNumericRangeQuery_NumericRangeTermEnum : OrgApacheLuceneSearchFilteredTermEnum {
  @public
   OrgApacheLuceneSearchNumericRangeQuery *this$0_;
@@ -267,8 +269,7 @@ withOrgApacheLuceneDocumentNumericField_DataType:(OrgApacheLuceneDocumentNumeric
 }
 
 - (void)readObjectWithJavaIoObjectInputStream:(JavaIoObjectInputStream *)inArg {
-  [((JavaIoObjectInputStream *) nil_chk(inArg)) defaultReadObject];
-  field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(field_);
+  OrgApacheLuceneSearchNumericRangeQuery_readObjectWithJavaIoObjectInputStream_(self, inArg);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -422,6 +423,11 @@ OrgApacheLuceneSearchNumericRangeQuery *OrgApacheLuceneSearchNumericRangeQuery_n
   return new_OrgApacheLuceneSearchNumericRangeQuery_initWithNSString_withInt_withOrgApacheLuceneDocumentNumericField_DataType_withNSNumber_withNSNumber_withBoolean_withBoolean_(field, OrgApacheLuceneUtilNumericUtils_PRECISION_STEP_DEFAULT, JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT), min, max, minInclusive, maxInclusive);
 }
 
+void OrgApacheLuceneSearchNumericRangeQuery_readObjectWithJavaIoObjectInputStream_(OrgApacheLuceneSearchNumericRangeQuery *self, JavaIoObjectInputStream *inArg) {
+  [((JavaIoObjectInputStream *) nil_chk(inArg)) defaultReadObject];
+  self->field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(self->field_);
+}
+
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchNumericRangeQuery)
 
 @implementation OrgApacheLuceneSearchNumericRangeQuery_NumericRangeTermEnum
@@ -450,7 +456,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchNumericRangeQuery)
 
 - (jboolean)next {
   if (currentTerm_ != nil) {
-    JreAssert((actualEnum_ != nil), (@"org/apache/lucene/search/NumericRangeQuery.java:544 condition failed: assert actualEnum != null;"));
+    JreAssert(actualEnum_ != nil, @"org/apache/lucene/search/NumericRangeQuery.java:544 condition failed: assert actualEnum != null;");
     if ([((OrgApacheLuceneIndexTermEnum *) nil_chk(actualEnum_)) next]) {
       currentTerm_ = [((OrgApacheLuceneIndexTermEnum *) nil_chk(actualEnum_)) term];
       if ([self termCompareWithOrgApacheLuceneIndexTerm:currentTerm_]) return true;
@@ -458,7 +464,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchNumericRangeQuery)
   }
   currentTerm_ = nil;
   while ([((JavaUtilLinkedList *) nil_chk(rangeBounds_)) size] >= 2) {
-    JreAssert(([rangeBounds_ size] % 2 == 0), (@"org/apache/lucene/search/NumericRangeQuery.java:556 condition failed: assert rangeBounds.size() % 2 == 0;"));
+    JreAssert([rangeBounds_ size] % 2 == 0, @"org/apache/lucene/search/NumericRangeQuery.java:556 condition failed: assert rangeBounds.size() % 2 == 0;");
     if (actualEnum_ != nil) {
       [actualEnum_ close];
       actualEnum_ = nil;
@@ -470,7 +476,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchNumericRangeQuery)
     if (currentTerm_ != nil && [self termCompareWithOrgApacheLuceneIndexTerm:currentTerm_]) return true;
     currentTerm_ = nil;
   }
-  JreAssert(([rangeBounds_ size] == 0 && currentTerm_ == nil), (@"org/apache/lucene/search/NumericRangeQuery.java:574 condition failed: assert rangeBounds.size() == 0 && currentTerm == null;"));
+  JreAssert([rangeBounds_ size] == 0 && currentTerm_ == nil, @"org/apache/lucene/search/NumericRangeQuery.java:574 condition failed: assert rangeBounds.size() == 0 && currentTerm == null;");
   return false;
 }
 
@@ -530,7 +536,7 @@ void OrgApacheLuceneSearchNumericRangeQuery_NumericRangeTermEnum_initWithOrgApac
         minBound = (outer$->min_ == nil) ? JavaLangLong_MIN_VALUE : [((NSNumber *) nil_chk(outer$->min_)) longLongValue];
       }
       else {
-        JreAssert((outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE)), (@"org/apache/lucene/search/NumericRangeQuery.java:428 condition failed: assert dataType == DataType.DOUBLE;"));
+        JreAssert(outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE), @"org/apache/lucene/search/NumericRangeQuery.java:428 condition failed: assert dataType == DataType.DOUBLE;");
         minBound = (outer$->min_ == nil) ? JreLoadStatic(OrgApacheLuceneSearchNumericRangeQuery, LONG_NEGATIVE_INFINITY) : OrgApacheLuceneUtilNumericUtils_doubleToSortableLongWithDouble_([((NSNumber *) nil_chk(outer$->min_)) doubleValue]);
       }
       if (!outer$->minInclusive_ && outer$->min_ != nil) {
@@ -542,7 +548,7 @@ void OrgApacheLuceneSearchNumericRangeQuery_NumericRangeTermEnum_initWithOrgApac
         maxBound = (outer$->max_ == nil) ? JavaLangLong_MAX_VALUE : [((NSNumber *) nil_chk(outer$->max_)) longLongValue];
       }
       else {
-        JreAssert((outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE)), (@"org/apache/lucene/search/NumericRangeQuery.java:442 condition failed: assert dataType == DataType.DOUBLE;"));
+        JreAssert(outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE), @"org/apache/lucene/search/NumericRangeQuery.java:442 condition failed: assert dataType == DataType.DOUBLE;");
         maxBound = (outer$->max_ == nil) ? JreLoadStatic(OrgApacheLuceneSearchNumericRangeQuery, LONG_POSITIVE_INFINITY) : OrgApacheLuceneUtilNumericUtils_doubleToSortableLongWithDouble_([((NSNumber *) nil_chk(outer$->max_)) doubleValue]);
       }
       if (!outer$->maxInclusive_ && outer$->max_ != nil) {
@@ -560,7 +566,7 @@ void OrgApacheLuceneSearchNumericRangeQuery_NumericRangeTermEnum_initWithOrgApac
         minBound = (outer$->min_ == nil) ? JavaLangInteger_MIN_VALUE : [((NSNumber *) nil_chk(outer$->min_)) intValue];
       }
       else {
-        JreAssert((outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT)), (@"org/apache/lucene/search/NumericRangeQuery.java:468 condition failed: assert dataType == DataType.FLOAT;"));
+        JreAssert(outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT), @"org/apache/lucene/search/NumericRangeQuery.java:468 condition failed: assert dataType == DataType.FLOAT;");
         minBound = (outer$->min_ == nil) ? JreLoadStatic(OrgApacheLuceneSearchNumericRangeQuery, INT_NEGATIVE_INFINITY) : OrgApacheLuceneUtilNumericUtils_floatToSortableIntWithFloat_([((NSNumber *) nil_chk(outer$->min_)) floatValue]);
       }
       if (!outer$->minInclusive_ && outer$->min_ != nil) {
@@ -572,7 +578,7 @@ void OrgApacheLuceneSearchNumericRangeQuery_NumericRangeTermEnum_initWithOrgApac
         maxBound = (outer$->max_ == nil) ? JavaLangInteger_MAX_VALUE : [((NSNumber *) nil_chk(outer$->max_)) intValue];
       }
       else {
-        JreAssert((outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT)), (@"org/apache/lucene/search/NumericRangeQuery.java:482 condition failed: assert dataType == DataType.FLOAT;"));
+        JreAssert(outer$->dataType_ == JreLoadEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT), @"org/apache/lucene/search/NumericRangeQuery.java:482 condition failed: assert dataType == DataType.FLOAT;");
         maxBound = (outer$->max_ == nil) ? JreLoadStatic(OrgApacheLuceneSearchNumericRangeQuery, INT_POSITIVE_INFINITY) : OrgApacheLuceneUtilNumericUtils_floatToSortableIntWithFloat_([((NSNumber *) nil_chk(outer$->max_)) floatValue]);
       }
       if (!outer$->maxInclusive_ && outer$->max_ != nil) {

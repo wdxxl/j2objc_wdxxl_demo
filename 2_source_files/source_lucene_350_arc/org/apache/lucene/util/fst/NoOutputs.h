@@ -51,12 +51,12 @@ withOrgApacheLuceneStoreDataOutput:(OrgApacheLuceneStoreDataOutput *)outArg;
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilFstNoOutputs)
 
-inline id OrgApacheLuceneUtilFstNoOutputs_get_NO_OUTPUT();
+inline id OrgApacheLuceneUtilFstNoOutputs_get_NO_OUTPUT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFstNoOutputs, NO_OUTPUT, id)
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstNoOutputs *OrgApacheLuceneUtilFstNoOutputs_getSingleton();
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstNoOutputs *OrgApacheLuceneUtilFstNoOutputs_getSingleton(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstNoOutputs)
 

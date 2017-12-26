@@ -115,53 +115,57 @@
 
 - (OrgApacheLuceneIndexIndexWriterConfig *)setIndexingChainWithOrgApacheLuceneIndexDocumentsWriter_IndexingChain:(OrgApacheLuceneIndexDocumentsWriter_IndexingChain *)indexingChain;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexIndexWriterConfig)
 
-inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_TERM_INDEX_INTERVAL();
+inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_TERM_INDEX_INTERVAL(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_TERM_INDEX_INTERVAL 128
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_TERM_INDEX_INTERVAL, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DISABLE_AUTO_FLUSH();
+inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DISABLE_AUTO_FLUSH(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DISABLE_AUTO_FLUSH -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DISABLE_AUTO_FLUSH, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_MAX_BUFFERED_DELETE_TERMS();
+inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_MAX_BUFFERED_DELETE_TERMS(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_MAX_BUFFERED_DELETE_TERMS -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_MAX_BUFFERED_DELETE_TERMS, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_MAX_BUFFERED_DOCS();
+inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_MAX_BUFFERED_DOCS(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_MAX_BUFFERED_DOCS -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_MAX_BUFFERED_DOCS, jint)
 
-inline jdouble OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_RAM_BUFFER_SIZE_MB();
+inline jdouble OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_RAM_BUFFER_SIZE_MB(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_RAM_BUFFER_SIZE_MB 16.0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_RAM_BUFFER_SIZE_MB, jdouble)
 
-inline jlong OrgApacheLuceneIndexIndexWriterConfig_get_WRITE_LOCK_TIMEOUT();
+inline jlong OrgApacheLuceneIndexIndexWriterConfig_get_WRITE_LOCK_TIMEOUT(void);
 inline jlong OrgApacheLuceneIndexIndexWriterConfig_set_WRITE_LOCK_TIMEOUT(jlong value);
-inline jlong *OrgApacheLuceneIndexIndexWriterConfig_getRef_WRITE_LOCK_TIMEOUT();
+inline jlong *OrgApacheLuceneIndexIndexWriterConfig_getRef_WRITE_LOCK_TIMEOUT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jlong OrgApacheLuceneIndexIndexWriterConfig_WRITE_LOCK_TIMEOUT;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexIndexWriterConfig, WRITE_LOCK_TIMEOUT, jlong)
 
-inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_MAX_THREAD_STATES();
+inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_MAX_THREAD_STATES(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_MAX_THREAD_STATES 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_MAX_THREAD_STATES, jint)
 
-inline jboolean OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_READER_POOLING();
+inline jboolean OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_READER_POOLING(void);
 #define OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_READER_POOLING false
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_READER_POOLING, jboolean)
 
-inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_READER_TERMS_INDEX_DIVISOR();
+inline jint OrgApacheLuceneIndexIndexWriterConfig_get_DEFAULT_READER_TERMS_INDEX_DIVISOR(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexIndexWriterConfig_DEFAULT_READER_TERMS_INDEX_DIVISOR;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexIndexWriterConfig, DEFAULT_READER_TERMS_INDEX_DIVISOR, jint)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexIndexWriterConfig_setDefaultWriteLockTimeoutWithLong_(jlong writeLockTimeout);
 
-FOUNDATION_EXPORT jlong OrgApacheLuceneIndexIndexWriterConfig_getDefaultWriteLockTimeout();
+FOUNDATION_EXPORT jlong OrgApacheLuceneIndexIndexWriterConfig_getDefaultWriteLockTimeout(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexIndexWriterConfig_initWithOrgApacheLuceneUtilVersion_withOrgApacheLuceneAnalysisAnalyzer_(OrgApacheLuceneIndexIndexWriterConfig *self, OrgApacheLuceneUtilVersion *matchVersion, OrgApacheLuceneAnalysisAnalyzer *analyzer);
 
@@ -188,17 +192,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneIndexIndexWriterConfig_OpenMode_Enum)
   OrgApacheLuceneIndexIndexWriterConfig_OpenMode_Enum_CREATE_OR_APPEND = 2,
 };
 
-@interface OrgApacheLuceneIndexIndexWriterConfig_OpenMode : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneIndexIndexWriterConfig_OpenMode : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneIndexIndexWriterConfig_OpenMode *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -207,16 +207,16 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneIndexIndexWriterConfig_OpenMode)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_values_[];
 
-inline OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_get_CREATE();
+inline OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_get_CREATE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, CREATE)
 
-inline OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_get_APPEND();
+inline OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_get_APPEND(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, APPEND)
 
-inline OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_get_CREATE_OR_APPEND();
+inline OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_get_CREATE_OR_APPEND(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneIndexIndexWriterConfig_OpenMode, CREATE_OR_APPEND)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneIndexIndexWriterConfig_OpenMode *OrgApacheLuceneIndexIndexWriterConfig_OpenMode_valueOfWithNSString_(NSString *name);
 

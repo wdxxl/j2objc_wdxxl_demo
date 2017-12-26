@@ -43,9 +43,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindObjectTypeAdapter_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindObjectTypeAdapter_1_init(ComGoogleGsonInternalBindObjectTypeAdapter_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindObjectTypeAdapter_1 *new_ComGoogleGsonInternalBindObjectTypeAdapter_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindObjectTypeAdapter_1 *new_ComGoogleGsonInternalBindObjectTypeAdapter_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindObjectTypeAdapter_1 *create_ComGoogleGsonInternalBindObjectTypeAdapter_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindObjectTypeAdapter_1 *create_ComGoogleGsonInternalBindObjectTypeAdapter_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindObjectTypeAdapter)
 

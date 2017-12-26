@@ -15,6 +15,7 @@
 #include "java/lang/IllegalArgumentException.h"
 #include "java/lang/Integer.h"
 #include "java/lang/RuntimeException.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/reflect/Method.h"
 #include "java/nio/Buffer.h"
 #include "java/nio/BufferUnderflowException.h"
@@ -256,7 +257,7 @@ void OrgApacheLuceneStoreMMapDirectory_cleanMappingWithJavaNioByteBuffer_(OrgApa
     }
     @catch (JavaSecurityPrivilegedActionException *e) {
       JavaIoIOException *ioe = new_JavaIoIOException_initWithNSString_(@"unable to unmap the mapped buffer");
-      (void) [ioe initCauseWithNSException:[e getCause]];
+      (void) [ioe initCauseWithJavaLangThrowable:[e getCause]];
       @throw ioe;
     }
   }
@@ -265,7 +266,7 @@ void OrgApacheLuceneStoreMMapDirectory_cleanMappingWithJavaNioByteBuffer_(OrgApa
 void OrgApacheLuceneStoreMMapDirectory_setMaxChunkSizeWithInt_(OrgApacheLuceneStoreMMapDirectory *self, jint maxChunkSize) {
   if (maxChunkSize <= 0) @throw new_JavaLangIllegalArgumentException_initWithNSString_(@"Maximum chunk size for mmap must be >0");
   self->chunkSizePower_ = 31 - JavaLangInteger_numberOfLeadingZerosWithInt_(maxChunkSize);
-  JreAssert((self->chunkSizePower_ >= 0 && self->chunkSizePower_ <= 30), (@"org/apache/lucene/store/MMapDirectory.java:197 condition failed: assert this.chunkSizePower >= 0 && this.chunkSizePower <= 30;"));
+  JreAssert(self->chunkSizePower_ >= 0 && self->chunkSizePower_ <= 30, @"org/apache/lucene/store/MMapDirectory.java:197 condition failed: assert this.chunkSizePower >= 0 && this.chunkSizePower <= 30;");
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneStoreMMapDirectory)
@@ -434,7 +435,7 @@ OrgApacheLuceneStoreMMapDirectory_1 *create_OrgApacheLuceneStoreMMapDirectory_1_
     [clone seekWithLong:[self getFilePointer]];
   }
   @catch (JavaIoIOException *ioe) {
-    @throw new_JavaLangRuntimeException_initWithNSString_withNSException_(JreStrcat("$@", @"Should never happen: ", self), ioe);
+    @throw new_JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_(JreStrcat("$@", @"Should never happen: ", self), ioe);
   }
   return clone;
 }

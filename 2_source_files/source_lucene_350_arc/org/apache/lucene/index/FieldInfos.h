@@ -100,59 +100,59 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFieldInfos)
 
-inline jint OrgApacheLuceneIndexFieldInfos_get_FORMAT_PRE();
+inline jint OrgApacheLuceneIndexFieldInfos_get_FORMAT_PRE(void);
 #define OrgApacheLuceneIndexFieldInfos_FORMAT_PRE -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, FORMAT_PRE, jint)
 
-inline jint OrgApacheLuceneIndexFieldInfos_get_FORMAT_START();
+inline jint OrgApacheLuceneIndexFieldInfos_get_FORMAT_START(void);
 #define OrgApacheLuceneIndexFieldInfos_FORMAT_START -2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, FORMAT_START, jint)
 
-inline jint OrgApacheLuceneIndexFieldInfos_get_FORMAT_OMIT_POSITIONS();
+inline jint OrgApacheLuceneIndexFieldInfos_get_FORMAT_OMIT_POSITIONS(void);
 #define OrgApacheLuceneIndexFieldInfos_FORMAT_OMIT_POSITIONS -3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, FORMAT_OMIT_POSITIONS, jint)
 
-inline jint OrgApacheLuceneIndexFieldInfos_get_CURRENT_FORMAT();
+inline jint OrgApacheLuceneIndexFieldInfos_get_CURRENT_FORMAT(void);
 #define OrgApacheLuceneIndexFieldInfos_CURRENT_FORMAT -3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, CURRENT_FORMAT, jint)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_IS_INDEXED();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_IS_INDEXED(void);
 #define OrgApacheLuceneIndexFieldInfos_IS_INDEXED 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, IS_INDEXED, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_TERMVECTOR();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_TERMVECTOR(void);
 #define OrgApacheLuceneIndexFieldInfos_STORE_TERMVECTOR 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, STORE_TERMVECTOR, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_POSITIONS_WITH_TERMVECTOR();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_POSITIONS_WITH_TERMVECTOR(void);
 #define OrgApacheLuceneIndexFieldInfos_STORE_POSITIONS_WITH_TERMVECTOR 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, STORE_POSITIONS_WITH_TERMVECTOR, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_OFFSET_WITH_TERMVECTOR();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_OFFSET_WITH_TERMVECTOR(void);
 #define OrgApacheLuceneIndexFieldInfos_STORE_OFFSET_WITH_TERMVECTOR 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, STORE_OFFSET_WITH_TERMVECTOR, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_OMIT_NORMS();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_OMIT_NORMS(void);
 #define OrgApacheLuceneIndexFieldInfos_OMIT_NORMS 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, OMIT_NORMS, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_PAYLOADS();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_STORE_PAYLOADS(void);
 #define OrgApacheLuceneIndexFieldInfos_STORE_PAYLOADS 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, STORE_PAYLOADS, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_OMIT_TERM_FREQ_AND_POSITIONS();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_OMIT_TERM_FREQ_AND_POSITIONS(void);
 #define OrgApacheLuceneIndexFieldInfos_OMIT_TERM_FREQ_AND_POSITIONS 64
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, OMIT_TERM_FREQ_AND_POSITIONS, jbyte)
 
-inline jbyte OrgApacheLuceneIndexFieldInfos_get_OMIT_POSITIONS();
+inline jbyte OrgApacheLuceneIndexFieldInfos_get_OMIT_POSITIONS(void);
 #define OrgApacheLuceneIndexFieldInfos_OMIT_POSITIONS -128
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldInfos, OMIT_POSITIONS, jbyte)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldInfos_init(OrgApacheLuceneIndexFieldInfos *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInfos *new_OrgApacheLuceneIndexFieldInfos_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInfos *new_OrgApacheLuceneIndexFieldInfos_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInfos *create_OrgApacheLuceneIndexFieldInfos_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInfos *create_OrgApacheLuceneIndexFieldInfos_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldInfos_initWithOrgApacheLuceneStoreDirectory_withNSString_(OrgApacheLuceneIndexFieldInfos *self, OrgApacheLuceneStoreDirectory *d, NSString *name);
 

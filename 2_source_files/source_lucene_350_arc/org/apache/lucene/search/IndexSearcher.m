@@ -93,9 +93,9 @@ __attribute__((unused)) static OrgApacheLuceneSearchIndexSearcher *new_OrgApache
 
 __attribute__((unused)) static OrgApacheLuceneSearchIndexSearcher *create_OrgApacheLuceneSearchIndexSearcher_initWithOrgApacheLuceneIndexIndexReader_withBoolean_withJavaUtilConcurrentExecutorService_(OrgApacheLuceneIndexIndexReader *r, jboolean closeReader, id<JavaUtilConcurrentExecutorService> executor);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchIndexSearcher__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchIndexSearcher__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchIndexSearcher__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchIndexSearcher__Annotations$1(void);
 
 @interface OrgApacheLuceneSearchIndexSearcher_1 : NSObject < JavaUtilConcurrentCallable > {
  @public
@@ -1131,7 +1131,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchIndexSearcher_MultiSearche
     @throw new_OrgApacheLuceneUtilThreadInterruptedException_initWithJavaLangInterruptedException_(e);
   }
   @catch (JavaUtilConcurrentExecutionException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
   @finally {
     --numTasks_;

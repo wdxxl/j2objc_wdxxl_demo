@@ -30,7 +30,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalJsonReaderInternalAccess)
 
-inline ComGoogleGsonInternalJsonReaderInternalAccess *ComGoogleGsonInternalJsonReaderInternalAccess_get_INSTANCE();
+inline ComGoogleGsonInternalJsonReaderInternalAccess *ComGoogleGsonInternalJsonReaderInternalAccess_get_INSTANCE(void);
 inline ComGoogleGsonInternalJsonReaderInternalAccess *ComGoogleGsonInternalJsonReaderInternalAccess_set_INSTANCE(ComGoogleGsonInternalJsonReaderInternalAccess *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonInternalJsonReaderInternalAccess *ComGoogleGsonInternalJsonReaderInternalAccess_INSTANCE;

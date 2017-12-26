@@ -16,9 +16,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneIndexNoMergeScheduler_init(OrgApacheLuceneIndexNoMergeScheduler *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexNoMergeScheduler *new_OrgApacheLuceneIndexNoMergeScheduler_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexNoMergeScheduler *new_OrgApacheLuceneIndexNoMergeScheduler_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexNoMergeScheduler *create_OrgApacheLuceneIndexNoMergeScheduler_init();
+__attribute__((unused)) static OrgApacheLuceneIndexNoMergeScheduler *create_OrgApacheLuceneIndexNoMergeScheduler_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexNoMergeScheduler)
 

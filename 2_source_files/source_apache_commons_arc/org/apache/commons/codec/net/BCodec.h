@@ -73,9 +73,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecNetBCodec)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetBCodec_init(OrgApacheCommonsCodecNetBCodec *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetBCodec *new_OrgApacheCommonsCodecNetBCodec_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetBCodec *new_OrgApacheCommonsCodecNetBCodec_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetBCodec *create_OrgApacheCommonsCodecNetBCodec_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetBCodec *create_OrgApacheCommonsCodecNetBCodec_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetBCodec_initWithJavaNioCharsetCharset_(OrgApacheCommonsCodecNetBCodec *self, JavaNioCharsetCharset *charset);
 

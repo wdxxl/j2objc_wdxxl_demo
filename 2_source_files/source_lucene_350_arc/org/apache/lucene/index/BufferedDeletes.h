@@ -66,31 +66,31 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexBufferedDeletes, queries_, id<JavaUtilMa
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexBufferedDeletes, docIDs_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexBufferedDeletes, bytesUsed_, JavaUtilConcurrentAtomicAtomicLong *)
 
-inline jint OrgApacheLuceneIndexBufferedDeletes_get_BYTES_PER_DEL_TERM();
+inline jint OrgApacheLuceneIndexBufferedDeletes_get_BYTES_PER_DEL_TERM(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexBufferedDeletes_BYTES_PER_DEL_TERM;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexBufferedDeletes, BYTES_PER_DEL_TERM, jint)
 
-inline jint OrgApacheLuceneIndexBufferedDeletes_get_BYTES_PER_DEL_DOCID();
+inline jint OrgApacheLuceneIndexBufferedDeletes_get_BYTES_PER_DEL_DOCID(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexBufferedDeletes_BYTES_PER_DEL_DOCID;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexBufferedDeletes, BYTES_PER_DEL_DOCID, jint)
 
-inline jint OrgApacheLuceneIndexBufferedDeletes_get_BYTES_PER_DEL_QUERY();
+inline jint OrgApacheLuceneIndexBufferedDeletes_get_BYTES_PER_DEL_QUERY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexBufferedDeletes_BYTES_PER_DEL_QUERY;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexBufferedDeletes, BYTES_PER_DEL_QUERY, jint)
 
-inline JavaLangInteger *OrgApacheLuceneIndexBufferedDeletes_get_MAX_INT();
+inline JavaLangInteger *OrgApacheLuceneIndexBufferedDeletes_get_MAX_INT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaLangInteger *OrgApacheLuceneIndexBufferedDeletes_MAX_INT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexBufferedDeletes, MAX_INT, JavaLangInteger *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexBufferedDeletes_init(OrgApacheLuceneIndexBufferedDeletes *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexBufferedDeletes *new_OrgApacheLuceneIndexBufferedDeletes_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexBufferedDeletes *new_OrgApacheLuceneIndexBufferedDeletes_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexBufferedDeletes *create_OrgApacheLuceneIndexBufferedDeletes_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexBufferedDeletes *create_OrgApacheLuceneIndexBufferedDeletes_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexBufferedDeletes)
 

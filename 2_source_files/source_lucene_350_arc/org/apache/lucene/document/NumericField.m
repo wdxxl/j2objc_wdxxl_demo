@@ -70,7 +70,7 @@ withOrgApacheLuceneDocumentField_Store:(OrgApacheLuceneDocumentField_Store *)sto
   if (numericTS_ == nil) {
     numericTS_ = new_OrgApacheLuceneAnalysisNumericTokenStream_initWithInt_(precisionStep_);
     if (fieldsData_ != nil) {
-      JreAssert((type_ != nil), (@"org/apache/lucene/document/NumericField.java:210 condition failed: assert type != null;"));
+      JreAssert(type_ != nil, @"org/apache/lucene/document/NumericField.java:210 condition failed: assert type != null;");
       NSNumber *val = (NSNumber *) cast_chk(fieldsData_, [NSNumber class]);
       switch ([type_ ordinal]) {
         case OrgApacheLuceneDocumentNumericField_DataType_Enum_INT:
@@ -86,7 +86,7 @@ withOrgApacheLuceneDocumentField_Store:(OrgApacheLuceneDocumentField_Store *)sto
         (void) [numericTS_ setDoubleValueWithDouble:[val doubleValue]];
         break;
         default:
-        JreAssert((false), (@"Should never get here"));
+        JreAssert(false, @"Should never get here");
       }
     }
   }
@@ -259,10 +259,6 @@ OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericFiel
   return OrgApacheLuceneDocumentNumericField_DataType_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneDocumentNumericField_DataType;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -286,10 +282,10 @@ OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericFiel
 
 + (void)initialize {
   if (self == [OrgApacheLuceneDocumentNumericField_DataType class]) {
-    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, INT) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"INT", 0);
-    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, LONG) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"LONG", 1);
-    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"FLOAT", 2);
-    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"DOUBLE", 3);
+    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, INT) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, LONG) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, FLOAT) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE) = new_OrgApacheLuceneDocumentNumericField_DataType_initWithNSString_withInt_(@"", 3);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneDocumentNumericField_DataType)
   }
 }

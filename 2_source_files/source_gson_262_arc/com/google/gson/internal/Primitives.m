@@ -33,19 +33,19 @@
 
 @end
 
-inline id<JavaUtilMap> ComGoogleGsonInternalPrimitives_get_PRIMITIVE_TO_WRAPPER_TYPE();
+inline id<JavaUtilMap> ComGoogleGsonInternalPrimitives_get_PRIMITIVE_TO_WRAPPER_TYPE(void);
 static id<JavaUtilMap> ComGoogleGsonInternalPrimitives_PRIMITIVE_TO_WRAPPER_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalPrimitives, PRIMITIVE_TO_WRAPPER_TYPE, id<JavaUtilMap>)
 
-inline id<JavaUtilMap> ComGoogleGsonInternalPrimitives_get_WRAPPER_TO_PRIMITIVE_TYPE();
+inline id<JavaUtilMap> ComGoogleGsonInternalPrimitives_get_WRAPPER_TO_PRIMITIVE_TYPE(void);
 static id<JavaUtilMap> ComGoogleGsonInternalPrimitives_WRAPPER_TO_PRIMITIVE_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalPrimitives, WRAPPER_TO_PRIMITIVE_TYPE, id<JavaUtilMap>)
 
 __attribute__((unused)) static void ComGoogleGsonInternalPrimitives_init(ComGoogleGsonInternalPrimitives *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalPrimitives *new_ComGoogleGsonInternalPrimitives_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalPrimitives *new_ComGoogleGsonInternalPrimitives_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalPrimitives *create_ComGoogleGsonInternalPrimitives_init();
+__attribute__((unused)) static ComGoogleGsonInternalPrimitives *create_ComGoogleGsonInternalPrimitives_init(void);
 
 __attribute__((unused)) static void ComGoogleGsonInternalPrimitives_addWithJavaUtilMap_withJavaUtilMap_withIOSClass_withIOSClass_(id<JavaUtilMap> forward, id<JavaUtilMap> backward, IOSClass *key, IOSClass *value);
 

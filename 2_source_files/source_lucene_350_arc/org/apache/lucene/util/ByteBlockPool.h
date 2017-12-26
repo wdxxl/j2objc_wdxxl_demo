@@ -60,6 +60,10 @@
 
 - (void)writePoolWithOrgApacheLuceneStoreDataOutput:(OrgApacheLuceneStoreDataOutput *)outArg;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilByteBlockPool)
@@ -67,29 +71,29 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneUtilByteBlockPool)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilByteBlockPool, buffers_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilByteBlockPool, buffer_, IOSByteArray *)
 
-inline jint OrgApacheLuceneUtilByteBlockPool_get_BYTE_BLOCK_SHIFT();
+inline jint OrgApacheLuceneUtilByteBlockPool_get_BYTE_BLOCK_SHIFT(void);
 #define OrgApacheLuceneUtilByteBlockPool_BYTE_BLOCK_SHIFT 15
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilByteBlockPool, BYTE_BLOCK_SHIFT, jint)
 
-inline jint OrgApacheLuceneUtilByteBlockPool_get_BYTE_BLOCK_SIZE();
+inline jint OrgApacheLuceneUtilByteBlockPool_get_BYTE_BLOCK_SIZE(void);
 #define OrgApacheLuceneUtilByteBlockPool_BYTE_BLOCK_SIZE 32768
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilByteBlockPool, BYTE_BLOCK_SIZE, jint)
 
-inline jint OrgApacheLuceneUtilByteBlockPool_get_BYTE_BLOCK_MASK();
+inline jint OrgApacheLuceneUtilByteBlockPool_get_BYTE_BLOCK_MASK(void);
 #define OrgApacheLuceneUtilByteBlockPool_BYTE_BLOCK_MASK 32767
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilByteBlockPool, BYTE_BLOCK_MASK, jint)
 
-inline IOSIntArray *OrgApacheLuceneUtilByteBlockPool_get_nextLevelArray();
+inline IOSIntArray *OrgApacheLuceneUtilByteBlockPool_get_nextLevelArray(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneUtilByteBlockPool_nextLevelArray;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilByteBlockPool, nextLevelArray, IOSIntArray *)
 
-inline IOSIntArray *OrgApacheLuceneUtilByteBlockPool_get_levelSizeArray();
+inline IOSIntArray *OrgApacheLuceneUtilByteBlockPool_get_levelSizeArray(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneUtilByteBlockPool_levelSizeArray;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilByteBlockPool, levelSizeArray, IOSIntArray *)
 
-inline jint OrgApacheLuceneUtilByteBlockPool_get_FIRST_LEVEL_SIZE();
+inline jint OrgApacheLuceneUtilByteBlockPool_get_FIRST_LEVEL_SIZE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneUtilByteBlockPool_FIRST_LEVEL_SIZE;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneUtilByteBlockPool, FIRST_LEVEL_SIZE, jint)
@@ -161,9 +165,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilByteBlockPool_DirectAllocator)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilByteBlockPool_DirectAllocator_init(OrgApacheLuceneUtilByteBlockPool_DirectAllocator *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilByteBlockPool_DirectAllocator *new_OrgApacheLuceneUtilByteBlockPool_DirectAllocator_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilByteBlockPool_DirectAllocator *new_OrgApacheLuceneUtilByteBlockPool_DirectAllocator_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilByteBlockPool_DirectAllocator *create_OrgApacheLuceneUtilByteBlockPool_DirectAllocator_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilByteBlockPool_DirectAllocator *create_OrgApacheLuceneUtilByteBlockPool_DirectAllocator_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilByteBlockPool_DirectAllocator_initWithInt_(OrgApacheLuceneUtilByteBlockPool_DirectAllocator *self, jint blockSize);
 
@@ -196,6 +200,10 @@ withJavaUtilConcurrentAtomicAtomicLong:(JavaUtilConcurrentAtomicAtomicLong *)byt
 - (void)recycleByteBlocksWithByteArray2:(IOSObjectArray *)blocks
                                 withInt:(jint)start
                                 withInt:(jint)end;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 

@@ -40,10 +40,6 @@ OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType
   return OrgApacheCommonsCodecLanguageBmRuleType_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LNSString;", 0x1, -1, -1, -1, -1, -1, -1 },
@@ -69,9 +65,9 @@ OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType
 
 + (void)initialize {
   if (self == [OrgApacheCommonsCodecLanguageBmRuleType class]) {
-    JreEnum(OrgApacheCommonsCodecLanguageBmRuleType, APPROX) = new_OrgApacheCommonsCodecLanguageBmRuleType_initWithNSString_withNSString_withInt_(@"approx", @"APPROX", 0);
-    JreEnum(OrgApacheCommonsCodecLanguageBmRuleType, EXACT) = new_OrgApacheCommonsCodecLanguageBmRuleType_initWithNSString_withNSString_withInt_(@"exact", @"EXACT", 1);
-    JreEnum(OrgApacheCommonsCodecLanguageBmRuleType, RULES) = new_OrgApacheCommonsCodecLanguageBmRuleType_initWithNSString_withNSString_withInt_(@"rules", @"RULES", 2);
+    JreEnum(OrgApacheCommonsCodecLanguageBmRuleType, APPROX) = new_OrgApacheCommonsCodecLanguageBmRuleType_initWithNSString_withNSString_withInt_(@"approx", @"", 0);
+    JreEnum(OrgApacheCommonsCodecLanguageBmRuleType, EXACT) = new_OrgApacheCommonsCodecLanguageBmRuleType_initWithNSString_withNSString_withInt_(@"exact", @"", 1);
+    JreEnum(OrgApacheCommonsCodecLanguageBmRuleType, RULES) = new_OrgApacheCommonsCodecLanguageBmRuleType_initWithNSString_withNSString_withInt_(@"rules", @"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheCommonsCodecLanguageBmRuleType)
   }
 }

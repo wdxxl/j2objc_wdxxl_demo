@@ -21,6 +21,7 @@
 #include "com/google/gson/stream/JsonWriter.h"
 
 @class ComGoogleGsonJsonElement;
+@class JavaIoWriter;
 
 @interface ComGoogleGsonInternalBindJsonTreeWriter : ComGoogleGsonStreamJsonWriter
 
@@ -56,15 +57,19 @@
 
 - (ComGoogleGsonStreamJsonWriter *)valueWithNSString:(NSString *)value;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaIoWriter:(JavaIoWriter *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternalBindJsonTreeWriter)
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalBindJsonTreeWriter_init(ComGoogleGsonInternalBindJsonTreeWriter *self);
 
-FOUNDATION_EXPORT ComGoogleGsonInternalBindJsonTreeWriter *new_ComGoogleGsonInternalBindJsonTreeWriter_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonInternalBindJsonTreeWriter *new_ComGoogleGsonInternalBindJsonTreeWriter_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonInternalBindJsonTreeWriter *create_ComGoogleGsonInternalBindJsonTreeWriter_init();
+FOUNDATION_EXPORT ComGoogleGsonInternalBindJsonTreeWriter *create_ComGoogleGsonInternalBindJsonTreeWriter_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindJsonTreeWriter)
 

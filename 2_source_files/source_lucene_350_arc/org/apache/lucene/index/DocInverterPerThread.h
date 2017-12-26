@@ -58,6 +58,10 @@
 
 - (void)abort;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexDocInverterPerThread)
@@ -87,6 +91,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDocInverterPerThread)
 #define INCLUDE_OrgApacheLuceneUtilAttributeSource 1
 #include "org/apache/lucene/util/AttributeSource.h"
 
+@class OrgApacheLuceneUtilAttributeSource_AttributeFactory;
 @protocol OrgApacheLuceneAnalysisTokenattributesCharTermAttribute;
 @protocol OrgApacheLuceneAnalysisTokenattributesOffsetAttribute;
 
@@ -101,6 +106,12 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDocInverterPerThread)
 - (void)reinitWithNSString:(NSString *)stringValue
                    withInt:(jint)startOffset
                    withInt:(jint)endOffset;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource:(OrgApacheLuceneUtilAttributeSource *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttributeSource_AttributeFactory *)arg0 NS_UNAVAILABLE;
 
 @end
 

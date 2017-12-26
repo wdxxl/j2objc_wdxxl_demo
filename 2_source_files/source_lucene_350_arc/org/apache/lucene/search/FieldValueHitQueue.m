@@ -248,8 +248,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldValueHitQueue_Entry)
 
 - (jboolean)lessThanWithId:(OrgApacheLuceneSearchFieldValueHitQueue_Entry *)hitA
                     withId:(OrgApacheLuceneSearchFieldValueHitQueue_Entry *)hitB {
-  JreAssert((hitA != hitB), (@"org/apache/lucene/search/FieldValueHitQueue.java:82 condition failed: assert hitA != hitB;"));
-  JreAssert((((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitA))->slot_ != ((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitB))->slot_), (@"org/apache/lucene/search/FieldValueHitQueue.java:83 condition failed: assert hitA.slot != hitB.slot;"));
+  JreAssert(hitA != hitB, @"org/apache/lucene/search/FieldValueHitQueue.java:82 condition failed: assert hitA != hitB;");
+  JreAssert(((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitA))->slot_ != ((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitB))->slot_, @"org/apache/lucene/search/FieldValueHitQueue.java:83 condition failed: assert hitA.slot != hitB.slot;");
   jint c = oneReverseMul_ * [((OrgApacheLuceneSearchFieldComparator *) nil_chk(comparator_)) compareWithInt:hitA->slot_ withInt:hitB->slot_];
   if (c != 0) {
     return c > 0;
@@ -308,8 +308,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldValueHitQueue_OneComp
 
 - (jboolean)lessThanWithId:(OrgApacheLuceneSearchFieldValueHitQueue_Entry *)hitA
                     withId:(OrgApacheLuceneSearchFieldValueHitQueue_Entry *)hitB {
-  JreAssert((hitA != hitB), (@"org/apache/lucene/search/FieldValueHitQueue.java:120 condition failed: assert hitA != hitB;"));
-  JreAssert((((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitA))->slot_ != ((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitB))->slot_), (@"org/apache/lucene/search/FieldValueHitQueue.java:121 condition failed: assert hitA.slot != hitB.slot;"));
+  JreAssert(hitA != hitB, @"org/apache/lucene/search/FieldValueHitQueue.java:120 condition failed: assert hitA != hitB;");
+  JreAssert(((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitA))->slot_ != ((OrgApacheLuceneSearchFieldValueHitQueue_Entry *) nil_chk(hitB))->slot_, @"org/apache/lucene/search/FieldValueHitQueue.java:121 condition failed: assert hitA.slot != hitB.slot;");
   jint numComparators = ((IOSObjectArray *) nil_chk(comparators_))->size_;
   for (jint i = 0; i < numComparators; ++i) {
     jint c = IOSIntArray_Get(nil_chk(reverseMul_), i) * [((OrgApacheLuceneSearchFieldComparator *) nil_chk(IOSObjectArray_Get(comparators_, i))) compareWithInt:hitA->slot_ withInt:hitB->slot_];

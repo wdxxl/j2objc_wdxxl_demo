@@ -62,92 +62,100 @@ withOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttr
 
 - (void)setMaxTokenLengthWithInt:(jint)length;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource:(OrgApacheLuceneUtilAttributeSource *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttributeSource_AttributeFactory *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_ALPHANUM();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_ALPHANUM(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_ALPHANUM 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, ALPHANUM, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_NUM();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_NUM(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_NUM 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, NUM, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_SOUTHEAST_ASIAN();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_SOUTHEAST_ASIAN(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_SOUTHEAST_ASIAN 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, SOUTHEAST_ASIAN, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_IDEOGRAPHIC();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_IDEOGRAPHIC(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_IDEOGRAPHIC 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, IDEOGRAPHIC, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HIRAGANA();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HIRAGANA(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_HIRAGANA 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, HIRAGANA, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_KATAKANA();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_KATAKANA(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_KATAKANA 5
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, KATAKANA, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HANGUL();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HANGUL(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_HANGUL 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, HANGUL, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_URL();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_URL(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_URL 7
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, URL, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_EMAIL();
+inline jint OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_EMAIL(void);
 #define OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_EMAIL 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, EMAIL, jint)
 
-inline IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_TOKEN_TYPES();
+inline IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_TOKEN_TYPES(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_TOKEN_TYPES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, TOKEN_TYPES, IOSObjectArray *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_WORD_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_WORD_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_WORD_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, WORD_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_NUMERIC_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_NUMERIC_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_NUMERIC_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, NUMERIC_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_URL_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_URL_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_URL_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, URL_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_EMAIL_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_EMAIL_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_EMAIL_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, EMAIL_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_SOUTH_EAST_ASIAN_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_SOUTH_EAST_ASIAN_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_SOUTH_EAST_ASIAN_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, SOUTH_EAST_ASIAN_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_IDEOGRAPHIC_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_IDEOGRAPHIC_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_IDEOGRAPHIC_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, IDEOGRAPHIC_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HIRAGANA_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HIRAGANA_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_HIRAGANA_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, HIRAGANA_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_KATAKANA_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_KATAKANA_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_KATAKANA_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, KATAKANA_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HANGUL_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_get_HANGUL_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_HANGUL_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, HANGUL_TYPE, NSString *)

@@ -73,9 +73,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneDocumentDocument, fields_, id<JavaUtilList>)
 
 FOUNDATION_EXPORT void OrgApacheLuceneDocumentDocument_init(OrgApacheLuceneDocumentDocument *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneDocumentDocument *new_OrgApacheLuceneDocumentDocument_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneDocumentDocument *new_OrgApacheLuceneDocumentDocument_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneDocumentDocument *create_OrgApacheLuceneDocumentDocument_init();
+FOUNDATION_EXPORT OrgApacheLuceneDocumentDocument *create_OrgApacheLuceneDocumentDocument_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneDocumentDocument)
 

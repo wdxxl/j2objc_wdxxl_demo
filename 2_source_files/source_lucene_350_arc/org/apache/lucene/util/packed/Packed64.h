@@ -57,15 +57,15 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilPackedPacked64)
 
-inline jint OrgApacheLuceneUtilPackedPacked64_get_BLOCK_SIZE();
+inline jint OrgApacheLuceneUtilPackedPacked64_get_BLOCK_SIZE(void);
 #define OrgApacheLuceneUtilPackedPacked64_BLOCK_SIZE 64
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked64, BLOCK_SIZE, jint)
 
-inline jint OrgApacheLuceneUtilPackedPacked64_get_BLOCK_BITS();
+inline jint OrgApacheLuceneUtilPackedPacked64_get_BLOCK_BITS(void);
 #define OrgApacheLuceneUtilPackedPacked64_BLOCK_BITS 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked64, BLOCK_BITS, jint)
 
-inline jint OrgApacheLuceneUtilPackedPacked64_get_MOD_MASK();
+inline jint OrgApacheLuceneUtilPackedPacked64_get_MOD_MASK(void);
 #define OrgApacheLuceneUtilPackedPacked64_MOD_MASK 63
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked64, MOD_MASK, jint)
 

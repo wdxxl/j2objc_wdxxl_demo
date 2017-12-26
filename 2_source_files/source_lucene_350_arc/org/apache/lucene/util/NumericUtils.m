@@ -33,9 +33,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilNumericUtils_init(OrgApacheLuceneUtilNumericUtils *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilNumericUtils *new_OrgApacheLuceneUtilNumericUtils_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilNumericUtils *new_OrgApacheLuceneUtilNumericUtils_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilNumericUtils *create_OrgApacheLuceneUtilNumericUtils_init();
+__attribute__((unused)) static OrgApacheLuceneUtilNumericUtils *create_OrgApacheLuceneUtilNumericUtils_init(void);
 
 __attribute__((unused)) static void OrgApacheLuceneUtilNumericUtils_splitRangeWithId_withInt_withInt_withLong_withLong_(id builder, jint valSize, jint precisionStep, jlong minBound, jlong maxBound);
 

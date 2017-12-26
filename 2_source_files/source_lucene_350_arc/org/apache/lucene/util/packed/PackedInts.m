@@ -21,15 +21,15 @@
 
 #pragma clang diagnostic ignored "-Wprotocol"
 
-inline NSString *OrgApacheLuceneUtilPackedPackedInts_get_CODEC_NAME();
+inline NSString *OrgApacheLuceneUtilPackedPackedInts_get_CODEC_NAME(void);
 static NSString *OrgApacheLuceneUtilPackedPackedInts_CODEC_NAME = @"PackedInts";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPackedInts, CODEC_NAME, NSString *)
 
-inline jint OrgApacheLuceneUtilPackedPackedInts_get_VERSION_START();
+inline jint OrgApacheLuceneUtilPackedPackedInts_get_VERSION_START(void);
 #define OrgApacheLuceneUtilPackedPackedInts_VERSION_START 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPackedInts, VERSION_START, jint)
 
-inline jint OrgApacheLuceneUtilPackedPackedInts_get_VERSION_CURRENT();
+inline jint OrgApacheLuceneUtilPackedPackedInts_get_VERSION_CURRENT(void);
 #define OrgApacheLuceneUtilPackedPackedInts_VERSION_CURRENT 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPackedInts, VERSION_CURRENT, jint)
 
@@ -131,7 +131,7 @@ id<OrgApacheLuceneUtilPackedPackedInts_Reader> OrgApacheLuceneUtilPackedPackedIn
   OrgApacheLuceneUtilPackedPackedInts_initialize();
   OrgApacheLuceneUtilCodecUtil_checkHeaderWithOrgApacheLuceneStoreDataInput_withNSString_withInt_withInt_(inArg, OrgApacheLuceneUtilPackedPackedInts_CODEC_NAME, OrgApacheLuceneUtilPackedPackedInts_VERSION_START, OrgApacheLuceneUtilPackedPackedInts_VERSION_START);
   jint bitsPerValue = [((OrgApacheLuceneStoreDataInput *) nil_chk(inArg)) readVInt];
-  JreAssert((bitsPerValue > 0 && bitsPerValue <= 64), (JreStrcat("$I", @"bitsPerValue=", bitsPerValue)));
+  JreAssert(bitsPerValue > 0 && bitsPerValue <= 64, JreStrcat("$I", @"bitsPerValue=", bitsPerValue));
   jint valueCount = [inArg readVInt];
   switch (bitsPerValue) {
     case 8:
@@ -330,7 +330,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPackedPackedInts_Mutable
 void OrgApacheLuceneUtilPackedPackedInts_ReaderImpl_initWithInt_withInt_(OrgApacheLuceneUtilPackedPackedInts_ReaderImpl *self, jint valueCount, jint bitsPerValue) {
   NSObject_init(self);
   self->bitsPerValue_ = bitsPerValue;
-  JreAssert((bitsPerValue > 0 && bitsPerValue <= 64), (JreStrcat("$I", @"bitsPerValue=", bitsPerValue)));
+  JreAssert(bitsPerValue > 0 && bitsPerValue <= 64, JreStrcat("$I", @"bitsPerValue=", bitsPerValue));
   self->valueCount_ = valueCount;
 }
 
@@ -381,7 +381,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPackedPackedInts_ReaderImpl)
 
 void OrgApacheLuceneUtilPackedPackedInts_Writer_initWithOrgApacheLuceneStoreDataOutput_withInt_withInt_(OrgApacheLuceneUtilPackedPackedInts_Writer *self, OrgApacheLuceneStoreDataOutput *outArg, jint valueCount, jint bitsPerValue) {
   NSObject_init(self);
-  JreAssert((bitsPerValue <= 64), (@"org/apache/lucene/util/packed/PackedInts.java:150 condition failed: assert bitsPerValue <= 64;"));
+  JreAssert(bitsPerValue <= 64, @"org/apache/lucene/util/packed/PackedInts.java:150 condition failed: assert bitsPerValue <= 64;");
   self->out_ = outArg;
   self->valueCount_ = valueCount;
   self->bitsPerValue_ = bitsPerValue;

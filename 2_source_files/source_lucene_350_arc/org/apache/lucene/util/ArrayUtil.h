@@ -196,9 +196,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilArrayUtil)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilArrayUtil_init(OrgApacheLuceneUtilArrayUtil *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilArrayUtil *new_OrgApacheLuceneUtilArrayUtil_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilArrayUtil *new_OrgApacheLuceneUtilArrayUtil_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilArrayUtil *create_OrgApacheLuceneUtilArrayUtil_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilArrayUtil *create_OrgApacheLuceneUtilArrayUtil_init(void);
 
 FOUNDATION_EXPORT jint OrgApacheLuceneUtilArrayUtil_parseIntWithCharArray_(IOSCharArray *chars);
 

@@ -20,6 +20,7 @@
 #define INCLUDE_OrgApacheLuceneUtilOpenBitSet 1
 #include "org/apache/lucene/util/OpenBitSet.h"
 
+@class IOSLongArray;
 @class OrgApacheLuceneSearchDocIdSetIterator;
 
 @interface OrgApacheLuceneUtilOpenBitSetDISI : OrgApacheLuceneUtilOpenBitSet
@@ -38,6 +39,15 @@
 - (void)inPlaceOrWithOrgApacheLuceneSearchDocIdSetIterator:(OrgApacheLuceneSearchDocIdSetIterator *)disi;
 
 - (void)inPlaceXorWithOrgApacheLuceneSearchDocIdSetIterator:(OrgApacheLuceneSearchDocIdSetIterator *)disi;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithLong:(jlong)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithLongArray:(IOSLongArray *)arg0
+                          withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 

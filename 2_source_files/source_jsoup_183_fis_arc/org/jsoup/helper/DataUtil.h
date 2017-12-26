@@ -67,12 +67,12 @@
 
 J2OBJC_STATIC_INIT(OrgJsoupHelperDataUtil)
 
-inline NSString *OrgJsoupHelperDataUtil_get_defaultCharset();
+inline NSString *OrgJsoupHelperDataUtil_get_defaultCharset(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgJsoupHelperDataUtil_defaultCharset;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperDataUtil, defaultCharset, NSString *)
 
-inline jint OrgJsoupHelperDataUtil_get_boundaryLength();
+inline jint OrgJsoupHelperDataUtil_get_boundaryLength(void);
 #define OrgJsoupHelperDataUtil_boundaryLength 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupHelperDataUtil, boundaryLength, jint)
 
@@ -92,11 +92,11 @@ FOUNDATION_EXPORT JavaNioByteBuffer *OrgJsoupHelperDataUtil_readToByteBufferWith
 
 FOUNDATION_EXPORT JavaNioByteBuffer *OrgJsoupHelperDataUtil_readFileToByteBufferWithJavaIoFile_(JavaIoFile *file);
 
-FOUNDATION_EXPORT JavaNioByteBuffer *OrgJsoupHelperDataUtil_emptyByteBuffer();
+FOUNDATION_EXPORT JavaNioByteBuffer *OrgJsoupHelperDataUtil_emptyByteBuffer(void);
 
 FOUNDATION_EXPORT NSString *OrgJsoupHelperDataUtil_getCharsetFromContentTypeWithNSString_(NSString *contentType);
 
-FOUNDATION_EXPORT NSString *OrgJsoupHelperDataUtil_mimeBoundary();
+FOUNDATION_EXPORT NSString *OrgJsoupHelperDataUtil_mimeBoundary(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperDataUtil)
 

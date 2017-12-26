@@ -21,6 +21,7 @@
 #include "org/apache/lucene/search/MultiTermQueryWrapperFilter.h"
 
 @class OrgApacheLuceneIndexTerm;
+@class OrgApacheLuceneSearchMultiTermQuery;
 
 @interface OrgApacheLuceneSearchPrefixFilter : OrgApacheLuceneSearchMultiTermQueryWrapperFilter
 
@@ -31,6 +32,10 @@
 - (OrgApacheLuceneIndexTerm *)getPrefix;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchMultiTermQuery:(OrgApacheLuceneSearchMultiTermQuery *)arg0 NS_UNAVAILABLE;
 
 @end
 

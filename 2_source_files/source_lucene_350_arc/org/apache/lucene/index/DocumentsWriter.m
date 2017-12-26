@@ -12,6 +12,7 @@
 #include "java/lang/InterruptedException.h"
 #include "java/lang/System.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "java/text/NumberFormat.h"
 #include "java/util/ArrayList.h"
 #include "java/util/Collection.h"
@@ -125,9 +126,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexDocumentsWriter_1)
 
 __attribute__((unused)) static void OrgApacheLuceneIndexDocumentsWriter_1_init(OrgApacheLuceneIndexDocumentsWriter_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_1 *new_OrgApacheLuceneIndexDocumentsWriter_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_1 *new_OrgApacheLuceneIndexDocumentsWriter_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_1 *create_OrgApacheLuceneIndexDocumentsWriter_1_init();
+__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_1 *create_OrgApacheLuceneIndexDocumentsWriter_1_init(void);
 
 @interface OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter ()
 
@@ -137,9 +138,9 @@ __attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_1 *create_Org
 
 __attribute__((unused)) static void OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter_init(OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter *new_OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter *new_OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter *create_OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter_init();
+__attribute__((unused)) static OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter *create_OrgApacheLuceneIndexDocumentsWriter_SkipDocWriter_init(void);
 
 @interface OrgApacheLuceneIndexDocumentsWriter_ByteBlockAllocator () {
  @public
@@ -301,7 +302,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
       @try {
         [((OrgApacheLuceneIndexDocumentsWriter_WaitQueue *) nil_chk(waitQueue_)) abort];
       }
-      @catch (NSException *t) {
+      @catch (JavaLangThrowable *t) {
       }
       @try {
         [self waitIdle];
@@ -310,7 +311,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
         if (infoStream_ != nil) {
           [self messageWithNSString:@"docWriter: abort waitIdle done"];
         }
-        JreAssert((0 == waitQueue_->numWaiting_), (JreStrcat("$I", @"waitQueue.numWaiting=", waitQueue_->numWaiting_)));
+        JreAssert(0 == waitQueue_->numWaiting_, JreStrcat("$I", @"waitQueue.numWaiting=", waitQueue_->numWaiting_));
         waitQueue_->waitingBytes_ = 0;
         [((OrgApacheLuceneIndexBufferedDeletes *) nil_chk(pendingDeletes_)) clear];
         {
@@ -322,14 +323,14 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
             @try {
               [((OrgApacheLuceneIndexDocConsumerPerThread *) nil_chk(((OrgApacheLuceneIndexDocumentsWriterThreadState *) nil_chk(threadState))->consumer_)) abort];
             }
-            @catch (NSException *t) {
+            @catch (JavaLangThrowable *t) {
             }
           }
         }
         @try {
           [((OrgApacheLuceneIndexDocConsumer *) nil_chk(consumer_)) abort];
         }
-        @catch (NSException *t) {
+        @catch (JavaLangThrowable *t) {
         }
         OrgApacheLuceneIndexDocumentsWriter_doAfterFlush(self);
       }
@@ -378,7 +379,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
                                          withOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)segmentInfos {
   @synchronized(self) {
     jlong startTime = JavaLangSystem_currentTimeMillis();
-    JreAssert((JavaLangThread_holdsLockWithId_(writer)), (@"org/apache/lucene/index/DocumentsWriter.java:522 condition failed: assert Thread.holdsLock(writer);"));
+    JreAssert(JavaLangThread_holdsLockWithId_(writer), @"org/apache/lucene/index/DocumentsWriter.java:522 condition failed: assert Thread.holdsLock(writer);");
     [self waitIdle];
     if (numDocs_ == 0) {
       if (infoStream_ != nil) {
@@ -396,9 +397,9 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
     jboolean success = false;
     OrgApacheLuceneIndexSegmentInfo *newSegment;
     @try {
-      JreAssert((nextDocID_ == numDocs_), (JreStrcat("$I$I", @"nextDocID=", nextDocID_, @" numDocs=", numDocs_)));
-      JreAssert((((OrgApacheLuceneIndexDocumentsWriter_WaitQueue *) nil_chk(waitQueue_))->numWaiting_ == 0), (JreStrcat("$I", @"numWaiting=", waitQueue_->numWaiting_)));
-      JreAssert((waitQueue_->waitingBytes_ == 0), (@"org/apache/lucene/index/DocumentsWriter.java:551 condition failed: assert waitQueue.waitingBytes == 0;"));
+      JreAssert(nextDocID_ == numDocs_, JreStrcat("$I$I", @"nextDocID=", nextDocID_, @" numDocs=", numDocs_));
+      JreAssert(((OrgApacheLuceneIndexDocumentsWriter_WaitQueue *) nil_chk(waitQueue_))->numWaiting_ == 0, JreStrcat("$I", @"numWaiting=", waitQueue_->numWaiting_));
+      JreAssert(waitQueue_->waitingBytes_ == 0, @"org/apache/lucene/index/DocumentsWriter.java:551 condition failed: assert waitQueue.waitingBytes == 0;");
       if (infoStream_ != nil) {
         [self messageWithNSString:JreStrcat("$$$I", @"flush postings as segment ", segment_, @" numDocs=", numDocs_)];
       }
@@ -448,7 +449,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
       }
       if (flushState->deletedDocs_ != nil) {
         jint delCount = [flushState->deletedDocs_ count];
-        JreAssert((delCount > 0), (@"org/apache/lucene/index/DocumentsWriter.java:613 condition failed: assert delCount > 0;"));
+        JreAssert(delCount > 0, @"org/apache/lucene/index/DocumentsWriter.java:613 condition failed: assert delCount > 0;");
         [newSegment setDelCountWithInt:delCount];
         [newSegment advanceDelGen];
         NSString *delFileName = [newSegment getDelFileName];
@@ -465,7 +466,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
             @try {
               [((OrgApacheLuceneStoreDirectory *) nil_chk(directory_)) deleteFileWithNSString:delFileName];
             }
-            @catch (NSException *t) {
+            @catch (JavaLangThrowable *t) {
             }
           }
         }
@@ -507,7 +508,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
                                                                                        withInt:(jint)docCount {
   @synchronized(self) {
     JavaLangThread *currentThread = JavaLangThread_currentThread();
-    JreAssert((!JavaLangThread_holdsLockWithId_(writer_)), (@"org/apache/lucene/index/DocumentsWriter.java:687 condition failed: assert !Thread.holdsLock(writer);"));
+    JreAssert(!JavaLangThread_holdsLockWithId_(writer_), @"org/apache/lucene/index/DocumentsWriter.java:687 condition failed: assert !Thread.holdsLock(writer);");
     OrgApacheLuceneIndexDocumentsWriterThreadState *state = [((JavaUtilHashMap *) nil_chk(threadBindings_)) getWithId:currentThread];
     if (state == nil) {
       OrgApacheLuceneIndexDocumentsWriterThreadState *minThreadState = nil;
@@ -534,7 +535,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
     [self waitReadyWithOrgApacheLuceneIndexDocumentsWriterThreadState:state];
     if (segment_ == nil) {
       segment_ = [((OrgApacheLuceneIndexIndexWriter *) nil_chk(writer_)) newSegmentName];
-      JreAssert((numDocs_ == 0), (@"org/apache/lucene/index/DocumentsWriter.java:728 condition failed: assert numDocs == 0;"));
+      JreAssert(numDocs_ == 0, @"org/apache/lucene/index/DocumentsWriter.java:728 condition failed: assert numDocs == 0;");
     }
     ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(state->docState_))->docID_ = nextDocID_;
     nextDocID_ += docCount;
@@ -635,7 +636,7 @@ OrgApacheLuceneIndexDocumentsWriter_IndexingChain *OrgApacheLuceneIndexDocuments
         if (aborting_) {
           break;
         }
-        JreAssert((perDoc == nil || perDoc->docID_ == docState->docID_), (@"org/apache/lucene/index/DocumentsWriter.java:866 condition failed: assert perDoc == null || perDoc.docID == docState.docID;"));
+        JreAssert(perDoc == nil || perDoc->docID_ == docState->docID_, @"org/apache/lucene/index/DocumentsWriter.java:866 condition failed: assert perDoc == null || perDoc.docID == docState.docID;");
         jboolean doPause;
         if (perDoc != nil) {
           [((OrgApacheLuceneIndexDocumentsWriter_WaitQueue *) nil_chk(waitQueue_)) addWithOrgApacheLuceneIndexDocumentsWriter_DocWriter:perDoc];
@@ -1073,7 +1074,7 @@ OrgApacheLuceneIndexDocumentsWriter *create_OrgApacheLuceneIndexDocumentsWriter_
 }
 
 void OrgApacheLuceneIndexDocumentsWriter_doAfterFlush(OrgApacheLuceneIndexDocumentsWriter *self) {
-  JreAssert((OrgApacheLuceneIndexDocumentsWriter_allThreadsIdle(self)), (@"org/apache/lucene/index/DocumentsWriter.java:451 condition failed: assert allThreadsIdle();"));
+  JreAssert(OrgApacheLuceneIndexDocumentsWriter_allThreadsIdle(self), @"org/apache/lucene/index/DocumentsWriter.java:451 condition failed: assert allThreadsIdle();");
   [((JavaUtilHashMap *) nil_chk(self->threadBindings_)) clear];
   [((OrgApacheLuceneIndexDocumentsWriter_WaitQueue *) nil_chk(self->waitQueue_)) reset];
   self->segment_ = nil;
@@ -1127,13 +1128,13 @@ void OrgApacheLuceneIndexDocumentsWriter_pushDeletesWithOrgApacheLuceneIndexSegm
 void OrgApacheLuceneIndexDocumentsWriter_finishDocumentWithOrgApacheLuceneIndexDocumentsWriterThreadState_withOrgApacheLuceneIndexDocumentsWriter_DocWriter_(OrgApacheLuceneIndexDocumentsWriter *self, OrgApacheLuceneIndexDocumentsWriterThreadState *perThread, OrgApacheLuceneIndexDocumentsWriter_DocWriter *docWriter) {
   [self balanceRAM];
   @synchronized(self) {
-    JreAssert((docWriter == nil || docWriter->docID_ == ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(((OrgApacheLuceneIndexDocumentsWriterThreadState *) nil_chk(perThread))->docState_))->docID_), (@"org/apache/lucene/index/DocumentsWriter.java:1017 condition failed: assert docWriter == null || docWriter.docID == perThread.docState.docID;"));
+    JreAssert(docWriter == nil || docWriter->docID_ == ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(((OrgApacheLuceneIndexDocumentsWriterThreadState *) nil_chk(perThread))->docState_))->docID_, @"org/apache/lucene/index/DocumentsWriter.java:1017 condition failed: assert docWriter == null || docWriter.docID == perThread.docState.docID;");
     if (self->aborting_) {
       if (docWriter != nil) {
         @try {
           [docWriter abort];
         }
-        @catch (NSException *t) {
+        @catch (JavaLangThrowable *t) {
         }
       }
       ((OrgApacheLuceneIndexDocumentsWriterThreadState *) nil_chk(perThread))->isIdle_ = true;
@@ -1289,7 +1290,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_DocWriter)
 }
 
 - (IOSByteArray *)newBufferWithInt:(jint)size {
-  JreAssert((size == OrgApacheLuceneIndexDocumentsWriter_PER_DOC_BLOCK_SIZE), (@"org/apache/lucene/index/DocumentsWriter.java:194 condition failed: assert size == PER_DOC_BLOCK_SIZE;"));
+  JreAssert(size == OrgApacheLuceneIndexDocumentsWriter_PER_DOC_BLOCK_SIZE, @"org/apache/lucene/index/DocumentsWriter.java:194 condition failed: assert size == PER_DOC_BLOCK_SIZE;");
   return [((OrgApacheLuceneIndexDocumentsWriter_ByteBlockAllocator *) nil_chk(this$0_->perDocAllocator_)) getByteBlock];
 }
 
@@ -1300,7 +1301,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_DocWriter)
       [((OrgApacheLuceneIndexDocumentsWriter_ByteBlockAllocator *) nil_chk(this$0_->perDocAllocator_)) recycleByteBlocksWithJavaUtilList:buffers_];
       [((JavaUtilArrayList *) nil_chk(buffers_)) clear];
       sizeInBytes_ = 0;
-      JreAssert(([self numBuffers] == 0), (@"org/apache/lucene/index/DocumentsWriter.java:210 condition failed: assert numBuffers() == 0;"));
+      JreAssert([self numBuffers] == 0, @"org/apache/lucene/index/DocumentsWriter.java:210 condition failed: assert numBuffers() == 0;");
     }
   }
 }
@@ -1575,8 +1576,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_ByteBlockAl
 
 - (void)reset {
   @synchronized(self) {
-    JreAssert((numWaiting_ == 0), (@"org/apache/lucene/index/DocumentsWriter.java:1358 condition failed: assert numWaiting == 0;"));
-    JreAssert((waitingBytes_ == 0), (@"org/apache/lucene/index/DocumentsWriter.java:1359 condition failed: assert waitingBytes == 0;"));
+    JreAssert(numWaiting_ == 0, @"org/apache/lucene/index/DocumentsWriter.java:1358 condition failed: assert numWaiting == 0;");
+    JreAssert(waitingBytes_ == 0, @"org/apache/lucene/index/DocumentsWriter.java:1359 condition failed: assert waitingBytes == 0;");
     nextWriteDocID_ = 0;
   }
 }
@@ -1621,7 +1622,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_ByteBlockAl
       }
     }
     waitingBytes_ = 0;
-    JreAssert((count == numWaiting_), (@"org/apache/lucene/index/DocumentsWriter.java:1396 condition failed: assert count == numWaiting;"));
+    JreAssert(count == numWaiting_, @"org/apache/lucene/index/DocumentsWriter.java:1396 condition failed: assert count == numWaiting;");
     numWaiting_ = 0;
   }
 }
@@ -1632,7 +1633,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_ByteBlockAl
 
 - (jboolean)addWithOrgApacheLuceneIndexDocumentsWriter_DocWriter:(OrgApacheLuceneIndexDocumentsWriter_DocWriter *)doc {
   @synchronized(self) {
-    JreAssert((((OrgApacheLuceneIndexDocumentsWriter_DocWriter *) nil_chk(doc))->docID_ >= nextWriteDocID_), (@"org/apache/lucene/index/DocumentsWriter.java:1421 condition failed: assert doc.docID >= nextWriteDocID;"));
+    JreAssert(((OrgApacheLuceneIndexDocumentsWriter_DocWriter *) nil_chk(doc))->docID_ >= nextWriteDocID_, @"org/apache/lucene/index/DocumentsWriter.java:1421 condition failed: assert doc.docID >= nextWriteDocID;");
     if (doc->docID_ == nextWriteDocID_) {
       OrgApacheLuceneIndexDocumentsWriter_WaitQueue_writeDocumentWithOrgApacheLuceneIndexDocumentsWriter_DocWriter_(self, doc);
       while (true) {
@@ -1652,7 +1653,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_ByteBlockAl
       jint gap = doc->docID_ - nextWriteDocID_;
       if (gap >= ((IOSObjectArray *) nil_chk(waiting_))->size_) {
         IOSObjectArray *newArray = [IOSObjectArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(gap, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF)) type:OrgApacheLuceneIndexDocumentsWriter_DocWriter_class_()];
-        JreAssert((nextWriteLoc_ >= 0), (@"org/apache/lucene/index/DocumentsWriter.java:1448 condition failed: assert nextWriteLoc >= 0;"));
+        JreAssert(nextWriteLoc_ >= 0, @"org/apache/lucene/index/DocumentsWriter.java:1448 condition failed: assert nextWriteLoc >= 0;");
         JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(waiting_, nextWriteLoc_, newArray, 0, ((IOSObjectArray *) nil_chk(waiting_))->size_ - nextWriteLoc_);
         JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(waiting_, 0, newArray, ((IOSObjectArray *) nil_chk(waiting_))->size_ - nextWriteLoc_, nextWriteLoc_);
         nextWriteLoc_ = 0;
@@ -1663,8 +1664,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexDocumentsWriter_ByteBlockAl
       if (loc >= waiting_->size_) {
         loc -= waiting_->size_;
       }
-      JreAssert((loc < waiting_->size_), (@"org/apache/lucene/index/DocumentsWriter.java:1462 condition failed: assert loc < waiting.length;"));
-      JreAssert((IOSObjectArray_Get(waiting_, loc) == nil), (@"org/apache/lucene/index/DocumentsWriter.java:1465 condition failed: assert waiting[loc] == null;"));
+      JreAssert(loc < waiting_->size_, @"org/apache/lucene/index/DocumentsWriter.java:1462 condition failed: assert loc < waiting.length;");
+      JreAssert(IOSObjectArray_Get(waiting_, loc) == nil, @"org/apache/lucene/index/DocumentsWriter.java:1465 condition failed: assert waiting[loc] == null;");
       (void) IOSObjectArray_Set(waiting_, loc, doc);
       numWaiting_++;
       waitingBytes_ += [doc sizeInBytes];
@@ -1723,13 +1724,13 @@ OrgApacheLuceneIndexDocumentsWriter_WaitQueue *create_OrgApacheLuceneIndexDocume
 }
 
 void OrgApacheLuceneIndexDocumentsWriter_WaitQueue_writeDocumentWithOrgApacheLuceneIndexDocumentsWriter_DocWriter_(OrgApacheLuceneIndexDocumentsWriter_WaitQueue *self, OrgApacheLuceneIndexDocumentsWriter_DocWriter *doc) {
-  JreAssert((doc == self->this$0_->skipDocWriter_ || self->nextWriteDocID_ == ((OrgApacheLuceneIndexDocumentsWriter_DocWriter *) nil_chk(doc))->docID_), (@"org/apache/lucene/index/DocumentsWriter.java:1401 condition failed: assert doc == skipDocWriter || nextWriteDocID == doc.docID;"));
+  JreAssert(doc == self->this$0_->skipDocWriter_ || self->nextWriteDocID_ == ((OrgApacheLuceneIndexDocumentsWriter_DocWriter *) nil_chk(doc))->docID_, @"org/apache/lucene/index/DocumentsWriter.java:1401 condition failed: assert doc == skipDocWriter || nextWriteDocID == doc.docID;");
   jboolean success = false;
   @try {
     [((OrgApacheLuceneIndexDocumentsWriter_DocWriter *) nil_chk(doc)) finish];
     self->nextWriteDocID_++;
     self->nextWriteLoc_++;
-    JreAssert((self->nextWriteLoc_ <= ((IOSObjectArray *) nil_chk(self->waiting_))->size_), (@"org/apache/lucene/index/DocumentsWriter.java:1407 condition failed: assert nextWriteLoc <= waiting.length;"));
+    JreAssert(self->nextWriteLoc_ <= ((IOSObjectArray *) nil_chk(self->waiting_))->size_, @"org/apache/lucene/index/DocumentsWriter.java:1407 condition failed: assert nextWriteLoc <= waiting.length;");
     if (self->nextWriteLoc_ == self->waiting_->size_) {
       self->nextWriteLoc_ = 0;
     }

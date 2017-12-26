@@ -31,8 +31,8 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPackedWriter, masks_, IOSLongArray 
 }
 
 - (void)addWithLong:(jlong)v {
-  JreAssert((v <= OrgApacheLuceneUtilPackedPackedInts_maxValueWithInt_(bitsPerValue_)), (JreStrcat("$J$J", @"v=", v, @" maxValue=", OrgApacheLuceneUtilPackedPackedInts_maxValueWithInt_(bitsPerValue_))));
-  JreAssert((v >= 0), (@"org/apache/lucene/util/packed/PackedWriter.java:62 condition failed: assert v >= 0;"));
+  JreAssert(v <= OrgApacheLuceneUtilPackedPackedInts_maxValueWithInt_(bitsPerValue_), JreStrcat("$J$J", @"v=", v, @" maxValue=", OrgApacheLuceneUtilPackedPackedInts_maxValueWithInt_(bitsPerValue_)));
+  JreAssert(v >= 0, @"org/apache/lucene/util/packed/PackedWriter.java:62 condition failed: assert v >= 0;");
   if (pendingBitPos_ >= bitsPerValue_) {
     pending_ |= JreLShift64(v, (pendingBitPos_ - bitsPerValue_));
     if (pendingBitPos_ == bitsPerValue_) {

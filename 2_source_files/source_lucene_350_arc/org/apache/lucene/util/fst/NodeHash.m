@@ -75,7 +75,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFstNodeHash_rehash(OrgApa
     jint v = IOSIntArray_Get(nil_chk(table_), pos);
     if (v == 0) {
       jint address = [((OrgApacheLuceneUtilFstFST *) nil_chk(fst_)) addNodeWithOrgApacheLuceneUtilFstBuilder_UnCompiledNode:node];
-      JreAssert((OrgApacheLuceneUtilFstNodeHash_hash__WithInt_(self, address) == h), (JreStrcat("$I$I", @"frozenHash=", OrgApacheLuceneUtilFstNodeHash_hash__WithInt_(self, address), @" vs h=", h)));
+      JreAssert(OrgApacheLuceneUtilFstNodeHash_hash__WithInt_(self, address) == h, JreStrcat("$I$I", @"frozenHash=", OrgApacheLuceneUtilFstNodeHash_hash__WithInt_(self, address), @" vs h=", h));
       count_++;
       *IOSIntArray_GetRef(nil_chk(table_), pos) = address;
       if (table_->size_ < 2 * count_) {

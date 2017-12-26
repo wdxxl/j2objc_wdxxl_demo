@@ -11,7 +11,7 @@
 #include "org/apache/lucene/analysis/tokenattributes/CharTermAttributeImpl.h"
 #include "org/apache/lucene/analysis/tokenattributes/TermAttributeImpl.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesTermAttributeImpl__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesTermAttributeImpl__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisTokenattributesTermAttributeImpl
 

@@ -53,9 +53,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermBuffer)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexTermBuffer_init(OrgApacheLuceneIndexTermBuffer *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexTermBuffer *new_OrgApacheLuceneIndexTermBuffer_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexTermBuffer *new_OrgApacheLuceneIndexTermBuffer_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexTermBuffer *create_OrgApacheLuceneIndexTermBuffer_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexTermBuffer *create_OrgApacheLuceneIndexTermBuffer_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexTermBuffer)
 

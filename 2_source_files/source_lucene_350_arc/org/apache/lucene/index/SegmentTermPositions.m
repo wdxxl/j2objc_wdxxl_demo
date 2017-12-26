@@ -228,7 +228,7 @@ jint OrgApacheLuceneIndexSegmentTermPositions_readDeltaPosition(OrgApacheLuceneI
 }
 
 void OrgApacheLuceneIndexSegmentTermPositions_skipPositionsWithInt_(OrgApacheLuceneIndexSegmentTermPositions *self, jint n) {
-  JreAssert((self->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)), (@"org/apache/lucene/index/SegmentTermPositions.java:129 condition failed: assert indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS;"));
+  JreAssert(self->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS), @"org/apache/lucene/index/SegmentTermPositions.java:129 condition failed: assert indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS;");
   for (jint f = n; f > 0; f--) {
     OrgApacheLuceneIndexSegmentTermPositions_readDeltaPosition(self);
     OrgApacheLuceneIndexSegmentTermPositions_skipPayload(self);

@@ -53,6 +53,10 @@
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchBooleanClause)
@@ -82,17 +86,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneSearchBooleanClause_Occur_Enum) {
   OrgApacheLuceneSearchBooleanClause_Occur_Enum_MUST_NOT = 2,
 };
 
-@interface OrgApacheLuceneSearchBooleanClause_Occur : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneSearchBooleanClause_Occur : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneSearchBooleanClause_Occur *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -101,16 +101,16 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneSearchBooleanClause_Occur)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_values_[];
 
-inline OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_get_MUST();
+inline OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_get_MUST(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchBooleanClause_Occur, MUST)
 
-inline OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_get_SHOULD();
+inline OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_get_SHOULD(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchBooleanClause_Occur, SHOULD)
 
-inline OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_get_MUST_NOT();
+inline OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_get_MUST_NOT(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchBooleanClause_Occur, MUST_NOT)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneSearchBooleanClause_Occur_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneSearchBooleanClause_Occur_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occur_valueOfWithNSString_(NSString *name);
 

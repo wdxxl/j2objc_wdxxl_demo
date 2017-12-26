@@ -35,15 +35,15 @@
 
 @end
 
-inline NSString *OrgApacheCommonsCodecLanguageMetaphone_get_VOWELS();
+inline NSString *OrgApacheCommonsCodecLanguageMetaphone_get_VOWELS(void);
 static NSString *OrgApacheCommonsCodecLanguageMetaphone_VOWELS = @"AEIOU";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageMetaphone, VOWELS, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageMetaphone_get_FRONTV();
+inline NSString *OrgApacheCommonsCodecLanguageMetaphone_get_FRONTV(void);
 static NSString *OrgApacheCommonsCodecLanguageMetaphone_FRONTV = @"EIY";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageMetaphone, FRONTV, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageMetaphone_get_VARSON();
+inline NSString *OrgApacheCommonsCodecLanguageMetaphone_get_VARSON(void);
 static NSString *OrgApacheCommonsCodecLanguageMetaphone_VARSON = @"CSPTG";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageMetaphone, VARSON, NSString *)
 

@@ -21,12 +21,29 @@
 #include "java/lang/RuntimeException.h"
 
 @class JavaLangInterruptedException;
+@class JavaLangThrowable;
 
 @interface OrgApacheLuceneUtilThreadInterruptedException : JavaLangRuntimeException
 
 #pragma mark Public
 
 - (instancetype)initWithJavaLangInterruptedException:(JavaLangInterruptedException *)ie;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 

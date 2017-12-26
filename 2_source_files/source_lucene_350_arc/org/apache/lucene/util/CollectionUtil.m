@@ -26,9 +26,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilCollectionUtil_init(OrgApacheLuceneUtilCollectionUtil *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilCollectionUtil *new_OrgApacheLuceneUtilCollectionUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilCollectionUtil *new_OrgApacheLuceneUtilCollectionUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilCollectionUtil *create_OrgApacheLuceneUtilCollectionUtil_init();
+__attribute__((unused)) static OrgApacheLuceneUtilCollectionUtil *create_OrgApacheLuceneUtilCollectionUtil_init(void);
 
 __attribute__((unused)) static OrgApacheLuceneUtilSorterTemplate *OrgApacheLuceneUtilCollectionUtil_getSorterWithJavaUtilList_withJavaUtilComparator_(id<JavaUtilList> list, id<JavaUtilComparator> comp);
 

@@ -28,7 +28,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisISOLatin1AccentFilter, termAtt_, id<O
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisISOLatin1AccentFilter_removeAccentsWithCharArray_withInt_(OrgApacheLuceneAnalysisISOLatin1AccentFilter *self, IOSCharArray *input, jint length);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisISOLatin1AccentFilter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisISOLatin1AccentFilter__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisISOLatin1AccentFilter
 

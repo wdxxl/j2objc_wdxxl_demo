@@ -43,19 +43,23 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir;
                                          withNSString:(NSString *)name
      withOrgApacheLuceneIndexSegmentMerger_CheckAbort:(OrgApacheLuceneIndexSegmentMerger_CheckAbort *)checkAbort;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCompoundFileWriter)
 
-inline jint OrgApacheLuceneIndexCompoundFileWriter_get_FORMAT_PRE_VERSION();
+inline jint OrgApacheLuceneIndexCompoundFileWriter_get_FORMAT_PRE_VERSION(void);
 #define OrgApacheLuceneIndexCompoundFileWriter_FORMAT_PRE_VERSION 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexCompoundFileWriter, FORMAT_PRE_VERSION, jint)
 
-inline jint OrgApacheLuceneIndexCompoundFileWriter_get_FORMAT_NO_SEGMENT_PREFIX();
+inline jint OrgApacheLuceneIndexCompoundFileWriter_get_FORMAT_NO_SEGMENT_PREFIX(void);
 #define OrgApacheLuceneIndexCompoundFileWriter_FORMAT_NO_SEGMENT_PREFIX -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexCompoundFileWriter, FORMAT_NO_SEGMENT_PREFIX, jint)
 
-inline jint OrgApacheLuceneIndexCompoundFileWriter_get_FORMAT_CURRENT();
+inline jint OrgApacheLuceneIndexCompoundFileWriter_get_FORMAT_CURRENT(void);
 #define OrgApacheLuceneIndexCompoundFileWriter_FORMAT_CURRENT -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexCompoundFileWriter, FORMAT_CURRENT, jint)
 

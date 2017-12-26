@@ -90,9 +90,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilCharsRef, chars_, IOSCharArray *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilCharsRef_init(OrgApacheLuceneUtilCharsRef *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilCharsRef *new_OrgApacheLuceneUtilCharsRef_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilCharsRef *new_OrgApacheLuceneUtilCharsRef_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilCharsRef *create_OrgApacheLuceneUtilCharsRef_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilCharsRef *create_OrgApacheLuceneUtilCharsRef_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilCharsRef_initWithInt_(OrgApacheLuceneUtilCharsRef *self, jint capacity);
 
@@ -118,7 +118,7 @@ FOUNDATION_EXPORT OrgApacheLuceneUtilCharsRef *new_OrgApacheLuceneUtilCharsRef_i
 
 FOUNDATION_EXPORT OrgApacheLuceneUtilCharsRef *create_OrgApacheLuceneUtilCharsRef_initWithOrgApacheLuceneUtilCharsRef_(OrgApacheLuceneUtilCharsRef *other);
 
-FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilCharsRef_getUTF16SortedAsUTF8Comparator();
+FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilCharsRef_getUTF16SortedAsUTF8Comparator(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilCharsRef)
 

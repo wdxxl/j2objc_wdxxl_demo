@@ -47,9 +47,16 @@
 
 - (OrgApacheLuceneIndexIndexCommit *)snapshotWithNSString:(NSString *)id_;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneIndexIndexDeletionPolicy:(id<OrgApacheLuceneIndexIndexDeletionPolicy>)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneIndexIndexDeletionPolicy:(id<OrgApacheLuceneIndexIndexDeletionPolicy>)arg0
+                                                withJavaUtilMap:(id<JavaUtilMap>)arg1 NS_UNAVAILABLE;
+
 @end
 
-J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy)
+J2OBJC_STATIC_INIT(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy)
 
 FOUNDATION_EXPORT id<JavaUtilMap> OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_readSnapshotsInfoWithOrgApacheLuceneStoreDirectory_(OrgApacheLuceneStoreDirectory *dir);
 

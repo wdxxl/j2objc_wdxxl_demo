@@ -101,7 +101,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (void)writeBytesWithByteArray:(IOSByteArray *)b
                         withInt:(jint)offset
                         withInt:(jint)len {
-  JreAssert((b != nil), (@"org/apache/lucene/store/RAMOutputStream.java:114 condition failed: assert b != null;"));
+  JreAssert(b != nil, @"org/apache/lucene/store/RAMOutputStream.java:114 condition failed: assert b != null;");
   while (len > 0) {
     if (bufferPosition_ == bufferLength_) {
       currentBufferIndex_++;
@@ -139,7 +139,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)copyBytesWithOrgApacheLuceneStoreDataInput:(OrgApacheLuceneStoreDataInput *)input
                                           withLong:(jlong)numBytes {
-  JreAssert((numBytes >= 0), (JreStrcat("$J", @"numBytes=", numBytes)));
+  JreAssert(numBytes >= 0, JreStrcat("$J", @"numBytes=", numBytes));
   while (numBytes > 0) {
     if (bufferPosition_ == bufferLength_) {
       currentBufferIndex_++;

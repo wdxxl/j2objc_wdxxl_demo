@@ -71,12 +71,12 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilBitUtil)
 
-inline IOSByteArray *OrgApacheLuceneUtilBitUtil_get_ntzTable();
+inline IOSByteArray *OrgApacheLuceneUtilBitUtil_get_ntzTable(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSByteArray *OrgApacheLuceneUtilBitUtil_ntzTable;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBitUtil, ntzTable, IOSByteArray *)
 
-inline IOSByteArray *OrgApacheLuceneUtilBitUtil_get_nlzTable();
+inline IOSByteArray *OrgApacheLuceneUtilBitUtil_get_nlzTable(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSByteArray *OrgApacheLuceneUtilBitUtil_nlzTable;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBitUtil, nlzTable, IOSByteArray *)

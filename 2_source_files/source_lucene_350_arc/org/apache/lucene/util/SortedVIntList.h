@@ -45,11 +45,15 @@
 
 - (jint)size;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilSortedVIntList)
 
-inline jint OrgApacheLuceneUtilSortedVIntList_get_BITS2VINTLIST_SIZE();
+inline jint OrgApacheLuceneUtilSortedVIntList_get_BITS2VINTLIST_SIZE(void);
 #define OrgApacheLuceneUtilSortedVIntList_BITS2VINTLIST_SIZE 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilSortedVIntList, BITS2VINTLIST_SIZE, jint)
 

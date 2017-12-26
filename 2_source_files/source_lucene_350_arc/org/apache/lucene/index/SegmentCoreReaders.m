@@ -118,19 +118,19 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, owner_, OrgApacheLuc
 
 - (void)openDocStoresWithOrgApacheLuceneIndexSegmentInfo:(OrgApacheLuceneIndexSegmentInfo *)si {
   @synchronized(self) {
-    JreAssert(([((NSString *) nil_chk(((OrgApacheLuceneIndexSegmentInfo *) nil_chk(si))->name_)) isEqual:segment_]), (@"org/apache/lucene/index/SegmentCoreReaders.java:175 condition failed: assert si.name.equals(segment);"));
+    JreAssert([((NSString *) nil_chk(((OrgApacheLuceneIndexSegmentInfo *) nil_chk(si))->name_)) isEqual:segment_], @"org/apache/lucene/index/SegmentCoreReaders.java:175 condition failed: assert si.name.equals(segment);");
     if (fieldsReaderOrig_ == nil) {
       OrgApacheLuceneStoreDirectory *storeDir;
       if ([si getDocStoreOffset] != -1) {
         if ([si getDocStoreIsCompoundFile]) {
-          JreAssert((storeCFSReader_ == nil), (@"org/apache/lucene/index/SegmentCoreReaders.java:181 condition failed: assert storeCFSReader == null;"));
+          JreAssert(storeCFSReader_ == nil, @"org/apache/lucene/index/SegmentCoreReaders.java:181 condition failed: assert storeCFSReader == null;");
           storeCFSReader_ = new_OrgApacheLuceneIndexCompoundFileReader_initWithOrgApacheLuceneStoreDirectory_withNSString_withInt_(dir_, OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_([si getDocStoreSegment], OrgApacheLuceneIndexIndexFileNames_COMPOUND_FILE_STORE_EXTENSION), readBufferSize_);
           storeDir = storeCFSReader_;
-          JreAssert((storeDir != nil), (@"org/apache/lucene/index/SegmentCoreReaders.java:186 condition failed: assert storeDir != null;"));
+          JreAssert(storeDir != nil, @"org/apache/lucene/index/SegmentCoreReaders.java:186 condition failed: assert storeDir != null;");
         }
         else {
           storeDir = dir_;
-          JreAssert((storeDir != nil), (@"org/apache/lucene/index/SegmentCoreReaders.java:189 condition failed: assert storeDir != null;"));
+          JreAssert(storeDir != nil, @"org/apache/lucene/index/SegmentCoreReaders.java:189 condition failed: assert storeDir != null;");
         }
       }
       else if ([si getUseCompoundFile]) {
@@ -138,11 +138,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, owner_, OrgApacheLuc
           cfsReader_ = new_OrgApacheLuceneIndexCompoundFileReader_initWithOrgApacheLuceneStoreDirectory_withNSString_withInt_(dir_, OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(segment_, OrgApacheLuceneIndexIndexFileNames_COMPOUND_FILE_EXTENSION), readBufferSize_);
         }
         storeDir = cfsReader_;
-        JreAssert((storeDir != nil), (@"org/apache/lucene/index/SegmentCoreReaders.java:199 condition failed: assert storeDir != null;"));
+        JreAssert(storeDir != nil, @"org/apache/lucene/index/SegmentCoreReaders.java:199 condition failed: assert storeDir != null;");
       }
       else {
         storeDir = dir_;
-        JreAssert((storeDir != nil), (@"org/apache/lucene/index/SegmentCoreReaders.java:202 condition failed: assert storeDir != null;"));
+        JreAssert(storeDir != nil, @"org/apache/lucene/index/SegmentCoreReaders.java:202 condition failed: assert storeDir != null;");
       }
       NSString *storesSegment;
       if ([si getDocStoreOffset] != -1) {

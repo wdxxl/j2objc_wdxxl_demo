@@ -7,7 +7,7 @@ j2objc -use-arc -d source_lucene_350_arc lucene-grouping-3.5.0-sources.jar lucen
 ```
 ### Step 2: commons codec & lang3
 ```
-j2objc -use-arc -d source_apache_commons_arc commons-codec-1.10-sources.jar commons-lang3-3.4-sources.jar
+j2objc -use-arc -d source_apache_commons_arc commons-codec-1.10-sources.jar commons-lang3-3.4-fis-sources.jar
 ```
 
 ### Step 3: jsoup (customized source)

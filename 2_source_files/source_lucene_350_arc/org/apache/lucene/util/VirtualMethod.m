@@ -34,7 +34,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilVirtualMethod, method_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilVirtualMethod, parameters_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilVirtualMethod, cache_, JavaUtilWeakHashMap *)
 
-inline id<JavaUtilSet> OrgApacheLuceneUtilVirtualMethod_get_singletonSet();
+inline id<JavaUtilSet> OrgApacheLuceneUtilVirtualMethod_get_singletonSet(void);
 static id<JavaUtilSet> OrgApacheLuceneUtilVirtualMethod_singletonSet;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilVirtualMethod, singletonSet, id<JavaUtilSet>)
 

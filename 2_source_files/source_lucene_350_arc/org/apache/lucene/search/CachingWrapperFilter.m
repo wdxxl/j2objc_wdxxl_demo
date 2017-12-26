@@ -211,10 +211,6 @@ OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCach
   return OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneSearchCachingWrapperFilter_DeletesMode;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -237,9 +233,9 @@ OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCach
 
 + (void)initialize {
   if (self == [OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode class]) {
-    JreEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, IGNORE) = new_OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_initWithNSString_withInt_(@"IGNORE", 0);
-    JreEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, RECACHE) = new_OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_initWithNSString_withInt_(@"RECACHE", 1);
-    JreEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, DYNAMIC) = new_OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_initWithNSString_withInt_(@"DYNAMIC", 2);
+    JreEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, IGNORE) = new_OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, RECACHE) = new_OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, DYNAMIC) = new_OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode)
   }
 }
@@ -303,7 +299,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchCachingWrapperFilter_Delet
       value = [cache_ getWithId:delCoreKey];
     }
     else {
-      JreAssert((deletesMode_ == JreLoadEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, DYNAMIC)), (@"org/apache/lucene/search/CachingWrapperFilter.java:95 condition failed: assert deletesMode == DeletesMode.DYNAMIC;"));
+      JreAssert(deletesMode_ == JreLoadEnum(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, DYNAMIC), @"org/apache/lucene/search/CachingWrapperFilter.java:95 condition failed: assert deletesMode == DeletesMode.DYNAMIC;");
       value = [cache_ getWithId:delCoreKey];
       if (value == nil) {
         value = [((id<JavaUtilMap>) nil_chk(cache_)) getWithId:coreKey];

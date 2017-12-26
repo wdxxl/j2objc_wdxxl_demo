@@ -794,7 +794,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
   jint inclusiveLowerPoint;
   jint inclusiveUpperPoint;
   if (lowerPoint == 0) {
-    JreAssert((lowerVal_ == nil), (@"org/apache/lucene/search/FieldCacheRangeFilter.java:96 condition failed: assert lowerVal == null;"));
+    JreAssert(lowerVal_ == nil, @"org/apache/lucene/search/FieldCacheRangeFilter.java:96 condition failed: assert lowerVal == null;");
     inclusiveLowerPoint = 1;
   }
   else if (includeLower_ && lowerPoint > 0) {
@@ -807,7 +807,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
     inclusiveLowerPoint = JavaLangMath_maxWithInt_withInt_(1, -lowerPoint - 1);
   }
   if (upperPoint == 0) {
-    JreAssert((upperVal_ == nil), (@"org/apache/lucene/search/FieldCacheRangeFilter.java:107 condition failed: assert upperVal == null;"));
+    JreAssert(upperVal_ == nil, @"org/apache/lucene/search/FieldCacheRangeFilter.java:107 condition failed: assert upperVal == null;");
     inclusiveUpperPoint = JavaLangInteger_MAX_VALUE;
   }
   else if (includeUpper_ && upperPoint > 0) {
@@ -820,7 +820,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
     inclusiveUpperPoint = -upperPoint - 2;
   }
   if (inclusiveUpperPoint <= 0 || inclusiveLowerPoint > inclusiveUpperPoint) return JreLoadStatic(OrgApacheLuceneSearchDocIdSet, EMPTY_DOCIDSET);
-  JreAssert((inclusiveLowerPoint > 0 && inclusiveUpperPoint > 0), (@"org/apache/lucene/search/FieldCacheRangeFilter.java:120 condition failed: assert inclusiveLowerPoint > 0 && inclusiveUpperPoint > 0;"));
+  JreAssert(inclusiveLowerPoint > 0 && inclusiveUpperPoint > 0, @"org/apache/lucene/search/FieldCacheRangeFilter.java:120 condition failed: assert inclusiveLowerPoint > 0 && inclusiveUpperPoint > 0;");
   return new_OrgApacheLuceneSearchFieldCacheRangeFilter_1_1_initWithOrgApacheLuceneSearchFieldCache_StringIndex_withInt_withInt_withOrgApacheLuceneIndexIndexReader_withBoolean_(fcsi, inclusiveLowerPoint, inclusiveUpperPoint, reader, false);
 }
 

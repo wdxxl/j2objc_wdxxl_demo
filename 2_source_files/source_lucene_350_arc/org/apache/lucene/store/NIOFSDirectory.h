@@ -88,6 +88,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreNIOFSDirectory)
                           withInt:(jint)offset
                           withInt:(jint)len;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                  withJavaIoFile:(JavaIoFile *)arg1
+                         withInt:(jint)arg2
+                         withInt:(jint)arg3 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreNIOFSDirectory_NIOFSIndexInput)

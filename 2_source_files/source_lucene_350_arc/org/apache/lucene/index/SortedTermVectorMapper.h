@@ -47,11 +47,18 @@ withOrgApacheLuceneIndexTermVectorOffsetInfoArray:(IOSObjectArray *)offsets
                         withBoolean:(jboolean)storeOffsets
                         withBoolean:(jboolean)storePositions;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithBoolean:(jboolean)arg0
+                    withBoolean:(jboolean)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSortedTermVectorMapper)
 
-inline NSString *OrgApacheLuceneIndexSortedTermVectorMapper_get_ALL();
+inline NSString *OrgApacheLuceneIndexSortedTermVectorMapper_get_ALL(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneIndexSortedTermVectorMapper_ALL;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexSortedTermVectorMapper, ALL, NSString *)

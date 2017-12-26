@@ -17,6 +17,7 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/Short.h"
 #include "java/lang/System.h"
+#include "java/lang/Throwable.h"
 #include "java/util/ArrayList.h"
 #include "java/util/Collection.h"
 #include "java/util/HashMap.h"
@@ -105,9 +106,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCacheImpl_1_init(OrgApacheLuceneSearchFieldCacheImpl_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCacheImpl_1 *new_OrgApacheLuceneSearchFieldCacheImpl_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCacheImpl_1 *new_OrgApacheLuceneSearchFieldCacheImpl_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCacheImpl_1 *create_OrgApacheLuceneSearchFieldCacheImpl_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCacheImpl_1 *create_OrgApacheLuceneSearchFieldCacheImpl_1_init(void);
 
 @interface OrgApacheLuceneSearchFieldCacheImpl_Cache ()
 
@@ -218,7 +219,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   else if ([docsWithField isKindOfClass:[OrgApacheLuceneUtilFixedBitSet class]]) {
     jint numSet = [((OrgApacheLuceneUtilFixedBitSet *) cast_chk(docsWithField, [OrgApacheLuceneUtilFixedBitSet class])) cardinality];
     if (numSet >= maxDoc) {
-      JreAssert((numSet == maxDoc), (@"org/apache/lucene/search/FieldCacheImpl.java:429 condition failed: assert numSet == maxDoc;"));
+      JreAssert(numSet == maxDoc, @"org/apache/lucene/search/FieldCacheImpl.java:429 condition failed: assert numSet == maxDoc;");
       bits = new_OrgApacheLuceneUtilBits_MatchAllBits_initWithInt_(maxDoc);
     }
     else {
@@ -758,7 +759,7 @@ void OrgApacheLuceneSearchFieldCacheImpl_Cache_printNewInsanityWithJavaIoPrintSt
       if ([((OrgApacheLuceneSearchFieldCache_CacheEntry *) nil_chk(IOSObjectArray_Get(entries, j))) getValue] == value) {
         [((JavaIoPrintStream *) nil_chk(infoStream)) printlnWithNSString:JreStrcat("$$", @"WARNING: new FieldCache insanity created\nDetails: ", [insanity description])];
         [infoStream printlnWithNSString:@"\nStack:\n"];
-        [new_NSException_init() printStackTraceWithJavaIoPrintStream:infoStream];
+        [new_JavaLangThrowable_init() printStackTraceWithJavaIoPrintStream:infoStream];
         break;
       }
     }
@@ -1127,7 +1128,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldCacheImpl_IntCache)
   if (res == nil) return new_OrgApacheLuceneUtilBits_MatchNoBits_initWithInt_([reader maxDoc]);
   jint numSet = [res cardinality];
   if (numSet >= [reader numDocs]) {
-    JreAssert((numSet == [reader numDocs]), (@"org/apache/lucene/search/FieldCacheImpl.java:555 condition failed: assert numSet == reader.numDocs();"));
+    JreAssert(numSet == [reader numDocs], @"org/apache/lucene/search/FieldCacheImpl.java:555 condition failed: assert numSet == reader.numDocs();");
     return new_OrgApacheLuceneUtilBits_MatchAllBits_initWithInt_([reader maxDoc]);
   }
   return res;

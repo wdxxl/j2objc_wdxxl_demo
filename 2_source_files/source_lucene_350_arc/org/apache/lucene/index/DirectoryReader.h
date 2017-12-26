@@ -187,6 +187,10 @@ withOrgApacheLuceneIndexTermVectorMapper:(OrgApacheLuceneIndexTermVectorMapper *
 
 - (void)startCommit;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexDirectoryReader)
@@ -256,6 +260,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDirectoryReader)
 - (jboolean)next;
 
 - (OrgApacheLuceneIndexTerm *)term;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -327,6 +335,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDirectoryReader_MultiTermEnum)
 #pragma mark Protected
 
 - (id<OrgApacheLuceneIndexTermDocs>)termDocsWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

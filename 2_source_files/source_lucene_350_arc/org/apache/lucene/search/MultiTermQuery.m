@@ -26,11 +26,11 @@
 
 #pragma clang diagnostic ignored "-Wincomplete-implementation"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQuery__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQuery__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQuery__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQuery__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQuery__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQuery__Annotations$2(void);
 
 @interface OrgApacheLuceneSearchMultiTermQuery_1 : OrgApacheLuceneSearchMultiTermQuery_RewriteMethod
 
@@ -47,9 +47,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchMultiTermQuery_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchMultiTermQuery_1_init(OrgApacheLuceneSearchMultiTermQuery_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_1 *new_OrgApacheLuceneSearchMultiTermQuery_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_1 *new_OrgApacheLuceneSearchMultiTermQuery_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_1 *create_OrgApacheLuceneSearchMultiTermQuery_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_1 *create_OrgApacheLuceneSearchMultiTermQuery_1_init(void);
 
 @interface OrgApacheLuceneSearchMultiTermQuery_2 : OrgApacheLuceneSearchMultiTermQuery_ConstantScoreAutoRewrite
 
@@ -67,9 +67,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchMultiTermQuery_2)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchMultiTermQuery_2_init(OrgApacheLuceneSearchMultiTermQuery_2 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_2 *new_OrgApacheLuceneSearchMultiTermQuery_2_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_2 *new_OrgApacheLuceneSearchMultiTermQuery_2_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_2 *create_OrgApacheLuceneSearchMultiTermQuery_2_init();
+__attribute__((unused)) static OrgApacheLuceneSearchMultiTermQuery_2 *create_OrgApacheLuceneSearchMultiTermQuery_2_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneSearchMultiTermQuery)
 

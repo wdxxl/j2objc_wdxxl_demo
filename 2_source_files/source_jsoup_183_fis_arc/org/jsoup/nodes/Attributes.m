@@ -259,7 +259,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
     clone = (OrgJsoupNodesAttributes *) cast_chk([super java_clone], [OrgJsoupNodesAttributes class]);
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
   ((OrgJsoupNodesAttributes *) nil_chk(clone))->attributes_ = new_JavaUtilLinkedHashMap_initWithInt_([((JavaUtilLinkedHashMap *) nil_chk(attributes_)) size]);
   for (OrgJsoupNodesAttribute * __strong attribute in self) (void) [((JavaUtilLinkedHashMap *) nil_chk(clone->attributes_)) putWithId:[((OrgJsoupNodesAttribute *) nil_chk(attribute)) getKey] withId:[attribute java_clone]];

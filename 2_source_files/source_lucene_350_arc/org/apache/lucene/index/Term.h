@@ -60,6 +60,10 @@
 - (void)setWithNSString:(NSString *)fld
            withNSString:(NSString *)txt;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTerm)

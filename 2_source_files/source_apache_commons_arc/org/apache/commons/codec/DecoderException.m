@@ -5,9 +5,10 @@
 
 #include "J2ObjC_source.h"
 #include "java/lang/Exception.h"
+#include "java/lang/Throwable.h"
 #include "org/apache/commons/codec/DecoderException.h"
 
-inline jlong OrgApacheCommonsCodecDecoderException_get_serialVersionUID();
+inline jlong OrgApacheCommonsCodecDecoderException_get_serialVersionUID(void);
 #define OrgApacheCommonsCodecDecoderException_serialVersionUID 1LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDecoderException, serialVersionUID, jlong)
 
@@ -26,13 +27,13 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (instancetype)initWithNSString:(NSString *)message
-                 withNSException:(NSException *)cause {
-  OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_(self, message, cause);
+           withJavaLangThrowable:(JavaLangThrowable *)cause {
+  OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_(self, message, cause);
   return self;
 }
 
-- (instancetype)initWithNSException:(NSException *)cause {
-  OrgApacheCommonsCodecDecoderException_initWithNSException_(self, cause);
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause {
+  OrgApacheCommonsCodecDecoderException_initWithJavaLangThrowable_(self, cause);
   return self;
 }
 
@@ -47,13 +48,13 @@ J2OBJC_IGNORE_DESIGNATED_END
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithNSString:);
-  methods[2].selector = @selector(initWithNSString:withNSException:);
-  methods[3].selector = @selector(initWithNSException:);
+  methods[2].selector = @selector(initWithNSString:withJavaLangThrowable:);
+  methods[3].selector = @selector(initWithJavaLangThrowable:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
     { "serialVersionUID", "J", .constantValue.asLong = OrgApacheCommonsCodecDecoderException_serialVersionUID, 0x1a, -1, -1, -1, -1 },
   };
-  static const void *ptrTable[] = { "LNSString;", "LNSString;LNSException;", "LNSException;" };
+  static const void *ptrTable[] = { "LNSString;", "LNSString;LJavaLangThrowable;", "LJavaLangThrowable;" };
   static const J2ObjcClassInfo _OrgApacheCommonsCodecDecoderException = { "DecoderException", "org.apache.commons.codec", ptrTable, methods, fields, 7, 0x1, 4, 1, -1, -1, -1, -1, -1 };
   return &_OrgApacheCommonsCodecDecoderException;
 }
@@ -84,28 +85,28 @@ OrgApacheCommonsCodecDecoderException *create_OrgApacheCommonsCodecDecoderExcept
   J2OBJC_CREATE_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSString_, message)
 }
 
-void OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_(OrgApacheCommonsCodecDecoderException *self, NSString *message, NSException *cause) {
-  JavaLangException_initWithNSString_withNSException_(self, message, cause);
+void OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_(OrgApacheCommonsCodecDecoderException *self, NSString *message, JavaLangThrowable *cause) {
+  JavaLangException_initWithNSString_withJavaLangThrowable_(self, message, cause);
 }
 
-OrgApacheCommonsCodecDecoderException *new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_(NSString *message, NSException *cause) {
-  J2OBJC_NEW_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSString_withNSException_, message, cause)
+OrgApacheCommonsCodecDecoderException *new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSString_withJavaLangThrowable_, message, cause)
 }
 
-OrgApacheCommonsCodecDecoderException *create_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_(NSString *message, NSException *cause) {
-  J2OBJC_CREATE_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSString_withNSException_, message, cause)
+OrgApacheCommonsCodecDecoderException *create_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSString_withJavaLangThrowable_, message, cause)
 }
 
-void OrgApacheCommonsCodecDecoderException_initWithNSException_(OrgApacheCommonsCodecDecoderException *self, NSException *cause) {
-  JavaLangException_initWithNSException_(self, cause);
+void OrgApacheCommonsCodecDecoderException_initWithJavaLangThrowable_(OrgApacheCommonsCodecDecoderException *self, JavaLangThrowable *cause) {
+  JavaLangException_initWithJavaLangThrowable_(self, cause);
 }
 
-OrgApacheCommonsCodecDecoderException *new_OrgApacheCommonsCodecDecoderException_initWithNSException_(NSException *cause) {
-  J2OBJC_NEW_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSException_, cause)
+OrgApacheCommonsCodecDecoderException *new_OrgApacheCommonsCodecDecoderException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(OrgApacheCommonsCodecDecoderException, initWithJavaLangThrowable_, cause)
 }
 
-OrgApacheCommonsCodecDecoderException *create_OrgApacheCommonsCodecDecoderException_initWithNSException_(NSException *cause) {
-  J2OBJC_CREATE_IMPL(OrgApacheCommonsCodecDecoderException, initWithNSException_, cause)
+OrgApacheCommonsCodecDecoderException *create_OrgApacheCommonsCodecDecoderException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(OrgApacheCommonsCodecDecoderException, initWithJavaLangThrowable_, cause)
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheCommonsCodecDecoderException)

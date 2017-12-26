@@ -45,7 +45,7 @@
 
 void OrgApacheLuceneIndexIndexFormatTooNewException_initWithNSString_withInt_withInt_withInt_(OrgApacheLuceneIndexIndexFormatTooNewException *self, NSString *resourceDesc, jint version_, jint minVersion, jint maxVersion) {
   OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(self, JreStrcat("$$$I$I$IC", @"Format version is not supported (resource: ", resourceDesc, @"): ", version_, @" (needs to be between ", minVersion, @" and ", maxVersion, ')'));
-  JreAssert((resourceDesc != nil), (@"org/apache/lucene/index/IndexFormatTooNewException.java:32 condition failed: assert resourceDesc != null;"));
+  JreAssert(resourceDesc != nil, @"org/apache/lucene/index/IndexFormatTooNewException.java:32 condition failed: assert resourceDesc != null;");
 }
 
 OrgApacheLuceneIndexIndexFormatTooNewException *new_OrgApacheLuceneIndexIndexFormatTooNewException_initWithNSString_withInt_withInt_withInt_(NSString *resourceDesc, jint version_, jint minVersion, jint maxVersion) {

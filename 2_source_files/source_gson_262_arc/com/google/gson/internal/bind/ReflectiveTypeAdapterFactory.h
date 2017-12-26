@@ -56,6 +56,10 @@
 + (id<JavaUtilList>)getFieldNameWithComGoogleGsonFieldNamingStrategy:(id<ComGoogleGsonFieldNamingStrategy>)fieldNamingPolicy
                                             withJavaLangReflectField:(JavaLangReflectField *)f;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindReflectiveTypeAdapterFactory)
@@ -140,6 +144,10 @@ J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalBindReflectiveTypeAdapterFactory
 
 - (instancetype)initWithComGoogleGsonInternalObjectConstructor:(id<ComGoogleGsonInternalObjectConstructor>)constructor
                                                withJavaUtilMap:(id<JavaUtilMap>)boundFields;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

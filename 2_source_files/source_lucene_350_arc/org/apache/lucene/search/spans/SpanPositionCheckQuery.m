@@ -125,10 +125,6 @@ OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSe
   return OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -151,9 +147,9 @@ OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *OrgApacheLuceneSe
 
 + (void)initialize {
   if (self == [OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus class]) {
-    JreEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, YES) = new_OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_initWithNSString_withInt_(@"YES", 0);
-    JreEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO) = new_OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_initWithNSString_withInt_(@"NO", 1);
-    JreEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO_AND_ADVANCE) = new_OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_initWithNSString_withInt_(@"NO_AND_ADVANCE", 2);
+    JreEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, YES) = new_OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO) = new_OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO_AND_ADVANCE) = new_OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus)
   }
 }

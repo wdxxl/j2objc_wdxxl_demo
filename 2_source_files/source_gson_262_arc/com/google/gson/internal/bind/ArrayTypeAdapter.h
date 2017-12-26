@@ -39,11 +39,15 @@
 - (void)writeWithComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)outArg
                                         withId:(id)array;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternalBindArrayTypeAdapter)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindArrayTypeAdapter_get_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindArrayTypeAdapter_get_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindArrayTypeAdapter_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindArrayTypeAdapter, FACTORY, id<ComGoogleGsonTypeAdapterFactory>)

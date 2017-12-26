@@ -40,9 +40,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilFieldCacheSanityChecker)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilFieldCacheSanityChecker_init(OrgApacheLuceneUtilFieldCacheSanityChecker *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker *new_OrgApacheLuceneUtilFieldCacheSanityChecker_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker *new_OrgApacheLuceneUtilFieldCacheSanityChecker_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker *create_OrgApacheLuceneUtilFieldCacheSanityChecker_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker *create_OrgApacheLuceneUtilFieldCacheSanityChecker_init(void);
 
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneUtilFieldCacheSanityChecker_checkSanityWithOrgApacheLuceneSearchFieldCache_(id<OrgApacheLuceneSearchFieldCache> cache);
 
@@ -74,6 +74,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFieldCacheSanityChecker)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilFieldCacheSanityChecker_Insanity)
@@ -97,21 +101,25 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFieldCacheSanityChecker_Insanity)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType)
 
-inline OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_get_SUBREADER();
+inline OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_get_SUBREADER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_SUBREADER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType, SUBREADER, OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *)
 
-inline OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_get_VALUEMISMATCH();
+inline OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_get_VALUEMISMATCH(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_VALUEMISMATCH;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType, VALUEMISMATCH, OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *)
 
-inline OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_get_EXPECTED();
+inline OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_get_EXPECTED(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType_EXPECTED;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType, EXPECTED, OrgApacheLuceneUtilFieldCacheSanityChecker_InsanityType *)

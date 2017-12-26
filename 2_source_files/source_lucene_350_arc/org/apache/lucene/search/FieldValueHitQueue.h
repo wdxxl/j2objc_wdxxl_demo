@@ -98,6 +98,15 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldValueHitQueue)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0
+                  withFloat:(jfloat)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithInt:(jint)arg0
+                  withFloat:(jfloat)arg1
+                    withInt:(jint)arg2 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldValueHitQueue_Entry)

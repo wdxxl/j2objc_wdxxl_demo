@@ -61,7 +61,7 @@
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLinkedHashTreeMap, entrySet_, ComGoogleGsonInternalLinkedHashTreeMap_EntrySet *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLinkedHashTreeMap, keySet_LinkedHashTreeMap_, ComGoogleGsonInternalLinkedHashTreeMap_KeySet *)
 
-inline id<JavaUtilComparator> ComGoogleGsonInternalLinkedHashTreeMap_get_NATURAL_ORDER();
+inline id<JavaUtilComparator> ComGoogleGsonInternalLinkedHashTreeMap_get_NATURAL_ORDER(void);
 static id<JavaUtilComparator> ComGoogleGsonInternalLinkedHashTreeMap_NATURAL_ORDER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalLinkedHashTreeMap, NATURAL_ORDER, id<JavaUtilComparator>)
 
@@ -79,6 +79,8 @@ __attribute__((unused)) static void ComGoogleGsonInternalLinkedHashTreeMap_rotat
 
 __attribute__((unused)) static void ComGoogleGsonInternalLinkedHashTreeMap_doubleCapacity(ComGoogleGsonInternalLinkedHashTreeMap *self);
 
+__attribute__((unused)) static id ComGoogleGsonInternalLinkedHashTreeMap_writeReplace(ComGoogleGsonInternalLinkedHashTreeMap *self);
+
 @interface ComGoogleGsonInternalLinkedHashTreeMap_1 : NSObject < JavaUtilComparator >
 
 - (instancetype)init;
@@ -92,9 +94,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalLinkedHashTreeMap_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalLinkedHashTreeMap_1_init(ComGoogleGsonInternalLinkedHashTreeMap_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalLinkedHashTreeMap_1 *new_ComGoogleGsonInternalLinkedHashTreeMap_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalLinkedHashTreeMap_1 *new_ComGoogleGsonInternalLinkedHashTreeMap_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalLinkedHashTreeMap_1 *create_ComGoogleGsonInternalLinkedHashTreeMap_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalLinkedHashTreeMap_1 *create_ComGoogleGsonInternalLinkedHashTreeMap_1_init(void);
 
 @interface ComGoogleGsonInternalLinkedHashTreeMap_AvlIterator () {
  @public
@@ -419,7 +421,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (id)writeReplace {
-  return new_JavaUtilLinkedHashMap_initWithJavaUtilMap_(self);
+  return ComGoogleGsonInternalLinkedHashTreeMap_writeReplace(self);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -552,7 +554,7 @@ void ComGoogleGsonInternalLinkedHashTreeMap_replaceInParentWithComGoogleGsonInte
       parent->left_ = replacement;
     }
     else {
-      JreAssert((parent->right_ == node), (@"com/google/gson/internal/LinkedHashTreeMap.java:322 condition failed: assert (parent.right == node);"));
+      JreAssert(parent->right_ == node, @"com/google/gson/internal/LinkedHashTreeMap.java:322 condition failed: assert (parent.right == node);");
       parent->right_ = replacement;
     }
   }
@@ -579,7 +581,7 @@ void ComGoogleGsonInternalLinkedHashTreeMap_rebalanceWithComGoogleGsonInternalLi
         ComGoogleGsonInternalLinkedHashTreeMap_rotateLeftWithComGoogleGsonInternalLinkedHashTreeMap_Node_(self, node);
       }
       else {
-        JreAssert((rightDelta == 1), (@"com/google/gson/internal/LinkedHashTreeMap.java:356 condition failed: assert (rightDelta == 1);"));
+        JreAssert(rightDelta == 1, @"com/google/gson/internal/LinkedHashTreeMap.java:356 condition failed: assert (rightDelta == 1);");
         ComGoogleGsonInternalLinkedHashTreeMap_rotateRightWithComGoogleGsonInternalLinkedHashTreeMap_Node_(self, right);
         ComGoogleGsonInternalLinkedHashTreeMap_rotateLeftWithComGoogleGsonInternalLinkedHashTreeMap_Node_(self, node);
       }
@@ -597,7 +599,7 @@ void ComGoogleGsonInternalLinkedHashTreeMap_rebalanceWithComGoogleGsonInternalLi
         ComGoogleGsonInternalLinkedHashTreeMap_rotateRightWithComGoogleGsonInternalLinkedHashTreeMap_Node_(self, node);
       }
       else {
-        JreAssert((leftDelta == -1), (@"com/google/gson/internal/LinkedHashTreeMap.java:374 condition failed: assert (leftDelta == -1);"));
+        JreAssert(leftDelta == -1, @"com/google/gson/internal/LinkedHashTreeMap.java:374 condition failed: assert (leftDelta == -1);");
         ComGoogleGsonInternalLinkedHashTreeMap_rotateLeftWithComGoogleGsonInternalLinkedHashTreeMap_Node_(self, left);
         ComGoogleGsonInternalLinkedHashTreeMap_rotateRightWithComGoogleGsonInternalLinkedHashTreeMap_Node_(self, node);
       }
@@ -612,7 +614,7 @@ void ComGoogleGsonInternalLinkedHashTreeMap_rebalanceWithComGoogleGsonInternalLi
       }
     }
     else {
-      JreAssert(((delta == -1 || delta == 1)), (@"com/google/gson/internal/LinkedHashTreeMap.java:389 condition failed: assert (delta == -1 || delta == 1);"));
+      JreAssert((delta == -1 || delta == 1), @"com/google/gson/internal/LinkedHashTreeMap.java:389 condition failed: assert (delta == -1 || delta == 1);");
       node->height_ = JavaLangMath_maxWithInt_withInt_(leftHeight, rightHeight) + 1;
       if (!insert) {
         break;
@@ -696,6 +698,10 @@ IOSObjectArray *ComGoogleGsonInternalLinkedHashTreeMap_doubleCapacityWithComGoog
     (void) IOSObjectArray_Set(newTable, i + oldCapacity, rightSize > 0 ? [rightBuilder root] : nil);
   }
   return newTable;
+}
+
+id ComGoogleGsonInternalLinkedHashTreeMap_writeReplace(ComGoogleGsonInternalLinkedHashTreeMap *self) {
+  return new_JavaUtilLinkedHashMap_initWithJavaUtilMap_(self);
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLinkedHashTreeMap)

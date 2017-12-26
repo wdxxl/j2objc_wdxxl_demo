@@ -12,9 +12,9 @@
 #include "org/apache/lucene/index/LogMergePolicy.h"
 #include "org/apache/lucene/index/SegmentInfo.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexLogByteSizeMergePolicy__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexLogByteSizeMergePolicy__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexLogByteSizeMergePolicy__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexLogByteSizeMergePolicy__Annotations$1(void);
 
 @implementation OrgApacheLuceneIndexLogByteSizeMergePolicy
 

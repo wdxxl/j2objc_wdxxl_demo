@@ -97,11 +97,15 @@
 
 - (void)unconsume;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserCharacterReader)
 
-inline jchar OrgJsoupParserCharacterReader_get_EOF();
+inline jchar OrgJsoupParserCharacterReader_get_EOF(void);
 #define OrgJsoupParserCharacterReader_EOF 0xffff
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserCharacterReader, EOF, jchar)
 

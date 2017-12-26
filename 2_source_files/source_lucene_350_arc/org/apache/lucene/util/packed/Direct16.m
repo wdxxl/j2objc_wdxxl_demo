@@ -20,7 +20,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedDirect16, values_, IOSShortArray *)
 
-inline jint OrgApacheLuceneUtilPackedDirect16_get_BITS_PER_VALUE();
+inline jint OrgApacheLuceneUtilPackedDirect16_get_BITS_PER_VALUE(void);
 #define OrgApacheLuceneUtilPackedDirect16_BITS_PER_VALUE 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedDirect16, BITS_PER_VALUE, jint)
 

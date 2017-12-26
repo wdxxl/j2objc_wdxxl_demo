@@ -24,7 +24,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisLengthFilter, termAtt_, id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLengthFilter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLengthFilter__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisLengthFilter
 

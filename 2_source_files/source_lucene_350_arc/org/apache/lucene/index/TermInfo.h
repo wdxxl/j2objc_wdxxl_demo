@@ -47,9 +47,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermInfo)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexTermInfo_init(OrgApacheLuceneIndexTermInfo *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexTermInfo *new_OrgApacheLuceneIndexTermInfo_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexTermInfo *new_OrgApacheLuceneIndexTermInfo_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexTermInfo *create_OrgApacheLuceneIndexTermInfo_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexTermInfo *create_OrgApacheLuceneIndexTermInfo_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexTermInfo_initWithInt_withLong_withLong_(OrgApacheLuceneIndexTermInfo *self, jint df, jlong fp, jlong pp);
 

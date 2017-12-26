@@ -56,11 +56,15 @@
 
 - (JavaUtilConcurrentAtomicAtomicInteger *)bytesRef;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexSegmentNorms)
 
-inline IOSByteArray *OrgApacheLuceneIndexSegmentNorms_get_NORMS_HEADER();
+inline IOSByteArray *OrgApacheLuceneIndexSegmentNorms_get_NORMS_HEADER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexSegmentNorms, NORMS_HEADER, IOSByteArray *)

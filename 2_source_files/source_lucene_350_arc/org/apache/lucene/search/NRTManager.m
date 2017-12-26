@@ -53,7 +53,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNRTManager, waitingListeners_, id<JavaU
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNRTManager, reopenLock_, JavaUtilConcurrentLocksReentrantLock *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNRTManager, newGeneration_, id<JavaUtilConcurrentLocksCondition>)
 
-inline jlong OrgApacheLuceneSearchNRTManager_get_MAX_SEARCHER_GEN();
+inline jlong OrgApacheLuceneSearchNRTManager_get_MAX_SEARCHER_GEN(void);
 #define OrgApacheLuceneSearchNRTManager_MAX_SEARCHER_GEN 9223372036854775807LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchNRTManager, MAX_SEARCHER_GEN, jlong)
 
@@ -266,7 +266,7 @@ __attribute__((unused)) static jboolean OrgApacheLuceneSearchNRTManager_waitOnGe
   }
   @finally {
     [reopenLock_ unlock];
-    JreAssert((JreLoadVolatileLong(&((OrgApacheLuceneSearchNRTManager_SearcherManagerRef *) nil_chk(withDeletes_))->generation_) == OrgApacheLuceneSearchNRTManager_MAX_SEARCHER_GEN && JreLoadVolatileLong(&((OrgApacheLuceneSearchNRTManager_SearcherManagerRef *) nil_chk(withoutDeletes_))->generation_) == OrgApacheLuceneSearchNRTManager_MAX_SEARCHER_GEN), (@"org/apache/lucene/search/NRTManager.java:368 condition failed: assert withDeletes.generation == MAX_SEARCHER_GEN && withoutDeletes.generation == MAX_SEARCHER_GEN;"));
+    JreAssert(JreLoadVolatileLong(&((OrgApacheLuceneSearchNRTManager_SearcherManagerRef *) nil_chk(withDeletes_))->generation_) == OrgApacheLuceneSearchNRTManager_MAX_SEARCHER_GEN && JreLoadVolatileLong(&((OrgApacheLuceneSearchNRTManager_SearcherManagerRef *) nil_chk(withoutDeletes_))->generation_) == OrgApacheLuceneSearchNRTManager_MAX_SEARCHER_GEN, @"org/apache/lucene/search/NRTManager.java:368 condition failed: assert withDeletes.generation == MAX_SEARCHER_GEN && withoutDeletes.generation == MAX_SEARCHER_GEN;");
   }
 }
 
@@ -410,7 +410,7 @@ OrgApacheLuceneSearchNRTManager *create_OrgApacheLuceneSearchNRTManager_initWith
 }
 
 jboolean OrgApacheLuceneSearchNRTManager_waitOnGenConditionWithLong_withJavaUtilConcurrentTimeUnit_(OrgApacheLuceneSearchNRTManager *self, jlong time, JavaUtilConcurrentTimeUnit *unit) {
-  JreAssert(([((JavaUtilConcurrentLocksReentrantLock *) nil_chk(self->reopenLock_)) isHeldByCurrentThread]), (@"org/apache/lucene/search/NRTManager.java:306 condition failed: assert reopenLock.isHeldByCurrentThread();"));
+  JreAssert([((JavaUtilConcurrentLocksReentrantLock *) nil_chk(self->reopenLock_)) isHeldByCurrentThread], @"org/apache/lucene/search/NRTManager.java:306 condition failed: assert reopenLock.isHeldByCurrentThread();");
   if (time < 0) {
     [((id<JavaUtilConcurrentLocksCondition>) nil_chk(self->newGeneration_)) await];
     return true;

@@ -78,6 +78,11 @@ withOrgApacheLuceneAnalysisTokenStream:(OrgApacheLuceneAnalysisTokenStream *)inp
 
 - (jboolean)accept;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithBoolean:(jboolean)arg0
+withOrgApacheLuceneAnalysisTokenStream:(OrgApacheLuceneAnalysisTokenStream *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisStopFilter)

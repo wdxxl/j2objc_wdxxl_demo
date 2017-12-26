@@ -40,11 +40,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchExactPhraseScorer, counts_, IOSIntArray
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchExactPhraseScorer, gens_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchExactPhraseScorer, chunkStates_, IOSObjectArray *)
 
-inline jint OrgApacheLuceneSearchExactPhraseScorer_get_SCORE_CACHE_SIZE();
+inline jint OrgApacheLuceneSearchExactPhraseScorer_get_SCORE_CACHE_SIZE(void);
 #define OrgApacheLuceneSearchExactPhraseScorer_SCORE_CACHE_SIZE 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchExactPhraseScorer, SCORE_CACHE_SIZE, jint)
 
-inline jint OrgApacheLuceneSearchExactPhraseScorer_get_CHUNK();
+inline jint OrgApacheLuceneSearchExactPhraseScorer_get_CHUNK(void);
 #define OrgApacheLuceneSearchExactPhraseScorer_CHUNK 4096
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchExactPhraseScorer, CHUNK, jint)
 
@@ -318,7 +318,7 @@ jint OrgApacheLuceneSearchExactPhraseScorer_phraseFreq(OrgApacheLuceneSearchExac
           cs->lastPos_ = cs->pos_;
           jint posIndex = cs->pos_ - chunkStart;
           *IOSIntArray_GetRef(nil_chk(self->counts_), posIndex) = 1;
-          JreAssert((IOSIntArray_Get(nil_chk(self->gens_), posIndex) != self->gen_), (@"org/apache/lucene/search/ExactPhraseScorer.java:277 condition failed: assert gens[posIndex] != gen;"));
+          JreAssert(IOSIntArray_Get(nil_chk(self->gens_), posIndex) != self->gen_, @"org/apache/lucene/search/ExactPhraseScorer.java:277 condition failed: assert gens[posIndex] != gen;");
           *IOSIntArray_GetRef(self->gens_, posIndex) = self->gen_;
         }
         if (cs->posUpto_ == cs->posLimit_) {

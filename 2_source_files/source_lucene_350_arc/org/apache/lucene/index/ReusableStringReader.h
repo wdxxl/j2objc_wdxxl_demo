@@ -45,6 +45,10 @@
 
 - (void)init__WithNSString:(NSString *)s OBJC_METHOD_FAMILY_NONE;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithId:(id)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexReusableStringReader)
@@ -53,9 +57,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexReusableStringReader, s_, NSString *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexReusableStringReader_init(OrgApacheLuceneIndexReusableStringReader *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexReusableStringReader *new_OrgApacheLuceneIndexReusableStringReader_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexReusableStringReader *new_OrgApacheLuceneIndexReusableStringReader_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexReusableStringReader *create_OrgApacheLuceneIndexReusableStringReader_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexReusableStringReader *create_OrgApacheLuceneIndexReusableStringReader_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexReusableStringReader)
 

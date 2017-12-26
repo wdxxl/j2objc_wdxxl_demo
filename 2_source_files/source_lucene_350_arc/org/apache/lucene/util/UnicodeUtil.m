@@ -21,55 +21,55 @@
 
 @end
 
-inline jlong OrgApacheLuceneUtilUnicodeUtil_get_UNI_MAX_BMP();
+inline jlong OrgApacheLuceneUtilUnicodeUtil_get_UNI_MAX_BMP(void);
 #define OrgApacheLuceneUtilUnicodeUtil_UNI_MAX_BMP 65535LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, UNI_MAX_BMP, jlong)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_HALF_BASE();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_HALF_BASE(void);
 #define OrgApacheLuceneUtilUnicodeUtil_HALF_BASE 65536
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, HALF_BASE, jint)
 
-inline jlong OrgApacheLuceneUtilUnicodeUtil_get_HALF_SHIFT();
+inline jlong OrgApacheLuceneUtilUnicodeUtil_get_HALF_SHIFT(void);
 #define OrgApacheLuceneUtilUnicodeUtil_HALF_SHIFT 10LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, HALF_SHIFT, jlong)
 
-inline jlong OrgApacheLuceneUtilUnicodeUtil_get_HALF_MASK();
+inline jlong OrgApacheLuceneUtilUnicodeUtil_get_HALF_MASK(void);
 #define OrgApacheLuceneUtilUnicodeUtil_HALF_MASK 1023LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, HALF_MASK, jlong)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_SURROGATE_OFFSET();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_SURROGATE_OFFSET(void);
 #define OrgApacheLuceneUtilUnicodeUtil_SURROGATE_OFFSET -56613888
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, SURROGATE_OFFSET, jint)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_LEAD_SURROGATE_SHIFT_();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_LEAD_SURROGATE_SHIFT_(void);
 #define OrgApacheLuceneUtilUnicodeUtil_LEAD_SURROGATE_SHIFT_ 10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, LEAD_SURROGATE_SHIFT_, jint)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_TRAIL_SURROGATE_MASK_();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_TRAIL_SURROGATE_MASK_(void);
 #define OrgApacheLuceneUtilUnicodeUtil_TRAIL_SURROGATE_MASK_ 1023
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, TRAIL_SURROGATE_MASK_, jint)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_TRAIL_SURROGATE_MIN_VALUE();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_TRAIL_SURROGATE_MIN_VALUE(void);
 #define OrgApacheLuceneUtilUnicodeUtil_TRAIL_SURROGATE_MIN_VALUE 56320
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, TRAIL_SURROGATE_MIN_VALUE, jint)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_LEAD_SURROGATE_MIN_VALUE();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_LEAD_SURROGATE_MIN_VALUE(void);
 #define OrgApacheLuceneUtilUnicodeUtil_LEAD_SURROGATE_MIN_VALUE 55296
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, LEAD_SURROGATE_MIN_VALUE, jint)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_SUPPLEMENTARY_MIN_VALUE();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_SUPPLEMENTARY_MIN_VALUE(void);
 #define OrgApacheLuceneUtilUnicodeUtil_SUPPLEMENTARY_MIN_VALUE 65536
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, SUPPLEMENTARY_MIN_VALUE, jint)
 
-inline jint OrgApacheLuceneUtilUnicodeUtil_get_LEAD_SURROGATE_OFFSET_();
+inline jint OrgApacheLuceneUtilUnicodeUtil_get_LEAD_SURROGATE_OFFSET_(void);
 #define OrgApacheLuceneUtilUnicodeUtil_LEAD_SURROGATE_OFFSET_ 55232
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilUnicodeUtil, LEAD_SURROGATE_OFFSET_, jint)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilUnicodeUtil_init(OrgApacheLuceneUtilUnicodeUtil *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilUnicodeUtil *new_OrgApacheLuceneUtilUnicodeUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilUnicodeUtil *new_OrgApacheLuceneUtilUnicodeUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilUnicodeUtil *create_OrgApacheLuceneUtilUnicodeUtil_init();
+__attribute__((unused)) static OrgApacheLuceneUtilUnicodeUtil *create_OrgApacheLuceneUtilUnicodeUtil_init(void);
 
 @implementation OrgApacheLuceneUtilUnicodeUtil
 
@@ -484,7 +484,7 @@ void OrgApacheLuceneUtilUnicodeUtil_UTF8toUTF16WithByteArray_withInt_withInt_wit
     jint ch;
     *IOSIntArray_GetRef(offsets, upto++) = outUpto;
     if (b < (jint) 0xc0) {
-      JreAssert((b < (jint) 0x80), (@"org/apache/lucene/util/UnicodeUtil.java:508 condition failed: assert b < 0x80;"));
+      JreAssert(b < (jint) 0x80, @"org/apache/lucene/util/UnicodeUtil.java:508 condition failed: assert b < 0x80;");
       ch = b;
     }
     else if (b < (jint) 0xe0) {
@@ -497,7 +497,7 @@ void OrgApacheLuceneUtilUnicodeUtil_UTF8toUTF16WithByteArray_withInt_withInt_wit
       *IOSIntArray_GetRef(offsets, upto++) = -1;
     }
     else {
-      JreAssert((b < (jint) 0xf8), (@"org/apache/lucene/util/UnicodeUtil.java:518 condition failed: assert b < 0xf8;"));
+      JreAssert(b < (jint) 0xf8, @"org/apache/lucene/util/UnicodeUtil.java:518 condition failed: assert b < 0xf8;");
       ch = (JreLShift32((b & (jint) 0x7), 18)) + (JreLShift32((IOSByteArray_Get(utf8, upto) & (jint) 0x3f), 12)) + (JreLShift32((IOSByteArray_Get(utf8, upto + 1) & (jint) 0x3f), 6)) + (IOSByteArray_Get(utf8, upto + 2) & (jint) 0x3f);
       *IOSIntArray_GetRef(offsets, upto++) = -1;
       *IOSIntArray_GetRef(offsets, upto++) = -1;
@@ -560,7 +560,7 @@ void OrgApacheLuceneUtilUnicodeUtil_UTF8toUTF16WithByteArray_withInt_withInt_wit
   while (offset < limit) {
     jint b = IOSByteArray_Get(nil_chk(utf8), offset++) & (jint) 0xff;
     if (b < (jint) 0xc0) {
-      JreAssert((b < (jint) 0x80), (@"org/apache/lucene/util/UnicodeUtil.java:714 condition failed: assert b < 0x80;"));
+      JreAssert(b < (jint) 0x80, @"org/apache/lucene/util/UnicodeUtil.java:714 condition failed: assert b < 0x80;");
       *IOSCharArray_GetRef(out, out_offset++) = (jchar) b;
     }
     else if (b < (jint) 0xe0) {
@@ -571,7 +571,7 @@ void OrgApacheLuceneUtilUnicodeUtil_UTF8toUTF16WithByteArray_withInt_withInt_wit
       offset += 2;
     }
     else {
-      JreAssert((b < (jint) 0xf8), (@"org/apache/lucene/util/UnicodeUtil.java:722 condition failed: assert b < 0xf8;"));
+      JreAssert(b < (jint) 0xf8, @"org/apache/lucene/util/UnicodeUtil.java:722 condition failed: assert b < 0xf8;");
       jint ch = (JreLShift32((b & (jint) 0x7), 18)) + (JreLShift32((IOSByteArray_Get(utf8, offset) & (jint) 0x3f), 12)) + (JreLShift32((IOSByteArray_Get(utf8, offset + 1) & (jint) 0x3f), 6)) + (IOSByteArray_Get(utf8, offset + 2) & (jint) 0x3f);
       offset += 3;
       if (ch < OrgApacheLuceneUtilUnicodeUtil_UNI_MAX_BMP) {

@@ -63,16 +63,16 @@
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternalExcluder)
 
-inline ComGoogleGsonInternalExcluder *ComGoogleGsonInternalExcluder_get_DEFAULT();
+inline ComGoogleGsonInternalExcluder *ComGoogleGsonInternalExcluder_get_DEFAULT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonInternalExcluder *ComGoogleGsonInternalExcluder_DEFAULT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalExcluder, DEFAULT, ComGoogleGsonInternalExcluder *)
 
 FOUNDATION_EXPORT void ComGoogleGsonInternalExcluder_init(ComGoogleGsonInternalExcluder *self);
 
-FOUNDATION_EXPORT ComGoogleGsonInternalExcluder *new_ComGoogleGsonInternalExcluder_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonInternalExcluder *new_ComGoogleGsonInternalExcluder_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonInternalExcluder *create_ComGoogleGsonInternalExcluder_init();
+FOUNDATION_EXPORT ComGoogleGsonInternalExcluder *create_ComGoogleGsonInternalExcluder_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalExcluder)
 

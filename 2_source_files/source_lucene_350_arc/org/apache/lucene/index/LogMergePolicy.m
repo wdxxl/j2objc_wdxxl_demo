@@ -151,7 +151,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (jlong)sizeDocsWithOrgApacheLuceneIndexSegmentInfo:(OrgApacheLuceneIndexSegmentInfo *)info {
   if (calibrateSizeByDeletes_) {
     jint delCount = [((OrgApacheLuceneIndexIndexWriter *) nil_chk([((OrgApacheLuceneUtilSetOnce *) nil_chk(writer_)) get])) numDeletedDocsWithOrgApacheLuceneIndexSegmentInfo:info];
-    JreAssert((delCount <= ((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info))->docCount_), (@"org/apache/lucene/index/LogMergePolicy.java:185 condition failed: assert delCount <= info.docCount;"));
+    JreAssert(delCount <= ((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info))->docCount_, @"org/apache/lucene/index/LogMergePolicy.java:185 condition failed: assert delCount <= info.docCount;");
     return (info->docCount_ - (jlong) delCount);
   }
   else {
@@ -164,7 +164,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   if (calibrateSizeByDeletes_) {
     jint delCount = [((OrgApacheLuceneIndexIndexWriter *) nil_chk([((OrgApacheLuceneUtilSetOnce *) nil_chk(writer_)) get])) numDeletedDocsWithOrgApacheLuceneIndexSegmentInfo:info];
     jdouble delRatio = (info->docCount_ <= 0 ? 0.0f : ((jfloat) delCount / (jfloat) info->docCount_));
-    JreAssert((delRatio <= 1.0), (@"org/apache/lucene/index/LogMergePolicy.java:197 condition failed: assert delRatio <= 1.0;"));
+    JreAssert(delRatio <= 1.0, @"org/apache/lucene/index/LogMergePolicy.java:197 condition failed: assert delRatio <= 1.0;");
     return (info->docCount_ <= 0 ? byteSize : JreFpToLong((byteSize * (1.0 - delRatio))));
   }
   else {
@@ -193,7 +193,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (jboolean)isMergedWithOrgApacheLuceneIndexSegmentInfo:(OrgApacheLuceneIndexSegmentInfo *)info {
   OrgApacheLuceneIndexIndexWriter *w = [((OrgApacheLuceneUtilSetOnce *) nil_chk(writer_)) get];
-  JreAssert((w != nil), (@"org/apache/lucene/index/LogMergePolicy.java:229 condition failed: assert w != null;"));
+  JreAssert(w != nil, @"org/apache/lucene/index/LogMergePolicy.java:229 condition failed: assert w != null;");
   jboolean hasDeletions = [((OrgApacheLuceneIndexIndexWriter *) nil_chk(w)) numDeletedDocsWithOrgApacheLuceneIndexSegmentInfo:info] > 0;
   return !hasDeletions && ![((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info)) hasSeparateNorms] && info->dir_ == [w getDirectory] && ([info getUseCompoundFile] == useCompoundFile_ || noCFSRatio_ < 1.0);
 }
@@ -213,7 +213,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (OrgApacheLuceneIndexMergePolicy_MergeSpecification *)findForcedMergesWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)infos
                                                                                                      withInt:(jint)maxNumSegments
                                                                                              withJavaUtilMap:(id<JavaUtilMap>)segmentsToMerge {
-  JreAssert((maxNumSegments > 0), (@"org/apache/lucene/index/LogMergePolicy.java:355 condition failed: assert maxNumSegments > 0;"));
+  JreAssert(maxNumSegments > 0, @"org/apache/lucene/index/LogMergePolicy.java:355 condition failed: assert maxNumSegments > 0;");
   if ([self verbose]) {
     [self messageWithNSString:JreStrcat("$I$@", @"findForcedMerges: maxNumSegs=", maxNumSegments, @" segsToMerge=", segmentsToMerge)];
   }
@@ -261,7 +261,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   OrgApacheLuceneIndexMergePolicy_MergeSpecification *spec = new_OrgApacheLuceneIndexMergePolicy_MergeSpecification_init();
   jint firstSegmentWithDeletions = -1;
   OrgApacheLuceneIndexIndexWriter *w = [((OrgApacheLuceneUtilSetOnce *) nil_chk(writer_)) get];
-  JreAssert((w != nil), (@"org/apache/lucene/index/LogMergePolicy.java:425 condition failed: assert w != null;"));
+  JreAssert(w != nil, @"org/apache/lucene/index/LogMergePolicy.java:425 condition failed: assert w != null;");
   for (jint i = 0; i < numSegments; i++) {
     OrgApacheLuceneIndexSegmentInfo *info = [segmentInfos infoWithInt:i];
     jint delCount = [((OrgApacheLuceneIndexIndexWriter *) nil_chk(w)) numDeletedDocsWithOrgApacheLuceneIndexSegmentInfo:info];
@@ -355,7 +355,7 @@ J2OBJC_IGNORE_DESIGNATED_END
         id<JavaUtilList> mergeInfos = new_JavaUtilArrayList_init();
         for (jint i = start; i < end; i++) {
           [mergeInfos addWithId:((OrgApacheLuceneIndexLogMergePolicy_SegmentInfoAndLevel *) nil_chk([levels getWithInt:i]))->info_];
-          JreAssert(([infos containsWithOrgApacheLuceneIndexSegmentInfo:((OrgApacheLuceneIndexLogMergePolicy_SegmentInfoAndLevel *) nil_chk([levels getWithInt:i]))->info_]), (@"org/apache/lucene/index/LogMergePolicy.java:602 condition failed: assert infos.contains(levels.get(i).info);"));
+          JreAssert([infos containsWithOrgApacheLuceneIndexSegmentInfo:((OrgApacheLuceneIndexLogMergePolicy_SegmentInfoAndLevel *) nil_chk([levels getWithInt:i]))->info_], @"org/apache/lucene/index/LogMergePolicy.java:602 condition failed: assert infos.contains(levels.get(i).info);");
         }
         if ([self verbose]) {
           [self messageWithNSString:JreStrcat("$$$I$I", @"  add merge=", [((OrgApacheLuceneIndexIndexWriter *) nil_chk([writer_ get])) segStringWithJavaLangIterable:mergeInfos], @" start=", start, @" end=", end)];

@@ -184,9 +184,9 @@ FOUNDATION_EXPORT OrgApacheLuceneUtilOpenBitSet *create_OrgApacheLuceneUtilOpenB
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilOpenBitSet_init(OrgApacheLuceneUtilOpenBitSet *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilOpenBitSet *new_OrgApacheLuceneUtilOpenBitSet_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilOpenBitSet *new_OrgApacheLuceneUtilOpenBitSet_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilOpenBitSet *create_OrgApacheLuceneUtilOpenBitSet_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilOpenBitSet *create_OrgApacheLuceneUtilOpenBitSet_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilOpenBitSet_initWithLongArray_withInt_(OrgApacheLuceneUtilOpenBitSet *self, IOSLongArray *bits, jint numWords);
 

@@ -39,6 +39,8 @@ __attribute__((unused)) static void OrgJsoupParserToken_init(OrgJsoupParserToken
 J2OBJC_FIELD_SETTER(OrgJsoupParserToken_Tag, pendingAttributeName_, NSString *)
 J2OBJC_FIELD_SETTER(OrgJsoupParserToken_Tag, pendingAttributeValue_, JavaLangStringBuilder *)
 
+__attribute__((unused)) static OrgJsoupParserToken_Tag *OrgJsoupParserToken_Tag_reset(OrgJsoupParserToken_Tag *self);
+
 __attribute__((unused)) static void OrgJsoupParserToken_Tag_newAttribute(OrgJsoupParserToken_Tag *self);
 
 __attribute__((unused)) static NSString *OrgJsoupParserToken_Tag_name(OrgJsoupParserToken_Tag *self);
@@ -281,14 +283,7 @@ J2OBJC_IGNORE_DESIGNATED_BEGIN
 J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgJsoupParserToken_Tag *)reset {
-  tagName_ = nil;
-  pendingAttributeName_ = nil;
-  OrgJsoupParserToken_resetWithJavaLangStringBuilder_(pendingAttributeValue_);
-  hasEmptyAttributeValue_ = false;
-  hasPendingAttributeValue_ = false;
-  selfClosing_ = false;
-  attributes_ = nil;
-  return self;
+  return OrgJsoupParserToken_Tag_reset(self);
 }
 
 - (void)newAttribute {
@@ -421,6 +416,17 @@ void OrgJsoupParserToken_Tag_init(OrgJsoupParserToken_Tag *self) {
   self->selfClosing_ = false;
 }
 
+OrgJsoupParserToken_Tag *OrgJsoupParserToken_Tag_reset(OrgJsoupParserToken_Tag *self) {
+  self->tagName_ = nil;
+  self->pendingAttributeName_ = nil;
+  OrgJsoupParserToken_resetWithJavaLangStringBuilder_(self->pendingAttributeValue_);
+  self->hasEmptyAttributeValue_ = false;
+  self->hasPendingAttributeValue_ = false;
+  self->selfClosing_ = false;
+  self->attributes_ = nil;
+  return self;
+}
+
 void OrgJsoupParserToken_Tag_newAttribute(OrgJsoupParserToken_Tag *self) {
   if (self->attributes_ == nil) self->attributes_ = new_OrgJsoupNodesAttributes_init();
   if (self->pendingAttributeName_ != nil) {
@@ -465,7 +471,7 @@ J2OBJC_IGNORE_DESIGNATED_BEGIN
 J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgJsoupParserToken_Tag *)reset {
-  (void) [super reset];
+  (void) OrgJsoupParserToken_Tag_reset(self);
   attributes_ = new_OrgJsoupNodesAttributes_init();
   return self;
 }
@@ -756,10 +762,6 @@ OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_values_[6];
   return OrgJsoupParserToken_TokenType_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgJsoupParserToken_TokenType;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -785,12 +787,12 @@ OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_values_[6];
 
 + (void)initialize {
   if (self == [OrgJsoupParserToken_TokenType class]) {
-    JreEnum(OrgJsoupParserToken_TokenType, Doctype) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"Doctype", 0);
-    JreEnum(OrgJsoupParserToken_TokenType, StartTag) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"StartTag", 1);
-    JreEnum(OrgJsoupParserToken_TokenType, EndTag) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"EndTag", 2);
-    JreEnum(OrgJsoupParserToken_TokenType, Comment) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"Comment", 3);
-    JreEnum(OrgJsoupParserToken_TokenType, Character) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"Character", 4);
-    JreEnum(OrgJsoupParserToken_TokenType, EOF) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"EOF", 5);
+    JreEnum(OrgJsoupParserToken_TokenType, Doctype) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgJsoupParserToken_TokenType, StartTag) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgJsoupParserToken_TokenType, EndTag) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgJsoupParserToken_TokenType, Comment) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"", 3);
+    JreEnum(OrgJsoupParserToken_TokenType, Character) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"", 4);
+    JreEnum(OrgJsoupParserToken_TokenType, EOF) = new_OrgJsoupParserToken_TokenType_initWithNSString_withInt_(@"", 5);
     J2OBJC_SET_INITIALIZED(OrgJsoupParserToken_TokenType)
   }
 }

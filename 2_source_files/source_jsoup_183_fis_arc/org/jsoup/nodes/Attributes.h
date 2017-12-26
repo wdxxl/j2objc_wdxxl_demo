@@ -78,16 +78,16 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupNodesAttributes)
 
-inline NSString *OrgJsoupNodesAttributes_get_dataPrefix();
+inline NSString *OrgJsoupNodesAttributes_get_dataPrefix(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgJsoupNodesAttributes_dataPrefix;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesAttributes, dataPrefix, NSString *)
 
 FOUNDATION_EXPORT void OrgJsoupNodesAttributes_init(OrgJsoupNodesAttributes *self);
 
-FOUNDATION_EXPORT OrgJsoupNodesAttributes *new_OrgJsoupNodesAttributes_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupNodesAttributes *new_OrgJsoupNodesAttributes_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupNodesAttributes *create_OrgJsoupNodesAttributes_init();
+FOUNDATION_EXPORT OrgJsoupNodesAttributes *create_OrgJsoupNodesAttributes_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesAttributes)
 

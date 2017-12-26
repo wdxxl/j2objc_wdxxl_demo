@@ -34,9 +34,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilFstUtil_init(OrgApacheLuceneUtilFstUtil *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstUtil *new_OrgApacheLuceneUtilFstUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilFstUtil *new_OrgApacheLuceneUtilFstUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstUtil *create_OrgApacheLuceneUtilFstUtil_init();
+__attribute__((unused)) static OrgApacheLuceneUtilFstUtil *create_OrgApacheLuceneUtilFstUtil_init(void);
 
 __attribute__((unused)) static void OrgApacheLuceneUtilFstUtil_emitDotStateWithJavaIoWriter_withNSString_withNSString_withNSString_withNSString_(JavaIoWriter *outArg, NSString *name, NSString *shape, NSString *color, NSString *label);
 
@@ -135,7 +135,7 @@ OrgApacheLuceneUtilFstUtil *create_OrgApacheLuceneUtilFstUtil_init() {
 
 id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withOrgApacheLuceneUtilIntsRef_(OrgApacheLuceneUtilFstFST *fst, OrgApacheLuceneUtilIntsRef *input) {
   OrgApacheLuceneUtilFstUtil_initialize();
-  JreAssert((((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4)), (@"org/apache/lucene/util/fst/Util.java:37 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE4;"));
+  JreAssert(((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4), @"org/apache/lucene/util/fst/Util.java:37 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE4;");
   OrgApacheLuceneUtilFstFST_Arc *arc = [fst getFirstArcWithOrgApacheLuceneUtilFstFST_Arc:new_OrgApacheLuceneUtilFstFST_Arc_init()];
   id NO_OUTPUT = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(fst->outputs_)) getNoOutput];
   id output = NO_OUTPUT;
@@ -160,7 +160,7 @@ id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withOrgApacheLuce
 
 id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withCharArray_withInt_withInt_(OrgApacheLuceneUtilFstFST *fst, IOSCharArray *input, jint offset, jint length) {
   OrgApacheLuceneUtilFstUtil_initialize();
-  JreAssert((((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4)), (@"org/apache/lucene/util/fst/Util.java:66 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE4;"));
+  JreAssert(((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4), @"org/apache/lucene/util/fst/Util.java:66 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE4;");
   OrgApacheLuceneUtilFstFST_Arc *arc = [fst getFirstArcWithOrgApacheLuceneUtilFstFST_Arc:new_OrgApacheLuceneUtilFstFST_Arc_init()];
   jint charIdx = offset;
   jint charLimit = offset + length;
@@ -189,7 +189,7 @@ id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withCharArray_wit
 
 id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withJavaLangCharSequence_(OrgApacheLuceneUtilFstFST *fst, id<JavaLangCharSequence> input) {
   OrgApacheLuceneUtilFstUtil_initialize();
-  JreAssert((((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4)), (@"org/apache/lucene/util/fst/Util.java:102 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE4;"));
+  JreAssert(((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4), @"org/apache/lucene/util/fst/Util.java:102 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE4;");
   OrgApacheLuceneUtilFstFST_Arc *arc = [fst getFirstArcWithOrgApacheLuceneUtilFstFST_Arc:new_OrgApacheLuceneUtilFstFST_Arc_init()];
   jint charIdx = 0;
   jint charLimit = [((id<JavaLangCharSequence>) nil_chk(input)) java_length];
@@ -218,7 +218,7 @@ id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withJavaLangCharS
 
 id OrgApacheLuceneUtilFstUtil_getWithOrgApacheLuceneUtilFstFST_withOrgApacheLuceneUtilBytesRef_(OrgApacheLuceneUtilFstFST *fst, OrgApacheLuceneUtilBytesRef *input) {
   OrgApacheLuceneUtilFstUtil_initialize();
-  JreAssert((((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE1)), (@"org/apache/lucene/util/fst/Util.java:137 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE1;"));
+  JreAssert(((OrgApacheLuceneUtilFstFST *) nil_chk(fst))->inputType_ == JreLoadEnum(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE1), @"org/apache/lucene/util/fst/Util.java:137 condition failed: assert fst.inputType == FST.INPUT_TYPE.BYTE1;");
   OrgApacheLuceneUtilFstFST_Arc *arc = [fst getFirstArcWithOrgApacheLuceneUtilFstFST_Arc:new_OrgApacheLuceneUtilFstFST_Arc_init()];
   id NO_OUTPUT = [((OrgApacheLuceneUtilFstOutputs *) nil_chk(fst->outputs_)) getNoOutput];
   id output = NO_OUTPUT;

@@ -55,11 +55,11 @@ __attribute__((unused)) static JavaLangAssertionError *ComGoogleGsonReflectTypeT
 
 __attribute__((unused)) static jboolean ComGoogleGsonReflectTypeToken_matchesWithJavaLangReflectType_withJavaLangReflectType_withJavaUtilMap_(id<JavaLangReflectType> from, id<JavaLangReflectType> to, id<JavaUtilMap> typeMap);
 
-__attribute__((unused)) static IOSObjectArray *ComGoogleGsonReflectTypeToken__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *ComGoogleGsonReflectTypeToken__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *ComGoogleGsonReflectTypeToken__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *ComGoogleGsonReflectTypeToken__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *ComGoogleGsonReflectTypeToken__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *ComGoogleGsonReflectTypeToken__Annotations$2(void);
 
 @implementation ComGoogleGsonReflectTypeToken
 

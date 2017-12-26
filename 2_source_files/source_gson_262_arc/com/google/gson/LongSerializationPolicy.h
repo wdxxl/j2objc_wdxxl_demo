@@ -34,7 +34,7 @@ typedef NS_ENUM(NSUInteger, ComGoogleGsonLongSerializationPolicy_Enum) {
   ComGoogleGsonLongSerializationPolicy_Enum_STRING = 1,
 };
 
-@interface ComGoogleGsonLongSerializationPolicy : JavaLangEnum < NSCopying >
+@interface ComGoogleGsonLongSerializationPolicy : JavaLangEnum
 
 #pragma mark Public
 
@@ -44,10 +44,6 @@ typedef NS_ENUM(NSUInteger, ComGoogleGsonLongSerializationPolicy_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(ComGoogleGsonLongSerializationPolicy)
@@ -55,13 +51,13 @@ J2OBJC_STATIC_INIT(ComGoogleGsonLongSerializationPolicy)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_values_[];
 
-inline ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_get_DEFAULT();
+inline ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_get_DEFAULT(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonLongSerializationPolicy, DEFAULT)
 
-inline ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_get_STRING();
+inline ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_get_STRING(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonLongSerializationPolicy, STRING)
 
-FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonLongSerializationPolicy_values();
+FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonLongSerializationPolicy_values(void);
 
 FOUNDATION_EXPORT ComGoogleGsonLongSerializationPolicy *ComGoogleGsonLongSerializationPolicy_valueOfWithNSString_(NSString *name);
 

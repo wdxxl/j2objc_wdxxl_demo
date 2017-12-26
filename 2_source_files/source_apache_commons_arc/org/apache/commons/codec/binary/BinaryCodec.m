@@ -15,47 +15,47 @@
 
 @end
 
-inline IOSCharArray *OrgApacheCommonsCodecBinaryBinaryCodec_get_EMPTY_CHAR_ARRAY();
+inline IOSCharArray *OrgApacheCommonsCodecBinaryBinaryCodec_get_EMPTY_CHAR_ARRAY(void);
 static IOSCharArray *OrgApacheCommonsCodecBinaryBinaryCodec_EMPTY_CHAR_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBinaryCodec, EMPTY_CHAR_ARRAY, IOSCharArray *)
 
-inline IOSByteArray *OrgApacheCommonsCodecBinaryBinaryCodec_get_EMPTY_BYTE_ARRAY();
+inline IOSByteArray *OrgApacheCommonsCodecBinaryBinaryCodec_get_EMPTY_BYTE_ARRAY(void);
 static IOSByteArray *OrgApacheCommonsCodecBinaryBinaryCodec_EMPTY_BYTE_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBinaryCodec, EMPTY_BYTE_ARRAY, IOSByteArray *)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_0();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_0(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_0 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_0, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_1();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_1(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_1 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_1, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_2();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_2(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_2 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_2, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_3();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_3(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_3 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_3, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_4();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_4(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_4 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_4, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_5();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_5(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_5 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_5, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_6();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_6(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_6 64
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_6, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_7();
+inline jint OrgApacheCommonsCodecBinaryBinaryCodec_get_BIT_7(void);
 #define OrgApacheCommonsCodecBinaryBinaryCodec_BIT_7 128
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBinaryCodec, BIT_7, jint)
 
-inline IOSIntArray *OrgApacheCommonsCodecBinaryBinaryCodec_get_BITS();
+inline IOSIntArray *OrgApacheCommonsCodecBinaryBinaryCodec_get_BITS(void);
 static IOSIntArray *OrgApacheCommonsCodecBinaryBinaryCodec_BITS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryBinaryCodec, BITS, IOSIntArray *)
 

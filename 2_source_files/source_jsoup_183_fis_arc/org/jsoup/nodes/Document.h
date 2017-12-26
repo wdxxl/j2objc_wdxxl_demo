@@ -26,8 +26,10 @@
 #include "org/jsoup/nodes/Element.h"
 
 @class JavaNioCharsetCharset;
+@class OrgJsoupNodesAttributes;
 @class OrgJsoupNodesDocument_OutputSettings;
 @class OrgJsoupNodesDocument_QuirksMode;
+@class OrgJsoupParserTag;
 
 @interface OrgJsoupNodesDocument : OrgJsoupNodesElement
 
@@ -74,6 +76,15 @@
 - (jboolean)updateMetaCharsetElement;
 
 - (void)updateMetaCharsetElementWithBoolean:(jboolean)update;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
+                             withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
+                             withNSString:(NSString *)arg1
+              withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg2 NS_UNAVAILABLE;
 
 @end
 
@@ -143,9 +154,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupNodesDocument_OutputSettings)
 
 FOUNDATION_EXPORT void OrgJsoupNodesDocument_OutputSettings_init(OrgJsoupNodesDocument_OutputSettings *self);
 
-FOUNDATION_EXPORT OrgJsoupNodesDocument_OutputSettings *new_OrgJsoupNodesDocument_OutputSettings_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupNodesDocument_OutputSettings *new_OrgJsoupNodesDocument_OutputSettings_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupNodesDocument_OutputSettings *create_OrgJsoupNodesDocument_OutputSettings_init();
+FOUNDATION_EXPORT OrgJsoupNodesDocument_OutputSettings *create_OrgJsoupNodesDocument_OutputSettings_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesDocument_OutputSettings)
 
@@ -165,17 +176,13 @@ typedef NS_ENUM(NSUInteger, OrgJsoupNodesDocument_OutputSettings_Syntax_Enum) {
   OrgJsoupNodesDocument_OutputSettings_Syntax_Enum_xml = 1,
 };
 
-@interface OrgJsoupNodesDocument_OutputSettings_Syntax : JavaLangEnum < NSCopying >
+@interface OrgJsoupNodesDocument_OutputSettings_Syntax : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgJsoupNodesDocument_OutputSettings_Syntax *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -184,13 +191,13 @@ J2OBJC_STATIC_INIT(OrgJsoupNodesDocument_OutputSettings_Syntax)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSettings_Syntax_values_[];
 
-inline OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSettings_Syntax_get_html();
+inline OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSettings_Syntax_get_html(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesDocument_OutputSettings_Syntax, html)
 
-inline OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSettings_Syntax_get_xml();
+inline OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSettings_Syntax_get_xml(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesDocument_OutputSettings_Syntax, xml)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgJsoupNodesDocument_OutputSettings_Syntax_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgJsoupNodesDocument_OutputSettings_Syntax_values(void);
 
 FOUNDATION_EXPORT OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSettings_Syntax_valueOfWithNSString_(NSString *name);
 
@@ -215,17 +222,13 @@ typedef NS_ENUM(NSUInteger, OrgJsoupNodesDocument_QuirksMode_Enum) {
   OrgJsoupNodesDocument_QuirksMode_Enum_limitedQuirks = 2,
 };
 
-@interface OrgJsoupNodesDocument_QuirksMode : JavaLangEnum < NSCopying >
+@interface OrgJsoupNodesDocument_QuirksMode : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgJsoupNodesDocument_QuirksMode *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -234,16 +237,16 @@ J2OBJC_STATIC_INIT(OrgJsoupNodesDocument_QuirksMode)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_values_[];
 
-inline OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_get_noQuirks();
+inline OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_get_noQuirks(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesDocument_QuirksMode, noQuirks)
 
-inline OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_get_quirks();
+inline OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_get_quirks(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesDocument_QuirksMode, quirks)
 
-inline OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_get_limitedQuirks();
+inline OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_get_limitedQuirks(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesDocument_QuirksMode, limitedQuirks)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgJsoupNodesDocument_QuirksMode_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgJsoupNodesDocument_QuirksMode_values(void);
 
 FOUNDATION_EXPORT OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_valueOfWithNSString_(NSString *name);
 

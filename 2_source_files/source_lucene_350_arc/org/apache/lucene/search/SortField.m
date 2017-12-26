@@ -47,6 +47,8 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchSortField, missingValue_, id)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchSortField_initFieldTypeWithNSString_withInt_(OrgApacheLuceneSearchSortField *self, NSString *field, jint type);
 
+__attribute__((unused)) static void OrgApacheLuceneSearchSortField_readObjectWithJavaIoObjectInputStream_(OrgApacheLuceneSearchSortField *self, JavaIoObjectInputStream *inArg);
+
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneSearchSortField)
 
 OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_FIELD_SCORE;
@@ -206,8 +208,7 @@ withOrgApacheLuceneSearchFieldComparatorSource:(OrgApacheLuceneSearchFieldCompar
 }
 
 - (void)readObjectWithJavaIoObjectInputStream:(JavaIoObjectInputStream *)inArg {
-  [((JavaIoObjectInputStream *) nil_chk(inArg)) defaultReadObject];
-  if (field_ != nil) field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(field_);
+  OrgApacheLuceneSearchSortField_readObjectWithJavaIoObjectInputStream_(self, inArg);
 }
 
 - (OrgApacheLuceneSearchFieldComparator *)getComparatorWithInt:(jint)numHits
@@ -233,7 +234,7 @@ withOrgApacheLuceneSearchFieldComparatorSource:(OrgApacheLuceneSearchFieldCompar
     case OrgApacheLuceneSearchSortField_SHORT:
     return new_OrgApacheLuceneSearchFieldComparator_ShortComparator_initWithInt_withNSString_withOrgApacheLuceneSearchFieldCache_Parser_withJavaLangShort_(numHits, field_, parser_, (JavaLangShort *) cast_chk(missingValue_, [JavaLangShort class]));
     case OrgApacheLuceneSearchSortField_CUSTOM:
-    JreAssert((comparatorSource_ != nil), (@"org/apache/lucene/search/SortField.java:424 condition failed: assert comparatorSource != null;"));
+    JreAssert(comparatorSource_ != nil, @"org/apache/lucene/search/SortField.java:424 condition failed: assert comparatorSource != null;");
     return [((OrgApacheLuceneSearchFieldComparatorSource *) nil_chk(comparatorSource_)) newComparatorWithNSString:field_ withInt:numHits withInt:sortPos withBoolean:reverse_];
     case OrgApacheLuceneSearchSortField_STRING:
     return new_OrgApacheLuceneSearchFieldComparator_StringOrdValComparator_initWithInt_withNSString_withInt_withBoolean_(numHits, field_, sortPos, reverse_);
@@ -462,6 +463,11 @@ void OrgApacheLuceneSearchSortField_initFieldTypeWithNSString_withInt_(OrgApache
   else {
     self->field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(field);
   }
+}
+
+void OrgApacheLuceneSearchSortField_readObjectWithJavaIoObjectInputStream_(OrgApacheLuceneSearchSortField *self, JavaIoObjectInputStream *inArg) {
+  [((JavaIoObjectInputStream *) nil_chk(inArg)) defaultReadObject];
+  if (self->field_ != nil) self->field_ = OrgApacheLuceneUtilStringHelper_internWithNSString_(self->field_);
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchSortField)

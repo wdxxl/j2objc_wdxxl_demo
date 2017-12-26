@@ -60,6 +60,10 @@ withOrgApacheLuceneIndexFieldInfo_IndexOptions:(OrgApacheLuceneIndexFieldInfo_In
               withBoolean:(jboolean)storePayloads
 withOrgApacheLuceneIndexFieldInfo_IndexOptions:(OrgApacheLuceneIndexFieldInfo_IndexOptions *)indexOptions;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFieldInfo)
@@ -92,17 +96,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneIndexFieldInfo_IndexOptions_Enum) {
   OrgApacheLuceneIndexFieldInfo_IndexOptions_Enum_DOCS_AND_FREQS_AND_POSITIONS = 2,
 };
 
-@interface OrgApacheLuceneIndexFieldInfo_IndexOptions : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneIndexFieldInfo_IndexOptions : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneIndexFieldInfo_IndexOptions *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -111,16 +111,16 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneIndexFieldInfo_IndexOptions)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_values_[];
 
-inline OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_get_DOCS_ONLY();
+inline OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_get_DOCS_ONLY(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY)
 
-inline OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_get_DOCS_AND_FREQS();
+inline OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_get_DOCS_AND_FREQS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS)
 
-inline OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_get_DOCS_AND_FREQS_AND_POSITIONS();
+inline OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_get_DOCS_AND_FREQS_AND_POSITIONS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneIndexFieldInfo_IndexOptions_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneIndexFieldInfo_IndexOptions_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInfo_IndexOptions *OrgApacheLuceneIndexFieldInfo_IndexOptions_valueOfWithNSString_(NSString *name);
 

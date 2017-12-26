@@ -33,7 +33,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheCommonsCodecLanguageBmRuleType_Enum) {
   OrgApacheCommonsCodecLanguageBmRuleType_Enum_RULES = 2,
 };
 
-@interface OrgApacheCommonsCodecLanguageBmRuleType : JavaLangEnum < NSCopying >
+@interface OrgApacheCommonsCodecLanguageBmRuleType : JavaLangEnum
 
 #pragma mark Public
 
@@ -43,10 +43,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheCommonsCodecLanguageBmRuleType_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRuleType)
@@ -54,16 +50,16 @@ J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRuleType)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_values_[];
 
-inline OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_get_APPROX();
+inline OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_get_APPROX(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecLanguageBmRuleType, APPROX)
 
-inline OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_get_EXACT();
+inline OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_get_EXACT(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecLanguageBmRuleType, EXACT)
 
-inline OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_get_RULES();
+inline OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_get_RULES(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecLanguageBmRuleType, RULES)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheCommonsCodecLanguageBmRuleType_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheCommonsCodecLanguageBmRuleType_values(void);
 
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmRuleType *OrgApacheCommonsCodecLanguageBmRuleType_valueOfWithNSString_(NSString *name);
 

@@ -40,7 +40,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanScorer, bucketTable_, OrgApacheL
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanScorer, coordFactors_, IOSFloatArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanScorer, current_, OrgApacheLuceneSearchBooleanScorer_Bucket *)
 
-inline jint OrgApacheLuceneSearchBooleanScorer_get_PROHIBITED_MASK();
+inline jint OrgApacheLuceneSearchBooleanScorer_get_PROHIBITED_MASK(void);
 #define OrgApacheLuceneSearchBooleanScorer_PROHIBITED_MASK 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchBooleanScorer, PROHIBITED_MASK, jint)
 
@@ -125,7 +125,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchBooleanScorer_BucketScorer)
 - (jboolean)scoreWithOrgApacheLuceneSearchCollector:(OrgApacheLuceneSearchCollector *)collector
                                             withInt:(jint)max
                                             withInt:(jint)firstDocID {
-  JreAssert((firstDocID == -1), (@"org/apache/lucene/search/BooleanScorer.java:239 condition failed: assert firstDocID == -1;"));
+  JreAssert(firstDocID == -1, @"org/apache/lucene/search/BooleanScorer.java:239 condition failed: assert firstDocID == -1;");
   jboolean more;
   OrgApacheLuceneSearchBooleanScorer_Bucket *tmp;
   OrgApacheLuceneSearchBooleanScorer_BucketScorer *bs = new_OrgApacheLuceneSearchBooleanScorer_BucketScorer_initWithOrgApacheLuceneSearchWeight_(weight_);

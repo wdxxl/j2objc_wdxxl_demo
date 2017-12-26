@@ -25,25 +25,25 @@
 
 @end
 
-inline jint OrgApacheCommonsCodecDigestDigestUtils_get_STREAM_BUFFER_LENGTH();
+inline jint OrgApacheCommonsCodecDigestDigestUtils_get_STREAM_BUFFER_LENGTH(void);
 #define OrgApacheCommonsCodecDigestDigestUtils_STREAM_BUFFER_LENGTH 1024
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestDigestUtils, STREAM_BUFFER_LENGTH, jint)
 
 __attribute__((unused)) static IOSByteArray *OrgApacheCommonsCodecDigestDigestUtils_digestWithJavaSecurityMessageDigest_withJavaIoInputStream_(JavaSecurityMessageDigest *digest, JavaIoInputStream *data);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecDigestDigestUtils__Annotations$6(void);
 
 @implementation OrgApacheCommonsCodecDigestDigestUtils
 
@@ -423,7 +423,7 @@ JavaSecurityMessageDigest *OrgApacheCommonsCodecDigestDigestUtils_getDigestWithN
     return JavaSecurityMessageDigest_getInstanceWithNSString_(algorithm);
   }
   @catch (JavaSecurityNoSuchAlgorithmException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 

@@ -71,19 +71,19 @@ J2OBJC_FIELD_SETTER(OrgJsoupSelectQueryParser, tq_, OrgJsoupParserTokenQueue *)
 J2OBJC_FIELD_SETTER(OrgJsoupSelectQueryParser, query_, NSString *)
 J2OBJC_FIELD_SETTER(OrgJsoupSelectQueryParser, evals_, id<JavaUtilList>)
 
-inline IOSObjectArray *OrgJsoupSelectQueryParser_get_combinators();
+inline IOSObjectArray *OrgJsoupSelectQueryParser_get_combinators(void);
 static IOSObjectArray *OrgJsoupSelectQueryParser_combinators;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupSelectQueryParser, combinators, IOSObjectArray *)
 
-inline IOSObjectArray *OrgJsoupSelectQueryParser_get_AttributeEvals();
+inline IOSObjectArray *OrgJsoupSelectQueryParser_get_AttributeEvals(void);
 static IOSObjectArray *OrgJsoupSelectQueryParser_AttributeEvals;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupSelectQueryParser, AttributeEvals, IOSObjectArray *)
 
-inline JavaUtilRegexPattern *OrgJsoupSelectQueryParser_get_NTH_AB();
+inline JavaUtilRegexPattern *OrgJsoupSelectQueryParser_get_NTH_AB(void);
 static JavaUtilRegexPattern *OrgJsoupSelectQueryParser_NTH_AB;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupSelectQueryParser, NTH_AB, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgJsoupSelectQueryParser_get_NTH_B();
+inline JavaUtilRegexPattern *OrgJsoupSelectQueryParser_get_NTH_B(void);
 static JavaUtilRegexPattern *OrgJsoupSelectQueryParser_NTH_B;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupSelectQueryParser, NTH_B, JavaUtilRegexPattern *)
 

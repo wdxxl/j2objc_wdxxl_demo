@@ -44,9 +44,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupHelperW3CDom, factory_, JavaxXmlParsersDocumentBuild
 
 FOUNDATION_EXPORT void OrgJsoupHelperW3CDom_init(OrgJsoupHelperW3CDom *self);
 
-FOUNDATION_EXPORT OrgJsoupHelperW3CDom *new_OrgJsoupHelperW3CDom_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupHelperW3CDom *new_OrgJsoupHelperW3CDom_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupHelperW3CDom *create_OrgJsoupHelperW3CDom_init();
+FOUNDATION_EXPORT OrgJsoupHelperW3CDom *create_OrgJsoupHelperW3CDom_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperW3CDom)
 
@@ -75,6 +75,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperW3CDom)
 
 - (void)tailWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)source
                           withInt:(jint)depth;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

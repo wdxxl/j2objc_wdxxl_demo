@@ -62,7 +62,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelReader, fieldToReader_, id<JavaU
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelReader, readerToFields_, id<JavaUtilMap>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelReader, storedFieldReaders_, id<JavaUtilList>)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexParallelReader__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexParallelReader__Annotations$0(void);
 
 @interface OrgApacheLuceneIndexParallelReader_ParallelTermEnum : OrgApacheLuceneIndexTermEnum {
  @public
@@ -255,7 +255,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       return [self doReopenWithBoolean:true];
     }
     @catch (JavaLangException *ex) {
-      @throw new_JavaLangRuntimeException_initWithNSException_(ex);
+      @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(ex);
     }
   }
 }

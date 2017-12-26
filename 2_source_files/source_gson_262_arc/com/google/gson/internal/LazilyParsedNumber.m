@@ -23,6 +23,8 @@
 
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLazilyParsedNumber, value_, NSString *)
 
+__attribute__((unused)) static id ComGoogleGsonInternalLazilyParsedNumber_writeReplace(ComGoogleGsonInternalLazilyParsedNumber *self);
+
 @implementation ComGoogleGsonInternalLazilyParsedNumber
 
 - (instancetype)initWithNSString:(NSString *)value {
@@ -66,7 +68,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalLazilyParsedNumber, value_, NSString *)
 }
 
 - (id)writeReplace {
-  return new_JavaMathBigDecimal_initWithNSString_(value_);
+  return ComGoogleGsonInternalLazilyParsedNumber_writeReplace(self);
 }
 
 - (NSUInteger)hash {
@@ -129,6 +131,10 @@ ComGoogleGsonInternalLazilyParsedNumber *new_ComGoogleGsonInternalLazilyParsedNu
 
 ComGoogleGsonInternalLazilyParsedNumber *create_ComGoogleGsonInternalLazilyParsedNumber_initWithNSString_(NSString *value) {
   J2OBJC_CREATE_IMPL(ComGoogleGsonInternalLazilyParsedNumber, initWithNSString_, value)
+}
+
+id ComGoogleGsonInternalLazilyParsedNumber_writeReplace(ComGoogleGsonInternalLazilyParsedNumber *self) {
+  return new_JavaMathBigDecimal_initWithNSString_(self->value_);
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonInternalLazilyParsedNumber)

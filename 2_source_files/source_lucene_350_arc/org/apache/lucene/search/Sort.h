@@ -54,21 +54,21 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneSearchSort)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchSort, fields_, IOSObjectArray *)
 
-inline OrgApacheLuceneSearchSort *OrgApacheLuceneSearchSort_get_RELEVANCE();
+inline OrgApacheLuceneSearchSort *OrgApacheLuceneSearchSort_get_RELEVANCE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchSort *OrgApacheLuceneSearchSort_RELEVANCE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSort, RELEVANCE, OrgApacheLuceneSearchSort *)
 
-inline OrgApacheLuceneSearchSort *OrgApacheLuceneSearchSort_get_INDEXORDER();
+inline OrgApacheLuceneSearchSort *OrgApacheLuceneSearchSort_get_INDEXORDER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchSort *OrgApacheLuceneSearchSort_INDEXORDER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSort, INDEXORDER, OrgApacheLuceneSearchSort *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchSort_init(OrgApacheLuceneSearchSort *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchSort *new_OrgApacheLuceneSearchSort_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchSort *new_OrgApacheLuceneSearchSort_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchSort *create_OrgApacheLuceneSearchSort_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchSort *create_OrgApacheLuceneSearchSort_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchSort_initWithOrgApacheLuceneSearchSortField_(OrgApacheLuceneSearchSort *self, OrgApacheLuceneSearchSortField *field);
 

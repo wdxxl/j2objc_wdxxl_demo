@@ -54,7 +54,7 @@
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalExcluder, serializationStrategies_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternalExcluder, deserializationStrategies_, id<JavaUtilList>)
 
-inline jdouble ComGoogleGsonInternalExcluder_get_IGNORE_VERSIONS();
+inline jdouble ComGoogleGsonInternalExcluder_get_IGNORE_VERSIONS(void);
 #define ComGoogleGsonInternalExcluder_IGNORE_VERSIONS -1.0
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonInternalExcluder, IGNORE_VERSIONS, jdouble)
 

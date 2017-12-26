@@ -21,27 +21,27 @@
 
 @end
 
-inline IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools_get_CODING_CASES();
+inline IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools_get_CODING_CASES(void);
 static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools_CODING_CASES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilIndexableBinaryStringTools, CODING_CASES, IOSObjectArray *)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilIndexableBinaryStringTools_init(OrgApacheLuceneUtilIndexableBinaryStringTools *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilIndexableBinaryStringTools *new_OrgApacheLuceneUtilIndexableBinaryStringTools_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilIndexableBinaryStringTools *new_OrgApacheLuceneUtilIndexableBinaryStringTools_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilIndexableBinaryStringTools *create_OrgApacheLuceneUtilIndexableBinaryStringTools_init();
+__attribute__((unused)) static OrgApacheLuceneUtilIndexableBinaryStringTools *create_OrgApacheLuceneUtilIndexableBinaryStringTools_init(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilIndexableBinaryStringTools__Annotations$5(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilIndexableBinaryStringTools)
 
@@ -223,7 +223,7 @@ void OrgApacheLuceneUtilIndexableBinaryStringTools_encodeWithJavaNioByteBuffer_w
 
 void OrgApacheLuceneUtilIndexableBinaryStringTools_encodeWithByteArray_withInt_withInt_withCharArray_withInt_withInt_(IOSByteArray *inputArray, jint inputOffset, jint inputLength, IOSCharArray *outputArray, jint outputOffset, jint outputLength) {
   OrgApacheLuceneUtilIndexableBinaryStringTools_initialize();
-  JreAssert((outputLength == OrgApacheLuceneUtilIndexableBinaryStringTools_getEncodedLengthWithByteArray_withInt_withInt_(inputArray, inputOffset, inputLength)), (@"org/apache/lucene/util/IndexableBinaryStringTools.java:196 condition failed: assert (outputLength == getEncodedLength(inputArray, inputOffset,\n        inputLength));"));
+  JreAssert(outputLength == OrgApacheLuceneUtilIndexableBinaryStringTools_getEncodedLengthWithByteArray_withInt_withInt_(inputArray, inputOffset, inputLength), @"org/apache/lucene/util/IndexableBinaryStringTools.java:196 condition failed: assert (outputLength == getEncodedLength(inputArray, inputOffset,\n        inputLength));");
   if (inputLength > 0) {
     jint inputByteNum = inputOffset;
     jint caseNum = 0;
@@ -275,7 +275,7 @@ void OrgApacheLuceneUtilIndexableBinaryStringTools_decodeWithJavaNioCharBuffer_w
 
 void OrgApacheLuceneUtilIndexableBinaryStringTools_decodeWithCharArray_withInt_withInt_withByteArray_withInt_withInt_(IOSCharArray *inputArray, jint inputOffset, jint inputLength, IOSByteArray *outputArray, jint outputOffset, jint outputLength) {
   OrgApacheLuceneUtilIndexableBinaryStringTools_initialize();
-  JreAssert((outputLength == OrgApacheLuceneUtilIndexableBinaryStringTools_getDecodedLengthWithCharArray_withInt_withInt_(inputArray, inputOffset, inputLength)), (@"org/apache/lucene/util/IndexableBinaryStringTools.java:281 condition failed: assert (outputLength == getDecodedLength(inputArray, inputOffset,\n        inputLength));"));
+  JreAssert(outputLength == OrgApacheLuceneUtilIndexableBinaryStringTools_getDecodedLengthWithCharArray_withInt_withInt_(inputArray, inputOffset, inputLength), @"org/apache/lucene/util/IndexableBinaryStringTools.java:281 condition failed: assert (outputLength == getDecodedLength(inputArray, inputOffset,\n        inputLength));");
   jint numInputChars = inputLength - 1;
   jint numOutputBytes = outputLength;
   if (numOutputBytes > 0) {

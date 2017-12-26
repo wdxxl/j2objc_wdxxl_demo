@@ -30,26 +30,26 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentNumberTools)
 
-inline NSString *OrgApacheLuceneDocumentNumberTools_get_MIN_STRING_VALUE();
+inline NSString *OrgApacheLuceneDocumentNumberTools_get_MIN_STRING_VALUE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentNumberTools_MIN_STRING_VALUE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentNumberTools, MIN_STRING_VALUE, NSString *)
 
-inline NSString *OrgApacheLuceneDocumentNumberTools_get_MAX_STRING_VALUE();
+inline NSString *OrgApacheLuceneDocumentNumberTools_get_MAX_STRING_VALUE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentNumberTools_MAX_STRING_VALUE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentNumberTools, MAX_STRING_VALUE, NSString *)
 
-inline jint OrgApacheLuceneDocumentNumberTools_get_STR_SIZE();
+inline jint OrgApacheLuceneDocumentNumberTools_get_STR_SIZE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneDocumentNumberTools_STR_SIZE;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneDocumentNumberTools, STR_SIZE, jint)
 
 FOUNDATION_EXPORT void OrgApacheLuceneDocumentNumberTools_init(OrgApacheLuceneDocumentNumberTools *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneDocumentNumberTools *new_OrgApacheLuceneDocumentNumberTools_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneDocumentNumberTools *new_OrgApacheLuceneDocumentNumberTools_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneDocumentNumberTools *create_OrgApacheLuceneDocumentNumberTools_init();
+FOUNDATION_EXPORT OrgApacheLuceneDocumentNumberTools *create_OrgApacheLuceneDocumentNumberTools_init(void);
 
 FOUNDATION_EXPORT NSString *OrgApacheLuceneDocumentNumberTools_longToStringWithLong_(jlong l);
 

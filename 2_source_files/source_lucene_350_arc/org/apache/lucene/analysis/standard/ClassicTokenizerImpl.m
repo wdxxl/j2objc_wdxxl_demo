@@ -72,83 +72,83 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, zzReader_, JavaIoReader *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, zzBuffer_, IOSCharArray *)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_BUFFERSIZE();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_BUFFERSIZE(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_BUFFERSIZE 16384
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_BUFFERSIZE, jint)
 
-inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_LEXSTATE();
+inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_LEXSTATE(void);
 static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_LEXSTATE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_LEXSTATE, IOSIntArray *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_CMAP_PACKED();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_CMAP_PACKED(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_CMAP_PACKED = @"\t\x00\x01\x00\x01\x0d\x01\x00\x01\x00\x01\x0c\x12\x00\x01\x00\x05\x00\x01\x05\x01\x03\x04\x00\x01\t\x01\x07\x01\x04\x01\t\n\x02\x06\x00\x01\x06\x1a\n\x04\x00\x01\x08\x01\x00\x1a\n/\x00\x01\n\n\x00\x01\n\x04\x00\x01\n\x05\x00\x17\n\x01\x00\x1f\n\x01\x00\u0128\n\x02\x00\x12\n\x1c\x00^\n\x02\x00\t\n\x02\x00\x07\n\x0e\x00\x02\n\x0e\x00\x05\n\t\x00\x01\n\xc2\x8b\x00\x01\n\x0b\x00\x01\n\x01\x00\x03\n\x01\x00\x01\n\x01\x00\x14\n\x01\x00,\n\x01\x00\x08\n\x02\x00\x1a\n\x0c\x00\xc2\x82\n\n\x00""9\n\x02\x00\x02\n\x02\x00\x02\n\x03\x00&\n\x02\x00\x02\n7\x00&\n\x02\x00\x01\n\x07\x00'\nH\x00\x1b\n\x05\x00\x03\n.\x00\x1a\n\x05\x00\x0b\n\x15\x00\n\x02\x07\x00""c\n\x01\x00\x01\n\x0f\x00\x02\n\t\x00\n\x02\x03\n\x13\x00\x01\n\x01\x00\x1b\nS\x00&\n\u015f\x00""5\n\x03\x00\x01\n\x12\x00\x01\n\x07\x00\n\n\x04\x00\n\x02\x15\x00\x08\n\x02\x00\x02\n\x02\x00\x16\n\x01\x00\x07\n\x01\x00\x01\n\x03\x00\x04\n\"\x00\x02\n\x01\x00\x03\n\x04\x00\n\x02\x02\n\x13\x00\x06\n\x04\x00\x02\n\x02\x00\x16\n\x01\x00\x07\n\x01\x00\x02\n\x01\x00\x02\n\x01\x00\x02\n\x1f\x00\x04\n\x01\x00\x01\n\x07\x00\n\x02\x02\x00\x03\n\x10\x00\x07\n\x01\x00\x01\n\x01\x00\x03\n\x01\x00\x16\n\x01\x00\x07\n\x01\x00\x02\n\x01\x00\x05\n\x03\x00\x01\n\x12\x00\x01\n\x0f\x00\x01\n\x05\x00\n\x02\x15\x00\x08\n\x02\x00\x02\n\x02\x00\x16\n\x01\x00\x07\n\x01\x00\x02\n\x02\x00\x04\n\x03\x00\x01\n\x1e\x00\x02\n\x01\x00\x03\n\x04\x00\n\x02\x15\x00\x06\n\x03\x00\x03\n\x01\x00\x04\n\x03\x00\x02\n\x01\x00\x01\n\x01\x00\x02\n\x03\x00\x02\n\x03\x00\x03\n\x03\x00\x08\n\x01\x00\x03\n-\x00\t\x02\x15\x00\x08\n\x01\x00\x03\n\x01\x00\x17\n\x01\x00\n\n\x01\x00\x05\n&\x00\x02\n\x04\x00\n\x02\x15\x00\x08\n\x01\x00\x03\n\x01\x00\x17\n\x01\x00\n\n\x01\x00\x05\n$\x00\x01\n\x01\x00\x02\n\x04\x00\n\x02\x15\x00\x08\n\x01\x00\x03\n\x01\x00\x17\n\x01\x00\x10\n&\x00\x02\n\x04\x00\n\x02\x15\x00\x12\n\x03\x00\x18\n\x01\x00\t\n\x01\x00\x01\n\x02\x00\x07\n9\x00\x01\x01""0\n\x01\x01\x02\n\x0c\x01\x07\n\t\x01\n\x02'\x00\x02\n\x01\x00\x01\n\x02\x00\x02\n\x01\x00\x01\n\x02\x00\x01\n\x06\x00\x04\n\x01\x00\x07\n\x01\x00\x03\n\x01\x00\x01\n\x01\x00\x01\n\x02\x00\x02\n\x01\x00\x04\n\x01\x00\x02\n\t\x00\x01\n\x02\x00\x05\n\x01\x00\x01\n\t\x00\n\x02\x02\x00\x02\n\"\x00\x01\n\x1f\x00\n\x02\x16\x00\x08\n\x01\x00\"\n\x1d\x00\x04\nt\x00\"\n\x01\x00\x05\n\x01\x00\x02\n\x15\x00\n\x02\x06\x00\x06\nJ\x00&\n\n\x00'\n\t\x00Z\n\x05\x00""D\n\x05\x00R\n\x06\x00\x07\n\x01\x00?\n\x01\x00\x01\n\x01\x00\x04\n\x02\x00\x07\n\x01\x00\x01\n\x01\x00\x04\n\x02\x00'\n\x01\x00\x01\n\x01\x00\x04\n\x02\x00\x1f\n\x01\x00\x01\n\x01\x00\x04\n\x02\x00\x07\n\x01\x00\x01\n\x01\x00\x04\n\x02\x00\x07\n\x01\x00\x07\n\x01\x00\x17\n\x01\x00\x1f\n\x01\x00\x01\n\x01\x00\x04\n\x02\x00\x07\n\x01\x00'\n\x01\x00\x13\n\x0e\x00\t\x02.\x00U\n\x0c\x00\u026c\n\x02\x00\x08\n\n\x00\x1a\n\x05\x00K\n\xc2\x95\x00""4\n,\x00\n\x02&\x00\n\x02\x06\x00X\n\x08\x00)\n\u0557\x00\xc2\x9c\n\x04\x00Z\n\x06\x00\x16\n\x02\x00\x06\n\x02\x00&\n\x02\x00\x06\n\x02\x00\x08\n\x01\x00\x01\n\x01\x00\x01\n\x01\x00\x01\n\x01\x00\x1f\n\x02\x00""5\n\x01\x00\x07\n\x01\x00\x01\n\x03\x00\x03\n\x01\x00\x07\n\x03\x00\x04\n\x02\x00\x06\n\x04\x00\x0d\n\x05\x00\x03\n\x01\x00\x07\n\xc2\x82\x00\x01\n\xc2\x82\x00\x01\n\x04\x00\x01\n\x02\x00\n\n\x01\x00\x01\n\x03\x00\x05\n\x06\x00\x01\n\x01\x00\x01\n\x01\x00\x01\n\x01\x00\x04\n\x01\x00\x03\n\x01\x00\x07\n\u0ecb\x00\x02\n*\x00\x05\n\n\x00\x01\x0bT\x0b\x08\x0b\x02\x0b\x02\x0bZ\x0b\x01\x0b\x03\x0b\x06\x0b(\x0b\x03\x0b\x01\x00^\n\x11\x00\x18\n8\x00\x10\x0b\u0100\x00\xc2\x80\x0b\xc2\x80\x00\u19b6\x0b\n\x0b@\x00\u51a6\x0bZ\x0b\u048d\n\u0773\x00\u2ba4\n\u215c\x00\u012e\x0b\u00d2\x0b\x07\n\x0c\x00\x05\n\x05\x00\x01\n\x01\x00\n\n\x01\x00\x0d\n\x01\x00\x05\n\x01\x00\x01\n\x01\x00\x02\n\x01\x00\x02\n\x01\x00l\n!\x00\u016b\n\x12\x00@\n\x02\x00""6\n(\x00\x0c\nt\x00\x03\n\x01\x00\x01\n\x01\x00\xc2\x87\n\x13\x00\n\x02\x07\x00\x1a\n\x06\x00\x1a\n\n\x00\x01\x0b:\x0b\x1f\n\x03\x00\x06\n\x02\x00\x06\n\x02\x00\x06\n\x02\x00\x03\n#\x00";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_CMAP_PACKED, NSString *)
 
-inline IOSCharArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_CMAP();
+inline IOSCharArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_CMAP(void);
 static IOSCharArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_CMAP;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_CMAP, IOSCharArray *)
 
-inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ACTION();
+inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ACTION(void);
 static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ACTION;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ACTION, IOSIntArray *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ACTION_PACKED_0();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ACTION_PACKED_0(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ACTION_PACKED_0 = @"\x01\x00\x01\x01\x03\x02\x01\x03\x01\x01\x0b\x00\x01\x02\x03\x04\x02\x00\x01\x05\x01\x00\x01\x05\x03\x04\x06\x05\x01\x06\x01\x04\x02\x07\x01\x08\x01\x00\x01\x08\x03\x00\x02\x08\x01\t\x01\n\x01\x04";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ACTION_PACKED_0, NSString *)
 
-inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ROWMAP();
+inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ROWMAP(void);
 static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ROWMAP;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ROWMAP, IOSIntArray *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ROWMAP_PACKED_0();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ROWMAP_PACKED_0(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ROWMAP_PACKED_0 = @"\x00\x00\x00\x0e\x00\x1c\x00*\x00""8\x00\x0e\x00""F\x00T\x00""b\x00p\x00~\x00\xc2\x8c\x00\xc2\x9a\x00\u00a8\x00\u00b6\x00\u00c4\x00\u00d2\x00\u00e0\x00\u00ee\x00\u00fc\x00\u010a\x00\u0118\x00\u0126\x00\u0134\x00\u0142\x00\u0150\x00\u015e\x00\u016c\x00\u017a\x00\u0188\x00\u0196\x00\u01a4\x00\u01b2\x00\u01c0\x00\u01ce\x00\u01dc\x00\u01ea\x00\u01f8\x00\u00d2\x00\u0206\x00\u0214\x00\u0222\x00\u0230\x00\u023e\x00\u024c\x00\u025a\x00T\x00\xc2\x8c\x00\u0268\x00\u0276\x00\u0284";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ROWMAP_PACKED_0, NSString *)
 
-inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_TRANS();
+inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_TRANS(void);
 static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_TRANS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_TRANS, IOSIntArray *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_TRANS_PACKED_0();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_TRANS_PACKED_0(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_TRANS_PACKED_0 = @"\x01\x02\x01\x03\x01\x04\x07\x02\x01\x05\x01\x06\x01\x07\x01\x02\x0f\x00\x02\x03\x01\x00\x01\x08\x01\x00\x01\t\x02\n\x01\x0b\x01\x03\x04\x00\x01\x03\x01\x04\x01\x00\x01\x0c\x01\x00\x01\t\x02\x0d\x01\x0e\x01\x04\x04\x00\x01\x03\x01\x04\x01\x0f\x01\x10\x01\x11\x01\x12\x02\n\x01\x0b\x01\x13\x10\x00\x01\x02\x01\x00\x01\x14\x01\x15\x07\x00\x01\x16\x04\x00\x02\x17\x07\x00\x01\x17\x04\x00\x01\x18\x01\x19\x07\x00\x01\x1a\x05\x00\x01\x1b\x07\x00\x01\x0b\x04\x00\x01\x1c\x01\x1d\x07\x00\x01\x1e\x04\x00\x01\x1f\x01 \x07\x00\x01!\x04\x00\x01\"\x01#\x07\x00\x01$\x0d\x00\x01%\x04\x00\x01\x14\x01\x15\x07\x00\x01&\x0d\x00\x01'\x04\x00\x02\x17\x07\x00\x01(\x04\x00\x01\x03\x01\x04\x01\x0f\x01\x08\x01\x11\x01\x12\x02\n\x01\x0b\x01\x13\x04\x00\x02\x14\x01\x00\x01)\x01\x00\x01\t\x02*\x01\x00\x01\x14\x04\x00\x01\x14\x01\x15\x01\x00\x01+\x01\x00\x01\t\x02,\x01-\x01\x15\x04\x00\x01\x14\x01\x15\x01\x00\x01)\x01\x00\x01\t\x02*\x01\x00\x01\x16\x04\x00\x02\x17\x01\x00\x01.\x02\x00\x01.\x02\x00\x01\x17\x04\x00\x02\x18\x01\x00\x01*\x01\x00\x01\t\x02*\x01\x00\x01\x18\x04\x00\x01\x18\x01\x19\x01\x00\x01,\x01\x00\x01\t\x02,\x01-\x01\x19\x04\x00\x01\x18\x01\x19\x01\x00\x01*\x01\x00\x01\t\x02*\x01\x00\x01\x1a\x05\x00\x01\x1b\x01\x00\x01-\x02\x00\x03-\x01\x1b\x04\x00\x02\x1c\x01\x00\x01/\x01\x00\x01\t\x02\n\x01\x0b\x01\x1c\x04\x00\x01\x1c\x01\x1d\x01\x00\x01""0\x01\x00\x01\t\x02\x0d\x01\x0e\x01\x1d\x04\x00\x01\x1c\x01\x1d\x01\x00\x01/\x01\x00\x01\t\x02\n\x01\x0b\x01\x1e\x04\x00\x02\x1f\x01\x00\x01\n\x01\x00\x01\t\x02\n\x01\x0b\x01\x1f\x04\x00\x01\x1f\x01 \x01\x00\x01\x0d\x01\x00\x01\t\x02\x0d\x01\x0e\x01 \x04\x00\x01\x1f\x01 \x01\x00\x01\n\x01\x00\x01\t\x02\n\x01\x0b\x01!\x04\x00\x02\"\x01\x00\x01\x0b\x02\x00\x03\x0b\x01\"\x04\x00\x01\"\x01#\x01\x00\x01\x0e\x02\x00\x03\x0e\x01#\x04\x00\x01\"\x01#\x01\x00\x01\x0b\x02\x00\x03\x0b\x01$\x06\x00\x01\x0f\x06\x00\x01%\x04\x00\x01\x14\x01\x15\x01\x00\x01""1\x01\x00\x01\t\x02*\x01\x00\x01\x16\x04\x00\x02\x17\x01\x00\x01.\x02\x00\x01.\x02\x00\x01(\x04\x00\x02\x14\x07\x00\x01\x14\x04\x00\x02\x18\x07\x00\x01\x18\x04\x00\x02\x1c\x07\x00\x01\x1c\x04\x00\x02\x1f\x07\x00\x01\x1f\x04\x00\x02\"\x07\x00\x01\"\x04\x00\x02""2\x07\x00\x01""2\x04\x00\x02\x14\x07\x00\x01""3\x04\x00\x02""2\x01\x00\x01.\x02\x00\x01.\x02\x00\x01""2\x04\x00\x02\x14\x01\x00\x01""1\x01\x00\x01\t\x02*\x01\x00\x01\x14\x03\x00";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_TRANS_PACKED_0, NSString *)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_UNKNOWN_ERROR();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_UNKNOWN_ERROR(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_UNKNOWN_ERROR 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_UNKNOWN_ERROR, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_NO_MATCH();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_NO_MATCH(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_NO_MATCH 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_NO_MATCH, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_PUSHBACK_2BIG();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_PUSHBACK_2BIG(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_PUSHBACK_2BIG 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_PUSHBACK_2BIG, jint)
 
-inline IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ERROR_MSG();
+inline IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ERROR_MSG(void);
 static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ERROR_MSG;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ERROR_MSG, IOSObjectArray *)
 
-inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ATTRIBUTE();
+inline IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ATTRIBUTE(void);
 static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ATTRIBUTE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ATTRIBUTE, IOSIntArray *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ATTRIBUTE_PACKED_0();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_get_ZZ_ATTRIBUTE_PACKED_0(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_ZZ_ATTRIBUTE_PACKED_0 = @"\x01\x00\x01\t\x03\x01\x01\t\x01\x01\x0b\x00\x04\x01\x02\x00\x01\x01\x01\x00\x0f\x01\x01\x00\x01\x01\x03\x00\x05\x01";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl, ZZ_ATTRIBUTE_PACKED_0, NSString *)
 
-__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackAction();
+__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackAction(void);
 
 __attribute__((unused)) static jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackActionWithNSString_withInt_withIntArray_(NSString *packed, jint offset, IOSIntArray *result);
 
-__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackRowMap();
+__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackRowMap(void);
 
 __attribute__((unused)) static jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackRowMapWithNSString_withInt_withIntArray_(NSString *packed, jint offset, IOSIntArray *result);
 
-__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackTrans();
+__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackTrans(void);
 
 __attribute__((unused)) static jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackTransWithNSString_withInt_withIntArray_(NSString *packed, jint offset, IOSIntArray *result);
 
-__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackAttribute();
+__attribute__((unused)) static IOSIntArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackAttribute(void);
 
 __attribute__((unused)) static jint OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzUnpackAttributeWithNSString_withInt_withIntArray_(NSString *packed, jint offset, IOSIntArray *result);
 
@@ -160,7 +160,7 @@ __attribute__((unused)) static jint OrgApacheLuceneAnalysisStandardClassicTokeni
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisStandardClassicTokenizerImpl_zzScanErrorWithInt_(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl *self, jint errorCode);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizerImpl__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisStandardClassicTokenizerImpl)
 

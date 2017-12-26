@@ -25,7 +25,7 @@
 
 __attribute__((unused)) static NSString *OrgApacheLuceneStoreDataInput_readModifiedUTF8String(OrgApacheLuceneStoreDataInput *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDataInput__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDataInput__Annotations$0(void);
 
 @implementation OrgApacheLuceneStoreDataInput
 
@@ -82,7 +82,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   i |= JreLShift32((b & (jint) 0x7F), 21);
   if ((b & (jint) 0x80) == 0) return i;
   b = [self readByte];
-  JreAssert(((b & (jint) 0x80) == 0), (@"org/apache/lucene/store/DataInput.java:118 condition failed: assert (b & 0x80) == 0;"));
+  JreAssert((b & (jint) 0x80) == 0, @"org/apache/lucene/store/DataInput.java:118 condition failed: assert (b & 0x80) == 0;");
   return i | (JreLShift32((b & (jint) 0x7F), 28));
 }
 
@@ -116,7 +116,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   i |= JreLShift64((b & (jlong) 0x7FLL), 49);
   if ((b & (jint) 0x80) == 0) return i;
   b = [self readByte];
-  JreAssert(((b & (jint) 0x80) == 0), (@"org/apache/lucene/store/DataInput.java:169 condition failed: assert (b & 0x80) == 0;"));
+  JreAssert((b & (jint) 0x80) == 0, @"org/apache/lucene/store/DataInput.java:169 condition failed: assert (b & 0x80) == 0;");
   return i | (JreLShift64((b & (jlong) 0x7FLL), 56));
 }
 

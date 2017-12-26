@@ -65,9 +65,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchPhraseQuery)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchPhraseQuery_init(OrgApacheLuceneSearchPhraseQuery *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchPhraseQuery *new_OrgApacheLuceneSearchPhraseQuery_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchPhraseQuery *new_OrgApacheLuceneSearchPhraseQuery_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchPhraseQuery *create_OrgApacheLuceneSearchPhraseQuery_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchPhraseQuery *create_OrgApacheLuceneSearchPhraseQuery_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchPhraseQuery)
 
@@ -103,6 +103,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchPhraseQuery)
 - (jboolean)isEqual:(id)obj;
 
 - (NSUInteger)hash;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

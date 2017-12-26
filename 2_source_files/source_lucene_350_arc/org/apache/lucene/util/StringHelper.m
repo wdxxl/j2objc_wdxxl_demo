@@ -24,7 +24,7 @@
 
 @end
 
-inline id<JavaUtilComparator> OrgApacheLuceneUtilStringHelper_get_versionComparator();
+inline id<JavaUtilComparator> OrgApacheLuceneUtilStringHelper_get_versionComparator(void);
 inline id<JavaUtilComparator> OrgApacheLuceneUtilStringHelper_set_versionComparator(id<JavaUtilComparator> value);
 static id<JavaUtilComparator> OrgApacheLuceneUtilStringHelper_versionComparator;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneUtilStringHelper, versionComparator, id<JavaUtilComparator>)
@@ -44,9 +44,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilStringHelper_1)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilStringHelper_1_init(OrgApacheLuceneUtilStringHelper_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilStringHelper_1 *new_OrgApacheLuceneUtilStringHelper_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilStringHelper_1 *new_OrgApacheLuceneUtilStringHelper_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilStringHelper_1 *create_OrgApacheLuceneUtilStringHelper_1_init();
+__attribute__((unused)) static OrgApacheLuceneUtilStringHelper_1 *create_OrgApacheLuceneUtilStringHelper_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilStringHelper)
 

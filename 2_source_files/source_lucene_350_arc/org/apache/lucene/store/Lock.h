@@ -16,9 +16,11 @@
 #if !defined (OrgApacheLuceneStoreLock_) && (INCLUDE_ALL_OrgApacheLuceneStoreLock || defined(INCLUDE_OrgApacheLuceneStoreLock))
 #define OrgApacheLuceneStoreLock_
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneStoreLock : NSObject {
  @public
-  NSException *failureReason_;
+  JavaLangThrowable *failureReason_;
 }
 
 #pragma mark Public
@@ -37,16 +39,16 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreLock)
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreLock, failureReason_, NSException *)
+J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreLock, failureReason_, JavaLangThrowable *)
 
-inline jlong OrgApacheLuceneStoreLock_get_LOCK_POLL_INTERVAL();
+inline jlong OrgApacheLuceneStoreLock_get_LOCK_POLL_INTERVAL(void);
 inline jlong OrgApacheLuceneStoreLock_set_LOCK_POLL_INTERVAL(jlong value);
-inline jlong *OrgApacheLuceneStoreLock_getRef_LOCK_POLL_INTERVAL();
+inline jlong *OrgApacheLuceneStoreLock_getRef_LOCK_POLL_INTERVAL(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jlong OrgApacheLuceneStoreLock_LOCK_POLL_INTERVAL;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneStoreLock, LOCK_POLL_INTERVAL, jlong)
 
-inline jlong OrgApacheLuceneStoreLock_get_LOCK_OBTAIN_WAIT_FOREVER();
+inline jlong OrgApacheLuceneStoreLock_get_LOCK_OBTAIN_WAIT_FOREVER(void);
 #define OrgApacheLuceneStoreLock_LOCK_OBTAIN_WAIT_FOREVER -1LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreLock, LOCK_OBTAIN_WAIT_FOREVER, jlong)
 

@@ -99,9 +99,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingBlockGroupingCollector_Fak
 
 __attribute__((unused)) static void OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer_init(OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer *new_OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer *new_OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer *create_OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer_init();
+__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer *create_OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingBlockGroupingCollector_FakeScorer)
 
@@ -128,9 +128,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup
 
 __attribute__((unused)) static void OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup_init(OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *new_OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *new_OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *create_OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup_init();
+__attribute__((unused)) static OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *create_OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup)
 
@@ -272,7 +272,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingBlockGroupingCollector_G
   subDocUpto_++;
   if (groupCompetes_) {
     if (subDocUpto_ == 1) {
-      JreAssert((!queueFull_), (@"org/apache/lucene/search/grouping/BlockGroupingCollector.java:428 condition failed: assert !queueFull;"));
+      JreAssert(!queueFull_, @"org/apache/lucene/search/grouping/BlockGroupingCollector.java:428 condition failed: assert !queueFull;");
       {
         IOSObjectArray *a__ = comparators_;
         OrgApacheLuceneSearchFieldComparator * const *b__ = ((IOSObjectArray *) nil_chk(a__))->buffer_;
@@ -439,7 +439,7 @@ void OrgApacheLuceneSearchGroupingBlockGroupingCollector_processGroup(OrgApacheL
     }
     else {
       OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *og = [((OrgApacheLuceneSearchGroupingBlockGroupingCollector_GroupQueue *) nil_chk(self->groupQueue_)) top];
-      JreAssert((og != nil), (@"org/apache/lucene/search/grouping/BlockGroupingCollector.java:205 condition failed: assert og != null;"));
+      JreAssert(og != nil, @"org/apache/lucene/search/grouping/BlockGroupingCollector.java:205 condition failed: assert og != null;");
       ((OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *) nil_chk(og))->count_ = self->subDocUpto_;
       og->topGroupDoc_ = self->docBase_ + self->topGroupDoc_;
       IOSIntArray *savDocs = og->docs_;
@@ -619,8 +619,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchGroupingBlockGroupingColle
 
 - (jboolean)lessThanWithId:(OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *)group1
                     withId:(OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *)group2 {
-  JreAssert((group1 != group2), (@"org/apache/lucene/search/grouping/BlockGroupingCollector.java:148 condition failed: assert group1 != group2;"));
-  JreAssert((((OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *) nil_chk(group1))->comparatorSlot_ != ((OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *) nil_chk(group2))->comparatorSlot_), (@"org/apache/lucene/search/grouping/BlockGroupingCollector.java:149 condition failed: assert group1.comparatorSlot != group2.comparatorSlot;"));
+  JreAssert(group1 != group2, @"org/apache/lucene/search/grouping/BlockGroupingCollector.java:148 condition failed: assert group1 != group2;");
+  JreAssert(((OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *) nil_chk(group1))->comparatorSlot_ != ((OrgApacheLuceneSearchGroupingBlockGroupingCollector_OneGroup *) nil_chk(group2))->comparatorSlot_, @"org/apache/lucene/search/grouping/BlockGroupingCollector.java:149 condition failed: assert group1.comparatorSlot != group2.comparatorSlot;");
   jint numComparators = ((IOSObjectArray *) nil_chk(this$0_->comparators_))->size_;
   for (jint compIDX = 0; compIDX < numComparators; compIDX++) {
     jint c = IOSIntArray_Get(nil_chk(this$0_->reversed_), compIDX) * [((OrgApacheLuceneSearchFieldComparator *) nil_chk(IOSObjectArray_Get(this$0_->comparators_, compIDX))) compareWithInt:group1->comparatorSlot_ withInt:group2->comparatorSlot_];

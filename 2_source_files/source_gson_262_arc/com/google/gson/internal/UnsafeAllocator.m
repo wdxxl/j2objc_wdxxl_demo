@@ -88,9 +88,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalUnsafeAllocator_4)
 
 __attribute__((unused)) static void ComGoogleGsonInternalUnsafeAllocator_4_init(ComGoogleGsonInternalUnsafeAllocator_4 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_4 *new_ComGoogleGsonInternalUnsafeAllocator_4_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_4 *new_ComGoogleGsonInternalUnsafeAllocator_4_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_4 *create_ComGoogleGsonInternalUnsafeAllocator_4_init();
+__attribute__((unused)) static ComGoogleGsonInternalUnsafeAllocator_4 *create_ComGoogleGsonInternalUnsafeAllocator_4_init(void);
 
 @implementation ComGoogleGsonInternalUnsafeAllocator
 

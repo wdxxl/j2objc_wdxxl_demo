@@ -35,7 +35,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmLanguages, languages_, id<JavaUtilSet>)
 
-inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmLanguages_get_LANGUAGES();
+inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmLanguages_get_LANGUAGES(void);
 static id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmLanguages_LANGUAGES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmLanguages, LANGUAGES, id<JavaUtilMap>)
 
@@ -88,9 +88,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageBmLanguages_1)
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageBmLanguages_1_init(OrgApacheCommonsCodecLanguageBmLanguages_1 *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_1 *new_OrgApacheCommonsCodecLanguageBmLanguages_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_1 *new_OrgApacheCommonsCodecLanguageBmLanguages_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_1 *create_OrgApacheCommonsCodecLanguageBmLanguages_1_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_1 *create_OrgApacheCommonsCodecLanguageBmLanguages_1_init(void);
 
 @interface OrgApacheCommonsCodecLanguageBmLanguages_2 : OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet
 
@@ -116,9 +116,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageBmLanguages_2)
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageBmLanguages_2_init(OrgApacheCommonsCodecLanguageBmLanguages_2 *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_2 *new_OrgApacheCommonsCodecLanguageBmLanguages_2_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_2 *new_OrgApacheCommonsCodecLanguageBmLanguages_2_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_2 *create_OrgApacheCommonsCodecLanguageBmLanguages_2_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmLanguages_2 *create_OrgApacheCommonsCodecLanguageBmLanguages_2_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheCommonsCodecLanguageBmLanguages)
 

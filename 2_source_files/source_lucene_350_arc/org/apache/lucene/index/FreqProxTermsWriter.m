@@ -131,9 +131,9 @@ withOrgApacheLuceneIndexFormatPostingsFieldsConsumer:(OrgApacheLuceneIndexFormat
   IOSObjectArray *mergeStates = [IOSObjectArray newArrayWithLength:numFields type:OrgApacheLuceneIndexFreqProxFieldMergeState_class_()];
   for (jint i = 0; i < numFields; i++) {
     OrgApacheLuceneIndexFreqProxFieldMergeState *fms = IOSObjectArray_SetAndConsume(mergeStates, i, new_OrgApacheLuceneIndexFreqProxFieldMergeState_initWithOrgApacheLuceneIndexFreqProxTermsWriterPerField_(IOSObjectArray_Get(fields, i)));
-    JreAssert((((OrgApacheLuceneIndexFreqProxTermsWriterPerField *) nil_chk(fms->field_))->fieldInfo_ == ((OrgApacheLuceneIndexFreqProxTermsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->fieldInfo_), (@"org/apache/lucene/index/FreqProxTermsWriter.java:159 condition failed: assert fms.field.fieldInfo == fields[0].fieldInfo;"));
+    JreAssert(((OrgApacheLuceneIndexFreqProxTermsWriterPerField *) nil_chk(fms->field_))->fieldInfo_ == ((OrgApacheLuceneIndexFreqProxTermsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->fieldInfo_, @"org/apache/lucene/index/FreqProxTermsWriter.java:159 condition failed: assert fms.field.fieldInfo == fields[0].fieldInfo;");
     jboolean result = [fms nextTerm];
-    JreAssert((result), (@"org/apache/lucene/index/FreqProxTermsWriter.java:163 condition failed: assert result;"));
+    JreAssert(result, @"org/apache/lucene/index/FreqProxTermsWriter.java:163 condition failed: assert result;");
   }
   OrgApacheLuceneIndexFormatPostingsTermsConsumer *termsConsumer = [((OrgApacheLuceneIndexFormatPostingsFieldsConsumer *) nil_chk(consumer)) addFieldWithOrgApacheLuceneIndexFieldInfo:((OrgApacheLuceneIndexFreqProxTermsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->fieldInfo_];
   OrgApacheLuceneIndexTerm *protoTerm = new_OrgApacheLuceneIndexTerm_initWithNSString_(fieldName);
@@ -211,12 +211,12 @@ withOrgApacheLuceneIndexFormatPostingsFieldsConsumer:(OrgApacheLuceneIndexFormat
             jint upto = 0;
             for (jint i = 0; i < numToMerge; i++) if (IOSObjectArray_Get(termStates, i) != minState) (void) IOSObjectArray_Set(termStates, upto++, IOSObjectArray_Get(termStates, i));
             numToMerge--;
-            JreAssert((upto == numToMerge), (@"org/apache/lucene/index/FreqProxTermsWriter.java:298 condition failed: assert upto == numToMerge;"));
+            JreAssert(upto == numToMerge, @"org/apache/lucene/index/FreqProxTermsWriter.java:298 condition failed: assert upto == numToMerge;");
             if (![minState nextTerm]) {
               upto = 0;
               for (jint i = 0; i < numFields; i++) if (IOSObjectArray_Get(mergeStates, i) != minState) (void) IOSObjectArray_Set(mergeStates, upto++, IOSObjectArray_Get(mergeStates, i));
               numFields--;
-              JreAssert((upto == numFields), (@"org/apache/lucene/index/FreqProxTermsWriter.java:310 condition failed: assert upto == numFields;"));
+              JreAssert(upto == numFields, @"org/apache/lucene/index/FreqProxTermsWriter.java:310 condition failed: assert upto == numFields;");
             }
           }
         }

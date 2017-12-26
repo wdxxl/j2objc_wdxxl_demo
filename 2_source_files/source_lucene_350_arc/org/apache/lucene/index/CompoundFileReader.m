@@ -41,7 +41,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCompoundFileReader, fileName_, NSString 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCompoundFileReader, stream_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCompoundFileReader, entries_, JavaUtilHashMap *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexCompoundFileReader__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexCompoundFileReader__Annotations$0(void);
 
 @interface OrgApacheLuceneIndexCompoundFileReader_FileEntry : NSObject {
  @public
@@ -57,9 +57,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCompoundFileReader_FileEntry)
 
 __attribute__((unused)) static void OrgApacheLuceneIndexCompoundFileReader_FileEntry_init(OrgApacheLuceneIndexCompoundFileReader_FileEntry *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileReader_FileEntry *new_OrgApacheLuceneIndexCompoundFileReader_FileEntry_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileReader_FileEntry *new_OrgApacheLuceneIndexCompoundFileReader_FileEntry_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileReader_FileEntry *create_OrgApacheLuceneIndexCompoundFileReader_FileEntry_init();
+__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileReader_FileEntry *create_OrgApacheLuceneIndexCompoundFileReader_FileEntry_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCompoundFileReader_FileEntry)
 
@@ -225,7 +225,7 @@ OrgApacheLuceneIndexCompoundFileReader *create_OrgApacheLuceneIndexCompoundFileR
 void OrgApacheLuceneIndexCompoundFileReader_initWithOrgApacheLuceneStoreDirectory_withNSString_withInt_(OrgApacheLuceneIndexCompoundFileReader *self, OrgApacheLuceneStoreDirectory *dir, NSString *name, jint readBufferSize) {
   OrgApacheLuceneStoreDirectory_init(self);
   self->entries_ = new_JavaUtilHashMap_init();
-  JreAssert((!([dir isKindOfClass:[OrgApacheLuceneIndexCompoundFileReader class]])), (JreStrcat("$$", @"compound file inside of compound file: ", name)));
+  JreAssert(!([dir isKindOfClass:[OrgApacheLuceneIndexCompoundFileReader class]]), JreStrcat("$$", @"compound file inside of compound file: ", name));
   self->directory_ = dir;
   self->fileName_ = name;
   self->readBufferSize_ = readBufferSize;

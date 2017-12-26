@@ -27,7 +27,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilParameter, name_, NSString *)
 
 __attribute__((unused)) static NSString *OrgApacheLuceneUtilParameter_makeKeyWithNSString_(OrgApacheLuceneUtilParameter *self, NSString *name);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilParameter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilParameter__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilParameter)
 

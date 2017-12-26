@@ -90,7 +90,7 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreBufferedIndexInput)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreBufferedIndexInput, buffer_, IOSByteArray *)
 
-inline jint OrgApacheLuceneStoreBufferedIndexInput_get_BUFFER_SIZE();
+inline jint OrgApacheLuceneStoreBufferedIndexInput_get_BUFFER_SIZE(void);
 #define OrgApacheLuceneStoreBufferedIndexInput_BUFFER_SIZE 1024
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreBufferedIndexInput, BUFFER_SIZE, jint)
 

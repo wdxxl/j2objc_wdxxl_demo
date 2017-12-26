@@ -17,7 +17,7 @@
 #include "java/util/Iterator.h"
 #include "org/jsoup/helper/StringUtil.h"
 
-inline IOSObjectArray *OrgJsoupHelperStringUtil_get_padding();
+inline IOSObjectArray *OrgJsoupHelperStringUtil_get_padding(void);
 static IOSObjectArray *OrgJsoupHelperStringUtil_padding;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperStringUtil, padding, IOSObjectArray *)
 

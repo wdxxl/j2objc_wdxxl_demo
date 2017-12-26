@@ -18,6 +18,7 @@
 #include "java/lang/Exception.h"
 #include "java/lang/Iterable.h"
 #include "java/lang/RuntimeException.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/reflect/Method.h"
 #include "java/nio/charset/Charset.h"
 #include "java/nio/charset/CharsetDecoder.h"
@@ -28,24 +29,22 @@
 
 - (instancetype)init;
 
-+ (void)addSuppressedWithNSException:(NSException *)exception
-                     withNSException:(NSException *)suppressed;
-#define addSuppressedWithJavaLangThrowable addSuppressedWithNSException
-#define withJavaLangThrowable withNSException
++ (void)addSuppressedWithJavaLangThrowable:(JavaLangThrowable *)exception
+                     withJavaLangThrowable:(JavaLangThrowable *)suppressed;
 
 @end
 
-inline JavaLangReflectMethod *OrgApacheLuceneUtilIOUtils_get_SUPPRESS_METHOD();
+inline JavaLangReflectMethod *OrgApacheLuceneUtilIOUtils_get_SUPPRESS_METHOD(void);
 static JavaLangReflectMethod *OrgApacheLuceneUtilIOUtils_SUPPRESS_METHOD;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilIOUtils, SUPPRESS_METHOD, JavaLangReflectMethod *)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilIOUtils_init(OrgApacheLuceneUtilIOUtils *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilIOUtils *new_OrgApacheLuceneUtilIOUtils_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilIOUtils *new_OrgApacheLuceneUtilIOUtils_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilIOUtils *create_OrgApacheLuceneUtilIOUtils_init();
+__attribute__((unused)) static OrgApacheLuceneUtilIOUtils *create_OrgApacheLuceneUtilIOUtils_init(void);
 
-__attribute__((unused)) static void OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_(NSException *exception, NSException *suppressed);
+__attribute__((unused)) static void OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_(JavaLangThrowable *exception, JavaLangThrowable *suppressed);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilIOUtils)
 
@@ -87,9 +86,9 @@ J2OBJC_IGNORE_DESIGNATED_END
   OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangIterable_(objects);
 }
 
-+ (void)addSuppressedWithNSException:(NSException *)exception
-                     withNSException:(NSException *)suppressed {
-  OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_(exception, suppressed);
++ (void)addSuppressedWithJavaLangThrowable:(JavaLangThrowable *)exception
+                     withJavaLangThrowable:(JavaLangThrowable *)suppressed {
+  OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_(exception, suppressed);
 }
 
 + (JavaIoReader *)getDecodingReaderWithJavaIoInputStream:(JavaIoInputStream *)stream
@@ -131,7 +130,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   methods[4].selector = @selector(closeWithJavaLangIterable:);
   methods[5].selector = @selector(closeWhileHandlingExceptionWithJavaIoCloseableArray:);
   methods[6].selector = @selector(closeWhileHandlingExceptionWithJavaLangIterable:);
-  methods[7].selector = @selector(addSuppressedWithNSException:withNSException:);
+  methods[7].selector = @selector(addSuppressedWithJavaLangThrowable:withJavaLangThrowable:);
   methods[8].selector = @selector(getDecodingReaderWithJavaIoInputStream:withJavaNioCharsetCharset:);
   methods[9].selector = @selector(getDecodingReaderWithJavaIoFile:withJavaNioCharsetCharset:);
   methods[10].selector = @selector(getDecodingReaderWithIOSClass:withNSString:withJavaNioCharsetCharset:);
@@ -141,7 +140,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     { "CHARSET_UTF_8", "LJavaNioCharsetCharset;", .constantValue.asLong = 0, 0x19, -1, 19, -1, -1 },
     { "SUPPRESS_METHOD", "LJavaLangReflectMethod;", .constantValue.asLong = 0, 0x1a, -1, 20, -1, -1 },
   };
-  static const void *ptrTable[] = { "closeWhileHandlingException", "LJavaLangException;[LJavaIoCloseable;", "LJavaLangException;LJavaIoIOException;", "<E:Ljava/lang/Exception;>(TE;[Ljava/io/Closeable;)V^TE;^Ljava/io/IOException;", "LJavaLangException;LJavaLangIterable;", "<E:Ljava/lang/Exception;>(TE;Ljava/lang/Iterable<Ljava/io/Closeable;>;)V^TE;^Ljava/io/IOException;", "close", "[LJavaIoCloseable;", "LJavaIoIOException;", "LJavaLangIterable;", "(Ljava/lang/Iterable<+Ljava/io/Closeable;>;)V", "addSuppressed", "LNSException;LNSException;", "getDecodingReader", "LJavaIoInputStream;LJavaNioCharsetCharset;", "LJavaIoFile;LJavaNioCharsetCharset;", "LIOSClass;LNSString;LJavaNioCharsetCharset;", "(Ljava/lang/Class<*>;Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/io/Reader;", &OrgApacheLuceneUtilIOUtils_UTF_8, &OrgApacheLuceneUtilIOUtils_CHARSET_UTF_8, &OrgApacheLuceneUtilIOUtils_SUPPRESS_METHOD };
+  static const void *ptrTable[] = { "closeWhileHandlingException", "LJavaLangException;[LJavaIoCloseable;", "LJavaLangException;LJavaIoIOException;", "<E:Ljava/lang/Exception;>(TE;[Ljava/io/Closeable;)V^TE;^Ljava/io/IOException;", "LJavaLangException;LJavaLangIterable;", "<E:Ljava/lang/Exception;>(TE;Ljava/lang/Iterable<Ljava/io/Closeable;>;)V^TE;^Ljava/io/IOException;", "close", "[LJavaIoCloseable;", "LJavaIoIOException;", "LJavaLangIterable;", "(Ljava/lang/Iterable<+Ljava/io/Closeable;>;)V", "addSuppressed", "LJavaLangThrowable;LJavaLangThrowable;", "getDecodingReader", "LJavaIoInputStream;LJavaNioCharsetCharset;", "LJavaIoFile;LJavaNioCharsetCharset;", "LIOSClass;LNSString;LJavaNioCharsetCharset;", "(Ljava/lang/Class<*>;Ljava/lang/String;Ljava/nio/charset/Charset;)Ljava/io/Reader;", &OrgApacheLuceneUtilIOUtils_UTF_8, &OrgApacheLuceneUtilIOUtils_CHARSET_UTF_8, &OrgApacheLuceneUtilIOUtils_SUPPRESS_METHOD };
   static const J2ObjcClassInfo _OrgApacheLuceneUtilIOUtils = { "IOUtils", "org.apache.lucene.util", ptrTable, methods, fields, 7, 0x11, 11, 3, -1, -1, -1, -1, -1 };
   return &_OrgApacheLuceneUtilIOUtils;
 }
@@ -152,7 +151,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     {
       JavaLangReflectMethod *m;
       @try {
-        m = [NSException_class_() getMethod:@"addSuppressed" parameterTypes:[IOSObjectArray newArrayWithObjects:(id[]){ NSException_class_() } count:1 type:IOSClass_class_()]];
+        m = [JavaLangThrowable_class_() getMethod:@"addSuppressed" parameterTypes:[IOSObjectArray newArrayWithObjects:(id[]){ JavaLangThrowable_class_() } count:1 type:IOSClass_class_()]];
       }
       @catch (JavaLangException *e) {
         m = nil;
@@ -179,7 +178,7 @@ OrgApacheLuceneUtilIOUtils *create_OrgApacheLuceneUtilIOUtils_init() {
 
 void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangException_withJavaIoCloseableArray_(JavaLangException *priorException, IOSObjectArray *objects) {
   OrgApacheLuceneUtilIOUtils_initialize();
-  NSException *th = nil;
+  JavaLangThrowable *th = nil;
   {
     IOSObjectArray *a__ = objects;
     id<JavaIoCloseable> const *b__ = ((IOSObjectArray *) nil_chk(a__))->buffer_;
@@ -191,8 +190,8 @@ void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangException
           [object close];
         }
       }
-      @catch (NSException *t) {
-        OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_((priorException == nil) ? th : priorException, t);
+      @catch (JavaLangThrowable *t) {
+        OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_((priorException == nil) ? th : priorException, t);
         if (th == nil) {
           th = t;
         }
@@ -206,21 +205,21 @@ void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangException
     if ([th isKindOfClass:[JavaIoIOException class]]) @throw (JavaIoIOException *) cast_chk(th, [JavaIoIOException class]);
     if ([th isKindOfClass:[JavaLangRuntimeException class]]) @throw (JavaLangRuntimeException *) cast_chk(th, [JavaLangRuntimeException class]);
     if ([th isKindOfClass:[JavaLangError class]]) @throw (JavaLangError *) cast_chk(th, [JavaLangError class]);
-    @throw new_JavaLangRuntimeException_initWithNSException_(th);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(th);
   }
 }
 
 void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangException_withJavaLangIterable_(JavaLangException *priorException, id<JavaLangIterable> objects) {
   OrgApacheLuceneUtilIOUtils_initialize();
-  NSException *th = nil;
+  JavaLangThrowable *th = nil;
   for (id<JavaIoCloseable> __strong object in nil_chk(objects)) {
     @try {
       if (object != nil) {
         [object close];
       }
     }
-    @catch (NSException *t) {
-      OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_((priorException == nil) ? th : priorException, t);
+    @catch (JavaLangThrowable *t) {
+      OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_((priorException == nil) ? th : priorException, t);
       if (th == nil) {
         th = t;
       }
@@ -233,13 +232,13 @@ void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangException
     if ([th isKindOfClass:[JavaIoIOException class]]) @throw (JavaIoIOException *) cast_chk(th, [JavaIoIOException class]);
     if ([th isKindOfClass:[JavaLangRuntimeException class]]) @throw (JavaLangRuntimeException *) cast_chk(th, [JavaLangRuntimeException class]);
     if ([th isKindOfClass:[JavaLangError class]]) @throw (JavaLangError *) cast_chk(th, [JavaLangError class]);
-    @throw new_JavaLangRuntimeException_initWithNSException_(th);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(th);
   }
 }
 
 void OrgApacheLuceneUtilIOUtils_closeWithJavaIoCloseableArray_(IOSObjectArray *objects) {
   OrgApacheLuceneUtilIOUtils_initialize();
-  NSException *th = nil;
+  JavaLangThrowable *th = nil;
   {
     IOSObjectArray *a__ = objects;
     id<JavaIoCloseable> const *b__ = ((IOSObjectArray *) nil_chk(a__))->buffer_;
@@ -251,8 +250,8 @@ void OrgApacheLuceneUtilIOUtils_closeWithJavaIoCloseableArray_(IOSObjectArray *o
           [object close];
         }
       }
-      @catch (NSException *t) {
-        OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_(th, t);
+      @catch (JavaLangThrowable *t) {
+        OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_(th, t);
         if (th == nil) {
           th = t;
         }
@@ -263,21 +262,21 @@ void OrgApacheLuceneUtilIOUtils_closeWithJavaIoCloseableArray_(IOSObjectArray *o
     if ([th isKindOfClass:[JavaIoIOException class]]) @throw (JavaIoIOException *) cast_chk(th, [JavaIoIOException class]);
     if ([th isKindOfClass:[JavaLangRuntimeException class]]) @throw (JavaLangRuntimeException *) cast_chk(th, [JavaLangRuntimeException class]);
     if ([th isKindOfClass:[JavaLangError class]]) @throw (JavaLangError *) cast_chk(th, [JavaLangError class]);
-    @throw new_JavaLangRuntimeException_initWithNSException_(th);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(th);
   }
 }
 
 void OrgApacheLuceneUtilIOUtils_closeWithJavaLangIterable_(id<JavaLangIterable> objects) {
   OrgApacheLuceneUtilIOUtils_initialize();
-  NSException *th = nil;
+  JavaLangThrowable *th = nil;
   for (id<JavaIoCloseable> __strong object in nil_chk(objects)) {
     @try {
       if (object != nil) {
         [object close];
       }
     }
-    @catch (NSException *t) {
-      OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_(th, t);
+    @catch (JavaLangThrowable *t) {
+      OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_(th, t);
       if (th == nil) {
         th = t;
       }
@@ -287,7 +286,7 @@ void OrgApacheLuceneUtilIOUtils_closeWithJavaLangIterable_(id<JavaLangIterable> 
     if ([th isKindOfClass:[JavaIoIOException class]]) @throw (JavaIoIOException *) cast_chk(th, [JavaIoIOException class]);
     if ([th isKindOfClass:[JavaLangRuntimeException class]]) @throw (JavaLangRuntimeException *) cast_chk(th, [JavaLangRuntimeException class]);
     if ([th isKindOfClass:[JavaLangError class]]) @throw (JavaLangError *) cast_chk(th, [JavaLangError class]);
-    @throw new_JavaLangRuntimeException_initWithNSException_(th);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(th);
   }
 }
 
@@ -304,7 +303,7 @@ void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaIoCloseableAr
           [object close];
         }
       }
-      @catch (NSException *t) {
+      @catch (JavaLangThrowable *t) {
       }
     }
   }
@@ -318,12 +317,12 @@ void OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaLangIterable_
         [object close];
       }
     }
-    @catch (NSException *t) {
+    @catch (JavaLangThrowable *t) {
     }
   }
 }
 
-void OrgApacheLuceneUtilIOUtils_addSuppressedWithNSException_withNSException_(NSException *exception, NSException *suppressed) {
+void OrgApacheLuceneUtilIOUtils_addSuppressedWithJavaLangThrowable_withJavaLangThrowable_(JavaLangThrowable *exception, JavaLangThrowable *suppressed) {
   OrgApacheLuceneUtilIOUtils_initialize();
   if (OrgApacheLuceneUtilIOUtils_SUPPRESS_METHOD != nil && exception != nil && suppressed != nil) {
     @try {

@@ -38,21 +38,21 @@
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecDigestSha2Crypt)
 
-inline NSString *OrgApacheCommonsCodecDigestSha2Crypt_get_SHA256_PREFIX();
+inline NSString *OrgApacheCommonsCodecDigestSha2Crypt_get_SHA256_PREFIX(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestSha2Crypt_SHA256_PREFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestSha2Crypt, SHA256_PREFIX, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestSha2Crypt_get_SHA512_PREFIX();
+inline NSString *OrgApacheCommonsCodecDigestSha2Crypt_get_SHA512_PREFIX(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestSha2Crypt_SHA512_PREFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestSha2Crypt, SHA512_PREFIX, NSString *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecDigestSha2Crypt_init(OrgApacheCommonsCodecDigestSha2Crypt *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestSha2Crypt *new_OrgApacheCommonsCodecDigestSha2Crypt_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestSha2Crypt *new_OrgApacheCommonsCodecDigestSha2Crypt_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestSha2Crypt *create_OrgApacheCommonsCodecDigestSha2Crypt_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestSha2Crypt *create_OrgApacheCommonsCodecDigestSha2Crypt_init(void);
 
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestSha2Crypt_sha256CryptWithByteArray_(IOSByteArray *keyBytes);
 

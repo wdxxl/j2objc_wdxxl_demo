@@ -173,16 +173,16 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl)
 
-inline id<OrgApacheLuceneIndexIndexReader_ReaderFinishedListener> OrgApacheLuceneSearchFieldCacheImpl_get_purgeReader();
+inline id<OrgApacheLuceneIndexIndexReader_ReaderFinishedListener> OrgApacheLuceneSearchFieldCacheImpl_get_purgeReader(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneIndexIndexReader_ReaderFinishedListener> OrgApacheLuceneSearchFieldCacheImpl_purgeReader;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCacheImpl, purgeReader, id<OrgApacheLuceneIndexIndexReader_ReaderFinishedListener>)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchFieldCacheImpl_init(OrgApacheLuceneSearchFieldCacheImpl *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl *new_OrgApacheLuceneSearchFieldCacheImpl_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl *new_OrgApacheLuceneSearchFieldCacheImpl_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl *create_OrgApacheLuceneSearchFieldCacheImpl_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl *create_OrgApacheLuceneSearchFieldCacheImpl_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl)
 
@@ -195,11 +195,27 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl)
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException : JavaLangRuntimeException
 
 #pragma mark Package-Private
 
 - (instancetype)init;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -207,9 +223,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheExcept
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException_init(OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException *new_OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException *new_OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException *create_OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException *create_OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_StopFillCacheException)
 
@@ -288,6 +304,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_Cache)
 - (instancetype)initWithNSString:(NSString *)field
                           withId:(id)custom;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_Entry)
@@ -324,6 +344,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_Entry)
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_ByteCache)
@@ -356,6 +380,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_ByteCache)
 #pragma mark Package-Private
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -390,6 +418,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_ShortCache)
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_IntCache)
@@ -422,6 +454,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_IntCache)
 #pragma mark Package-Private
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -456,6 +492,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_DocsWithFieldCach
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_FloatCache)
@@ -488,6 +528,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_FloatCache)
 #pragma mark Package-Private
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -522,6 +566,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_LongCache)
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_DoubleCache)
@@ -555,6 +603,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_DoubleCache)
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheImpl_StringCache)
@@ -587,6 +639,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheImpl_StringCache)
 #pragma mark Package-Private
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheImpl:(OrgApacheLuceneSearchFieldCacheImpl *)wrapper;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

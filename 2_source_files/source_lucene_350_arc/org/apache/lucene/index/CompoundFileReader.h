@@ -66,6 +66,10 @@
 
 - (void)touchFileWithNSString:(NSString *)name;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCompoundFileReader)
@@ -133,6 +137,17 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCompoundFileReader)
                                               withLong:(jlong)fileOffset
                                               withLong:(jlong)length
                                                withInt:(jint)readBufferSize;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                         withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 

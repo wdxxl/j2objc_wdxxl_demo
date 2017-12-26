@@ -36,7 +36,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchTermScorer, docs_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchTermScorer, freqs_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchTermScorer, scoreCache_, IOSFloatArray *)
 
-inline jint OrgApacheLuceneSearchTermScorer_get_SCORE_CACHE_SIZE();
+inline jint OrgApacheLuceneSearchTermScorer_get_SCORE_CACHE_SIZE(void);
 #define OrgApacheLuceneSearchTermScorer_SCORE_CACHE_SIZE 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchTermScorer, SCORE_CACHE_SIZE, jint)
 
@@ -103,7 +103,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchTermScorer, SCORE_CACHE_SIZE, 
 }
 
 - (jfloat)score {
-  JreAssert((doc_ != -1), (@"org/apache/lucene/search/TermScorer.java:127 condition failed: assert doc != -1;"));
+  JreAssert(doc_ != -1, @"org/apache/lucene/search/TermScorer.java:127 condition failed: assert doc != -1;");
   jfloat raw = freq_ < OrgApacheLuceneSearchTermScorer_SCORE_CACHE_SIZE ? IOSFloatArray_Get(nil_chk(scoreCache_), freq_) : [((OrgApacheLuceneSearchSimilarity *) nil_chk([self getSimilarity])) tfWithInt:freq_] * weightValue_;
   return norms_ == nil ? raw : raw * [((OrgApacheLuceneSearchSimilarity *) nil_chk([self getSimilarity])) decodeNormValueWithByte:IOSByteArray_Get(norms_, doc_)];
 }

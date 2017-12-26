@@ -126,9 +126,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectElements)
 
 FOUNDATION_EXPORT void OrgJsoupSelectElements_init(OrgJsoupSelectElements *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectElements *new_OrgJsoupSelectElements_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectElements *new_OrgJsoupSelectElements_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectElements *create_OrgJsoupSelectElements_init();
+FOUNDATION_EXPORT OrgJsoupSelectElements *create_OrgJsoupSelectElements_init(void);
 
 FOUNDATION_EXPORT void OrgJsoupSelectElements_initWithInt_(OrgJsoupSelectElements *self, jint initialCapacity);
 

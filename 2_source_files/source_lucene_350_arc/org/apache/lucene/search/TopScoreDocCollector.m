@@ -25,6 +25,8 @@
 
 __attribute__((unused)) static void OrgApacheLuceneSearchTopScoreDocCollector_initWithInt_(OrgApacheLuceneSearchTopScoreDocCollector *self, jint numHits);
 
+__attribute__((unused)) static void OrgApacheLuceneSearchTopScoreDocCollector_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(OrgApacheLuceneSearchTopScoreDocCollector *self, OrgApacheLuceneIndexIndexReader *reader, jint base);
+
 @interface OrgApacheLuceneSearchTopScoreDocCollector_InOrderTopScoreDocCollector : OrgApacheLuceneSearchTopScoreDocCollector
 
 - (instancetype)initWithInt:(jint)numHits;
@@ -175,7 +177,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchTopScoreDocCollector_OutOfOrderP
 
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)base {
-  docBase_ = base;
+  OrgApacheLuceneSearchTopScoreDocCollector_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, base);
 }
 
 - (void)setScorerWithOrgApacheLuceneSearchScorer:(OrgApacheLuceneSearchScorer *)scorer {
@@ -236,6 +238,10 @@ void OrgApacheLuceneSearchTopScoreDocCollector_initWithInt_(OrgApacheLuceneSearc
   self->pqTop_ = [((OrgApacheLuceneUtilPriorityQueue *) nil_chk(self->pq_)) top];
 }
 
+void OrgApacheLuceneSearchTopScoreDocCollector_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(OrgApacheLuceneSearchTopScoreDocCollector *self, OrgApacheLuceneIndexIndexReader *reader, jint base) {
+  self->docBase_ = base;
+}
+
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector)
 
 @implementation OrgApacheLuceneSearchTopScoreDocCollector_InOrderTopScoreDocCollector
@@ -247,8 +253,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector)
 
 - (void)collectWithInt:(jint)doc {
   jfloat score = [((OrgApacheLuceneSearchScorer *) nil_chk(scorer_)) score];
-  JreAssert((score != JavaLangFloat_NEGATIVE_INFINITY), (@"org/apache/lucene/search/TopScoreDocCollector.java:50 condition failed: assert score != Float.NEGATIVE_INFINITY;"));
-  JreAssert((!JavaLangFloat_isNaNWithFloat_(score)), (@"org/apache/lucene/search/TopScoreDocCollector.java:51 condition failed: assert !Float.isNaN(score);"));
+  JreAssert(score != JavaLangFloat_NEGATIVE_INFINITY, @"org/apache/lucene/search/TopScoreDocCollector.java:50 condition failed: assert score != Float.NEGATIVE_INFINITY;");
+  JreAssert(!JavaLangFloat_isNaNWithFloat_(score), @"org/apache/lucene/search/TopScoreDocCollector.java:51 condition failed: assert !Float.isNaN(score);");
   totalHits_++;
   if (score <= ((OrgApacheLuceneSearchScoreDoc *) nil_chk(pqTop_))->score_) {
     return;
@@ -305,8 +311,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector_InOrd
 
 - (void)collectWithInt:(jint)doc {
   jfloat score = [((OrgApacheLuceneSearchScorer *) nil_chk(scorer_)) score];
-  JreAssert((score != JavaLangFloat_NEGATIVE_INFINITY), (@"org/apache/lucene/search/TopScoreDocCollector.java:88 condition failed: assert score != Float.NEGATIVE_INFINITY;"));
-  JreAssert((!JavaLangFloat_isNaNWithFloat_(score)), (@"org/apache/lucene/search/TopScoreDocCollector.java:89 condition failed: assert !Float.isNaN(score);"));
+  JreAssert(score != JavaLangFloat_NEGATIVE_INFINITY, @"org/apache/lucene/search/TopScoreDocCollector.java:88 condition failed: assert score != Float.NEGATIVE_INFINITY;");
+  JreAssert(!JavaLangFloat_isNaNWithFloat_(score), @"org/apache/lucene/search/TopScoreDocCollector.java:89 condition failed: assert !Float.isNaN(score);");
   totalHits_++;
   if (score > ((OrgApacheLuceneSearchScoreDoc *) nil_chk(after_))->score_ || (score == after_->score_ && doc <= afterDoc_)) {
     return;
@@ -326,7 +332,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector_InOrd
 
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)base {
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:base];
+  OrgApacheLuceneSearchTopScoreDocCollector_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, base);
   afterDoc_ = ((OrgApacheLuceneSearchScoreDoc *) nil_chk(after_))->doc_ - docBase_;
 }
 
@@ -393,7 +399,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector_InOrd
 
 - (void)collectWithInt:(jint)doc {
   jfloat score = [((OrgApacheLuceneSearchScorer *) nil_chk(scorer_)) score];
-  JreAssert((!JavaLangFloat_isNaNWithFloat_(score)), (@"org/apache/lucene/search/TopScoreDocCollector.java:143 condition failed: assert !Float.isNaN(score);"));
+  JreAssert(!JavaLangFloat_isNaNWithFloat_(score), @"org/apache/lucene/search/TopScoreDocCollector.java:143 condition failed: assert !Float.isNaN(score);");
   totalHits_++;
   if (score < ((OrgApacheLuceneSearchScoreDoc *) nil_chk(pqTop_))->score_) {
     return;
@@ -454,7 +460,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector_OutOf
 
 - (void)collectWithInt:(jint)doc {
   jfloat score = [((OrgApacheLuceneSearchScorer *) nil_chk(scorer_)) score];
-  JreAssert((!JavaLangFloat_isNaNWithFloat_(score)), (@"org/apache/lucene/search/TopScoreDocCollector.java:183 condition failed: assert !Float.isNaN(score);"));
+  JreAssert(!JavaLangFloat_isNaNWithFloat_(score), @"org/apache/lucene/search/TopScoreDocCollector.java:183 condition failed: assert !Float.isNaN(score);");
   totalHits_++;
   if (score > ((OrgApacheLuceneSearchScoreDoc *) nil_chk(after_))->score_ || (score == after_->score_ && doc <= afterDoc_)) {
     return;
@@ -478,7 +484,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchTopScoreDocCollector_OutOf
 
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)base {
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:base];
+  OrgApacheLuceneSearchTopScoreDocCollector_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, base);
   afterDoc_ = ((OrgApacheLuceneSearchScoreDoc *) nil_chk(after_))->doc_ - docBase_;
 }
 

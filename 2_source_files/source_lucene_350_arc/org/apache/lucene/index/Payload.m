@@ -92,7 +92,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return clone;
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 

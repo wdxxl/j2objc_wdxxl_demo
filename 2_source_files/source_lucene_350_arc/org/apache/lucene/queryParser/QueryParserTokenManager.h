@@ -62,6 +62,10 @@
 
 - (OrgApacheLuceneQueryParserToken *)jjFillToken;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneQueryParserQueryParserTokenManager)
@@ -69,52 +73,52 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneQueryParserQueryParserTokenManager)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParserTokenManager, debugStream_, JavaIoPrintStream *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParserTokenManager, input_stream_, id<OrgApacheLuceneQueryParserCharStream>)
 
-inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec0();
+inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec0(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjbitVec0;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjbitVec0, IOSLongArray *)
 
-inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec1();
+inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec1(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjbitVec1;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjbitVec1, IOSLongArray *)
 
-inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec3();
+inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec3(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjbitVec3;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjbitVec3, IOSLongArray *)
 
-inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec4();
+inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjbitVec4(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjbitVec4;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjbitVec4, IOSLongArray *)
 
-inline IOSIntArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjnextStates();
+inline IOSIntArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjnextStates(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjnextStates;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjnextStates, IOSIntArray *)
 
-inline IOSObjectArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjstrLiteralImages();
+inline IOSObjectArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjstrLiteralImages(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjstrLiteralImages;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjstrLiteralImages, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_lexStateNames();
+inline IOSObjectArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_lexStateNames(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneQueryParserQueryParserTokenManager_lexStateNames;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, lexStateNames, IOSObjectArray *)
 
-inline IOSIntArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjnewLexState();
+inline IOSIntArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjnewLexState(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjnewLexState;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjnewLexState, IOSIntArray *)
 
-inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjtoToken();
+inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjtoToken(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjtoToken;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjtoToken, IOSLongArray *)
 
-inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjtoSkip();
+inline IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_get_jjtoSkip(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjtoSkip;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParserTokenManager, jjtoSkip, IOSLongArray *)

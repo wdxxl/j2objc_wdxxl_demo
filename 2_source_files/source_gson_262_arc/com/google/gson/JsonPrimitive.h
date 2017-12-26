@@ -81,6 +81,10 @@
 
 - (void)setValueWithId:(id)primitive;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(ComGoogleGsonJsonPrimitive)

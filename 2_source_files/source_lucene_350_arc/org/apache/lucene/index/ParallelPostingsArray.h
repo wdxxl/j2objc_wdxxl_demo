@@ -39,6 +39,10 @@
 
 - (OrgApacheLuceneIndexParallelPostingsArray *)newInstanceWithInt:(jint)size OBJC_METHOD_FAMILY_NONE;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexParallelPostingsArray)
@@ -47,7 +51,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelPostingsArray, textStarts_, IOSI
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelPostingsArray, intStarts_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelPostingsArray, byteStarts_, IOSIntArray *)
 
-inline jint OrgApacheLuceneIndexParallelPostingsArray_get_BYTES_PER_POSTING();
+inline jint OrgApacheLuceneIndexParallelPostingsArray_get_BYTES_PER_POSTING(void);
 #define OrgApacheLuceneIndexParallelPostingsArray_BYTES_PER_POSTING 12
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexParallelPostingsArray, BYTES_PER_POSTING, jint)
 

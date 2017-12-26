@@ -20,9 +20,9 @@
 #include "org/apache/lucene/search/MultiTermQueryWrapperFilter.h"
 #include "org/apache/lucene/util/FixedBitSet.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQueryWrapperFilter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQueryWrapperFilter__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQueryWrapperFilter__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiTermQueryWrapperFilter__Annotations$1(void);
 
 @implementation OrgApacheLuceneSearchMultiTermQueryWrapperFilter
 

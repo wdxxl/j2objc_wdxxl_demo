@@ -38,9 +38,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonJsonParser)
 
 FOUNDATION_EXPORT void ComGoogleGsonJsonParser_init(ComGoogleGsonJsonParser *self);
 
-FOUNDATION_EXPORT ComGoogleGsonJsonParser *new_ComGoogleGsonJsonParser_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonJsonParser *new_ComGoogleGsonJsonParser_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonJsonParser *create_ComGoogleGsonJsonParser_init();
+FOUNDATION_EXPORT ComGoogleGsonJsonParser *create_ComGoogleGsonJsonParser_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonParser)
 

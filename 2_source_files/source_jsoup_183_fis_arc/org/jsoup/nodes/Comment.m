@@ -10,7 +10,7 @@
 #include "org/jsoup/nodes/Document.h"
 #include "org/jsoup/nodes/Node.h"
 
-inline NSString *OrgJsoupNodesComment_get_COMMENT_KEY();
+inline NSString *OrgJsoupNodesComment_get_COMMENT_KEY(void);
 static NSString *OrgJsoupNodesComment_COMMENT_KEY = @"comment";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesComment, COMMENT_KEY, NSString *)
 

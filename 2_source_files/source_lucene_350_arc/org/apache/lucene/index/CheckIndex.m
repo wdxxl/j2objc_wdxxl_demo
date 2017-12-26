@@ -14,6 +14,7 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/System.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/UnsupportedOperationException.h"
 #include "java/text/NumberFormat.h"
 #include "java/util/ArrayList.h"
@@ -71,9 +72,9 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex, infoStream_, JavaIoPrintStream *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex, dir_, OrgApacheLuceneStoreDirectory *)
 
-inline jboolean OrgApacheLuceneIndexCheckIndex_get_assertsOn_();
+inline jboolean OrgApacheLuceneIndexCheckIndex_get_assertsOn_(void);
 inline jboolean OrgApacheLuceneIndexCheckIndex_set_assertsOn_(jboolean value);
-inline jboolean *OrgApacheLuceneIndexCheckIndex_getRef_assertsOn_();
+inline jboolean *OrgApacheLuceneIndexCheckIndex_getRef_assertsOn_(void);
 static jboolean OrgApacheLuceneIndexCheckIndex_assertsOn_;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexCheckIndex, assertsOn_, jboolean)
 
@@ -87,9 +88,9 @@ __attribute__((unused)) static OrgApacheLuceneIndexCheckIndex_Status_StoredField
 
 __attribute__((unused)) static OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *OrgApacheLuceneIndexCheckIndex_testTermVectorsWithOrgApacheLuceneIndexSegmentInfo_withOrgApacheLuceneIndexSegmentReader_withJavaTextNumberFormat_(OrgApacheLuceneIndexCheckIndex *self, OrgApacheLuceneIndexSegmentInfo *info, OrgApacheLuceneIndexSegmentReader *reader, JavaTextNumberFormat *format);
 
-__attribute__((unused)) static jboolean OrgApacheLuceneIndexCheckIndex_testAsserts();
+__attribute__((unused)) static jboolean OrgApacheLuceneIndexCheckIndex_testAsserts(void);
 
-__attribute__((unused)) static jboolean OrgApacheLuceneIndexCheckIndex_assertsOn();
+__attribute__((unused)) static jboolean OrgApacheLuceneIndexCheckIndex_assertsOn(void);
 
 @interface OrgApacheLuceneIndexCheckIndex_MySegmentTermDocs : OrgApacheLuceneIndexSegmentTermDocs {
  @public
@@ -141,7 +142,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_MySegmentTermDocs)
   @try {
     [sis readWithOrgApacheLuceneStoreDirectory:dir_];
   }
-  @catch (NSException *t) {
+  @catch (JavaLangThrowable *t) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, @"ERROR: could not read any segments file in directory");
     result->missingSegments_ = true;
     if (infoStream_ != nil) [t printStackTraceWithJavaIoPrintStream:infoStream_];
@@ -176,7 +177,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_MySegmentTermDocs)
   @try {
     input = [((OrgApacheLuceneStoreDirectory *) nil_chk(dir_)) openInputWithNSString:segmentsFileName];
   }
-  @catch (NSException *t) {
+  @catch (JavaLangThrowable *t) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, @"ERROR: could not open segments file in directory");
     if (infoStream_ != nil) [t printStackTraceWithJavaIoPrintStream:infoStream_];
     result->cantOpenSegments_ = true;
@@ -186,7 +187,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_MySegmentTermDocs)
   @try {
     format = [((OrgApacheLuceneStoreIndexInput *) nil_chk(input)) readInt];
   }
-  @catch (NSException *t) {
+  @catch (JavaLangThrowable *t) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, @"ERROR: could not read segment file version in directory");
     if (infoStream_ != nil) [t printStackTraceWithJavaIoPrintStream:infoStream_];
     result->missingSegmentVersion_ = true;
@@ -355,7 +356,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_MySegmentTermDocs)
       }
       OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, @"");
     }
-    @catch (NSException *t) {
+    @catch (JavaLangThrowable *t) {
       OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, @"FAILED");
       NSString *comment;
       comment = @"fixIndex() would remove reference to this segment";
@@ -503,7 +504,7 @@ OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus *OrgApacheLuceneIndexCheck
     }
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$J$", @"OK [", status->totFields_, @" fields]"));
   }
-  @catch (NSException *e) {
+  @catch (JavaLangThrowable *e) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$$C", @"ERROR [", NSString_java_valueOf_([e getMessage]), ']'));
     status->error_ = e;
     if (self->infoStream_ != nil) {
@@ -616,7 +617,7 @@ OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus *OrgApacheLuceneIndexCheck
     }
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$J$J$J$", @"OK [", status->termCount_, @" terms; ", status->totFreq_, @" terms/docs pairs; ", status->totPos_, @" tokens]"));
   }
-  @catch (NSException *e) {
+  @catch (JavaLangThrowable *e) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$$C", @"ERROR [", NSString_java_valueOf_([e getMessage]), ']'));
     status->error_ = e;
     if (self->infoStream_ != nil) {
@@ -644,7 +645,7 @@ OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus *OrgApacheLuceneIndexChe
     }
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$J$$$", @"OK [", status->totFields_, @" total field count; avg ", [((JavaTextNumberFormat *) nil_chk(format)) formatWithDouble:(((jfloat) status->totFields_) / status->docCount_)], @" fields per doc]"));
   }
-  @catch (NSException *e) {
+  @catch (JavaLangThrowable *e) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$$C", @"ERROR [", NSString_java_valueOf_([e getMessage]), ']'));
     status->error_ = e;
     if (self->infoStream_ != nil) {
@@ -671,7 +672,7 @@ OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *OrgApacheLuceneIndexChec
     }
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$J$$$", @"OK [", status->totVectors_, @" total vector count; avg ", [((JavaTextNumberFormat *) nil_chk(format)) formatWithDouble:(((jfloat) status->totVectors_) / status->docCount_)], @" term/freq vector fields per doc]"));
   }
-  @catch (NSException *e) {
+  @catch (JavaLangThrowable *e) {
     OrgApacheLuceneIndexCheckIndex_msgWithNSString_(self, JreStrcat("$$C", @"ERROR [", NSString_java_valueOf_([e getMessage]), ']'));
     status->error_ = e;
     if (self->infoStream_ != nil) {
@@ -689,7 +690,7 @@ jboolean OrgApacheLuceneIndexCheckIndex_testAsserts() {
 
 jboolean OrgApacheLuceneIndexCheckIndex_assertsOn() {
   OrgApacheLuceneIndexCheckIndex_initialize();
-  JreAssert((OrgApacheLuceneIndexCheckIndex_testAsserts()), (@"org/apache/lucene/index/CheckIndex.java:896 condition failed: assert testAsserts();"));
+  JreAssert(OrgApacheLuceneIndexCheckIndex_testAsserts(), @"org/apache/lucene/index/CheckIndex.java:896 condition failed: assert testAsserts();");
   return OrgApacheLuceneIndexCheckIndex_assertsOn_;
 }
 
@@ -737,7 +738,7 @@ void OrgApacheLuceneIndexCheckIndex_mainWithNSStringArray_(IOSObjectArray *args)
   @try {
     dir = OrgApacheLuceneStoreFSDirectory_openWithJavaIoFile_(new_JavaIoFile_initWithNSString_(indexPath));
   }
-  @catch (NSException *t) {
+  @catch (JavaLangThrowable *t) {
     [JreLoadStatic(JavaLangSystem, out) printlnWithNSString:JreStrcat("$$$", @"ERROR: could not open directory \"", indexPath, @"\"; exiting")];
     [t printStackTraceWithJavaIoPrintStream:JreLoadStatic(JavaLangSystem, out)];
     JavaLangSystem_exitWithInt_(1);
@@ -913,7 +914,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
     { "totFields_", "J", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
-    { "error_", "LNSException;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
+    { "error_", "LJavaLangThrowable;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
   };
   static const void *ptrTable[] = { "LOrgApacheLuceneIndexCheckIndex_Status;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus = { "FieldNormStatus", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x19, 1, 2, 0, -1, -1, -1, -1 };
@@ -959,7 +960,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     { "termCount_", "J", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
     { "totFreq_", "J", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
     { "totPos_", "J", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
-    { "error_", "LNSException;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
+    { "error_", "LJavaLangThrowable;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
   };
   static const void *ptrTable[] = { "LOrgApacheLuceneIndexCheckIndex_Status;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus = { "TermIndexStatus", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x19, 1, 4, 0, -1, -1, -1, -1 };
@@ -1006,7 +1007,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   static const J2ObjcFieldInfo fields[] = {
     { "docCount_", "I", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
     { "totFields_", "J", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
-    { "error_", "LNSException;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
+    { "error_", "LJavaLangThrowable;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
   };
   static const void *ptrTable[] = { "LOrgApacheLuceneIndexCheckIndex_Status;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus = { "StoredFieldStatus", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x19, 1, 3, 0, -1, -1, -1, -1 };
@@ -1052,7 +1053,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   static const J2ObjcFieldInfo fields[] = {
     { "docCount_", "I", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
     { "totVectors_", "J", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
-    { "error_", "LNSException;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
+    { "error_", "LJavaLangThrowable;", .constantValue.asLong = 0, 0x1, -1, -1, -1, -1 },
   };
   static const void *ptrTable[] = { "LOrgApacheLuceneIndexCheckIndex_Status;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus = { "TermVectorStatus", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x19, 1, 3, 0, -1, -1, -1, -1 };

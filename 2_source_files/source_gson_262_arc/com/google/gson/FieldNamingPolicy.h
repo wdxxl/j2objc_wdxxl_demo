@@ -39,7 +39,7 @@ typedef NS_ENUM(NSUInteger, ComGoogleGsonFieldNamingPolicy_Enum) {
   ComGoogleGsonFieldNamingPolicy_Enum_LOWER_CASE_WITH_DASHES = 4,
 };
 
-@interface ComGoogleGsonFieldNamingPolicy : JavaLangEnum < NSCopying, ComGoogleGsonFieldNamingStrategy >
+@interface ComGoogleGsonFieldNamingPolicy : JavaLangEnum < ComGoogleGsonFieldNamingStrategy >
 
 #pragma mark Public
 
@@ -54,8 +54,6 @@ typedef NS_ENUM(NSUInteger, ComGoogleGsonFieldNamingPolicy_Enum) {
 
 + (NSString *)upperCaseFirstLetterWithNSString:(NSString *)name;
 
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(ComGoogleGsonFieldNamingPolicy)
@@ -63,26 +61,26 @@ J2OBJC_STATIC_INIT(ComGoogleGsonFieldNamingPolicy)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_values_[];
 
-inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_IDENTITY();
+inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_IDENTITY(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonFieldNamingPolicy, IDENTITY)
 
-inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_UPPER_CAMEL_CASE();
+inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_UPPER_CAMEL_CASE(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE)
 
-inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_UPPER_CAMEL_CASE_WITH_SPACES();
+inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_UPPER_CAMEL_CASE_WITH_SPACES(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonFieldNamingPolicy, UPPER_CAMEL_CASE_WITH_SPACES)
 
-inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_LOWER_CASE_WITH_UNDERSCORES();
+inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_LOWER_CASE_WITH_UNDERSCORES(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_UNDERSCORES)
 
-inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_LOWER_CASE_WITH_DASHES();
+inline ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_get_LOWER_CASE_WITH_DASHES(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonFieldNamingPolicy, LOWER_CASE_WITH_DASHES)
 
 FOUNDATION_EXPORT NSString *ComGoogleGsonFieldNamingPolicy_separateCamelCaseWithNSString_withNSString_(NSString *name, NSString *separator);
 
 FOUNDATION_EXPORT NSString *ComGoogleGsonFieldNamingPolicy_upperCaseFirstLetterWithNSString_(NSString *name);
 
-FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonFieldNamingPolicy_values();
+FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonFieldNamingPolicy_values(void);
 
 FOUNDATION_EXPORT ComGoogleGsonFieldNamingPolicy *ComGoogleGsonFieldNamingPolicy_valueOfWithNSString_(NSString *name);
 

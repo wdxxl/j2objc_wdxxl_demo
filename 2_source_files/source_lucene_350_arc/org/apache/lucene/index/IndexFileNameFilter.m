@@ -23,16 +23,16 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexFileNameFilter, extensions_, JavaUtilHashSet *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexFileNameFilter, extensionsInCFS_, JavaUtilHashSet *)
 
-inline OrgApacheLuceneIndexIndexFileNameFilter *OrgApacheLuceneIndexIndexFileNameFilter_get_singleton();
+inline OrgApacheLuceneIndexIndexFileNameFilter *OrgApacheLuceneIndexIndexFileNameFilter_get_singleton(void);
 inline OrgApacheLuceneIndexIndexFileNameFilter *OrgApacheLuceneIndexIndexFileNameFilter_set_singleton(OrgApacheLuceneIndexIndexFileNameFilter *value);
 static OrgApacheLuceneIndexIndexFileNameFilter *OrgApacheLuceneIndexIndexFileNameFilter_singleton;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneIndexIndexFileNameFilter, singleton, OrgApacheLuceneIndexIndexFileNameFilter *)
 
 __attribute__((unused)) static void OrgApacheLuceneIndexIndexFileNameFilter_init(OrgApacheLuceneIndexIndexFileNameFilter *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexIndexFileNameFilter *new_OrgApacheLuceneIndexIndexFileNameFilter_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexIndexFileNameFilter *new_OrgApacheLuceneIndexIndexFileNameFilter_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexIndexFileNameFilter *create_OrgApacheLuceneIndexIndexFileNameFilter_init();
+__attribute__((unused)) static OrgApacheLuceneIndexIndexFileNameFilter *create_OrgApacheLuceneIndexIndexFileNameFilter_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexIndexFileNameFilter)
 

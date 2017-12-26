@@ -23,7 +23,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisSimpleAnalyzer, matchVersion_, OrgApacheLuceneUtilVersion *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisSimpleAnalyzer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisSimpleAnalyzer__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisSimpleAnalyzer
 

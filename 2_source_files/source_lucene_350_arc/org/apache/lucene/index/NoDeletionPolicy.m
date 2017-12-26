@@ -16,9 +16,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneIndexNoDeletionPolicy_init(OrgApacheLuceneIndexNoDeletionPolicy *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexNoDeletionPolicy *new_OrgApacheLuceneIndexNoDeletionPolicy_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexNoDeletionPolicy *new_OrgApacheLuceneIndexNoDeletionPolicy_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexNoDeletionPolicy *create_OrgApacheLuceneIndexNoDeletionPolicy_init();
+__attribute__((unused)) static OrgApacheLuceneIndexNoDeletionPolicy *create_OrgApacheLuceneIndexNoDeletionPolicy_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexNoDeletionPolicy)
 

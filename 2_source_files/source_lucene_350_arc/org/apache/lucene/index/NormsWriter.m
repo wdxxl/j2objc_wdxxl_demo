@@ -103,7 +103,7 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
         for (jint j = 0; j < numFields; j++) (void) IOSObjectArray_Set(fields, j, [toMerge getWithInt:j]);
         jint numLeft = numFields;
         while (numLeft > 0) {
-          JreAssert((IOSIntArray_Get(uptos, 0) < ((IOSIntArray *) nil_chk(((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->docIDs_))->size_), (JreStrcat("$I$I", @" uptos[0]=", IOSIntArray_Get(uptos, 0), @" len=", (((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->docIDs_->size_))));
+          JreAssert(IOSIntArray_Get(uptos, 0) < ((IOSIntArray *) nil_chk(((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->docIDs_))->size_, JreStrcat("$I$I", @" uptos[0]=", IOSIntArray_Get(uptos, 0), @" len=", (((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->docIDs_->size_)));
           jint minLoc = 0;
           jint minDocID = IOSIntArray_Get(((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, 0)))->docIDs_, IOSIntArray_Get(uptos, 0));
           for (jint j = 1; j < numLeft; j++) {
@@ -113,7 +113,7 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
               minLoc = j;
             }
           }
-          JreAssert((minDocID < state->numDocs_), (@"org/apache/lucene/index/NormsWriter.java:137 condition failed: assert minDocID < state.numDocs;"));
+          JreAssert(minDocID < state->numDocs_, @"org/apache/lucene/index/NormsWriter.java:137 condition failed: assert minDocID < state.numDocs;");
           for (; upto < minDocID; upto++) [normsOut writeByteWithByte:defaultNorm_];
           [normsOut writeByteWithByte:IOSByteArray_Get(nil_chk(((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, minLoc)))->norms_), IOSIntArray_Get(uptos, minLoc))];
           (*IOSIntArray_GetRef(uptos, minLoc))++;
@@ -133,7 +133,7 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
         normCount++;
         for (; upto < state->numDocs_; upto++) [normsOut writeByteWithByte:defaultNorm_];
       }
-      JreAssert((4 + normCount * state->numDocs_ == [normsOut getFilePointer]), (JreStrcat("$I$J", @".nrm file size mismatch: expected=", (4 + normCount * state->numDocs_), @" actual=", [normsOut getFilePointer])));
+      JreAssert(4 + normCount * state->numDocs_ == [normsOut getFilePointer], JreStrcat("$I$J", @".nrm file size mismatch: expected=", (4 + normCount * state->numDocs_), @" actual=", [normsOut getFilePointer]));
     }
     success = true;
   }

@@ -30,7 +30,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisTokenattributesTypeAttribute)
 
-inline NSString *OrgApacheLuceneAnalysisTokenattributesTypeAttribute_get_DEFAULT_TYPE();
+inline NSString *OrgApacheLuceneAnalysisTokenattributesTypeAttribute_get_DEFAULT_TYPE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneAnalysisTokenattributesTypeAttribute_DEFAULT_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisTokenattributesTypeAttribute, DEFAULT_TYPE, NSString *)

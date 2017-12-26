@@ -101,6 +101,10 @@
 
 - (void)setEmptyOutputWithId:(id)v;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilFstFST)
@@ -109,19 +113,19 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilFstFST, inputType_, OrgApacheLuceneUtilFs
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilFstFST, emptyOutput_, id)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilFstFST, outputs_, OrgApacheLuceneUtilFstOutputs *)
 
-inline jint OrgApacheLuceneUtilFstFST_get_FIXED_ARRAY_SHALLOW_DISTANCE();
+inline jint OrgApacheLuceneUtilFstFST_get_FIXED_ARRAY_SHALLOW_DISTANCE(void);
 #define OrgApacheLuceneUtilFstFST_FIXED_ARRAY_SHALLOW_DISTANCE 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilFstFST, FIXED_ARRAY_SHALLOW_DISTANCE, jint)
 
-inline jint OrgApacheLuceneUtilFstFST_get_FIXED_ARRAY_NUM_ARCS_SHALLOW();
+inline jint OrgApacheLuceneUtilFstFST_get_FIXED_ARRAY_NUM_ARCS_SHALLOW(void);
 #define OrgApacheLuceneUtilFstFST_FIXED_ARRAY_NUM_ARCS_SHALLOW 5
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilFstFST, FIXED_ARRAY_NUM_ARCS_SHALLOW, jint)
 
-inline jint OrgApacheLuceneUtilFstFST_get_FIXED_ARRAY_NUM_ARCS_DEEP();
+inline jint OrgApacheLuceneUtilFstFST_get_FIXED_ARRAY_NUM_ARCS_DEEP(void);
 #define OrgApacheLuceneUtilFstFST_FIXED_ARRAY_NUM_ARCS_DEEP 10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilFstFST, FIXED_ARRAY_NUM_ARCS_DEEP, jint)
 
-inline jint OrgApacheLuceneUtilFstFST_get_END_LABEL();
+inline jint OrgApacheLuceneUtilFstFST_get_END_LABEL(void);
 #define OrgApacheLuceneUtilFstFST_END_LABEL -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilFstFST, END_LABEL, jint)
 
@@ -158,17 +162,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneUtilFstFST_INPUT_TYPE_Enum) {
   OrgApacheLuceneUtilFstFST_INPUT_TYPE_Enum_BYTE4 = 2,
 };
 
-@interface OrgApacheLuceneUtilFstFST_INPUT_TYPE : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneUtilFstFST_INPUT_TYPE : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneUtilFstFST_INPUT_TYPE *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -177,16 +177,16 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneUtilFstFST_INPUT_TYPE)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_values_[];
 
-inline OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_get_BYTE1();
+inline OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_get_BYTE1(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE1)
 
-inline OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_get_BYTE2();
+inline OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_get_BYTE2(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE2)
 
-inline OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_get_BYTE4();
+inline OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_get_BYTE4(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneUtilFstFST_INPUT_TYPE, BYTE4)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneUtilFstFST_INPUT_TYPE_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneUtilFstFST_INPUT_TYPE_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneUtilFstFST_INPUT_TYPE *OrgApacheLuceneUtilFstFST_INPUT_TYPE_valueOfWithNSString_(NSString *name);
 
@@ -236,9 +236,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilFstFST_Arc, nextFinalOutput_, id)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilFstFST_Arc_init(OrgApacheLuceneUtilFstFST_Arc *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstFST_Arc *new_OrgApacheLuceneUtilFstFST_Arc_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstFST_Arc *new_OrgApacheLuceneUtilFstFST_Arc_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstFST_Arc *create_OrgApacheLuceneUtilFstFST_Arc_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstFST_Arc *create_OrgApacheLuceneUtilFstFST_Arc_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstFST_Arc)
 
@@ -268,6 +268,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstFST_Arc)
 - (void)writeBytesWithByteArray:(IOSByteArray *)b
                         withInt:(jint)offset
                         withInt:(jint)length;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -308,6 +312,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstFST_BytesWriter)
 - (void)readBytesWithByteArray:(IOSByteArray *)b
                        withInt:(jint)offset
                        withInt:(jint)len;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

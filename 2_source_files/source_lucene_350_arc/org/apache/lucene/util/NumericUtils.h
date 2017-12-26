@@ -76,23 +76,23 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilNumericUtils)
 
-inline jint OrgApacheLuceneUtilNumericUtils_get_PRECISION_STEP_DEFAULT();
+inline jint OrgApacheLuceneUtilNumericUtils_get_PRECISION_STEP_DEFAULT(void);
 #define OrgApacheLuceneUtilNumericUtils_PRECISION_STEP_DEFAULT 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilNumericUtils, PRECISION_STEP_DEFAULT, jint)
 
-inline jchar OrgApacheLuceneUtilNumericUtils_get_SHIFT_START_LONG();
+inline jchar OrgApacheLuceneUtilNumericUtils_get_SHIFT_START_LONG(void);
 #define OrgApacheLuceneUtilNumericUtils_SHIFT_START_LONG ' '
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilNumericUtils, SHIFT_START_LONG, jchar)
 
-inline jint OrgApacheLuceneUtilNumericUtils_get_BUF_SIZE_LONG();
+inline jint OrgApacheLuceneUtilNumericUtils_get_BUF_SIZE_LONG(void);
 #define OrgApacheLuceneUtilNumericUtils_BUF_SIZE_LONG 11
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilNumericUtils, BUF_SIZE_LONG, jint)
 
-inline jchar OrgApacheLuceneUtilNumericUtils_get_SHIFT_START_INT();
+inline jchar OrgApacheLuceneUtilNumericUtils_get_SHIFT_START_INT(void);
 #define OrgApacheLuceneUtilNumericUtils_SHIFT_START_INT '`'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilNumericUtils, SHIFT_START_INT, jchar)
 
-inline jint OrgApacheLuceneUtilNumericUtils_get_BUF_SIZE_INT();
+inline jint OrgApacheLuceneUtilNumericUtils_get_BUF_SIZE_INT(void);
 #define OrgApacheLuceneUtilNumericUtils_BUF_SIZE_INT 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilNumericUtils, BUF_SIZE_INT, jint)
 

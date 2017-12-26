@@ -228,6 +228,10 @@ withOrgApacheLuceneDocumentDateTools_Resolution:(OrgApacheLuceneDocumentDateTool
 
 - (OrgApacheLuceneSearchQuery *)newWildcardQueryWithOrgApacheLuceneIndexTerm:(OrgApacheLuceneIndexTerm *)t OBJC_METHOD_FAMILY_NONE;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneQueryParserQueryParser)
@@ -243,12 +247,12 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser, token_source_, OrgApa
 J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser, token_, OrgApacheLuceneQueryParserToken *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser, jj_nt_, OrgApacheLuceneQueryParserToken *)
 
-inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_get_AND_OPERATOR();
+inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_get_AND_OPERATOR(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_AND_OPERATOR;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParser, AND_OPERATOR, OrgApacheLuceneQueryParserQueryParser_Operator *)
 
-inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_get_OR_OPERATOR();
+inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_get_OR_OPERATOR(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_OR_OPERATOR;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParser, OR_OPERATOR, OrgApacheLuceneQueryParserQueryParser_Operator *)
@@ -293,17 +297,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneQueryParserQueryParser_Operator_Enum)
   OrgApacheLuceneQueryParserQueryParser_Operator_Enum_AND = 1,
 };
 
-@interface OrgApacheLuceneQueryParserQueryParser_Operator : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneQueryParserQueryParser_Operator : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneQueryParserQueryParser_Operator *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -312,13 +312,13 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneQueryParserQueryParser_Operator)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_Operator_values_[];
 
-inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_Operator_get_OR();
+inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_Operator_get_OR(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneQueryParserQueryParser_Operator, OR)
 
-inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_Operator_get_AND();
+inline OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_Operator_get_AND(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneQueryParserQueryParser_Operator, AND)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneQueryParserQueryParser_Operator_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneQueryParserQueryParser_Operator_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryParser_Operator_valueOfWithNSString_(NSString *name);
 
@@ -354,9 +354,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser_JJCalls, next_, OrgApa
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserQueryParser_JJCalls_init(OrgApacheLuceneQueryParserQueryParser_JJCalls *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_JJCalls *new_OrgApacheLuceneQueryParserQueryParser_JJCalls_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_JJCalls *new_OrgApacheLuceneQueryParserQueryParser_JJCalls_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_JJCalls *create_OrgApacheLuceneQueryParserQueryParser_JJCalls_init();
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserQueryParser_JJCalls *create_OrgApacheLuceneQueryParserQueryParser_JJCalls_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneQueryParserQueryParser_JJCalls)
 

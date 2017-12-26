@@ -34,7 +34,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreNativeFSLock, lock_, JavaNioChannelsFile
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreNativeFSLock, path_, JavaIoFile *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreNativeFSLock, lockDir_, JavaIoFile *)
 
-inline JavaUtilHashSet *OrgApacheLuceneStoreNativeFSLock_get_LOCK_HELD();
+inline JavaUtilHashSet *OrgApacheLuceneStoreNativeFSLock_get_LOCK_HELD(void);
 inline JavaUtilHashSet *OrgApacheLuceneStoreNativeFSLock_set_LOCK_HELD(JavaUtilHashSet *value);
 static JavaUtilHashSet *OrgApacheLuceneStoreNativeFSLock_LOCK_HELD;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneStoreNativeFSLock, LOCK_HELD, JavaUtilHashSet *)

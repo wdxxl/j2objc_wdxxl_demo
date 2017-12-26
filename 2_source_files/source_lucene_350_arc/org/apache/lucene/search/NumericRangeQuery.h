@@ -115,6 +115,10 @@
 
 - (OrgApacheLuceneSearchFilteredTermEnum *)getEnumWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchNumericRangeQuery)
@@ -124,22 +128,22 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNumericRangeQuery, dataType_, OrgApache
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNumericRangeQuery, min_, NSNumber *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchNumericRangeQuery, max_, NSNumber *)
 
-inline jlong OrgApacheLuceneSearchNumericRangeQuery_get_LONG_NEGATIVE_INFINITY();
+inline jlong OrgApacheLuceneSearchNumericRangeQuery_get_LONG_NEGATIVE_INFINITY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jlong OrgApacheLuceneSearchNumericRangeQuery_LONG_NEGATIVE_INFINITY;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneSearchNumericRangeQuery, LONG_NEGATIVE_INFINITY, jlong)
 
-inline jlong OrgApacheLuceneSearchNumericRangeQuery_get_LONG_POSITIVE_INFINITY();
+inline jlong OrgApacheLuceneSearchNumericRangeQuery_get_LONG_POSITIVE_INFINITY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jlong OrgApacheLuceneSearchNumericRangeQuery_LONG_POSITIVE_INFINITY;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneSearchNumericRangeQuery, LONG_POSITIVE_INFINITY, jlong)
 
-inline jint OrgApacheLuceneSearchNumericRangeQuery_get_INT_NEGATIVE_INFINITY();
+inline jint OrgApacheLuceneSearchNumericRangeQuery_get_INT_NEGATIVE_INFINITY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneSearchNumericRangeQuery_INT_NEGATIVE_INFINITY;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneSearchNumericRangeQuery, INT_NEGATIVE_INFINITY, jint)
 
-inline jint OrgApacheLuceneSearchNumericRangeQuery_get_INT_POSITIVE_INFINITY();
+inline jint OrgApacheLuceneSearchNumericRangeQuery_get_INT_POSITIVE_INFINITY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneSearchNumericRangeQuery_INT_POSITIVE_INFINITY;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneSearchNumericRangeQuery, INT_POSITIVE_INFINITY, jint)

@@ -65,9 +65,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_1_init(OrgApacheLuceneSearchFieldCache_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_1 *new_OrgApacheLuceneSearchFieldCache_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_1 *new_OrgApacheLuceneSearchFieldCache_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_1 *create_OrgApacheLuceneSearchFieldCache_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_1 *create_OrgApacheLuceneSearchFieldCache_1_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_2 : NSObject < OrgApacheLuceneSearchFieldCache_ShortParser >
 
@@ -85,9 +85,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_2)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_2_init(OrgApacheLuceneSearchFieldCache_2 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_2 *new_OrgApacheLuceneSearchFieldCache_2_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_2 *new_OrgApacheLuceneSearchFieldCache_2_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_2 *create_OrgApacheLuceneSearchFieldCache_2_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_2 *create_OrgApacheLuceneSearchFieldCache_2_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_3 : NSObject < OrgApacheLuceneSearchFieldCache_IntParser >
 
@@ -105,9 +105,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_3)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_3_init(OrgApacheLuceneSearchFieldCache_3 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_3 *new_OrgApacheLuceneSearchFieldCache_3_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_3 *new_OrgApacheLuceneSearchFieldCache_3_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_3 *create_OrgApacheLuceneSearchFieldCache_3_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_3 *create_OrgApacheLuceneSearchFieldCache_3_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_4 : NSObject < OrgApacheLuceneSearchFieldCache_FloatParser >
 
@@ -125,9 +125,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_4)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_4_init(OrgApacheLuceneSearchFieldCache_4 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_4 *new_OrgApacheLuceneSearchFieldCache_4_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_4 *new_OrgApacheLuceneSearchFieldCache_4_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_4 *create_OrgApacheLuceneSearchFieldCache_4_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_4 *create_OrgApacheLuceneSearchFieldCache_4_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_5 : NSObject < OrgApacheLuceneSearchFieldCache_LongParser >
 
@@ -145,9 +145,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_5)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_5_init(OrgApacheLuceneSearchFieldCache_5 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_5 *new_OrgApacheLuceneSearchFieldCache_5_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_5 *new_OrgApacheLuceneSearchFieldCache_5_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_5 *create_OrgApacheLuceneSearchFieldCache_5_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_5 *create_OrgApacheLuceneSearchFieldCache_5_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_6 : NSObject < OrgApacheLuceneSearchFieldCache_DoubleParser >
 
@@ -165,9 +165,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_6)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_6_init(OrgApacheLuceneSearchFieldCache_6 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_6 *new_OrgApacheLuceneSearchFieldCache_6_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_6 *new_OrgApacheLuceneSearchFieldCache_6_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_6 *create_OrgApacheLuceneSearchFieldCache_6_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_6 *create_OrgApacheLuceneSearchFieldCache_6_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_7 : NSObject < OrgApacheLuceneSearchFieldCache_IntParser >
 
@@ -185,9 +185,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_7)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_7_init(OrgApacheLuceneSearchFieldCache_7 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_7 *new_OrgApacheLuceneSearchFieldCache_7_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_7 *new_OrgApacheLuceneSearchFieldCache_7_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_7 *create_OrgApacheLuceneSearchFieldCache_7_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_7 *create_OrgApacheLuceneSearchFieldCache_7_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_8 : NSObject < OrgApacheLuceneSearchFieldCache_FloatParser >
 
@@ -205,9 +205,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_8)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_8_init(OrgApacheLuceneSearchFieldCache_8 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_8 *new_OrgApacheLuceneSearchFieldCache_8_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_8 *new_OrgApacheLuceneSearchFieldCache_8_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_8 *create_OrgApacheLuceneSearchFieldCache_8_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_8 *create_OrgApacheLuceneSearchFieldCache_8_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_9 : NSObject < OrgApacheLuceneSearchFieldCache_LongParser >
 
@@ -225,9 +225,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_9)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_9_init(OrgApacheLuceneSearchFieldCache_9 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_9 *new_OrgApacheLuceneSearchFieldCache_9_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_9 *new_OrgApacheLuceneSearchFieldCache_9_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_9 *create_OrgApacheLuceneSearchFieldCache_9_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_9 *create_OrgApacheLuceneSearchFieldCache_9_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_10 : NSObject < OrgApacheLuceneSearchFieldCache_DoubleParser >
 
@@ -245,9 +245,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCache_10)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFieldCache_10_init(OrgApacheLuceneSearchFieldCache_10 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_10 *new_OrgApacheLuceneSearchFieldCache_10_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_10 *new_OrgApacheLuceneSearchFieldCache_10_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_10 *create_OrgApacheLuceneSearchFieldCache_10_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFieldCache_10 *create_OrgApacheLuceneSearchFieldCache_10_init(void);
 
 @interface OrgApacheLuceneSearchFieldCache_CacheEntry () {
  @public

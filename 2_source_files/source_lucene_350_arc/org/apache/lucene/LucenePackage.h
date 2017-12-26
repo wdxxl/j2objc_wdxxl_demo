@@ -28,7 +28,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneLucenePackage)
 
-FOUNDATION_EXPORT JavaLangPackage *OrgApacheLuceneLucenePackage_get();
+FOUNDATION_EXPORT JavaLangPackage *OrgApacheLuceneLucenePackage_get(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneLucenePackage)
 

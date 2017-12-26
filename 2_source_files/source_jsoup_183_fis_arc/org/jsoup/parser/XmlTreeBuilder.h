@@ -63,9 +63,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserXmlTreeBuilder)
 
 FOUNDATION_EXPORT void OrgJsoupParserXmlTreeBuilder_init(OrgJsoupParserXmlTreeBuilder *self);
 
-FOUNDATION_EXPORT OrgJsoupParserXmlTreeBuilder *new_OrgJsoupParserXmlTreeBuilder_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserXmlTreeBuilder *new_OrgJsoupParserXmlTreeBuilder_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserXmlTreeBuilder *create_OrgJsoupParserXmlTreeBuilder_init();
+FOUNDATION_EXPORT OrgJsoupParserXmlTreeBuilder *create_OrgJsoupParserXmlTreeBuilder_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserXmlTreeBuilder)
 

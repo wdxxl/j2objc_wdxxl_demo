@@ -225,8 +225,8 @@ void OrgApacheLuceneIndexSegmentTermEnum_initWithOrgApacheLuceneStoreIndexInput_
         self->maxSkipLevels_ = [((OrgApacheLuceneStoreIndexInput *) nil_chk(self->input_)) readInt];
       }
     }
-    JreAssert((self->indexInterval_ > 0), (JreStrcat("$I$", @"indexInterval=", self->indexInterval_, @" is negative; must be > 0")));
-    JreAssert((self->skipInterval_ > 0), (JreStrcat("$I$", @"skipInterval=", self->skipInterval_, @" is negative; must be > 0")));
+    JreAssert(self->indexInterval_ > 0, JreStrcat("$I$", @"indexInterval=", self->indexInterval_, @" is negative; must be > 0"));
+    JreAssert(self->skipInterval_ > 0, JreStrcat("$I$", @"skipInterval=", self->skipInterval_, @" is negative; must be > 0"));
   }
   if (self->format_ > OrgApacheLuceneIndexTermInfosWriter_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES) {
     [((OrgApacheLuceneIndexTermBuffer *) nil_chk(self->termBuffer_)) setPreUTF8Strings];

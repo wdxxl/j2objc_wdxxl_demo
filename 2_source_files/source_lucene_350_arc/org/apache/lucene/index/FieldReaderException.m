@@ -5,6 +5,7 @@
 
 #include "J2ObjC_source.h"
 #include "java/lang/RuntimeException.h"
+#include "java/lang/Throwable.h"
 #include "org/apache/lucene/index/FieldReaderException.h"
 
 @implementation OrgApacheLuceneIndexFieldReaderException
@@ -16,8 +17,8 @@ J2OBJC_IGNORE_DESIGNATED_BEGIN
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithNSException:(NSException *)cause {
-  OrgApacheLuceneIndexFieldReaderException_initWithNSException_(self, cause);
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause {
+  OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(self, cause);
   return self;
 }
 
@@ -27,8 +28,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (instancetype)initWithNSString:(NSString *)message
-                 withNSException:(NSException *)cause {
-  OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(self, message, cause);
+           withJavaLangThrowable:(JavaLangThrowable *)cause {
+  OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(self, message, cause);
   return self;
 }
 
@@ -42,11 +43,11 @@ J2OBJC_IGNORE_DESIGNATED_END
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
   methods[0].selector = @selector(init);
-  methods[1].selector = @selector(initWithNSException:);
+  methods[1].selector = @selector(initWithJavaLangThrowable:);
   methods[2].selector = @selector(initWithNSString:);
-  methods[3].selector = @selector(initWithNSString:withNSException:);
+  methods[3].selector = @selector(initWithNSString:withJavaLangThrowable:);
   #pragma clang diagnostic pop
-  static const void *ptrTable[] = { "LNSException;", "LNSString;", "LNSString;LNSException;" };
+  static const void *ptrTable[] = { "LJavaLangThrowable;", "LNSString;", "LNSString;LJavaLangThrowable;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexFieldReaderException = { "FieldReaderException", "org.apache.lucene.index", ptrTable, methods, NULL, 7, 0x1, 4, 0, -1, -1, -1, -1, -1 };
   return &_OrgApacheLuceneIndexFieldReaderException;
 }
@@ -65,16 +66,16 @@ OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReader
   J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexFieldReaderException, init)
 }
 
-void OrgApacheLuceneIndexFieldReaderException_initWithNSException_(OrgApacheLuceneIndexFieldReaderException *self, NSException *cause) {
-  JavaLangRuntimeException_initWithNSException_(self, cause);
+void OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(OrgApacheLuceneIndexFieldReaderException *self, JavaLangThrowable *cause) {
+  JavaLangRuntimeException_initWithJavaLangThrowable_(self, cause);
 }
 
-OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithNSException_(NSException *cause) {
-  J2OBJC_NEW_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSException_, cause)
+OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithJavaLangThrowable_, cause)
 }
 
-OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSException_(NSException *cause) {
-  J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSException_, cause)
+OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithJavaLangThrowable_, cause)
 }
 
 void OrgApacheLuceneIndexFieldReaderException_initWithNSString_(OrgApacheLuceneIndexFieldReaderException *self, NSString *message) {
@@ -89,16 +90,16 @@ OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReader
   J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSString_, message)
 }
 
-void OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(OrgApacheLuceneIndexFieldReaderException *self, NSString *message, NSException *cause) {
-  JavaLangRuntimeException_initWithNSString_withNSException_(self, message, cause);
+void OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(OrgApacheLuceneIndexFieldReaderException *self, NSString *message, JavaLangThrowable *cause) {
+  JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_(self, message, cause);
 }
 
-OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(NSString *message, NSException *cause) {
-  J2OBJC_NEW_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSString_withNSException_, message, cause)
+OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSString_withJavaLangThrowable_, message, cause)
 }
 
-OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(NSString *message, NSException *cause) {
-  J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSString_withNSException_, message, cause)
+OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexFieldReaderException, initWithNSString_withJavaLangThrowable_, message, cause)
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexFieldReaderException)

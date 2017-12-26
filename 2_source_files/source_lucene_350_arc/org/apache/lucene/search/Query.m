@@ -30,9 +30,9 @@
 
 @end
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchQuery__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchQuery__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchQuery__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchQuery__Annotations$1(void);
 
 @implementation OrgApacheLuceneSearchQuery
 

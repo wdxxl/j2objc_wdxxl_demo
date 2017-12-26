@@ -57,6 +57,25 @@
                                                 withInt:(jint)termInfosIndexDivisor
                                             withBoolean:(jboolean)applyAllDeletes;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)arg0
+                 withOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)arg1
+          withOrgApacheLuceneIndexIndexDeletionPolicy:(id<OrgApacheLuceneIndexIndexDeletionPolicy>)arg2
+                                          withBoolean:(jboolean)arg3
+                                              withInt:(jint)arg4
+                               withJavaUtilCollection:(id<JavaUtilCollection>)arg5 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)arg0
+                 withOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)arg1
+           withOrgApacheLuceneIndexSegmentReaderArray:(IOSObjectArray *)arg2
+                                         withIntArray:(IOSIntArray *)arg3
+                                      withJavaUtilMap:(id<JavaUtilMap>)arg4
+                                          withBoolean:(jboolean)arg5
+                                          withBoolean:(jboolean)arg6
+                                              withInt:(jint)arg7
+                               withJavaUtilCollection:(id<JavaUtilCollection>)arg8 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexReadOnlyDirectoryReader)

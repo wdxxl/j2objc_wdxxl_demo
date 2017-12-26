@@ -20,6 +20,8 @@
 #define INCLUDE_JavaLangError 1
 #include "java/lang/Error.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneQueryParserTokenMgrError : JavaLangError {
  @public
   jint errorCode_;
@@ -53,23 +55,37 @@
                          withNSString:(NSString *)errorAfter
                              withChar:(jchar)curChar;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneQueryParserTokenMgrError)
 
-inline jint OrgApacheLuceneQueryParserTokenMgrError_get_LEXICAL_ERROR();
+inline jint OrgApacheLuceneQueryParserTokenMgrError_get_LEXICAL_ERROR(void);
 #define OrgApacheLuceneQueryParserTokenMgrError_LEXICAL_ERROR 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserTokenMgrError, LEXICAL_ERROR, jint)
 
-inline jint OrgApacheLuceneQueryParserTokenMgrError_get_STATIC_LEXER_ERROR();
+inline jint OrgApacheLuceneQueryParserTokenMgrError_get_STATIC_LEXER_ERROR(void);
 #define OrgApacheLuceneQueryParserTokenMgrError_STATIC_LEXER_ERROR 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserTokenMgrError, STATIC_LEXER_ERROR, jint)
 
-inline jint OrgApacheLuceneQueryParserTokenMgrError_get_INVALID_LEXICAL_STATE();
+inline jint OrgApacheLuceneQueryParserTokenMgrError_get_INVALID_LEXICAL_STATE(void);
 #define OrgApacheLuceneQueryParserTokenMgrError_INVALID_LEXICAL_STATE 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserTokenMgrError, INVALID_LEXICAL_STATE, jint)
 
-inline jint OrgApacheLuceneQueryParserTokenMgrError_get_LOOP_DETECTED();
+inline jint OrgApacheLuceneQueryParserTokenMgrError_get_LOOP_DETECTED(void);
 #define OrgApacheLuceneQueryParserTokenMgrError_LOOP_DETECTED 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserTokenMgrError, LOOP_DETECTED, jint)
 
@@ -79,9 +95,9 @@ FOUNDATION_EXPORT NSString *OrgApacheLuceneQueryParserTokenMgrError_LexicalError
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserTokenMgrError_init(OrgApacheLuceneQueryParserTokenMgrError *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserTokenMgrError *new_OrgApacheLuceneQueryParserTokenMgrError_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserTokenMgrError *new_OrgApacheLuceneQueryParserTokenMgrError_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserTokenMgrError *create_OrgApacheLuceneQueryParserTokenMgrError_init();
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserTokenMgrError *create_OrgApacheLuceneQueryParserTokenMgrError_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserTokenMgrError_initWithNSString_withInt_(OrgApacheLuceneQueryParserTokenMgrError *self, NSString *message, jint reason);
 

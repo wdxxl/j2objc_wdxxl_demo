@@ -134,14 +134,14 @@ J2OBJC_IGNORE_DESIGNATED_END
 void OrgApacheLuceneAnalysisAnalyzer_init(OrgApacheLuceneAnalysisAnalyzer *self) {
   NSObject_init(self);
   self->tokenStreams_ = new_OrgApacheLuceneUtilCloseableThreadLocal_init();
-  JreAssert((OrgApacheLuceneAnalysisAnalyzer_assertFinal(self)), (@"org/apache/lucene/analysis/Analyzer.java:45 condition failed: assert assertFinal();"));
+  JreAssert(OrgApacheLuceneAnalysisAnalyzer_assertFinal(self), @"org/apache/lucene/analysis/Analyzer.java:45 condition failed: assert assertFinal();");
 }
 
 jboolean OrgApacheLuceneAnalysisAnalyzer_assertFinal(OrgApacheLuceneAnalysisAnalyzer *self) {
   @try {
     IOSClass *clazz = [self java_getClass];
     if (![clazz desiredAssertionStatus]) return true;
-    JreAssert(([clazz isAnonymousClass] || ([clazz getModifiers] & (JavaLangReflectModifier_FINAL | JavaLangReflectModifier_PRIVATE)) != 0 || (JavaLangReflectModifier_isFinalWithInt_([((JavaLangReflectMethod *) nil_chk([clazz getMethod:@"tokenStream" parameterTypes:[IOSObjectArray newArrayWithObjects:(id[]){ NSString_class_(), JavaIoReader_class_() } count:2 type:IOSClass_class_()]])) getModifiers]) && JavaLangReflectModifier_isFinalWithInt_([((JavaLangReflectMethod *) nil_chk([clazz getMethod:@"reusableTokenStream" parameterTypes:[IOSObjectArray newArrayWithObjects:(id[]){ NSString_class_(), JavaIoReader_class_() } count:2 type:IOSClass_class_()]])) getModifiers]))), (@"Analyzer implementation classes or at least their tokenStream() and reusableTokenStream() implementations must be final"));
+    JreAssert([clazz isAnonymousClass] || ([clazz getModifiers] & (JavaLangReflectModifier_FINAL | JavaLangReflectModifier_PRIVATE)) != 0 || (JavaLangReflectModifier_isFinalWithInt_([((JavaLangReflectMethod *) nil_chk(([clazz getMethod:@"tokenStream" parameterTypes:[IOSObjectArray newArrayWithObjects:(id[]){ NSString_class_(), JavaIoReader_class_() } count:2 type:IOSClass_class_()]]))) getModifiers]) && JavaLangReflectModifier_isFinalWithInt_([((JavaLangReflectMethod *) nil_chk(([clazz getMethod:@"reusableTokenStream" parameterTypes:[IOSObjectArray newArrayWithObjects:(id[]){ NSString_class_(), JavaIoReader_class_() } count:2 type:IOSClass_class_()]]))) getModifiers])), @"Analyzer implementation classes or at least their tokenStream() and reusableTokenStream() implementations must be final");
     return true;
   }
   @catch (JavaLangNoSuchMethodException *nsme) {

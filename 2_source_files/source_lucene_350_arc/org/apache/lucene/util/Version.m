@@ -16,19 +16,19 @@ __attribute__((unused)) static void OrgApacheLuceneUtilVersion_initWithNSString_
 
 __attribute__((unused)) static OrgApacheLuceneUtilVersion *new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilVersion__Annotations$6(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilVersion)
 
@@ -46,10 +46,6 @@ OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_values_[13];
 
 + (OrgApacheLuceneUtilVersion *)valueOfWithNSString:(NSString *)name {
   return OrgApacheLuceneUtilVersion_valueOfWithNSString_(name);
-}
-
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -86,19 +82,19 @@ OrgApacheLuceneUtilVersion *OrgApacheLuceneUtilVersion_values_[13];
 
 + (void)initialize {
   if (self == [OrgApacheLuceneUtilVersion class]) {
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_20) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_20", 0);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_21) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_21", 1);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_22) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_22", 2);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_23) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_23", 3);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_24) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_24", 4);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_29) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_29", 5);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_30) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_30", 6);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_31) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_31", 7);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_32) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_32", 8);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_33) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_33", 9);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_34) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_34", 10);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_35) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_35", 11);
-    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_CURRENT) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"LUCENE_CURRENT", 12);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_20) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_21) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_22) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_23) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 3);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_24) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 4);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_29) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 5);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_30) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 6);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_31) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 7);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_32) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 8);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_33) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 9);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_34) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 10);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_35) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 11);
+    JreEnum(OrgApacheLuceneUtilVersion, LUCENE_CURRENT) = new_OrgApacheLuceneUtilVersion_initWithNSString_withInt_(@"", 12);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneUtilVersion)
   }
 }

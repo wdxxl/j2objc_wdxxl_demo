@@ -26,6 +26,13 @@
 
 - (instancetype)initWithNSString:(NSString *)message;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreNoSuchDirectoryException)

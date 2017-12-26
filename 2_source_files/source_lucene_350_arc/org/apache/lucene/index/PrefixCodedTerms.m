@@ -132,7 +132,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexPrefixCodedTerms)
 }
 
 - (OrgApacheLuceneIndexTerm *)next {
-  JreAssert(([self hasNext]), (@"org/apache/lucene/index/PrefixCodedTerms.java:70 condition failed: assert hasNext();"));
+  JreAssert([self hasNext], @"org/apache/lucene/index/PrefixCodedTerms.java:70 condition failed: assert hasNext();");
   @try {
     jint code = [((OrgApacheLuceneStoreIndexInput *) nil_chk(input_)) readVInt];
     if ((code & 1) != 0) {
@@ -147,7 +147,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexPrefixCodedTerms)
     return term_;
   }
   @catch (JavaIoIOException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -195,7 +195,7 @@ void OrgApacheLuceneIndexPrefixCodedTerms_PrefixCodedTermsIterator_initWithOrgAp
     self->input_ = new_OrgApacheLuceneStoreRAMInputStream_initWithNSString_withOrgApacheLuceneStoreRAMFile_(@"PrefixCodedTermsIterator", outer$->buffer_);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -219,7 +219,7 @@ J2OBJC_IGNORE_DESIGNATED_BEGIN
 J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)addWithOrgApacheLuceneIndexTerm:(OrgApacheLuceneIndexTerm *)term {
-  JreAssert(([((OrgApacheLuceneIndexTerm *) nil_chk(lastTerm_)) isEqual:new_OrgApacheLuceneIndexTerm_initWithNSString_(@"")] || [((OrgApacheLuceneIndexTerm *) nil_chk(term)) compareToWithId:lastTerm_] > 0), (@"org/apache/lucene/index/PrefixCodedTerms.java:104 condition failed: assert lastTerm.equals(new Term(\"\")) || term.compareTo(lastTerm) > 0;"));
+  JreAssert([((OrgApacheLuceneIndexTerm *) nil_chk(lastTerm_)) isEqual:new_OrgApacheLuceneIndexTerm_initWithNSString_(@"")] || [((OrgApacheLuceneIndexTerm *) nil_chk(term)) compareToWithId:lastTerm_] > 0, @"org/apache/lucene/index/PrefixCodedTerms.java:104 condition failed: assert lastTerm.equals(new Term(\"\")) || term.compareTo(lastTerm) > 0;");
   [((OrgApacheLuceneUtilBytesRef *) nil_chk(scratch_)) copy__WithJavaLangCharSequence:((OrgApacheLuceneIndexTerm *) nil_chk(term))->text_];
   @try {
     jint prefix = OrgApacheLuceneIndexPrefixCodedTerms_Builder_sharedPrefixWithOrgApacheLuceneUtilBytesRef_withOrgApacheLuceneUtilBytesRef_(self, lastBytes_, scratch_);
@@ -238,7 +238,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     lastTerm_->field_ = term->field_;
   }
   @catch (JavaIoIOException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -248,7 +248,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return new_OrgApacheLuceneIndexPrefixCodedTerms_initWithOrgApacheLuceneStoreRAMFile_(buffer_);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 

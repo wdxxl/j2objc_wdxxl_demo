@@ -67,9 +67,9 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonReflectTypeToken, type_, id<JavaLangReflectType
 
 FOUNDATION_EXPORT void ComGoogleGsonReflectTypeToken_init(ComGoogleGsonReflectTypeToken *self);
 
-FOUNDATION_EXPORT ComGoogleGsonReflectTypeToken *new_ComGoogleGsonReflectTypeToken_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonReflectTypeToken *new_ComGoogleGsonReflectTypeToken_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonReflectTypeToken *create_ComGoogleGsonReflectTypeToken_init();
+FOUNDATION_EXPORT ComGoogleGsonReflectTypeToken *create_ComGoogleGsonReflectTypeToken_init(void);
 
 FOUNDATION_EXPORT void ComGoogleGsonReflectTypeToken_initWithJavaLangReflectType_(ComGoogleGsonReflectTypeToken *self, id<JavaLangReflectType> type);
 

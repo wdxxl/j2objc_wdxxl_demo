@@ -29,27 +29,27 @@
 
 @end
 
-inline IOSCharArray *OrgJsoupParserTokeniserState_get_attributeSingleValueCharsSorted();
+inline IOSCharArray *OrgJsoupParserTokeniserState_get_attributeSingleValueCharsSorted(void);
 static IOSCharArray *OrgJsoupParserTokeniserState_attributeSingleValueCharsSorted;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTokeniserState, attributeSingleValueCharsSorted, IOSCharArray *)
 
-inline IOSCharArray *OrgJsoupParserTokeniserState_get_attributeDoubleValueCharsSorted();
+inline IOSCharArray *OrgJsoupParserTokeniserState_get_attributeDoubleValueCharsSorted(void);
 static IOSCharArray *OrgJsoupParserTokeniserState_attributeDoubleValueCharsSorted;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTokeniserState, attributeDoubleValueCharsSorted, IOSCharArray *)
 
-inline IOSCharArray *OrgJsoupParserTokeniserState_get_attributeNameCharsSorted();
+inline IOSCharArray *OrgJsoupParserTokeniserState_get_attributeNameCharsSorted(void);
 static IOSCharArray *OrgJsoupParserTokeniserState_attributeNameCharsSorted;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTokeniserState, attributeNameCharsSorted, IOSCharArray *)
 
-inline jchar OrgJsoupParserTokeniserState_get_replacementChar();
+inline jchar OrgJsoupParserTokeniserState_get_replacementChar(void);
 #define OrgJsoupParserTokeniserState_replacementChar 0xfffd
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserTokeniserState, replacementChar, jchar)
 
-inline NSString *OrgJsoupParserTokeniserState_get_replacementStr();
+inline NSString *OrgJsoupParserTokeniserState_get_replacementStr(void);
 static NSString *OrgJsoupParserTokeniserState_replacementStr;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserTokeniserState, replacementStr, NSString *)
 
-inline jchar OrgJsoupParserTokeniserState_get_eof();
+inline jchar OrgJsoupParserTokeniserState_get_eof(void);
 #define OrgJsoupParserTokeniserState_eof 0xffff
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserTokeniserState, eof, jchar)
 
@@ -61,7 +61,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_handleDataEndTa
 
 __attribute__((unused)) static void OrgJsoupParserTokeniserState_handleDataDoubleEscapeTagWithOrgJsoupParserTokeniser_withOrgJsoupParserCharacterReader_withOrgJsoupParserTokeniserState_withOrgJsoupParserTokeniserState_(OrgJsoupParserTokeniser *t, OrgJsoupParserCharacterReader *r, OrgJsoupParserTokeniserState *primary, OrgJsoupParserTokeniserState *fallback);
 
-@interface OrgJsoupParserTokeniserState_1 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_1 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -74,7 +74,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_1_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_1 *new_OrgJsoupParserTokeniserState_1_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_2 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_2 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -87,7 +87,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_2_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_2 *new_OrgJsoupParserTokeniserState_2_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_3 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_3 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -100,7 +100,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_3_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_3 *new_OrgJsoupParserTokeniserState_3_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_4 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_4 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -113,7 +113,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_4_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_4 *new_OrgJsoupParserTokeniserState_4_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_5 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_5 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -126,7 +126,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_5_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_5 *new_OrgJsoupParserTokeniserState_5_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_6 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_6 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -139,7 +139,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_6_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_6 *new_OrgJsoupParserTokeniserState_6_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_7 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_7 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -152,7 +152,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_7_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_7 *new_OrgJsoupParserTokeniserState_7_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_8 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_8 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -165,7 +165,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_8_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_8 *new_OrgJsoupParserTokeniserState_8_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_9 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_9 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -178,7 +178,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_9_initWithNSStr
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_9 *new_OrgJsoupParserTokeniserState_9_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_10 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_10 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -191,7 +191,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_10_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_10 *new_OrgJsoupParserTokeniserState_10_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_11 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_11 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -204,7 +204,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_11_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_11 *new_OrgJsoupParserTokeniserState_11_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_12 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_12 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -217,7 +217,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_12_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_12 *new_OrgJsoupParserTokeniserState_12_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_13 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_13 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -235,7 +235,7 @@ __attribute__((unused)) static OrgJsoupParserTokeniserState_13 *new_OrgJsoupPars
 
 __attribute__((unused)) static void OrgJsoupParserTokeniserState_13_anythingElseWithOrgJsoupParserTokeniser_withOrgJsoupParserCharacterReader_(OrgJsoupParserTokeniserState_13 *self, OrgJsoupParserTokeniser *t, OrgJsoupParserCharacterReader *r);
 
-@interface OrgJsoupParserTokeniserState_14 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_14 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -248,7 +248,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_14_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_14 *new_OrgJsoupParserTokeniserState_14_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_15 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_15 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -261,7 +261,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_15_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_15 *new_OrgJsoupParserTokeniserState_15_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_16 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_16 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -274,7 +274,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_16_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_16 *new_OrgJsoupParserTokeniserState_16_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_17 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_17 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -287,7 +287,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_17_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_17 *new_OrgJsoupParserTokeniserState_17_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_18 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_18 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -300,7 +300,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_18_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_18 *new_OrgJsoupParserTokeniserState_18_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_19 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_19 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -313,7 +313,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_19_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_19 *new_OrgJsoupParserTokeniserState_19_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_20 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_20 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -326,7 +326,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_20_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_20 *new_OrgJsoupParserTokeniserState_20_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_21 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_21 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -339,7 +339,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_21_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_21 *new_OrgJsoupParserTokeniserState_21_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_22 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_22 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -352,7 +352,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_22_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_22 *new_OrgJsoupParserTokeniserState_22_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_23 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_23 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -365,7 +365,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_23_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_23 *new_OrgJsoupParserTokeniserState_23_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_24 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_24 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -378,7 +378,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_24_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_24 *new_OrgJsoupParserTokeniserState_24_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_25 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_25 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -391,7 +391,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_25_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_25 *new_OrgJsoupParserTokeniserState_25_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_26 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_26 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -404,7 +404,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_26_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_26 *new_OrgJsoupParserTokeniserState_26_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_27 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_27 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -417,7 +417,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_27_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_27 *new_OrgJsoupParserTokeniserState_27_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_28 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_28 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -430,7 +430,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_28_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_28 *new_OrgJsoupParserTokeniserState_28_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_29 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_29 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -443,7 +443,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_29_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_29 *new_OrgJsoupParserTokeniserState_29_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_30 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_30 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -456,7 +456,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_30_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_30 *new_OrgJsoupParserTokeniserState_30_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_31 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_31 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -469,7 +469,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_31_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_31 *new_OrgJsoupParserTokeniserState_31_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_32 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_32 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -482,7 +482,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_32_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_32 *new_OrgJsoupParserTokeniserState_32_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_33 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_33 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -495,7 +495,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_33_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_33 *new_OrgJsoupParserTokeniserState_33_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_34 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_34 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -508,7 +508,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_34_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_34 *new_OrgJsoupParserTokeniserState_34_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_35 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_35 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -521,7 +521,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_35_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_35 *new_OrgJsoupParserTokeniserState_35_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_36 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_36 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -534,7 +534,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_36_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_36 *new_OrgJsoupParserTokeniserState_36_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_37 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_37 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -547,7 +547,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_37_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_37 *new_OrgJsoupParserTokeniserState_37_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_38 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_38 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -560,7 +560,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_38_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_38 *new_OrgJsoupParserTokeniserState_38_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_39 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_39 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -573,7 +573,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_39_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_39 *new_OrgJsoupParserTokeniserState_39_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_40 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_40 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -586,7 +586,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_40_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_40 *new_OrgJsoupParserTokeniserState_40_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_41 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_41 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -599,7 +599,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_41_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_41 *new_OrgJsoupParserTokeniserState_41_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_42 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_42 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -612,7 +612,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_42_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_42 *new_OrgJsoupParserTokeniserState_42_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_43 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_43 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -625,7 +625,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_43_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_43 *new_OrgJsoupParserTokeniserState_43_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_44 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_44 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -638,7 +638,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_44_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_44 *new_OrgJsoupParserTokeniserState_44_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_45 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_45 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -651,7 +651,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_45_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_45 *new_OrgJsoupParserTokeniserState_45_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_46 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_46 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -664,7 +664,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_46_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_46 *new_OrgJsoupParserTokeniserState_46_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_47 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_47 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -677,7 +677,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_47_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_47 *new_OrgJsoupParserTokeniserState_47_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_48 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_48 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -690,7 +690,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_48_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_48 *new_OrgJsoupParserTokeniserState_48_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_49 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_49 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -703,7 +703,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_49_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_49 *new_OrgJsoupParserTokeniserState_49_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_50 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_50 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -716,7 +716,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_50_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_50 *new_OrgJsoupParserTokeniserState_50_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_51 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_51 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -729,7 +729,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_51_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_51 *new_OrgJsoupParserTokeniserState_51_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_52 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_52 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -742,7 +742,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_52_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_52 *new_OrgJsoupParserTokeniserState_52_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_53 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_53 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -755,7 +755,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_53_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_53 *new_OrgJsoupParserTokeniserState_53_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_54 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_54 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -768,7 +768,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_54_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_54 *new_OrgJsoupParserTokeniserState_54_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_55 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_55 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -781,7 +781,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_55_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_55 *new_OrgJsoupParserTokeniserState_55_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_56 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_56 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -794,7 +794,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_56_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_56 *new_OrgJsoupParserTokeniserState_56_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_57 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_57 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -807,7 +807,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_57_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_57 *new_OrgJsoupParserTokeniserState_57_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_58 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_58 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -820,7 +820,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_58_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_58 *new_OrgJsoupParserTokeniserState_58_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_59 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_59 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -833,7 +833,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_59_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_59 *new_OrgJsoupParserTokeniserState_59_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_60 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_60 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -846,7 +846,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_60_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_60 *new_OrgJsoupParserTokeniserState_60_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_61 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_61 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -859,7 +859,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_61_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_61 *new_OrgJsoupParserTokeniserState_61_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_62 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_62 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -872,7 +872,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_62_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_62 *new_OrgJsoupParserTokeniserState_62_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_63 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_63 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -885,7 +885,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_63_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_63 *new_OrgJsoupParserTokeniserState_63_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_64 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_64 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -898,7 +898,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_64_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_64 *new_OrgJsoupParserTokeniserState_64_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_65 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_65 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -911,7 +911,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_65_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_65 *new_OrgJsoupParserTokeniserState_65_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_66 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_66 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -924,7 +924,7 @@ __attribute__((unused)) static void OrgJsoupParserTokeniserState_66_initWithNSSt
 
 __attribute__((unused)) static OrgJsoupParserTokeniserState_66 *new_OrgJsoupParserTokeniserState_66_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgJsoupParserTokeniserState_67 : OrgJsoupParserTokeniserState < NSCopying >
+@interface OrgJsoupParserTokeniserState_67 : OrgJsoupParserTokeniserState
 
 - (void)readWithOrgJsoupParserTokeniser:(OrgJsoupParserTokeniser *)t
       withOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)r;
@@ -968,10 +968,6 @@ OrgJsoupParserTokeniserState *OrgJsoupParserTokeniserState_values_[67];
 
 + (OrgJsoupParserTokeniserState *)valueOfWithNSString:(NSString *)name {
   return OrgJsoupParserTokeniserState_valueOfWithNSString_(name);
-}
-
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -1073,73 +1069,73 @@ OrgJsoupParserTokeniserState *OrgJsoupParserTokeniserState_values_[67];
 
 + (void)initialize {
   if (self == [OrgJsoupParserTokeniserState class]) {
-    JreEnum(OrgJsoupParserTokeniserState, Data) = new_OrgJsoupParserTokeniserState_1_initWithNSString_withInt_(@"Data", 0);
-    JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInData) = new_OrgJsoupParserTokeniserState_2_initWithNSString_withInt_(@"CharacterReferenceInData", 1);
-    JreEnum(OrgJsoupParserTokeniserState, Rcdata) = new_OrgJsoupParserTokeniserState_3_initWithNSString_withInt_(@"Rcdata", 2);
-    JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInRcdata) = new_OrgJsoupParserTokeniserState_4_initWithNSString_withInt_(@"CharacterReferenceInRcdata", 3);
-    JreEnum(OrgJsoupParserTokeniserState, Rawtext) = new_OrgJsoupParserTokeniserState_5_initWithNSString_withInt_(@"Rawtext", 4);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptData) = new_OrgJsoupParserTokeniserState_6_initWithNSString_withInt_(@"ScriptData", 5);
-    JreEnum(OrgJsoupParserTokeniserState, PLAINTEXT) = new_OrgJsoupParserTokeniserState_7_initWithNSString_withInt_(@"PLAINTEXT", 6);
-    JreEnum(OrgJsoupParserTokeniserState, TagOpen) = new_OrgJsoupParserTokeniserState_8_initWithNSString_withInt_(@"TagOpen", 7);
-    JreEnum(OrgJsoupParserTokeniserState, EndTagOpen) = new_OrgJsoupParserTokeniserState_9_initWithNSString_withInt_(@"EndTagOpen", 8);
-    JreEnum(OrgJsoupParserTokeniserState, TagName) = new_OrgJsoupParserTokeniserState_10_initWithNSString_withInt_(@"TagName", 9);
-    JreEnum(OrgJsoupParserTokeniserState, RcdataLessthanSign) = new_OrgJsoupParserTokeniserState_11_initWithNSString_withInt_(@"RcdataLessthanSign", 10);
-    JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagOpen) = new_OrgJsoupParserTokeniserState_12_initWithNSString_withInt_(@"RCDATAEndTagOpen", 11);
-    JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagName) = new_OrgJsoupParserTokeniserState_13_initWithNSString_withInt_(@"RCDATAEndTagName", 12);
-    JreEnum(OrgJsoupParserTokeniserState, RawtextLessthanSign) = new_OrgJsoupParserTokeniserState_14_initWithNSString_withInt_(@"RawtextLessthanSign", 13);
-    JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagOpen) = new_OrgJsoupParserTokeniserState_15_initWithNSString_withInt_(@"RawtextEndTagOpen", 14);
-    JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagName) = new_OrgJsoupParserTokeniserState_16_initWithNSString_withInt_(@"RawtextEndTagName", 15);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataLessthanSign) = new_OrgJsoupParserTokeniserState_17_initWithNSString_withInt_(@"ScriptDataLessthanSign", 16);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagOpen) = new_OrgJsoupParserTokeniserState_18_initWithNSString_withInt_(@"ScriptDataEndTagOpen", 17);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagName) = new_OrgJsoupParserTokeniserState_19_initWithNSString_withInt_(@"ScriptDataEndTagName", 18);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStart) = new_OrgJsoupParserTokeniserState_20_initWithNSString_withInt_(@"ScriptDataEscapeStart", 19);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStartDash) = new_OrgJsoupParserTokeniserState_21_initWithNSString_withInt_(@"ScriptDataEscapeStartDash", 20);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscaped) = new_OrgJsoupParserTokeniserState_22_initWithNSString_withInt_(@"ScriptDataEscaped", 21);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDash) = new_OrgJsoupParserTokeniserState_23_initWithNSString_withInt_(@"ScriptDataEscapedDash", 22);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDashDash) = new_OrgJsoupParserTokeniserState_24_initWithNSString_withInt_(@"ScriptDataEscapedDashDash", 23);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedLessthanSign) = new_OrgJsoupParserTokeniserState_25_initWithNSString_withInt_(@"ScriptDataEscapedLessthanSign", 24);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagOpen) = new_OrgJsoupParserTokeniserState_26_initWithNSString_withInt_(@"ScriptDataEscapedEndTagOpen", 25);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagName) = new_OrgJsoupParserTokeniserState_27_initWithNSString_withInt_(@"ScriptDataEscapedEndTagName", 26);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeStart) = new_OrgJsoupParserTokeniserState_28_initWithNSString_withInt_(@"ScriptDataDoubleEscapeStart", 27);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscaped) = new_OrgJsoupParserTokeniserState_29_initWithNSString_withInt_(@"ScriptDataDoubleEscaped", 28);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDash) = new_OrgJsoupParserTokeniserState_30_initWithNSString_withInt_(@"ScriptDataDoubleEscapedDash", 29);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDashDash) = new_OrgJsoupParserTokeniserState_31_initWithNSString_withInt_(@"ScriptDataDoubleEscapedDashDash", 30);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedLessthanSign) = new_OrgJsoupParserTokeniserState_32_initWithNSString_withInt_(@"ScriptDataDoubleEscapedLessthanSign", 31);
-    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeEnd) = new_OrgJsoupParserTokeniserState_33_initWithNSString_withInt_(@"ScriptDataDoubleEscapeEnd", 32);
-    JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeName) = new_OrgJsoupParserTokeniserState_34_initWithNSString_withInt_(@"BeforeAttributeName", 33);
-    JreEnum(OrgJsoupParserTokeniserState, AttributeName) = new_OrgJsoupParserTokeniserState_35_initWithNSString_withInt_(@"AttributeName", 34);
-    JreEnum(OrgJsoupParserTokeniserState, AfterAttributeName) = new_OrgJsoupParserTokeniserState_36_initWithNSString_withInt_(@"AfterAttributeName", 35);
-    JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeValue) = new_OrgJsoupParserTokeniserState_37_initWithNSString_withInt_(@"BeforeAttributeValue", 36);
-    JreEnum(OrgJsoupParserTokeniserState, AttributeValue_doubleQuoted) = new_OrgJsoupParserTokeniserState_38_initWithNSString_withInt_(@"AttributeValue_doubleQuoted", 37);
-    JreEnum(OrgJsoupParserTokeniserState, AttributeValue_singleQuoted) = new_OrgJsoupParserTokeniserState_39_initWithNSString_withInt_(@"AttributeValue_singleQuoted", 38);
-    JreEnum(OrgJsoupParserTokeniserState, AttributeValue_unquoted) = new_OrgJsoupParserTokeniserState_40_initWithNSString_withInt_(@"AttributeValue_unquoted", 39);
-    JreEnum(OrgJsoupParserTokeniserState, AfterAttributeValue_quoted) = new_OrgJsoupParserTokeniserState_41_initWithNSString_withInt_(@"AfterAttributeValue_quoted", 40);
-    JreEnum(OrgJsoupParserTokeniserState, SelfClosingStartTag) = new_OrgJsoupParserTokeniserState_42_initWithNSString_withInt_(@"SelfClosingStartTag", 41);
-    JreEnum(OrgJsoupParserTokeniserState, BogusComment) = new_OrgJsoupParserTokeniserState_43_initWithNSString_withInt_(@"BogusComment", 42);
-    JreEnum(OrgJsoupParserTokeniserState, MarkupDeclarationOpen) = new_OrgJsoupParserTokeniserState_44_initWithNSString_withInt_(@"MarkupDeclarationOpen", 43);
-    JreEnum(OrgJsoupParserTokeniserState, CommentStart) = new_OrgJsoupParserTokeniserState_45_initWithNSString_withInt_(@"CommentStart", 44);
-    JreEnum(OrgJsoupParserTokeniserState, CommentStartDash) = new_OrgJsoupParserTokeniserState_46_initWithNSString_withInt_(@"CommentStartDash", 45);
-    JreEnum(OrgJsoupParserTokeniserState, Comment) = new_OrgJsoupParserTokeniserState_47_initWithNSString_withInt_(@"Comment", 46);
-    JreEnum(OrgJsoupParserTokeniserState, CommentEndDash) = new_OrgJsoupParserTokeniserState_48_initWithNSString_withInt_(@"CommentEndDash", 47);
-    JreEnum(OrgJsoupParserTokeniserState, CommentEnd) = new_OrgJsoupParserTokeniserState_49_initWithNSString_withInt_(@"CommentEnd", 48);
-    JreEnum(OrgJsoupParserTokeniserState, CommentEndBang) = new_OrgJsoupParserTokeniserState_50_initWithNSString_withInt_(@"CommentEndBang", 49);
-    JreEnum(OrgJsoupParserTokeniserState, Doctype) = new_OrgJsoupParserTokeniserState_51_initWithNSString_withInt_(@"Doctype", 50);
-    JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeName) = new_OrgJsoupParserTokeniserState_52_initWithNSString_withInt_(@"BeforeDoctypeName", 51);
-    JreEnum(OrgJsoupParserTokeniserState, DoctypeName) = new_OrgJsoupParserTokeniserState_53_initWithNSString_withInt_(@"DoctypeName", 52);
-    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeName) = new_OrgJsoupParserTokeniserState_54_initWithNSString_withInt_(@"AfterDoctypeName", 53);
-    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicKeyword) = new_OrgJsoupParserTokeniserState_55_initWithNSString_withInt_(@"AfterDoctypePublicKeyword", 54);
-    JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypePublicIdentifier) = new_OrgJsoupParserTokeniserState_56_initWithNSString_withInt_(@"BeforeDoctypePublicIdentifier", 55);
-    JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_doubleQuoted) = new_OrgJsoupParserTokeniserState_57_initWithNSString_withInt_(@"DoctypePublicIdentifier_doubleQuoted", 56);
-    JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_singleQuoted) = new_OrgJsoupParserTokeniserState_58_initWithNSString_withInt_(@"DoctypePublicIdentifier_singleQuoted", 57);
-    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicIdentifier) = new_OrgJsoupParserTokeniserState_59_initWithNSString_withInt_(@"AfterDoctypePublicIdentifier", 58);
-    JreEnum(OrgJsoupParserTokeniserState, BetweenDoctypePublicAndSystemIdentifiers) = new_OrgJsoupParserTokeniserState_60_initWithNSString_withInt_(@"BetweenDoctypePublicAndSystemIdentifiers", 59);
-    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemKeyword) = new_OrgJsoupParserTokeniserState_61_initWithNSString_withInt_(@"AfterDoctypeSystemKeyword", 60);
-    JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeSystemIdentifier) = new_OrgJsoupParserTokeniserState_62_initWithNSString_withInt_(@"BeforeDoctypeSystemIdentifier", 61);
-    JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_doubleQuoted) = new_OrgJsoupParserTokeniserState_63_initWithNSString_withInt_(@"DoctypeSystemIdentifier_doubleQuoted", 62);
-    JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_singleQuoted) = new_OrgJsoupParserTokeniserState_64_initWithNSString_withInt_(@"DoctypeSystemIdentifier_singleQuoted", 63);
-    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemIdentifier) = new_OrgJsoupParserTokeniserState_65_initWithNSString_withInt_(@"AfterDoctypeSystemIdentifier", 64);
-    JreEnum(OrgJsoupParserTokeniserState, BogusDoctype) = new_OrgJsoupParserTokeniserState_66_initWithNSString_withInt_(@"BogusDoctype", 65);
-    JreEnum(OrgJsoupParserTokeniserState, CdataSection) = new_OrgJsoupParserTokeniserState_67_initWithNSString_withInt_(@"CdataSection", 66);
+    JreEnum(OrgJsoupParserTokeniserState, Data) = new_OrgJsoupParserTokeniserState_1_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInData) = new_OrgJsoupParserTokeniserState_2_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgJsoupParserTokeniserState, Rcdata) = new_OrgJsoupParserTokeniserState_3_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInRcdata) = new_OrgJsoupParserTokeniserState_4_initWithNSString_withInt_(@"", 3);
+    JreEnum(OrgJsoupParserTokeniserState, Rawtext) = new_OrgJsoupParserTokeniserState_5_initWithNSString_withInt_(@"", 4);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptData) = new_OrgJsoupParserTokeniserState_6_initWithNSString_withInt_(@"", 5);
+    JreEnum(OrgJsoupParserTokeniserState, PLAINTEXT) = new_OrgJsoupParserTokeniserState_7_initWithNSString_withInt_(@"", 6);
+    JreEnum(OrgJsoupParserTokeniserState, TagOpen) = new_OrgJsoupParserTokeniserState_8_initWithNSString_withInt_(@"", 7);
+    JreEnum(OrgJsoupParserTokeniserState, EndTagOpen) = new_OrgJsoupParserTokeniserState_9_initWithNSString_withInt_(@"", 8);
+    JreEnum(OrgJsoupParserTokeniserState, TagName) = new_OrgJsoupParserTokeniserState_10_initWithNSString_withInt_(@"", 9);
+    JreEnum(OrgJsoupParserTokeniserState, RcdataLessthanSign) = new_OrgJsoupParserTokeniserState_11_initWithNSString_withInt_(@"", 10);
+    JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagOpen) = new_OrgJsoupParserTokeniserState_12_initWithNSString_withInt_(@"", 11);
+    JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagName) = new_OrgJsoupParserTokeniserState_13_initWithNSString_withInt_(@"", 12);
+    JreEnum(OrgJsoupParserTokeniserState, RawtextLessthanSign) = new_OrgJsoupParserTokeniserState_14_initWithNSString_withInt_(@"", 13);
+    JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagOpen) = new_OrgJsoupParserTokeniserState_15_initWithNSString_withInt_(@"", 14);
+    JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagName) = new_OrgJsoupParserTokeniserState_16_initWithNSString_withInt_(@"", 15);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataLessthanSign) = new_OrgJsoupParserTokeniserState_17_initWithNSString_withInt_(@"", 16);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagOpen) = new_OrgJsoupParserTokeniserState_18_initWithNSString_withInt_(@"", 17);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagName) = new_OrgJsoupParserTokeniserState_19_initWithNSString_withInt_(@"", 18);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStart) = new_OrgJsoupParserTokeniserState_20_initWithNSString_withInt_(@"", 19);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStartDash) = new_OrgJsoupParserTokeniserState_21_initWithNSString_withInt_(@"", 20);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscaped) = new_OrgJsoupParserTokeniserState_22_initWithNSString_withInt_(@"", 21);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDash) = new_OrgJsoupParserTokeniserState_23_initWithNSString_withInt_(@"", 22);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDashDash) = new_OrgJsoupParserTokeniserState_24_initWithNSString_withInt_(@"", 23);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedLessthanSign) = new_OrgJsoupParserTokeniserState_25_initWithNSString_withInt_(@"", 24);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagOpen) = new_OrgJsoupParserTokeniserState_26_initWithNSString_withInt_(@"", 25);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagName) = new_OrgJsoupParserTokeniserState_27_initWithNSString_withInt_(@"", 26);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeStart) = new_OrgJsoupParserTokeniserState_28_initWithNSString_withInt_(@"", 27);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscaped) = new_OrgJsoupParserTokeniserState_29_initWithNSString_withInt_(@"", 28);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDash) = new_OrgJsoupParserTokeniserState_30_initWithNSString_withInt_(@"", 29);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDashDash) = new_OrgJsoupParserTokeniserState_31_initWithNSString_withInt_(@"", 30);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedLessthanSign) = new_OrgJsoupParserTokeniserState_32_initWithNSString_withInt_(@"", 31);
+    JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeEnd) = new_OrgJsoupParserTokeniserState_33_initWithNSString_withInt_(@"", 32);
+    JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeName) = new_OrgJsoupParserTokeniserState_34_initWithNSString_withInt_(@"", 33);
+    JreEnum(OrgJsoupParserTokeniserState, AttributeName) = new_OrgJsoupParserTokeniserState_35_initWithNSString_withInt_(@"", 34);
+    JreEnum(OrgJsoupParserTokeniserState, AfterAttributeName) = new_OrgJsoupParserTokeniserState_36_initWithNSString_withInt_(@"", 35);
+    JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeValue) = new_OrgJsoupParserTokeniserState_37_initWithNSString_withInt_(@"", 36);
+    JreEnum(OrgJsoupParserTokeniserState, AttributeValue_doubleQuoted) = new_OrgJsoupParserTokeniserState_38_initWithNSString_withInt_(@"", 37);
+    JreEnum(OrgJsoupParserTokeniserState, AttributeValue_singleQuoted) = new_OrgJsoupParserTokeniserState_39_initWithNSString_withInt_(@"", 38);
+    JreEnum(OrgJsoupParserTokeniserState, AttributeValue_unquoted) = new_OrgJsoupParserTokeniserState_40_initWithNSString_withInt_(@"", 39);
+    JreEnum(OrgJsoupParserTokeniserState, AfterAttributeValue_quoted) = new_OrgJsoupParserTokeniserState_41_initWithNSString_withInt_(@"", 40);
+    JreEnum(OrgJsoupParserTokeniserState, SelfClosingStartTag) = new_OrgJsoupParserTokeniserState_42_initWithNSString_withInt_(@"", 41);
+    JreEnum(OrgJsoupParserTokeniserState, BogusComment) = new_OrgJsoupParserTokeniserState_43_initWithNSString_withInt_(@"", 42);
+    JreEnum(OrgJsoupParserTokeniserState, MarkupDeclarationOpen) = new_OrgJsoupParserTokeniserState_44_initWithNSString_withInt_(@"", 43);
+    JreEnum(OrgJsoupParserTokeniserState, CommentStart) = new_OrgJsoupParserTokeniserState_45_initWithNSString_withInt_(@"", 44);
+    JreEnum(OrgJsoupParserTokeniserState, CommentStartDash) = new_OrgJsoupParserTokeniserState_46_initWithNSString_withInt_(@"", 45);
+    JreEnum(OrgJsoupParserTokeniserState, Comment) = new_OrgJsoupParserTokeniserState_47_initWithNSString_withInt_(@"", 46);
+    JreEnum(OrgJsoupParserTokeniserState, CommentEndDash) = new_OrgJsoupParserTokeniserState_48_initWithNSString_withInt_(@"", 47);
+    JreEnum(OrgJsoupParserTokeniserState, CommentEnd) = new_OrgJsoupParserTokeniserState_49_initWithNSString_withInt_(@"", 48);
+    JreEnum(OrgJsoupParserTokeniserState, CommentEndBang) = new_OrgJsoupParserTokeniserState_50_initWithNSString_withInt_(@"", 49);
+    JreEnum(OrgJsoupParserTokeniserState, Doctype) = new_OrgJsoupParserTokeniserState_51_initWithNSString_withInt_(@"", 50);
+    JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeName) = new_OrgJsoupParserTokeniserState_52_initWithNSString_withInt_(@"", 51);
+    JreEnum(OrgJsoupParserTokeniserState, DoctypeName) = new_OrgJsoupParserTokeniserState_53_initWithNSString_withInt_(@"", 52);
+    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeName) = new_OrgJsoupParserTokeniserState_54_initWithNSString_withInt_(@"", 53);
+    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicKeyword) = new_OrgJsoupParserTokeniserState_55_initWithNSString_withInt_(@"", 54);
+    JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypePublicIdentifier) = new_OrgJsoupParserTokeniserState_56_initWithNSString_withInt_(@"", 55);
+    JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_doubleQuoted) = new_OrgJsoupParserTokeniserState_57_initWithNSString_withInt_(@"", 56);
+    JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_singleQuoted) = new_OrgJsoupParserTokeniserState_58_initWithNSString_withInt_(@"", 57);
+    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicIdentifier) = new_OrgJsoupParserTokeniserState_59_initWithNSString_withInt_(@"", 58);
+    JreEnum(OrgJsoupParserTokeniserState, BetweenDoctypePublicAndSystemIdentifiers) = new_OrgJsoupParserTokeniserState_60_initWithNSString_withInt_(@"", 59);
+    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemKeyword) = new_OrgJsoupParserTokeniserState_61_initWithNSString_withInt_(@"", 60);
+    JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeSystemIdentifier) = new_OrgJsoupParserTokeniserState_62_initWithNSString_withInt_(@"", 61);
+    JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_doubleQuoted) = new_OrgJsoupParserTokeniserState_63_initWithNSString_withInt_(@"", 62);
+    JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_singleQuoted) = new_OrgJsoupParserTokeniserState_64_initWithNSString_withInt_(@"", 63);
+    JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemIdentifier) = new_OrgJsoupParserTokeniserState_65_initWithNSString_withInt_(@"", 64);
+    JreEnum(OrgJsoupParserTokeniserState, BogusDoctype) = new_OrgJsoupParserTokeniserState_66_initWithNSString_withInt_(@"", 65);
+    JreEnum(OrgJsoupParserTokeniserState, CdataSection) = new_OrgJsoupParserTokeniserState_67_initWithNSString_withInt_(@"", 66);
     OrgJsoupParserTokeniserState_attributeSingleValueCharsSorted = [IOSCharArray newArrayWithChars:(jchar[]){ '\'', '&', OrgJsoupParserTokeniserState_nullChar } count:3];
     OrgJsoupParserTokeniserState_attributeDoubleValueCharsSorted = [IOSCharArray newArrayWithChars:(jchar[]){ '"', '&', OrgJsoupParserTokeniserState_nullChar } count:3];
     OrgJsoupParserTokeniserState_attributeNameCharsSorted = [IOSCharArray newArrayWithChars:(jchar[]){ 0x0009, 0x000a, 0x000d, 0x000c, ' ', '/', '=', '>', OrgJsoupParserTokeniserState_nullChar, '"', '\'', '<' } count:12];

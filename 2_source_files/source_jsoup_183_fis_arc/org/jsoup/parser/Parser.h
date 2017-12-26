@@ -63,6 +63,10 @@
 
 + (OrgJsoupParserParser *)xmlParser;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserParser)
@@ -85,9 +89,9 @@ FOUNDATION_EXPORT NSString *OrgJsoupParserParser_unescapeEntitiesWithNSString_wi
 
 FOUNDATION_EXPORT OrgJsoupNodesDocument *OrgJsoupParserParser_parseBodyFragmentRelaxedWithNSString_withNSString_(NSString *bodyHtml, NSString *baseUri);
 
-FOUNDATION_EXPORT OrgJsoupParserParser *OrgJsoupParserParser_htmlParser();
+FOUNDATION_EXPORT OrgJsoupParserParser *OrgJsoupParserParser_htmlParser(void);
 
-FOUNDATION_EXPORT OrgJsoupParserParser *OrgJsoupParserParser_xmlParser();
+FOUNDATION_EXPORT OrgJsoupParserParser *OrgJsoupParserParser_xmlParser(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserParser)
 

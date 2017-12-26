@@ -19,9 +19,9 @@
 
 #pragma clang diagnostic ignored "-Wprotocol"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentAbstractField__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentAbstractField__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentAbstractField__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentAbstractField__Annotations$1(void);
 
 @implementation OrgApacheLuceneDocumentAbstractField
 

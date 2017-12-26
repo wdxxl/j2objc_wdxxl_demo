@@ -25,11 +25,11 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardClassicFilter, typeAtt_, id<OrgApacheLuceneAnalysisTokenattributesTypeAttribute>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardClassicFilter, termAtt_, id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicFilter_get_APOSTROPHE_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicFilter_get_APOSTROPHE_TYPE(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicFilter_APOSTROPHE_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicFilter, APOSTROPHE_TYPE, NSString *)
 
-inline NSString *OrgApacheLuceneAnalysisStandardClassicFilter_get_ACRONYM_TYPE();
+inline NSString *OrgApacheLuceneAnalysisStandardClassicFilter_get_ACRONYM_TYPE(void);
 static NSString *OrgApacheLuceneAnalysisStandardClassicFilter_ACRONYM_TYPE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicFilter, ACRONYM_TYPE, NSString *)
 

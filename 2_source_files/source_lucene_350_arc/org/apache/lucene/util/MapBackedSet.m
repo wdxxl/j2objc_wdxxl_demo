@@ -20,7 +20,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilMapBackedSet, map_, id<JavaUtilMap>)
 
-inline jlong OrgApacheLuceneUtilMapBackedSet_get_serialVersionUID();
+inline jlong OrgApacheLuceneUtilMapBackedSet_get_serialVersionUID(void);
 #define OrgApacheLuceneUtilMapBackedSet_serialVersionUID -6761513279741915432LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilMapBackedSet, serialVersionUID, jlong)
 

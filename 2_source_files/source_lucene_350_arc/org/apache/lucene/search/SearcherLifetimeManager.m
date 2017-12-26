@@ -126,7 +126,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     jlong newestSec = [trackers isEmpty] ? 0LL : ((OrgApacheLuceneSearchSearcherLifetimeManager_SearcherTracker *) nil_chk([trackers getWithInt:0]))->recordTimeSec_;
     for (OrgApacheLuceneSearchSearcherLifetimeManager_SearcherTracker * __strong tracker in trackers) {
       jint ageSec = (jint) (newestSec - ((OrgApacheLuceneSearchSearcherLifetimeManager_SearcherTracker *) nil_chk(tracker))->recordTimeSec_);
-      JreAssert((ageSec >= 0), (@"org/apache/lucene/search/SearcherLifetimeManager.java:265 condition failed: assert ageSec >= 0;"));
+      JreAssert(ageSec >= 0, @"org/apache/lucene/search/SearcherLifetimeManager.java:265 condition failed: assert ageSec >= 0;");
       if ([((id<OrgApacheLuceneSearchSearcherLifetimeManager_Pruner>) nil_chk(pruner)) doPruneWithInt:ageSec withOrgApacheLuceneSearchIndexSearcher:tracker->searcher_]) {
         (void) [searchers_ removeWithId:JavaLangLong_valueOfWithLong_(tracker->version__)];
         [tracker close];

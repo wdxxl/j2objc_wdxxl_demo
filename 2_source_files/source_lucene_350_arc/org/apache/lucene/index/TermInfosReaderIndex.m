@@ -51,7 +51,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReaderIndex, comparator_, id<Ja
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReaderIndex, dataInput_, OrgApacheLuceneUtilPagedBytes_PagedBytesDataInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReaderIndex, indexToDataOffset_, id<OrgApacheLuceneUtilPackedPackedInts_Reader>)
 
-inline jint OrgApacheLuceneIndexTermInfosReaderIndex_get_MAX_PAGE_BITS();
+inline jint OrgApacheLuceneIndexTermInfosReaderIndex_get_MAX_PAGE_BITS(void);
 #define OrgApacheLuceneIndexTermInfosReaderIndex_MAX_PAGE_BITS 18
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermInfosReaderIndex, MAX_PAGE_BITS, jint)
 

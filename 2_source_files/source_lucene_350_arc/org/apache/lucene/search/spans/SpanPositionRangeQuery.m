@@ -22,7 +22,7 @@
 }
 
 - (OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *)acceptPositionWithOrgApacheLuceneSearchSpansSpans:(OrgApacheLuceneSearchSpansSpans *)spans {
-  JreAssert(([((OrgApacheLuceneSearchSpansSpans *) nil_chk(spans)) start] != [spans end]), (@"org/apache/lucene/search/spans/SpanPositionRangeQuery.java:43 condition failed: assert spans.start() != spans.end();"));
+  JreAssert([((OrgApacheLuceneSearchSpansSpans *) nil_chk(spans)) start] != [spans end], @"org/apache/lucene/search/spans/SpanPositionRangeQuery.java:43 condition failed: assert spans.start() != spans.end();");
   if ([spans start] >= end_) return JreLoadEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO_AND_ADVANCE);
   else if ([spans start] >= start_ && [spans end] <= end_) return JreLoadEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, YES);
   else return JreLoadEnum(OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus, NO);

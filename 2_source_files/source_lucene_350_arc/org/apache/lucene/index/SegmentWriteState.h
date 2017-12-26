@@ -45,6 +45,10 @@
                                   withInt:(jint)termIndexInterval
   withOrgApacheLuceneIndexBufferedDeletes:(OrgApacheLuceneIndexBufferedDeletes *)segDeletes;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentWriteState)
@@ -56,11 +60,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, fieldInfos_, OrgApach
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, segDeletes_, OrgApacheLuceneIndexBufferedDeletes *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, deletedDocs_, OrgApacheLuceneUtilBitVector *)
 
-inline jint OrgApacheLuceneIndexSegmentWriteState_get_skipInterval();
+inline jint OrgApacheLuceneIndexSegmentWriteState_get_skipInterval(void);
 #define OrgApacheLuceneIndexSegmentWriteState_skipInterval 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentWriteState, skipInterval, jint)
 
-inline jint OrgApacheLuceneIndexSegmentWriteState_get_maxSkipLevels();
+inline jint OrgApacheLuceneIndexSegmentWriteState_get_maxSkipLevels(void);
 #define OrgApacheLuceneIndexSegmentWriteState_maxSkipLevels 10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexSegmentWriteState, maxSkipLevels, jint)
 

@@ -49,27 +49,27 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFilterManager)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchFilterManager, cache_, id<JavaUtilMap>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchFilterManager, filterCleaner_, OrgApacheLuceneSearchFilterManager_FilterCleaner *)
 
-inline OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_get_manager();
+inline OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_get_manager(void);
 inline OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_set_manager(OrgApacheLuceneSearchFilterManager *value);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_manager;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneSearchFilterManager, manager, OrgApacheLuceneSearchFilterManager *)
 
-inline jint OrgApacheLuceneSearchFilterManager_get_DEFAULT_CACHE_CLEAN_SIZE();
+inline jint OrgApacheLuceneSearchFilterManager_get_DEFAULT_CACHE_CLEAN_SIZE(void);
 #define OrgApacheLuceneSearchFilterManager_DEFAULT_CACHE_CLEAN_SIZE 100
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchFilterManager, DEFAULT_CACHE_CLEAN_SIZE, jint)
 
-inline jlong OrgApacheLuceneSearchFilterManager_get_DEFAULT_CACHE_SLEEP_TIME();
+inline jlong OrgApacheLuceneSearchFilterManager_get_DEFAULT_CACHE_SLEEP_TIME(void);
 #define OrgApacheLuceneSearchFilterManager_DEFAULT_CACHE_SLEEP_TIME 600000LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchFilterManager, DEFAULT_CACHE_SLEEP_TIME, jlong)
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_getInstance();
+FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_getInstance(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchFilterManager_init(OrgApacheLuceneSearchFilterManager *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *new_OrgApacheLuceneSearchFilterManager_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *new_OrgApacheLuceneSearchFilterManager_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *create_OrgApacheLuceneSearchFilterManager_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchFilterManager *create_OrgApacheLuceneSearchFilterManager_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFilterManager)
 
@@ -91,6 +91,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFilterManager)
 
 - (instancetype)initWithOrgApacheLuceneSearchFilterManager:(OrgApacheLuceneSearchFilterManager *)outer$
                            withOrgApacheLuceneSearchFilter:(OrgApacheLuceneSearchFilter *)filter;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -124,6 +128,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFilterManager_FilterItem)
 - (instancetype)initWithOrgApacheLuceneSearchFilterManager:(OrgApacheLuceneSearchFilterManager *)outer$;
 
 - (void)run;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -126,7 +126,7 @@ typedef NS_ENUM(NSUInteger, OrgJsoupConnection_Method_Enum) {
   OrgJsoupConnection_Method_Enum_PATCH = 4,
 };
 
-@interface OrgJsoupConnection_Method : JavaLangEnum < NSCopying >
+@interface OrgJsoupConnection_Method : JavaLangEnum
 
 #pragma mark Public
 
@@ -136,10 +136,6 @@ typedef NS_ENUM(NSUInteger, OrgJsoupConnection_Method_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgJsoupConnection_Method)
@@ -147,22 +143,22 @@ J2OBJC_STATIC_INIT(OrgJsoupConnection_Method)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupConnection_Method *OrgJsoupConnection_Method_values_[];
 
-inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_GET();
+inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_GET(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupConnection_Method, GET)
 
-inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_POST();
+inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_POST(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupConnection_Method, POST)
 
-inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_PUT();
+inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_PUT(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupConnection_Method, PUT)
 
-inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_DELETE();
+inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_DELETE(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupConnection_Method, DELETE)
 
-inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_PATCH();
+inline OrgJsoupConnection_Method *OrgJsoupConnection_Method_get_PATCH(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupConnection_Method, PATCH)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgJsoupConnection_Method_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgJsoupConnection_Method_values(void);
 
 FOUNDATION_EXPORT OrgJsoupConnection_Method *OrgJsoupConnection_Method_valueOfWithNSString_(NSString *name);
 

@@ -29,7 +29,7 @@ __attribute__((unused)) static jboolean OrgApacheLuceneIndexTermVectorsTermsWrit
 }
 
 - (void)startDocument {
-  JreAssert((OrgApacheLuceneIndexTermVectorsTermsWriterPerThread_clearLastVectorFieldName(self)), (@"org/apache/lucene/index/TermVectorsTermsWriterPerThread.java:44 condition failed: assert clearLastVectorFieldName();"));
+  JreAssert(OrgApacheLuceneIndexTermVectorsTermsWriterPerThread_clearLastVectorFieldName(self), @"org/apache/lucene/index/TermVectorsTermsWriterPerThread.java:44 condition failed: assert clearLastVectorFieldName();");
   if (doc_ != nil) {
     [doc_ reset];
     ((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(doc_))->docID_ = ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->docID_;

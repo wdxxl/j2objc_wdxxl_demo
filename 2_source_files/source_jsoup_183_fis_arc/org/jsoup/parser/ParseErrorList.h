@@ -21,6 +21,7 @@
 #include "java/util/ArrayList.h"
 
 @class OrgJsoupParserParseError;
+@protocol JavaUtilCollection;
 
 @interface OrgJsoupParserParseErrorList : JavaUtilArrayList
 
@@ -46,6 +47,14 @@
 
 + (OrgJsoupParserParseErrorList *)trackingWithInt:(jint)maxSize;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupParserParseErrorList)
@@ -56,7 +65,7 @@ FOUNDATION_EXPORT OrgJsoupParserParseErrorList *new_OrgJsoupParserParseErrorList
 
 FOUNDATION_EXPORT OrgJsoupParserParseErrorList *create_OrgJsoupParserParseErrorList_initWithInt_withInt_(jint initialCapacity, jint maxSize);
 
-FOUNDATION_EXPORT OrgJsoupParserParseErrorList *OrgJsoupParserParseErrorList_noTracking();
+FOUNDATION_EXPORT OrgJsoupParserParseErrorList *OrgJsoupParserParseErrorList_noTracking(void);
 
 FOUNDATION_EXPORT OrgJsoupParserParseErrorList *OrgJsoupParserParseErrorList_trackingWithInt_(jint maxSize);
 

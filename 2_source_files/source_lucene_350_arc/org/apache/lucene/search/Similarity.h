@@ -90,7 +90,7 @@ withOrgApacheLuceneIndexFieldInvertState:(OrgApacheLuceneIndexFieldInvertState *
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchSimilarity)
 
-inline jint OrgApacheLuceneSearchSimilarity_get_NO_DOC_ID_PROVIDED();
+inline jint OrgApacheLuceneSearchSimilarity_get_NO_DOC_ID_PROVIDED(void);
 #define OrgApacheLuceneSearchSimilarity_NO_DOC_ID_PROVIDED -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSimilarity, NO_DOC_ID_PROVIDED, jint)
 
@@ -98,11 +98,11 @@ FOUNDATION_EXPORT void OrgApacheLuceneSearchSimilarity_init(OrgApacheLuceneSearc
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchSimilarity_setDefaultWithOrgApacheLuceneSearchSimilarity_(OrgApacheLuceneSearchSimilarity *similarity);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchSimilarity *OrgApacheLuceneSearchSimilarity_getDefault();
+FOUNDATION_EXPORT OrgApacheLuceneSearchSimilarity *OrgApacheLuceneSearchSimilarity_getDefault(void);
 
 FOUNDATION_EXPORT jfloat OrgApacheLuceneSearchSimilarity_decodeNormWithByte_(jbyte b);
 
-FOUNDATION_EXPORT IOSFloatArray *OrgApacheLuceneSearchSimilarity_getNormDecoder();
+FOUNDATION_EXPORT IOSFloatArray *OrgApacheLuceneSearchSimilarity_getNormDecoder(void);
 
 FOUNDATION_EXPORT jbyte OrgApacheLuceneSearchSimilarity_encodeNormWithFloat_(jfloat f);
 

@@ -129,6 +129,10 @@ withOrgApacheLuceneIndexTermVectorMapper:(OrgApacheLuceneIndexTermVectorMapper *
 
 - (void)doUndeleteAll;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFilterIndexReader)
@@ -182,6 +186,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFilterIndexReader)
 
 - (jboolean)skipToWithInt:(jint)i;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFilterIndexReader_FilterTermDocs)
@@ -206,6 +214,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFilterIndexReader_FilterTermDocs)
 #include "org/apache/lucene/index/TermPositions.h"
 
 @class IOSByteArray;
+@protocol OrgApacheLuceneIndexTermDocs;
 
 @interface OrgApacheLuceneIndexFilterIndexReader_FilterTermPositions : OrgApacheLuceneIndexFilterIndexReader_FilterTermDocs < OrgApacheLuceneIndexTermPositions >
 
@@ -221,6 +230,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFilterIndexReader_FilterTermDocs)
 - (jboolean)isPayloadAvailable;
 
 - (jint)nextPosition;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneIndexTermDocs:(id<OrgApacheLuceneIndexTermDocs>)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -261,6 +274,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFilterIndexReader_FilterTermPosit
 - (jboolean)next;
 
 - (OrgApacheLuceneIndexTerm *)term;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

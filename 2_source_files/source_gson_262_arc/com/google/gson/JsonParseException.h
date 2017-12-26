@@ -20,6 +20,8 @@
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface ComGoogleGsonJsonParseException : JavaLangRuntimeException
 
 #pragma mark Public
@@ -27,17 +29,24 @@
 - (instancetype)initWithNSString:(NSString *)msg;
 
 - (instancetype)initWithNSString:(NSString *)msg
-                 withNSException:(NSException *)cause;
-#define withJavaLangThrowable withNSException
+           withJavaLangThrowable:(JavaLangThrowable *)cause;
 
-- (instancetype)initWithNSException:(NSException *)cause;
-#define initWithJavaLangThrowable initWithNSException
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonJsonParseException)
 
-inline jlong ComGoogleGsonJsonParseException_get_serialVersionUID();
+inline jlong ComGoogleGsonJsonParseException_get_serialVersionUID(void);
 #define ComGoogleGsonJsonParseException_serialVersionUID -4086729973971783390LL
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonJsonParseException, serialVersionUID, jlong)
 
@@ -47,17 +56,17 @@ FOUNDATION_EXPORT ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseExc
 
 FOUNDATION_EXPORT ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSString_(NSString *msg);
 
-FOUNDATION_EXPORT void ComGoogleGsonJsonParseException_initWithNSString_withNSException_(ComGoogleGsonJsonParseException *self, NSString *msg, NSException *cause);
+FOUNDATION_EXPORT void ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(ComGoogleGsonJsonParseException *self, NSString *msg, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(NSString *msg, NSException *cause) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *cause) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(NSString *msg, NSException *cause);
+FOUNDATION_EXPORT ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT void ComGoogleGsonJsonParseException_initWithNSException_(ComGoogleGsonJsonParseException *self, NSException *cause);
+FOUNDATION_EXPORT void ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(ComGoogleGsonJsonParseException *self, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithNSException_(NSException *cause) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(JavaLangThrowable *cause) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSException_(NSException *cause);
+FOUNDATION_EXPORT ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(JavaLangThrowable *cause);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonParseException)
 

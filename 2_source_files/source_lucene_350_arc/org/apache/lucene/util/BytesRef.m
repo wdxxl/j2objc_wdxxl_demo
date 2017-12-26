@@ -30,11 +30,11 @@
 
 @end
 
-inline id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_get_utf8SortedAsUnicodeSortOrder();
+inline id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_get_utf8SortedAsUnicodeSortOrder(void);
 static id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_utf8SortedAsUnicodeSortOrder;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBytesRef, utf8SortedAsUnicodeSortOrder, id<JavaUtilComparator>)
 
-inline id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_get_utf8SortedAsUTF16SortOrder();
+inline id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_get_utf8SortedAsUTF16SortOrder(void);
 static id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_utf8SortedAsUTF16SortOrder;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBytesRef, utf8SortedAsUTF16SortOrder, id<JavaUtilComparator>)
 
@@ -53,9 +53,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparat
 
 __attribute__((unused)) static void OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator_init(OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator *new_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator *new_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator *create_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator_init();
+__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator *create_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBytesRef_UTF8SortedAsUnicodeComparator)
 
@@ -72,9 +72,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator
 
 __attribute__((unused)) static void OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator_init(OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator *new_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator *new_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator *create_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator_init();
+__attribute__((unused)) static OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator *create_OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBytesRef_UTF8SortedAsUTF16Comparator)
 
@@ -190,7 +190,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [NSString java_stringWithBytes:bytes_ offset:offset_ length:length_ charsetName:@"UTF-8"];
   }
   @catch (JavaIoUnsupportedEncodingException *uee) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(uee);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(uee);
   }
 }
 
@@ -352,7 +352,7 @@ OrgApacheLuceneUtilBytesRef *create_OrgApacheLuceneUtilBytesRef_init() {
 
 void OrgApacheLuceneUtilBytesRef_initWithByteArray_withInt_withInt_(OrgApacheLuceneUtilBytesRef *self, IOSByteArray *bytes, jint offset, jint length) {
   NSObject_init(self);
-  JreAssert((bytes != nil), (@"org/apache/lucene/util/BytesRef.java:49 condition failed: assert bytes != null;"));
+  JreAssert(bytes != nil, @"org/apache/lucene/util/BytesRef.java:49 condition failed: assert bytes != null;");
   self->bytes_ = bytes;
   self->offset_ = offset;
   self->length_ = length;
@@ -368,7 +368,7 @@ OrgApacheLuceneUtilBytesRef *create_OrgApacheLuceneUtilBytesRef_initWithByteArra
 
 void OrgApacheLuceneUtilBytesRef_initWithByteArray_(OrgApacheLuceneUtilBytesRef *self, IOSByteArray *bytes) {
   NSObject_init(self);
-  JreAssert((bytes != nil), (@"org/apache/lucene/util/BytesRef.java:58 condition failed: assert bytes != null;"));
+  JreAssert(bytes != nil, @"org/apache/lucene/util/BytesRef.java:58 condition failed: assert bytes != null;");
   self->bytes_ = bytes;
   self->offset_ = 0;
   self->length_ = ((IOSByteArray *) nil_chk(bytes))->size_;

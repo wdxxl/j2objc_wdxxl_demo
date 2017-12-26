@@ -44,7 +44,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (jint)docFreq {
   if (currentTerm_ == nil) return -1;
-  JreAssert((actualEnum_ != nil), (@"org/apache/lucene/search/FilteredTermEnum.java:66 condition failed: assert actualEnum != null;"));
+  JreAssert(actualEnum_ != nil, @"org/apache/lucene/search/FilteredTermEnum.java:66 condition failed: assert actualEnum != null;");
   return [((OrgApacheLuceneIndexTermEnum *) nil_chk(actualEnum_)) docFreq];
 }
 

@@ -42,35 +42,35 @@
 
 @end
 
-inline id<JavaUtilMap> OrgJsoupNodesEntities_get_full();
+inline id<JavaUtilMap> OrgJsoupNodesEntities_get_full(void);
 static id<JavaUtilMap> OrgJsoupNodesEntities_full;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesEntities, full, id<JavaUtilMap>)
 
-inline id<JavaUtilMap> OrgJsoupNodesEntities_get_xhtmlByVal();
+inline id<JavaUtilMap> OrgJsoupNodesEntities_get_xhtmlByVal(void);
 static id<JavaUtilMap> OrgJsoupNodesEntities_xhtmlByVal;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesEntities, xhtmlByVal, id<JavaUtilMap>)
 
-inline id<JavaUtilMap> OrgJsoupNodesEntities_get_base();
+inline id<JavaUtilMap> OrgJsoupNodesEntities_get_base(void);
 static id<JavaUtilMap> OrgJsoupNodesEntities_base;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesEntities, base, id<JavaUtilMap>)
 
-inline id<JavaUtilMap> OrgJsoupNodesEntities_get_baseByVal();
+inline id<JavaUtilMap> OrgJsoupNodesEntities_get_baseByVal(void);
 static id<JavaUtilMap> OrgJsoupNodesEntities_baseByVal;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesEntities, baseByVal, id<JavaUtilMap>)
 
-inline id<JavaUtilMap> OrgJsoupNodesEntities_get_fullByVal();
+inline id<JavaUtilMap> OrgJsoupNodesEntities_get_fullByVal(void);
 static id<JavaUtilMap> OrgJsoupNodesEntities_fullByVal;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesEntities, fullByVal, id<JavaUtilMap>)
 
-inline IOSObjectArray *OrgJsoupNodesEntities_get_xhtmlArray();
+inline IOSObjectArray *OrgJsoupNodesEntities_get_xhtmlArray(void);
 static IOSObjectArray *OrgJsoupNodesEntities_xhtmlArray;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesEntities, xhtmlArray, IOSObjectArray *)
 
 __attribute__((unused)) static void OrgJsoupNodesEntities_init(OrgJsoupNodesEntities *self);
 
-__attribute__((unused)) static OrgJsoupNodesEntities *new_OrgJsoupNodesEntities_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupNodesEntities *new_OrgJsoupNodesEntities_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupNodesEntities *create_OrgJsoupNodesEntities_init();
+__attribute__((unused)) static OrgJsoupNodesEntities *create_OrgJsoupNodesEntities_init(void);
 
 __attribute__((unused)) static jboolean OrgJsoupNodesEntities_canEncodeWithOrgJsoupNodesEntities_CoreCharset_withChar_withJavaNioCharsetCharsetEncoder_(OrgJsoupNodesEntities_CoreCharset *charset, jchar c, JavaNioCharsetCharsetEncoder *fallback);
 
@@ -97,15 +97,13 @@ typedef NS_ENUM(NSUInteger, OrgJsoupNodesEntities_CoreCharset_Enum) {
   OrgJsoupNodesEntities_CoreCharset_Enum_fallback = 2,
 };
 
-@interface OrgJsoupNodesEntities_CoreCharset : JavaLangEnum < NSCopying >
+@interface OrgJsoupNodesEntities_CoreCharset : JavaLangEnum
 
 + (OrgJsoupNodesEntities_CoreCharset *)byNameWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
 
 + (OrgJsoupNodesEntities_CoreCharset *)valueOfWithNSString:(NSString *)name;
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -114,13 +112,13 @@ J2OBJC_STATIC_INIT(OrgJsoupNodesEntities_CoreCharset)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_values_[];
 
-inline OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_get_ascii();
+inline OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_get_ascii(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesEntities_CoreCharset, ascii)
 
-inline OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_get_utf();
+inline OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_get_utf(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesEntities_CoreCharset, utf)
 
-inline OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_get_fallback();
+inline OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_get_fallback(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesEntities_CoreCharset, fallback)
 
 __attribute__((unused)) static void OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(OrgJsoupNodesEntities_CoreCharset *self, NSString *__name, jint __ordinal);
@@ -129,7 +127,7 @@ __attribute__((unused)) static OrgJsoupNodesEntities_CoreCharset *new_OrgJsoupNo
 
 __attribute__((unused)) static OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_byNameWithNSString_(NSString *name);
 
-__attribute__((unused)) static IOSObjectArray *OrgJsoupNodesEntities_CoreCharset_values();
+__attribute__((unused)) static IOSObjectArray *OrgJsoupNodesEntities_CoreCharset_values(void);
 
 __attribute__((unused)) static OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_valueOfWithNSString_(NSString *name);
 
@@ -2576,10 +2574,6 @@ OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_values_[3];
   return OrgJsoupNodesEntities_EscapeMode_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LJavaUtilMap;", 0x1, -1, -1, -1, 0, -1, -1 },
@@ -2605,9 +2599,9 @@ OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_values_[3];
 
 + (void)initialize {
   if (self == [OrgJsoupNodesEntities_EscapeMode class]) {
-    JreEnum(OrgJsoupNodesEntities_EscapeMode, xhtml) = new_OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(JreLoadStatic(OrgJsoupNodesEntities, xhtmlByVal), @"xhtml", 0);
-    JreEnum(OrgJsoupNodesEntities_EscapeMode, base) = new_OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(JreLoadStatic(OrgJsoupNodesEntities, baseByVal), @"base", 1);
-    JreEnum(OrgJsoupNodesEntities_EscapeMode, extended) = new_OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(JreLoadStatic(OrgJsoupNodesEntities, fullByVal), @"extended", 2);
+    JreEnum(OrgJsoupNodesEntities_EscapeMode, xhtml) = new_OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(JreLoadStatic(OrgJsoupNodesEntities, xhtmlByVal), @"", 0);
+    JreEnum(OrgJsoupNodesEntities_EscapeMode, base) = new_OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(JreLoadStatic(OrgJsoupNodesEntities, baseByVal), @"", 1);
+    JreEnum(OrgJsoupNodesEntities_EscapeMode, extended) = new_OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(JreLoadStatic(OrgJsoupNodesEntities, fullByVal), @"", 2);
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesEntities_EscapeMode)
   }
 }
@@ -2668,10 +2662,6 @@ OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_values_[3];
   return OrgJsoupNodesEntities_CoreCharset_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LOrgJsoupNodesEntities_CoreCharset;", 0xa, 0, 1, -1, -1, -1, -1 },
@@ -2696,9 +2686,9 @@ OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_values_[3];
 
 + (void)initialize {
   if (self == [OrgJsoupNodesEntities_CoreCharset class]) {
-    JreEnum(OrgJsoupNodesEntities_CoreCharset, ascii) = new_OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(@"ascii", 0);
-    JreEnum(OrgJsoupNodesEntities_CoreCharset, utf) = new_OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(@"utf", 1);
-    JreEnum(OrgJsoupNodesEntities_CoreCharset, fallback) = new_OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(@"fallback", 2);
+    JreEnum(OrgJsoupNodesEntities_CoreCharset, ascii) = new_OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgJsoupNodesEntities_CoreCharset, utf) = new_OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgJsoupNodesEntities_CoreCharset, fallback) = new_OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesEntities_CoreCharset)
   }
 }

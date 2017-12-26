@@ -68,7 +68,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return out;
   }
   @catch (JavaxXmlParsersParserConfigurationException *e) {
-    @throw new_JavaLangIllegalStateException_initWithNSException_(e);
+    @throw new_JavaLangIllegalStateException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -91,7 +91,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [writer description];
   }
   @catch (JavaxXmlTransformTransformerException *e) {
-    @throw new_JavaLangIllegalStateException_initWithNSException_(e);
+    @throw new_JavaLangIllegalStateException_initWithJavaLangThrowable_(e);
   }
 }
 

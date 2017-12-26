@@ -153,61 +153,61 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchFieldCache)
 
-inline jint OrgApacheLuceneSearchFieldCache_get_STRING_INDEX();
+inline jint OrgApacheLuceneSearchFieldCache_get_STRING_INDEX(void);
 #define OrgApacheLuceneSearchFieldCache_STRING_INDEX -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchFieldCache, STRING_INDEX, jint)
 
-inline id<OrgApacheLuceneSearchFieldCache> OrgApacheLuceneSearchFieldCache_get_DEFAULT();
+inline id<OrgApacheLuceneSearchFieldCache> OrgApacheLuceneSearchFieldCache_get_DEFAULT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache> OrgApacheLuceneSearchFieldCache_DEFAULT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT, id<OrgApacheLuceneSearchFieldCache>)
 
-inline id<OrgApacheLuceneSearchFieldCache_ByteParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_BYTE_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_ByteParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_BYTE_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_ByteParser> OrgApacheLuceneSearchFieldCache_DEFAULT_BYTE_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT_BYTE_PARSER, id<OrgApacheLuceneSearchFieldCache_ByteParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_ShortParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_SHORT_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_ShortParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_SHORT_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_ShortParser> OrgApacheLuceneSearchFieldCache_DEFAULT_SHORT_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT_SHORT_PARSER, id<OrgApacheLuceneSearchFieldCache_ShortParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_IntParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_INT_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_IntParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_INT_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_IntParser> OrgApacheLuceneSearchFieldCache_DEFAULT_INT_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT_INT_PARSER, id<OrgApacheLuceneSearchFieldCache_IntParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_FloatParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_FLOAT_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_FloatParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_FLOAT_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_FloatParser> OrgApacheLuceneSearchFieldCache_DEFAULT_FLOAT_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT_FLOAT_PARSER, id<OrgApacheLuceneSearchFieldCache_FloatParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_LongParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_LONG_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_LongParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_LONG_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_LongParser> OrgApacheLuceneSearchFieldCache_DEFAULT_LONG_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT_LONG_PARSER, id<OrgApacheLuceneSearchFieldCache_LongParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_DoubleParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_DOUBLE_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_DoubleParser> OrgApacheLuceneSearchFieldCache_get_DEFAULT_DOUBLE_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_DoubleParser> OrgApacheLuceneSearchFieldCache_DEFAULT_DOUBLE_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, DEFAULT_DOUBLE_PARSER, id<OrgApacheLuceneSearchFieldCache_DoubleParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_IntParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_INT_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_IntParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_INT_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_IntParser> OrgApacheLuceneSearchFieldCache_NUMERIC_UTILS_INT_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, NUMERIC_UTILS_INT_PARSER, id<OrgApacheLuceneSearchFieldCache_IntParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_FloatParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_FLOAT_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_FloatParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_FLOAT_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_FloatParser> OrgApacheLuceneSearchFieldCache_NUMERIC_UTILS_FLOAT_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, NUMERIC_UTILS_FLOAT_PARSER, id<OrgApacheLuceneSearchFieldCache_FloatParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_LongParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_LONG_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_LongParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_LONG_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_LongParser> OrgApacheLuceneSearchFieldCache_NUMERIC_UTILS_LONG_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, NUMERIC_UTILS_LONG_PARSER, id<OrgApacheLuceneSearchFieldCache_LongParser>)
 
-inline id<OrgApacheLuceneSearchFieldCache_DoubleParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_DOUBLE_PARSER();
+inline id<OrgApacheLuceneSearchFieldCache_DoubleParser> OrgApacheLuceneSearchFieldCache_get_NUMERIC_UTILS_DOUBLE_PARSER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheLuceneSearchFieldCache_DoubleParser> OrgApacheLuceneSearchFieldCache_NUMERIC_UTILS_DOUBLE_PARSER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFieldCache, NUMERIC_UTILS_DOUBLE_PARSER, id<OrgApacheLuceneSearchFieldCache_DoubleParser>)
@@ -236,9 +236,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchFieldCache_CreationPlaceholder, value_,
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchFieldCache_CreationPlaceholder_init(OrgApacheLuceneSearchFieldCache_CreationPlaceholder *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCache_CreationPlaceholder *new_OrgApacheLuceneSearchFieldCache_CreationPlaceholder_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCache_CreationPlaceholder *new_OrgApacheLuceneSearchFieldCache_CreationPlaceholder_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCache_CreationPlaceholder *create_OrgApacheLuceneSearchFieldCache_CreationPlaceholder_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchFieldCache_CreationPlaceholder *create_OrgApacheLuceneSearchFieldCache_CreationPlaceholder_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCache_CreationPlaceholder)
 
@@ -262,6 +262,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCache_CreationPlaceholder)
                withNSStringArray:(IOSObjectArray *)lookup;
 
 - (jint)binarySearchLookupWithNSString:(NSString *)key;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -22,9 +22,11 @@
 
 @class IOSObjectArray;
 @class OrgApacheLuceneAnalysisAnalyzer;
+@class OrgApacheLuceneQueryParserQueryParserTokenManager;
 @class OrgApacheLuceneSearchQuery;
 @class OrgApacheLuceneUtilVersion;
 @protocol JavaUtilMap;
+@protocol OrgApacheLuceneQueryParserCharStream;
 
 @interface OrgApacheLuceneQueryParserMultiFieldQueryParser : OrgApacheLuceneQueryParserQueryParser {
  @public
@@ -84,6 +86,16 @@
 
 - (OrgApacheLuceneSearchQuery *)getWildcardQueryWithNSString:(NSString *)field
                                                 withNSString:(NSString *)termStr;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneQueryParserCharStream:(id<OrgApacheLuceneQueryParserCharStream>)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneQueryParserQueryParserTokenManager:(OrgApacheLuceneQueryParserQueryParserTokenManager *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilVersion:(OrgApacheLuceneUtilVersion *)arg0
+                                      withNSString:(NSString *)arg1
+               withOrgApacheLuceneAnalysisAnalyzer:(OrgApacheLuceneAnalysisAnalyzer *)arg2 NS_UNAVAILABLE;
 
 @end
 

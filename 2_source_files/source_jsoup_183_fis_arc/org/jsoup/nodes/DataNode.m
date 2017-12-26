@@ -11,7 +11,7 @@
 #include "org/jsoup/nodes/Entities.h"
 #include "org/jsoup/nodes/Node.h"
 
-inline NSString *OrgJsoupNodesDataNode_get_DATA_KEY();
+inline NSString *OrgJsoupNodesDataNode_get_DATA_KEY(void);
 static NSString *OrgJsoupNodesDataNode_DATA_KEY = @"data";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesDataNode, DATA_KEY, NSString *)
 

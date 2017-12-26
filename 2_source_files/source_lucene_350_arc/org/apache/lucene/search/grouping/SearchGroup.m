@@ -251,7 +251,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchGroupingSearchGroup)
 }
 
 - (OrgApacheLuceneSearchGroupingSearchGroup *)next {
-  JreAssert(([((id<JavaUtilIterator>) nil_chk(iter_)) hasNext]), (@"org/apache/lucene/search/grouping/SearchGroup.java:83 condition failed: assert iter.hasNext();"));
+  JreAssert([((id<JavaUtilIterator>) nil_chk(iter_)) hasNext], @"org/apache/lucene/search/grouping/SearchGroup.java:83 condition failed: assert iter.hasNext();");
   OrgApacheLuceneSearchGroupingSearchGroup *group = [iter_ next];
   if (((OrgApacheLuceneSearchGroupingSearchGroup *) nil_chk(group))->sortValues_ == nil) {
     @throw new_JavaLangIllegalArgumentException_initWithNSString_(@"group.sortValues is null; you must pass fillFields=true to the first pass collector");
@@ -290,7 +290,7 @@ void OrgApacheLuceneSearchGroupingSearchGroup_ShardIter_initWithJavaUtilCollecti
   NSObject_init(self);
   self->shardIndex_ = shardIndex;
   self->iter_ = [((id<JavaUtilCollection>) nil_chk(shard)) iterator];
-  JreAssert(([((id<JavaUtilIterator>) nil_chk(self->iter_)) hasNext]), (@"org/apache/lucene/search/grouping/SearchGroup.java:79 condition failed: assert iter.hasNext();"));
+  JreAssert([((id<JavaUtilIterator>) nil_chk(self->iter_)) hasNext], @"org/apache/lucene/search/grouping/SearchGroup.java:79 condition failed: assert iter.hasNext();");
 }
 
 OrgApacheLuceneSearchGroupingSearchGroup_ShardIter *new_OrgApacheLuceneSearchGroupingSearchGroup_ShardIter_initWithJavaUtilCollection_withInt_(id<JavaUtilCollection> shard, jint shardIndex) {
@@ -315,7 +315,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchGroupingSearchGroup_ShardI
 }
 
 - (jboolean)isEqual:(id)_other {
-  JreAssert((OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup_neverEqualsWithId_(self, _other)), (@"org/apache/lucene/search/grouping/SearchGroup.java:130 condition failed: assert neverEquals(_other);"));
+  JreAssert(OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup_neverEqualsWithId_(self, _other), @"org/apache/lucene/search/grouping/SearchGroup.java:130 condition failed: assert neverEquals(_other);");
   if ([_other isKindOfClass:[OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup class]]) {
     OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *other = (OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *) cast_chk(_other, [OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup class]);
     if (groupValue_ == nil) {
@@ -386,10 +386,10 @@ jboolean OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup_neverEqualsWithId_
   if ([_other isKindOfClass:[OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup class]]) {
     OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *other = (OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *) cast_chk(_other, [OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup class]);
     if (self->groupValue_ == nil) {
-      JreAssert((((OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *) nil_chk(other))->groupValue_ != nil), (@"org/apache/lucene/search/grouping/SearchGroup.java:118 condition failed: assert other.groupValue != null;"));
+      JreAssert(((OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *) nil_chk(other))->groupValue_ != nil, @"org/apache/lucene/search/grouping/SearchGroup.java:118 condition failed: assert other.groupValue != null;");
     }
     else {
-      JreAssert((![self->groupValue_ isEqual:((OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *) nil_chk(other))->groupValue_]), (@"org/apache/lucene/search/grouping/SearchGroup.java:120 condition failed: assert !groupValue.equals(other.groupValue);"));
+      JreAssert(![self->groupValue_ isEqual:((OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup *) nil_chk(other))->groupValue_], @"org/apache/lucene/search/grouping/SearchGroup.java:120 condition failed: assert !groupValue.equals(other.groupValue);");
     }
   }
   return true;
@@ -417,7 +417,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchGroupingSearchGroup_Merged
       return c;
     }
   }
-  JreAssert((group->minShardIndex_ != other->minShardIndex_), (@"org/apache/lucene/search/grouping/SearchGroup.java:188 condition failed: assert group.minShardIndex != other.minShardIndex;"));
+  JreAssert(group->minShardIndex_ != other->minShardIndex_, @"org/apache/lucene/search/grouping/SearchGroup.java:188 condition failed: assert group.minShardIndex != other.minShardIndex;");
   return group->minShardIndex_ - other->minShardIndex_;
 }
 
@@ -589,7 +589,7 @@ void OrgApacheLuceneSearchGroupingSearchGroup_GroupMerger_updateNextGroupWithInt
     if (isNew) {
       mergedGroup = new_OrgApacheLuceneSearchGroupingSearchGroup_MergedGroup_initWithId_(group->groupValue_);
       mergedGroup->minShardIndex_ = shard->shardIndex_;
-      JreAssert((group->sortValues_ != nil), (@"org/apache/lucene/search/grouping/SearchGroup.java:218 condition failed: assert group.sortValues != null;"));
+      JreAssert(group->sortValues_ != nil, @"org/apache/lucene/search/grouping/SearchGroup.java:218 condition failed: assert group.sortValues != null;");
       mergedGroup->topValues_ = group->sortValues_;
       (void) [self->groupsSeen_ putWithId:group->groupValue_ withId:mergedGroup];
       mergedGroup->inQueue_ = true;

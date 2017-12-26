@@ -55,47 +55,63 @@ withOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttr
 
 - (void)setReplaceInvalidAcronymWithBoolean:(jboolean)replaceInvalidAcronym;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaIoReader:(JavaIoReader *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource:(OrgApacheLuceneUtilAttributeSource *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource:(OrgApacheLuceneUtilAttributeSource *)arg0
+                                          withJavaIoReader:(JavaIoReader *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttributeSource_AttributeFactory *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttributeSource_AttributeFactory *)arg0
+                                                           withJavaIoReader:(JavaIoReader *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisStandardClassicTokenizer)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_ALPHANUM();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_ALPHANUM(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_ALPHANUM 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, ALPHANUM, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_APOSTROPHE();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_APOSTROPHE(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_APOSTROPHE 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, APOSTROPHE, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_ACRONYM();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_ACRONYM(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_ACRONYM 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, ACRONYM, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_COMPANY();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_COMPANY(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_COMPANY 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, COMPANY, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_EMAIL();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_EMAIL(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_EMAIL 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, EMAIL, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_HOST();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_HOST(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_HOST 5
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, HOST, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_NUM();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_NUM(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_NUM 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, NUM, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_CJ();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_CJ(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_CJ 7
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, CJ, jint)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_ACRONYM_DEP();
+inline jint OrgApacheLuceneAnalysisStandardClassicTokenizer_get_ACRONYM_DEP(void);
 #define OrgApacheLuceneAnalysisStandardClassicTokenizer_ACRONYM_DEP 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicTokenizer, ACRONYM_DEP, jint)
 
-inline IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer_get_TOKEN_TYPES();
+inline IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer_get_TOKEN_TYPES(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneAnalysisStandardClassicTokenizer_TOKEN_TYPES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicTokenizer, TOKEN_TYPES, IOSObjectArray *)

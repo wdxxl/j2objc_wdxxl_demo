@@ -7,6 +7,7 @@
 #include "java/lang/IllegalArgumentException.h"
 #include "java/lang/InterruptedException.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "org/apache/lucene/store/Lock.h"
 #include "org/apache/lucene/store/LockObtainFailedException.h"
 #include "org/apache/lucene/util/ThreadInterruptedException.h"
@@ -52,7 +53,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       }
       OrgApacheLuceneStoreLockObtainFailedException *e = new_OrgApacheLuceneStoreLockObtainFailedException_initWithNSString_(reason);
       if (failureReason_ != nil) {
-        (void) [e initCauseWithNSException:failureReason_];
+        (void) [e initCauseWithJavaLangThrowable:failureReason_];
       }
       @throw e;
     }
@@ -97,7 +98,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   static const J2ObjcFieldInfo fields[] = {
     { "LOCK_POLL_INTERVAL", "J", .constantValue.asLong = 0, 0x9, -1, 5, -1, -1 },
     { "LOCK_OBTAIN_WAIT_FOREVER", "J", .constantValue.asLong = OrgApacheLuceneStoreLock_LOCK_OBTAIN_WAIT_FOREVER, 0x19, -1, -1, -1, -1 },
-    { "failureReason_", "LNSException;", .constantValue.asLong = 0, 0x4, -1, -1, -1, -1 },
+    { "failureReason_", "LJavaLangThrowable;", .constantValue.asLong = 0, 0x4, -1, -1, -1, -1 },
   };
   static const void *ptrTable[] = { "LJavaIoIOException;", "obtain", "J", "LOrgApacheLuceneStoreLockObtainFailedException;LJavaIoIOException;", "release", &OrgApacheLuceneStoreLock_LOCK_POLL_INTERVAL, "LOrgApacheLuceneStoreLock_With;" };
   static const J2ObjcClassInfo _OrgApacheLuceneStoreLock = { "Lock", "org.apache.lucene.store", ptrTable, methods, fields, 7, 0x401, 5, 3, -1, 6, -1, -1, -1 };

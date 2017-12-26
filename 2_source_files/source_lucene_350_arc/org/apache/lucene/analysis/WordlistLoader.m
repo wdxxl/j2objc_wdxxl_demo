@@ -21,7 +21,7 @@
 
 @end
 
-inline jint OrgApacheLuceneAnalysisWordlistLoader_get_INITITAL_CAPACITY();
+inline jint OrgApacheLuceneAnalysisWordlistLoader_get_INITITAL_CAPACITY(void);
 #define OrgApacheLuceneAnalysisWordlistLoader_INITITAL_CAPACITY 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisWordlistLoader, INITITAL_CAPACITY, jint)
 

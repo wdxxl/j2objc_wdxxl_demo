@@ -20,9 +20,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilReaderUtil_init(OrgApacheLuceneUtilReaderUtil *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilReaderUtil *new_OrgApacheLuceneUtilReaderUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilReaderUtil *new_OrgApacheLuceneUtilReaderUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilReaderUtil *create_OrgApacheLuceneUtilReaderUtil_init();
+__attribute__((unused)) static OrgApacheLuceneUtilReaderUtil *create_OrgApacheLuceneUtilReaderUtil_init(void);
 
 @interface OrgApacheLuceneUtilReaderUtil_Gather () {
  @public

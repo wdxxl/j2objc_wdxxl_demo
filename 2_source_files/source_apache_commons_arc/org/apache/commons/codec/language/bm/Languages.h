@@ -33,21 +33,25 @@
 
 - (id<JavaUtilSet>)getLanguages;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmLanguages)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmLanguages_get_ANY();
+inline NSString *OrgApacheCommonsCodecLanguageBmLanguages_get_ANY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageBmLanguages_ANY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmLanguages, ANY, NSString *)
 
-inline OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *OrgApacheCommonsCodecLanguageBmLanguages_get_NO_LANGUAGES();
+inline OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *OrgApacheCommonsCodecLanguageBmLanguages_get_NO_LANGUAGES(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *OrgApacheCommonsCodecLanguageBmLanguages_NO_LANGUAGES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmLanguages, NO_LANGUAGES, OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *)
 
-inline OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *OrgApacheCommonsCodecLanguageBmLanguages_get_ANY_LANGUAGE();
+inline OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *OrgApacheCommonsCodecLanguageBmLanguages_get_ANY_LANGUAGE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *OrgApacheCommonsCodecLanguageBmLanguages_ANY_LANGUAGE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmLanguages, ANY_LANGUAGE, OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *)
@@ -124,6 +128,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet)
 - (OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *)restrictToWithOrgApacheCommonsCodecLanguageBmLanguages_LanguageSet:(OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *)other;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

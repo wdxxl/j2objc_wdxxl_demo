@@ -92,20 +92,20 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneUtilBytesRef)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilBytesRef, bytes_, IOSByteArray *)
 
-inline jint OrgApacheLuceneUtilBytesRef_get_HASH_PRIME();
+inline jint OrgApacheLuceneUtilBytesRef_get_HASH_PRIME(void);
 #define OrgApacheLuceneUtilBytesRef_HASH_PRIME 31
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilBytesRef, HASH_PRIME, jint)
 
-inline IOSByteArray *OrgApacheLuceneUtilBytesRef_get_EMPTY_BYTES();
+inline IOSByteArray *OrgApacheLuceneUtilBytesRef_get_EMPTY_BYTES(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSByteArray *OrgApacheLuceneUtilBytesRef_EMPTY_BYTES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBytesRef, EMPTY_BYTES, IOSByteArray *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilBytesRef_init(OrgApacheLuceneUtilBytesRef *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRef *new_OrgApacheLuceneUtilBytesRef_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRef *new_OrgApacheLuceneUtilBytesRef_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRef *create_OrgApacheLuceneUtilBytesRef_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRef *create_OrgApacheLuceneUtilBytesRef_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilBytesRef_initWithByteArray_withInt_withInt_(OrgApacheLuceneUtilBytesRef *self, IOSByteArray *bytes, jint offset, jint length);
 
@@ -143,9 +143,9 @@ FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRef *new_OrgApacheLuceneUtilBytesRef_i
 
 FOUNDATION_EXPORT OrgApacheLuceneUtilBytesRef *create_OrgApacheLuceneUtilBytesRef_initWithOrgApacheLuceneUtilBytesRef_(OrgApacheLuceneUtilBytesRef *other);
 
-FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_getUTF8SortedAsUnicodeComparator();
+FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_getUTF8SortedAsUnicodeComparator(void);
 
-FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_getUTF8SortedAsUTF16Comparator();
+FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneUtilBytesRef_getUTF8SortedAsUTF16Comparator(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBytesRef)
 

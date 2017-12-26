@@ -39,9 +39,9 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl, termBuffer_, IOSCharArray *)
 
-inline jint OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_get_MIN_BUFFER_SIZE();
+inline jint OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_get_MIN_BUFFER_SIZE(void);
 inline jint OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_set_MIN_BUFFER_SIZE(jint value);
-inline jint *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_getRef_MIN_BUFFER_SIZE();
+inline jint *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_getRef_MIN_BUFFER_SIZE(void);
 static jint OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_MIN_BUFFER_SIZE = 10;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl, MIN_BUFFER_SIZE, jint)
 
@@ -57,21 +57,21 @@ __attribute__((unused)) static id<OrgApacheLuceneAnalysisTokenattributesCharTerm
 
 __attribute__((unused)) static id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute> OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_appendNull(OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$6(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$7();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl__Annotations$7(void);
 
 @implementation OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl
 
@@ -108,8 +108,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (void)setTermBufferWithNSString:(NSString *)buffer
                           withInt:(jint)offset
                           withInt:(jint)length {
-  JreAssert((offset <= [((NSString *) nil_chk(buffer)) java_length]), (@"org/apache/lucene/analysis/tokenattributes/CharTermAttributeImpl.java:64 condition failed: assert offset <= buffer.length();"));
-  JreAssert((offset + length <= [buffer java_length]), (@"org/apache/lucene/analysis/tokenattributes/CharTermAttributeImpl.java:65 condition failed: assert offset + length <= buffer.length();"));
+  JreAssert(offset <= [((NSString *) nil_chk(buffer)) java_length], @"org/apache/lucene/analysis/tokenattributes/CharTermAttributeImpl.java:64 condition failed: assert offset <= buffer.length();");
+  JreAssert(offset + length <= [buffer java_length], @"org/apache/lucene/analysis/tokenattributes/CharTermAttributeImpl.java:65 condition failed: assert offset + length <= buffer.length();");
   OrgApacheLuceneAnalysisTokenattributesCharTermAttributeImpl_growTermBufferWithInt_(self, length);
   [buffer java_getChars:offset sourceEnd:offset + length destination:termBuffer_ destinationBegin:0];
   termLength_ = length;

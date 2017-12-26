@@ -65,9 +65,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilIntsRef, ints_, IOSIntArray *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilIntsRef_init(OrgApacheLuceneUtilIntsRef *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilIntsRef *new_OrgApacheLuceneUtilIntsRef_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilIntsRef *new_OrgApacheLuceneUtilIntsRef_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilIntsRef *create_OrgApacheLuceneUtilIntsRef_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilIntsRef *create_OrgApacheLuceneUtilIntsRef_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilIntsRef_initWithInt_(OrgApacheLuceneUtilIntsRef *self, jint capacity);
 

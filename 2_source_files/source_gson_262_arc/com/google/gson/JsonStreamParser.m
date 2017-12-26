@@ -19,6 +19,7 @@
 #include "java/io/StringReader.h"
 #include "java/lang/OutOfMemoryError.h"
 #include "java/lang/StackOverflowError.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/UnsupportedOperationException.h"
 #include "java/util/Iterator.h"
 #include "java/util/NoSuchElementException.h"
@@ -55,10 +56,10 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonJsonStreamParser, lock_, id)
     return ComGoogleGsonInternalStreams_parseWithComGoogleGsonStreamJsonReader_(parser_);
   }
   @catch (JavaLangStackOverflowError *e) {
-    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(@"Failed parsing JSON source to Json", e);
+    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(@"Failed parsing JSON source to Json", e);
   }
   @catch (JavaLangOutOfMemoryError *e) {
-    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(@"Failed parsing JSON source to Json", e);
+    @throw new_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(@"Failed parsing JSON source to Json", e);
   }
   @catch (ComGoogleGsonJsonParseException *e) {
     @throw [[e getCause] isKindOfClass:[JavaIoEOFException class]] ? new_JavaUtilNoSuchElementException_init() : (id) e;
@@ -71,10 +72,10 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonJsonStreamParser, lock_, id)
       return [((ComGoogleGsonStreamJsonReader *) nil_chk(parser_)) peek] != JreLoadEnum(ComGoogleGsonStreamJsonToken, END_DOCUMENT);
     }
     @catch (ComGoogleGsonStreamMalformedJsonException *e) {
-      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+      @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
     }
     @catch (JavaIoIOException *e) {
-      @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+      @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
     }
   }
 }

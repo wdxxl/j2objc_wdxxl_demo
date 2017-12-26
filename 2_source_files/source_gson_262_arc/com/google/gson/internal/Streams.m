@@ -37,9 +37,9 @@
 
 __attribute__((unused)) static void ComGoogleGsonInternalStreams_init(ComGoogleGsonInternalStreams *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalStreams *new_ComGoogleGsonInternalStreams_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalStreams *new_ComGoogleGsonInternalStreams_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalStreams *create_ComGoogleGsonInternalStreams_init();
+__attribute__((unused)) static ComGoogleGsonInternalStreams *create_ComGoogleGsonInternalStreams_init(void);
 
 @interface ComGoogleGsonInternalStreams_AppendableWriter : JavaIoWriter {
  @public
@@ -96,9 +96,9 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite, 
 
 __attribute__((unused)) static void ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite_init(ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite *new_ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite *new_ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite *create_ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite_init();
+__attribute__((unused)) static ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite *create_ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonInternalStreams_AppendableWriter_CurrentWrite)
 
@@ -170,16 +170,16 @@ ComGoogleGsonJsonElement *ComGoogleGsonInternalStreams_parseWithComGoogleGsonStr
     if (isEmpty) {
       return JreLoadStatic(ComGoogleGsonJsonNull, INSTANCE);
     }
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (ComGoogleGsonStreamMalformedJsonException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 

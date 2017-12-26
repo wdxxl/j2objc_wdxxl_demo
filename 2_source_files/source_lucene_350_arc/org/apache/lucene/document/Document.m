@@ -24,25 +24,25 @@
 
 @end
 
-inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_FIELDS();
+inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_FIELDS(void);
 static IOSObjectArray *OrgApacheLuceneDocumentDocument_NO_FIELDS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentDocument, NO_FIELDS, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_FIELDABLES();
+inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_FIELDABLES(void);
 static IOSObjectArray *OrgApacheLuceneDocumentDocument_NO_FIELDABLES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentDocument, NO_FIELDABLES, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_STRINGS();
+inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_STRINGS(void);
 static IOSObjectArray *OrgApacheLuceneDocumentDocument_NO_STRINGS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentDocument, NO_STRINGS, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_BYTES();
+inline IOSObjectArray *OrgApacheLuceneDocumentDocument_get_NO_BYTES(void);
 static IOSObjectArray *OrgApacheLuceneDocumentDocument_NO_BYTES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentDocument, NO_BYTES, IOSObjectArray *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentDocument__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentDocument__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentDocument__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneDocumentDocument__Annotations$1(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneDocumentDocument)
 

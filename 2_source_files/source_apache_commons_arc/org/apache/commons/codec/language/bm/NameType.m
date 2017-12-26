@@ -40,10 +40,6 @@ OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType
   return OrgApacheCommonsCodecLanguageBmNameType_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LNSString;", 0x1, -1, -1, -1, -1, -1, -1 },
@@ -69,9 +65,9 @@ OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType
 
 + (void)initialize {
   if (self == [OrgApacheCommonsCodecLanguageBmNameType class]) {
-    JreEnum(OrgApacheCommonsCodecLanguageBmNameType, ASHKENAZI) = new_OrgApacheCommonsCodecLanguageBmNameType_initWithNSString_withNSString_withInt_(@"ash", @"ASHKENAZI", 0);
-    JreEnum(OrgApacheCommonsCodecLanguageBmNameType, GENERIC) = new_OrgApacheCommonsCodecLanguageBmNameType_initWithNSString_withNSString_withInt_(@"gen", @"GENERIC", 1);
-    JreEnum(OrgApacheCommonsCodecLanguageBmNameType, SEPHARDIC) = new_OrgApacheCommonsCodecLanguageBmNameType_initWithNSString_withNSString_withInt_(@"sep", @"SEPHARDIC", 2);
+    JreEnum(OrgApacheCommonsCodecLanguageBmNameType, ASHKENAZI) = new_OrgApacheCommonsCodecLanguageBmNameType_initWithNSString_withNSString_withInt_(@"ash", @"", 0);
+    JreEnum(OrgApacheCommonsCodecLanguageBmNameType, GENERIC) = new_OrgApacheCommonsCodecLanguageBmNameType_initWithNSString_withNSString_withInt_(@"gen", @"", 1);
+    JreEnum(OrgApacheCommonsCodecLanguageBmNameType, SEPHARDIC) = new_OrgApacheCommonsCodecLanguageBmNameType_initWithNSString_withNSString_withInt_(@"sep", @"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheCommonsCodecLanguageBmNameType)
   }
 }

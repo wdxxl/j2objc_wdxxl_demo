@@ -354,6 +354,10 @@
 
 - (jboolean)testPointWithNSString:(NSString *)name;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexIndexWriter)
@@ -364,44 +368,44 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexWriter, readerPool_, OrgApacheLucen
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexWriter, bufferedDeletesStream_, OrgApacheLuceneIndexBufferedDeletesStream *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexWriter, flushControl_, OrgApacheLuceneIndexIndexWriter_FlushControl *)
 
-inline jlong OrgApacheLuceneIndexIndexWriter_get_WRITE_LOCK_TIMEOUT();
+inline jlong OrgApacheLuceneIndexIndexWriter_get_WRITE_LOCK_TIMEOUT(void);
 inline jlong OrgApacheLuceneIndexIndexWriter_set_WRITE_LOCK_TIMEOUT(jlong value);
-inline jlong *OrgApacheLuceneIndexIndexWriter_getRef_WRITE_LOCK_TIMEOUT();
+inline jlong *OrgApacheLuceneIndexIndexWriter_getRef_WRITE_LOCK_TIMEOUT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jlong OrgApacheLuceneIndexIndexWriter_WRITE_LOCK_TIMEOUT;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexIndexWriter, WRITE_LOCK_TIMEOUT, jlong)
 
-inline NSString *OrgApacheLuceneIndexIndexWriter_get_WRITE_LOCK_NAME();
+inline NSString *OrgApacheLuceneIndexIndexWriter_get_WRITE_LOCK_NAME(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneIndexIndexWriter_WRITE_LOCK_NAME;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexWriter, WRITE_LOCK_NAME, NSString *)
 
-inline jint OrgApacheLuceneIndexIndexWriter_get_DISABLE_AUTO_FLUSH();
+inline jint OrgApacheLuceneIndexIndexWriter_get_DISABLE_AUTO_FLUSH(void);
 #define OrgApacheLuceneIndexIndexWriter_DISABLE_AUTO_FLUSH -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriter, DISABLE_AUTO_FLUSH, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_MAX_BUFFERED_DOCS();
+inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_MAX_BUFFERED_DOCS(void);
 #define OrgApacheLuceneIndexIndexWriter_DEFAULT_MAX_BUFFERED_DOCS -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriter, DEFAULT_MAX_BUFFERED_DOCS, jint)
 
-inline jdouble OrgApacheLuceneIndexIndexWriter_get_DEFAULT_RAM_BUFFER_SIZE_MB();
+inline jdouble OrgApacheLuceneIndexIndexWriter_get_DEFAULT_RAM_BUFFER_SIZE_MB(void);
 #define OrgApacheLuceneIndexIndexWriter_DEFAULT_RAM_BUFFER_SIZE_MB 16.0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriter, DEFAULT_RAM_BUFFER_SIZE_MB, jdouble)
 
-inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_MAX_BUFFERED_DELETE_TERMS();
+inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_MAX_BUFFERED_DELETE_TERMS(void);
 #define OrgApacheLuceneIndexIndexWriter_DEFAULT_MAX_BUFFERED_DELETE_TERMS -1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriter, DEFAULT_MAX_BUFFERED_DELETE_TERMS, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_MAX_FIELD_LENGTH();
+inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_MAX_FIELD_LENGTH(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneIndexIndexWriter_DEFAULT_MAX_FIELD_LENGTH;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneIndexIndexWriter, DEFAULT_MAX_FIELD_LENGTH, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_TERM_INDEX_INTERVAL();
+inline jint OrgApacheLuceneIndexIndexWriter_get_DEFAULT_TERM_INDEX_INTERVAL(void);
 #define OrgApacheLuceneIndexIndexWriter_DEFAULT_TERM_INDEX_INTERVAL 128
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriter, DEFAULT_TERM_INDEX_INTERVAL, jint)
 
-inline jint OrgApacheLuceneIndexIndexWriter_get_MAX_TERM_LENGTH();
+inline jint OrgApacheLuceneIndexIndexWriter_get_MAX_TERM_LENGTH(void);
 #define OrgApacheLuceneIndexIndexWriter_MAX_TERM_LENGTH 16383
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexIndexWriter, MAX_TERM_LENGTH, jint)
 
@@ -443,11 +447,11 @@ FOUNDATION_EXPORT OrgApacheLuceneIndexIndexWriter *create_OrgApacheLuceneIndexIn
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexIndexWriter_setDefaultInfoStreamWithJavaIoPrintStream_(JavaIoPrintStream *infoStream);
 
-FOUNDATION_EXPORT JavaIoPrintStream *OrgApacheLuceneIndexIndexWriter_getDefaultInfoStream();
+FOUNDATION_EXPORT JavaIoPrintStream *OrgApacheLuceneIndexIndexWriter_getDefaultInfoStream(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexIndexWriter_setDefaultWriteLockTimeoutWithLong_(jlong writeLockTimeout);
 
-FOUNDATION_EXPORT jlong OrgApacheLuceneIndexIndexWriter_getDefaultWriteLockTimeout();
+FOUNDATION_EXPORT jlong OrgApacheLuceneIndexIndexWriter_getDefaultWriteLockTimeout(void);
 
 FOUNDATION_EXPORT jboolean OrgApacheLuceneIndexIndexWriter_isLockedWithOrgApacheLuceneStoreDirectory_(OrgApacheLuceneStoreDirectory *directory);
 
@@ -509,6 +513,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexIndexWriter)
 
 - (void)commitWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)infos;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexIndexWriter_ReaderPool)
@@ -536,16 +544,20 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexIndexWriter_ReaderPool)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexIndexWriter_MaxFieldLength)
 
-inline OrgApacheLuceneIndexIndexWriter_MaxFieldLength *OrgApacheLuceneIndexIndexWriter_MaxFieldLength_get_UNLIMITED();
+inline OrgApacheLuceneIndexIndexWriter_MaxFieldLength *OrgApacheLuceneIndexIndexWriter_MaxFieldLength_get_UNLIMITED(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexIndexWriter_MaxFieldLength *OrgApacheLuceneIndexIndexWriter_MaxFieldLength_UNLIMITED;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexWriter_MaxFieldLength, UNLIMITED, OrgApacheLuceneIndexIndexWriter_MaxFieldLength *)
 
-inline OrgApacheLuceneIndexIndexWriter_MaxFieldLength *OrgApacheLuceneIndexIndexWriter_MaxFieldLength_get_LIMITED();
+inline OrgApacheLuceneIndexIndexWriter_MaxFieldLength *OrgApacheLuceneIndexIndexWriter_MaxFieldLength_get_LIMITED(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexIndexWriter_MaxFieldLength *OrgApacheLuceneIndexIndexWriter_MaxFieldLength_LIMITED;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexWriter_MaxFieldLength, LIMITED, OrgApacheLuceneIndexIndexWriter_MaxFieldLength *)
@@ -614,6 +626,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexIndexWriter_IndexReaderWarmer)
 #pragma mark Package-Private
 
 - (instancetype)initWithOrgApacheLuceneIndexIndexWriter:(OrgApacheLuceneIndexIndexWriter *)outer$;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

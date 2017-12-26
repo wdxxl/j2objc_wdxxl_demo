@@ -22,6 +22,7 @@
 
 @class IOSByteArray;
 @class JavaIoInputStream;
+@class OrgApacheCommonsCodecBinaryBaseNCodec;
 
 @interface OrgApacheCommonsCodecBinaryBase32InputStream : OrgApacheCommonsCodecBinaryBaseNCodecInputStream
 
@@ -36,6 +37,12 @@
                               withBoolean:(jboolean)doEncode
                                   withInt:(jint)lineLength
                             withByteArray:(IOSByteArray *)lineSeparator;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaIoInputStream:(JavaIoInputStream *)arg0
+withOrgApacheCommonsCodecBinaryBaseNCodec:(OrgApacheCommonsCodecBinaryBaseNCodec *)arg1
+                              withBoolean:(jboolean)arg2 NS_UNAVAILABLE;
 
 @end
 

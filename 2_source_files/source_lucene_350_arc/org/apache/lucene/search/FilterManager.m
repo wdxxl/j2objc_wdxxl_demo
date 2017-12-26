@@ -28,7 +28,7 @@
 
 #pragma clang diagnostic ignored "-Wprotocol"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchFilterManager__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchFilterManager__Annotations$0(void);
 
 @interface OrgApacheLuceneSearchFilterManager_FilterCleaner () {
  @public
@@ -54,9 +54,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFilterManager_FilterCleaner_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchFilterManager_FilterCleaner_1_init(OrgApacheLuceneSearchFilterManager_FilterCleaner_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchFilterManager_FilterCleaner_1 *new_OrgApacheLuceneSearchFilterManager_FilterCleaner_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchFilterManager_FilterCleaner_1 *new_OrgApacheLuceneSearchFilterManager_FilterCleaner_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchFilterManager_FilterCleaner_1 *create_OrgApacheLuceneSearchFilterManager_FilterCleaner_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchFilterManager_FilterCleaner_1 *create_OrgApacheLuceneSearchFilterManager_FilterCleaner_1_init(void);
 
 OrgApacheLuceneSearchFilterManager *OrgApacheLuceneSearchFilterManager_manager;
 

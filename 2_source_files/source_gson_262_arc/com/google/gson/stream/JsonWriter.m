@@ -63,11 +63,11 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonStreamJsonWriter, indent_, NSString *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonStreamJsonWriter, separator_, NSString *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonStreamJsonWriter, deferredName_, NSString *)
 
-inline IOSObjectArray *ComGoogleGsonStreamJsonWriter_get_REPLACEMENT_CHARS();
+inline IOSObjectArray *ComGoogleGsonStreamJsonWriter_get_REPLACEMENT_CHARS(void);
 static IOSObjectArray *ComGoogleGsonStreamJsonWriter_REPLACEMENT_CHARS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonStreamJsonWriter, REPLACEMENT_CHARS, IOSObjectArray *)
 
-inline IOSObjectArray *ComGoogleGsonStreamJsonWriter_get_HTML_SAFE_REPLACEMENT_CHARS();
+inline IOSObjectArray *ComGoogleGsonStreamJsonWriter_get_HTML_SAFE_REPLACEMENT_CHARS(void);
 static IOSObjectArray *ComGoogleGsonStreamJsonWriter_HTML_SAFE_REPLACEMENT_CHARS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonStreamJsonWriter, HTML_SAFE_REPLACEMENT_CHARS, IOSObjectArray *)
 

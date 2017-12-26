@@ -26,7 +26,7 @@
 #include "org/apache/lucene/store/Directory.h"
 #include "org/apache/lucene/util/MapBackedSet.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexFilterIndexReader__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexFilterIndexReader__Annotations$0(void);
 
 @implementation OrgApacheLuceneIndexFilterIndexReader
 

@@ -30,6 +30,11 @@
 
 - (jboolean)isBooleanAttribute;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupNodesBooleanAttribute)

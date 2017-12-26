@@ -87,7 +87,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [jsonWriter get];
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -111,7 +111,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self readWithComGoogleGsonStreamJsonReader:jsonReader];
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
 }
 

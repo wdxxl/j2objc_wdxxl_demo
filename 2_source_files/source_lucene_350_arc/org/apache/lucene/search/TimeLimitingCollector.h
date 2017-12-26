@@ -54,6 +54,10 @@
 
 - (void)setScorerWithOrgApacheLuceneSearchScorer:(OrgApacheLuceneSearchScorer *)scorer;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchTimeLimitingCollector)
@@ -64,9 +68,9 @@ FOUNDATION_EXPORT OrgApacheLuceneSearchTimeLimitingCollector *new_OrgApacheLucen
 
 FOUNDATION_EXPORT OrgApacheLuceneSearchTimeLimitingCollector *create_OrgApacheLuceneSearchTimeLimitingCollector_initWithOrgApacheLuceneSearchCollector_withOrgApacheLuceneUtilCounter_withLong_(OrgApacheLuceneSearchCollector *collector, OrgApacheLuceneUtilCounter *clock, jlong ticksAllowed);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilCounter *OrgApacheLuceneSearchTimeLimitingCollector_getGlobalCounter();
+FOUNDATION_EXPORT OrgApacheLuceneUtilCounter *OrgApacheLuceneSearchTimeLimitingCollector_getGlobalCounter(void);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchTimeLimitingCollector_TimerThread *OrgApacheLuceneSearchTimeLimitingCollector_getGlobalTimerThread();
+FOUNDATION_EXPORT OrgApacheLuceneSearchTimeLimitingCollector_TimerThread *OrgApacheLuceneSearchTimeLimitingCollector_getGlobalTimerThread(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchTimeLimitingCollector)
 
@@ -79,6 +83,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchTimeLimitingCollector)
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneSearchTimeLimitingCollector_TimeExceededException : JavaLangRuntimeException
 
 #pragma mark Public
@@ -88,6 +94,22 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchTimeLimitingCollector)
 - (jlong)getTimeAllowed;
 
 - (jlong)getTimeElapsed;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -104,7 +126,9 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchTimeLimitingCollector_TimeExceed
 #define INCLUDE_JavaLangThread 1
 #include "java/lang/Thread.h"
 
+@class JavaLangThreadGroup;
 @class OrgApacheLuceneUtilCounter;
+@protocol JavaLangRunnable;
 
 @interface OrgApacheLuceneSearchTimeLimitingCollector_TimerThread : JavaLangThread {
  @public
@@ -128,18 +152,44 @@ withOrgApacheLuceneUtilCounter:(OrgApacheLuceneUtilCounter *)counter;
 
 - (void)stopTimer;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangRunnable:(id<JavaLangRunnable>)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangRunnable:(id<JavaLangRunnable>)arg0
+                            withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1
+                               withNSString:(NSString *)arg2 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1
+                               withNSString:(NSString *)arg2
+                                   withLong:(jlong)arg3 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                               withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchTimeLimitingCollector_TimerThread)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchTimeLimitingCollector_TimerThread, counter_, OrgApacheLuceneUtilCounter *)
 
-inline NSString *OrgApacheLuceneSearchTimeLimitingCollector_TimerThread_get_THREAD_NAME();
+inline NSString *OrgApacheLuceneSearchTimeLimitingCollector_TimerThread_get_THREAD_NAME(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheLuceneSearchTimeLimitingCollector_TimerThread_THREAD_NAME;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchTimeLimitingCollector_TimerThread, THREAD_NAME, NSString *)
 
-inline jint OrgApacheLuceneSearchTimeLimitingCollector_TimerThread_get_DEFAULT_RESOLUTION();
+inline jint OrgApacheLuceneSearchTimeLimitingCollector_TimerThread_get_DEFAULT_RESOLUTION(void);
 #define OrgApacheLuceneSearchTimeLimitingCollector_TimerThread_DEFAULT_RESOLUTION 20
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchTimeLimitingCollector_TimerThread, DEFAULT_RESOLUTION, jint)
 

@@ -83,60 +83,64 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchSortField)
 
-inline jint OrgApacheLuceneSearchSortField_get_SCORE();
+inline jint OrgApacheLuceneSearchSortField_get_SCORE(void);
 #define OrgApacheLuceneSearchSortField_SCORE 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, SCORE, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_DOC();
+inline jint OrgApacheLuceneSearchSortField_get_DOC(void);
 #define OrgApacheLuceneSearchSortField_DOC 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, DOC, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_STRING();
+inline jint OrgApacheLuceneSearchSortField_get_STRING(void);
 #define OrgApacheLuceneSearchSortField_STRING 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, STRING, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_INT();
+inline jint OrgApacheLuceneSearchSortField_get_INT(void);
 #define OrgApacheLuceneSearchSortField_INT 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, INT, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_FLOAT();
+inline jint OrgApacheLuceneSearchSortField_get_FLOAT(void);
 #define OrgApacheLuceneSearchSortField_FLOAT 5
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, FLOAT, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_LONG();
+inline jint OrgApacheLuceneSearchSortField_get_LONG(void);
 #define OrgApacheLuceneSearchSortField_LONG 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, LONG, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_DOUBLE();
+inline jint OrgApacheLuceneSearchSortField_get_DOUBLE(void);
 #define OrgApacheLuceneSearchSortField_DOUBLE 7
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, DOUBLE, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_SHORT();
+inline jint OrgApacheLuceneSearchSortField_get_SHORT(void);
 #define OrgApacheLuceneSearchSortField_SHORT 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, SHORT, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_CUSTOM();
+inline jint OrgApacheLuceneSearchSortField_get_CUSTOM(void);
 #define OrgApacheLuceneSearchSortField_CUSTOM 9
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, CUSTOM, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_BYTE();
+inline jint OrgApacheLuceneSearchSortField_get_BYTE(void);
 #define OrgApacheLuceneSearchSortField_BYTE 10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, BYTE, jint)
 
-inline jint OrgApacheLuceneSearchSortField_get_STRING_VAL();
+inline jint OrgApacheLuceneSearchSortField_get_STRING_VAL(void);
 #define OrgApacheLuceneSearchSortField_STRING_VAL 11
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchSortField, STRING_VAL, jint)
 
-inline OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_get_FIELD_SCORE();
+inline OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_get_FIELD_SCORE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_FIELD_SCORE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSortField, FIELD_SCORE, OrgApacheLuceneSearchSortField *)
 
-inline OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_get_FIELD_DOC();
+inline OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_get_FIELD_DOC(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchSortField *OrgApacheLuceneSearchSortField_FIELD_DOC;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSortField, FIELD_DOC, OrgApacheLuceneSearchSortField *)

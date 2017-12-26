@@ -21,15 +21,15 @@
 
 @end
 
-inline OrgApacheLuceneUtilIntsRef *OrgApacheLuceneUtilFstIntSequenceOutputs_get_NO_OUTPUT();
+inline OrgApacheLuceneUtilIntsRef *OrgApacheLuceneUtilFstIntSequenceOutputs_get_NO_OUTPUT(void);
 static OrgApacheLuceneUtilIntsRef *OrgApacheLuceneUtilFstIntSequenceOutputs_NO_OUTPUT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFstIntSequenceOutputs, NO_OUTPUT, OrgApacheLuceneUtilIntsRef *)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilFstIntSequenceOutputs_init(OrgApacheLuceneUtilFstIntSequenceOutputs *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstIntSequenceOutputs *new_OrgApacheLuceneUtilFstIntSequenceOutputs_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilFstIntSequenceOutputs *new_OrgApacheLuceneUtilFstIntSequenceOutputs_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstIntSequenceOutputs *create_OrgApacheLuceneUtilFstIntSequenceOutputs_init();
+__attribute__((unused)) static OrgApacheLuceneUtilFstIntSequenceOutputs *create_OrgApacheLuceneUtilFstIntSequenceOutputs_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilFstIntSequenceOutputs)
 
@@ -48,8 +48,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgApacheLuceneUtilIntsRef *)commonWithId:(OrgApacheLuceneUtilIntsRef *)output1
                                       withId:(OrgApacheLuceneUtilIntsRef *)output2 {
-  JreAssert((output1 != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:45 condition failed: assert output1 != null;"));
-  JreAssert((output2 != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:46 condition failed: assert output2 != null;"));
+  JreAssert(output1 != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:45 condition failed: assert output1 != null;");
+  JreAssert(output2 != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:46 condition failed: assert output2 != null;");
   jint pos1 = ((OrgApacheLuceneUtilIntsRef *) nil_chk(output1))->offset_;
   jint pos2 = ((OrgApacheLuceneUtilIntsRef *) nil_chk(output2))->offset_;
   jint stopAt1 = pos1 + JavaLangMath_minWithInt_withInt_(output1->length_, output2->length_);
@@ -76,8 +76,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgApacheLuceneUtilIntsRef *)subtractWithId:(OrgApacheLuceneUtilIntsRef *)output
                                         withId:(OrgApacheLuceneUtilIntsRef *)inc {
-  JreAssert((output != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:75 condition failed: assert output != null;"));
-  JreAssert((inc != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:76 condition failed: assert inc != null;"));
+  JreAssert(output != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:75 condition failed: assert output != null;");
+  JreAssert(inc != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:76 condition failed: assert inc != null;");
   if (inc == OrgApacheLuceneUtilFstIntSequenceOutputs_NO_OUTPUT) {
     return output;
   }
@@ -85,16 +85,16 @@ J2OBJC_IGNORE_DESIGNATED_END
     return OrgApacheLuceneUtilFstIntSequenceOutputs_NO_OUTPUT;
   }
   else {
-    JreAssert((inc->length_ < output->length_), (JreStrcat("$I$I", @"inc.length=", inc->length_, @" vs output.length=", output->length_)));
-    JreAssert((inc->length_ > 0), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:85 condition failed: assert inc.length > 0;"));
+    JreAssert(inc->length_ < output->length_, JreStrcat("$I$I", @"inc.length=", inc->length_, @" vs output.length=", output->length_));
+    JreAssert(inc->length_ > 0, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:85 condition failed: assert inc.length > 0;");
     return new_OrgApacheLuceneUtilIntsRef_initWithIntArray_withInt_withInt_(output->ints_, output->offset_ + inc->length_, output->length_ - inc->length_);
   }
 }
 
 - (OrgApacheLuceneUtilIntsRef *)addWithId:(OrgApacheLuceneUtilIntsRef *)prefix
                                    withId:(OrgApacheLuceneUtilIntsRef *)output {
-  JreAssert((prefix != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:92 condition failed: assert prefix != null;"));
-  JreAssert((output != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:93 condition failed: assert output != null;"));
+  JreAssert(prefix != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:92 condition failed: assert prefix != null;");
+  JreAssert(output != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:93 condition failed: assert output != null;");
   if (prefix == OrgApacheLuceneUtilFstIntSequenceOutputs_NO_OUTPUT) {
     return output;
   }
@@ -102,8 +102,8 @@ J2OBJC_IGNORE_DESIGNATED_END
     return prefix;
   }
   else {
-    JreAssert((((OrgApacheLuceneUtilIntsRef *) nil_chk(prefix))->length_ > 0), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:99 condition failed: assert prefix.length > 0;"));
-    JreAssert((((OrgApacheLuceneUtilIntsRef *) nil_chk(output))->length_ > 0), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:100 condition failed: assert output.length > 0;"));
+    JreAssert(((OrgApacheLuceneUtilIntsRef *) nil_chk(prefix))->length_ > 0, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:99 condition failed: assert prefix.length > 0;");
+    JreAssert(((OrgApacheLuceneUtilIntsRef *) nil_chk(output))->length_ > 0, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:100 condition failed: assert output.length > 0;");
     OrgApacheLuceneUtilIntsRef *result = new_OrgApacheLuceneUtilIntsRef_initWithInt_(prefix->length_ + output->length_);
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(prefix->ints_, prefix->offset_, result->ints_, 0, prefix->length_);
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(output->ints_, output->offset_, result->ints_, prefix->length_, output->length_);
@@ -114,7 +114,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)writeWithId:(OrgApacheLuceneUtilIntsRef *)prefix
 withOrgApacheLuceneStoreDataOutput:(OrgApacheLuceneStoreDataOutput *)outArg {
-  JreAssert((prefix != nil), (@"org/apache/lucene/util/fst/IntSequenceOutputs.java:111 condition failed: assert prefix != null;"));
+  JreAssert(prefix != nil, @"org/apache/lucene/util/fst/IntSequenceOutputs.java:111 condition failed: assert prefix != null;");
   [((OrgApacheLuceneStoreDataOutput *) nil_chk(outArg)) writeVIntWithInt:((OrgApacheLuceneUtilIntsRef *) nil_chk(prefix))->length_];
   for (jint idx = 0; idx < prefix->length_; idx++) {
     [outArg writeVIntWithInt:IOSIntArray_Get(nil_chk(prefix->ints_), prefix->offset_ + idx)];

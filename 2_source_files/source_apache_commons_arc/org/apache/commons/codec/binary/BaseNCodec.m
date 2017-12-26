@@ -31,17 +31,17 @@
 
 @end
 
-inline jint OrgApacheCommonsCodecBinaryBaseNCodec_get_DEFAULT_BUFFER_RESIZE_FACTOR();
+inline jint OrgApacheCommonsCodecBinaryBaseNCodec_get_DEFAULT_BUFFER_RESIZE_FACTOR(void);
 #define OrgApacheCommonsCodecBinaryBaseNCodec_DEFAULT_BUFFER_RESIZE_FACTOR 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBaseNCodec, DEFAULT_BUFFER_RESIZE_FACTOR, jint)
 
-inline jint OrgApacheCommonsCodecBinaryBaseNCodec_get_DEFAULT_BUFFER_SIZE();
+inline jint OrgApacheCommonsCodecBinaryBaseNCodec_get_DEFAULT_BUFFER_SIZE(void);
 #define OrgApacheCommonsCodecBinaryBaseNCodec_DEFAULT_BUFFER_SIZE 8192
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecBinaryBaseNCodec, DEFAULT_BUFFER_SIZE, jint)
 
 __attribute__((unused)) static IOSByteArray *OrgApacheCommonsCodecBinaryBaseNCodec_resizeBufferWithOrgApacheCommonsCodecBinaryBaseNCodec_Context_(OrgApacheCommonsCodecBinaryBaseNCodec *self, OrgApacheCommonsCodecBinaryBaseNCodec_Context *context);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecBinaryBaseNCodec__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecBinaryBaseNCodec__Annotations$0(void);
 
 @implementation OrgApacheCommonsCodecBinaryBaseNCodec
 

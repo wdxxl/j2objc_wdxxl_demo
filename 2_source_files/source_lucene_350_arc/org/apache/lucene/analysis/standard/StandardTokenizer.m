@@ -47,21 +47,21 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardStandardTokenizer, typeAtt_, 
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisStandardStandardTokenizer_init__WithJavaIoReader_withOrgApacheLuceneUtilVersion_(OrgApacheLuceneAnalysisStandardStandardTokenizer *self, JavaIoReader *input, OrgApacheLuceneUtilVersion *matchVersion);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$6(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$7();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardStandardTokenizer__Annotations$7(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisStandardStandardTokenizer)
 

@@ -54,6 +54,10 @@
 
 - (jint)merge;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentMerger)
@@ -84,6 +88,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexSegmentMerger)
                                withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir;
 
 - (void)workWithDouble:(jdouble)units;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

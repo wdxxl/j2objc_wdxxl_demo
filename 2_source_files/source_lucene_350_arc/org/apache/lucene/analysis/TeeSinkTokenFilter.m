@@ -25,7 +25,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisTeeSinkTokenFilter, sinks_, id<JavaUtilList>)
 
-inline OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkFilter *OrgApacheLuceneAnalysisTeeSinkTokenFilter_get_ACCEPT_ALL_FILTER();
+inline OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkFilter *OrgApacheLuceneAnalysisTeeSinkTokenFilter_get_ACCEPT_ALL_FILTER(void);
 static OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkFilter *OrgApacheLuceneAnalysisTeeSinkTokenFilter_ACCEPT_ALL_FILTER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisTeeSinkTokenFilter, ACCEPT_ALL_FILTER, OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkFilter *)
 
@@ -77,9 +77,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisTeeSinkTokenFilter_1)
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisTeeSinkTokenFilter_1_init(OrgApacheLuceneAnalysisTeeSinkTokenFilter_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneAnalysisTeeSinkTokenFilter_1 *new_OrgApacheLuceneAnalysisTeeSinkTokenFilter_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneAnalysisTeeSinkTokenFilter_1 *new_OrgApacheLuceneAnalysisTeeSinkTokenFilter_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneAnalysisTeeSinkTokenFilter_1 *create_OrgApacheLuceneAnalysisTeeSinkTokenFilter_1_init();
+__attribute__((unused)) static OrgApacheLuceneAnalysisTeeSinkTokenFilter_1 *create_OrgApacheLuceneAnalysisTeeSinkTokenFilter_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisTeeSinkTokenFilter)
 

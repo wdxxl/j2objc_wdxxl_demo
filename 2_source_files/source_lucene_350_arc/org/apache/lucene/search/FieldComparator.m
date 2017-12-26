@@ -25,6 +25,8 @@
 
 #pragma clang diagnostic ignored "-Wincomplete-implementation"
 
+__attribute__((unused)) static void OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(OrgApacheLuceneSearchFieldComparator_NumericComparator *self, OrgApacheLuceneIndexIndexReader *reader, jint docBase);
+
 @interface OrgApacheLuceneSearchFieldComparator_ByteComparator () {
  @public
   IOSByteArray *values_;
@@ -340,15 +342,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldComparator)
 
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
-  if (missingValue_ != nil) {
-    docsWithField_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getDocsWithFieldWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_];
-    if ([docsWithField_ isKindOfClass:[OrgApacheLuceneUtilBits_MatchAllBits class]]) {
-      docsWithField_ = nil;
-    }
-  }
-  else {
-    docsWithField_ = nil;
-  }
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -377,6 +371,18 @@ void OrgApacheLuceneSearchFieldComparator_NumericComparator_initWithNSString_wit
   OrgApacheLuceneSearchFieldComparator_init(self);
   self->field_ = field;
   self->missingValue_ = missingValue;
+}
+
+void OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(OrgApacheLuceneSearchFieldComparator_NumericComparator *self, OrgApacheLuceneIndexIndexReader *reader, jint docBase) {
+  if (self->missingValue_ != nil) {
+    self->docsWithField_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getDocsWithFieldWithOrgApacheLuceneIndexIndexReader:reader withNSString:self->field_];
+    if ([self->docsWithField_ isKindOfClass:[OrgApacheLuceneUtilBits_MatchAllBits class]]) {
+      self->docsWithField_ = nil;
+    }
+  }
+  else {
+    self->docsWithField_ = nil;
+  }
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldComparator_NumericComparator)
@@ -416,7 +422,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
   currentReaderValues_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getBytesWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_ withOrgApacheLuceneSearchFieldCache_ByteParser:parser_ withBoolean:missingValue_ != nil];
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:docBase];
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 - (void)setBottomWithInt:(jint)bottom {
@@ -610,7 +616,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
   currentReaderValues_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getDoublesWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_ withOrgApacheLuceneSearchFieldCache_DoubleParser:parser_ withBoolean:missingValue_ != nil];
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:docBase];
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 - (void)setBottomWithInt:(jint)bottom {
@@ -723,7 +729,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
   currentReaderValues_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getFloatsWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_ withOrgApacheLuceneSearchFieldCache_FloatParser:parser_ withBoolean:missingValue_ != nil];
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:docBase];
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 - (void)setBottomWithInt:(jint)bottom {
@@ -836,7 +842,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
   currentReaderValues_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getIntsWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_ withOrgApacheLuceneSearchFieldCache_IntParser:parser_ withBoolean:missingValue_ != nil];
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:docBase];
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 - (void)setBottomWithInt:(jint)bottom {
@@ -949,7 +955,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
   currentReaderValues_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getLongsWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_ withOrgApacheLuceneSearchFieldCache_LongParser:parser_ withBoolean:missingValue_ != nil];
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:docBase];
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 - (void)setBottomWithInt:(jint)bottom {
@@ -1145,7 +1151,7 @@ withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_P
 - (void)setNextReaderWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                  withInt:(jint)docBase {
   currentReaderValues_ = [((id<OrgApacheLuceneSearchFieldCache>) nil_chk(JreLoadStatic(OrgApacheLuceneSearchFieldCache, DEFAULT))) getShortsWithOrgApacheLuceneIndexIndexReader:reader withNSString:field_ withOrgApacheLuceneSearchFieldCache_ShortParser:parser_ withBoolean:missingValue_ != nil];
-  [super setNextReaderWithOrgApacheLuceneIndexIndexReader:reader withInt:docBase];
+  OrgApacheLuceneSearchFieldComparator_NumericComparator_setNextReaderWithOrgApacheLuceneIndexIndexReader_withInt_(self, reader, docBase);
 }
 
 - (void)setBottomWithInt:(jint)bottom {
@@ -1359,7 +1365,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldComparator_StringComp
 }
 
 - (jint)compareBottomWithInt:(jint)doc {
-  JreAssert((bottomSlot_ != -1), (@"org/apache/lucene/search/FieldComparator.java:888 condition failed: assert bottomSlot != -1;"));
+  JreAssert(bottomSlot_ != -1, @"org/apache/lucene/search/FieldComparator.java:888 condition failed: assert bottomSlot != -1;");
   if (bottomSameReader_) {
     return bottomOrd_ - IOSIntArray_Get(nil_chk(self->order_), doc);
   }
@@ -1387,7 +1393,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldComparator_StringComp
               withInt:(jint)doc {
   jint ord = IOSIntArray_Get(nil_chk(order_), doc);
   *IOSIntArray_GetRef(nil_chk(ords_), slot) = ord;
-  JreAssert((ord >= 0), (@"org/apache/lucene/search/FieldComparator.java:921 condition failed: assert ord >= 0;"));
+  JreAssert(ord >= 0, @"org/apache/lucene/search/FieldComparator.java:921 condition failed: assert ord >= 0;");
   (void) IOSObjectArray_Set(nil_chk(values_), slot, IOSObjectArray_Get(nil_chk(lookup_), ord));
   *IOSIntArray_GetRef(nil_chk(readerGen_), slot) = currentReaderGen_;
 }
@@ -1398,7 +1404,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneSearchFieldComparator_StringComp
   currentReaderGen_++;
   order_ = ((OrgApacheLuceneSearchFieldCache_StringIndex *) nil_chk(currentReaderValues))->order_;
   lookup_ = currentReaderValues->lookup_;
-  JreAssert((((IOSObjectArray *) nil_chk(lookup_))->size_ > 0), (@"org/apache/lucene/search/FieldComparator.java:932 condition failed: assert lookup.length > 0;"));
+  JreAssert(((IOSObjectArray *) nil_chk(lookup_))->size_ > 0, @"org/apache/lucene/search/FieldComparator.java:932 condition failed: assert lookup.length > 0;");
   if (bottomSlot_ != -1) {
     [self setBottomWithInt:bottomSlot_];
   }

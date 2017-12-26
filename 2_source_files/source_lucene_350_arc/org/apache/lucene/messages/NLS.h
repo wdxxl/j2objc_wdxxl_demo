@@ -49,9 +49,9 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneMessagesNLS)
 
 FOUNDATION_EXPORT void OrgApacheLuceneMessagesNLS_init(OrgApacheLuceneMessagesNLS *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneMessagesNLS *new_OrgApacheLuceneMessagesNLS_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneMessagesNLS *new_OrgApacheLuceneMessagesNLS_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneMessagesNLS *create_OrgApacheLuceneMessagesNLS_init();
+FOUNDATION_EXPORT OrgApacheLuceneMessagesNLS *create_OrgApacheLuceneMessagesNLS_init(void);
 
 FOUNDATION_EXPORT NSString *OrgApacheLuceneMessagesNLS_getLocalizedMessageWithNSString_(NSString *key);
 

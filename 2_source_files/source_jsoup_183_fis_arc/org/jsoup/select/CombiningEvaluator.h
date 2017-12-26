@@ -83,6 +83,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCombiningEvaluator)
 
 - (instancetype)initWithOrgJsoupSelectEvaluatorArray:(IOSObjectArray *)evaluators;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectCombiningEvaluator_And)
@@ -139,9 +143,9 @@ FOUNDATION_EXPORT OrgJsoupSelectCombiningEvaluator_Or *create_OrgJsoupSelectComb
 
 FOUNDATION_EXPORT void OrgJsoupSelectCombiningEvaluator_Or_init(OrgJsoupSelectCombiningEvaluator_Or *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectCombiningEvaluator_Or *new_OrgJsoupSelectCombiningEvaluator_Or_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectCombiningEvaluator_Or *new_OrgJsoupSelectCombiningEvaluator_Or_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectCombiningEvaluator_Or *create_OrgJsoupSelectCombiningEvaluator_Or_init();
+FOUNDATION_EXPORT OrgJsoupSelectCombiningEvaluator_Or *create_OrgJsoupSelectCombiningEvaluator_Or_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCombiningEvaluator_Or)
 

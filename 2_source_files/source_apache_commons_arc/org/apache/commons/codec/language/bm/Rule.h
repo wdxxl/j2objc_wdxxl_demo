@@ -67,16 +67,20 @@ withOrgApacheCommonsCodecLanguageBmRule_PhonemeExpr:(id<OrgApacheCommonsCodecLan
 - (jboolean)patternAndContextMatchesWithJavaLangCharSequence:(id<JavaLangCharSequence>)input
                                                      withInt:(jint)i;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRule)
 
-inline id<OrgApacheCommonsCodecLanguageBmRule_RPattern> OrgApacheCommonsCodecLanguageBmRule_get_ALL_STRINGS_RMATCHER();
+inline id<OrgApacheCommonsCodecLanguageBmRule_RPattern> OrgApacheCommonsCodecLanguageBmRule_get_ALL_STRINGS_RMATCHER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<OrgApacheCommonsCodecLanguageBmRule_RPattern> OrgApacheCommonsCodecLanguageBmRule_ALL_STRINGS_RMATCHER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmRule, ALL_STRINGS_RMATCHER, id<OrgApacheCommonsCodecLanguageBmRule_RPattern>)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmRule_get_ALL();
+inline NSString *OrgApacheCommonsCodecLanguageBmRule_get_ALL(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageBmRule_ALL;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmRule, ALL, NSString *)
@@ -152,11 +156,15 @@ withOrgApacheCommonsCodecLanguageBmLanguages_LanguageSet:(OrgApacheCommonsCodecL
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRule_Phoneme)
 
-inline id<JavaUtilComparator> OrgApacheCommonsCodecLanguageBmRule_Phoneme_get_COMPARATOR();
+inline id<JavaUtilComparator> OrgApacheCommonsCodecLanguageBmRule_Phoneme_get_COMPARATOR(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheCommonsCodecLanguageBmRule_Phoneme_COMPARATOR;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmRule_Phoneme, COMPARATOR, id<JavaUtilComparator>)
@@ -195,6 +203,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecLanguageBmRule_Phoneme)
 - (instancetype)initWithJavaUtilList:(id<JavaUtilList>)phonemes;
 
 - (id<JavaUtilList>)getPhonemes;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

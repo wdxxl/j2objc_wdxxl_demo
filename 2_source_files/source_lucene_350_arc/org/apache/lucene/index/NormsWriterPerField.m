@@ -42,11 +42,11 @@
 - (void)finish {
   if (((OrgApacheLuceneIndexFieldInfo *) nil_chk(fieldInfo_))->isIndexed_ && !fieldInfo_->omitNorms_) {
     if (((IOSIntArray *) nil_chk(docIDs_))->size_ <= upto_) {
-      JreAssert((docIDs_->size_ == upto_), (@"org/apache/lucene/index/NormsWriterPerField.java:68 condition failed: assert docIDs.length == upto;"));
+      JreAssert(docIDs_->size_ == upto_, @"org/apache/lucene/index/NormsWriterPerField.java:68 condition failed: assert docIDs.length == upto;");
       docIDs_ = OrgApacheLuceneUtilArrayUtil_growWithIntArray_withInt_(docIDs_, 1 + upto_);
     }
     if (((IOSByteArray *) nil_chk(norms_))->size_ <= upto_) {
-      JreAssert((norms_->size_ == upto_), (@"org/apache/lucene/index/NormsWriterPerField.java:72 condition failed: assert norms.length == upto;"));
+      JreAssert(norms_->size_ == upto_, @"org/apache/lucene/index/NormsWriterPerField.java:72 condition failed: assert norms.length == upto;");
       norms_ = OrgApacheLuceneUtilArrayUtil_growWithByteArray_withInt_(norms_, 1 + upto_);
     }
     jfloat norm = [((OrgApacheLuceneSearchSimilarity *) nil_chk(((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->similarity_)) computeNormWithNSString:fieldInfo_->name_ withOrgApacheLuceneIndexFieldInvertState:fieldState_];

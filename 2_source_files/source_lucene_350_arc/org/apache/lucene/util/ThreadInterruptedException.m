@@ -31,7 +31,7 @@
 @end
 
 void OrgApacheLuceneUtilThreadInterruptedException_initWithJavaLangInterruptedException_(OrgApacheLuceneUtilThreadInterruptedException *self, JavaLangInterruptedException *ie) {
-  JavaLangRuntimeException_initWithNSException_(self, ie);
+  JavaLangRuntimeException_initWithJavaLangThrowable_(self, ie);
 }
 
 OrgApacheLuceneUtilThreadInterruptedException *new_OrgApacheLuceneUtilThreadInterruptedException_initWithJavaLangInterruptedException_(JavaLangInterruptedException *ie) {

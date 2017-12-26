@@ -36,16 +36,16 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecDigestB64)
 
-inline NSString *OrgApacheCommonsCodecDigestB64_get_B64T();
+inline NSString *OrgApacheCommonsCodecDigestB64_get_B64T(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestB64_B64T;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestB64, B64T, NSString *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecDigestB64_init(OrgApacheCommonsCodecDigestB64 *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestB64 *new_OrgApacheCommonsCodecDigestB64_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestB64 *new_OrgApacheCommonsCodecDigestB64_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestB64 *create_OrgApacheCommonsCodecDigestB64_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestB64 *create_OrgApacheCommonsCodecDigestB64_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecDigestB64_b64from24bitWithByte_withByte_withByte_withInt_withJavaLangStringBuilder_(jbyte b2, jbyte b1, jbyte b0, jint outLen, JavaLangStringBuilder *buffer);
 

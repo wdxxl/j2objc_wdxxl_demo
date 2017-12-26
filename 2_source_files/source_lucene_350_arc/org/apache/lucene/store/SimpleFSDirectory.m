@@ -13,6 +13,7 @@
 #include "java/io/RandomAccessFile.h"
 #include "java/lang/Deprecated.h"
 #include "java/lang/OutOfMemoryError.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "org/apache/lucene/store/BufferedIndexInput.h"
 #include "org/apache/lucene/store/FSDirectory.h"
@@ -21,7 +22,7 @@
 #include "org/apache/lucene/store/LockFactory.h"
 #include "org/apache/lucene/store/SimpleFSDirectory.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreSimpleFSDirectory_SimpleFSIndexInput__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreSimpleFSDirectory_SimpleFSIndexInput__Annotations$0(void);
 
 @implementation OrgApacheLuceneStoreSimpleFSDirectory
 
@@ -135,12 +136,12 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneStoreSimpleFSDirectory)
     }
     @catch (JavaLangOutOfMemoryError *e) {
       JavaLangOutOfMemoryError *outOfMemoryError = new_JavaLangOutOfMemoryError_initWithNSString_(JreStrcat("$IC", @"OutOfMemoryError likely caused by the Sun VM Bug described in https://issues.apache.org/jira/browse/LUCENE-1566; try calling FSDirectory.setReadChunkSize with a value smaller than the current chunk size (", chunkSize_, ')'));
-      (void) [outOfMemoryError initCauseWithNSException:e];
+      (void) [outOfMemoryError initCauseWithJavaLangThrowable:e];
       @throw outOfMemoryError;
     }
     @catch (JavaIoIOException *ioe) {
       JavaIoIOException *newIOE = new_JavaIoIOException_initWithNSString_(JreStrcat("$$@", [ioe getMessage], @": ", self));
-      (void) [newIOE initCauseWithNSException:ioe];
+      (void) [newIOE initCauseWithJavaLangThrowable:ioe];
       @throw newIOE;
     }
   }

@@ -58,7 +58,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, termInfo_, Org
     [((OrgApacheLuceneIndexDefaultSkipListWriter *) nil_chk(skipListWriter_)) setSkipDataWithInt:lastDocID_ withBoolean:storePayloads_ withInt:((OrgApacheLuceneIndexFormatPostingsPositionsWriter *) nil_chk(posWriter_))->lastPayloadLength_];
     [skipListWriter_ bufferSkipWithInt:df_];
   }
-  JreAssert((docID < totalNumDocs_), (JreStrcat("$I$I", @"docID=", docID, @" totalNumDocs=", totalNumDocs_)));
+  JreAssert(docID < totalNumDocs_, JreStrcat("$I$I", @"docID=", docID, @" totalNumDocs=", totalNumDocs_));
   lastDocID_ = docID;
   if (omitTermFreqAndPositions_) [((OrgApacheLuceneStoreIndexOutput *) nil_chk(out_)) writeVIntWithInt:delta];
   else if (1 == termDocFreq) [((OrgApacheLuceneStoreIndexOutput *) nil_chk(out_)) writeVIntWithInt:(JreLShift32(delta, 1)) | 1];

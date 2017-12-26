@@ -123,7 +123,7 @@ jint OrgApacheLuceneUtilByteBlockPool_FIRST_LEVEL_SIZE;
     term->length_ = (IOSByteArray_Get(bytes, pos) & (jint) 0x7f) + (JreLShift32((IOSByteArray_Get(bytes, pos + 1) & (jint) 0xff), 7));
     term->offset_ = pos + 2;
   }
-  JreAssert((term->length_ >= 0), (@"org/apache/lucene/util/ByteBlockPool.java:244 condition failed: assert term.length >= 0;"));
+  JreAssert(term->length_ >= 0, @"org/apache/lucene/util/ByteBlockPool.java:244 condition failed: assert term.length >= 0;");
   return term;
 }
 

@@ -38,7 +38,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreRAMInputStream, currentBuffer_, IOSByteA
 
 __attribute__((unused)) static void OrgApacheLuceneStoreRAMInputStream_switchCurrentBufferWithBoolean_(OrgApacheLuceneStoreRAMInputStream *self, jboolean enforceEOF);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreRAMInputStream__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreRAMInputStream__Annotations$0(void);
 
 @implementation OrgApacheLuceneStoreRAMInputStream
 
@@ -91,7 +91,7 @@ __attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreRAMInputStrea
 
 - (void)copyBytesWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)outArg
                                             withLong:(jlong)numBytes {
-  JreAssert((numBytes >= 0), (JreStrcat("$J", @"numBytes=", numBytes)));
+  JreAssert(numBytes >= 0, JreStrcat("$J", @"numBytes=", numBytes));
   jlong left = numBytes;
   while (left > 0) {
     if (bufferPosition_ == bufferLength_) {
@@ -104,7 +104,7 @@ __attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreRAMInputStrea
     bufferPosition_ += toCopy;
     left -= toCopy;
   }
-  JreAssert((left == 0), (JreStrcat("$J$J", @"Insufficient bytes to copy: numBytes=", numBytes, @" copied=", (numBytes - left))));
+  JreAssert(left == 0, JreStrcat("$J$J", @"Insufficient bytes to copy: numBytes=", numBytes, @" copied=", (numBytes - left)));
 }
 
 - (jlong)getFilePointer {

@@ -32,7 +32,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchDocIdSet)
 
-inline OrgApacheLuceneSearchDocIdSet *OrgApacheLuceneSearchDocIdSet_get_EMPTY_DOCIDSET();
+inline OrgApacheLuceneSearchDocIdSet *OrgApacheLuceneSearchDocIdSet_get_EMPTY_DOCIDSET(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchDocIdSet *OrgApacheLuceneSearchDocIdSet_EMPTY_DOCIDSET;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchDocIdSet, EMPTY_DOCIDSET, OrgApacheLuceneSearchDocIdSet *)

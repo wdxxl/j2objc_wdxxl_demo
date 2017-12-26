@@ -19,6 +19,7 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/StringBuilder.h"
 #include "java/lang/System.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/text/Collator.h"
 #include "java/text/DateFormat.h"
@@ -128,44 +129,44 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser, jj_expentries_, id<Ja
 J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser, jj_expentry_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParser, jj_lasttokens_, IOSIntArray *)
 
-inline jint OrgApacheLuceneQueryParserQueryParser_get_CONJ_NONE();
+inline jint OrgApacheLuceneQueryParserQueryParser_get_CONJ_NONE(void);
 #define OrgApacheLuceneQueryParserQueryParser_CONJ_NONE 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserQueryParser, CONJ_NONE, jint)
 
-inline jint OrgApacheLuceneQueryParserQueryParser_get_CONJ_AND();
+inline jint OrgApacheLuceneQueryParserQueryParser_get_CONJ_AND(void);
 #define OrgApacheLuceneQueryParserQueryParser_CONJ_AND 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserQueryParser, CONJ_AND, jint)
 
-inline jint OrgApacheLuceneQueryParserQueryParser_get_CONJ_OR();
+inline jint OrgApacheLuceneQueryParserQueryParser_get_CONJ_OR(void);
 #define OrgApacheLuceneQueryParserQueryParser_CONJ_OR 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserQueryParser, CONJ_OR, jint)
 
-inline jint OrgApacheLuceneQueryParserQueryParser_get_MOD_NONE();
+inline jint OrgApacheLuceneQueryParserQueryParser_get_MOD_NONE(void);
 #define OrgApacheLuceneQueryParserQueryParser_MOD_NONE 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserQueryParser, MOD_NONE, jint)
 
-inline jint OrgApacheLuceneQueryParserQueryParser_get_MOD_NOT();
+inline jint OrgApacheLuceneQueryParserQueryParser_get_MOD_NOT(void);
 #define OrgApacheLuceneQueryParserQueryParser_MOD_NOT 10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserQueryParser, MOD_NOT, jint)
 
-inline jint OrgApacheLuceneQueryParserQueryParser_get_MOD_REQ();
+inline jint OrgApacheLuceneQueryParserQueryParser_get_MOD_REQ(void);
 #define OrgApacheLuceneQueryParserQueryParser_MOD_REQ 11
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneQueryParserQueryParser, MOD_REQ, jint)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneQueryParserQueryParser_get_getFieldQueryMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneQueryParserQueryParser_get_getFieldQueryMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneQueryParserQueryParser_getFieldQueryMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParser, getFieldQueryMethod, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneQueryParserQueryParser_get_getFieldQueryWithQuotedMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneQueryParserQueryParser_get_getFieldQueryWithQuotedMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneQueryParserQueryParser_getFieldQueryWithQuotedMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneQueryParserQueryParser, getFieldQueryWithQuotedMethod, OrgApacheLuceneUtilVirtualMethod *)
 
-inline IOSIntArray *OrgApacheLuceneQueryParserQueryParser_get_jj_la1_0();
+inline IOSIntArray *OrgApacheLuceneQueryParserQueryParser_get_jj_la1_0(void);
 inline IOSIntArray *OrgApacheLuceneQueryParserQueryParser_set_jj_la1_0(IOSIntArray *value);
 static IOSIntArray *OrgApacheLuceneQueryParserQueryParser_jj_la1_0;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneQueryParserQueryParser, jj_la1_0, IOSIntArray *)
 
-inline IOSIntArray *OrgApacheLuceneQueryParserQueryParser_get_jj_la1_1();
+inline IOSIntArray *OrgApacheLuceneQueryParserQueryParser_get_jj_la1_1(void);
 inline IOSIntArray *OrgApacheLuceneQueryParserQueryParser_set_jj_la1_1(IOSIntArray *value);
 static IOSIntArray *OrgApacheLuceneQueryParserQueryParser_jj_la1_1;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneQueryParserQueryParser, jj_la1_1, IOSIntArray *)
@@ -196,9 +197,9 @@ __attribute__((unused)) static jboolean OrgApacheLuceneQueryParserQueryParser_jj
 
 __attribute__((unused)) static jboolean OrgApacheLuceneQueryParserQueryParser_jj_3_1(OrgApacheLuceneQueryParserQueryParser *self);
 
-__attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_jj_la1_init_0();
+__attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_jj_la1_init_0(void);
 
-__attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_jj_la1_init_1();
+__attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_jj_la1_init_1(void);
 
 __attribute__((unused)) static OrgApacheLuceneQueryParserToken *OrgApacheLuceneQueryParserQueryParser_jj_consume_tokenWithInt_(OrgApacheLuceneQueryParserQueryParser *self, jint kind);
 
@@ -212,13 +213,13 @@ __attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_jj_res
 
 __attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_jj_saveWithInt_withInt_(OrgApacheLuceneQueryParserQueryParser *self, jint index, jint xla);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneQueryParserQueryParser__Annotations$3(void);
 
 __attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_Operator_initWithNSString_withInt_(OrgApacheLuceneQueryParserQueryParser_Operator *self, NSString *__name, jint __ordinal);
 
@@ -234,9 +235,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess)
 
 __attribute__((unused)) static void OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess_init(OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess *self);
 
-__attribute__((unused)) static OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess *new_OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess *new_OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess *create_OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess_init();
+__attribute__((unused)) static OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess *create_OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneQueryParserQueryParser_LookaheadSuccess)
 
@@ -262,17 +263,17 @@ OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryP
   }
   @catch (OrgApacheLuceneQueryParserParseException *tme) {
     OrgApacheLuceneQueryParserParseException *e = new_OrgApacheLuceneQueryParserParseException_initWithNSString_(JreStrcat("$$$$", @"Cannot parse '", query, @"': ", [tme getMessage]));
-    (void) [e initCauseWithNSException:tme];
+    (void) [e initCauseWithJavaLangThrowable:tme];
     @throw e;
   }
   @catch (OrgApacheLuceneQueryParserTokenMgrError *tme) {
     OrgApacheLuceneQueryParserParseException *e = new_OrgApacheLuceneQueryParserParseException_initWithNSString_(JreStrcat("$$$$", @"Cannot parse '", query, @"': ", [tme getMessage]));
-    (void) [e initCauseWithNSException:tme];
+    (void) [e initCauseWithJavaLangThrowable:tme];
     @throw e;
   }
   @catch (OrgApacheLuceneSearchBooleanQuery_TooManyClauses *tmc) {
     OrgApacheLuceneQueryParserParseException *e = new_OrgApacheLuceneQueryParserParseException_initWithNSString_(JreStrcat("$$$", @"Cannot parse '", query, @"': too many boolean clauses"));
-    (void) [e initCauseWithNSException:tmc];
+    (void) [e initCauseWithJavaLangThrowable:tmc];
     @throw e;
   }
 }
@@ -501,7 +502,7 @@ withOrgApacheLuceneDocumentDateTools_Resolution:(OrgApacheLuceneDocumentDateTool
     NSString *term = nil;
     @try {
       jboolean hasNext = [buffer incrementToken];
-      JreAssert((hasNext == true), (@"org/apache/lucene/queryParser/QueryParser.java:638 condition failed: assert hasNext == true;"));
+      JreAssert(hasNext == true, @"org/apache/lucene/queryParser/QueryParser.java:638 condition failed: assert hasNext == true;");
       term = [((id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>) nil_chk(termAtt)) description];
     }
     @catch (JavaIoIOException *e) {
@@ -517,7 +518,7 @@ withOrgApacheLuceneDocumentDateTools_Resolution:(OrgApacheLuceneDocumentDateTool
           NSString *term = nil;
           @try {
             jboolean hasNext = [buffer incrementToken];
-            JreAssert((hasNext == true), (@"org/apache/lucene/queryParser/QueryParser.java:657 condition failed: assert hasNext == true;"));
+            JreAssert(hasNext == true, @"org/apache/lucene/queryParser/QueryParser.java:657 condition failed: assert hasNext == true;");
             term = [((id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>) nil_chk(termAtt)) description];
           }
           @catch (JavaIoIOException *e) {
@@ -537,7 +538,7 @@ withOrgApacheLuceneDocumentDateTools_Resolution:(OrgApacheLuceneDocumentDateTool
           jint positionIncrement = 1;
           @try {
             jboolean hasNext = [buffer incrementToken];
-            JreAssert((hasNext == true), (@"org/apache/lucene/queryParser/QueryParser.java:680 condition failed: assert hasNext == true;"));
+            JreAssert(hasNext == true, @"org/apache/lucene/queryParser/QueryParser.java:680 condition failed: assert hasNext == true;");
             term = [((id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>) nil_chk(termAtt)) description];
             if (posIncrAtt != nil) {
               positionIncrement = [posIncrAtt getPositionIncrement];
@@ -575,7 +576,7 @@ withOrgApacheLuceneDocumentDateTools_Resolution:(OrgApacheLuceneDocumentDateTool
         jint positionIncrement = 1;
         @try {
           jboolean hasNext = [buffer incrementToken];
-          JreAssert((hasNext == true), (@"org/apache/lucene/queryParser/QueryParser.java:720 condition failed: assert hasNext == true;"));
+          JreAssert(hasNext == true, @"org/apache/lucene/queryParser/QueryParser.java:720 condition failed: assert hasNext == true;");
           term = [((id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>) nil_chk(termAtt)) description];
           if (posIncrAtt != nil) {
             positionIncrement = [posIncrAtt getPositionIncrement];
@@ -1997,10 +1998,6 @@ OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryP
   return OrgApacheLuceneQueryParserQueryParser_Operator_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneQueryParserQueryParser_Operator;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -2022,8 +2019,8 @@ OrgApacheLuceneQueryParserQueryParser_Operator *OrgApacheLuceneQueryParserQueryP
 
 + (void)initialize {
   if (self == [OrgApacheLuceneQueryParserQueryParser_Operator class]) {
-    JreEnum(OrgApacheLuceneQueryParserQueryParser_Operator, OR) = new_OrgApacheLuceneQueryParserQueryParser_Operator_initWithNSString_withInt_(@"OR", 0);
-    JreEnum(OrgApacheLuceneQueryParserQueryParser_Operator, AND) = new_OrgApacheLuceneQueryParserQueryParser_Operator_initWithNSString_withInt_(@"AND", 1);
+    JreEnum(OrgApacheLuceneQueryParserQueryParser_Operator, OR) = new_OrgApacheLuceneQueryParserQueryParser_Operator_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneQueryParserQueryParser_Operator, AND) = new_OrgApacheLuceneQueryParserQueryParser_Operator_initWithNSString_withInt_(@"", 1);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneQueryParserQueryParser_Operator)
   }
 }

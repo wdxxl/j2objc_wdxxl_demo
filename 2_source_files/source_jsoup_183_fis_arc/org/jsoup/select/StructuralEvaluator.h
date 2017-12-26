@@ -85,9 +85,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectStructuralEvaluator_Root)
 
 FOUNDATION_EXPORT void OrgJsoupSelectStructuralEvaluator_Root_init(OrgJsoupSelectStructuralEvaluator_Root *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectStructuralEvaluator_Root *new_OrgJsoupSelectStructuralEvaluator_Root_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectStructuralEvaluator_Root *new_OrgJsoupSelectStructuralEvaluator_Root_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectStructuralEvaluator_Root *create_OrgJsoupSelectStructuralEvaluator_Root_init();
+FOUNDATION_EXPORT OrgJsoupSelectStructuralEvaluator_Root *create_OrgJsoupSelectStructuralEvaluator_Root_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Root)
 
@@ -109,6 +109,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Root)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -141,6 +145,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Has)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectStructuralEvaluator_Not)
@@ -171,6 +179,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Not)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -203,6 +215,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Parent)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectStructuralEvaluator_ImmediateParent)
@@ -234,6 +250,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_ImmediateParent)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectStructuralEvaluator_PreviousSibling)
@@ -264,6 +284,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_PreviousSibling)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

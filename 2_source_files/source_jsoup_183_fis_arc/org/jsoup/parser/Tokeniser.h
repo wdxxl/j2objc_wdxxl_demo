@@ -93,6 +93,10 @@
 
 - (NSString *)unescapeEntitiesWithBoolean:(jboolean)inAttribute;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgJsoupParserTokeniser)
@@ -105,7 +109,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserTokeniser, charPending_, OrgJsoupParserToken_C
 J2OBJC_FIELD_SETTER(OrgJsoupParserTokeniser, doctypePending_, OrgJsoupParserToken_Doctype *)
 J2OBJC_FIELD_SETTER(OrgJsoupParserTokeniser, commentPending_, OrgJsoupParserToken_Comment *)
 
-inline jchar OrgJsoupParserTokeniser_get_replacementChar();
+inline jchar OrgJsoupParserTokeniser_get_replacementChar(void);
 #define OrgJsoupParserTokeniser_replacementChar 0xfffd
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserTokeniser, replacementChar, jchar)
 

@@ -48,9 +48,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchConjunctionScorer_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchConjunctionScorer_1_init(OrgApacheLuceneSearchConjunctionScorer_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchConjunctionScorer_1 *new_OrgApacheLuceneSearchConjunctionScorer_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchConjunctionScorer_1 *new_OrgApacheLuceneSearchConjunctionScorer_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchConjunctionScorer_1 *create_OrgApacheLuceneSearchConjunctionScorer_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchConjunctionScorer_1 *create_OrgApacheLuceneSearchConjunctionScorer_1_init(void);
 
 @implementation OrgApacheLuceneSearchConjunctionScorer
 

@@ -20,6 +20,8 @@
 #define INCLUDE_JavaLangException 1
 #include "java/lang/Exception.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheCommonsCodecEncoderException : JavaLangException
 
 #pragma mark Public
@@ -29,11 +31,16 @@
 - (instancetype)initWithNSString:(NSString *)message;
 
 - (instancetype)initWithNSString:(NSString *)message
-                 withNSException:(NSException *)cause;
-#define withJavaLangThrowable withNSException
+           withJavaLangThrowable:(JavaLangThrowable *)cause;
 
-- (instancetype)initWithNSException:(NSException *)cause;
-#define initWithJavaLangThrowable initWithNSException
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -41,9 +48,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecEncoderException)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecEncoderException_init(OrgApacheCommonsCodecEncoderException *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCodecEncoderException_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCodecEncoderException_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecEncoderException_initWithNSString_(OrgApacheCommonsCodecEncoderException *self, NSString *message);
 
@@ -51,17 +58,17 @@ FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCod
 
 FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_initWithNSString_(NSString *message);
 
-FOUNDATION_EXPORT void OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_(OrgApacheCommonsCodecEncoderException *self, NSString *message, NSException *cause);
+FOUNDATION_EXPORT void OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_(OrgApacheCommonsCodecEncoderException *self, NSString *message, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_(NSString *message, NSException *cause) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_(NSString *message, NSException *cause);
+FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT void OrgApacheCommonsCodecEncoderException_initWithNSException_(OrgApacheCommonsCodecEncoderException *self, NSException *cause);
+FOUNDATION_EXPORT void OrgApacheCommonsCodecEncoderException_initWithJavaLangThrowable_(OrgApacheCommonsCodecEncoderException *self, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCodecEncoderException_initWithNSException_(NSException *cause) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *new_OrgApacheCommonsCodecEncoderException_initWithJavaLangThrowable_(JavaLangThrowable *cause) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_initWithNSException_(NSException *cause);
+FOUNDATION_EXPORT OrgApacheCommonsCodecEncoderException *create_OrgApacheCommonsCodecEncoderException_initWithJavaLangThrowable_(JavaLangThrowable *cause);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecEncoderException)
 

@@ -76,9 +76,9 @@
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_init(ComGoogleGsonInternalBindTypeAdapters *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters *new_ComGoogleGsonInternalBindTypeAdapters_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters *new_ComGoogleGsonInternalBindTypeAdapters_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters *create_ComGoogleGsonInternalBindTypeAdapters_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters *create_ComGoogleGsonInternalBindTypeAdapters_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_1 : ComGoogleGsonTypeAdapter
 
@@ -101,9 +101,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_1_init(ComGoogleGsonInternalBindTypeAdapters_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_1 *new_ComGoogleGsonInternalBindTypeAdapters_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_1 *new_ComGoogleGsonInternalBindTypeAdapters_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_1 *create_ComGoogleGsonInternalBindTypeAdapters_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_1 *create_ComGoogleGsonInternalBindTypeAdapters_1_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_2 : ComGoogleGsonTypeAdapter
 
@@ -126,9 +126,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_2)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_2_init(ComGoogleGsonInternalBindTypeAdapters_2 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_2 *new_ComGoogleGsonInternalBindTypeAdapters_2_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_2 *new_ComGoogleGsonInternalBindTypeAdapters_2_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_2 *create_ComGoogleGsonInternalBindTypeAdapters_2_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_2 *create_ComGoogleGsonInternalBindTypeAdapters_2_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_3 : ComGoogleGsonTypeAdapter
 
@@ -151,9 +151,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_3)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_3_init(ComGoogleGsonInternalBindTypeAdapters_3 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_3 *new_ComGoogleGsonInternalBindTypeAdapters_3_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_3 *new_ComGoogleGsonInternalBindTypeAdapters_3_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_3 *create_ComGoogleGsonInternalBindTypeAdapters_3_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_3 *create_ComGoogleGsonInternalBindTypeAdapters_3_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_4 : ComGoogleGsonTypeAdapter
 
@@ -176,9 +176,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_4)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_4_init(ComGoogleGsonInternalBindTypeAdapters_4 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_4 *new_ComGoogleGsonInternalBindTypeAdapters_4_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_4 *new_ComGoogleGsonInternalBindTypeAdapters_4_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_4 *create_ComGoogleGsonInternalBindTypeAdapters_4_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_4 *create_ComGoogleGsonInternalBindTypeAdapters_4_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_5 : ComGoogleGsonTypeAdapter
 
@@ -201,9 +201,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_5)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_5_init(ComGoogleGsonInternalBindTypeAdapters_5 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_5 *new_ComGoogleGsonInternalBindTypeAdapters_5_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_5 *new_ComGoogleGsonInternalBindTypeAdapters_5_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_5 *create_ComGoogleGsonInternalBindTypeAdapters_5_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_5 *create_ComGoogleGsonInternalBindTypeAdapters_5_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_6 : ComGoogleGsonTypeAdapter
 
@@ -226,9 +226,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_6)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_6_init(ComGoogleGsonInternalBindTypeAdapters_6 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_6 *new_ComGoogleGsonInternalBindTypeAdapters_6_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_6 *new_ComGoogleGsonInternalBindTypeAdapters_6_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_6 *create_ComGoogleGsonInternalBindTypeAdapters_6_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_6 *create_ComGoogleGsonInternalBindTypeAdapters_6_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_7 : ComGoogleGsonTypeAdapter
 
@@ -251,9 +251,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_7)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_7_init(ComGoogleGsonInternalBindTypeAdapters_7 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_7 *new_ComGoogleGsonInternalBindTypeAdapters_7_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_7 *new_ComGoogleGsonInternalBindTypeAdapters_7_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_7 *create_ComGoogleGsonInternalBindTypeAdapters_7_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_7 *create_ComGoogleGsonInternalBindTypeAdapters_7_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_8 : ComGoogleGsonTypeAdapter
 
@@ -276,9 +276,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_8)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_8_init(ComGoogleGsonInternalBindTypeAdapters_8 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_8 *new_ComGoogleGsonInternalBindTypeAdapters_8_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_8 *new_ComGoogleGsonInternalBindTypeAdapters_8_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_8 *create_ComGoogleGsonInternalBindTypeAdapters_8_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_8 *create_ComGoogleGsonInternalBindTypeAdapters_8_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_9 : ComGoogleGsonTypeAdapter
 
@@ -301,9 +301,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_9)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_9_init(ComGoogleGsonInternalBindTypeAdapters_9 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_9 *new_ComGoogleGsonInternalBindTypeAdapters_9_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_9 *new_ComGoogleGsonInternalBindTypeAdapters_9_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_9 *create_ComGoogleGsonInternalBindTypeAdapters_9_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_9 *create_ComGoogleGsonInternalBindTypeAdapters_9_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_10 : ComGoogleGsonTypeAdapter
 
@@ -326,9 +326,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_10)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_10_init(ComGoogleGsonInternalBindTypeAdapters_10 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_10 *new_ComGoogleGsonInternalBindTypeAdapters_10_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_10 *new_ComGoogleGsonInternalBindTypeAdapters_10_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_10 *create_ComGoogleGsonInternalBindTypeAdapters_10_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_10 *create_ComGoogleGsonInternalBindTypeAdapters_10_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_11 : ComGoogleGsonTypeAdapter
 
@@ -351,9 +351,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_11)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_11_init(ComGoogleGsonInternalBindTypeAdapters_11 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_11 *new_ComGoogleGsonInternalBindTypeAdapters_11_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_11 *new_ComGoogleGsonInternalBindTypeAdapters_11_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_11 *create_ComGoogleGsonInternalBindTypeAdapters_11_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_11 *create_ComGoogleGsonInternalBindTypeAdapters_11_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_12 : ComGoogleGsonTypeAdapter
 
@@ -376,9 +376,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_12)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_12_init(ComGoogleGsonInternalBindTypeAdapters_12 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_12 *new_ComGoogleGsonInternalBindTypeAdapters_12_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_12 *new_ComGoogleGsonInternalBindTypeAdapters_12_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_12 *create_ComGoogleGsonInternalBindTypeAdapters_12_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_12 *create_ComGoogleGsonInternalBindTypeAdapters_12_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_13 : ComGoogleGsonTypeAdapter
 
@@ -401,9 +401,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_13)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_13_init(ComGoogleGsonInternalBindTypeAdapters_13 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_13 *new_ComGoogleGsonInternalBindTypeAdapters_13_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_13 *new_ComGoogleGsonInternalBindTypeAdapters_13_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_13 *create_ComGoogleGsonInternalBindTypeAdapters_13_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_13 *create_ComGoogleGsonInternalBindTypeAdapters_13_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_14 : ComGoogleGsonTypeAdapter
 
@@ -426,9 +426,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_14)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_14_init(ComGoogleGsonInternalBindTypeAdapters_14 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_14 *new_ComGoogleGsonInternalBindTypeAdapters_14_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_14 *new_ComGoogleGsonInternalBindTypeAdapters_14_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_14 *create_ComGoogleGsonInternalBindTypeAdapters_14_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_14 *create_ComGoogleGsonInternalBindTypeAdapters_14_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_15 : ComGoogleGsonTypeAdapter
 
@@ -451,9 +451,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_15)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_15_init(ComGoogleGsonInternalBindTypeAdapters_15 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_15 *new_ComGoogleGsonInternalBindTypeAdapters_15_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_15 *new_ComGoogleGsonInternalBindTypeAdapters_15_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_15 *create_ComGoogleGsonInternalBindTypeAdapters_15_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_15 *create_ComGoogleGsonInternalBindTypeAdapters_15_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_16 : ComGoogleGsonTypeAdapter
 
@@ -476,9 +476,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_16)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_16_init(ComGoogleGsonInternalBindTypeAdapters_16 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_16 *new_ComGoogleGsonInternalBindTypeAdapters_16_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_16 *new_ComGoogleGsonInternalBindTypeAdapters_16_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_16 *create_ComGoogleGsonInternalBindTypeAdapters_16_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_16 *create_ComGoogleGsonInternalBindTypeAdapters_16_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_17 : ComGoogleGsonTypeAdapter
 
@@ -501,9 +501,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_17)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_17_init(ComGoogleGsonInternalBindTypeAdapters_17 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_17 *new_ComGoogleGsonInternalBindTypeAdapters_17_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_17 *new_ComGoogleGsonInternalBindTypeAdapters_17_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_17 *create_ComGoogleGsonInternalBindTypeAdapters_17_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_17 *create_ComGoogleGsonInternalBindTypeAdapters_17_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_18 : ComGoogleGsonTypeAdapter
 
@@ -526,9 +526,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_18)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_18_init(ComGoogleGsonInternalBindTypeAdapters_18 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_18 *new_ComGoogleGsonInternalBindTypeAdapters_18_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_18 *new_ComGoogleGsonInternalBindTypeAdapters_18_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_18 *create_ComGoogleGsonInternalBindTypeAdapters_18_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_18 *create_ComGoogleGsonInternalBindTypeAdapters_18_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_19 : ComGoogleGsonTypeAdapter
 
@@ -551,9 +551,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_19)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_19_init(ComGoogleGsonInternalBindTypeAdapters_19 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_19 *new_ComGoogleGsonInternalBindTypeAdapters_19_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_19 *new_ComGoogleGsonInternalBindTypeAdapters_19_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_19 *create_ComGoogleGsonInternalBindTypeAdapters_19_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_19 *create_ComGoogleGsonInternalBindTypeAdapters_19_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_20 : ComGoogleGsonTypeAdapter
 
@@ -576,9 +576,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_20)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_20_init(ComGoogleGsonInternalBindTypeAdapters_20 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_20 *new_ComGoogleGsonInternalBindTypeAdapters_20_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_20 *new_ComGoogleGsonInternalBindTypeAdapters_20_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_20 *create_ComGoogleGsonInternalBindTypeAdapters_20_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_20 *create_ComGoogleGsonInternalBindTypeAdapters_20_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_21 : ComGoogleGsonTypeAdapter
 
@@ -601,9 +601,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_21)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_21_init(ComGoogleGsonInternalBindTypeAdapters_21 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_21 *new_ComGoogleGsonInternalBindTypeAdapters_21_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_21 *new_ComGoogleGsonInternalBindTypeAdapters_21_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_21 *create_ComGoogleGsonInternalBindTypeAdapters_21_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_21 *create_ComGoogleGsonInternalBindTypeAdapters_21_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_22 : ComGoogleGsonTypeAdapter
 
@@ -626,9 +626,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_22)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_22_init(ComGoogleGsonInternalBindTypeAdapters_22 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_22 *new_ComGoogleGsonInternalBindTypeAdapters_22_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_22 *new_ComGoogleGsonInternalBindTypeAdapters_22_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_22 *create_ComGoogleGsonInternalBindTypeAdapters_22_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_22 *create_ComGoogleGsonInternalBindTypeAdapters_22_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_23 : ComGoogleGsonTypeAdapter
 
@@ -651,9 +651,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_23)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_23_init(ComGoogleGsonInternalBindTypeAdapters_23 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_23 *new_ComGoogleGsonInternalBindTypeAdapters_23_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_23 *new_ComGoogleGsonInternalBindTypeAdapters_23_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_23 *create_ComGoogleGsonInternalBindTypeAdapters_23_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_23 *create_ComGoogleGsonInternalBindTypeAdapters_23_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_24 : ComGoogleGsonTypeAdapter
 
@@ -676,9 +676,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_24)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_24_init(ComGoogleGsonInternalBindTypeAdapters_24 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_24 *new_ComGoogleGsonInternalBindTypeAdapters_24_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_24 *new_ComGoogleGsonInternalBindTypeAdapters_24_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_24 *create_ComGoogleGsonInternalBindTypeAdapters_24_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_24 *create_ComGoogleGsonInternalBindTypeAdapters_24_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_25 : ComGoogleGsonTypeAdapter
 
@@ -701,9 +701,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_25)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_25_init(ComGoogleGsonInternalBindTypeAdapters_25 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_25 *new_ComGoogleGsonInternalBindTypeAdapters_25_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_25 *new_ComGoogleGsonInternalBindTypeAdapters_25_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_25 *create_ComGoogleGsonInternalBindTypeAdapters_25_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_25 *create_ComGoogleGsonInternalBindTypeAdapters_25_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_26 : NSObject < ComGoogleGsonTypeAdapterFactory >
 
@@ -718,9 +718,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_26)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_26_init(ComGoogleGsonInternalBindTypeAdapters_26 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_26 *new_ComGoogleGsonInternalBindTypeAdapters_26_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_26 *new_ComGoogleGsonInternalBindTypeAdapters_26_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_26 *create_ComGoogleGsonInternalBindTypeAdapters_26_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_26 *create_ComGoogleGsonInternalBindTypeAdapters_26_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_26_1 : ComGoogleGsonTypeAdapter {
  @public
@@ -769,35 +769,35 @@ __attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_26_1 *creat
 
 J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_27)
 
-inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_YEAR();
+inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_YEAR(void);
 static NSString *ComGoogleGsonInternalBindTypeAdapters_27_YEAR = @"year";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters_27, YEAR, NSString *)
 
-inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_MONTH();
+inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_MONTH(void);
 static NSString *ComGoogleGsonInternalBindTypeAdapters_27_MONTH = @"month";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters_27, MONTH, NSString *)
 
-inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_DAY_OF_MONTH();
+inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_DAY_OF_MONTH(void);
 static NSString *ComGoogleGsonInternalBindTypeAdapters_27_DAY_OF_MONTH = @"dayOfMonth";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters_27, DAY_OF_MONTH, NSString *)
 
-inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_HOUR_OF_DAY();
+inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_HOUR_OF_DAY(void);
 static NSString *ComGoogleGsonInternalBindTypeAdapters_27_HOUR_OF_DAY = @"hourOfDay";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters_27, HOUR_OF_DAY, NSString *)
 
-inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_MINUTE();
+inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_MINUTE(void);
 static NSString *ComGoogleGsonInternalBindTypeAdapters_27_MINUTE = @"minute";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters_27, MINUTE, NSString *)
 
-inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_SECOND();
+inline NSString *ComGoogleGsonInternalBindTypeAdapters_27_get_SECOND(void);
 static NSString *ComGoogleGsonInternalBindTypeAdapters_27_SECOND = @"second";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters_27, SECOND, NSString *)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_27_init(ComGoogleGsonInternalBindTypeAdapters_27 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_27 *new_ComGoogleGsonInternalBindTypeAdapters_27_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_27 *new_ComGoogleGsonInternalBindTypeAdapters_27_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_27 *create_ComGoogleGsonInternalBindTypeAdapters_27_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_27 *create_ComGoogleGsonInternalBindTypeAdapters_27_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_28 : ComGoogleGsonTypeAdapter
 
@@ -820,9 +820,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_28)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_28_init(ComGoogleGsonInternalBindTypeAdapters_28 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_28 *new_ComGoogleGsonInternalBindTypeAdapters_28_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_28 *new_ComGoogleGsonInternalBindTypeAdapters_28_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_28 *create_ComGoogleGsonInternalBindTypeAdapters_28_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_28 *create_ComGoogleGsonInternalBindTypeAdapters_28_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_29 : ComGoogleGsonTypeAdapter
 
@@ -845,9 +845,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_29)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_29_init(ComGoogleGsonInternalBindTypeAdapters_29 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_29 *new_ComGoogleGsonInternalBindTypeAdapters_29_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_29 *new_ComGoogleGsonInternalBindTypeAdapters_29_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_29 *create_ComGoogleGsonInternalBindTypeAdapters_29_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_29 *create_ComGoogleGsonInternalBindTypeAdapters_29_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_EnumTypeAdapter : ComGoogleGsonTypeAdapter {
  @public
@@ -896,9 +896,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters_30)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindTypeAdapters_30_init(ComGoogleGsonInternalBindTypeAdapters_30 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_30 *new_ComGoogleGsonInternalBindTypeAdapters_30_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_30 *new_ComGoogleGsonInternalBindTypeAdapters_30_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_30 *create_ComGoogleGsonInternalBindTypeAdapters_30_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindTypeAdapters_30 *create_ComGoogleGsonInternalBindTypeAdapters_30_init(void);
 
 @interface ComGoogleGsonInternalBindTypeAdapters_31 : NSObject < ComGoogleGsonTypeAdapterFactory > {
  @public
@@ -1603,7 +1603,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return JavaLangByte_valueOfWithByte_((jbyte) intValue);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -1661,7 +1661,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return JavaLangShort_valueOfWithShort_((jshort) [inArg nextInt]);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -1719,7 +1719,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return JavaLangInteger_valueOfWithInt_([inArg nextInt]);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -1773,7 +1773,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return new_JavaUtilConcurrentAtomicAtomicInteger_initWithInt_([((ComGoogleGsonStreamJsonReader *) nil_chk(inArg)) nextInt]);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -1880,7 +1880,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       [list addWithId:JavaLangInteger_valueOfWithInt_(integer)];
     }
     @catch (JavaLangNumberFormatException *e) {
-      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+      @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
     }
   }
   [inArg endArray];
@@ -1950,7 +1950,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return JavaLangLong_valueOfWithLong_([inArg nextLong]);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -2286,7 +2286,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return new_JavaMathBigDecimal_initWithNSString_([inArg nextString]);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -2344,7 +2344,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return new_JavaMathBigInteger_initWithNSString_([inArg nextString]);
   }
   @catch (JavaLangNumberFormatException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -2563,7 +2563,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [@"null" isEqual:nextString] ? nil : new_JavaNetURI_initWithNSString_(nextString);
   }
   @catch (JavaNetURISyntaxException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -3233,7 +3233,7 @@ void ComGoogleGsonInternalBindTypeAdapters_EnumTypeAdapter_initWithIOSClass_(Com
     }
   }
   @catch (JavaLangNoSuchFieldException *e) {
-    @throw new_JavaLangAssertionError_initWithNSString_withNSException_(JreStrcat("$$", @"Missing field in ", [classOfT getName]), e);
+    @throw new_JavaLangAssertionError_initWithNSString_withJavaLangThrowable_(JreStrcat("$$", @"Missing field in ", [classOfT getName]), e);
   }
 }
 

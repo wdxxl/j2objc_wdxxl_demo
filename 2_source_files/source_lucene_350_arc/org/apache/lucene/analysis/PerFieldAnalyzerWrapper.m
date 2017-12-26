@@ -27,7 +27,7 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisPerFieldAnalyzerWrapper, defaultAnalyzer_, OrgApacheLuceneAnalysisAnalyzer *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisPerFieldAnalyzerWrapper, analyzerMap_, id<JavaUtilMap>)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisPerFieldAnalyzerWrapper__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisPerFieldAnalyzerWrapper__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisPerFieldAnalyzerWrapper
 

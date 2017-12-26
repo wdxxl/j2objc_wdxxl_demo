@@ -164,7 +164,7 @@ __attribute__((unused)) static OrgApacheLuceneSearchGroupingAbstractFirstPassGro
     }
     OrgApacheLuceneSearchGroupingCollectedSearchGroup *bottomGroup = [((JavaUtilTreeSet *) nil_chk(orderedGroups_)) last];
     [((JavaUtilTreeSet *) nil_chk(orderedGroups_)) removeWithId:bottomGroup];
-    JreAssert(([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_ - 1), (@"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:219 condition failed: assert orderedGroups.size() == topNGroups -1;"));
+    JreAssert([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_ - 1, @"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:219 condition failed: assert orderedGroups.size() == topNGroups -1;");
     (void) [groupMap_ removeWithId:((OrgApacheLuceneSearchGroupingCollectedSearchGroup *) nil_chk(bottomGroup))->groupValue_];
     bottomGroup->groupValue_ = [self copyDocGroupValueWithId:groupValue withId:bottomGroup->groupValue_];
     bottomGroup->topDoc_ = docBase_ + doc;
@@ -179,7 +179,7 @@ __attribute__((unused)) static OrgApacheLuceneSearchGroupingAbstractFirstPassGro
     }
     (void) [groupMap_ putWithId:bottomGroup->groupValue_ withId:bottomGroup];
     [((JavaUtilTreeSet *) nil_chk(orderedGroups_)) addWithId:bottomGroup];
-    JreAssert(([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_), (@"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:233 condition failed: assert orderedGroups.size() == topNGroups;"));
+    JreAssert([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_, @"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:233 condition failed: assert orderedGroups.size() == topNGroups;");
     jint lastComparatorSlot = ((OrgApacheLuceneSearchGroupingCollectedSearchGroup *) nil_chk([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) last]))->comparatorSlot_;
     {
       IOSObjectArray *a__ = comparators_;
@@ -213,7 +213,7 @@ __attribute__((unused)) static OrgApacheLuceneSearchGroupingAbstractFirstPassGro
   if (orderedGroups_ != nil) {
     prevLast = [orderedGroups_ last];
     [((JavaUtilTreeSet *) nil_chk(orderedGroups_)) removeWithId:group];
-    JreAssert(([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_ - 1), (@"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:273 condition failed: assert orderedGroups.size() == topNGroups-1;"));
+    JreAssert([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_ - 1, @"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:273 condition failed: assert orderedGroups.size() == topNGroups-1;");
   }
   else {
     prevLast = nil;
@@ -224,7 +224,7 @@ __attribute__((unused)) static OrgApacheLuceneSearchGroupingAbstractFirstPassGro
   group->comparatorSlot_ = tmp;
   if (orderedGroups_ != nil) {
     [orderedGroups_ addWithId:group];
-    JreAssert(([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_), (@"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:288 condition failed: assert orderedGroups.size() == topNGroups;"));
+    JreAssert([((JavaUtilTreeSet *) nil_chk(orderedGroups_)) size] == topNGroups_, @"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:288 condition failed: assert orderedGroups.size() == topNGroups;");
     OrgApacheLuceneSearchGroupingCollectedSearchGroup *newLast = [((JavaUtilTreeSet *) nil_chk(orderedGroups_)) last];
     if (group == newLast || prevLast != newLast) {
       {
@@ -335,7 +335,7 @@ void OrgApacheLuceneSearchGroupingAbstractFirstPassGroupingCollector_buildSorted
   id<JavaUtilComparator> comparator = new_OrgApacheLuceneSearchGroupingAbstractFirstPassGroupingCollector_1_initWithOrgApacheLuceneSearchGroupingAbstractFirstPassGroupingCollector_(self);
   self->orderedGroups_ = new_JavaUtilTreeSet_initWithJavaUtilComparator_(comparator);
   [self->orderedGroups_ addAllWithJavaUtilCollection:[((JavaUtilHashMap *) nil_chk(self->groupMap_)) values]];
-  JreAssert(([((JavaUtilTreeSet *) nil_chk(self->orderedGroups_)) size] > 0), (@"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:316 condition failed: assert orderedGroups.size() > 0;"));
+  JreAssert([((JavaUtilTreeSet *) nil_chk(self->orderedGroups_)) size] > 0, @"org/apache/lucene/search/grouping/AbstractFirstPassGroupingCollector.java:316 condition failed: assert orderedGroups.size() > 0;");
   {
     IOSObjectArray *a__ = self->comparators_;
     OrgApacheLuceneSearchFieldComparator * const *b__ = ((IOSObjectArray *) nil_chk(a__))->buffer_;

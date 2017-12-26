@@ -40,7 +40,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPagedBytes, blocks_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPagedBytes, blockEnd_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPagedBytes, currentBlock_, IOSByteArray *)
 
-inline IOSByteArray *OrgApacheLuceneUtilPagedBytes_get_EMPTY_BYTES();
+inline IOSByteArray *OrgApacheLuceneUtilPagedBytes_get_EMPTY_BYTES(void);
 static IOSByteArray *OrgApacheLuceneUtilPagedBytes_EMPTY_BYTES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPagedBytes, EMPTY_BYTES, IOSByteArray *)
 
@@ -158,7 +158,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilPagedBytes)
     currentBlock_ = [IOSByteArray newArrayWithLength:blockSize_];
     upto_ = 0;
     left = blockSize_;
-    JreAssert((bytes->length_ <= blockSize_), (@"org/apache/lucene/util/PagedBytes.java:332 condition failed: assert bytes.length <= blockSize;"));
+    JreAssert(bytes->length_ <= blockSize_, @"org/apache/lucene/util/PagedBytes.java:332 condition failed: assert bytes.length <= blockSize;");
   }
   ((OrgApacheLuceneUtilBytesRef *) nil_chk(outArg))->bytes_ = currentBlock_;
   outArg->offset_ = upto_;
@@ -317,7 +317,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes)
 - (OrgApacheLuceneUtilBytesRef *)fillSliceWithOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b
                                                                  withLong:(jlong)start
                                                                   withInt:(jint)length {
-  JreAssert((length >= 0), (JreStrcat("$I", @"length=", length)));
+  JreAssert(length >= 0, JreStrcat("$I", @"length=", length));
   jint index = (jint) (JreRShift64(start, blockBits_));
   jint offset = (jint) (start & blockMask_);
   ((OrgApacheLuceneUtilBytesRef *) nil_chk(b))->length_ = length;
@@ -355,7 +355,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes)
   else {
     b->length_ = (JreLShift32((IOSByteArray_Get(block, offset) & (jint) 0x7f), 8)) | (IOSByteArray_Get(block, 1 + offset) & (jint) 0xff);
     b->offset_ = offset + 2;
-    JreAssert((b->length_ > 0), (@"org/apache/lucene/util/PagedBytes.java:129 condition failed: assert b.length > 0;"));
+    JreAssert(b->length_ > 0, @"org/apache/lucene/util/PagedBytes.java:129 condition failed: assert b.length > 0;");
   }
   return b;
 }
@@ -372,7 +372,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes)
   else {
     b->length_ = (JreLShift32((IOSByteArray_Get(block, offset) & (jint) 0x7f), 8)) | (IOSByteArray_Get(block, 1 + offset) & (jint) 0xff);
     b->offset_ = offset + 2;
-    JreAssert((b->length_ > 0), (@"org/apache/lucene/util/PagedBytes.java:155 condition failed: assert b.length > 0;"));
+    JreAssert(b->length_ > 0, @"org/apache/lucene/util/PagedBytes.java:155 condition failed: assert b.length > 0;");
   }
   return index;
 }
@@ -391,7 +391,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes)
     b->length_ = (JreLShift32((IOSByteArray_Get(block, offset) & (jint) 0x7f), 8)) | (IOSByteArray_Get(block, 1 + offset) & (jint) 0xff);
     b->offset_ = offset + 2;
     start += 2LL + b->length_;
-    JreAssert((b->length_ > 0), (@"org/apache/lucene/util/PagedBytes.java:187 condition failed: assert b.length > 0;"));
+    JreAssert(b->length_ > 0, @"org/apache/lucene/util/PagedBytes.java:187 condition failed: assert b.length > 0;");
   }
   return start;
 }
@@ -409,9 +409,9 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes)
   else {
     length = (JreLShift32((IOSByteArray_Get(block, offset) & (jint) 0x7f), 8)) | (IOSByteArray_Get(block, 1 + offset) & (jint) 0xff);
     offset = offset + 2;
-    JreAssert((length > 0), (@"org/apache/lucene/util/PagedBytes.java:215 condition failed: assert length > 0;"));
+    JreAssert(length > 0, @"org/apache/lucene/util/PagedBytes.java:215 condition failed: assert length > 0;");
   }
-  JreAssert((length >= 0), (JreStrcat("$I", @"length=", length)));
+  JreAssert(length >= 0, JreStrcat("$I", @"length=", length));
   ((OrgApacheLuceneUtilBytesRef *) nil_chk(b))->length_ = length;
   if (blockSize_ - offset >= length) {
     b->offset_ = offset;
@@ -545,7 +545,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes_Reader)
 - (void)readBytesWithByteArray:(IOSByteArray *)b
                        withInt:(jint)offset
                        withInt:(jint)len {
-  JreAssert((((IOSByteArray *) nil_chk(b))->size_ >= offset + len), (@"org/apache/lucene/util/PagedBytes.java:444 condition failed: assert b.length >= offset + len;"));
+  JreAssert(((IOSByteArray *) nil_chk(b))->size_ >= offset + len, @"org/apache/lucene/util/PagedBytes.java:444 condition failed: assert b.length >= offset + len;");
   jint offsetEnd = offset + len;
   while (true) {
     jint blockLeft = this$0_->blockSize_ - currentBlockUpto_;
@@ -644,7 +644,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilPagedBytes_PagedBytesDataInp
 - (void)writeBytesWithByteArray:(IOSByteArray *)b
                         withInt:(jint)offset
                         withInt:(jint)length {
-  JreAssert((((IOSByteArray *) nil_chk(b))->size_ >= offset + length), (@"org/apache/lucene/util/PagedBytes.java:489 condition failed: assert b.length >= offset + length;"));
+  JreAssert(((IOSByteArray *) nil_chk(b))->size_ >= offset + length, @"org/apache/lucene/util/PagedBytes.java:489 condition failed: assert b.length >= offset + length;");
   if (length == 0) {
     return;
   }

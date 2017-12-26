@@ -65,6 +65,10 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
 
 - (void)initTermVectorsWriter OBJC_METHOD_FAMILY_NONE;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermVectorsTermsWriter)
@@ -122,6 +126,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexTermVectorsTermsWriter)
 - (void)addFieldWithInt:(jint)fieldNumber;
 
 - (void)reset;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

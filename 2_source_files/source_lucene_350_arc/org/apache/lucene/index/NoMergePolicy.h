@@ -47,16 +47,20 @@
 - (jboolean)useCompoundFileWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)segments
                             withOrgApacheLuceneIndexSegmentInfo:(OrgApacheLuceneIndexSegmentInfo *)newSegment;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexNoMergePolicy)
 
-inline OrgApacheLuceneIndexMergePolicy *OrgApacheLuceneIndexNoMergePolicy_get_NO_COMPOUND_FILES();
+inline OrgApacheLuceneIndexMergePolicy *OrgApacheLuceneIndexNoMergePolicy_get_NO_COMPOUND_FILES(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy *OrgApacheLuceneIndexNoMergePolicy_NO_COMPOUND_FILES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexNoMergePolicy, NO_COMPOUND_FILES, OrgApacheLuceneIndexMergePolicy *)
 
-inline OrgApacheLuceneIndexMergePolicy *OrgApacheLuceneIndexNoMergePolicy_get_COMPOUND_FILES();
+inline OrgApacheLuceneIndexMergePolicy *OrgApacheLuceneIndexNoMergePolicy_get_COMPOUND_FILES(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy *OrgApacheLuceneIndexNoMergePolicy_COMPOUND_FILES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexNoMergePolicy, COMPOUND_FILES, OrgApacheLuceneIndexMergePolicy *)

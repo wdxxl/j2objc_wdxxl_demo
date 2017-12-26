@@ -15,15 +15,15 @@
 
 @end
 
-inline OrgApacheLuceneUtilFstNoOutputs *OrgApacheLuceneUtilFstNoOutputs_get_singleton();
+inline OrgApacheLuceneUtilFstNoOutputs *OrgApacheLuceneUtilFstNoOutputs_get_singleton(void);
 static OrgApacheLuceneUtilFstNoOutputs *OrgApacheLuceneUtilFstNoOutputs_singleton;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFstNoOutputs, singleton, OrgApacheLuceneUtilFstNoOutputs *)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilFstNoOutputs_init(OrgApacheLuceneUtilFstNoOutputs *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs *new_OrgApacheLuceneUtilFstNoOutputs_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs *new_OrgApacheLuceneUtilFstNoOutputs_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs *create_OrgApacheLuceneUtilFstNoOutputs_init();
+__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs *create_OrgApacheLuceneUtilFstNoOutputs_init(void);
 
 @interface OrgApacheLuceneUtilFstNoOutputs_1 : NSObject
 
@@ -39,9 +39,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilFstNoOutputs_1)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilFstNoOutputs_1_init(OrgApacheLuceneUtilFstNoOutputs_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs_1 *new_OrgApacheLuceneUtilFstNoOutputs_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs_1 *new_OrgApacheLuceneUtilFstNoOutputs_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs_1 *create_OrgApacheLuceneUtilFstNoOutputs_1_init();
+__attribute__((unused)) static OrgApacheLuceneUtilFstNoOutputs_1 *create_OrgApacheLuceneUtilFstNoOutputs_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilFstNoOutputs)
 
@@ -62,22 +62,22 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (id)commonWithId:(id)output1
             withId:(id)output2 {
-  JreAssert((output1 == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT), (@"org/apache/lucene/util/fst/NoOutputs.java:56 condition failed: assert output1 == NO_OUTPUT;"));
-  JreAssert((output2 == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT), (@"org/apache/lucene/util/fst/NoOutputs.java:57 condition failed: assert output2 == NO_OUTPUT;"));
+  JreAssert(output1 == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT, @"org/apache/lucene/util/fst/NoOutputs.java:56 condition failed: assert output1 == NO_OUTPUT;");
+  JreAssert(output2 == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT, @"org/apache/lucene/util/fst/NoOutputs.java:57 condition failed: assert output2 == NO_OUTPUT;");
   return OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT;
 }
 
 - (id)subtractWithId:(id)output
               withId:(id)inc {
-  JreAssert((output == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT), (@"org/apache/lucene/util/fst/NoOutputs.java:63 condition failed: assert output == NO_OUTPUT;"));
-  JreAssert((inc == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT), (@"org/apache/lucene/util/fst/NoOutputs.java:64 condition failed: assert inc == NO_OUTPUT;"));
+  JreAssert(output == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT, @"org/apache/lucene/util/fst/NoOutputs.java:63 condition failed: assert output == NO_OUTPUT;");
+  JreAssert(inc == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT, @"org/apache/lucene/util/fst/NoOutputs.java:64 condition failed: assert inc == NO_OUTPUT;");
   return OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT;
 }
 
 - (id)addWithId:(id)prefix
          withId:(id)output {
-  JreAssert((prefix == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT), (JreStrcat("$@", @"got ", prefix)));
-  JreAssert((output == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT), (@"org/apache/lucene/util/fst/NoOutputs.java:71 condition failed: assert output == NO_OUTPUT;"));
+  JreAssert(prefix == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT, JreStrcat("$@", @"got ", prefix));
+  JreAssert(output == OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT, @"org/apache/lucene/util/fst/NoOutputs.java:71 condition failed: assert output == NO_OUTPUT;");
   return OrgApacheLuceneUtilFstNoOutputs_NO_OUTPUT;
 }
 

@@ -41,6 +41,11 @@
 
 - (NSString *)getDocGroupValueWithInt:(jint)doc;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)arg0
+                                          withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingTermFirstPassGroupingCollector)

@@ -64,15 +64,28 @@ withOrgApacheCommonsCodecBinaryBaseNCodec_Context:(OrgApacheCommonsCodecBinaryBa
                     withInt:(jint)inAvail
 withOrgApacheCommonsCodecBinaryBaseNCodec_Context:(OrgApacheCommonsCodecBinaryBaseNCodec_Context *)context;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0
+                    withInt:(jint)arg1
+                    withInt:(jint)arg2
+                    withInt:(jint)arg3 NS_UNAVAILABLE;
+
+- (instancetype)initWithInt:(jint)arg0
+                    withInt:(jint)arg1
+                    withInt:(jint)arg2
+                    withInt:(jint)arg3
+                   withByte:(jbyte)arg4 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecBinaryBase32)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecBinaryBase32_init(OrgApacheCommonsCodecBinaryBase32 *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase32 *new_OrgApacheCommonsCodecBinaryBase32_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase32 *new_OrgApacheCommonsCodecBinaryBase32_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase32 *create_OrgApacheCommonsCodecBinaryBase32_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryBase32 *create_OrgApacheCommonsCodecBinaryBase32_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecBinaryBase32_initWithByte_(OrgApacheCommonsCodecBinaryBase32 *self, jbyte pad);
 

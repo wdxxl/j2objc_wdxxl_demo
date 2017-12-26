@@ -225,7 +225,7 @@ JavaUtilDate *ComGoogleGsonDefaultDateTypeAdapter_deserializeToDateWithComGoogle
       return ComGoogleGsonInternalBindUtilISO8601Utils_parseWithNSString_withJavaTextParsePosition_([json getAsString], new_JavaTextParsePosition_initWithInt_(0));
     }
     @catch (JavaTextParseException *e) {
-      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSString_withNSException_([json getAsString], e);
+      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSString_withJavaLangThrowable_([json getAsString], e);
     }
   }
 }

@@ -28,75 +28,75 @@
 
 @end
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_A();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_A(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_A;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_A, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_AF();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_AF(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_AF;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_AF, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_C();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_C(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_C;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_C, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_FF();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_FF(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_FF;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_FF, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_G();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_G(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_G;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_G, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_N();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_N(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_N;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_N, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_NN();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_NN(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_NN;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_NN, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_S();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_S(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_S;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_S, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_SSS();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_get_CHARS_SSS(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageNysiis_CHARS_SSS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, CHARS_SSS, IOSCharArray *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_MAC();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_MAC(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_MAC;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_MAC, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_KN();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_KN(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_KN;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_KN, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_K();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_K(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_K;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_K, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_PH_PF();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_PH_PF(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_PH_PF;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_PH_PF, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_SCH();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_SCH(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_SCH;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_SCH, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_EE_IE();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_EE_IE(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_EE_IE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_EE_IE, JavaUtilRegexPattern *)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_DT_ETC();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_get_PAT_DT_ETC(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecLanguageNysiis_PAT_DT_ETC;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageNysiis, PAT_DT_ETC, JavaUtilRegexPattern *)
 
-inline jchar OrgApacheCommonsCodecLanguageNysiis_get_SPACE();
+inline jchar OrgApacheCommonsCodecLanguageNysiis_get_SPACE(void);
 #define OrgApacheCommonsCodecLanguageNysiis_SPACE ' '
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecLanguageNysiis, SPACE, jchar)
 
-inline jint OrgApacheCommonsCodecLanguageNysiis_get_TRUE_LENGTH();
+inline jint OrgApacheCommonsCodecLanguageNysiis_get_TRUE_LENGTH(void);
 #define OrgApacheCommonsCodecLanguageNysiis_TRUE_LENGTH 6
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecLanguageNysiis, TRUE_LENGTH, jint)
 

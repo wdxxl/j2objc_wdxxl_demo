@@ -16,9 +16,9 @@
 
 __attribute__((unused)) static void OrgJsoupHelperValidate_init(OrgJsoupHelperValidate *self);
 
-__attribute__((unused)) static OrgJsoupHelperValidate *new_OrgJsoupHelperValidate_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgJsoupHelperValidate *new_OrgJsoupHelperValidate_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgJsoupHelperValidate *create_OrgJsoupHelperValidate_init();
+__attribute__((unused)) static OrgJsoupHelperValidate *create_OrgJsoupHelperValidate_init(void);
 
 @implementation OrgJsoupHelperValidate
 

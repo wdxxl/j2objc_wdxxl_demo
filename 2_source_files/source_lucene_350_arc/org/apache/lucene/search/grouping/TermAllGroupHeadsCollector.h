@@ -104,6 +104,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
 - (instancetype)initWithNSString:(NSString *)groupField
    withOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)sortWithinGroup;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                         withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_GeneralAllGroupHeadsCollector)
@@ -138,6 +143,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
                withInt:(jint)doc;
 
 - (void)updateDocHeadWithInt:(jint)doc;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithId:(id)arg0
+                   withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -178,6 +188,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
    withOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)sortWithinGroup
                          withInt:(jint)initialSize;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                         withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_OrdScoreAllGroupHeadsCollector)
@@ -216,6 +231,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
                withInt:(jint)doc;
 
 - (void)updateDocHeadWithInt:(jint)doc;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithId:(id)arg0
+                   withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -258,6 +278,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
    withOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)sortWithinGroup
                          withInt:(jint)initialSize;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                         withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_OrdAllGroupHeadsCollector)
@@ -294,6 +319,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
                withInt:(jint)doc;
 
 - (void)updateDocHeadWithInt:(jint)doc;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithId:(id)arg0
+                   withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -335,6 +365,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
    withOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)sortWithinGroup
                          withInt:(jint)initialSize;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                         withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_ScoreAllGroupHeadsCollector)
@@ -369,6 +404,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollect
                withInt:(jint)doc;
 
 - (void)updateDocHeadWithInt:(jint)doc;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithId:(id)arg0
+                   withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 

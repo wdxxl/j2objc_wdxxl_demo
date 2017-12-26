@@ -49,6 +49,13 @@ withOrgApacheLuceneIndexTermVectorOffsetInfoArray:(IOSObjectArray *)offsets
                         withBoolean:(jboolean)storeOffsets
                         withBoolean:(jboolean)storePositions;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithBoolean:(jboolean)arg0
+                    withBoolean:(jboolean)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFieldSortedTermVectorMapper)

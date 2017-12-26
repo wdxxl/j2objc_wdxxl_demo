@@ -20,6 +20,7 @@
 #define INCLUDE_JavaUtilLinkedList 1
 #include "java/util/LinkedList.h"
 
+@protocol JavaUtilCollection;
 @protocol JavaUtilIterator;
 
 @interface OrgJsoupHelperDescendableLinkedList : JavaUtilLinkedList
@@ -38,15 +39,19 @@
 
 #pragma mark Package-Private
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupHelperDescendableLinkedList)
 
 FOUNDATION_EXPORT void OrgJsoupHelperDescendableLinkedList_init(OrgJsoupHelperDescendableLinkedList *self);
 
-FOUNDATION_EXPORT OrgJsoupHelperDescendableLinkedList *new_OrgJsoupHelperDescendableLinkedList_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupHelperDescendableLinkedList *new_OrgJsoupHelperDescendableLinkedList_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupHelperDescendableLinkedList *create_OrgJsoupHelperDescendableLinkedList_init();
+FOUNDATION_EXPORT OrgJsoupHelperDescendableLinkedList *create_OrgJsoupHelperDescendableLinkedList_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperDescendableLinkedList)
 

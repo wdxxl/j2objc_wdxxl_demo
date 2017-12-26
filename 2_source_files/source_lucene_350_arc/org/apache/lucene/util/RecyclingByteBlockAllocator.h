@@ -51,11 +51,15 @@ withJavaUtilConcurrentAtomicAtomicLong:(JavaUtilConcurrentAtomicAtomicLong *)byt
                                 withInt:(jint)start
                                 withInt:(jint)end;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilRecyclingByteBlockAllocator)
 
-inline jint OrgApacheLuceneUtilRecyclingByteBlockAllocator_get_DEFAULT_BUFFERED_BLOCKS();
+inline jint OrgApacheLuceneUtilRecyclingByteBlockAllocator_get_DEFAULT_BUFFERED_BLOCKS(void);
 #define OrgApacheLuceneUtilRecyclingByteBlockAllocator_DEFAULT_BUFFERED_BLOCKS 64
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilRecyclingByteBlockAllocator, DEFAULT_BUFFERED_BLOCKS, jint)
 
@@ -73,9 +77,9 @@ FOUNDATION_EXPORT OrgApacheLuceneUtilRecyclingByteBlockAllocator *create_OrgApac
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilRecyclingByteBlockAllocator_init(OrgApacheLuceneUtilRecyclingByteBlockAllocator *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilRecyclingByteBlockAllocator *new_OrgApacheLuceneUtilRecyclingByteBlockAllocator_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilRecyclingByteBlockAllocator *new_OrgApacheLuceneUtilRecyclingByteBlockAllocator_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilRecyclingByteBlockAllocator *create_OrgApacheLuceneUtilRecyclingByteBlockAllocator_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilRecyclingByteBlockAllocator *create_OrgApacheLuceneUtilRecyclingByteBlockAllocator_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilRecyclingByteBlockAllocator)
 

@@ -40,31 +40,31 @@ withJavaIoByteArrayOutputStream:(JavaIoByteArrayOutputStream *)buffer;
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecNetQuotedPrintableCodec, charset_, JavaNioCharsetCharset *)
 
-inline JavaUtilBitSet *OrgApacheCommonsCodecNetQuotedPrintableCodec_get_PRINTABLE_CHARS();
+inline JavaUtilBitSet *OrgApacheCommonsCodecNetQuotedPrintableCodec_get_PRINTABLE_CHARS(void);
 static JavaUtilBitSet *OrgApacheCommonsCodecNetQuotedPrintableCodec_PRINTABLE_CHARS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecNetQuotedPrintableCodec, PRINTABLE_CHARS, JavaUtilBitSet *)
 
-inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_ESCAPE_CHAR();
+inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_ESCAPE_CHAR(void);
 #define OrgApacheCommonsCodecNetQuotedPrintableCodec_ESCAPE_CHAR 61
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQuotedPrintableCodec, ESCAPE_CHAR, jbyte)
 
-inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_TAB();
+inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_TAB(void);
 #define OrgApacheCommonsCodecNetQuotedPrintableCodec_TAB 9
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQuotedPrintableCodec, TAB, jbyte)
 
-inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_SPACE();
+inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_SPACE(void);
 #define OrgApacheCommonsCodecNetQuotedPrintableCodec_SPACE 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQuotedPrintableCodec, SPACE, jbyte)
 
-inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_CR();
+inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_CR(void);
 #define OrgApacheCommonsCodecNetQuotedPrintableCodec_CR 13
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQuotedPrintableCodec, CR, jbyte)
 
-inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_LF();
+inline jbyte OrgApacheCommonsCodecNetQuotedPrintableCodec_get_LF(void);
 #define OrgApacheCommonsCodecNetQuotedPrintableCodec_LF 10
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQuotedPrintableCodec, LF, jbyte)
 
-inline jint OrgApacheCommonsCodecNetQuotedPrintableCodec_get_SAFE_LENGTH();
+inline jint OrgApacheCommonsCodecNetQuotedPrintableCodec_get_SAFE_LENGTH(void);
 #define OrgApacheCommonsCodecNetQuotedPrintableCodec_SAFE_LENGTH 73
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetQuotedPrintableCodec, SAFE_LENGTH, jint)
 
@@ -499,7 +499,7 @@ IOSByteArray *OrgApacheCommonsCodecNetQuotedPrintableCodec_decodeQuotedPrintable
         [buffer writeWithInt:(jchar) ((JreLShift32(u, 4)) + l)];
       }
       @catch (JavaLangArrayIndexOutOfBoundsException *e) {
-        @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_(@"Invalid quoted-printable encoding", e);
+        @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_(@"Invalid quoted-printable encoding", e);
       }
     }
     else if (b != OrgApacheCommonsCodecNetQuotedPrintableCodec_CR && b != OrgApacheCommonsCodecNetQuotedPrintableCodec_LF) {

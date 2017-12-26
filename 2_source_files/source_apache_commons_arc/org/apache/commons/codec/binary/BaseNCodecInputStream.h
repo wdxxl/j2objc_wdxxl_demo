@@ -50,6 +50,10 @@
 withOrgApacheCommonsCodecBinaryBaseNCodec:(OrgApacheCommonsCodecBinaryBaseNCodec *)baseNCodec
                               withBoolean:(jboolean)doEncode;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaIoInputStream:(JavaIoInputStream *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecBinaryBaseNCodecInputStream)

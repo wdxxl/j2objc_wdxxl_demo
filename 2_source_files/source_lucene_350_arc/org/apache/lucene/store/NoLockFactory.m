@@ -12,17 +12,17 @@
 #include "org/apache/lucene/store/LockFactory.h"
 #include "org/apache/lucene/store/NoLockFactory.h"
 
-inline OrgApacheLuceneStoreNoLock *OrgApacheLuceneStoreNoLockFactory_get_singletonLock();
+inline OrgApacheLuceneStoreNoLock *OrgApacheLuceneStoreNoLockFactory_get_singletonLock(void);
 inline OrgApacheLuceneStoreNoLock *OrgApacheLuceneStoreNoLockFactory_set_singletonLock(OrgApacheLuceneStoreNoLock *value);
 static OrgApacheLuceneStoreNoLock *OrgApacheLuceneStoreNoLockFactory_singletonLock;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneStoreNoLockFactory, singletonLock, OrgApacheLuceneStoreNoLock *)
 
-inline OrgApacheLuceneStoreNoLockFactory *OrgApacheLuceneStoreNoLockFactory_get_singleton();
+inline OrgApacheLuceneStoreNoLockFactory *OrgApacheLuceneStoreNoLockFactory_get_singleton(void);
 inline OrgApacheLuceneStoreNoLockFactory *OrgApacheLuceneStoreNoLockFactory_set_singleton(OrgApacheLuceneStoreNoLockFactory *value);
 static OrgApacheLuceneStoreNoLockFactory *OrgApacheLuceneStoreNoLockFactory_singleton;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneStoreNoLockFactory, singleton, OrgApacheLuceneStoreNoLockFactory *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreNoLockFactory__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreNoLockFactory__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneStoreNoLockFactory)
 

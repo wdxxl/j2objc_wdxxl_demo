@@ -55,7 +55,7 @@ typedef NS_ENUM(NSUInteger, OrgJsoupParserHtmlTreeBuilderState_Enum) {
   OrgJsoupParserHtmlTreeBuilderState_Enum_ForeignContent = 22,
 };
 
-@interface OrgJsoupParserHtmlTreeBuilderState : JavaLangEnum < NSCopying >
+@interface OrgJsoupParserHtmlTreeBuilderState : JavaLangEnum
 
 #pragma mark Public
 
@@ -68,8 +68,6 @@ typedef NS_ENUM(NSUInteger, OrgJsoupParserHtmlTreeBuilderState_Enum) {
 - (jboolean)processWithOrgJsoupParserToken:(OrgJsoupParserToken *)t
          withOrgJsoupParserHtmlTreeBuilder:(OrgJsoupParserHtmlTreeBuilder *)tb;
 
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgJsoupParserHtmlTreeBuilderState)
@@ -77,76 +75,76 @@ J2OBJC_STATIC_INIT(OrgJsoupParserHtmlTreeBuilderState)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_values_[];
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_Initial();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_Initial(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, Initial)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_BeforeHtml();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_BeforeHtml(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, BeforeHtml)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_BeforeHead();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_BeforeHead(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, BeforeHead)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InHead();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InHead(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InHead)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InHeadNoscript();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InHeadNoscript(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InHeadNoscript)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterHead();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterHead(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, AfterHead)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InBody();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InBody(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InBody)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_Text();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_Text(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, Text)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InTable();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InTable(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InTable)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InTableText();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InTableText(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InTableText)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InCaption();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InCaption(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InCaption)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InColumnGroup();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InColumnGroup(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InColumnGroup)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InTableBody();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InTableBody(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InTableBody)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InRow();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InRow(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InRow)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InCell();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InCell(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InCell)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InSelect();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InSelect(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InSelect)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InSelectInTable();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InSelectInTable(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InSelectInTable)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterBody();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterBody(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, AfterBody)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InFrameset();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_InFrameset(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, InFrameset)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterFrameset();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterFrameset(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, AfterFrameset)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterAfterBody();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterAfterBody(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, AfterAfterBody)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterAfterFrameset();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_AfterAfterFrameset(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, AfterAfterFrameset)
 
-inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_ForeignContent();
+inline OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_get_ForeignContent(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupParserHtmlTreeBuilderState, ForeignContent)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgJsoupParserHtmlTreeBuilderState_values(void);
 
 FOUNDATION_EXPORT OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_valueOfWithNSString_(NSString *name);
 

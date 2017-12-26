@@ -6,8 +6,9 @@
 #include "J2ObjC_source.h"
 #include "com/google/gson/JsonIOException.h"
 #include "com/google/gson/JsonParseException.h"
+#include "java/lang/Throwable.h"
 
-inline jlong ComGoogleGsonJsonIOException_get_serialVersionUID();
+inline jlong ComGoogleGsonJsonIOException_get_serialVersionUID(void);
 #define ComGoogleGsonJsonIOException_serialVersionUID 1LL
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonJsonIOException, serialVersionUID, jlong)
 
@@ -19,13 +20,13 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonJsonIOException, serialVersionUID, jlo
 }
 
 - (instancetype)initWithNSString:(NSString *)msg
-                 withNSException:(NSException *)cause {
-  ComGoogleGsonJsonIOException_initWithNSString_withNSException_(self, msg, cause);
+           withJavaLangThrowable:(JavaLangThrowable *)cause {
+  ComGoogleGsonJsonIOException_initWithNSString_withJavaLangThrowable_(self, msg, cause);
   return self;
 }
 
-- (instancetype)initWithNSException:(NSException *)cause {
-  ComGoogleGsonJsonIOException_initWithNSException_(self, cause);
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause {
+  ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(self, cause);
   return self;
 }
 
@@ -38,13 +39,13 @@ J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonJsonIOException, serialVersionUID, jlo
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
   methods[0].selector = @selector(initWithNSString:);
-  methods[1].selector = @selector(initWithNSString:withNSException:);
-  methods[2].selector = @selector(initWithNSException:);
+  methods[1].selector = @selector(initWithNSString:withJavaLangThrowable:);
+  methods[2].selector = @selector(initWithJavaLangThrowable:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
     { "serialVersionUID", "J", .constantValue.asLong = ComGoogleGsonJsonIOException_serialVersionUID, 0x1a, -1, -1, -1, -1 },
   };
-  static const void *ptrTable[] = { "LNSString;", "LNSString;LNSException;", "LNSException;" };
+  static const void *ptrTable[] = { "LNSString;", "LNSString;LJavaLangThrowable;", "LJavaLangThrowable;" };
   static const J2ObjcClassInfo _ComGoogleGsonJsonIOException = { "JsonIOException", "com.google.gson", ptrTable, methods, fields, 7, 0x11, 3, 1, -1, -1, -1, -1, -1 };
   return &_ComGoogleGsonJsonIOException;
 }
@@ -63,28 +64,28 @@ ComGoogleGsonJsonIOException *create_ComGoogleGsonJsonIOException_initWithNSStri
   J2OBJC_CREATE_IMPL(ComGoogleGsonJsonIOException, initWithNSString_, msg)
 }
 
-void ComGoogleGsonJsonIOException_initWithNSString_withNSException_(ComGoogleGsonJsonIOException *self, NSString *msg, NSException *cause) {
-  ComGoogleGsonJsonParseException_initWithNSString_withNSException_(self, msg, cause);
+void ComGoogleGsonJsonIOException_initWithNSString_withJavaLangThrowable_(ComGoogleGsonJsonIOException *self, NSString *msg, JavaLangThrowable *cause) {
+  ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(self, msg, cause);
 }
 
-ComGoogleGsonJsonIOException *new_ComGoogleGsonJsonIOException_initWithNSString_withNSException_(NSString *msg, NSException *cause) {
-  J2OBJC_NEW_IMPL(ComGoogleGsonJsonIOException, initWithNSString_withNSException_, msg, cause)
+ComGoogleGsonJsonIOException *new_ComGoogleGsonJsonIOException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(ComGoogleGsonJsonIOException, initWithNSString_withJavaLangThrowable_, msg, cause)
 }
 
-ComGoogleGsonJsonIOException *create_ComGoogleGsonJsonIOException_initWithNSString_withNSException_(NSString *msg, NSException *cause) {
-  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonIOException, initWithNSString_withNSException_, msg, cause)
+ComGoogleGsonJsonIOException *create_ComGoogleGsonJsonIOException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonIOException, initWithNSString_withJavaLangThrowable_, msg, cause)
 }
 
-void ComGoogleGsonJsonIOException_initWithNSException_(ComGoogleGsonJsonIOException *self, NSException *cause) {
-  ComGoogleGsonJsonParseException_initWithNSException_(self, cause);
+void ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(ComGoogleGsonJsonIOException *self, JavaLangThrowable *cause) {
+  ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(self, cause);
 }
 
-ComGoogleGsonJsonIOException *new_ComGoogleGsonJsonIOException_initWithNSException_(NSException *cause) {
-  J2OBJC_NEW_IMPL(ComGoogleGsonJsonIOException, initWithNSException_, cause)
+ComGoogleGsonJsonIOException *new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(ComGoogleGsonJsonIOException, initWithJavaLangThrowable_, cause)
 }
 
-ComGoogleGsonJsonIOException *create_ComGoogleGsonJsonIOException_initWithNSException_(NSException *cause) {
-  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonIOException, initWithNSException_, cause)
+ComGoogleGsonJsonIOException *create_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonIOException, initWithJavaLangThrowable_, cause)
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonJsonIOException)

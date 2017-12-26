@@ -19,6 +19,7 @@
 #include "java/lang/InstantiationException.h"
 #include "java/lang/NoSuchMethodException.h"
 #include "java/lang/RuntimeException.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/reflect/Constructor.h"
 #include "java/lang/reflect/InvocationTargetException.h"
 #include "java/lang/reflect/ParameterizedType.h"
@@ -137,9 +138,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_4)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_4_init(ComGoogleGsonInternalConstructorConstructor_4 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_4 *new_ComGoogleGsonInternalConstructorConstructor_4_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_4 *new_ComGoogleGsonInternalConstructorConstructor_4_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_4 *create_ComGoogleGsonInternalConstructorConstructor_4_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_4 *create_ComGoogleGsonInternalConstructorConstructor_4_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_5 : NSObject < ComGoogleGsonInternalObjectConstructor > {
  @public
@@ -172,9 +173,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_6)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_6_init(ComGoogleGsonInternalConstructorConstructor_6 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_6 *new_ComGoogleGsonInternalConstructorConstructor_6_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_6 *new_ComGoogleGsonInternalConstructorConstructor_6_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_6 *create_ComGoogleGsonInternalConstructorConstructor_6_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_6 *create_ComGoogleGsonInternalConstructorConstructor_6_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_7 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -188,9 +189,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_7)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_7_init(ComGoogleGsonInternalConstructorConstructor_7 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_7 *new_ComGoogleGsonInternalConstructorConstructor_7_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_7 *new_ComGoogleGsonInternalConstructorConstructor_7_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_7 *create_ComGoogleGsonInternalConstructorConstructor_7_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_7 *create_ComGoogleGsonInternalConstructorConstructor_7_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_8 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -204,9 +205,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_8)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_8_init(ComGoogleGsonInternalConstructorConstructor_8 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_8 *new_ComGoogleGsonInternalConstructorConstructor_8_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_8 *new_ComGoogleGsonInternalConstructorConstructor_8_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_8 *create_ComGoogleGsonInternalConstructorConstructor_8_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_8 *create_ComGoogleGsonInternalConstructorConstructor_8_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_9 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -220,9 +221,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_9)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_9_init(ComGoogleGsonInternalConstructorConstructor_9 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_9 *new_ComGoogleGsonInternalConstructorConstructor_9_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_9 *new_ComGoogleGsonInternalConstructorConstructor_9_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_9 *create_ComGoogleGsonInternalConstructorConstructor_9_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_9 *create_ComGoogleGsonInternalConstructorConstructor_9_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_10 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -236,9 +237,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_10)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_10_init(ComGoogleGsonInternalConstructorConstructor_10 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_10 *new_ComGoogleGsonInternalConstructorConstructor_10_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_10 *new_ComGoogleGsonInternalConstructorConstructor_10_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_10 *create_ComGoogleGsonInternalConstructorConstructor_10_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_10 *create_ComGoogleGsonInternalConstructorConstructor_10_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_11 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -252,9 +253,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_11)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_11_init(ComGoogleGsonInternalConstructorConstructor_11 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_11 *new_ComGoogleGsonInternalConstructorConstructor_11_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_11 *new_ComGoogleGsonInternalConstructorConstructor_11_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_11 *create_ComGoogleGsonInternalConstructorConstructor_11_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_11 *create_ComGoogleGsonInternalConstructorConstructor_11_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_12 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -268,9 +269,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_12)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_12_init(ComGoogleGsonInternalConstructorConstructor_12 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_12 *new_ComGoogleGsonInternalConstructorConstructor_12_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_12 *new_ComGoogleGsonInternalConstructorConstructor_12_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_12 *create_ComGoogleGsonInternalConstructorConstructor_12_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_12 *create_ComGoogleGsonInternalConstructorConstructor_12_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_13 : NSObject < ComGoogleGsonInternalObjectConstructor >
 
@@ -284,9 +285,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalConstructorConstructor_13)
 
 __attribute__((unused)) static void ComGoogleGsonInternalConstructorConstructor_13_init(ComGoogleGsonInternalConstructorConstructor_13 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_13 *new_ComGoogleGsonInternalConstructorConstructor_13_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_13 *new_ComGoogleGsonInternalConstructorConstructor_13_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_13 *create_ComGoogleGsonInternalConstructorConstructor_13_init();
+__attribute__((unused)) static ComGoogleGsonInternalConstructorConstructor_13 *create_ComGoogleGsonInternalConstructorConstructor_13_init(void);
 
 @interface ComGoogleGsonInternalConstructorConstructor_14 : NSObject < ComGoogleGsonInternalObjectConstructor > {
  @public
@@ -564,10 +565,10 @@ ComGoogleGsonInternalConstructorConstructor_2 *create_ComGoogleGsonInternalConst
     return [((JavaLangReflectConstructor *) nil_chk(val$constructor_)) newInstanceWithNSObjectArray:args];
   }
   @catch (JavaLangInstantiationException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSString_withNSException_(JreStrcat("$@$", @"Failed to invoke ", val$constructor_, @" with no args"), e);
+    @throw new_JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_(JreStrcat("$@$", @"Failed to invoke ", val$constructor_, @" with no args"), e);
   }
   @catch (JavaLangReflectInvocationTargetException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSString_withNSException_(JreStrcat("$@$", @"Failed to invoke ", val$constructor_, @" with no args"), [e getTargetException]);
+    @throw new_JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_(JreStrcat("$@$", @"Failed to invoke ", val$constructor_, @" with no args"), [e getTargetException]);
   }
   @catch (JavaLangIllegalAccessException *e) {
     @throw new_JavaLangAssertionError_initWithId_(e);
@@ -1054,7 +1055,7 @@ ComGoogleGsonInternalConstructorConstructor_13 *create_ComGoogleGsonInternalCons
     return newInstance;
   }
   @catch (JavaLangException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSString_withNSException_((JreStrcat("$@$", @"Unable to invoke no-args constructor for ", val$type_, @". Register an InstanceCreator with Gson for this type may fix this problem.")), e);
+    @throw new_JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_((JreStrcat("$@$", @"Unable to invoke no-args constructor for ", val$type_, @". Register an InstanceCreator with Gson for this type may fix this problem.")), e);
   }
 }
 

@@ -148,9 +148,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCoalescedDeletes_SubIterator, current_, 
 
 __attribute__((unused)) static void OrgApacheLuceneIndexCoalescedDeletes_SubIterator_init(OrgApacheLuceneIndexCoalescedDeletes_SubIterator *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexCoalescedDeletes_SubIterator *new_OrgApacheLuceneIndexCoalescedDeletes_SubIterator_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexCoalescedDeletes_SubIterator *new_OrgApacheLuceneIndexCoalescedDeletes_SubIterator_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexCoalescedDeletes_SubIterator *create_OrgApacheLuceneIndexCoalescedDeletes_SubIterator_init();
+__attribute__((unused)) static OrgApacheLuceneIndexCoalescedDeletes_SubIterator *create_OrgApacheLuceneIndexCoalescedDeletes_SubIterator_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCoalescedDeletes_SubIterator)
 
@@ -549,7 +549,7 @@ OrgApacheLuceneIndexCoalescedDeletes_3 *create_OrgApacheLuceneIndexCoalescedDele
 }
 
 void OrgApacheLuceneIndexCoalescedDeletes_3_pullTop(OrgApacheLuceneIndexCoalescedDeletes_3 *self) {
-  JreAssert((self->numTop_ == 0), (@"org/apache/lucene/index/CoalescedDeletes.java:138 condition failed: assert numTop == 0;"));
+  JreAssert(self->numTop_ == 0, @"org/apache/lucene/index/CoalescedDeletes.java:138 condition failed: assert numTop == 0;");
   while (true) {
     (void) IOSObjectArray_Set(nil_chk(self->top_), self->numTop_++, [((OrgApacheLuceneIndexCoalescedDeletes_TermMergeQueue *) nil_chk(self->queue_)) pop]);
     if ([((OrgApacheLuceneIndexCoalescedDeletes_TermMergeQueue *) nil_chk(self->queue_)) size] == 0 || ![((OrgApacheLuceneIndexTerm *) nil_chk(((OrgApacheLuceneIndexCoalescedDeletes_SubIterator *) nil_chk(([((OrgApacheLuceneIndexCoalescedDeletes_TermMergeQueue *) nil_chk(self->queue_)) top])))->current_)) isEqual:((OrgApacheLuceneIndexCoalescedDeletes_SubIterator *) nil_chk(IOSObjectArray_Get(nil_chk(self->top_), 0)))->current_]) {

@@ -13,7 +13,7 @@
 #include "org/apache/lucene/search/function/OrdFieldSource.h"
 #include "org/apache/lucene/search/function/ValueSource.h"
 
-inline jint OrgApacheLuceneSearchFunctionOrdFieldSource_get_hcode();
+inline jint OrgApacheLuceneSearchFunctionOrdFieldSource_get_hcode(void);
 static jint OrgApacheLuceneSearchFunctionOrdFieldSource_hcode;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneSearchFunctionOrdFieldSource, hcode, jint)
 

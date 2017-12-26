@@ -21,7 +21,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageRefinedSoundex, soundexMapping_, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageRefinedSoundex_get_US_ENGLISH_MAPPING();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageRefinedSoundex_get_US_ENGLISH_MAPPING(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageRefinedSoundex_US_ENGLISH_MAPPING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageRefinedSoundex, US_ENGLISH_MAPPING, IOSCharArray *)
 

@@ -16,7 +16,7 @@
 
 @end
 
-inline jint OrgJsoupParserParseErrorList_get_INITIAL_CAPACITY();
+inline jint OrgJsoupParserParseErrorList_get_INITIAL_CAPACITY(void);
 #define OrgJsoupParserParseErrorList_INITIAL_CAPACITY 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParseErrorList, INITIAL_CAPACITY, jint)
 

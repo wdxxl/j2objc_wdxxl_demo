@@ -57,7 +57,7 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchMultiSearcher, searchables_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchMultiSearcher, starts_, IOSIntArray *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiSearcher__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchMultiSearcher__Annotations$0(void);
 
 @interface OrgApacheLuceneSearchMultiSearcher_CachedDfSource : OrgApacheLuceneSearchSearcher {
  @public

@@ -37,15 +37,15 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilRamUsageEstimator, memoryModel_, OrgApacheLuceneUtilMemoryModel *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilRamUsageEstimator, seen_, id<JavaUtilMap>)
 
-inline jlong OrgApacheLuceneUtilRamUsageEstimator_get_ONE_KB();
+inline jlong OrgApacheLuceneUtilRamUsageEstimator_get_ONE_KB(void);
 #define OrgApacheLuceneUtilRamUsageEstimator_ONE_KB 1024LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilRamUsageEstimator, ONE_KB, jlong)
 
-inline jlong OrgApacheLuceneUtilRamUsageEstimator_get_ONE_MB();
+inline jlong OrgApacheLuceneUtilRamUsageEstimator_get_ONE_MB(void);
 #define OrgApacheLuceneUtilRamUsageEstimator_ONE_MB 1048576LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilRamUsageEstimator, ONE_MB, jlong)
 
-inline jlong OrgApacheLuceneUtilRamUsageEstimator_get_ONE_GB();
+inline jlong OrgApacheLuceneUtilRamUsageEstimator_get_ONE_GB(void);
 #define OrgApacheLuceneUtilRamUsageEstimator_ONE_GB 1073741824LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilRamUsageEstimator, ONE_GB, jlong)
 

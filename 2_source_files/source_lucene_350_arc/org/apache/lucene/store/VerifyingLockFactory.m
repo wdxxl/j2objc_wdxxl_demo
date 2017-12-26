@@ -211,7 +211,7 @@ void OrgApacheLuceneStoreVerifyingLockFactory_CheckedLock_verifyWithByte_(OrgApa
     if (result != 0) @throw new_JavaLangRuntimeException_initWithNSString_(@"lock was double acquired");
   }
   @catch (JavaLangException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 

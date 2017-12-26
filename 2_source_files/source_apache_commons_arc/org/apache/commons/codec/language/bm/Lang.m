@@ -41,11 +41,11 @@ withOrgApacheCommonsCodecLanguageBmLanguages:(OrgApacheCommonsCodecLanguageBmLan
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmLang, languages_, OrgApacheCommonsCodecLanguageBmLanguages *)
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmLang, rules_, id<JavaUtilList>)
 
-inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmLang_get_Langs();
+inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmLang_get_Langs(void);
 static id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmLang_Langs;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmLang, Langs, id<JavaUtilMap>)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmLang_get_LANGUAGE_RULES_RN();
+inline NSString *OrgApacheCommonsCodecLanguageBmLang_get_LANGUAGE_RULES_RN(void);
 static NSString *OrgApacheCommonsCodecLanguageBmLang_LANGUAGE_RULES_RN = @"org/apache/commons/codec/language/bm/%s_lang.txt";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmLang, LANGUAGE_RULES_RN, NSString *)
 

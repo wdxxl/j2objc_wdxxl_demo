@@ -18,7 +18,7 @@
 
 @end
 
-inline jlong OrgApacheLuceneStoreRAMFile_get_serialVersionUID();
+inline jlong OrgApacheLuceneStoreRAMFile_get_serialVersionUID(void);
 #define OrgApacheLuceneStoreRAMFile_serialVersionUID 1LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreRAMFile, serialVersionUID, jlong)
 

@@ -27,7 +27,7 @@
 J2OBJC_FIELD_SETTER(OrgJsoupNodesAttribute, key_, NSString *)
 J2OBJC_FIELD_SETTER(OrgJsoupNodesAttribute, value_, NSString *)
 
-inline IOSObjectArray *OrgJsoupNodesAttribute_get_booleanAttributes();
+inline IOSObjectArray *OrgJsoupNodesAttribute_get_booleanAttributes(void);
 static IOSObjectArray *OrgJsoupNodesAttribute_booleanAttributes;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesAttribute, booleanAttributes, IOSObjectArray *)
 
@@ -119,7 +119,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
     return (OrgJsoupNodesAttribute *) cast_chk([super java_clone], [OrgJsoupNodesAttribute class]);
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 

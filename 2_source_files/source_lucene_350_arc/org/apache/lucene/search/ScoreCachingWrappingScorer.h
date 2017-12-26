@@ -22,6 +22,7 @@
 
 @class OrgApacheLuceneSearchCollector;
 @class OrgApacheLuceneSearchSimilarity;
+@class OrgApacheLuceneSearchWeight;
 
 @interface OrgApacheLuceneSearchScoreCachingWrappingScorer : OrgApacheLuceneSearchScorer
 
@@ -46,6 +47,15 @@
 - (jboolean)scoreWithOrgApacheLuceneSearchCollector:(OrgApacheLuceneSearchCollector *)collector
                                             withInt:(jint)max
                                             withInt:(jint)firstDocID;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg0
+                        withOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg0 NS_UNAVAILABLE;
 
 @end
 

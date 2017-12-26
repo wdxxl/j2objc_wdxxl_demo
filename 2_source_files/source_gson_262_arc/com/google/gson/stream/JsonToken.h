@@ -40,17 +40,13 @@ typedef NS_ENUM(NSUInteger, ComGoogleGsonStreamJsonToken_Enum) {
   ComGoogleGsonStreamJsonToken_Enum_END_DOCUMENT = 9,
 };
 
-@interface ComGoogleGsonStreamJsonToken : JavaLangEnum < NSCopying >
+@interface ComGoogleGsonStreamJsonToken : JavaLangEnum
 
 #pragma mark Public
 
 + (ComGoogleGsonStreamJsonToken *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -59,37 +55,37 @@ J2OBJC_STATIC_INIT(ComGoogleGsonStreamJsonToken)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_values_[];
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_BEGIN_ARRAY();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_BEGIN_ARRAY(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, BEGIN_ARRAY)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_END_ARRAY();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_END_ARRAY(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, END_ARRAY)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_BEGIN_OBJECT();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_BEGIN_OBJECT(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, BEGIN_OBJECT)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_END_OBJECT();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_END_OBJECT(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, END_OBJECT)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_NAME();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_NAME(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, NAME)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_STRING();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_STRING(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, STRING)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_NUMBER();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_NUMBER(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, NUMBER)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_BOOLEAN();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_BOOLEAN(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, BOOLEAN)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_NULL();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_NULL(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, NULL)
 
-inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_END_DOCUMENT();
+inline ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_get_END_DOCUMENT(void);
 J2OBJC_ENUM_CONSTANT(ComGoogleGsonStreamJsonToken, END_DOCUMENT)
 
-FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonStreamJsonToken_values();
+FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonStreamJsonToken_values(void);
 
 FOUNDATION_EXPORT ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_valueOfWithNSString_(NSString *name);
 

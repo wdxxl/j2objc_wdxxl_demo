@@ -22,6 +22,7 @@
 
 @class ComGoogleGsonJsonElement;
 @class ComGoogleGsonStreamJsonToken;
+@class JavaIoReader;
 
 @interface ComGoogleGsonInternalBindJsonTreeReader : ComGoogleGsonStreamJsonReader
 
@@ -62,6 +63,10 @@
 - (void)skipValue;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaIoReader:(JavaIoReader *)arg0 NS_UNAVAILABLE;
 
 @end
 

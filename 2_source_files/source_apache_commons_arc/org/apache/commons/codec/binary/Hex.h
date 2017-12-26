@@ -73,12 +73,12 @@
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecBinaryHex)
 
-inline JavaNioCharsetCharset *OrgApacheCommonsCodecBinaryHex_get_DEFAULT_CHARSET();
+inline JavaNioCharsetCharset *OrgApacheCommonsCodecBinaryHex_get_DEFAULT_CHARSET(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaNioCharsetCharset *OrgApacheCommonsCodecBinaryHex_DEFAULT_CHARSET;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryHex, DEFAULT_CHARSET, JavaNioCharsetCharset *)
 
-inline NSString *OrgApacheCommonsCodecBinaryHex_get_DEFAULT_CHARSET_NAME();
+inline NSString *OrgApacheCommonsCodecBinaryHex_get_DEFAULT_CHARSET_NAME(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecBinaryHex_DEFAULT_CHARSET_NAME;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryHex, DEFAULT_CHARSET_NAME, NSString *)
@@ -97,9 +97,9 @@ FOUNDATION_EXPORT jint OrgApacheCommonsCodecBinaryHex_toDigitWithChar_withInt_(j
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecBinaryHex_init(OrgApacheCommonsCodecBinaryHex *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryHex *new_OrgApacheCommonsCodecBinaryHex_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryHex *new_OrgApacheCommonsCodecBinaryHex_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryHex *create_OrgApacheCommonsCodecBinaryHex_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecBinaryHex *create_OrgApacheCommonsCodecBinaryHex_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecBinaryHex_initWithJavaNioCharsetCharset_(OrgApacheCommonsCodecBinaryHex *self, JavaNioCharsetCharset *charset);
 

@@ -20,6 +20,8 @@
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneIndexFieldReaderException : JavaLangRuntimeException
 
 #pragma mark Public
@@ -29,11 +31,16 @@
 - (instancetype)initWithNSString:(NSString *)message;
 
 - (instancetype)initWithNSString:(NSString *)message
-                 withNSException:(NSException *)cause;
-#define withJavaLangThrowable withNSException
+           withJavaLangThrowable:(JavaLangThrowable *)cause;
 
-- (instancetype)initWithNSException:(NSException *)cause;
-#define initWithJavaLangThrowable initWithNSException
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -41,15 +48,15 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFieldReaderException)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldReaderException_init(OrgApacheLuceneIndexFieldReaderException *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_init(void);
 
-FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldReaderException_initWithNSException_(OrgApacheLuceneIndexFieldReaderException *self, NSException *cause);
+FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(OrgApacheLuceneIndexFieldReaderException *self, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithNSException_(NSException *cause) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(JavaLangThrowable *cause) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSException_(NSException *cause);
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithJavaLangThrowable_(JavaLangThrowable *cause);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldReaderException_initWithNSString_(OrgApacheLuceneIndexFieldReaderException *self, NSString *message);
 
@@ -57,11 +64,11 @@ FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneI
 
 FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSString_(NSString *message);
 
-FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(OrgApacheLuceneIndexFieldReaderException *self, NSString *message, NSException *cause);
+FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(OrgApacheLuceneIndexFieldReaderException *self, NSString *message, JavaLangThrowable *cause);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(NSString *message, NSException *cause) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *new_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withNSException_(NSString *message, NSException *cause);
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldReaderException *create_OrgApacheLuceneIndexFieldReaderException_initWithNSString_withJavaLangThrowable_(NSString *message, JavaLangThrowable *cause);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFieldReaderException)
 

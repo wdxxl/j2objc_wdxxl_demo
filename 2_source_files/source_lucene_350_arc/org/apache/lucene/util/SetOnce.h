@@ -34,9 +34,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilSetOnce)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilSetOnce_init(OrgApacheLuceneUtilSetOnce *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce *new_OrgApacheLuceneUtilSetOnce_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce *new_OrgApacheLuceneUtilSetOnce_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce *create_OrgApacheLuceneUtilSetOnce_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce *create_OrgApacheLuceneUtilSetOnce_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilSetOnce_initWithId_(OrgApacheLuceneUtilSetOnce *self, id obj);
 
@@ -55,11 +55,27 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilSetOnce)
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneUtilSetOnce_AlreadySetException : JavaLangRuntimeException
 
 #pragma mark Public
 
 - (instancetype)init;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -67,9 +83,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilSetOnce_AlreadySetException)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilSetOnce_AlreadySetException_init(OrgApacheLuceneUtilSetOnce_AlreadySetException *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce_AlreadySetException *new_OrgApacheLuceneUtilSetOnce_AlreadySetException_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce_AlreadySetException *new_OrgApacheLuceneUtilSetOnce_AlreadySetException_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce_AlreadySetException *create_OrgApacheLuceneUtilSetOnce_AlreadySetException_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilSetOnce_AlreadySetException *create_OrgApacheLuceneUtilSetOnce_AlreadySetException_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilSetOnce_AlreadySetException)
 

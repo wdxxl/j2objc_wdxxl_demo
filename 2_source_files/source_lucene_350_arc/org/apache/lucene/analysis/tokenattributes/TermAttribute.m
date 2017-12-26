@@ -14,7 +14,7 @@
 
 @end
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesTermAttribute__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisTokenattributesTermAttribute__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisTokenattributesTermAttribute
 

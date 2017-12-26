@@ -61,7 +61,7 @@
 
 J2OBJC_FIELD_SETTER(OrgJsoupNodesElement, tag_, OrgJsoupParserTag *)
 
-inline JavaUtilRegexPattern *OrgJsoupNodesElement_get_classSplit();
+inline JavaUtilRegexPattern *OrgJsoupNodesElement_get_classSplit(void);
 static JavaUtilRegexPattern *OrgJsoupNodesElement_classSplit;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesElement, classSplit, JavaUtilRegexPattern *)
 
@@ -422,7 +422,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesElement)
     pattern = JavaUtilRegexPattern_compileWithNSString_(regex);
   }
   @catch (JavaUtilRegexPatternSyntaxException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSString_withNSException_(JreStrcat("$$", @"Pattern syntax error: ", regex), e);
+    @throw new_JavaLangIllegalArgumentException_initWithNSString_withJavaLangThrowable_(JreStrcat("$$", @"Pattern syntax error: ", regex), e);
   }
   return [self getElementsByAttributeValueMatchingWithNSString:key withJavaUtilRegexPattern:pattern];
 }
@@ -457,7 +457,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesElement)
     pattern = JavaUtilRegexPattern_compileWithNSString_(regex);
   }
   @catch (JavaUtilRegexPatternSyntaxException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSString_withNSException_(JreStrcat("$$", @"Pattern syntax error: ", regex), e);
+    @throw new_JavaLangIllegalArgumentException_initWithNSString_withJavaLangThrowable_(JreStrcat("$$", @"Pattern syntax error: ", regex), e);
   }
   return [self getElementsMatchingTextWithJavaUtilRegexPattern:pattern];
 }
@@ -472,7 +472,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesElement)
     pattern = JavaUtilRegexPattern_compileWithNSString_(regex);
   }
   @catch (JavaUtilRegexPatternSyntaxException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSString_withNSException_(JreStrcat("$$", @"Pattern syntax error: ", regex), e);
+    @throw new_JavaLangIllegalArgumentException_initWithNSString_withJavaLangThrowable_(JreStrcat("$$", @"Pattern syntax error: ", regex), e);
   }
   return [self getElementsMatchingOwnTextWithJavaUtilRegexPattern:pattern];
 }

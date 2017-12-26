@@ -32,9 +32,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreLockStressTest)
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreLockStressTest_init(OrgApacheLuceneStoreLockStressTest *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreLockStressTest *new_OrgApacheLuceneStoreLockStressTest_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneStoreLockStressTest *new_OrgApacheLuceneStoreLockStressTest_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreLockStressTest *create_OrgApacheLuceneStoreLockStressTest_init();
+FOUNDATION_EXPORT OrgApacheLuceneStoreLockStressTest *create_OrgApacheLuceneStoreLockStressTest_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreLockStressTest_mainWithNSStringArray_(IOSObjectArray *args);
 

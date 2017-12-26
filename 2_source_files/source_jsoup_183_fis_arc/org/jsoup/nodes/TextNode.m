@@ -24,7 +24,7 @@
 
 @end
 
-inline NSString *OrgJsoupNodesTextNode_get_TEXT_KEY();
+inline NSString *OrgJsoupNodesTextNode_get_TEXT_KEY(void);
 static NSString *OrgJsoupNodesTextNode_TEXT_KEY = @"text";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesTextNode, TEXT_KEY, NSString *)
 

@@ -44,9 +44,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindSqlDateTypeAdapter_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindSqlDateTypeAdapter_1_init(ComGoogleGsonInternalBindSqlDateTypeAdapter_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindSqlDateTypeAdapter_1 *new_ComGoogleGsonInternalBindSqlDateTypeAdapter_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindSqlDateTypeAdapter_1 *new_ComGoogleGsonInternalBindSqlDateTypeAdapter_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindSqlDateTypeAdapter_1 *create_ComGoogleGsonInternalBindSqlDateTypeAdapter_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindSqlDateTypeAdapter_1 *create_ComGoogleGsonInternalBindSqlDateTypeAdapter_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindSqlDateTypeAdapter)
 
@@ -72,7 +72,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       return new_JavaSqlDate_initWithLong_(utilDate);
     }
     @catch (JavaTextParseException *e) {
-      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+      @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
     }
   }
 }

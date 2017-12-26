@@ -8,6 +8,7 @@
 #include "java/lang/InterruptedException.h"
 #include "java/lang/RuntimeException.h"
 #include "java/lang/StringBuilder.h"
+#include "java/lang/Throwable.h"
 #include "java/util/ArrayList.h"
 #include "java/util/List.h"
 #include "java/util/Map.h"
@@ -116,13 +117,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexMergePolicy)
   return self;
 }
 
-- (void)setExceptionWithNSException:(NSException *)error {
+- (void)setExceptionWithJavaLangThrowable:(JavaLangThrowable *)error {
   @synchronized(self) {
     self->error_ = error;
   }
 }
 
-- (NSException *)getException {
+- (JavaLangThrowable *)getException {
   @synchronized(self) {
     return error_;
   }
@@ -151,7 +152,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexMergePolicy)
         [self java_waitWithLong:1000];
       }
       @catch (JavaLangInterruptedException *ie) {
-        @throw new_JavaLangRuntimeException_initWithNSException_(ie);
+        @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(ie);
       }
       if (aborted_) {
         @throw new_OrgApacheLuceneIndexMergePolicy_MergeAbortedException_initWithNSString_(JreStrcat("$$", @"merge is aborted: ", [self segStringWithOrgApacheLuceneStoreDirectory:dir]));
@@ -210,7 +211,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexMergePolicy)
   static J2ObjcMethodInfo methods[] = {
     { NULL, NULL, 0x1, -1, 0, -1, 1, -1, -1 },
     { NULL, "V", 0x20, 2, 3, -1, -1, -1, -1 },
-    { NULL, "LNSException;", 0x20, -1, -1, -1, -1, -1, -1 },
+    { NULL, "LJavaLangThrowable;", 0x20, -1, -1, -1, -1, -1, -1 },
     { NULL, "V", 0x20, -1, -1, -1, -1, -1, -1 },
     { NULL, "Z", 0x20, -1, -1, -1, -1, -1, -1 },
     { NULL, "V", 0x20, 4, 5, 6, -1, -1, -1 },
@@ -223,7 +224,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexMergePolicy)
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
   methods[0].selector = @selector(initWithJavaUtilList:);
-  methods[1].selector = @selector(setExceptionWithNSException:);
+  methods[1].selector = @selector(setExceptionWithJavaLangThrowable:);
   methods[2].selector = @selector(getException);
   methods[3].selector = @selector(abort);
   methods[4].selector = @selector(isAborted);
@@ -246,10 +247,10 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexMergePolicy)
     { "segments_", "LJavaUtilList;", .constantValue.asLong = 0, 0x11, -1, -1, 12, -1 },
     { "totalDocCount_", "I", .constantValue.asLong = 0, 0x11, -1, -1, -1, -1 },
     { "aborted_", "Z", .constantValue.asLong = 0, 0x0, -1, -1, -1, -1 },
-    { "error_", "LNSException;", .constantValue.asLong = 0, 0x0, -1, -1, -1, -1 },
+    { "error_", "LJavaLangThrowable;", .constantValue.asLong = 0, 0x0, -1, -1, -1, -1 },
     { "paused_", "Z", .constantValue.asLong = 0, 0x0, -1, -1, -1, -1 },
   };
-  static const void *ptrTable[] = { "LJavaUtilList;", "(Ljava/util/List<Lorg/apache/lucene/index/SegmentInfo;>;)V", "setException", "LNSException;", "checkAborted", "LOrgApacheLuceneStoreDirectory;", "LOrgApacheLuceneIndexMergePolicy_MergeAbortedException;", "setPause", "Z", "segString", "LJavaIoIOException;", "Ljava/util/List<Lorg/apache/lucene/index/SegmentReader;>;", "Ljava/util/List<Lorg/apache/lucene/index/SegmentInfo;>;", "LOrgApacheLuceneIndexMergePolicy;" };
+  static const void *ptrTable[] = { "LJavaUtilList;", "(Ljava/util/List<Lorg/apache/lucene/index/SegmentInfo;>;)V", "setException", "LJavaLangThrowable;", "checkAborted", "LOrgApacheLuceneStoreDirectory;", "LOrgApacheLuceneIndexMergePolicy_MergeAbortedException;", "setPause", "Z", "segString", "LJavaIoIOException;", "Ljava/util/List<Lorg/apache/lucene/index/SegmentReader;>;", "Ljava/util/List<Lorg/apache/lucene/index/SegmentInfo;>;", "LOrgApacheLuceneIndexMergePolicy;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexMergePolicy_OneMerge = { "OneMerge", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x9, 11, 13, 13, -1, -1, -1, -1 };
   return &_OrgApacheLuceneIndexMergePolicy_OneMerge;
 }
@@ -344,9 +345,9 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir {
   return self;
 }
 
-- (instancetype)initWithNSException:(NSException *)exc
-  withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir {
-  OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(self, exc, dir);
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)exc
+        withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir {
+  OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(self, exc, dir);
   return self;
 }
 
@@ -363,13 +364,13 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir {
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
   methods[0].selector = @selector(initWithNSString:withOrgApacheLuceneStoreDirectory:);
-  methods[1].selector = @selector(initWithNSException:withOrgApacheLuceneStoreDirectory:);
+  methods[1].selector = @selector(initWithJavaLangThrowable:withOrgApacheLuceneStoreDirectory:);
   methods[2].selector = @selector(getDirectory);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
     { "dir_", "LOrgApacheLuceneStoreDirectory;", .constantValue.asLong = 0, 0x2, -1, -1, -1, -1 },
   };
-  static const void *ptrTable[] = { "LNSString;LOrgApacheLuceneStoreDirectory;", "LNSException;LOrgApacheLuceneStoreDirectory;", "LOrgApacheLuceneIndexMergePolicy;" };
+  static const void *ptrTable[] = { "LNSString;LOrgApacheLuceneStoreDirectory;", "LJavaLangThrowable;LOrgApacheLuceneStoreDirectory;", "LOrgApacheLuceneIndexMergePolicy;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexMergePolicy_MergeException = { "MergeException", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x9, 3, 1, 2, -1, -1, -1, -1 };
   return &_OrgApacheLuceneIndexMergePolicy_MergeException;
 }
@@ -389,17 +390,17 @@ OrgApacheLuceneIndexMergePolicy_MergeException *create_OrgApacheLuceneIndexMerge
   J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexMergePolicy_MergeException, initWithNSString_withOrgApacheLuceneStoreDirectory_, message, dir)
 }
 
-void OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(OrgApacheLuceneIndexMergePolicy_MergeException *self, NSException *exc, OrgApacheLuceneStoreDirectory *dir) {
-  JavaLangRuntimeException_initWithNSException_(self, exc);
+void OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(OrgApacheLuceneIndexMergePolicy_MergeException *self, JavaLangThrowable *exc, OrgApacheLuceneStoreDirectory *dir) {
+  JavaLangRuntimeException_initWithJavaLangThrowable_(self, exc);
   self->dir_ = dir;
 }
 
-OrgApacheLuceneIndexMergePolicy_MergeException *new_OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(NSException *exc, OrgApacheLuceneStoreDirectory *dir) {
-  J2OBJC_NEW_IMPL(OrgApacheLuceneIndexMergePolicy_MergeException, initWithNSException_withOrgApacheLuceneStoreDirectory_, exc, dir)
+OrgApacheLuceneIndexMergePolicy_MergeException *new_OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(JavaLangThrowable *exc, OrgApacheLuceneStoreDirectory *dir) {
+  J2OBJC_NEW_IMPL(OrgApacheLuceneIndexMergePolicy_MergeException, initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_, exc, dir)
 }
 
-OrgApacheLuceneIndexMergePolicy_MergeException *create_OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(NSException *exc, OrgApacheLuceneStoreDirectory *dir) {
-  J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexMergePolicy_MergeException, initWithNSException_withOrgApacheLuceneStoreDirectory_, exc, dir)
+OrgApacheLuceneIndexMergePolicy_MergeException *create_OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(JavaLangThrowable *exc, OrgApacheLuceneStoreDirectory *dir) {
+  J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexMergePolicy_MergeException, initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_, exc, dir)
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexMergePolicy_MergeException)

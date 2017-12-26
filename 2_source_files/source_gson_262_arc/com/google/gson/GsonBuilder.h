@@ -90,9 +90,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonGsonBuilder)
 
 FOUNDATION_EXPORT void ComGoogleGsonGsonBuilder_init(ComGoogleGsonGsonBuilder *self);
 
-FOUNDATION_EXPORT ComGoogleGsonGsonBuilder *new_ComGoogleGsonGsonBuilder_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonGsonBuilder *new_ComGoogleGsonGsonBuilder_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonGsonBuilder *create_ComGoogleGsonGsonBuilder_init();
+FOUNDATION_EXPORT ComGoogleGsonGsonBuilder *create_ComGoogleGsonGsonBuilder_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGsonBuilder)
 

@@ -119,7 +119,7 @@ __attribute__((unused)) static OrgApacheLuceneSearchSearcherManager_1 *create_Or
 }
 
 - (void)release__WithOrgApacheLuceneSearchIndexSearcher:(OrgApacheLuceneSearchIndexSearcher *)searcher {
-  JreAssert((searcher != nil), (@"org/apache/lucene/search/SearcherManager.java:209 condition failed: assert searcher != null;"));
+  JreAssert(searcher != nil, @"org/apache/lucene/search/SearcherManager.java:209 condition failed: assert searcher != null;");
   [((OrgApacheLuceneIndexIndexReader *) nil_chk([((OrgApacheLuceneSearchIndexSearcher *) nil_chk(searcher)) getIndexReader])) decRef];
 }
 

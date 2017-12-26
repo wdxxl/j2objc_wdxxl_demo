@@ -86,7 +86,7 @@ void OrgApacheLuceneIndexMergeDocIDRemapper_initWithOrgApacheLuceneIndexSegmentI
   jint numDocs = 0;
   for (jint j = 0; j < ((IOSObjectArray *) nil_chk(docMaps))->size_; i++, j++) {
     numDocs += ((OrgApacheLuceneIndexSegmentInfo *) nil_chk([((OrgApacheLuceneIndexSegmentInfos *) nil_chk(infos)) infoWithInt:i]))->docCount_;
-    JreAssert(([((OrgApacheLuceneIndexSegmentInfo *) nil_chk([infos infoWithInt:i])) isEqual:[merge->segments_ getWithInt:j]]), (@"org/apache/lucene/index/MergeDocIDRemapper.java:48 condition failed: assert infos.info(i).equals(merge.segments.get(j));"));
+    JreAssert([((OrgApacheLuceneIndexSegmentInfo *) nil_chk([infos infoWithInt:i])) isEqual:[merge->segments_ getWithInt:j]], @"org/apache/lucene/index/MergeDocIDRemapper.java:48 condition failed: assert infos.info(i).equals(merge.segments.get(j));");
   }
   self->maxDocID_ = self->minDocID_ + numDocs;
   self->starts_ = [IOSIntArray newArrayWithLength:docMaps->size_];
@@ -99,7 +99,7 @@ void OrgApacheLuceneIndexMergeDocIDRemapper_initWithOrgApacheLuceneIndexSegmentI
     *IOSIntArray_GetRef(nil_chk(self->newStarts_), i) = IOSIntArray_Get(self->newStarts_, i - 1) + lastDocCount - IOSIntArray_Get(nil_chk(delCounts), i - 1);
   }
   self->docShift_ = numDocs - mergedDocCount;
-  JreAssert((self->docShift_ == self->maxDocID_ - (IOSIntArray_Get(self->newStarts_, docMaps->size_ - 1) + ((OrgApacheLuceneIndexSegmentInfo *) nil_chk([merge->segments_ getWithInt:docMaps->size_ - 1]))->docCount_ - IOSIntArray_Get(nil_chk(delCounts), docMaps->size_ - 1))), (@"org/apache/lucene/index/MergeDocIDRemapper.java:72 condition failed: assert docShift == maxDocID - (newStarts[docMaps.length-1] + merge.segments.get(docMaps.length-1).docCount - delCounts[docMaps.length-1]);"));
+  JreAssert(self->docShift_ == self->maxDocID_ - (IOSIntArray_Get(self->newStarts_, docMaps->size_ - 1) + ((OrgApacheLuceneIndexSegmentInfo *) nil_chk([merge->segments_ getWithInt:docMaps->size_ - 1]))->docCount_ - IOSIntArray_Get(nil_chk(delCounts), docMaps->size_ - 1)), @"org/apache/lucene/index/MergeDocIDRemapper.java:72 condition failed: assert docShift == maxDocID - (newStarts[docMaps.length-1] + merge.segments.get(docMaps.length-1).docCount - delCounts[docMaps.length-1]);");
 }
 
 OrgApacheLuceneIndexMergeDocIDRemapper *new_OrgApacheLuceneIndexMergeDocIDRemapper_initWithOrgApacheLuceneIndexSegmentInfos_withIntArray2_withIntArray_withOrgApacheLuceneIndexMergePolicy_OneMerge_withInt_(OrgApacheLuceneIndexSegmentInfos *infos, IOSObjectArray *docMaps, IOSIntArray *delCounts, OrgApacheLuceneIndexMergePolicy_OneMerge *merge, jint mergedDocCount) {

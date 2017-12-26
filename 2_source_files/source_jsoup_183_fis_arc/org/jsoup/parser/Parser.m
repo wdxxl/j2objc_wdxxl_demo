@@ -30,7 +30,7 @@
 J2OBJC_FIELD_SETTER(OrgJsoupParserParser, treeBuilder_, OrgJsoupParserTreeBuilder *)
 J2OBJC_FIELD_SETTER(OrgJsoupParserParser, errors_, OrgJsoupParserParseErrorList *)
 
-inline jint OrgJsoupParserParser_get_DEFAULT_MAX_ERRORS();
+inline jint OrgJsoupParserParser_get_DEFAULT_MAX_ERRORS(void);
 #define OrgJsoupParserParser_DEFAULT_MAX_ERRORS 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParser, DEFAULT_MAX_ERRORS, jint)
 

@@ -30,11 +30,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilNamedThreadFactory, group_, JavaLangThrea
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilNamedThreadFactory, threadNumber_, JavaUtilConcurrentAtomicAtomicInteger *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilNamedThreadFactory, threadNamePrefix_, NSString *)
 
-inline JavaUtilConcurrentAtomicAtomicInteger *OrgApacheLuceneUtilNamedThreadFactory_get_threadPoolNumber();
+inline JavaUtilConcurrentAtomicAtomicInteger *OrgApacheLuceneUtilNamedThreadFactory_get_threadPoolNumber(void);
 static JavaUtilConcurrentAtomicAtomicInteger *OrgApacheLuceneUtilNamedThreadFactory_threadPoolNumber;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilNamedThreadFactory, threadPoolNumber, JavaUtilConcurrentAtomicAtomicInteger *)
 
-inline NSString *OrgApacheLuceneUtilNamedThreadFactory_get_NAME_PATTERN();
+inline NSString *OrgApacheLuceneUtilNamedThreadFactory_get_NAME_PATTERN(void);
 static NSString *OrgApacheLuceneUtilNamedThreadFactory_NAME_PATTERN = @"%s-%d-thread";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilNamedThreadFactory, NAME_PATTERN, NSString *)
 

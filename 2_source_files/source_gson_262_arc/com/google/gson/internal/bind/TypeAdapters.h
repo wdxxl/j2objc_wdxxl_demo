@@ -46,262 +46,262 @@
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternalBindTypeAdapters)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CLASS();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CLASS(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_CLASS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CLASS, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CLASS_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CLASS_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_CLASS_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CLASS_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BIT_SET();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BIT_SET(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_BIT_SET;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BIT_SET, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_BIT_SET_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_BIT_SET_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_BIT_SET_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BIT_SET_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BOOLEAN();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BOOLEAN(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_BOOLEAN;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BOOLEAN, ComGoogleGsonTypeAdapter *)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BOOLEAN_AS_STRING();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BOOLEAN_AS_STRING(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_BOOLEAN_AS_STRING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BOOLEAN_AS_STRING, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_BOOLEAN_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_BOOLEAN_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_BOOLEAN_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BOOLEAN_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BYTE();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BYTE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_BYTE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BYTE, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_BYTE_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_BYTE_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_BYTE_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BYTE_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_SHORT();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_SHORT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_SHORT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, SHORT, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_SHORT_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_SHORT_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_SHORT_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, SHORT_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_INTEGER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_INTEGER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_INTEGER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, INTEGER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_INTEGER_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_INTEGER_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_INTEGER_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, INTEGER_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_ATOMIC_INTEGER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ATOMIC_INTEGER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_ATOMIC_INTEGER_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ATOMIC_INTEGER_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_BOOLEAN();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_BOOLEAN(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_ATOMIC_BOOLEAN;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ATOMIC_BOOLEAN, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_BOOLEAN_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_BOOLEAN_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_ATOMIC_BOOLEAN_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ATOMIC_BOOLEAN_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER_ARRAY();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER_ARRAY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_ATOMIC_INTEGER_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ATOMIC_INTEGER_ARRAY, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER_ARRAY_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ATOMIC_INTEGER_ARRAY_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_ATOMIC_INTEGER_ARRAY_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ATOMIC_INTEGER_ARRAY_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_LONG();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_LONG(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_LONG;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, LONG, ComGoogleGsonTypeAdapter *)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_FLOAT();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_FLOAT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_FLOAT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, FLOAT, ComGoogleGsonTypeAdapter *)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_DOUBLE();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_DOUBLE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_DOUBLE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, DOUBLE, ComGoogleGsonTypeAdapter *)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_NUMBER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_NUMBER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_NUMBER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, NUMBER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_NUMBER_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_NUMBER_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_NUMBER_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, NUMBER_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CHARACTER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CHARACTER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_CHARACTER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CHARACTER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CHARACTER_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CHARACTER_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_CHARACTER_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CHARACTER_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_STRING();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_STRING(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_STRING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, STRING, ComGoogleGsonTypeAdapter *)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BIG_DECIMAL();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BIG_DECIMAL(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_BIG_DECIMAL;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BIG_DECIMAL, ComGoogleGsonTypeAdapter *)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BIG_INTEGER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_BIG_INTEGER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_BIG_INTEGER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, BIG_INTEGER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_STRING_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_STRING_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_STRING_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, STRING_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUILDER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUILDER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_STRING_BUILDER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, STRING_BUILDER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUILDER_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUILDER_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_STRING_BUILDER_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, STRING_BUILDER_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUFFER();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUFFER(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_STRING_BUFFER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, STRING_BUFFER, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUFFER_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_STRING_BUFFER_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_STRING_BUFFER_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, STRING_BUFFER_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_URL();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_URL(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_URL;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, URL, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_URL_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_URL_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_URL_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, URL_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_URI();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_URI(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_URI;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, URI, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_URI_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_URI_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_URI_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, URI_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_INET_ADDRESS();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_INET_ADDRESS(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_INET_ADDRESS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, INET_ADDRESS, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_INET_ADDRESS_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_INET_ADDRESS_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_INET_ADDRESS_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, INET_ADDRESS_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_UUID();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_UUID(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_UUID;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, UUID, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_UUID_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_UUID_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_UUID_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, UUID_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CURRENCY();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CURRENCY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_CURRENCY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CURRENCY, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CURRENCY_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CURRENCY_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_CURRENCY_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CURRENCY_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_TIMESTAMP_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_TIMESTAMP_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_TIMESTAMP_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, TIMESTAMP_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CALENDAR();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_CALENDAR(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_CALENDAR;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CALENDAR, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CALENDAR_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_CALENDAR_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_CALENDAR_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, CALENDAR_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_LOCALE();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_LOCALE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_LOCALE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, LOCALE, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_LOCALE_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_LOCALE_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_LOCALE_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, LOCALE_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_JSON_ELEMENT();
+inline ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_get_JSON_ELEMENT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT ComGoogleGsonTypeAdapter *ComGoogleGsonInternalBindTypeAdapters_JSON_ELEMENT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, JSON_ELEMENT, ComGoogleGsonTypeAdapter *)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_JSON_ELEMENT_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_JSON_ELEMENT_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_JSON_ELEMENT_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, JSON_ELEMENT_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ENUM_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_get_ENUM_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindTypeAdapters_ENUM_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindTypeAdapters, ENUM_FACTORY, id<ComGoogleGsonTypeAdapterFactory>)

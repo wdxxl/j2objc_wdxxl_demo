@@ -48,6 +48,10 @@
 
 - (void)setInfoStreamWithJavaIoPrintStream:(JavaIoPrintStream *)infoStream;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexBufferedDeletesStream)
@@ -80,6 +84,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexBufferedDeletesStream)
                        withLong:(jlong)gen
                withJavaUtilList:(id<JavaUtilList>)allDeleted;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexBufferedDeletesStream_ApplyDeletesResult)
@@ -111,6 +119,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexBufferedDeletesStream_ApplyDelete
 
 - (instancetype)initWithOrgApacheLuceneSearchQuery:(OrgApacheLuceneSearchQuery *)query
                                            withInt:(jint)limit;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -83,11 +83,15 @@
 
 - (instancetype)initWithOrgApacheLuceneAnalysisCharArrayMap:(OrgApacheLuceneAnalysisCharArrayMap *)map;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisCharArraySet)
 
-inline OrgApacheLuceneAnalysisCharArraySet *OrgApacheLuceneAnalysisCharArraySet_get_EMPTY_SET();
+inline OrgApacheLuceneAnalysisCharArraySet *OrgApacheLuceneAnalysisCharArraySet_get_EMPTY_SET(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneAnalysisCharArraySet *OrgApacheLuceneAnalysisCharArraySet_EMPTY_SET;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisCharArraySet, EMPTY_SET, OrgApacheLuceneAnalysisCharArraySet *)
@@ -157,6 +161,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArraySet)
 - (IOSCharArray *)nextCharArray;
 
 - (void)remove;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

@@ -66,6 +66,10 @@
 
 - (instancetype)init;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexByteSliceReader)
@@ -75,9 +79,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexByteSliceReader, buffer_, IOSByteArray *
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexByteSliceReader_init(OrgApacheLuceneIndexByteSliceReader *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexByteSliceReader *new_OrgApacheLuceneIndexByteSliceReader_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexByteSliceReader *new_OrgApacheLuceneIndexByteSliceReader_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexByteSliceReader *create_OrgApacheLuceneIndexByteSliceReader_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexByteSliceReader *create_OrgApacheLuceneIndexByteSliceReader_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexByteSliceReader)
 

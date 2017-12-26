@@ -6,6 +6,7 @@
 #include "J2ObjC_source.h"
 #include "com/google/gson/JsonParseException.h"
 #include "java/lang/RuntimeException.h"
+#include "java/lang/Throwable.h"
 
 @implementation ComGoogleGsonJsonParseException
 
@@ -15,13 +16,13 @@
 }
 
 - (instancetype)initWithNSString:(NSString *)msg
-                 withNSException:(NSException *)cause {
-  ComGoogleGsonJsonParseException_initWithNSString_withNSException_(self, msg, cause);
+           withJavaLangThrowable:(JavaLangThrowable *)cause {
+  ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(self, msg, cause);
   return self;
 }
 
-- (instancetype)initWithNSException:(NSException *)cause {
-  ComGoogleGsonJsonParseException_initWithNSException_(self, cause);
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)cause {
+  ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(self, cause);
   return self;
 }
 
@@ -34,13 +35,13 @@
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
   methods[0].selector = @selector(initWithNSString:);
-  methods[1].selector = @selector(initWithNSString:withNSException:);
-  methods[2].selector = @selector(initWithNSException:);
+  methods[1].selector = @selector(initWithNSString:withJavaLangThrowable:);
+  methods[2].selector = @selector(initWithJavaLangThrowable:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
     { "serialVersionUID", "J", .constantValue.asLong = ComGoogleGsonJsonParseException_serialVersionUID, 0x18, -1, -1, -1, -1 },
   };
-  static const void *ptrTable[] = { "LNSString;", "LNSString;LNSException;", "LNSException;" };
+  static const void *ptrTable[] = { "LNSString;", "LNSString;LJavaLangThrowable;", "LJavaLangThrowable;" };
   static const J2ObjcClassInfo _ComGoogleGsonJsonParseException = { "JsonParseException", "com.google.gson", ptrTable, methods, fields, 7, 0x1, 3, 1, -1, -1, -1, -1, -1 };
   return &_ComGoogleGsonJsonParseException;
 }
@@ -59,28 +60,28 @@ ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWith
   J2OBJC_CREATE_IMPL(ComGoogleGsonJsonParseException, initWithNSString_, msg)
 }
 
-void ComGoogleGsonJsonParseException_initWithNSString_withNSException_(ComGoogleGsonJsonParseException *self, NSString *msg, NSException *cause) {
-  JavaLangRuntimeException_initWithNSString_withNSException_(self, msg, cause);
+void ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(ComGoogleGsonJsonParseException *self, NSString *msg, JavaLangThrowable *cause) {
+  JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_(self, msg, cause);
 }
 
-ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(NSString *msg, NSException *cause) {
-  J2OBJC_NEW_IMPL(ComGoogleGsonJsonParseException, initWithNSString_withNSException_, msg, cause)
+ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(ComGoogleGsonJsonParseException, initWithNSString_withJavaLangThrowable_, msg, cause)
 }
 
-ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSString_withNSException_(NSString *msg, NSException *cause) {
-  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonParseException, initWithNSString_withNSException_, msg, cause)
+ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonParseException, initWithNSString_withJavaLangThrowable_, msg, cause)
 }
 
-void ComGoogleGsonJsonParseException_initWithNSException_(ComGoogleGsonJsonParseException *self, NSException *cause) {
-  JavaLangRuntimeException_initWithNSException_(self, cause);
+void ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(ComGoogleGsonJsonParseException *self, JavaLangThrowable *cause) {
+  JavaLangRuntimeException_initWithJavaLangThrowable_(self, cause);
 }
 
-ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithNSException_(NSException *cause) {
-  J2OBJC_NEW_IMPL(ComGoogleGsonJsonParseException, initWithNSException_, cause)
+ComGoogleGsonJsonParseException *new_ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_NEW_IMPL(ComGoogleGsonJsonParseException, initWithJavaLangThrowable_, cause)
 }
 
-ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithNSException_(NSException *cause) {
-  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonParseException, initWithNSException_, cause)
+ComGoogleGsonJsonParseException *create_ComGoogleGsonJsonParseException_initWithJavaLangThrowable_(JavaLangThrowable *cause) {
+  J2OBJC_CREATE_IMPL(ComGoogleGsonJsonParseException, initWithJavaLangThrowable_, cause)
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(ComGoogleGsonJsonParseException)

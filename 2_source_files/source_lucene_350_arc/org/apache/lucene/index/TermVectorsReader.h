@@ -81,35 +81,39 @@ withOrgApacheLuceneIndexTermVectorMapper:(OrgApacheLuceneIndexTermVectorMapper *
 
 - (jint)size;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermVectorsReader)
 
-inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_VERSION();
+inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_VERSION(void);
 #define OrgApacheLuceneIndexTermVectorsReader_FORMAT_VERSION 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, FORMAT_VERSION, jint)
 
-inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_VERSION2();
+inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_VERSION2(void);
 #define OrgApacheLuceneIndexTermVectorsReader_FORMAT_VERSION2 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, FORMAT_VERSION2, jint)
 
-inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_UTF8_LENGTH_IN_BYTES();
+inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_UTF8_LENGTH_IN_BYTES(void);
 #define OrgApacheLuceneIndexTermVectorsReader_FORMAT_UTF8_LENGTH_IN_BYTES 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, FORMAT_UTF8_LENGTH_IN_BYTES, jint)
 
-inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_CURRENT();
+inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_CURRENT(void);
 #define OrgApacheLuceneIndexTermVectorsReader_FORMAT_CURRENT 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, FORMAT_CURRENT, jint)
 
-inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_SIZE();
+inline jint OrgApacheLuceneIndexTermVectorsReader_get_FORMAT_SIZE(void);
 #define OrgApacheLuceneIndexTermVectorsReader_FORMAT_SIZE 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, FORMAT_SIZE, jint)
 
-inline jbyte OrgApacheLuceneIndexTermVectorsReader_get_STORE_POSITIONS_WITH_TERMVECTOR();
+inline jbyte OrgApacheLuceneIndexTermVectorsReader_get_STORE_POSITIONS_WITH_TERMVECTOR(void);
 #define OrgApacheLuceneIndexTermVectorsReader_STORE_POSITIONS_WITH_TERMVECTOR 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, STORE_POSITIONS_WITH_TERMVECTOR, jbyte)
 
-inline jbyte OrgApacheLuceneIndexTermVectorsReader_get_STORE_OFFSET_WITH_TERMVECTOR();
+inline jbyte OrgApacheLuceneIndexTermVectorsReader_get_STORE_OFFSET_WITH_TERMVECTOR(void);
 #define OrgApacheLuceneIndexTermVectorsReader_STORE_OFFSET_WITH_TERMVECTOR 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexTermVectorsReader, STORE_OFFSET_WITH_TERMVECTOR, jbyte)
 
@@ -166,15 +170,20 @@ withOrgApacheLuceneIndexTermVectorOffsetInfoArray:(IOSObjectArray *)offsets
 
 - (instancetype)init;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithBoolean:(jboolean)arg0
+                    withBoolean:(jboolean)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexParallelArrayTermVectorMapper)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexParallelArrayTermVectorMapper_init(OrgApacheLuceneIndexParallelArrayTermVectorMapper *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexParallelArrayTermVectorMapper *new_OrgApacheLuceneIndexParallelArrayTermVectorMapper_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexParallelArrayTermVectorMapper *new_OrgApacheLuceneIndexParallelArrayTermVectorMapper_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexParallelArrayTermVectorMapper *create_OrgApacheLuceneIndexParallelArrayTermVectorMapper_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexParallelArrayTermVectorMapper *create_OrgApacheLuceneIndexParallelArrayTermVectorMapper_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexParallelArrayTermVectorMapper)
 

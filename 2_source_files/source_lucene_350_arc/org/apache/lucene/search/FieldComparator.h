@@ -176,6 +176,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_NumericComparato
 withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_Parser>)parser
            withJavaLangByte:(JavaLangByte *)missingValue;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSNumber:(NSNumber *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldComparator_ByteComparator)
@@ -218,6 +223,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_ByteComparator)
 #pragma mark Package-Private
 
 - (instancetype)initWithInt:(jint)numHits;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -266,6 +275,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_DocComparator)
 withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_Parser>)parser
          withJavaLangDouble:(JavaLangDouble *)missingValue;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSNumber:(NSNumber *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldComparator_DoubleComparator)
@@ -312,6 +326,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_DoubleComparator
                withNSString:(NSString *)field
 withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_Parser>)parser
           withJavaLangFloat:(JavaLangFloat *)missingValue;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSNumber:(NSNumber *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -360,6 +379,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_FloatComparator)
 withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_Parser>)parser
         withJavaLangInteger:(JavaLangInteger *)missingValue;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSNumber:(NSNumber *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldComparator_IntComparator)
@@ -406,6 +430,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_IntComparator)
                withNSString:(NSString *)field
 withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_Parser>)parser
            withJavaLangLong:(JavaLangLong *)missingValue;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSNumber:(NSNumber *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -456,6 +485,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_LongComparator)
 
 - (instancetype)initWithInt:(jint)numHits;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldComparator_RelevanceComparator)
@@ -502,6 +535,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_RelevanceCompara
                withNSString:(NSString *)field
 withOrgApacheLuceneSearchFieldCache_Parser:(id<OrgApacheLuceneSearchFieldCache_Parser>)parser
           withJavaLangShort:(JavaLangShort *)missingValue;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+                    withNSNumber:(NSNumber *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -554,6 +592,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_ShortComparator)
 - (instancetype)initWithInt:(jint)numHits
                withNSString:(NSString *)field
          withJavaUtilLocale:(JavaUtilLocale *)locale;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -610,6 +652,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_StringComparator
 
 - (NSString *)valueWithInt:(jint)slot;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldComparator_StringOrdValComparator)
@@ -655,6 +701,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldComparator_StringOrdValComp
 
 - (instancetype)initWithInt:(jint)numHits
                withNSString:(NSString *)field;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

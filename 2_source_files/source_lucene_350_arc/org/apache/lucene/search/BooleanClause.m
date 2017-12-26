@@ -25,7 +25,7 @@ __attribute__((unused)) static void OrgApacheLuceneSearchBooleanClause_Occur_ini
 
 __attribute__((unused)) static OrgApacheLuceneSearchBooleanClause_Occur *new_OrgApacheLuceneSearchBooleanClause_Occur_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgApacheLuceneSearchBooleanClause_Occur_1 : OrgApacheLuceneSearchBooleanClause_Occur < NSCopying >
+@interface OrgApacheLuceneSearchBooleanClause_Occur_1 : OrgApacheLuceneSearchBooleanClause_Occur
 
 - (NSString *)description;
 
@@ -37,7 +37,7 @@ __attribute__((unused)) static void OrgApacheLuceneSearchBooleanClause_Occur_1_i
 
 __attribute__((unused)) static OrgApacheLuceneSearchBooleanClause_Occur_1 *new_OrgApacheLuceneSearchBooleanClause_Occur_1_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgApacheLuceneSearchBooleanClause_Occur_2 : OrgApacheLuceneSearchBooleanClause_Occur < NSCopying >
+@interface OrgApacheLuceneSearchBooleanClause_Occur_2 : OrgApacheLuceneSearchBooleanClause_Occur
 
 - (NSString *)description;
 
@@ -49,7 +49,7 @@ __attribute__((unused)) static void OrgApacheLuceneSearchBooleanClause_Occur_2_i
 
 __attribute__((unused)) static OrgApacheLuceneSearchBooleanClause_Occur_2 *new_OrgApacheLuceneSearchBooleanClause_Occur_2_initWithNSString_withInt_(NSString *__name, jint __ordinal) NS_RETURNS_RETAINED;
 
-@interface OrgApacheLuceneSearchBooleanClause_Occur_3 : OrgApacheLuceneSearchBooleanClause_Occur < NSCopying >
+@interface OrgApacheLuceneSearchBooleanClause_Occur_3 : OrgApacheLuceneSearchBooleanClause_Occur
 
 - (NSString *)description;
 
@@ -174,10 +174,6 @@ OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occ
   return OrgApacheLuceneSearchBooleanClause_Occur_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneSearchBooleanClause_Occur;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -200,9 +196,9 @@ OrgApacheLuceneSearchBooleanClause_Occur *OrgApacheLuceneSearchBooleanClause_Occ
 
 + (void)initialize {
   if (self == [OrgApacheLuceneSearchBooleanClause_Occur class]) {
-    JreEnum(OrgApacheLuceneSearchBooleanClause_Occur, MUST) = new_OrgApacheLuceneSearchBooleanClause_Occur_1_initWithNSString_withInt_(@"MUST", 0);
-    JreEnum(OrgApacheLuceneSearchBooleanClause_Occur, SHOULD) = new_OrgApacheLuceneSearchBooleanClause_Occur_2_initWithNSString_withInt_(@"SHOULD", 1);
-    JreEnum(OrgApacheLuceneSearchBooleanClause_Occur, MUST_NOT) = new_OrgApacheLuceneSearchBooleanClause_Occur_3_initWithNSString_withInt_(@"MUST_NOT", 2);
+    JreEnum(OrgApacheLuceneSearchBooleanClause_Occur, MUST) = new_OrgApacheLuceneSearchBooleanClause_Occur_1_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneSearchBooleanClause_Occur, SHOULD) = new_OrgApacheLuceneSearchBooleanClause_Occur_2_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneSearchBooleanClause_Occur, MUST_NOT) = new_OrgApacheLuceneSearchBooleanClause_Occur_3_initWithNSString_withInt_(@"", 2);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneSearchBooleanClause_Occur)
   }
 }

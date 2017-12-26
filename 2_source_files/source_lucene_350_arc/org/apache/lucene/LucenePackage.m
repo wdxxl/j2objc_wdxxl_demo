@@ -16,9 +16,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneLucenePackage_init(OrgApacheLuceneLucenePackage *self);
 
-__attribute__((unused)) static OrgApacheLuceneLucenePackage *new_OrgApacheLuceneLucenePackage_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneLucenePackage *new_OrgApacheLuceneLucenePackage_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneLucenePackage *create_OrgApacheLuceneLucenePackage_init();
+__attribute__((unused)) static OrgApacheLuceneLucenePackage *create_OrgApacheLuceneLucenePackage_init(void);
 
 @implementation OrgApacheLuceneLucenePackage
 

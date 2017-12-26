@@ -29,7 +29,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecStringEncoderComparator, stringEncoder_, id<OrgApacheCommonsCodecStringEncoder>)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecStringEncoderComparator__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecStringEncoderComparator__Annotations$0(void);
 
 @implementation OrgApacheCommonsCodecStringEncoderComparator
 

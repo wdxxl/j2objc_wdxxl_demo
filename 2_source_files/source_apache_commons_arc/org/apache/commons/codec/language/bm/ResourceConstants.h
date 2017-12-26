@@ -26,31 +26,31 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageBmResourceConstants)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_CMT();
+inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_CMT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_CMT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmResourceConstants, CMT, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_ENCODING();
+inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_ENCODING(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_ENCODING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmResourceConstants, ENCODING, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_EXT_CMT_END();
+inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_EXT_CMT_END(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_EXT_CMT_END;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmResourceConstants, EXT_CMT_END, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_EXT_CMT_START();
+inline NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_get_EXT_CMT_START(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageBmResourceConstants_EXT_CMT_START;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmResourceConstants, EXT_CMT_START, NSString *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecLanguageBmResourceConstants_init(OrgApacheCommonsCodecLanguageBmResourceConstants *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmResourceConstants *new_OrgApacheCommonsCodecLanguageBmResourceConstants_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmResourceConstants *new_OrgApacheCommonsCodecLanguageBmResourceConstants_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmResourceConstants *create_OrgApacheCommonsCodecLanguageBmResourceConstants_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmResourceConstants *create_OrgApacheCommonsCodecLanguageBmResourceConstants_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheCommonsCodecLanguageBmResourceConstants)
 

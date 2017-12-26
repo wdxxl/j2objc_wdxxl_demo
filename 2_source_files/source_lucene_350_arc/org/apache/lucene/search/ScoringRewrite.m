@@ -40,9 +40,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchScoringRewrite_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchScoringRewrite_1_init(OrgApacheLuceneSearchScoringRewrite_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_1 *new_OrgApacheLuceneSearchScoringRewrite_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_1 *new_OrgApacheLuceneSearchScoringRewrite_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_1 *create_OrgApacheLuceneSearchScoringRewrite_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_1 *create_OrgApacheLuceneSearchScoringRewrite_1_init(void);
 
 @interface OrgApacheLuceneSearchScoringRewrite_2 : OrgApacheLuceneSearchMultiTermQuery_RewriteMethod
 
@@ -59,9 +59,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchScoringRewrite_2)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchScoringRewrite_2_init(OrgApacheLuceneSearchScoringRewrite_2 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_2 *new_OrgApacheLuceneSearchScoringRewrite_2_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_2 *new_OrgApacheLuceneSearchScoringRewrite_2_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_2 *create_OrgApacheLuceneSearchScoringRewrite_2_init();
+__attribute__((unused)) static OrgApacheLuceneSearchScoringRewrite_2 *create_OrgApacheLuceneSearchScoringRewrite_2_init(void);
 
 @interface OrgApacheLuceneSearchScoringRewrite_3 : NSObject < OrgApacheLuceneSearchTermCollectingRewrite_TermCollector > {
  @public

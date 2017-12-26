@@ -28,7 +28,9 @@
 @class IOSByteArray;
 @class JavaIoReader;
 @class OrgApacheLuceneAnalysisTokenStream;
+@class OrgApacheLuceneDocumentField_Index;
 @class OrgApacheLuceneDocumentField_Store;
+@class OrgApacheLuceneDocumentField_TermVector;
 @class OrgApacheLuceneDocumentNumericField_DataType;
 
 @interface OrgApacheLuceneDocumentNumericField : OrgApacheLuceneDocumentAbstractField
@@ -70,6 +72,15 @@ withOrgApacheLuceneDocumentField_Store:(OrgApacheLuceneDocumentField_Store *)sto
 - (NSString *)stringValue;
 
 - (OrgApacheLuceneAnalysisTokenStream *)tokenStreamValue;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+withOrgApacheLuceneDocumentField_Store:(OrgApacheLuceneDocumentField_Store *)arg1
+withOrgApacheLuceneDocumentField_Index:(OrgApacheLuceneDocumentField_Index *)arg2
+withOrgApacheLuceneDocumentField_TermVector:(OrgApacheLuceneDocumentField_TermVector *)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -119,17 +130,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentNumericField_DataType_Enum) {
   OrgApacheLuceneDocumentNumericField_DataType_Enum_DOUBLE = 3,
 };
 
-@interface OrgApacheLuceneDocumentNumericField_DataType : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneDocumentNumericField_DataType : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneDocumentNumericField_DataType *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -138,19 +145,19 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentNumericField_DataType)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_values_[];
 
-inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_INT();
+inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_INT(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentNumericField_DataType, INT)
 
-inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_LONG();
+inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_LONG(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentNumericField_DataType, LONG)
 
-inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_FLOAT();
+inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_FLOAT(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentNumericField_DataType, FLOAT)
 
-inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_DOUBLE();
+inline OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_get_DOUBLE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentNumericField_DataType, DOUBLE)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentNumericField_DataType_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentNumericField_DataType_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentNumericField_DataType *OrgApacheLuceneDocumentNumericField_DataType_valueOfWithNSString_(NSString *name);
 

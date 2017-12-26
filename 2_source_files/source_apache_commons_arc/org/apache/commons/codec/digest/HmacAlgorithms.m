@@ -40,10 +40,6 @@ OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgori
   return OrgApacheCommonsCodecDigestHmacAlgorithms_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "LNSString;", 0x1, 0, -1, -1, -1, -1, -1 },
@@ -71,11 +67,11 @@ OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgori
 
 + (void)initialize {
   if (self == [OrgApacheCommonsCodecDigestHmacAlgorithms class]) {
-    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_MD5) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacMD5", @"HMAC_MD5", 0);
-    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_1) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA1", @"HMAC_SHA_1", 1);
-    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_256) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA256", @"HMAC_SHA_256", 2);
-    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_384) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA384", @"HMAC_SHA_384", 3);
-    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_512) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA512", @"HMAC_SHA_512", 4);
+    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_MD5) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacMD5", @"", 0);
+    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_1) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA1", @"", 1);
+    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_256) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA256", @"", 2);
+    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_384) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA384", @"", 3);
+    JreEnum(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_512) = new_OrgApacheCommonsCodecDigestHmacAlgorithms_initWithNSString_withNSString_withInt_(@"HmacSHA512", @"", 4);
     J2OBJC_SET_INITIALIZED(OrgApacheCommonsCodecDigestHmacAlgorithms)
   }
 }

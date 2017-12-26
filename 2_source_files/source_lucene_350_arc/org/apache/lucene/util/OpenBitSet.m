@@ -94,7 +94,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)fastGetWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:178 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:178 condition failed: assert index >= 0 && index < numBits;");
   jint i = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -110,7 +110,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)fastGetWithLong:(jlong)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:203 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:203 condition failed: assert index >= 0 && index < numBits;");
   jint i = (jint) (JreRShift64(index, 6));
   jint bit = (jint) index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -118,7 +118,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jint)getBitWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:227 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:227 condition failed: assert index >= 0 && index < numBits;");
   jint i = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   return ((jint) (JreURShift64(IOSLongArray_Get(nil_chk(bits_), i), bit))) & (jint) 0x01;
@@ -132,7 +132,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)fastSetWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:256 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:256 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -140,7 +140,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)fastSetWithLong:(jlong)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:267 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:267 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = (jint) (JreRShift64(index, 6));
   jint bit = (jint) index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -169,12 +169,12 @@ J2OBJC_IGNORE_DESIGNATED_END
     [self ensureCapacityWithLong:index + 1];
     wlen_ = wordNum + 1;
   }
-  JreAssert(((numBits_ = JavaLangMath_maxWithLong_withLong_(numBits_, index + 1)) >= 0), (@"org/apache/lucene/util/OpenBitSet.java:309 condition failed: assert (numBits = Math.max(numBits, index+1)) >= 0;"));
+  JreAssert((numBits_ = JavaLangMath_maxWithLong_withLong_(numBits_, index + 1)) >= 0, @"org/apache/lucene/util/OpenBitSet.java:309 condition failed: assert (numBits = Math.max(numBits, index+1)) >= 0;");
   return wordNum;
 }
 
 - (void)fastClearWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:318 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:318 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x03f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -182,7 +182,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)fastClearWithLong:(jlong)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:336 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:336 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = (jint) (JreRShift64(index, 6));
   jint bit = (jint) index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -242,7 +242,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)getAndSetWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:431 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:431 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -252,7 +252,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)getAndSetWithLong:(jlong)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:444 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:444 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = (jint) (JreRShift64(index, 6));
   jint bit = (jint) index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -262,7 +262,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)fastFlipWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:457 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:457 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -270,7 +270,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)fastFlipWithLong:(jlong)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:468 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:468 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = (jint) (JreRShift64(index, 6));
   jint bit = (jint) index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -285,7 +285,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)flipAndGetWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:487 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:487 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -294,7 +294,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)flipAndGetWithLong:(jlong)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/OpenBitSet.java:499 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/OpenBitSet.java:499 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = (jint) (JreRShift64(index, 6));
   jint bit = (jint) index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -435,7 +435,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return obs;
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -456,7 +456,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (void)union__WithOrgApacheLuceneUtilOpenBitSet:(OrgApacheLuceneUtilOpenBitSet *)other {
   jint newLen = JavaLangMath_maxWithInt_withInt_(wlen_, ((OrgApacheLuceneUtilOpenBitSet *) nil_chk(other))->wlen_);
   [self ensureCapacityWordsWithInt:newLen];
-  JreAssert(((numBits_ = JavaLangMath_maxWithLong_withLong_(other->numBits_, numBits_)) >= 0), (@"org/apache/lucene/util/OpenBitSet.java:760 condition failed: assert (numBits = Math.max(other.numBits, numBits)) >= 0;"));
+  JreAssert((numBits_ = JavaLangMath_maxWithLong_withLong_(other->numBits_, numBits_)) >= 0, @"org/apache/lucene/util/OpenBitSet.java:760 condition failed: assert (numBits = Math.max(other.numBits, numBits)) >= 0;");
   IOSLongArray *thisArr = self->bits_;
   IOSLongArray *otherArr = other->bits_;
   jint pos = JavaLangMath_minWithInt_withInt_(wlen_, other->wlen_);
@@ -481,7 +481,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (void)xor__WithOrgApacheLuceneUtilOpenBitSet:(OrgApacheLuceneUtilOpenBitSet *)other {
   jint newLen = JavaLangMath_maxWithInt_withInt_(wlen_, ((OrgApacheLuceneUtilOpenBitSet *) nil_chk(other))->wlen_);
   [self ensureCapacityWordsWithInt:newLen];
-  JreAssert(((numBits_ = JavaLangMath_maxWithLong_withLong_(other->numBits_, numBits_)) >= 0), (@"org/apache/lucene/util/OpenBitSet.java:789 condition failed: assert (numBits = Math.max(other.numBits, numBits)) >= 0;"));
+  JreAssert((numBits_ = JavaLangMath_maxWithLong_withLong_(other->numBits_, numBits_)) >= 0, @"org/apache/lucene/util/OpenBitSet.java:789 condition failed: assert (numBits = Math.max(other.numBits, numBits)) >= 0;");
   IOSLongArray *thisArr = self->bits_;
   IOSLongArray *otherArr = other->bits_;
   jint pos = JavaLangMath_minWithInt_withInt_(wlen_, other->wlen_);

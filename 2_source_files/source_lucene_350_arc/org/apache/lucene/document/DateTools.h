@@ -49,7 +49,7 @@ withOrgApacheLuceneDocumentDateTools_Resolution:(OrgApacheLuceneDocumentDateTool
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentDateTools)
 
-inline JavaUtilTimeZone *OrgApacheLuceneDocumentDateTools_get_GMT();
+inline JavaUtilTimeZone *OrgApacheLuceneDocumentDateTools_get_GMT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaUtilTimeZone *OrgApacheLuceneDocumentDateTools_GMT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneDocumentDateTools, GMT, JavaUtilTimeZone *)
@@ -90,7 +90,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentDateTools_Resolution_Enum) {
   OrgApacheLuceneDocumentDateTools_Resolution_Enum_MILLISECOND = 6,
 };
 
-@interface OrgApacheLuceneDocumentDateTools_Resolution : JavaLangEnum < NSCopying > {
+@interface OrgApacheLuceneDocumentDateTools_Resolution : JavaLangEnum {
  @public
   jint formatLen_;
   JavaTextSimpleDateFormat *format_;
@@ -104,10 +104,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentDateTools_Resolution_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentDateTools_Resolution)
@@ -115,30 +111,30 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentDateTools_Resolution)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_values_[];
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_YEAR();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_YEAR(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, YEAR)
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_MONTH();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_MONTH(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, MONTH)
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_DAY();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_DAY(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, DAY)
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_HOUR();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_HOUR(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, HOUR)
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_MINUTE();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_MINUTE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, MINUTE)
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_SECOND();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_SECOND(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, SECOND)
 
-inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_MILLISECOND();
+inline OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_get_MILLISECOND(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentDateTools_Resolution, MILLISECOND)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneDocumentDateTools_Resolution, format_, JavaTextSimpleDateFormat *)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentDateTools_Resolution_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentDateTools_Resolution_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentDateTools_Resolution *OrgApacheLuceneDocumentDateTools_Resolution_valueOfWithNSString_(NSString *name);
 

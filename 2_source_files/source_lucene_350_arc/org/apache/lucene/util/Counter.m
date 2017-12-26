@@ -24,9 +24,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilCounter_SerialCounter)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilCounter_SerialCounter_init(OrgApacheLuceneUtilCounter_SerialCounter *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilCounter_SerialCounter *new_OrgApacheLuceneUtilCounter_SerialCounter_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilCounter_SerialCounter *new_OrgApacheLuceneUtilCounter_SerialCounter_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilCounter_SerialCounter *create_OrgApacheLuceneUtilCounter_SerialCounter_init();
+__attribute__((unused)) static OrgApacheLuceneUtilCounter_SerialCounter *create_OrgApacheLuceneUtilCounter_SerialCounter_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilCounter_SerialCounter)
 
@@ -49,9 +49,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilCounter_AtomicCounter, count_, JavaUtilCo
 
 __attribute__((unused)) static void OrgApacheLuceneUtilCounter_AtomicCounter_init(OrgApacheLuceneUtilCounter_AtomicCounter *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilCounter_AtomicCounter *new_OrgApacheLuceneUtilCounter_AtomicCounter_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilCounter_AtomicCounter *new_OrgApacheLuceneUtilCounter_AtomicCounter_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilCounter_AtomicCounter *create_OrgApacheLuceneUtilCounter_AtomicCounter_init();
+__attribute__((unused)) static OrgApacheLuceneUtilCounter_AtomicCounter *create_OrgApacheLuceneUtilCounter_AtomicCounter_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilCounter_AtomicCounter)
 

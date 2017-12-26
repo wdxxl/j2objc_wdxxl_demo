@@ -38,6 +38,10 @@
 
 #pragma mark Package-Private
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexPrefixCodedTerms)
@@ -81,6 +85,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexPrefixCodedTerms)
 
 - (instancetype)initWithOrgApacheLuceneIndexPrefixCodedTerms:(OrgApacheLuceneIndexPrefixCodedTerms *)outer$;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexPrefixCodedTerms_PrefixCodedTermsIterator)
@@ -122,9 +130,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexPrefixCodedTerms_Builder)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexPrefixCodedTerms_Builder_init(OrgApacheLuceneIndexPrefixCodedTerms_Builder *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexPrefixCodedTerms_Builder *new_OrgApacheLuceneIndexPrefixCodedTerms_Builder_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexPrefixCodedTerms_Builder *new_OrgApacheLuceneIndexPrefixCodedTerms_Builder_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexPrefixCodedTerms_Builder *create_OrgApacheLuceneIndexPrefixCodedTerms_Builder_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexPrefixCodedTerms_Builder *create_OrgApacheLuceneIndexPrefixCodedTerms_Builder_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexPrefixCodedTerms_Builder)
 

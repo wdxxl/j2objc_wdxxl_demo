@@ -51,9 +51,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternalBindDateTypeAdapter_1)
 
 __attribute__((unused)) static void ComGoogleGsonInternalBindDateTypeAdapter_1_init(ComGoogleGsonInternalBindDateTypeAdapter_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonInternalBindDateTypeAdapter_1 *new_ComGoogleGsonInternalBindDateTypeAdapter_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternalBindDateTypeAdapter_1 *new_ComGoogleGsonInternalBindDateTypeAdapter_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternalBindDateTypeAdapter_1 *create_ComGoogleGsonInternalBindDateTypeAdapter_1_init();
+__attribute__((unused)) static ComGoogleGsonInternalBindDateTypeAdapter_1 *create_ComGoogleGsonInternalBindDateTypeAdapter_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(ComGoogleGsonInternalBindDateTypeAdapter)
 
@@ -155,7 +155,7 @@ JavaUtilDate *ComGoogleGsonInternalBindDateTypeAdapter_deserializeToDateWithNSSt
       return ComGoogleGsonInternalBindUtilISO8601Utils_parseWithNSString_withJavaTextParsePosition_(json, new_JavaTextParsePosition_initWithInt_(0));
     }
     @catch (JavaTextParseException *e) {
-      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSString_withNSException_(json, e);
+      @throw new_ComGoogleGsonJsonSyntaxException_initWithNSString_withJavaLangThrowable_(json, e);
     }
   }
 }

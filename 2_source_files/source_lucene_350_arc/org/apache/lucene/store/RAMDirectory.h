@@ -76,9 +76,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreRAMDirectory, sizeInBytes_, JavaUtilConc
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreRAMDirectory_init(OrgApacheLuceneStoreRAMDirectory *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreRAMDirectory *new_OrgApacheLuceneStoreRAMDirectory_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneStoreRAMDirectory *new_OrgApacheLuceneStoreRAMDirectory_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreRAMDirectory *create_OrgApacheLuceneStoreRAMDirectory_init();
+FOUNDATION_EXPORT OrgApacheLuceneStoreRAMDirectory *create_OrgApacheLuceneStoreRAMDirectory_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreRAMDirectory_initWithOrgApacheLuceneStoreDirectory_(OrgApacheLuceneStoreRAMDirectory *self, OrgApacheLuceneStoreDirectory *dir);
 

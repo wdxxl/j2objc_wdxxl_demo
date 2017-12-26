@@ -197,16 +197,16 @@
 
 J2OBJC_STATIC_INIT(OrgJsoupParserHtmlTreeBuilder)
 
-inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagsSearchInScope();
+inline IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_get_TagsSearchInScope(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgJsoupParserHtmlTreeBuilder_TagsSearchInScope;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupParserHtmlTreeBuilder, TagsSearchInScope, IOSObjectArray *)
 
 FOUNDATION_EXPORT void OrgJsoupParserHtmlTreeBuilder_init(OrgJsoupParserHtmlTreeBuilder *self);
 
-FOUNDATION_EXPORT OrgJsoupParserHtmlTreeBuilder *new_OrgJsoupParserHtmlTreeBuilder_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupParserHtmlTreeBuilder *new_OrgJsoupParserHtmlTreeBuilder_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupParserHtmlTreeBuilder *create_OrgJsoupParserHtmlTreeBuilder_init();
+FOUNDATION_EXPORT OrgJsoupParserHtmlTreeBuilder *create_OrgJsoupParserHtmlTreeBuilder_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserHtmlTreeBuilder)
 

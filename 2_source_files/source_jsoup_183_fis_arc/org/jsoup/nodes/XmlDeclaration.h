@@ -21,6 +21,7 @@
 #include "org/jsoup/nodes/Node.h"
 
 @class JavaLangStringBuilder;
+@class OrgJsoupNodesAttributes;
 @class OrgJsoupNodesDocument_OutputSettings;
 
 @interface OrgJsoupNodesXmlDeclaration : OrgJsoupNodesNode
@@ -47,11 +48,20 @@
                                        withInt:(jint)depth
       withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *)outArg;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupNodesXmlDeclaration)
 
-inline NSString *OrgJsoupNodesXmlDeclaration_get_DECL_KEY();
+inline NSString *OrgJsoupNodesXmlDeclaration_get_DECL_KEY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgJsoupNodesXmlDeclaration_DECL_KEY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesXmlDeclaration, DECL_KEY, NSString *)

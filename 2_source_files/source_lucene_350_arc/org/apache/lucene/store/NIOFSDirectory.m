@@ -9,6 +9,7 @@
 #include "java/io/File.h"
 #include "java/io/IOException.h"
 #include "java/lang/OutOfMemoryError.h"
+#include "java/lang/Throwable.h"
 #include "java/nio/Buffer.h"
 #include "java/nio/ByteBuffer.h"
 #include "java/nio/channels/FileChannel.h"
@@ -125,7 +126,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneStoreNIOFSDirectory)
                           withInt:(jint)len {
   JavaNioByteBuffer *bb;
   if (b == buffer_ && 0 == offset) {
-    JreAssert((byteBuf_ != nil), (@"org/apache/lucene/store/NIOFSDirectory.java:122 condition failed: assert byteBuf != null;"));
+    JreAssert(byteBuf_ != nil, @"org/apache/lucene/store/NIOFSDirectory.java:122 condition failed: assert byteBuf != null;");
     (void) [((JavaNioByteBuffer *) nil_chk(byteBuf_)) clear];
     (void) [((JavaNioByteBuffer *) nil_chk(byteBuf_)) limitWithInt:len];
     bb = byteBuf_;
@@ -146,7 +147,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneStoreNIOFSDirectory)
   }
   jint readOffset = [((JavaNioByteBuffer *) nil_chk(bb)) position];
   jint readLength = [bb limit] - readOffset;
-  JreAssert((readLength == len), (@"org/apache/lucene/store/NIOFSDirectory.java:147 condition failed: assert readLength == len;"));
+  JreAssert(readLength == len, @"org/apache/lucene/store/NIOFSDirectory.java:147 condition failed: assert readLength == len;");
   jlong pos = [self getFilePointer];
   @try {
     while (readLength > 0) {
@@ -169,12 +170,12 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneStoreNIOFSDirectory)
   }
   @catch (JavaLangOutOfMemoryError *e) {
     JavaLangOutOfMemoryError *outOfMemoryError = new_JavaLangOutOfMemoryError_initWithNSString_(JreStrcat("$IC", @"OutOfMemoryError likely caused by the Sun VM Bug described in https://issues.apache.org/jira/browse/LUCENE-1566; try calling FSDirectory.setReadChunkSize with a value smaller than the current chunk size (", chunkSize_, ')'));
-    (void) [outOfMemoryError initCauseWithNSException:e];
+    (void) [outOfMemoryError initCauseWithJavaLangThrowable:e];
     @throw outOfMemoryError;
   }
   @catch (JavaIoIOException *ioe) {
     JavaIoIOException *newIOE = new_JavaIoIOException_initWithNSString_(JreStrcat("$$@", [ioe getMessage], @": ", self));
-    (void) [newIOE initCauseWithNSException:ioe];
+    (void) [newIOE initCauseWithJavaLangThrowable:ioe];
     @throw newIOE;
   }
 }

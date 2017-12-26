@@ -66,6 +66,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy)
 #if !defined (OrgApacheLuceneIndexMergePolicy_OneMerge_) && (INCLUDE_ALL_OrgApacheLuceneIndexMergePolicy || defined(INCLUDE_OrgApacheLuceneIndexMergePolicy_OneMerge))
 #define OrgApacheLuceneIndexMergePolicy_OneMerge_
 
+@class JavaLangThrowable;
 @class OrgApacheLuceneIndexSegmentInfo;
 @class OrgApacheLuceneStoreDirectory;
 @protocol JavaUtilList;
@@ -83,7 +84,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy)
   id<JavaUtilList> segments_;
   jint totalDocCount_;
   jboolean aborted_;
-  NSException *error_;
+  JavaLangThrowable *error_;
   jboolean paused_;
 }
 
@@ -107,12 +108,15 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy)
 
 - (void)checkAbortedWithOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir;
 
-- (NSException *)getException;
+- (JavaLangThrowable *)getException;
 
 - (jboolean)isAborted;
 
-- (void)setExceptionWithNSException:(NSException *)error;
-#define setExceptionWithJavaLangThrowable setExceptionWithNSException
+- (void)setExceptionWithJavaLangThrowable:(JavaLangThrowable *)error;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -122,7 +126,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_OneMerge, info_, OrgApacheLu
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_OneMerge, readers_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_OneMerge, readerClones_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_OneMerge, segments_, id<JavaUtilList>)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_OneMerge, error_, NSException *)
+J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_OneMerge, error_, JavaLangThrowable *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexMergePolicy_OneMerge_initWithJavaUtilList_(OrgApacheLuceneIndexMergePolicy_OneMerge *self, id<JavaUtilList> segments);
 
@@ -162,9 +166,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexMergePolicy_MergeSpecification, merges_,
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexMergePolicy_MergeSpecification_init(OrgApacheLuceneIndexMergePolicy_MergeSpecification *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeSpecification *new_OrgApacheLuceneIndexMergePolicy_MergeSpecification_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeSpecification *new_OrgApacheLuceneIndexMergePolicy_MergeSpecification_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeSpecification *create_OrgApacheLuceneIndexMergePolicy_MergeSpecification_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeSpecification *create_OrgApacheLuceneIndexMergePolicy_MergeSpecification_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy_MergeSpecification)
 
@@ -177,6 +181,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy_MergeSpecification)
 #define INCLUDE_JavaLangRuntimeException 1
 #include "java/lang/RuntimeException.h"
 
+@class JavaLangThrowable;
 @class OrgApacheLuceneStoreDirectory;
 
 @interface OrgApacheLuceneIndexMergePolicy_MergeException : JavaLangRuntimeException
@@ -186,11 +191,26 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy_MergeSpecification)
 - (instancetype)initWithNSString:(NSString *)message
 withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir;
 
-- (instancetype)initWithNSException:(NSException *)exc
-  withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir;
-#define initWithJavaLangThrowable initWithNSException
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)exc
+        withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir;
 
 - (OrgApacheLuceneStoreDirectory *)getDirectory;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
 
 @end
 
@@ -202,11 +222,11 @@ FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeException *new_OrgApacheL
 
 FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeException *create_OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSString_withOrgApacheLuceneStoreDirectory_(NSString *message, OrgApacheLuceneStoreDirectory *dir);
 
-FOUNDATION_EXPORT void OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(OrgApacheLuceneIndexMergePolicy_MergeException *self, NSException *exc, OrgApacheLuceneStoreDirectory *dir);
+FOUNDATION_EXPORT void OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(OrgApacheLuceneIndexMergePolicy_MergeException *self, JavaLangThrowable *exc, OrgApacheLuceneStoreDirectory *dir);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeException *new_OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(NSException *exc, OrgApacheLuceneStoreDirectory *dir) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeException *new_OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(JavaLangThrowable *exc, OrgApacheLuceneStoreDirectory *dir) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeException *create_OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(NSException *exc, OrgApacheLuceneStoreDirectory *dir);
+FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeException *create_OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(JavaLangThrowable *exc, OrgApacheLuceneStoreDirectory *dir);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy_MergeException)
 
@@ -219,6 +239,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy_MergeException)
 #define INCLUDE_JavaIoIOException 1
 #include "java/io/IOException.h"
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneIndexMergePolicy_MergeAbortedException : JavaIoIOException
 
 #pragma mark Public
@@ -227,15 +249,22 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexMergePolicy_MergeException)
 
 - (instancetype)initWithNSString:(NSString *)message;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexMergePolicy_MergeAbortedException)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexMergePolicy_MergeAbortedException_init(OrgApacheLuceneIndexMergePolicy_MergeAbortedException *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeAbortedException *new_OrgApacheLuceneIndexMergePolicy_MergeAbortedException_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeAbortedException *new_OrgApacheLuceneIndexMergePolicy_MergeAbortedException_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeAbortedException *create_OrgApacheLuceneIndexMergePolicy_MergeAbortedException_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexMergePolicy_MergeAbortedException *create_OrgApacheLuceneIndexMergePolicy_MergeAbortedException_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexMergePolicy_MergeAbortedException_initWithNSString_(OrgApacheLuceneIndexMergePolicy_MergeAbortedException *self, NSString *message);
 

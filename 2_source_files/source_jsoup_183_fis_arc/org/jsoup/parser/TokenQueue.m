@@ -25,7 +25,7 @@
 
 J2OBJC_FIELD_SETTER(OrgJsoupParserTokenQueue, queue_, NSString *)
 
-inline jchar OrgJsoupParserTokenQueue_get_ESC();
+inline jchar OrgJsoupParserTokenQueue_get_ESC(void);
 #define OrgJsoupParserTokenQueue_ESC '\\'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserTokenQueue, ESC, jchar)
 

@@ -33,6 +33,10 @@
 + (OrgApacheCommonsCodecLanguageBmLang *)loadFromResourceWithNSString:(NSString *)languageRulesResourceName
                          withOrgApacheCommonsCodecLanguageBmLanguages:(OrgApacheCommonsCodecLanguageBmLanguages *)languages;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmLang)

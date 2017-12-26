@@ -15,9 +15,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilBitUtil_init(OrgApacheLuceneUtilBitUtil *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilBitUtil *new_OrgApacheLuceneUtilBitUtil_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilBitUtil *new_OrgApacheLuceneUtilBitUtil_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilBitUtil *create_OrgApacheLuceneUtilBitUtil_init();
+__attribute__((unused)) static OrgApacheLuceneUtilBitUtil *create_OrgApacheLuceneUtilBitUtil_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilBitUtil)
 

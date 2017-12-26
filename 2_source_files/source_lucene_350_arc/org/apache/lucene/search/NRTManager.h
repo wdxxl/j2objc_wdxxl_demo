@@ -107,6 +107,10 @@
                                                            withLong:(jlong)time
                                      withJavaUtilConcurrentTimeUnit:(JavaUtilConcurrentTimeUnit *)unit;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchNRTManager)
@@ -174,6 +178,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchNRTManager_WaitingListener)
 - (instancetype)initWithBoolean:(jboolean)applyDeletes
                        withLong:(jlong)generation
 withOrgApacheLuceneSearchSearcherManager:(OrgApacheLuceneSearchSearcherManager *)manager;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

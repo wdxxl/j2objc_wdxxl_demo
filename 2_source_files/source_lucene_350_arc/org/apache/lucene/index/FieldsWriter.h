@@ -58,59 +58,63 @@ withOrgApacheLuceneStoreRAMOutputStream:(OrgApacheLuceneStoreRAMOutputStream *)b
 - (void)writeFieldWithOrgApacheLuceneIndexFieldInfo:(OrgApacheLuceneIndexFieldInfo *)fi
                withOrgApacheLuceneDocumentFieldable:(id<OrgApacheLuceneDocumentFieldable>)field;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFieldsWriter)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_TOKENIZED();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_TOKENIZED(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_TOKENIZED 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_TOKENIZED, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_BINARY();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_BINARY(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_BINARY 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_BINARY, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_COMPRESSED();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_COMPRESSED(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_COMPRESSED 4
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_COMPRESSED, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_MASK();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_MASK(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_MASK 56
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_NUMERIC_MASK, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_INT();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_INT(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_INT 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_NUMERIC_INT, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_LONG();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_LONG(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_LONG 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_NUMERIC_LONG, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_FLOAT();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_FLOAT(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_FLOAT 24
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_NUMERIC_FLOAT, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_DOUBLE();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FIELD_IS_NUMERIC_DOUBLE(void);
 #define OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_DOUBLE 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FIELD_IS_NUMERIC_DOUBLE, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT(void);
 #define OrgApacheLuceneIndexFieldsWriter_FORMAT 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FORMAT, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES(void);
 #define OrgApacheLuceneIndexFieldsWriter_FORMAT_VERSION_UTF8_LENGTH_IN_BYTES 1
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FORMAT_VERSION_UTF8_LENGTH_IN_BYTES, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_LUCENE_3_0_NO_COMPRESSED_FIELDS();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_LUCENE_3_0_NO_COMPRESSED_FIELDS(void);
 #define OrgApacheLuceneIndexFieldsWriter_FORMAT_LUCENE_3_0_NO_COMPRESSED_FIELDS 2
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FORMAT_LUCENE_3_0_NO_COMPRESSED_FIELDS, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_LUCENE_3_2_NUMERIC_FIELDS();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_LUCENE_3_2_NUMERIC_FIELDS(void);
 #define OrgApacheLuceneIndexFieldsWriter_FORMAT_LUCENE_3_2_NUMERIC_FIELDS 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FORMAT_LUCENE_3_2_NUMERIC_FIELDS, jint)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_CURRENT();
+inline jint OrgApacheLuceneIndexFieldsWriter_get_FORMAT_CURRENT(void);
 #define OrgApacheLuceneIndexFieldsWriter_FORMAT_CURRENT 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, FORMAT_CURRENT, jint)
 

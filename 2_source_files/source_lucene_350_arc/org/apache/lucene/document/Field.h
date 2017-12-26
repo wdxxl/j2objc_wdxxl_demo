@@ -112,6 +112,15 @@ withOrgApacheLuceneDocumentField_TermVector:(OrgApacheLuceneDocumentField_TermVe
 
 - (OrgApacheLuceneAnalysisTokenStream *)tokenStreamValue;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+withOrgApacheLuceneDocumentField_Store:(OrgApacheLuceneDocumentField_Store *)arg1
+withOrgApacheLuceneDocumentField_Index:(OrgApacheLuceneDocumentField_Index *)arg2
+withOrgApacheLuceneDocumentField_TermVector:(OrgApacheLuceneDocumentField_TermVector *)arg3 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneDocumentField)
@@ -200,7 +209,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentField_Store_Enum) {
   OrgApacheLuceneDocumentField_Store_Enum_NO = 1,
 };
 
-@interface OrgApacheLuceneDocumentField_Store : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneDocumentField_Store : JavaLangEnum
 
 #pragma mark Public
 
@@ -210,10 +219,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentField_Store_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentField_Store)
@@ -221,13 +226,13 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentField_Store)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_Store *OrgApacheLuceneDocumentField_Store_values_[];
 
-inline OrgApacheLuceneDocumentField_Store *OrgApacheLuceneDocumentField_Store_get_YES();
+inline OrgApacheLuceneDocumentField_Store *OrgApacheLuceneDocumentField_Store_get_YES(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Store, YES)
 
-inline OrgApacheLuceneDocumentField_Store *OrgApacheLuceneDocumentField_Store_get_NO();
+inline OrgApacheLuceneDocumentField_Store *OrgApacheLuceneDocumentField_Store_get_NO(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Store, NO)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentField_Store_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentField_Store_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_Store *OrgApacheLuceneDocumentField_Store_valueOfWithNSString_(NSString *name);
 
@@ -254,7 +259,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentField_Index_Enum) {
   OrgApacheLuceneDocumentField_Index_Enum_ANALYZED_NO_NORMS = 4,
 };
 
-@interface OrgApacheLuceneDocumentField_Index : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneDocumentField_Index : JavaLangEnum
 
 #pragma mark Public
 
@@ -275,10 +280,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentField_Index_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentField_Index)
@@ -286,26 +287,26 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentField_Index)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_values_[];
 
-inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_NO();
+inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_NO(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Index, NO)
 
-inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_ANALYZED();
+inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_ANALYZED(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Index, ANALYZED)
 
-inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_NOT_ANALYZED();
+inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_NOT_ANALYZED(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Index, NOT_ANALYZED)
 
-inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_NOT_ANALYZED_NO_NORMS();
+inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_NOT_ANALYZED_NO_NORMS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Index, NOT_ANALYZED_NO_NORMS)
 
-inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_ANALYZED_NO_NORMS();
+inline OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_get_ANALYZED_NO_NORMS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_Index, ANALYZED_NO_NORMS)
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_toIndexWithBoolean_withBoolean_(jboolean indexed, jboolean analyzed);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_toIndexWithBoolean_withBoolean_withBoolean_(jboolean indexed, jboolean analyzed, jboolean omitNorms);
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentField_Index_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentField_Index_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_Index *OrgApacheLuceneDocumentField_Index_valueOfWithNSString_(NSString *name);
 
@@ -332,7 +333,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentField_TermVector_Enum) {
   OrgApacheLuceneDocumentField_TermVector_Enum_WITH_POSITIONS_OFFSETS = 4,
 };
 
-@interface OrgApacheLuceneDocumentField_TermVector : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneDocumentField_TermVector : JavaLangEnum
 
 #pragma mark Public
 
@@ -350,10 +351,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentField_TermVector_Enum) {
 
 - (jboolean)withPositions;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentField_TermVector)
@@ -361,24 +358,24 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentField_TermVector)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_values_[];
 
-inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_NO();
+inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_NO(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_TermVector, NO)
 
-inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_YES();
+inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_YES(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_TermVector, YES)
 
-inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_WITH_POSITIONS();
+inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_WITH_POSITIONS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_TermVector, WITH_POSITIONS)
 
-inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_WITH_OFFSETS();
+inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_WITH_OFFSETS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_TermVector, WITH_OFFSETS)
 
-inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_WITH_POSITIONS_OFFSETS();
+inline OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_get_WITH_POSITIONS_OFFSETS(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentField_TermVector, WITH_POSITIONS_OFFSETS)
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_toTermVectorWithBoolean_withBoolean_withBoolean_(jboolean stored, jboolean withOffsets, jboolean withPositions);
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentField_TermVector_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentField_TermVector_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentField_TermVector *OrgApacheLuceneDocumentField_TermVector_valueOfWithNSString_(NSString *name);
 

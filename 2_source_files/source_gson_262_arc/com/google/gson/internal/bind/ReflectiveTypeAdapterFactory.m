@@ -482,7 +482,7 @@ ComGoogleGsonInternalBindReflectiveTypeAdapterFactory_1 *create_ComGoogleGsonInt
     }
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaLangIllegalAccessException *e) {
     @throw new_JavaLangAssertionError_initWithId_(e);

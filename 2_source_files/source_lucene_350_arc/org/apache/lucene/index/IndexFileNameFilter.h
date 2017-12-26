@@ -37,7 +37,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexIndexFileNameFilter)
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexIndexFileNameFilter *OrgApacheLuceneIndexIndexFileNameFilter_getFilter();
+FOUNDATION_EXPORT OrgApacheLuceneIndexIndexFileNameFilter *OrgApacheLuceneIndexIndexFileNameFilter_getFilter(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexIndexFileNameFilter)
 

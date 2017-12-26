@@ -59,14 +59,14 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)writeByteWithByte:(jbyte)b {
-  JreAssert((pos_ < limit_), (@"org/apache/lucene/store/ByteArrayDataOutput.java:59 condition failed: assert pos < limit;"));
+  JreAssert(pos_ < limit_, @"org/apache/lucene/store/ByteArrayDataOutput.java:59 condition failed: assert pos < limit;");
   *IOSByteArray_GetRef(nil_chk(bytes_), pos_++) = b;
 }
 
 - (void)writeBytesWithByteArray:(IOSByteArray *)b
                         withInt:(jint)offset
                         withInt:(jint)length {
-  JreAssert((pos_ + length <= limit_), (@"org/apache/lucene/store/ByteArrayDataOutput.java:65 condition failed: assert pos + length <= limit;"));
+  JreAssert(pos_ + length <= limit_, @"org/apache/lucene/store/ByteArrayDataOutput.java:65 condition failed: assert pos + length <= limit;");
   JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(b, offset, bytes_, pos_, length);
   pos_ += length;
 }

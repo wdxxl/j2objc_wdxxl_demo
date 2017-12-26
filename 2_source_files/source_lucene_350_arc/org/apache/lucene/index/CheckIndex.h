@@ -38,6 +38,10 @@
 
 - (void)setInfoStreamWithJavaIoPrintStream:(JavaIoPrintStream *)outArg;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCheckIndex)
@@ -102,9 +106,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status, userData_, id<JavaUti
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCheckIndex_Status_init(OrgApacheLuceneIndexCheckIndex_Status *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status *new_OrgApacheLuceneIndexCheckIndex_Status_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status *new_OrgApacheLuceneIndexCheckIndex_Status_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status *create_OrgApacheLuceneIndexCheckIndex_Status_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status *create_OrgApacheLuceneIndexCheckIndex_Status_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status)
 
@@ -161,9 +165,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus, ter
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus_init(OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus *new_OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus *new_OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus *create_OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus *create_OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStatus)
 
@@ -172,10 +176,12 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStat
 #if !defined (OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_) && (INCLUDE_ALL_OrgApacheLuceneIndexCheckIndex || defined(INCLUDE_OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus))
 #define OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus : NSObject {
  @public
   jlong totFields_;
-  NSException *error_;
+  JavaLangThrowable *error_;
 }
 
 #pragma mark Public
@@ -186,13 +192,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_SegmentInfoStat
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus)
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus, error_, NSException *)
+J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus, error_, JavaLangThrowable *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_init(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus *new_OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus *new_OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus *create_OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus *create_OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus)
 
@@ -201,12 +207,14 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus
 #if !defined (OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_) && (INCLUDE_ALL_OrgApacheLuceneIndexCheckIndex || defined(INCLUDE_OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus))
 #define OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus : NSObject {
  @public
   jlong termCount_;
   jlong totFreq_;
   jlong totPos_;
-  NSException *error_;
+  JavaLangThrowable *error_;
 }
 
 #pragma mark Public
@@ -217,13 +225,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_FieldNormStatus
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus)
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus, error_, NSException *)
+J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus, error_, JavaLangThrowable *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_init(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus *new_OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus *new_OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus *create_OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus *create_OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus)
 
@@ -232,11 +240,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus
 #if !defined (OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_) && (INCLUDE_ALL_OrgApacheLuceneIndexCheckIndex || defined(INCLUDE_OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus))
 #define OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus : NSObject {
  @public
   jint docCount_;
   jlong totFields_;
-  NSException *error_;
+  JavaLangThrowable *error_;
 }
 
 #pragma mark Public
@@ -247,13 +257,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_TermIndexStatus
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus)
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus, error_, NSException *)
+J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus, error_, JavaLangThrowable *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_init(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus *new_OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus *new_OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus *create_OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus *create_OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStatus)
 
@@ -262,11 +272,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStat
 #if !defined (OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_) && (INCLUDE_ALL_OrgApacheLuceneIndexCheckIndex || defined(INCLUDE_OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus))
 #define OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_
 
+@class JavaLangThrowable;
+
 @interface OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus : NSObject {
  @public
   jint docCount_;
   jlong totVectors_;
-  NSException *error_;
+  JavaLangThrowable *error_;
 }
 
 #pragma mark Public
@@ -277,13 +289,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_StoredFieldStat
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus)
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus, error_, NSException *)
+J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus, error_, JavaLangThrowable *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_init(OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *new_OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *new_OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *create_OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus *create_OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCheckIndex_Status_TermVectorStatus)
 

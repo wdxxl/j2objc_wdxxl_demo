@@ -157,6 +157,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_Tag)
@@ -186,6 +190,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Tag)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -217,6 +225,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Id)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_Class)
@@ -247,6 +259,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Class)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_Attribute)
@@ -276,6 +292,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Attribute)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -495,6 +515,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueContaining)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_AttributeWithValueMatching)
@@ -534,9 +558,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_AllElements)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_AllElements_init(OrgJsoupSelectEvaluator_AllElements *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_AllElements *new_OrgJsoupSelectEvaluator_AllElements_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_AllElements *new_OrgJsoupSelectEvaluator_AllElements_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_AllElements *create_OrgJsoupSelectEvaluator_AllElements_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_AllElements *create_OrgJsoupSelectEvaluator_AllElements_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AllElements)
 
@@ -676,9 +700,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsLastChild)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsLastChild_init(OrgJsoupSelectEvaluator_IsLastChild *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastChild *new_OrgJsoupSelectEvaluator_IsLastChild_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastChild *new_OrgJsoupSelectEvaluator_IsLastChild_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastChild *create_OrgJsoupSelectEvaluator_IsLastChild_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastChild *create_OrgJsoupSelectEvaluator_IsLastChild_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsLastChild)
 
@@ -745,6 +769,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_CssNthEvaluator)
 
 - (NSString *)getPseudoClass;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsNthOfType)
@@ -770,15 +798,20 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthOfType)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0
+                    withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsFirstOfType)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsFirstOfType_init(OrgJsoupSelectEvaluator_IsFirstOfType *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstOfType *new_OrgJsoupSelectEvaluator_IsFirstOfType_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstOfType *new_OrgJsoupSelectEvaluator_IsFirstOfType_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstOfType *create_OrgJsoupSelectEvaluator_IsFirstOfType_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstOfType *create_OrgJsoupSelectEvaluator_IsFirstOfType_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsFirstOfType)
 
@@ -802,6 +835,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsFirstOfType)
                          withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)getPseudoClass;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -828,15 +865,20 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthLastOfType)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0
+                    withInt:(jint)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsLastOfType)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsLastOfType_init(OrgJsoupSelectEvaluator_IsLastOfType *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastOfType *new_OrgJsoupSelectEvaluator_IsLastOfType_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastOfType *new_OrgJsoupSelectEvaluator_IsLastOfType_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastOfType *create_OrgJsoupSelectEvaluator_IsLastOfType_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsLastOfType *create_OrgJsoupSelectEvaluator_IsLastOfType_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsLastOfType)
 
@@ -860,6 +902,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsLastOfType)
                          withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)getPseudoClass;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -893,6 +939,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthChild)
                          withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)getPseudoClass;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -930,9 +980,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsFirstChild)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsFirstChild_init(OrgJsoupSelectEvaluator_IsFirstChild *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstChild *new_OrgJsoupSelectEvaluator_IsFirstChild_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstChild *new_OrgJsoupSelectEvaluator_IsFirstChild_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstChild *create_OrgJsoupSelectEvaluator_IsFirstChild_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsFirstChild *create_OrgJsoupSelectEvaluator_IsFirstChild_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsFirstChild)
 
@@ -960,9 +1010,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsRoot)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsRoot_init(OrgJsoupSelectEvaluator_IsRoot *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsRoot *new_OrgJsoupSelectEvaluator_IsRoot_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsRoot *new_OrgJsoupSelectEvaluator_IsRoot_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsRoot *create_OrgJsoupSelectEvaluator_IsRoot_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsRoot *create_OrgJsoupSelectEvaluator_IsRoot_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsRoot)
 
@@ -990,9 +1040,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsOnlyChild)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsOnlyChild_init(OrgJsoupSelectEvaluator_IsOnlyChild *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyChild *new_OrgJsoupSelectEvaluator_IsOnlyChild_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyChild *new_OrgJsoupSelectEvaluator_IsOnlyChild_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyChild *create_OrgJsoupSelectEvaluator_IsOnlyChild_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyChild *create_OrgJsoupSelectEvaluator_IsOnlyChild_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsOnlyChild)
 
@@ -1020,9 +1070,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsOnlyOfType)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsOnlyOfType_init(OrgJsoupSelectEvaluator_IsOnlyOfType *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyOfType *new_OrgJsoupSelectEvaluator_IsOnlyOfType_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyOfType *new_OrgJsoupSelectEvaluator_IsOnlyOfType_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyOfType *create_OrgJsoupSelectEvaluator_IsOnlyOfType_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsOnlyOfType *create_OrgJsoupSelectEvaluator_IsOnlyOfType_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsOnlyOfType)
 
@@ -1050,9 +1100,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_IsEmpty)
 
 FOUNDATION_EXPORT void OrgJsoupSelectEvaluator_IsEmpty_init(OrgJsoupSelectEvaluator_IsEmpty *self);
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsEmpty *new_OrgJsoupSelectEvaluator_IsEmpty_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsEmpty *new_OrgJsoupSelectEvaluator_IsEmpty_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsEmpty *create_OrgJsoupSelectEvaluator_IsEmpty_init();
+FOUNDATION_EXPORT OrgJsoupSelectEvaluator_IsEmpty *create_OrgJsoupSelectEvaluator_IsEmpty_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsEmpty)
 
@@ -1073,6 +1123,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsEmpty)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -1103,6 +1157,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_ContainsText)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -1135,6 +1193,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_ContainsOwnText)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectEvaluator_Matches)
@@ -1165,6 +1227,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Matches)
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

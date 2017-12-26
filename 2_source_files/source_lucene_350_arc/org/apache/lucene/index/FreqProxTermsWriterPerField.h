@@ -81,6 +81,10 @@
 - (void)writeProxWithInt:(jint)termID
                  withInt:(jint)proxCode;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFreqProxTermsWriterPerField)

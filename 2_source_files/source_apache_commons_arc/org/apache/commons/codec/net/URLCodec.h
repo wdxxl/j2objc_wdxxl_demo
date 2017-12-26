@@ -79,24 +79,24 @@ J2OBJC_STATIC_INIT(OrgApacheCommonsCodecNetURLCodec)
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecNetURLCodec, charset_, NSString *)
 
-inline jint OrgApacheCommonsCodecNetURLCodec_get_RADIX();
+inline jint OrgApacheCommonsCodecNetURLCodec_get_RADIX(void);
 #define OrgApacheCommonsCodecNetURLCodec_RADIX 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetURLCodec, RADIX, jint)
 
-inline jbyte OrgApacheCommonsCodecNetURLCodec_get_ESCAPE_CHAR();
+inline jbyte OrgApacheCommonsCodecNetURLCodec_get_ESCAPE_CHAR(void);
 #define OrgApacheCommonsCodecNetURLCodec_ESCAPE_CHAR 37
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecNetURLCodec, ESCAPE_CHAR, jbyte)
 
-inline JavaUtilBitSet *OrgApacheCommonsCodecNetURLCodec_get_WWW_FORM_URL();
+inline JavaUtilBitSet *OrgApacheCommonsCodecNetURLCodec_get_WWW_FORM_URL(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT JavaUtilBitSet *OrgApacheCommonsCodecNetURLCodec_WWW_FORM_URL;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecNetURLCodec, WWW_FORM_URL, JavaUtilBitSet *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetURLCodec_init(OrgApacheCommonsCodecNetURLCodec *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetURLCodec *new_OrgApacheCommonsCodecNetURLCodec_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetURLCodec *new_OrgApacheCommonsCodecNetURLCodec_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetURLCodec *create_OrgApacheCommonsCodecNetURLCodec_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetURLCodec *create_OrgApacheCommonsCodecNetURLCodec_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetURLCodec_initWithNSString_(OrgApacheCommonsCodecNetURLCodec *self, NSString *charset);
 

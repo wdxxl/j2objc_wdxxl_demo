@@ -26,9 +26,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchDocIdSet_1, iterator_, OrgApacheLuceneS
 
 __attribute__((unused)) static void OrgApacheLuceneSearchDocIdSet_1_init(OrgApacheLuceneSearchDocIdSet_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1 *new_OrgApacheLuceneSearchDocIdSet_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1 *new_OrgApacheLuceneSearchDocIdSet_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1 *create_OrgApacheLuceneSearchDocIdSet_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1 *create_OrgApacheLuceneSearchDocIdSet_1_init(void);
 
 @interface OrgApacheLuceneSearchDocIdSet_1_1 : OrgApacheLuceneSearchDocIdSetIterator
 
@@ -46,9 +46,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchDocIdSet_1_1)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchDocIdSet_1_1_init(OrgApacheLuceneSearchDocIdSet_1_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1_1 *new_OrgApacheLuceneSearchDocIdSet_1_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1_1 *new_OrgApacheLuceneSearchDocIdSet_1_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1_1 *create_OrgApacheLuceneSearchDocIdSet_1_1_init();
+__attribute__((unused)) static OrgApacheLuceneSearchDocIdSet_1_1 *create_OrgApacheLuceneSearchDocIdSet_1_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneSearchDocIdSet)
 

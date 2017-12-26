@@ -53,9 +53,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCoalescedDeletes, iterables_, id<JavaUti
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexCoalescedDeletes_init(OrgApacheLuceneIndexCoalescedDeletes *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCoalescedDeletes *new_OrgApacheLuceneIndexCoalescedDeletes_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexCoalescedDeletes *new_OrgApacheLuceneIndexCoalescedDeletes_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexCoalescedDeletes *create_OrgApacheLuceneIndexCoalescedDeletes_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexCoalescedDeletes *create_OrgApacheLuceneIndexCoalescedDeletes_init(void);
 
 FOUNDATION_EXPORT id<JavaUtilIterator> OrgApacheLuceneIndexCoalescedDeletes_mergedIteratorWithJavaUtilList_(id<JavaUtilList> iterators);
 

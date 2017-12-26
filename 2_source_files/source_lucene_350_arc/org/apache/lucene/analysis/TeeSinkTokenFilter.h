@@ -88,6 +88,9 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkFilter)
 #define INCLUDE_OrgApacheLuceneAnalysisTokenStream 1
 #include "org/apache/lucene/analysis/TokenStream.h"
 
+@class OrgApacheLuceneUtilAttributeSource;
+@class OrgApacheLuceneUtilAttributeSource_AttributeFactory;
+
 @interface OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkTokenStream : OrgApacheLuceneAnalysisTokenStream
 
 #pragma mark Public
@@ -97,6 +100,14 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisTeeSinkTokenFilter_SinkFilter)
 - (jboolean)incrementToken;
 
 - (void)reset;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource:(OrgApacheLuceneUtilAttributeSource *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneUtilAttributeSource_AttributeFactory:(OrgApacheLuceneUtilAttributeSource_AttributeFactory *)arg0 NS_UNAVAILABLE;
 
 @end
 

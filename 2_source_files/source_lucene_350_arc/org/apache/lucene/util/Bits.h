@@ -38,7 +38,7 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilBits)
 
-inline IOSObjectArray *OrgApacheLuceneUtilBits_get_EMPTY_ARRAY();
+inline IOSObjectArray *OrgApacheLuceneUtilBits_get_EMPTY_ARRAY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneUtilBits_EMPTY_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilBits, EMPTY_ARRAY, IOSObjectArray *)
@@ -62,6 +62,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBits)
 - (jboolean)getWithInt:(jint)index;
 
 - (jint)length;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -92,6 +96,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilBits_MatchAllBits)
 - (jboolean)getWithInt:(jint)index;
 
 - (jint)length;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

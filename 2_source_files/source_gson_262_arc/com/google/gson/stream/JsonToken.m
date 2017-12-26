@@ -27,10 +27,6 @@ ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_values_[10];
   return ComGoogleGsonStreamJsonToken_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LComGoogleGsonStreamJsonToken;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -60,16 +56,16 @@ ComGoogleGsonStreamJsonToken *ComGoogleGsonStreamJsonToken_values_[10];
 
 + (void)initialize {
   if (self == [ComGoogleGsonStreamJsonToken class]) {
-    JreEnum(ComGoogleGsonStreamJsonToken, BEGIN_ARRAY) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"BEGIN_ARRAY", 0);
-    JreEnum(ComGoogleGsonStreamJsonToken, END_ARRAY) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"END_ARRAY", 1);
-    JreEnum(ComGoogleGsonStreamJsonToken, BEGIN_OBJECT) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"BEGIN_OBJECT", 2);
-    JreEnum(ComGoogleGsonStreamJsonToken, END_OBJECT) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"END_OBJECT", 3);
-    JreEnum(ComGoogleGsonStreamJsonToken, NAME) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"NAME", 4);
-    JreEnum(ComGoogleGsonStreamJsonToken, STRING) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"STRING", 5);
-    JreEnum(ComGoogleGsonStreamJsonToken, NUMBER) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"NUMBER", 6);
-    JreEnum(ComGoogleGsonStreamJsonToken, BOOLEAN) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"BOOLEAN", 7);
-    JreEnum(ComGoogleGsonStreamJsonToken, NULL) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"NULL", 8);
-    JreEnum(ComGoogleGsonStreamJsonToken, END_DOCUMENT) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"END_DOCUMENT", 9);
+    JreEnum(ComGoogleGsonStreamJsonToken, BEGIN_ARRAY) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 0);
+    JreEnum(ComGoogleGsonStreamJsonToken, END_ARRAY) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 1);
+    JreEnum(ComGoogleGsonStreamJsonToken, BEGIN_OBJECT) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 2);
+    JreEnum(ComGoogleGsonStreamJsonToken, END_OBJECT) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 3);
+    JreEnum(ComGoogleGsonStreamJsonToken, NAME) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 4);
+    JreEnum(ComGoogleGsonStreamJsonToken, STRING) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 5);
+    JreEnum(ComGoogleGsonStreamJsonToken, NUMBER) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 6);
+    JreEnum(ComGoogleGsonStreamJsonToken, BOOLEAN) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 7);
+    JreEnum(ComGoogleGsonStreamJsonToken, NULL) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 8);
+    JreEnum(ComGoogleGsonStreamJsonToken, END_DOCUMENT) = new_ComGoogleGsonStreamJsonToken_initWithNSString_withInt_(@"", 9);
     J2OBJC_SET_INITIALIZED(ComGoogleGsonStreamJsonToken)
   }
 }

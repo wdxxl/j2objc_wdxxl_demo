@@ -21,15 +21,15 @@
 
 @end
 
-inline OrgApacheLuceneUtilBytesRef *OrgApacheLuceneUtilFstByteSequenceOutputs_get_NO_OUTPUT();
+inline OrgApacheLuceneUtilBytesRef *OrgApacheLuceneUtilFstByteSequenceOutputs_get_NO_OUTPUT(void);
 static OrgApacheLuceneUtilBytesRef *OrgApacheLuceneUtilFstByteSequenceOutputs_NO_OUTPUT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilFstByteSequenceOutputs, NO_OUTPUT, OrgApacheLuceneUtilBytesRef *)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilFstByteSequenceOutputs_init(OrgApacheLuceneUtilFstByteSequenceOutputs *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstByteSequenceOutputs *new_OrgApacheLuceneUtilFstByteSequenceOutputs_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilFstByteSequenceOutputs *new_OrgApacheLuceneUtilFstByteSequenceOutputs_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilFstByteSequenceOutputs *create_OrgApacheLuceneUtilFstByteSequenceOutputs_init();
+__attribute__((unused)) static OrgApacheLuceneUtilFstByteSequenceOutputs *create_OrgApacheLuceneUtilFstByteSequenceOutputs_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilFstByteSequenceOutputs)
 
@@ -48,8 +48,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgApacheLuceneUtilBytesRef *)commonWithId:(OrgApacheLuceneUtilBytesRef *)output1
                                        withId:(OrgApacheLuceneUtilBytesRef *)output2 {
-  JreAssert((output1 != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:45 condition failed: assert output1 != null;"));
-  JreAssert((output2 != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:46 condition failed: assert output2 != null;"));
+  JreAssert(output1 != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:45 condition failed: assert output1 != null;");
+  JreAssert(output2 != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:46 condition failed: assert output2 != null;");
   jint pos1 = ((OrgApacheLuceneUtilBytesRef *) nil_chk(output1))->offset_;
   jint pos2 = ((OrgApacheLuceneUtilBytesRef *) nil_chk(output2))->offset_;
   jint stopAt1 = pos1 + JavaLangMath_minWithInt_withInt_(output1->length_, output2->length_);
@@ -76,8 +76,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgApacheLuceneUtilBytesRef *)subtractWithId:(OrgApacheLuceneUtilBytesRef *)output
                                          withId:(OrgApacheLuceneUtilBytesRef *)inc {
-  JreAssert((output != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:75 condition failed: assert output != null;"));
-  JreAssert((inc != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:76 condition failed: assert inc != null;"));
+  JreAssert(output != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:75 condition failed: assert output != null;");
+  JreAssert(inc != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:76 condition failed: assert inc != null;");
   if (inc == OrgApacheLuceneUtilFstByteSequenceOutputs_NO_OUTPUT) {
     return output;
   }
@@ -85,16 +85,16 @@ J2OBJC_IGNORE_DESIGNATED_END
     return OrgApacheLuceneUtilFstByteSequenceOutputs_NO_OUTPUT;
   }
   else {
-    JreAssert((inc->length_ < output->length_), (JreStrcat("$I$I", @"inc.length=", inc->length_, @" vs output.length=", output->length_)));
-    JreAssert((inc->length_ > 0), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:85 condition failed: assert inc.length > 0;"));
+    JreAssert(inc->length_ < output->length_, JreStrcat("$I$I", @"inc.length=", inc->length_, @" vs output.length=", output->length_));
+    JreAssert(inc->length_ > 0, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:85 condition failed: assert inc.length > 0;");
     return new_OrgApacheLuceneUtilBytesRef_initWithByteArray_withInt_withInt_(output->bytes_, output->offset_ + inc->length_, output->length_ - inc->length_);
   }
 }
 
 - (OrgApacheLuceneUtilBytesRef *)addWithId:(OrgApacheLuceneUtilBytesRef *)prefix
                                     withId:(OrgApacheLuceneUtilBytesRef *)output {
-  JreAssert((prefix != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:92 condition failed: assert prefix != null;"));
-  JreAssert((output != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:93 condition failed: assert output != null;"));
+  JreAssert(prefix != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:92 condition failed: assert prefix != null;");
+  JreAssert(output != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:93 condition failed: assert output != null;");
   if (prefix == OrgApacheLuceneUtilFstByteSequenceOutputs_NO_OUTPUT) {
     return output;
   }
@@ -102,8 +102,8 @@ J2OBJC_IGNORE_DESIGNATED_END
     return prefix;
   }
   else {
-    JreAssert((((OrgApacheLuceneUtilBytesRef *) nil_chk(prefix))->length_ > 0), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:99 condition failed: assert prefix.length > 0;"));
-    JreAssert((((OrgApacheLuceneUtilBytesRef *) nil_chk(output))->length_ > 0), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:100 condition failed: assert output.length > 0;"));
+    JreAssert(((OrgApacheLuceneUtilBytesRef *) nil_chk(prefix))->length_ > 0, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:99 condition failed: assert prefix.length > 0;");
+    JreAssert(((OrgApacheLuceneUtilBytesRef *) nil_chk(output))->length_ > 0, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:100 condition failed: assert output.length > 0;");
     OrgApacheLuceneUtilBytesRef *result = new_OrgApacheLuceneUtilBytesRef_initWithInt_(prefix->length_ + output->length_);
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(prefix->bytes_, prefix->offset_, result->bytes_, 0, prefix->length_);
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(output->bytes_, output->offset_, result->bytes_, prefix->length_, output->length_);
@@ -114,7 +114,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)writeWithId:(OrgApacheLuceneUtilBytesRef *)prefix
 withOrgApacheLuceneStoreDataOutput:(OrgApacheLuceneStoreDataOutput *)outArg {
-  JreAssert((prefix != nil), (@"org/apache/lucene/util/fst/ByteSequenceOutputs.java:111 condition failed: assert prefix != null;"));
+  JreAssert(prefix != nil, @"org/apache/lucene/util/fst/ByteSequenceOutputs.java:111 condition failed: assert prefix != null;");
   [((OrgApacheLuceneStoreDataOutput *) nil_chk(outArg)) writeVIntWithInt:((OrgApacheLuceneUtilBytesRef *) nil_chk(prefix))->length_];
   [outArg writeBytesWithByteArray:prefix->bytes_ withInt:prefix->offset_ withInt:prefix->length_];
 }

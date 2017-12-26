@@ -34,6 +34,15 @@ withOrgApacheLuceneSearchScoreDocArray:(IOSObjectArray *)scoreDocs
 withOrgApacheLuceneSearchSortFieldArray:(IOSObjectArray *)fields
                   withFloat:(jfloat)maxScore;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithInt:(jint)arg0
+withOrgApacheLuceneSearchScoreDocArray:(IOSObjectArray *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithInt:(jint)arg0
+withOrgApacheLuceneSearchScoreDocArray:(IOSObjectArray *)arg1
+                  withFloat:(jfloat)arg2 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchTopFieldDocs)

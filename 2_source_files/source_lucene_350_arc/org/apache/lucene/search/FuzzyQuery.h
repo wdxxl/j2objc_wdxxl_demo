@@ -61,21 +61,25 @@
 
 - (OrgApacheLuceneSearchFilteredTermEnum *)getEnumWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFuzzyQuery)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchFuzzyQuery, term_, OrgApacheLuceneIndexTerm *)
 
-inline jfloat OrgApacheLuceneSearchFuzzyQuery_get_defaultMinSimilarity();
+inline jfloat OrgApacheLuceneSearchFuzzyQuery_get_defaultMinSimilarity(void);
 #define OrgApacheLuceneSearchFuzzyQuery_defaultMinSimilarity 0.5f
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchFuzzyQuery, defaultMinSimilarity, jfloat)
 
-inline jint OrgApacheLuceneSearchFuzzyQuery_get_defaultPrefixLength();
+inline jint OrgApacheLuceneSearchFuzzyQuery_get_defaultPrefixLength(void);
 #define OrgApacheLuceneSearchFuzzyQuery_defaultPrefixLength 0
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchFuzzyQuery, defaultPrefixLength, jint)
 
-inline jint OrgApacheLuceneSearchFuzzyQuery_get_defaultMaxExpansions();
+inline jint OrgApacheLuceneSearchFuzzyQuery_get_defaultMaxExpansions(void);
 #define OrgApacheLuceneSearchFuzzyQuery_defaultMaxExpansions 2147483647
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchFuzzyQuery, defaultMaxExpansions, jint)
 

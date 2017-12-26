@@ -28,7 +28,9 @@
 #define INCLUDE_JavaIoCloseable 1
 #include "java/io/Closeable.h"
 
+@class JavaLangThreadGroup;
 @class OrgApacheLuceneSearchNRTManager;
+@protocol JavaLangRunnable;
 
 @interface OrgApacheLuceneSearchNRTManagerReopenThread : JavaLangThread < OrgApacheLuceneSearchNRTManager_WaitingListener, JavaIoCloseable >
 
@@ -44,6 +46,32 @@
 
 - (void)waitingWithBoolean:(jboolean)needsDeletes
                   withLong:(jlong)targetGen;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangRunnable:(id<JavaLangRunnable>)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangRunnable:(id<JavaLangRunnable>)arg0
+                            withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1
+                               withNSString:(NSString *)arg2 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1
+                               withNSString:(NSString *)arg2
+                                   withLong:(jlong)arg3 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                               withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 

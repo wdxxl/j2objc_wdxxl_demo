@@ -17,7 +17,7 @@
 #include "org/apache/commons/codec/digest/HmacAlgorithms.h"
 #include "org/apache/commons/codec/digest/HmacUtils.h"
 
-inline jint OrgApacheCommonsCodecDigestHmacUtils_get_STREAM_BUFFER_LENGTH();
+inline jint OrgApacheCommonsCodecDigestHmacUtils_get_STREAM_BUFFER_LENGTH(void);
 #define OrgApacheCommonsCodecDigestHmacUtils_STREAM_BUFFER_LENGTH 1024
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestHmacUtils, STREAM_BUFFER_LENGTH, jint)
 
@@ -377,10 +377,10 @@ JavaxCryptoMac *OrgApacheCommonsCodecDigestHmacUtils_getInitializedMacWithNSStri
     return mac;
   }
   @catch (JavaSecurityNoSuchAlgorithmException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaSecurityInvalidKeyException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -390,7 +390,7 @@ IOSByteArray *OrgApacheCommonsCodecDigestHmacUtils_hmacMd5WithByteArray_withByte
     return [((JavaxCryptoMac *) nil_chk(OrgApacheCommonsCodecDigestHmacUtils_getHmacMd5WithByteArray_(key))) doFinalWithByteArray:valueToDigest];
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -425,7 +425,7 @@ IOSByteArray *OrgApacheCommonsCodecDigestHmacUtils_hmacSha1WithByteArray_withByt
     return [((JavaxCryptoMac *) nil_chk(OrgApacheCommonsCodecDigestHmacUtils_getHmacSha1WithByteArray_(key))) doFinalWithByteArray:valueToDigest];
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -460,7 +460,7 @@ IOSByteArray *OrgApacheCommonsCodecDigestHmacUtils_hmacSha256WithByteArray_withB
     return [((JavaxCryptoMac *) nil_chk(OrgApacheCommonsCodecDigestHmacUtils_getHmacSha256WithByteArray_(key))) doFinalWithByteArray:valueToDigest];
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -495,7 +495,7 @@ IOSByteArray *OrgApacheCommonsCodecDigestHmacUtils_hmacSha384WithByteArray_withB
     return [((JavaxCryptoMac *) nil_chk(OrgApacheCommonsCodecDigestHmacUtils_getHmacSha384WithByteArray_(key))) doFinalWithByteArray:valueToDigest];
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -530,7 +530,7 @@ IOSByteArray *OrgApacheCommonsCodecDigestHmacUtils_hmacSha512WithByteArray_withB
     return [((JavaxCryptoMac *) nil_chk(OrgApacheCommonsCodecDigestHmacUtils_getHmacSha512WithByteArray_(key))) doFinalWithByteArray:valueToDigest];
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_JavaLangIllegalArgumentException_initWithNSException_(e);
+    @throw new_JavaLangIllegalArgumentException_initWithJavaLangThrowable_(e);
   }
 }
 

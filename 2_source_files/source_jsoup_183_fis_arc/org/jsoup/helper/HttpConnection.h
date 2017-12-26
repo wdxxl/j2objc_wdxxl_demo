@@ -110,7 +110,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupHelperHttpConnection)
 
-inline NSString *OrgJsoupHelperHttpConnection_get_CONTENT_ENCODING();
+inline NSString *OrgJsoupHelperHttpConnection_get_CONTENT_ENCODING(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgJsoupHelperHttpConnection_CONTENT_ENCODING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupHelperHttpConnection, CONTENT_ENCODING, NSString *)
@@ -328,9 +328,9 @@ J2OBJC_STATIC_INIT(OrgJsoupHelperHttpConnection_Response)
 
 FOUNDATION_EXPORT void OrgJsoupHelperHttpConnection_Response_init(OrgJsoupHelperHttpConnection_Response *self);
 
-FOUNDATION_EXPORT OrgJsoupHelperHttpConnection_Response *new_OrgJsoupHelperHttpConnection_Response_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupHelperHttpConnection_Response *new_OrgJsoupHelperHttpConnection_Response_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupHelperHttpConnection_Response *create_OrgJsoupHelperHttpConnection_Response_init();
+FOUNDATION_EXPORT OrgJsoupHelperHttpConnection_Response *create_OrgJsoupHelperHttpConnection_Response_init(void);
 
 FOUNDATION_EXPORT OrgJsoupHelperHttpConnection_Response *OrgJsoupHelperHttpConnection_Response_executeWithOrgJsoupConnection_Request_(id<OrgJsoupConnection_Request> req);
 

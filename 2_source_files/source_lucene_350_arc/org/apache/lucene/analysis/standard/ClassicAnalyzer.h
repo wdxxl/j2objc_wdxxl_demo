@@ -54,11 +54,11 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisStandardClassicAnalyzer)
 
-inline jint OrgApacheLuceneAnalysisStandardClassicAnalyzer_get_DEFAULT_MAX_TOKEN_LENGTH();
+inline jint OrgApacheLuceneAnalysisStandardClassicAnalyzer_get_DEFAULT_MAX_TOKEN_LENGTH(void);
 #define OrgApacheLuceneAnalysisStandardClassicAnalyzer_DEFAULT_MAX_TOKEN_LENGTH 255
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisStandardClassicAnalyzer, DEFAULT_MAX_TOKEN_LENGTH, jint)
 
-inline id<JavaUtilSet> OrgApacheLuceneAnalysisStandardClassicAnalyzer_get_STOP_WORDS_SET();
+inline id<JavaUtilSet> OrgApacheLuceneAnalysisStandardClassicAnalyzer_get_STOP_WORDS_SET(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<JavaUtilSet> OrgApacheLuceneAnalysisStandardClassicAnalyzer_STOP_WORDS_SET;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisStandardClassicAnalyzer, STOP_WORDS_SET, id<JavaUtilSet>)

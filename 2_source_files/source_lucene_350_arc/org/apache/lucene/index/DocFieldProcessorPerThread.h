@@ -70,6 +70,10 @@
 
 - (void)trimFieldsWithOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState *)state;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexDocFieldProcessorPerThread)
@@ -119,6 +123,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexDocFieldProcessorPerThread)
 #pragma mark Package-Private
 
 - (instancetype)initWithOrgApacheLuceneIndexDocFieldProcessorPerThread:(OrgApacheLuceneIndexDocFieldProcessorPerThread *)outer$;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

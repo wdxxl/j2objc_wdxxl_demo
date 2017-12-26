@@ -43,13 +43,17 @@
 
 - (jint)nextDoc;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilOpenBitSetIterator)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilOpenBitSetIterator, arr_, IOSLongArray *)
 
-inline IOSIntArray *OrgApacheLuceneUtilOpenBitSetIterator_get_bitlist();
+inline IOSIntArray *OrgApacheLuceneUtilOpenBitSetIterator_get_bitlist(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneUtilOpenBitSetIterator_bitlist;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilOpenBitSetIterator, bitlist, IOSIntArray *)

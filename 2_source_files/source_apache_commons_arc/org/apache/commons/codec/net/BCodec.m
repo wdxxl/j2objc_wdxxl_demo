@@ -78,7 +78,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self encodeTextWithNSString:value withNSString:charset];
   }
   @catch (JavaIoUnsupportedEncodingException *e) {
-    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 
@@ -97,7 +97,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return [self decodeTextWithNSString:value];
   }
   @catch (JavaIoUnsupportedEncodingException *e) {
-    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 

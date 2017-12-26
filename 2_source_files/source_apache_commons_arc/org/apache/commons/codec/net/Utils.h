@@ -30,9 +30,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecNetUtils)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetUtils_init(OrgApacheCommonsCodecNetUtils *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetUtils *new_OrgApacheCommonsCodecNetUtils_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetUtils *new_OrgApacheCommonsCodecNetUtils_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetUtils *create_OrgApacheCommonsCodecNetUtils_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetUtils *create_OrgApacheCommonsCodecNetUtils_init(void);
 
 FOUNDATION_EXPORT jint OrgApacheCommonsCodecNetUtils_digit16WithByte_(jbyte b);
 

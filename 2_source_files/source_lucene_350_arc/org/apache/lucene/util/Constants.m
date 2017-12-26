@@ -10,6 +10,7 @@
 #include "java/lang/NoSuchMethodException.h"
 #include "java/lang/Package.h"
 #include "java/lang/System.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/lang/reflect/Method.h"
 #include "org/apache/lucene/LucenePackage.h"
@@ -25,17 +26,17 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilConstants_init(OrgApacheLuceneUtilConstants *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilConstants *new_OrgApacheLuceneUtilConstants_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilConstants *new_OrgApacheLuceneUtilConstants_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilConstants *create_OrgApacheLuceneUtilConstants_init();
+__attribute__((unused)) static OrgApacheLuceneUtilConstants *create_OrgApacheLuceneUtilConstants_init(void);
 
 __attribute__((unused)) static NSString *OrgApacheLuceneUtilConstants_identWithNSString_(NSString *s);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilConstants__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilConstants__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilConstants__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilConstants__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilConstants__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilConstants__Annotations$2(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneUtilConstants)
 
@@ -141,7 +142,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       OrgApacheLuceneUtilConstants_JRE_IS_MINIMUM_JAVA6 = v6;
       jboolean v7 = true;
       @try {
-        (void) [NSException_class_() getMethod:@"getSuppressed" parameterTypes:[IOSObjectArray newArrayWithLength:0 type:IOSClass_class_()]];
+        (void) [JavaLangThrowable_class_() getMethod:@"getSuppressed" parameterTypes:[IOSObjectArray newArrayWithLength:0 type:IOSClass_class_()]];
       }
       @catch (JavaLangNoSuchMethodException *nsme) {
         v7 = false;

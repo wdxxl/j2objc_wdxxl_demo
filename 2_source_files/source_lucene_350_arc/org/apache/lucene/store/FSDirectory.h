@@ -101,7 +101,7 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneStoreFSDirectory)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreFSDirectory, directory_, JavaIoFile *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreFSDirectory, staleFiles_, id<JavaUtilSet>)
 
-inline jint OrgApacheLuceneStoreFSDirectory_get_DEFAULT_READ_CHUNK_SIZE();
+inline jint OrgApacheLuceneStoreFSDirectory_get_DEFAULT_READ_CHUNK_SIZE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jint OrgApacheLuceneStoreFSDirectory_DEFAULT_READ_CHUNK_SIZE;
 J2OBJC_STATIC_FIELD_PRIMITIVE_FINAL(OrgApacheLuceneStoreFSDirectory, DEFAULT_READ_CHUNK_SIZE, jint)
@@ -148,6 +148,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreFSDirectory)
 - (void)seekWithLong:(jlong)pos;
 
 - (void)setLengthWithLong:(jlong)length;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

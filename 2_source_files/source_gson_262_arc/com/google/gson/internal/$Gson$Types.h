@@ -84,7 +84,7 @@
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternal_Gson_Types)
 
-inline IOSObjectArray *ComGoogleGsonInternal_Gson_Types_get_EMPTY_TYPE_ARRAY();
+inline IOSObjectArray *ComGoogleGsonInternal_Gson_Types_get_EMPTY_TYPE_ARRAY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSObjectArray *ComGoogleGsonInternal_Gson_Types_EMPTY_TYPE_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternal_Gson_Types, EMPTY_TYPE_ARRAY, IOSObjectArray *)

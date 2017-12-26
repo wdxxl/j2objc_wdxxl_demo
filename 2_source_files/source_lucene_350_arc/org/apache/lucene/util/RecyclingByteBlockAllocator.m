@@ -82,7 +82,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       (void) IOSObjectArray_Set(nil_chk(blocks), i, nil);
     }
     [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(bytesUsed_)) addAndGetWithLong:-(end - stop) * blockSize_];
-    JreAssert(([bytesUsed_ get] >= 0), (@"org/apache/lucene/util/RecyclingByteBlockAllocator.java:112 condition failed: assert bytesUsed.get() >= 0;"));
+    JreAssert([bytesUsed_ get] >= 0, @"org/apache/lucene/util/RecyclingByteBlockAllocator.java:112 condition failed: assert bytesUsed.get() >= 0;");
   }
 }
 
@@ -102,7 +102,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (jint)freeBlocksWithInt:(jint)num {
   @synchronized(self) {
-    JreAssert((num >= 0), (@"org/apache/lucene/util/RecyclingByteBlockAllocator.java:144 condition failed: assert num >= 0;"));
+    JreAssert(num >= 0, @"org/apache/lucene/util/RecyclingByteBlockAllocator.java:144 condition failed: assert num >= 0;");
     jint stop;
     jint count;
     if (num > freeBlocks_) {
@@ -117,7 +117,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       (void) IOSObjectArray_Set(nil_chk(freeByteBlocks_), --freeBlocks_, nil);
     }
     [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(bytesUsed_)) addAndGetWithLong:-count * blockSize_];
-    JreAssert(([bytesUsed_ get] >= 0), (@"org/apache/lucene/util/RecyclingByteBlockAllocator.java:158 condition failed: assert bytesUsed.get() >= 0;"));
+    JreAssert([bytesUsed_ get] >= 0, @"org/apache/lucene/util/RecyclingByteBlockAllocator.java:158 condition failed: assert bytesUsed.get() >= 0;");
     return count;
   }
 }

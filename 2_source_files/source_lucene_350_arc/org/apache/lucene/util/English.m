@@ -19,9 +19,9 @@
 
 __attribute__((unused)) static void OrgApacheLuceneUtilEnglish_init(OrgApacheLuceneUtilEnglish *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilEnglish *new_OrgApacheLuceneUtilEnglish_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilEnglish *new_OrgApacheLuceneUtilEnglish_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilEnglish *create_OrgApacheLuceneUtilEnglish_init();
+__attribute__((unused)) static OrgApacheLuceneUtilEnglish *create_OrgApacheLuceneUtilEnglish_init(void);
 
 @implementation OrgApacheLuceneUtilEnglish
 

@@ -17,6 +17,7 @@
 #include "java/lang/SecurityException.h"
 #include "java/lang/System.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/util/ArrayList.h"
 #include "java/util/Comparator.h"
@@ -50,7 +51,7 @@
 
 @end
 
-inline id<JavaUtilList> OrgApacheLuceneIndexConcurrentMergeScheduler_get_allInstances();
+inline id<JavaUtilList> OrgApacheLuceneIndexConcurrentMergeScheduler_get_allInstances(void);
 inline id<JavaUtilList> OrgApacheLuceneIndexConcurrentMergeScheduler_set_allInstances(id<JavaUtilList> value);
 static id<JavaUtilList> OrgApacheLuceneIndexConcurrentMergeScheduler_allInstances;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneIndexConcurrentMergeScheduler, allInstances, id<JavaUtilList>)
@@ -59,7 +60,7 @@ __attribute__((unused)) static void OrgApacheLuceneIndexConcurrentMergeScheduler
 
 __attribute__((unused)) static void OrgApacheLuceneIndexConcurrentMergeScheduler_addMyself(OrgApacheLuceneIndexConcurrentMergeScheduler *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexConcurrentMergeScheduler__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexConcurrentMergeScheduler__Annotations$0(void);
 
 @interface OrgApacheLuceneIndexConcurrentMergeScheduler_1 : NSObject < JavaUtilComparator >
 
@@ -74,9 +75,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexConcurrentMergeScheduler_1)
 
 __attribute__((unused)) static void OrgApacheLuceneIndexConcurrentMergeScheduler_1_init(OrgApacheLuceneIndexConcurrentMergeScheduler_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexConcurrentMergeScheduler_1 *new_OrgApacheLuceneIndexConcurrentMergeScheduler_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexConcurrentMergeScheduler_1 *new_OrgApacheLuceneIndexConcurrentMergeScheduler_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexConcurrentMergeScheduler_1 *create_OrgApacheLuceneIndexConcurrentMergeScheduler_1_init();
+__attribute__((unused)) static OrgApacheLuceneIndexConcurrentMergeScheduler_1 *create_OrgApacheLuceneIndexConcurrentMergeScheduler_1_init(void);
 
 @interface OrgApacheLuceneIndexConcurrentMergeScheduler_MergeThread () {
  @public
@@ -247,7 +248,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)mergeWithOrgApacheLuceneIndexIndexWriter:(OrgApacheLuceneIndexIndexWriter *)writer {
-  JreAssert((!JavaLangThread_holdsLockWithId_(writer)), (@"org/apache/lucene/index/ConcurrentMergeScheduler.java:296 condition failed: assert !Thread.holdsLock(writer);"));
+  JreAssert(!JavaLangThread_holdsLockWithId_(writer), @"org/apache/lucene/index/ConcurrentMergeScheduler.java:296 condition failed: assert !Thread.holdsLock(writer);");
   self->writer_ = writer;
   OrgApacheLuceneIndexConcurrentMergeScheduler_initMergeThreadPriority(self);
   dir_ = [((OrgApacheLuceneIndexIndexWriter *) nil_chk(writer)) getDirectory];
@@ -319,14 +320,14 @@ J2OBJC_IGNORE_DESIGNATED_END
   }
 }
 
-- (void)handleMergeExceptionWithNSException:(NSException *)exc {
+- (void)handleMergeExceptionWithJavaLangThrowable:(JavaLangThrowable *)exc {
   @try {
     JavaLangThread_sleepWithLong_(250);
   }
   @catch (JavaLangInterruptedException *ie) {
     @throw new_OrgApacheLuceneUtilThreadInterruptedException_initWithJavaLangInterruptedException_(ie);
   }
-  @throw new_OrgApacheLuceneIndexMergePolicy_MergeException_initWithNSException_withOrgApacheLuceneStoreDirectory_(exc, dir_);
+  @throw new_OrgApacheLuceneIndexMergePolicy_MergeException_initWithJavaLangThrowable_withOrgApacheLuceneStoreDirectory_(exc, dir_);
 }
 
 + (jboolean)anyUnhandledExceptions {
@@ -399,7 +400,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   methods[14].selector = @selector(mergeWithOrgApacheLuceneIndexIndexWriter:);
   methods[15].selector = @selector(doMergeWithOrgApacheLuceneIndexMergePolicy_OneMerge:);
   methods[16].selector = @selector(getMergeThreadWithOrgApacheLuceneIndexIndexWriter:withOrgApacheLuceneIndexMergePolicy_OneMerge:);
-  methods[17].selector = @selector(handleMergeExceptionWithNSException:);
+  methods[17].selector = @selector(handleMergeExceptionWithJavaLangThrowable:);
   methods[18].selector = @selector(anyUnhandledExceptions);
   methods[19].selector = @selector(clearUnhandledExceptions);
   methods[20].selector = @selector(addMyself);
@@ -421,7 +422,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     { "suppressExceptions_", "Z", .constantValue.asLong = 0, 0x2, -1, -1, -1, -1 },
     { "allInstances", "LJavaUtilList;", .constantValue.asLong = 0, 0xa, -1, 20, 21, -1 },
   };
-  static const void *ptrTable[] = { "setMaxThreadCount", "I", "setMaxMergeCount", "setMergeThreadPriority", "message", "LNSString;", "merge", "LOrgApacheLuceneIndexIndexWriter;", "LJavaIoIOException;", "doMerge", "LOrgApacheLuceneIndexMergePolicy_OneMerge;", "getMergeThread", "LOrgApacheLuceneIndexIndexWriter;LOrgApacheLuceneIndexMergePolicy_OneMerge;", "handleMergeException", "LNSException;", (void *)&OrgApacheLuceneIndexConcurrentMergeScheduler__Annotations$0, "Ljava/util/List<Lorg/apache/lucene/index/ConcurrentMergeScheduler$MergeThread;>;", &OrgApacheLuceneIndexConcurrentMergeScheduler_compareByMergeDocCount, "Ljava/util/Comparator<Lorg/apache/lucene/index/ConcurrentMergeScheduler$MergeThread;>;", &OrgApacheLuceneIndexConcurrentMergeScheduler_anyExceptions, &OrgApacheLuceneIndexConcurrentMergeScheduler_allInstances, "Ljava/util/List<Lorg/apache/lucene/index/ConcurrentMergeScheduler;>;", "LOrgApacheLuceneIndexConcurrentMergeScheduler_MergeThread;" };
+  static const void *ptrTable[] = { "setMaxThreadCount", "I", "setMaxMergeCount", "setMergeThreadPriority", "message", "LNSString;", "merge", "LOrgApacheLuceneIndexIndexWriter;", "LJavaIoIOException;", "doMerge", "LOrgApacheLuceneIndexMergePolicy_OneMerge;", "getMergeThread", "LOrgApacheLuceneIndexIndexWriter;LOrgApacheLuceneIndexMergePolicy_OneMerge;", "handleMergeException", "LJavaLangThrowable;", (void *)&OrgApacheLuceneIndexConcurrentMergeScheduler__Annotations$0, "Ljava/util/List<Lorg/apache/lucene/index/ConcurrentMergeScheduler$MergeThread;>;", &OrgApacheLuceneIndexConcurrentMergeScheduler_compareByMergeDocCount, "Ljava/util/Comparator<Lorg/apache/lucene/index/ConcurrentMergeScheduler$MergeThread;>;", &OrgApacheLuceneIndexConcurrentMergeScheduler_anyExceptions, &OrgApacheLuceneIndexConcurrentMergeScheduler_allInstances, "Ljava/util/List<Lorg/apache/lucene/index/ConcurrentMergeScheduler;>;", "LOrgApacheLuceneIndexConcurrentMergeScheduler_MergeThread;" };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexConcurrentMergeScheduler = { "ConcurrentMergeScheduler", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x1, 24, 12, -1, 22, -1, -1, -1 };
   return &_OrgApacheLuceneIndexConcurrentMergeScheduler;
 }
@@ -648,11 +649,11 @@ OrgApacheLuceneIndexConcurrentMergeScheduler_1 *create_OrgApacheLuceneIndexConcu
     }
     if ([this$0_ verbose]) [this$0_ messageWithNSString:@"  merge thread: done"];
   }
-  @catch (NSException *exc) {
+  @catch (JavaLangThrowable *exc) {
     if (!([exc isKindOfClass:[OrgApacheLuceneIndexMergePolicy_MergeAbortedException class]])) {
       if (!this$0_->suppressExceptions_) {
         *JreLoadStaticRef(OrgApacheLuceneIndexConcurrentMergeScheduler, anyExceptions) = true;
-        [this$0_ handleMergeExceptionWithNSException:exc];
+        [this$0_ handleMergeExceptionWithJavaLangThrowable:exc];
       }
     }
   }

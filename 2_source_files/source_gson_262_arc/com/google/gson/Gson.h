@@ -132,39 +132,39 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonGson)
 J2OBJC_FIELD_SETTER(ComGoogleGsonGson, deserializationContext_, id<ComGoogleGsonJsonDeserializationContext>)
 J2OBJC_FIELD_SETTER(ComGoogleGsonGson, serializationContext_, id<ComGoogleGsonJsonSerializationContext>)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_JSON_NON_EXECUTABLE();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_JSON_NON_EXECUTABLE(void);
 #define ComGoogleGsonGson_DEFAULT_JSON_NON_EXECUTABLE false
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_JSON_NON_EXECUTABLE, jboolean)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_LENIENT();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_LENIENT(void);
 #define ComGoogleGsonGson_DEFAULT_LENIENT false
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_LENIENT, jboolean)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_PRETTY_PRINT();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_PRETTY_PRINT(void);
 #define ComGoogleGsonGson_DEFAULT_PRETTY_PRINT false
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_PRETTY_PRINT, jboolean)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_ESCAPE_HTML();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_ESCAPE_HTML(void);
 #define ComGoogleGsonGson_DEFAULT_ESCAPE_HTML true
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_ESCAPE_HTML, jboolean)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_SERIALIZE_NULLS();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_SERIALIZE_NULLS(void);
 #define ComGoogleGsonGson_DEFAULT_SERIALIZE_NULLS false
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_SERIALIZE_NULLS, jboolean)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_COMPLEX_MAP_KEYS();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_COMPLEX_MAP_KEYS(void);
 #define ComGoogleGsonGson_DEFAULT_COMPLEX_MAP_KEYS false
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_COMPLEX_MAP_KEYS, jboolean)
 
-inline jboolean ComGoogleGsonGson_get_DEFAULT_SPECIALIZE_FLOAT_VALUES();
+inline jboolean ComGoogleGsonGson_get_DEFAULT_SPECIALIZE_FLOAT_VALUES(void);
 #define ComGoogleGsonGson_DEFAULT_SPECIALIZE_FLOAT_VALUES false
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonGson, DEFAULT_SPECIALIZE_FLOAT_VALUES, jboolean)
 
 FOUNDATION_EXPORT void ComGoogleGsonGson_init(ComGoogleGsonGson *self);
 
-FOUNDATION_EXPORT ComGoogleGsonGson *new_ComGoogleGsonGson_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonGson *new_ComGoogleGsonGson_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonGson *create_ComGoogleGsonGson_init();
+FOUNDATION_EXPORT ComGoogleGsonGson *create_ComGoogleGsonGson_init(void);
 
 FOUNDATION_EXPORT void ComGoogleGsonGson_initWithComGoogleGsonInternalExcluder_withComGoogleGsonFieldNamingStrategy_withJavaUtilMap_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withComGoogleGsonLongSerializationPolicy_withJavaUtilList_(ComGoogleGsonGson *self, ComGoogleGsonInternalExcluder *excluder, id<ComGoogleGsonFieldNamingStrategy> fieldNamingPolicy, id<JavaUtilMap> instanceCreators, jboolean serializeNulls, jboolean complexMapKeySerialization, jboolean generateNonExecutableGson, jboolean htmlSafe, jboolean prettyPrinting, jboolean lenient, jboolean serializeSpecialFloatingPointValues, ComGoogleGsonLongSerializationPolicy *longSerializationPolicy, id<JavaUtilList> typeAdapterFactories);
 
@@ -209,9 +209,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonGson_FutureTypeAdapter)
 
 FOUNDATION_EXPORT void ComGoogleGsonGson_FutureTypeAdapter_init(ComGoogleGsonGson_FutureTypeAdapter *self);
 
-FOUNDATION_EXPORT ComGoogleGsonGson_FutureTypeAdapter *new_ComGoogleGsonGson_FutureTypeAdapter_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonGson_FutureTypeAdapter *new_ComGoogleGsonGson_FutureTypeAdapter_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonGson_FutureTypeAdapter *create_ComGoogleGsonGson_FutureTypeAdapter_init();
+FOUNDATION_EXPORT ComGoogleGsonGson_FutureTypeAdapter *create_ComGoogleGsonGson_FutureTypeAdapter_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonGson_FutureTypeAdapter)
 

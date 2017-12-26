@@ -48,31 +48,31 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer, typeA
 
 __attribute__((unused)) static id<OrgApacheLuceneAnalysisStandardStandardTokenizerInterface> OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer_getScannerForWithOrgApacheLuceneUtilVersion_withJavaIoReader_(OrgApacheLuceneUtilVersion *matchVersion, JavaIoReader *input);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$6(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$7();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$7(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$8();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$8(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$9();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$9(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$10();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$10(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$11();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$11(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$12();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer__Annotations$12(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisStandardUAX29URLEmailTokenizer)
 

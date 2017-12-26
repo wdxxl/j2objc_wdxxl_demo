@@ -16,7 +16,7 @@
 #include "org/apache/lucene/search/Query.h"
 #include "org/apache/lucene/util/RamUsageEstimator.h"
 
-inline jboolean OrgApacheLuceneIndexBufferedDeletes_get_VERBOSE_DELETES();
+inline jboolean OrgApacheLuceneIndexBufferedDeletes_get_VERBOSE_DELETES(void);
 #define OrgApacheLuceneIndexBufferedDeletes_VERBOSE_DELETES false
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexBufferedDeletes, VERBOSE_DELETES, jboolean)
 

@@ -65,9 +65,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexCompoundFileWriter_FileEntry, dir_, OrgA
 
 __attribute__((unused)) static void OrgApacheLuceneIndexCompoundFileWriter_FileEntry_init(OrgApacheLuceneIndexCompoundFileWriter_FileEntry *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileWriter_FileEntry *new_OrgApacheLuceneIndexCompoundFileWriter_FileEntry_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileWriter_FileEntry *new_OrgApacheLuceneIndexCompoundFileWriter_FileEntry_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileWriter_FileEntry *create_OrgApacheLuceneIndexCompoundFileWriter_FileEntry_init();
+__attribute__((unused)) static OrgApacheLuceneIndexCompoundFileWriter_FileEntry *create_OrgApacheLuceneIndexCompoundFileWriter_FileEntry_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexCompoundFileWriter_FileEntry)
 
@@ -135,7 +135,7 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir {
       [os seekWithLong:((OrgApacheLuceneIndexCompoundFileWriter_FileEntry *) nil_chk(fe))->directoryOffset_];
       [os writeLongWithLong:fe->dataOffset_];
     }
-    JreAssert((finalLength == [os length]), (@"org/apache/lucene/index/CompoundFileWriter.java:210 condition failed: assert finalLength == os.length();"));
+    JreAssert(finalLength == [os length], @"org/apache/lucene/index/CompoundFileWriter.java:210 condition failed: assert finalLength == os.length();");
     OrgApacheLuceneStoreIndexOutput *tmp = os;
     os = nil;
     [tmp close];

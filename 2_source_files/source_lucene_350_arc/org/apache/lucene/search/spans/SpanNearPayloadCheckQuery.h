@@ -22,6 +22,7 @@
 
 @class OrgApacheLuceneSearchSpansSpanNearQuery;
 @class OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus;
+@class OrgApacheLuceneSearchSpansSpanQuery;
 @class OrgApacheLuceneSearchSpansSpans;
 @protocol JavaUtilCollection;
 
@@ -46,6 +47,10 @@
 #pragma mark Protected
 
 - (OrgApacheLuceneSearchSpansSpanPositionCheckQuery_AcceptStatus *)acceptPositionWithOrgApacheLuceneSearchSpansSpans:(OrgApacheLuceneSearchSpansSpans *)spans;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSpansSpanQuery:(OrgApacheLuceneSearchSpansSpanQuery *)arg0 NS_UNAVAILABLE;
 
 @end
 

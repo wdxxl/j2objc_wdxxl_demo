@@ -14,6 +14,7 @@
 #include "java/lang/Math.h"
 #include "java/lang/NumberFormatException.h"
 #include "java/lang/StringBuilder.h"
+#include "java/lang/Throwable.h"
 #include "java/text/ParseException.h"
 #include "java/text/ParsePosition.h"
 #include "java/util/Calendar.h"
@@ -41,11 +42,11 @@
 
 @end
 
-inline NSString *ComGoogleGsonInternalBindUtilISO8601Utils_get_UTC_ID();
+inline NSString *ComGoogleGsonInternalBindUtilISO8601Utils_get_UTC_ID(void);
 static NSString *ComGoogleGsonInternalBindUtilISO8601Utils_UTC_ID = @"UTC";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindUtilISO8601Utils, UTC_ID, NSString *)
 
-inline JavaUtilTimeZone *ComGoogleGsonInternalBindUtilISO8601Utils_get_TIMEZONE_UTC();
+inline JavaUtilTimeZone *ComGoogleGsonInternalBindUtilISO8601Utils_get_TIMEZONE_UTC(void);
 static JavaUtilTimeZone *ComGoogleGsonInternalBindUtilISO8601Utils_TIMEZONE_UTC;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindUtilISO8601Utils, TIMEZONE_UTC, JavaUtilTimeZone *)
 
@@ -335,7 +336,7 @@ JavaUtilDate *ComGoogleGsonInternalBindUtilISO8601Utils_parseWithNSString_withJa
     msg = JreStrcat("C$C", '(', [[fail java_getClass] getName], ')');
   }
   JavaTextParseException *ex = new_JavaTextParseException_initWithNSString_withInt_(JreStrcat("$$$$", @"Failed to parse date [", input, @"]: ", msg), [pos getIndex]);
-  (void) [ex initCauseWithNSException:fail];
+  (void) [ex initCauseWithJavaLangThrowable:fail];
   @throw ex;
 }
 

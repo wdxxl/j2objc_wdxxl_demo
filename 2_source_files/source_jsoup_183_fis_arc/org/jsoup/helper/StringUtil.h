@@ -66,9 +66,9 @@ J2OBJC_STATIC_INIT(OrgJsoupHelperStringUtil)
 
 FOUNDATION_EXPORT void OrgJsoupHelperStringUtil_init(OrgJsoupHelperStringUtil *self);
 
-FOUNDATION_EXPORT OrgJsoupHelperStringUtil *new_OrgJsoupHelperStringUtil_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupHelperStringUtil *new_OrgJsoupHelperStringUtil_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupHelperStringUtil *create_OrgJsoupHelperStringUtil_init();
+FOUNDATION_EXPORT OrgJsoupHelperStringUtil *create_OrgJsoupHelperStringUtil_init(void);
 
 FOUNDATION_EXPORT NSString *OrgJsoupHelperStringUtil_joinWithJavaUtilCollection_withNSString_(id<JavaUtilCollection> strings, NSString *sep);
 

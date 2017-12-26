@@ -59,7 +59,7 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneSearchTopDocsCollector)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchTopDocsCollector, pq_, OrgApacheLuceneUtilPriorityQueue *)
 
-inline OrgApacheLuceneSearchTopDocs *OrgApacheLuceneSearchTopDocsCollector_get_EMPTY_TOPDOCS();
+inline OrgApacheLuceneSearchTopDocs *OrgApacheLuceneSearchTopDocsCollector_get_EMPTY_TOPDOCS(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchTopDocs *OrgApacheLuceneSearchTopDocsCollector_EMPTY_TOPDOCS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchTopDocsCollector, EMPTY_TOPDOCS, OrgApacheLuceneSearchTopDocs *)

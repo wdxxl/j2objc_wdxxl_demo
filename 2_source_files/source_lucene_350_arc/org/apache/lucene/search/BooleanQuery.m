@@ -42,9 +42,9 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchBooleanQuery, clauses_, JavaUtilArrayList *)
 
-inline jint OrgApacheLuceneSearchBooleanQuery_get_maxClauseCount();
+inline jint OrgApacheLuceneSearchBooleanQuery_get_maxClauseCount(void);
 inline jint OrgApacheLuceneSearchBooleanQuery_set_maxClauseCount(jint value);
-inline jint *OrgApacheLuceneSearchBooleanQuery_getRef_maxClauseCount();
+inline jint *OrgApacheLuceneSearchBooleanQuery_getRef_maxClauseCount(void);
 static jint OrgApacheLuceneSearchBooleanQuery_maxClauseCount = 1024;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneSearchBooleanQuery, maxClauseCount, jint)
 

@@ -51,27 +51,27 @@
 
 @end
 
-inline IOSIntArray *OrgApacheCommonsCodecDigestUnixCrypt_get_CON_SALT();
+inline IOSIntArray *OrgApacheCommonsCodecDigestUnixCrypt_get_CON_SALT(void);
 static IOSIntArray *OrgApacheCommonsCodecDigestUnixCrypt_CON_SALT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestUnixCrypt, CON_SALT, IOSIntArray *)
 
-inline IOSIntArray *OrgApacheCommonsCodecDigestUnixCrypt_get_COV2CHAR();
+inline IOSIntArray *OrgApacheCommonsCodecDigestUnixCrypt_get_COV2CHAR(void);
 static IOSIntArray *OrgApacheCommonsCodecDigestUnixCrypt_COV2CHAR;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestUnixCrypt, COV2CHAR, IOSIntArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SALT_CHARS();
+inline IOSCharArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SALT_CHARS(void);
 static IOSCharArray *OrgApacheCommonsCodecDigestUnixCrypt_SALT_CHARS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestUnixCrypt, SALT_CHARS, IOSCharArray *)
 
-inline IOSBooleanArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SHIFT2();
+inline IOSBooleanArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SHIFT2(void);
 static IOSBooleanArray *OrgApacheCommonsCodecDigestUnixCrypt_SHIFT2;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestUnixCrypt, SHIFT2, IOSBooleanArray *)
 
-inline IOSObjectArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SKB();
+inline IOSObjectArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SKB(void);
 static IOSObjectArray *OrgApacheCommonsCodecDigestUnixCrypt_SKB;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestUnixCrypt, SKB, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SPTRANS();
+inline IOSObjectArray *OrgApacheCommonsCodecDigestUnixCrypt_get_SPTRANS(void);
 static IOSObjectArray *OrgApacheCommonsCodecDigestUnixCrypt_SPTRANS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestUnixCrypt, SPTRANS, IOSObjectArray *)
 

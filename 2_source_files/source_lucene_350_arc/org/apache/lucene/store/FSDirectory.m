@@ -20,6 +20,7 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/System.h"
 #include "java/lang/Thread.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/annotation/Annotation.h"
 #include "java/util/Collection.h"
 #include "java/util/Collections.h"
@@ -52,11 +53,11 @@
 
 __attribute__((unused)) static JavaIoFile *OrgApacheLuceneStoreFSDirectory_getCanonicalPathWithJavaIoFile_(JavaIoFile *file);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFSDirectory__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFSDirectory__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFSDirectory__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFSDirectory__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFSDirectory__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFSDirectory__Annotations$2(void);
 
 @interface OrgApacheLuceneStoreFSDirectory_1 : NSObject < JavaIoFilenameFilter >
 
@@ -71,9 +72,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreFSDirectory_1)
 
 __attribute__((unused)) static void OrgApacheLuceneStoreFSDirectory_1_init(OrgApacheLuceneStoreFSDirectory_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneStoreFSDirectory_1 *new_OrgApacheLuceneStoreFSDirectory_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneStoreFSDirectory_1 *new_OrgApacheLuceneStoreFSDirectory_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneStoreFSDirectory_1 *create_OrgApacheLuceneStoreFSDirectory_1_init();
+__attribute__((unused)) static OrgApacheLuceneStoreFSDirectory_1 *create_OrgApacheLuceneStoreFSDirectory_1_init(void);
 
 @interface OrgApacheLuceneStoreFSDirectory_FSIndexOutput () {
  @public
@@ -220,7 +221,7 @@ withOrgApacheLuceneStoreLockFactory:(OrgApacheLuceneStoreLockFactory *)lockFacto
     dirName = [((JavaIoFile *) nil_chk(directory_)) getCanonicalPath];
   }
   @catch (JavaIoIOException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSString_withNSException_([e description], e);
+    @throw new_JavaLangRuntimeException_initWithNSString_withJavaLangThrowable_([e description], e);
   }
   jint digest = 0;
   for (jint charIDX = 0; charIDX < [((NSString *) nil_chk(dirName)) java_length]; charIDX++) {
@@ -508,7 +509,7 @@ OrgApacheLuceneStoreFSDirectory_1 *create_OrgApacheLuceneStoreFSDirectory_1_init
         @try {
           [((JavaIoRandomAccessFile *) nil_chk(file_)) close];
         }
-        @catch (NSException *t) {
+        @catch (JavaLangThrowable *t) {
         }
       }
       else {

@@ -30,6 +30,10 @@
 
 - (id<JavaUtilList>)getPositions;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchSpanFilterResult)
@@ -62,6 +66,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchSpanFilterResult)
 
 - (id<JavaUtilList>)getPositions;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchSpanFilterResult_PositionInfo)
@@ -89,6 +97,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchSpanFilterResult_PositionInfo)
 - (jint)getEnd;
 
 - (jint)getStart;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

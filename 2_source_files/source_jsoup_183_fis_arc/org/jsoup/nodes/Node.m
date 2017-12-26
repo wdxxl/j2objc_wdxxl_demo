@@ -35,7 +35,7 @@
 
 @end
 
-inline id<JavaUtilList> OrgJsoupNodesNode_get_EMPTY_NODES();
+inline id<JavaUtilList> OrgJsoupNodesNode_get_EMPTY_NODES(void);
 static id<JavaUtilList> OrgJsoupNodesNode_EMPTY_NODES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesNode, EMPTY_NODES, id<JavaUtilList>)
 
@@ -466,7 +466,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
     clone = (OrgJsoupNodesNode *) cast_chk([super java_clone], [OrgJsoupNodesNode class]);
   }
   @catch (JavaLangCloneNotSupportedException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
   ((OrgJsoupNodesNode *) nil_chk(clone))->parentNode_ = parent;
   clone->siblingIndex_ = parent == nil ? 0 : siblingIndex_;

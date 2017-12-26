@@ -48,6 +48,10 @@ withOrgApacheLuceneSearchScoreDocArray:(IOSObjectArray *)scoreDocs
 - (instancetype)initWithInt:(jint)totalHits
 withOrgApacheLuceneSearchScoreDocArray:(IOSObjectArray *)scoreDocs;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchTopDocs)

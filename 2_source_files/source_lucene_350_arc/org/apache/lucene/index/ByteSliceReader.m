@@ -26,9 +26,9 @@ J2OBJC_IGNORE_DESIGNATED_END
 - (void)init__WithOrgApacheLuceneIndexByteBlockPool:(OrgApacheLuceneIndexByteBlockPool *)pool
                                             withInt:(jint)startIndex
                                             withInt:(jint)endIndex {
-  JreAssert((endIndex - startIndex >= 0), (@"org/apache/lucene/index/ByteSliceReader.java:42 condition failed: assert endIndex-startIndex >= 0;"));
-  JreAssert((startIndex >= 0), (@"org/apache/lucene/index/ByteSliceReader.java:43 condition failed: assert startIndex >= 0;"));
-  JreAssert((endIndex >= 0), (@"org/apache/lucene/index/ByteSliceReader.java:44 condition failed: assert endIndex >= 0;"));
+  JreAssert(endIndex - startIndex >= 0, @"org/apache/lucene/index/ByteSliceReader.java:42 condition failed: assert endIndex-startIndex >= 0;");
+  JreAssert(startIndex >= 0, @"org/apache/lucene/index/ByteSliceReader.java:43 condition failed: assert startIndex >= 0;");
+  JreAssert(endIndex >= 0, @"org/apache/lucene/index/ByteSliceReader.java:44 condition failed: assert endIndex >= 0;");
   self->pool_ = pool;
   self->endIndex_ = endIndex;
   level_ = 0;
@@ -44,13 +44,13 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)eof {
-  JreAssert((upto_ + bufferOffset_ <= endIndex_), (@"org/apache/lucene/index/ByteSliceReader.java:65 condition failed: assert upto + bufferOffset <= endIndex;"));
+  JreAssert(upto_ + bufferOffset_ <= endIndex_, @"org/apache/lucene/index/ByteSliceReader.java:65 condition failed: assert upto + bufferOffset <= endIndex;");
   return upto_ + bufferOffset_ == endIndex_;
 }
 
 - (jbyte)readByte {
-  JreAssert((![self eof]), (@"org/apache/lucene/index/ByteSliceReader.java:71 condition failed: assert !eof();"));
-  JreAssert((upto_ <= limit_), (@"org/apache/lucene/index/ByteSliceReader.java:72 condition failed: assert upto <= limit;"));
+  JreAssert(![self eof], @"org/apache/lucene/index/ByteSliceReader.java:71 condition failed: assert !eof();");
+  JreAssert(upto_ <= limit_, @"org/apache/lucene/index/ByteSliceReader.java:72 condition failed: assert upto <= limit;");
   if (upto_ == limit_) [self nextSlice];
   return IOSByteArray_Get(nil_chk(buffer_), upto_++);
 }
@@ -59,7 +59,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   jlong size = 0;
   while (true) {
     if (limit_ + bufferOffset_ == endIndex_) {
-      JreAssert((endIndex_ - bufferOffset_ >= upto_), (@"org/apache/lucene/index/ByteSliceReader.java:82 condition failed: assert endIndex - bufferOffset >= upto;"));
+      JreAssert(endIndex_ - bufferOffset_ >= upto_, @"org/apache/lucene/index/ByteSliceReader.java:82 condition failed: assert endIndex - bufferOffset >= upto;");
       [((OrgApacheLuceneStoreIndexOutput *) nil_chk(outArg)) writeBytesWithByteArray:buffer_ withInt:upto_ withInt:limit_ - upto_];
       size += limit_ - upto_;
       break;
@@ -82,7 +82,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   buffer_ = IOSObjectArray_Get(nil_chk(((OrgApacheLuceneIndexByteBlockPool *) nil_chk(pool_))->buffers_), bufferUpto_);
   upto_ = nextIndex & OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_MASK;
   if (nextIndex + newSize >= endIndex_) {
-    JreAssert((endIndex_ - nextIndex > 0), (@"org/apache/lucene/index/ByteSliceReader.java:112 condition failed: assert endIndex - nextIndex > 0;"));
+    JreAssert(endIndex_ - nextIndex > 0, @"org/apache/lucene/index/ByteSliceReader.java:112 condition failed: assert endIndex - nextIndex > 0;");
     limit_ = endIndex_ - bufferOffset_;
   }
   else {

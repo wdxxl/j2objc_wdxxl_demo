@@ -66,11 +66,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharArrayMap, charUtils_, OrgApacheLu
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharArrayMap, entrySet_, OrgApacheLuceneAnalysisCharArrayMap_EntrySet *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharArrayMap, keySet_CharArrayMap_, OrgApacheLuceneAnalysisCharArraySet *)
 
-inline OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCharArrayMap_get_EMPTY_MAP();
+inline OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCharArrayMap_get_EMPTY_MAP(void);
 static OrgApacheLuceneAnalysisCharArrayMap *OrgApacheLuceneAnalysisCharArrayMap_EMPTY_MAP;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisCharArrayMap, EMPTY_MAP, OrgApacheLuceneAnalysisCharArrayMap *)
 
-inline jint OrgApacheLuceneAnalysisCharArrayMap_get_INIT_SIZE();
+inline jint OrgApacheLuceneAnalysisCharArrayMap_get_INIT_SIZE(void);
 #define OrgApacheLuceneAnalysisCharArrayMap_INIT_SIZE 8
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisCharArrayMap, INIT_SIZE, jint)
 
@@ -215,9 +215,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap)
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap_init(OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap *self);
 
-__attribute__((unused)) static OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap *new_OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap *new_OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap *create_OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap_init();
+__attribute__((unused)) static OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap *create_OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisCharArrayMap_EmptyCharArrayMap)
 
@@ -590,7 +590,7 @@ jint OrgApacheLuceneAnalysisCharArrayMap_getSlotWithJavaLangCharSequence_(OrgApa
 }
 
 void OrgApacheLuceneAnalysisCharArrayMap_rehash(OrgApacheLuceneAnalysisCharArrayMap *self) {
-  JreAssert((((IOSObjectArray *) nil_chk(self->keys_))->size_ == ((IOSObjectArray *) nil_chk(self->values_CharArrayMap_))->size_), (@"org/apache/lucene/analysis/CharArrayMap.java:240 condition failed: assert keys.length == values.length;"));
+  JreAssert(((IOSObjectArray *) nil_chk(self->keys_))->size_ == ((IOSObjectArray *) nil_chk(self->values_CharArrayMap_))->size_, @"org/apache/lucene/analysis/CharArrayMap.java:240 condition failed: assert keys.length == values.length;");
   jint newSize = 2 * self->keys_->size_;
   IOSObjectArray *oldkeys = self->keys_;
   IOSObjectArray *oldvalues = self->values_CharArrayMap_;

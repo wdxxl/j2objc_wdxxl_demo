@@ -33,11 +33,11 @@
 
 @end
 
-inline jint OrgApacheLuceneUtilSorterTemplate_get_MERGESORT_THRESHOLD();
+inline jint OrgApacheLuceneUtilSorterTemplate_get_MERGESORT_THRESHOLD(void);
 #define OrgApacheLuceneUtilSorterTemplate_MERGESORT_THRESHOLD 12
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilSorterTemplate, MERGESORT_THRESHOLD, jint)
 
-inline jint OrgApacheLuceneUtilSorterTemplate_get_QUICKSORT_THRESHOLD();
+inline jint OrgApacheLuceneUtilSorterTemplate_get_QUICKSORT_THRESHOLD(void);
 #define OrgApacheLuceneUtilSorterTemplate_QUICKSORT_THRESHOLD 7
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilSorterTemplate, QUICKSORT_THRESHOLD, jint)
 

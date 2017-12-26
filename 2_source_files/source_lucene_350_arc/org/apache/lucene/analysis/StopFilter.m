@@ -42,19 +42,19 @@ __attribute__((unused)) static OrgApacheLuceneAnalysisStopFilter *new_OrgApacheL
 
 __attribute__((unused)) static OrgApacheLuceneAnalysisStopFilter *create_OrgApacheLuceneAnalysisStopFilter_initWithOrgApacheLuceneUtilVersion_withBoolean_withOrgApacheLuceneAnalysisTokenStream_withJavaUtilSet_withBoolean_(OrgApacheLuceneUtilVersion *matchVersion, jboolean enablePositionIncrements, OrgApacheLuceneAnalysisTokenStream *input, id<JavaUtilSet> stopWords, jboolean ignoreCase);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisStopFilter__Annotations$6(void);
 
 @implementation OrgApacheLuceneAnalysisStopFilter
 

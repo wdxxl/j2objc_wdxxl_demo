@@ -32,9 +32,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgJsoupExamplesListLinks)
 
 FOUNDATION_EXPORT void OrgJsoupExamplesListLinks_init(OrgJsoupExamplesListLinks *self);
 
-FOUNDATION_EXPORT OrgJsoupExamplesListLinks *new_OrgJsoupExamplesListLinks_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgJsoupExamplesListLinks *new_OrgJsoupExamplesListLinks_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgJsoupExamplesListLinks *create_OrgJsoupExamplesListLinks_init();
+FOUNDATION_EXPORT OrgJsoupExamplesListLinks *create_OrgJsoupExamplesListLinks_init(void);
 
 FOUNDATION_EXPORT void OrgJsoupExamplesListLinks_mainWithNSStringArray_(IOSObjectArray *args);
 

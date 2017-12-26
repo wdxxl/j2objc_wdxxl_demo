@@ -33,7 +33,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheCommonsCodecLanguageBmNameType_Enum) {
   OrgApacheCommonsCodecLanguageBmNameType_Enum_SEPHARDIC = 2,
 };
 
-@interface OrgApacheCommonsCodecLanguageBmNameType : JavaLangEnum < NSCopying >
+@interface OrgApacheCommonsCodecLanguageBmNameType : JavaLangEnum
 
 #pragma mark Public
 
@@ -43,10 +43,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheCommonsCodecLanguageBmNameType_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmNameType)
@@ -54,16 +50,16 @@ J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageBmNameType)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_values_[];
 
-inline OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_get_ASHKENAZI();
+inline OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_get_ASHKENAZI(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecLanguageBmNameType, ASHKENAZI)
 
-inline OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_get_GENERIC();
+inline OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_get_GENERIC(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecLanguageBmNameType, GENERIC)
 
-inline OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_get_SEPHARDIC();
+inline OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_get_SEPHARDIC(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecLanguageBmNameType, SEPHARDIC)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheCommonsCodecLanguageBmNameType_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheCommonsCodecLanguageBmNameType_values(void);
 
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageBmNameType *OrgApacheCommonsCodecLanguageBmNameType_valueOfWithNSString_(NSString *name);
 

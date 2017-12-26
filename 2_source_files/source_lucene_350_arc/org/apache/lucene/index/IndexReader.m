@@ -67,35 +67,35 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexIndexReader, refCount_, JavaUtilConcurrentAtomicAtomicInteger *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod1();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod1(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_reopenMethod1;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, reopenMethod1, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod1();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod1(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_doOpenIfChangedMethod1;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, doOpenIfChangedMethod1, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod2();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod2(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_reopenMethod2;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, reopenMethod2, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod2();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod2(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_doOpenIfChangedMethod2;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, doOpenIfChangedMethod2, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod3();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod3(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_reopenMethod3;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, reopenMethod3, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod3();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod3(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_doOpenIfChangedMethod3;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, doOpenIfChangedMethod3, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod4();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_reopenMethod4(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_reopenMethod4;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, reopenMethod4, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod4();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_get_doOpenIfChangedMethod4(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneIndexIndexReader_doOpenIfChangedMethod4;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexIndexReader, doOpenIfChangedMethod4, OrgApacheLuceneUtilVirtualMethod *)
 
@@ -107,41 +107,41 @@ __attribute__((unused)) static void OrgApacheLuceneIndexIndexReader_commit(OrgAp
 
 __attribute__((unused)) static void OrgApacheLuceneIndexIndexReader_commitWithJavaUtilMap_(OrgApacheLuceneIndexIndexReader *self, id<JavaUtilMap> commitUserData);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$5(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$6();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$6(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$7();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$7(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$8();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$8(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$9();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$9(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$10();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$10(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$11();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$11(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$12();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$12(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$13();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$13(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$14();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$14(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$15();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$15(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$16();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$16(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$17();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexIndexReader__Annotations$17(void);
 
 @interface OrgApacheLuceneIndexIndexReader_ReaderFinishedListener : NSObject
 
@@ -1037,7 +1037,7 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexIndexReader_openIfChangedWi
   OrgApacheLuceneIndexIndexReader_initialize();
   if (((OrgApacheLuceneIndexIndexReader *) nil_chk(oldReader))->hasNewReopenAPI1_) {
     OrgApacheLuceneIndexIndexReader *newReader = [oldReader doOpenIfChanged];
-    JreAssert((newReader != oldReader), (@"org/apache/lucene/index/IndexReader.java:498 condition failed: assert newReader != oldReader;"));
+    JreAssert(newReader != oldReader, @"org/apache/lucene/index/IndexReader.java:498 condition failed: assert newReader != oldReader;");
     return newReader;
   }
   else {
@@ -1055,7 +1055,7 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexIndexReader_openIfChangedWi
   OrgApacheLuceneIndexIndexReader_initialize();
   if (((OrgApacheLuceneIndexIndexReader *) nil_chk(oldReader))->hasNewReopenAPI2_) {
     OrgApacheLuceneIndexIndexReader *newReader = [oldReader doOpenIfChangedWithBoolean:readOnly];
-    JreAssert((newReader != oldReader), (@"org/apache/lucene/index/IndexReader.java:521 condition failed: assert newReader != oldReader;"));
+    JreAssert(newReader != oldReader, @"org/apache/lucene/index/IndexReader.java:521 condition failed: assert newReader != oldReader;");
     return newReader;
   }
   else {
@@ -1073,7 +1073,7 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexIndexReader_openIfChangedWi
   OrgApacheLuceneIndexIndexReader_initialize();
   if (((OrgApacheLuceneIndexIndexReader *) nil_chk(oldReader))->hasNewReopenAPI3_) {
     OrgApacheLuceneIndexIndexReader *newReader = [oldReader doOpenIfChangedWithOrgApacheLuceneIndexIndexCommit:commit];
-    JreAssert((newReader != oldReader), (@"org/apache/lucene/index/IndexReader.java:545 condition failed: assert newReader != oldReader;"));
+    JreAssert(newReader != oldReader, @"org/apache/lucene/index/IndexReader.java:545 condition failed: assert newReader != oldReader;");
     return newReader;
   }
   else {
@@ -1091,7 +1091,7 @@ OrgApacheLuceneIndexIndexReader *OrgApacheLuceneIndexIndexReader_openIfChangedWi
   OrgApacheLuceneIndexIndexReader_initialize();
   if (((OrgApacheLuceneIndexIndexReader *) nil_chk(oldReader))->hasNewReopenAPI4_) {
     OrgApacheLuceneIndexIndexReader *newReader = [oldReader doOpenIfChangedWithOrgApacheLuceneIndexIndexWriter:writer withBoolean:applyAllDeletes];
-    JreAssert((newReader != oldReader), (@"org/apache/lucene/index/IndexReader.java:621 condition failed: assert newReader != oldReader;"));
+    JreAssert(newReader != oldReader, @"org/apache/lucene/index/IndexReader.java:621 condition failed: assert newReader != oldReader;");
     return newReader;
   }
   else {
@@ -1316,10 +1316,6 @@ OrgApacheLuceneIndexIndexReader_FieldOption *OrgApacheLuceneIndexIndexReader_Fie
   return OrgApacheLuceneIndexIndexReader_FieldOption_valueOfWithNSString_(name);
 }
 
-- (id)copyWithZone:(NSZone *)zone {
-  return self;
-}
-
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, "[LOrgApacheLuceneIndexIndexReader_FieldOption;", 0x9, -1, -1, -1, -1, -1, -1 },
@@ -1351,18 +1347,18 @@ OrgApacheLuceneIndexIndexReader_FieldOption *OrgApacheLuceneIndexIndexReader_Fie
 
 + (void)initialize {
   if (self == [OrgApacheLuceneIndexIndexReader_FieldOption class]) {
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, ALL) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"ALL", 0);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, INDEXED) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"INDEXED", 1);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, STORES_PAYLOADS) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"STORES_PAYLOADS", 2);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, OMIT_TERM_FREQ_AND_POSITIONS) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"OMIT_TERM_FREQ_AND_POSITIONS", 3);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, OMIT_POSITIONS) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"OMIT_POSITIONS", 4);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, UNINDEXED) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"UNINDEXED", 5);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, INDEXED_WITH_TERMVECTOR) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"INDEXED_WITH_TERMVECTOR", 6);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, INDEXED_NO_TERMVECTOR) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"INDEXED_NO_TERMVECTOR", 7);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"TERMVECTOR", 8);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR_WITH_POSITION) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"TERMVECTOR_WITH_POSITION", 9);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR_WITH_OFFSET) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"TERMVECTOR_WITH_OFFSET", 10);
-    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR_WITH_POSITION_OFFSET) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"TERMVECTOR_WITH_POSITION_OFFSET", 11);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, ALL) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 0);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, INDEXED) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 1);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, STORES_PAYLOADS) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 2);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, OMIT_TERM_FREQ_AND_POSITIONS) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 3);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, OMIT_POSITIONS) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 4);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, UNINDEXED) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 5);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, INDEXED_WITH_TERMVECTOR) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 6);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, INDEXED_NO_TERMVECTOR) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 7);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 8);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR_WITH_POSITION) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 9);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR_WITH_OFFSET) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 10);
+    JreEnum(OrgApacheLuceneIndexIndexReader_FieldOption, TERMVECTOR_WITH_POSITION_OFFSET) = new_OrgApacheLuceneIndexIndexReader_FieldOption_initWithNSString_withInt_(@"", 11);
     J2OBJC_SET_INITIALIZED(OrgApacheLuceneIndexIndexReader_FieldOption)
   }
 }

@@ -39,9 +39,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreFileSwitchDirectory, primaryExtensions_,
 
 __attribute__((unused)) static OrgApacheLuceneStoreDirectory *OrgApacheLuceneStoreFileSwitchDirectory_getDirectoryWithNSString_(OrgApacheLuceneStoreFileSwitchDirectory *self, NSString *name);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFileSwitchDirectory__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFileSwitchDirectory__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFileSwitchDirectory__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreFileSwitchDirectory__Annotations$1(void);
 
 @implementation OrgApacheLuceneStoreFileSwitchDirectory
 

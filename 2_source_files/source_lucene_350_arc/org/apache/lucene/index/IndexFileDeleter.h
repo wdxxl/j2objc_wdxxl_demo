@@ -77,13 +77,17 @@
 
 - (void)setInfoStreamWithJavaIoPrintStream:(JavaIoPrintStream *)infoStream;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexIndexFileDeleter)
 
-inline jboolean OrgApacheLuceneIndexIndexFileDeleter_get_VERBOSE_REF_COUNTS();
+inline jboolean OrgApacheLuceneIndexIndexFileDeleter_get_VERBOSE_REF_COUNTS(void);
 inline jboolean OrgApacheLuceneIndexIndexFileDeleter_set_VERBOSE_REF_COUNTS(jboolean value);
-inline jboolean *OrgApacheLuceneIndexIndexFileDeleter_getRef_VERBOSE_REF_COUNTS();
+inline jboolean *OrgApacheLuceneIndexIndexFileDeleter_getRef_VERBOSE_REF_COUNTS(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jboolean OrgApacheLuceneIndexIndexFileDeleter_VERBOSE_REF_COUNTS;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexIndexFileDeleter, VERBOSE_REF_COUNTS, jboolean)

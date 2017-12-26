@@ -72,9 +72,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexPayload, data_, IOSByteArray *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexPayload_init(OrgApacheLuceneIndexPayload *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexPayload *new_OrgApacheLuceneIndexPayload_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexPayload *new_OrgApacheLuceneIndexPayload_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexPayload *create_OrgApacheLuceneIndexPayload_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexPayload *create_OrgApacheLuceneIndexPayload_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexPayload_initWithByteArray_(OrgApacheLuceneIndexPayload *self, IOSByteArray *data);
 

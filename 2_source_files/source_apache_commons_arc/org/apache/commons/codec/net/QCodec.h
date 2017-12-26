@@ -77,9 +77,9 @@ J2OBJC_STATIC_INIT(OrgApacheCommonsCodecNetQCodec)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetQCodec_init(OrgApacheCommonsCodecNetQCodec *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetQCodec *new_OrgApacheCommonsCodecNetQCodec_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetQCodec *new_OrgApacheCommonsCodecNetQCodec_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecNetQCodec *create_OrgApacheCommonsCodecNetQCodec_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecNetQCodec *create_OrgApacheCommonsCodecNetQCodec_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecNetQCodec_initWithJavaNioCharsetCharset_(OrgApacheCommonsCodecNetQCodec *self, JavaNioCharsetCharset *charset);
 

@@ -15,11 +15,11 @@
 #include "org/apache/lucene/util/AttributeSource.h"
 #include "org/apache/lucene/util/Version.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLetterTokenizer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLetterTokenizer__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLetterTokenizer__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLetterTokenizer__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLetterTokenizer__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLetterTokenizer__Annotations$2(void);
 
 @implementation OrgApacheLuceneAnalysisLetterTokenizer
 

@@ -36,6 +36,10 @@
 
 - (id<OrgApacheLuceneSearchFieldCache>)getFieldCache;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFieldCacheTermsFilter)
@@ -71,6 +75,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheTermsFilter)
 - (jboolean)isCacheable;
 
 - (OrgApacheLuceneSearchDocIdSetIterator *)iterator;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -108,6 +116,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFieldCacheTermsFilter_FieldCache
 #pragma mark Protected
 
 - (instancetype)initWithOrgApacheLuceneSearchFieldCacheTermsFilter_FieldCacheTermsFilterDocIdSet:(OrgApacheLuceneSearchFieldCacheTermsFilter_FieldCacheTermsFilterDocIdSet *)outer$;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

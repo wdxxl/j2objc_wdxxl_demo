@@ -36,23 +36,23 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPacked32, shifts_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPacked32, readMasks_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilPackedPacked32, writeMasks_, IOSIntArray *)
 
-inline jint OrgApacheLuceneUtilPackedPacked32_get_ENTRY_SIZE();
+inline jint OrgApacheLuceneUtilPackedPacked32_get_ENTRY_SIZE(void);
 #define OrgApacheLuceneUtilPackedPacked32_ENTRY_SIZE 33
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked32, ENTRY_SIZE, jint)
 
-inline jint OrgApacheLuceneUtilPackedPacked32_get_FAC_BITPOS();
+inline jint OrgApacheLuceneUtilPackedPacked32_get_FAC_BITPOS(void);
 #define OrgApacheLuceneUtilPackedPacked32_FAC_BITPOS 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneUtilPackedPacked32, FAC_BITPOS, jint)
 
-inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_get_SHIFTS();
+inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_get_SHIFTS(void);
 static IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_SHIFTS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPacked32, SHIFTS, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_get_MASKS();
+inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_get_MASKS(void);
 static IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_MASKS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPacked32, MASKS, IOSObjectArray *)
 
-inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_get_WRITE_MASKS();
+inline IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_get_WRITE_MASKS(void);
 static IOSObjectArray *OrgApacheLuceneUtilPackedPacked32_WRITE_MASKS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilPackedPacked32, WRITE_MASKS, IOSObjectArray *)
 

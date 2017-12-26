@@ -22,7 +22,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchSimilarityDelegator, delegee_, OrgApacheLuceneSearchSimilarity *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarityDelegator__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarityDelegator__Annotations$0(void);
 
 @implementation OrgApacheLuceneSearchSimilarityDelegator
 

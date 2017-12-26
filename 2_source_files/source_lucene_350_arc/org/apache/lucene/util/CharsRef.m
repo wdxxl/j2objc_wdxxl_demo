@@ -20,11 +20,11 @@
 
 #pragma clang diagnostic ignored "-Wprotocol"
 
-inline IOSCharArray *OrgApacheLuceneUtilCharsRef_get_EMPTY_ARRAY();
+inline IOSCharArray *OrgApacheLuceneUtilCharsRef_get_EMPTY_ARRAY(void);
 static IOSCharArray *OrgApacheLuceneUtilCharsRef_EMPTY_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilCharsRef, EMPTY_ARRAY, IOSCharArray *)
 
-inline id<JavaUtilComparator> OrgApacheLuceneUtilCharsRef_get_utf16SortedAsUTF8SortOrder();
+inline id<JavaUtilComparator> OrgApacheLuceneUtilCharsRef_get_utf16SortedAsUTF8SortOrder(void);
 static id<JavaUtilComparator> OrgApacheLuceneUtilCharsRef_utf16SortedAsUTF8SortOrder;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilCharsRef, utf16SortedAsUTF8SortOrder, id<JavaUtilComparator>)
 
@@ -41,9 +41,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator
 
 __attribute__((unused)) static void OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator_init(OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator *new_OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator *new_OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator *create_OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator_init();
+__attribute__((unused)) static OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator *create_OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilCharsRef_UTF16SortedAsUTF8Comparator)
 
@@ -312,8 +312,8 @@ OrgApacheLuceneUtilCharsRef *create_OrgApacheLuceneUtilCharsRef_initWithInt_(jin
 
 void OrgApacheLuceneUtilCharsRef_initWithCharArray_withInt_withInt_(OrgApacheLuceneUtilCharsRef *self, IOSCharArray *chars, jint offset, jint length) {
   NSObject_init(self);
-  JreAssert((chars != nil), (@"org/apache/lucene/util/CharsRef.java:54 condition failed: assert chars != null;"));
-  JreAssert((((IOSCharArray *) nil_chk(chars))->size_ >= offset + length), (@"org/apache/lucene/util/CharsRef.java:55 condition failed: assert chars.length >= offset + length;"));
+  JreAssert(chars != nil, @"org/apache/lucene/util/CharsRef.java:54 condition failed: assert chars != null;");
+  JreAssert(((IOSCharArray *) nil_chk(chars))->size_ >= offset + length, @"org/apache/lucene/util/CharsRef.java:55 condition failed: assert chars.length >= offset + length;");
   self->chars_ = chars;
   self->offset_ = offset;
   self->length_ = length;

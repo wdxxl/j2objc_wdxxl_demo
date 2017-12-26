@@ -100,7 +100,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonGson, typeTokenCache_, id<JavaUtilMap>)
 J2OBJC_FIELD_SETTER(ComGoogleGsonGson, factories_, id<JavaUtilList>)
 J2OBJC_FIELD_SETTER(ComGoogleGsonGson, constructorConstructor_, ComGoogleGsonInternalConstructorConstructor *)
 
-inline NSString *ComGoogleGsonGson_get_JSON_NON_EXECUTABLE_PREFIX();
+inline NSString *ComGoogleGsonGson_get_JSON_NON_EXECUTABLE_PREFIX(void);
 static NSString *ComGoogleGsonGson_JSON_NON_EXECUTABLE_PREFIX = @")]}'\n";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonGson, JSON_NON_EXECUTABLE_PREFIX, NSString *)
 
@@ -179,9 +179,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonGson_3)
 
 __attribute__((unused)) static void ComGoogleGsonGson_3_init(ComGoogleGsonGson_3 *self);
 
-__attribute__((unused)) static ComGoogleGsonGson_3 *new_ComGoogleGsonGson_3_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonGson_3 *new_ComGoogleGsonGson_3_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonGson_3 *create_ComGoogleGsonGson_3_init();
+__attribute__((unused)) static ComGoogleGsonGson_3 *create_ComGoogleGsonGson_3_init(void);
 
 @interface ComGoogleGsonGson_4 : ComGoogleGsonTypeAdapter
 
@@ -204,9 +204,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonGson_4)
 
 __attribute__((unused)) static void ComGoogleGsonGson_4_init(ComGoogleGsonGson_4 *self);
 
-__attribute__((unused)) static ComGoogleGsonGson_4 *new_ComGoogleGsonGson_4_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonGson_4 *new_ComGoogleGsonGson_4_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonGson_4 *create_ComGoogleGsonGson_4_init();
+__attribute__((unused)) static ComGoogleGsonGson_4 *create_ComGoogleGsonGson_4_init(void);
 
 @interface ComGoogleGsonGson_5 : ComGoogleGsonTypeAdapter
 
@@ -229,9 +229,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonGson_5)
 
 __attribute__((unused)) static void ComGoogleGsonGson_5_init(ComGoogleGsonGson_5 *self);
 
-__attribute__((unused)) static ComGoogleGsonGson_5 *new_ComGoogleGsonGson_5_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonGson_5 *new_ComGoogleGsonGson_5_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonGson_5 *create_ComGoogleGsonGson_5_init();
+__attribute__((unused)) static ComGoogleGsonGson_5 *create_ComGoogleGsonGson_5_init(void);
 
 @interface ComGoogleGsonGson_6 : ComGoogleGsonTypeAdapter {
  @public
@@ -453,7 +453,7 @@ withJavaLangAppendable:(id<JavaLangAppendable>)writer {
     [self toJsonWithId:src withJavaLangReflectType:typeOfSrc withComGoogleGsonStreamJsonWriter:jsonWriter];
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -471,7 +471,7 @@ withComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)writer {
     [((ComGoogleGsonTypeAdapter *) nil_chk((adapter))) writeWithComGoogleGsonStreamJsonWriter:writer withId:src];
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
   @finally {
     [writer setLenientWithBoolean:oldLenient];
@@ -493,7 +493,7 @@ withComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)writer {
     [self toJsonWithComGoogleGsonJsonElement:jsonElement withComGoogleGsonStreamJsonWriter:jsonWriter];
   }
   @catch (JavaIoIOException *e) {
-    @throw new_JavaLangRuntimeException_initWithNSException_(e);
+    @throw new_JavaLangRuntimeException_initWithJavaLangThrowable_(e);
   }
 }
 
@@ -527,7 +527,7 @@ withComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)writer {
     ComGoogleGsonInternalStreams_writeWithComGoogleGsonJsonElement_withComGoogleGsonStreamJsonWriter_(jsonElement, writer);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
   @finally {
     [writer setLenientWithBoolean:oldLenient];
@@ -590,13 +590,13 @@ withComGoogleGsonStreamJsonWriter:(ComGoogleGsonStreamJsonWriter *)writer {
     if (isEmpty) {
       return nil;
     }
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaLangIllegalStateException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @finally {
     [reader setLenientWithBoolean:oldLenient];
@@ -845,10 +845,10 @@ void ComGoogleGsonGson_assertFullConsumptionWithId_withComGoogleGsonStreamJsonRe
     }
   }
   @catch (ComGoogleGsonStreamMalformedJsonException *e) {
-    @throw new_ComGoogleGsonJsonSyntaxException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonSyntaxException_initWithJavaLangThrowable_(e);
   }
   @catch (JavaIoIOException *e) {
-    @throw new_ComGoogleGsonJsonIOException_initWithNSException_(e);
+    @throw new_ComGoogleGsonJsonIOException_initWithJavaLangThrowable_(e);
   }
 }
 

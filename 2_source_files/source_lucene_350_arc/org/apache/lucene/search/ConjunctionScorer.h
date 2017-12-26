@@ -21,6 +21,7 @@
 #include "org/apache/lucene/search/Scorer.h"
 
 @class IOSObjectArray;
+@class OrgApacheLuceneSearchSimilarity;
 @class OrgApacheLuceneSearchWeight;
 @protocol JavaUtilCollection;
 
@@ -43,6 +44,15 @@
 - (jint)nextDoc;
 
 - (jfloat)score;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg0
+                        withOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg0 NS_UNAVAILABLE;
 
 @end
 

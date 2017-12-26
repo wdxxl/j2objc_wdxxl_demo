@@ -21,6 +21,7 @@
 #include "org/apache/lucene/search/MultiTermQueryWrapperFilter.h"
 
 @class JavaTextCollator;
+@class OrgApacheLuceneSearchMultiTermQuery;
 
 @interface OrgApacheLuceneSearchTermRangeFilter : OrgApacheLuceneSearchMultiTermQueryWrapperFilter
 
@@ -56,6 +57,10 @@
 
 + (OrgApacheLuceneSearchTermRangeFilter *)MoreWithNSString:(NSString *)fieldName
                                               withNSString:(NSString *)lowerTerm;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchMultiTermQuery:(OrgApacheLuceneSearchMultiTermQuery *)arg0 NS_UNAVAILABLE;
 
 @end
 

@@ -90,7 +90,7 @@ typedef NS_ENUM(NSUInteger, OrgJsoupNodesEntities_EscapeMode_Enum) {
   OrgJsoupNodesEntities_EscapeMode_Enum_extended = 2,
 };
 
-@interface OrgJsoupNodesEntities_EscapeMode : JavaLangEnum < NSCopying >
+@interface OrgJsoupNodesEntities_EscapeMode : JavaLangEnum
 
 #pragma mark Public
 
@@ -100,10 +100,6 @@ typedef NS_ENUM(NSUInteger, OrgJsoupNodesEntities_EscapeMode_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgJsoupNodesEntities_EscapeMode)
@@ -111,16 +107,16 @@ J2OBJC_STATIC_INIT(OrgJsoupNodesEntities_EscapeMode)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_values_[];
 
-inline OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_get_xhtml();
+inline OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_get_xhtml(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesEntities_EscapeMode, xhtml)
 
-inline OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_get_base();
+inline OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_get_base(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesEntities_EscapeMode, base)
 
-inline OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_get_extended();
+inline OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_get_extended(void);
 J2OBJC_ENUM_CONSTANT(OrgJsoupNodesEntities_EscapeMode, extended)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgJsoupNodesEntities_EscapeMode_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgJsoupNodesEntities_EscapeMode_values(void);
 
 FOUNDATION_EXPORT OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_valueOfWithNSString_(NSString *name);
 

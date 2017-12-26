@@ -42,15 +42,20 @@
 
 - (NSString *)getSummary;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithFloat:(jfloat)arg0
+                 withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchComplexExplanation)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchComplexExplanation_init(OrgApacheLuceneSearchComplexExplanation *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchComplexExplanation *new_OrgApacheLuceneSearchComplexExplanation_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchComplexExplanation *new_OrgApacheLuceneSearchComplexExplanation_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchComplexExplanation *create_OrgApacheLuceneSearchComplexExplanation_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchComplexExplanation *create_OrgApacheLuceneSearchComplexExplanation_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchComplexExplanation_initWithBoolean_withFloat_withNSString_(OrgApacheLuceneSearchComplexExplanation *self, jboolean match, jfloat value, NSString *description_);
 

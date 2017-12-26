@@ -31,31 +31,31 @@
 
 @end
 
-inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_DEFAULT();
+inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_DEFAULT(void);
 #define OrgApacheCommonsCodecDigestSha2Crypt_ROUNDS_DEFAULT 5000
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestSha2Crypt, ROUNDS_DEFAULT, jint)
 
-inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_MAX();
+inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_MAX(void);
 #define OrgApacheCommonsCodecDigestSha2Crypt_ROUNDS_MAX 999999999
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestSha2Crypt, ROUNDS_MAX, jint)
 
-inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_MIN();
+inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_MIN(void);
 #define OrgApacheCommonsCodecDigestSha2Crypt_ROUNDS_MIN 1000
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestSha2Crypt, ROUNDS_MIN, jint)
 
-inline NSString *OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_PREFIX();
+inline NSString *OrgApacheCommonsCodecDigestSha2Crypt_get_ROUNDS_PREFIX(void);
 static NSString *OrgApacheCommonsCodecDigestSha2Crypt_ROUNDS_PREFIX = @"rounds=";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestSha2Crypt, ROUNDS_PREFIX, NSString *)
 
-inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_SHA256_BLOCKSIZE();
+inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_SHA256_BLOCKSIZE(void);
 #define OrgApacheCommonsCodecDigestSha2Crypt_SHA256_BLOCKSIZE 32
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestSha2Crypt, SHA256_BLOCKSIZE, jint)
 
-inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_SHA512_BLOCKSIZE();
+inline jint OrgApacheCommonsCodecDigestSha2Crypt_get_SHA512_BLOCKSIZE(void);
 #define OrgApacheCommonsCodecDigestSha2Crypt_SHA512_BLOCKSIZE 64
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestSha2Crypt, SHA512_BLOCKSIZE, jint)
 
-inline JavaUtilRegexPattern *OrgApacheCommonsCodecDigestSha2Crypt_get_SALT_PATTERN();
+inline JavaUtilRegexPattern *OrgApacheCommonsCodecDigestSha2Crypt_get_SALT_PATTERN(void);
 static JavaUtilRegexPattern *OrgApacheCommonsCodecDigestSha2Crypt_SALT_PATTERN;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestSha2Crypt, SALT_PATTERN, JavaUtilRegexPattern *)
 

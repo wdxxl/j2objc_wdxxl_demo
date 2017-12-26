@@ -21,43 +21,43 @@
 
 @end
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_AEIJOUY();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_AEIJOUY(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_AEIJOUY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, AEIJOUY, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_SCZ();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_SCZ(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_SCZ;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, SCZ, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_WFPV();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_WFPV(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_WFPV;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, WFPV, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_GKQ();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_GKQ(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_GKQ;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, GKQ, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_CKQ();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_CKQ(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_CKQ;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, CKQ, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_AHKLOQRUX();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_AHKLOQRUX(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_AHKLOQRUX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, AHKLOQRUX, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_SZ();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_SZ(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_SZ;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, SZ, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_AHOUKQX();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_AHOUKQX(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_AHOUKQX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, AHOUKQX, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_TDX();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_TDX(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageColognePhonetic_TDX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, TDX, IOSCharArray *)
 
-inline IOSObjectArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_PREPROCESS_MAP();
+inline IOSObjectArray *OrgApacheCommonsCodecLanguageColognePhonetic_get_PREPROCESS_MAP(void);
 static IOSObjectArray *OrgApacheCommonsCodecLanguageColognePhonetic_PREPROCESS_MAP;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageColognePhonetic, PREPROCESS_MAP, IOSObjectArray *)
 

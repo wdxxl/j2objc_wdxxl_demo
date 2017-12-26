@@ -32,7 +32,7 @@
 }
 
 - (jint)getSlotWithInt:(jint)key {
-  JreAssert((key != emptyVal_), (@"org/apache/lucene/search/grouping/SentinelIntSet.java:55 condition failed: assert key != emptyVal;"));
+  JreAssert(key != emptyVal_, @"org/apache/lucene/search/grouping/SentinelIntSet.java:55 condition failed: assert key != emptyVal;");
   jint h = [self hash__WithInt:key];
   jint s = h & (((IOSIntArray *) nil_chk(keys_))->size_ - 1);
   if (IOSIntArray_Get(keys_, s) == key || IOSIntArray_Get(keys_, s) == emptyVal_) return s;
@@ -45,7 +45,7 @@
 }
 
 - (jint)findWithInt:(jint)key {
-  JreAssert((key != emptyVal_), (@"org/apache/lucene/search/grouping/SentinelIntSet.java:69 condition failed: assert key != emptyVal;"));
+  JreAssert(key != emptyVal_, @"org/apache/lucene/search/grouping/SentinelIntSet.java:69 condition failed: assert key != emptyVal;");
   jint h = [self hash__WithInt:key];
   jint s = h & (((IOSIntArray *) nil_chk(keys_))->size_ - 1);
   if (IOSIntArray_Get(keys_, s) == key) return s;

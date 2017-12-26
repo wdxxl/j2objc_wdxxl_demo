@@ -48,7 +48,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilAttributeSource, attributeImpls_, id<Java
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilAttributeSource, currentState_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneUtilAttributeSource, factory_, OrgApacheLuceneUtilAttributeSource_AttributeFactory *)
 
-inline JavaUtilWeakHashMap *OrgApacheLuceneUtilAttributeSource_get_knownImplClasses();
+inline JavaUtilWeakHashMap *OrgApacheLuceneUtilAttributeSource_get_knownImplClasses(void);
 static JavaUtilWeakHashMap *OrgApacheLuceneUtilAttributeSource_knownImplClasses;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilAttributeSource, knownImplClasses, JavaUtilWeakHashMap *)
 
@@ -68,15 +68,15 @@ __attribute__((unused)) static void OrgApacheLuceneUtilAttributeSource_reflectWi
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory)
 
-inline JavaUtilWeakHashMap *OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_get_attClassImplMap();
+inline JavaUtilWeakHashMap *OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_get_attClassImplMap(void);
 static JavaUtilWeakHashMap *OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_attClassImplMap;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory, attClassImplMap, JavaUtilWeakHashMap *)
 
 __attribute__((unused)) static void OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_init(OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory *self);
 
-__attribute__((unused)) static OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory *new_OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory *new_OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory *create_OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_init();
+__attribute__((unused)) static OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory *create_OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_init(void);
 
 __attribute__((unused)) static IOSClass *OrgApacheLuceneUtilAttributeSource_AttributeFactory_DefaultAttributeFactory_getClassForInterfaceWithIOSClass_(IOSClass *attClass);
 
@@ -179,7 +179,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   JavaUtilLinkedList *foundInterfaces = OrgApacheLuceneUtilAttributeSource_getAttributeInterfacesWithIOSClass_(clazz);
   for (JavaLangRefWeakReference * __strong curInterfaceRef in nil_chk(foundInterfaces)) {
     IOSClass *curInterface = [((JavaLangRefWeakReference *) nil_chk(curInterfaceRef)) get];
-    JreAssert(((curInterface != nil)), (@"We have a strong reference on the class holding the interfaces, so they should never get evicted"));
+    JreAssert((curInterface != nil), @"We have a strong reference on the class holding the interfaces, so they should never get evicted");
     if (![((id<JavaUtilMap>) nil_chk(attributes_)) containsKeyWithId:curInterface]) {
       (void) IOSObjectArray_Set(nil_chk(self->currentState_), 0, nil);
       (void) [attributes_ putWithId:curInterface withId:att];

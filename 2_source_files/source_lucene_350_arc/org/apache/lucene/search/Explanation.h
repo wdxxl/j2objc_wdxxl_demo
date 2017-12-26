@@ -61,9 +61,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchExplanation)
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchExplanation_init(OrgApacheLuceneSearchExplanation *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchExplanation *new_OrgApacheLuceneSearchExplanation_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneSearchExplanation *new_OrgApacheLuceneSearchExplanation_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneSearchExplanation *create_OrgApacheLuceneSearchExplanation_init();
+FOUNDATION_EXPORT OrgApacheLuceneSearchExplanation *create_OrgApacheLuceneSearchExplanation_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneSearchExplanation_initWithFloat_withNSString_(OrgApacheLuceneSearchExplanation *self, jfloat value, NSString *description_);
 

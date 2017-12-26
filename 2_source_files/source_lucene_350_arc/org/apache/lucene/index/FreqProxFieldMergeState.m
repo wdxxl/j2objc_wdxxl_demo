@@ -42,7 +42,7 @@
   [((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField *) nil_chk(field_))->termsHashPerField_)) initReaderWithOrgApacheLuceneIndexByteSliceReader:freq_ withInt:currentTermID_ withInt:0];
   if (((OrgApacheLuceneIndexFieldInfo *) nil_chk(field_->fieldInfo_))->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)) [field_->termsHashPerField_ initReaderWithOrgApacheLuceneIndexByteSliceReader:prox_ withInt:currentTermID_ withInt:1];
   jboolean result = [self nextDoc];
-  JreAssert((result), (@"org/apache/lucene/index/FreqProxFieldMergeState.java:77 condition failed: assert result;"));
+  JreAssert(result, @"org/apache/lucene/index/FreqProxFieldMergeState.java:77 condition failed: assert result;");
   return true;
 }
 
@@ -71,7 +71,7 @@
     if ((code & 1) != 0) termFreq_ = 1;
     else termFreq_ = [freq_ readVInt];
   }
-  JreAssert((docID_ != IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings_))->lastDocIDs_), currentTermID_)), (@"org/apache/lucene/index/FreqProxFieldMergeState.java:115 condition failed: assert docID != postings.lastDocIDs[currentTermID];"));
+  JreAssert(docID_ != IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings_))->lastDocIDs_), currentTermID_), @"org/apache/lucene/index/FreqProxFieldMergeState.java:115 condition failed: assert docID != postings.lastDocIDs[currentTermID];");
   return true;
 }
 

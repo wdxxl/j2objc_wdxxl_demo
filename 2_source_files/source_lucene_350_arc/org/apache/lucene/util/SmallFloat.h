@@ -44,9 +44,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilSmallFloat)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilSmallFloat_init(OrgApacheLuceneUtilSmallFloat *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilSmallFloat *new_OrgApacheLuceneUtilSmallFloat_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilSmallFloat *new_OrgApacheLuceneUtilSmallFloat_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilSmallFloat *create_OrgApacheLuceneUtilSmallFloat_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilSmallFloat *create_OrgApacheLuceneUtilSmallFloat_init(void);
 
 FOUNDATION_EXPORT jbyte OrgApacheLuceneUtilSmallFloat_floatToByteWithFloat_withInt_withInt_(jfloat f, jint numMantissaBits, jint zeroExp);
 

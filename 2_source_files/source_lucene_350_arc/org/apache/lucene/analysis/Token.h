@@ -177,16 +177,16 @@
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneAnalysisToken)
 
-inline OrgApacheLuceneUtilAttributeSource_AttributeFactory *OrgApacheLuceneAnalysisToken_get_TOKEN_ATTRIBUTE_FACTORY();
+inline OrgApacheLuceneUtilAttributeSource_AttributeFactory *OrgApacheLuceneAnalysisToken_get_TOKEN_ATTRIBUTE_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilAttributeSource_AttributeFactory *OrgApacheLuceneAnalysisToken_TOKEN_ATTRIBUTE_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisToken, TOKEN_ATTRIBUTE_FACTORY, OrgApacheLuceneUtilAttributeSource_AttributeFactory *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneAnalysisToken_init(OrgApacheLuceneAnalysisToken *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneAnalysisToken *new_OrgApacheLuceneAnalysisToken_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneAnalysisToken *new_OrgApacheLuceneAnalysisToken_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneAnalysisToken *create_OrgApacheLuceneAnalysisToken_init();
+FOUNDATION_EXPORT OrgApacheLuceneAnalysisToken *create_OrgApacheLuceneAnalysisToken_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneAnalysisToken_initWithInt_withInt_(OrgApacheLuceneAnalysisToken *self, jint start, jint end);
 
@@ -255,6 +255,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisToken)
 - (jboolean)isEqual:(id)other;
 
 - (NSUInteger)hash;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

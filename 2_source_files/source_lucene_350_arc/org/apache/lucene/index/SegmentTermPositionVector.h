@@ -45,6 +45,12 @@ withOrgApacheLuceneIndexTermVectorOffsetInfoArray2:(IOSObjectArray *)offsets;
 
 - (IOSIntArray *)getTermPositionsWithInt:(jint)index;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithNSString:(NSString *)arg0
+               withNSStringArray:(IOSObjectArray *)arg1
+                    withIntArray:(IOSIntArray *)arg2 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexSegmentTermPositionVector)
@@ -52,7 +58,7 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneIndexSegmentTermPositionVector)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentTermPositionVector, positions_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentTermPositionVector, offsets_, IOSObjectArray *)
 
-inline IOSIntArray *OrgApacheLuceneIndexSegmentTermPositionVector_get_EMPTY_TERM_POS();
+inline IOSIntArray *OrgApacheLuceneIndexSegmentTermPositionVector_get_EMPTY_TERM_POS(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT IOSIntArray *OrgApacheLuceneIndexSegmentTermPositionVector_EMPTY_TERM_POS;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexSegmentTermPositionVector, EMPTY_TERM_POS, IOSIntArray *)

@@ -24,9 +24,9 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreIndexInput, resourceDescription_, NSString *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreIndexInput__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreIndexInput__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreIndexInput__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreIndexInput__Annotations$1(void);
 
 @implementation OrgApacheLuceneStoreIndexInput
 
@@ -81,7 +81,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)copyBytesWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)outArg
                                             withLong:(jlong)numBytes {
-  JreAssert((numBytes >= 0), (JreStrcat("$J", @"numBytes=", numBytes)));
+  JreAssert(numBytes >= 0, JreStrcat("$J", @"numBytes=", numBytes));
   IOSByteArray *copyBuf = [IOSByteArray newArrayWithLength:OrgApacheLuceneStoreBufferedIndexInput_BUFFER_SIZE];
   while (numBytes > 0) {
     jint toCopy = (jint) (numBytes > copyBuf->size_ ? copyBuf->size_ : numBytes);

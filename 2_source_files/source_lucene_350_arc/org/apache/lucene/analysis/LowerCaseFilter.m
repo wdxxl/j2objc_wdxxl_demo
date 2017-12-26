@@ -28,7 +28,7 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisLowerCaseFilter, charUtils_, OrgApacheLuceneUtilCharacterUtils *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisLowerCaseFilter, termAtt_, id<OrgApacheLuceneAnalysisTokenattributesCharTermAttribute>)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLowerCaseFilter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisLowerCaseFilter__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisLowerCaseFilter
 

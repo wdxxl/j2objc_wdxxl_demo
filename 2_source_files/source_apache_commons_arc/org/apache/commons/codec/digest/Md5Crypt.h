@@ -47,21 +47,21 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecDigestMd5Crypt)
 
-inline NSString *OrgApacheCommonsCodecDigestMd5Crypt_get_APR1_PREFIX();
+inline NSString *OrgApacheCommonsCodecDigestMd5Crypt_get_APR1_PREFIX(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMd5Crypt_APR1_PREFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMd5Crypt, APR1_PREFIX, NSString *)
 
-inline NSString *OrgApacheCommonsCodecDigestMd5Crypt_get_MD5_PREFIX();
+inline NSString *OrgApacheCommonsCodecDigestMd5Crypt_get_MD5_PREFIX(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMd5Crypt_MD5_PREFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecDigestMd5Crypt, MD5_PREFIX, NSString *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecDigestMd5Crypt_init(OrgApacheCommonsCodecDigestMd5Crypt *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestMd5Crypt *new_OrgApacheCommonsCodecDigestMd5Crypt_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestMd5Crypt *new_OrgApacheCommonsCodecDigestMd5Crypt_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestMd5Crypt *create_OrgApacheCommonsCodecDigestMd5Crypt_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestMd5Crypt *create_OrgApacheCommonsCodecDigestMd5Crypt_init(void);
 
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestMd5Crypt_apr1CryptWithByteArray_(IOSByteArray *keyBytes);
 

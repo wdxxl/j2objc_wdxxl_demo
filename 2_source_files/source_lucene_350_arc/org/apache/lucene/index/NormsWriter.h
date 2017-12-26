@@ -52,9 +52,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexNormsWriter)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexNormsWriter_init(OrgApacheLuceneIndexNormsWriter *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexNormsWriter *new_OrgApacheLuceneIndexNormsWriter_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexNormsWriter *new_OrgApacheLuceneIndexNormsWriter_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexNormsWriter *create_OrgApacheLuceneIndexNormsWriter_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexNormsWriter *create_OrgApacheLuceneIndexNormsWriter_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexNormsWriter)
 

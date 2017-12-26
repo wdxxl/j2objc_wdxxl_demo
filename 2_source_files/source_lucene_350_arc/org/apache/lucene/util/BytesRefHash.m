@@ -138,13 +138,13 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (OrgApacheLuceneUtilBytesRef *)getWithInt:(jint)ord
             withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)ref {
-  JreAssert((bytesStart_ != nil), (@"bytesStart is null - not initialized"));
-  JreAssert((ord < ((IOSIntArray *) nil_chk(bytesStart_))->size_), (JreStrcat("$I", @"ord exceeds byteStart len: ", bytesStart_->size_)));
+  JreAssert(bytesStart_ != nil, @"bytesStart is null - not initialized");
+  JreAssert(ord < ((IOSIntArray *) nil_chk(bytesStart_))->size_, JreStrcat("$I", @"ord exceeds byteStart len: ", bytesStart_->size_));
   return [((OrgApacheLuceneUtilByteBlockPool *) nil_chk(pool_)) setBytesRefWithOrgApacheLuceneUtilBytesRef:ref withInt:IOSIntArray_Get(bytesStart_, ord)];
 }
 
 - (IOSIntArray *)compact {
-  JreAssert((bytesStart_ != nil), (@"Bytesstart is null - not initialized"));
+  JreAssert(bytesStart_ != nil, @"Bytesstart is null - not initialized");
   jint upto = 0;
   for (jint i = 0; i < hashSize_; i++) {
     if (IOSIntArray_Get(nil_chk(ords_), i) != -1) {
@@ -155,7 +155,7 @@ J2OBJC_IGNORE_DESIGNATED_END
       upto++;
     }
   }
-  JreAssert((upto == count_), (@"org/apache/lucene/util/BytesRefHash.java:145 condition failed: assert upto == count;"));
+  JreAssert(upto == count_, @"org/apache/lucene/util/BytesRefHash.java:145 condition failed: assert upto == count;");
   lastCount_ = count_;
   return ords_;
 }
@@ -204,7 +204,7 @@ withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b {
 
 - (jint)addWithOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)bytes
                                    withInt:(jint)code {
-  JreAssert((bytesStart_ != nil), (@"Bytesstart is null - not initialized"));
+  JreAssert(bytesStart_ != nil, @"Bytesstart is null - not initialized");
   jint length = ((OrgApacheLuceneUtilBytesRef *) nil_chk(bytes))->length_;
   jint hashPos = code & hashMask_;
   jint e = IOSIntArray_Get(nil_chk(ords_), hashPos);
@@ -229,14 +229,14 @@ withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b {
     jint bufferUpto = pool_->byteUpto_;
     if (count_ >= ((IOSIntArray *) nil_chk(bytesStart_))->size_) {
       bytesStart_ = [((OrgApacheLuceneUtilBytesRefHash_BytesStartArray *) nil_chk(bytesStartArray_)) grow];
-      JreAssert((count_ < ((IOSIntArray *) nil_chk(bytesStart_))->size_ + 1), (JreStrcat("$I$I", @"count: ", count_, @" len: ", bytesStart_->size_)));
+      JreAssert(count_ < ((IOSIntArray *) nil_chk(bytesStart_))->size_ + 1, JreStrcat("$I$I", @"count: ", count_, @" len: ", bytesStart_->size_));
     }
     e = count_++;
     *IOSIntArray_GetRef(bytesStart_, e) = bufferUpto + pool_->byteOffset_;
     if (length < 128) {
       *IOSByteArray_GetRef(nil_chk(buffer), bufferUpto) = (jbyte) length;
       pool_->byteUpto_ += length + 1;
-      JreAssert((length >= 0), (JreStrcat("$I", @"Length must be positive: ", length)));
+      JreAssert(length >= 0, JreStrcat("$I", @"Length must be positive: ", length));
       JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(bytes->bytes_, bytes->offset_, buffer, bufferUpto + 1, length);
     }
     else {
@@ -245,7 +245,7 @@ withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b {
       pool_->byteUpto_ += length + 2;
       JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(bytes->bytes_, bytes->offset_, buffer, bufferUpto + 2, length);
     }
-    JreAssert((IOSIntArray_Get(nil_chk(ords_), hashPos) == -1), (@"org/apache/lucene/util/BytesRefHash.java:357 condition failed: assert ords[hashPos] == -1;"));
+    JreAssert(IOSIntArray_Get(nil_chk(ords_), hashPos) == -1, @"org/apache/lucene/util/BytesRefHash.java:357 condition failed: assert ords[hashPos] == -1;");
     *IOSIntArray_GetRef(ords_, hashPos) = e;
     if (count_ == hashHalfSize_) {
       OrgApacheLuceneUtilBytesRefHash_rehashWithInt_withBoolean_(self, 2 * hashSize_, true);
@@ -256,7 +256,7 @@ withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b {
 }
 
 - (jint)addByPoolOffsetWithInt:(jint)offset {
-  JreAssert((bytesStart_ != nil), (@"Bytesstart is null - not initialized"));
+  JreAssert(bytesStart_ != nil, @"Bytesstart is null - not initialized");
   jint code = offset;
   jint hashPos = offset & hashMask_;
   jint e = IOSIntArray_Get(nil_chk(ords_), hashPos);
@@ -272,11 +272,11 @@ withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b {
   if (e == -1) {
     if (count_ >= ((IOSIntArray *) nil_chk(bytesStart_))->size_) {
       bytesStart_ = [((OrgApacheLuceneUtilBytesRefHash_BytesStartArray *) nil_chk(bytesStartArray_)) grow];
-      JreAssert((count_ < ((IOSIntArray *) nil_chk(bytesStart_))->size_ + 1), (JreStrcat("$I$I", @"count: ", count_, @" len: ", bytesStart_->size_)));
+      JreAssert(count_ < ((IOSIntArray *) nil_chk(bytesStart_))->size_ + 1, JreStrcat("$I$I", @"count: ", count_, @" len: ", bytesStart_->size_));
     }
     e = count_++;
     *IOSIntArray_GetRef(bytesStart_, e) = offset;
-    JreAssert((IOSIntArray_Get(nil_chk(ords_), hashPos) == -1), (@"org/apache/lucene/util/BytesRefHash.java:393 condition failed: assert ords[hashPos] == -1;"));
+    JreAssert(IOSIntArray_Get(nil_chk(ords_), hashPos) == -1, @"org/apache/lucene/util/BytesRefHash.java:393 condition failed: assert ords[hashPos] == -1;");
     *IOSIntArray_GetRef(ords_, hashPos) = e;
     if (count_ == hashHalfSize_) {
       OrgApacheLuceneUtilBytesRefHash_rehashWithInt_withBoolean_(self, 2 * hashSize_, false);
@@ -302,8 +302,8 @@ withOrgApacheLuceneUtilBytesRef:(OrgApacheLuceneUtilBytesRef *)b {
 }
 
 - (jint)byteStartWithInt:(jint)ord {
-  JreAssert((bytesStart_ != nil), (@"Bytesstart is null - not initialized"));
-  JreAssert((ord >= 0 && ord < count_), (JavaLangInteger_valueOfWithInt_(ord)));
+  JreAssert(bytesStart_ != nil, @"Bytesstart is null - not initialized");
+  JreAssert(ord >= 0 && ord < count_, JavaLangInteger_valueOfWithInt_(ord));
   return IOSIntArray_Get(nil_chk(bytesStart_), ord);
 }
 
@@ -476,7 +476,7 @@ void OrgApacheLuceneUtilBytesRefHash_rehashWithInt_withBoolean_(OrgApacheLuceneU
         code = IOSIntArray_Get(nil_chk(self->bytesStart_), e0);
       }
       jint hashPos = code & newMask;
-      JreAssert((hashPos >= 0), (@"org/apache/lucene/util/BytesRefHash.java:442 condition failed: assert hashPos >= 0;"));
+      JreAssert(hashPos >= 0, @"org/apache/lucene/util/BytesRefHash.java:442 condition failed: assert hashPos >= 0;");
       if (IOSIntArray_Get(newHash, hashPos) != -1) {
         jint inc = ((JreRShift32(code, 8)) + code) | 1;
         do {
@@ -517,19 +517,19 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilBytesRefHash)
                withInt:(jint)j {
   jint ord1 = IOSIntArray_Get(nil_chk(val$compact_), i);
   jint ord2 = IOSIntArray_Get(val$compact_, j);
-  JreAssert((((IOSIntArray *) nil_chk(this$0_->bytesStart_))->size_ > ord1 && this$0_->bytesStart_->size_ > ord2), (@"org/apache/lucene/util/BytesRefHash.java:173 condition failed: assert bytesStart.length > ord1 && bytesStart.length > ord2;"));
+  JreAssert(((IOSIntArray *) nil_chk(this$0_->bytesStart_))->size_ > ord1 && this$0_->bytesStart_->size_ > ord2, @"org/apache/lucene/util/BytesRefHash.java:173 condition failed: assert bytesStart.length > ord1 && bytesStart.length > ord2;");
   return [((id<JavaUtilComparator>) nil_chk(val$comp_)) compareWithId:[((OrgApacheLuceneUtilByteBlockPool *) nil_chk(this$0_->pool_)) setBytesRefWithOrgApacheLuceneUtilBytesRef:scratch1_ withInt:IOSIntArray_Get(this$0_->bytesStart_, ord1)] withId:[this$0_->pool_ setBytesRefWithOrgApacheLuceneUtilBytesRef:scratch2_ withInt:IOSIntArray_Get(nil_chk(this$0_->bytesStart_), ord2)]];
 }
 
 - (void)setPivotWithInt:(jint)i {
   jint ord = IOSIntArray_Get(nil_chk(val$compact_), i);
-  JreAssert((((IOSIntArray *) nil_chk(this$0_->bytesStart_))->size_ > ord), (@"org/apache/lucene/util/BytesRefHash.java:181 condition failed: assert bytesStart.length > ord;"));
+  JreAssert(((IOSIntArray *) nil_chk(this$0_->bytesStart_))->size_ > ord, @"org/apache/lucene/util/BytesRefHash.java:181 condition failed: assert bytesStart.length > ord;");
   (void) [((OrgApacheLuceneUtilByteBlockPool *) nil_chk(this$0_->pool_)) setBytesRefWithOrgApacheLuceneUtilBytesRef:pivot_ withInt:IOSIntArray_Get(this$0_->bytesStart_, ord)];
 }
 
 - (jint)comparePivotWithInt:(jint)j {
   jint ord = IOSIntArray_Get(nil_chk(val$compact_), j);
-  JreAssert((((IOSIntArray *) nil_chk(this$0_->bytesStart_))->size_ > ord), (@"org/apache/lucene/util/BytesRefHash.java:188 condition failed: assert bytesStart.length > ord;"));
+  JreAssert(((IOSIntArray *) nil_chk(this$0_->bytesStart_))->size_ > ord, @"org/apache/lucene/util/BytesRefHash.java:188 condition failed: assert bytesStart.length > ord;");
   return [((id<JavaUtilComparator>) nil_chk(val$comp_)) compareWithId:pivot_ withId:[((OrgApacheLuceneUtilByteBlockPool *) nil_chk(this$0_->pool_)) setBytesRefWithOrgApacheLuceneUtilBytesRef:scratch2_ withInt:IOSIntArray_Get(this$0_->bytesStart_, ord)]];
 }
 
@@ -696,7 +696,7 @@ withJavaUtilConcurrentAtomicAtomicLong:(JavaUtilConcurrentAtomicAtomicLong *)byt
 }
 
 - (IOSIntArray *)grow {
-  JreAssert((bytesStart_ != nil), (@"org/apache/lucene/util/BytesRefHash.java:559 condition failed: assert bytesStart != null;"));
+  JreAssert(bytesStart_ != nil, @"org/apache/lucene/util/BytesRefHash.java:559 condition failed: assert bytesStart != null;");
   jint oldSize = ((IOSIntArray *) nil_chk(bytesStart_))->size_;
   bytesStart_ = OrgApacheLuceneUtilArrayUtil_growWithIntArray_withInt_(bytesStart_, bytesStart_->size_ + 1);
   [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(bytesUsed_)) addAndGetWithLong:(((IOSIntArray *) nil_chk(bytesStart_))->size_ - oldSize) * OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_INT];
@@ -769,7 +769,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneUtilBytesRefHash_TrackingDirectB
 }
 
 - (IOSIntArray *)grow {
-  JreAssert((bytesStart_ != nil), (@"org/apache/lucene/util/BytesRefHash.java:598 condition failed: assert bytesStart != null;"));
+  JreAssert(bytesStart_ != nil, @"org/apache/lucene/util/BytesRefHash.java:598 condition failed: assert bytesStart != null;");
   return bytesStart_ = OrgApacheLuceneUtilArrayUtil_growWithIntArray_withInt_(bytesStart_, ((IOSIntArray *) nil_chk(bytesStart_))->size_ + 1);
 }
 

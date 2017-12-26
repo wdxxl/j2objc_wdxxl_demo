@@ -87,15 +87,15 @@ J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmRule, pattern_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmRule, phoneme_, id<OrgApacheCommonsCodecLanguageBmRule_PhonemeExpr>)
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmRule, rContext_, id<OrgApacheCommonsCodecLanguageBmRule_RPattern>)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmRule_get_DOUBLE_QUOTE();
+inline NSString *OrgApacheCommonsCodecLanguageBmRule_get_DOUBLE_QUOTE(void);
 static NSString *OrgApacheCommonsCodecLanguageBmRule_DOUBLE_QUOTE = @"\"";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmRule, DOUBLE_QUOTE, NSString *)
 
-inline NSString *OrgApacheCommonsCodecLanguageBmRule_get_HASH_INCLUDE();
+inline NSString *OrgApacheCommonsCodecLanguageBmRule_get_HASH_INCLUDE(void);
 static NSString *OrgApacheCommonsCodecLanguageBmRule_HASH_INCLUDE = @"#include";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmRule, HASH_INCLUDE, NSString *)
 
-inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmRule_get_RULES();
+inline id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmRule_get_RULES(void);
 static id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmRule_RULES;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageBmRule, RULES, id<JavaUtilMap>)
 
@@ -136,7 +136,7 @@ __attribute__((unused)) static NSString *OrgApacheCommonsCodecLanguageBmRule_str
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmRule_Phoneme, phonemeText_, JavaLangStringBuilder *)
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageBmRule_Phoneme, languages_, OrgApacheCommonsCodecLanguageBmLanguages_LanguageSet *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageBmRule_Phoneme__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageBmRule_Phoneme__Annotations$0(void);
 
 @interface OrgApacheCommonsCodecLanguageBmRule_Phoneme_1 : NSObject < JavaUtilComparator >
 
@@ -151,9 +151,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRule_Phoneme_1)
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageBmRule_Phoneme_1_init(OrgApacheCommonsCodecLanguageBmRule_Phoneme_1 *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_Phoneme_1 *new_OrgApacheCommonsCodecLanguageBmRule_Phoneme_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_Phoneme_1 *new_OrgApacheCommonsCodecLanguageBmRule_Phoneme_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_Phoneme_1 *create_OrgApacheCommonsCodecLanguageBmRule_Phoneme_1_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_Phoneme_1 *create_OrgApacheCommonsCodecLanguageBmRule_Phoneme_1_init(void);
 
 @interface OrgApacheCommonsCodecLanguageBmRule_PhonemeList () {
  @public
@@ -180,9 +180,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRule_1)
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageBmRule_1_init(OrgApacheCommonsCodecLanguageBmRule_1 *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_1 *new_OrgApacheCommonsCodecLanguageBmRule_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_1 *new_OrgApacheCommonsCodecLanguageBmRule_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_1 *create_OrgApacheCommonsCodecLanguageBmRule_1_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_1 *create_OrgApacheCommonsCodecLanguageBmRule_1_init(void);
 
 @interface OrgApacheCommonsCodecLanguageBmRule_2 : OrgApacheCommonsCodecLanguageBmRule {
  @public
@@ -229,9 +229,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecLanguageBmRule_3)
 
 __attribute__((unused)) static void OrgApacheCommonsCodecLanguageBmRule_3_init(OrgApacheCommonsCodecLanguageBmRule_3 *self);
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_3 *new_OrgApacheCommonsCodecLanguageBmRule_3_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_3 *new_OrgApacheCommonsCodecLanguageBmRule_3_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_3 *create_OrgApacheCommonsCodecLanguageBmRule_3_init();
+__attribute__((unused)) static OrgApacheCommonsCodecLanguageBmRule_3 *create_OrgApacheCommonsCodecLanguageBmRule_3_init(void);
 
 @interface OrgApacheCommonsCodecLanguageBmRule_4 : NSObject < OrgApacheCommonsCodecLanguageBmRule_RPattern > {
  @public
@@ -589,7 +589,7 @@ withOrgApacheCommonsCodecLanguageBmRule_PhonemeExpr:(id<OrgApacheCommonsCodecLan
                   (void) [rs putWithId:l withId:OrgApacheCommonsCodecLanguageBmRule_parseRulesWithJavaUtilScanner_withNSString_(OrgApacheCommonsCodecLanguageBmRule_createScannerWithOrgApacheCommonsCodecLanguageBmNameType_withOrgApacheCommonsCodecLanguageBmRuleType_withNSString_(s, rt, l), OrgApacheCommonsCodecLanguageBmRule_createResourceNameWithOrgApacheCommonsCodecLanguageBmNameType_withOrgApacheCommonsCodecLanguageBmRuleType_withNSString_(s, rt, l))];
                 }
                 @catch (JavaLangIllegalStateException *e) {
-                  @throw new_JavaLangIllegalStateException_initWithNSString_withNSException_(JreStrcat("$$", @"Problem processing ", OrgApacheCommonsCodecLanguageBmRule_createResourceNameWithOrgApacheCommonsCodecLanguageBmNameType_withOrgApacheCommonsCodecLanguageBmRuleType_withNSString_(s, rt, l)), e);
+                  @throw new_JavaLangIllegalStateException_initWithNSString_withJavaLangThrowable_(JreStrcat("$$", @"Problem processing ", OrgApacheCommonsCodecLanguageBmRule_createResourceNameWithOrgApacheCommonsCodecLanguageBmNameType_withOrgApacheCommonsCodecLanguageBmRuleType_withNSString_(s, rt, l)), e);
                 }
               }
               if (![((OrgApacheCommonsCodecLanguageBmRuleType *) nil_chk(rt)) isEqual:JreLoadEnum(OrgApacheCommonsCodecLanguageBmRuleType, RULES)]) {
@@ -787,7 +787,7 @@ id<JavaUtilMap> OrgApacheCommonsCodecLanguageBmRule_parseRulesWithJavaUtilScanne
               [rules addWithId:r];
             }
             @catch (JavaLangIllegalArgumentException *e) {
-              @throw new_JavaLangIllegalStateException_initWithNSString_withNSException_(JreStrcat("$I$$", @"Problem parsing line '", currentLine, @"' in ", location), e);
+              @throw new_JavaLangIllegalStateException_initWithNSString_withJavaLangThrowable_(JreStrcat("$I$$", @"Problem parsing line '", currentLine, @"' in ", location), e);
             }
           }
         }

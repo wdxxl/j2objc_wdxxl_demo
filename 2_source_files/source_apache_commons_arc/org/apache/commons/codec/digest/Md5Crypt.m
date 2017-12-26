@@ -17,11 +17,11 @@
 #include "org/apache/commons/codec/digest/DigestUtils.h"
 #include "org/apache/commons/codec/digest/Md5Crypt.h"
 
-inline jint OrgApacheCommonsCodecDigestMd5Crypt_get_BLOCKSIZE();
+inline jint OrgApacheCommonsCodecDigestMd5Crypt_get_BLOCKSIZE(void);
 #define OrgApacheCommonsCodecDigestMd5Crypt_BLOCKSIZE 16
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestMd5Crypt, BLOCKSIZE, jint)
 
-inline jint OrgApacheCommonsCodecDigestMd5Crypt_get_ROUNDS();
+inline jint OrgApacheCommonsCodecDigestMd5Crypt_get_ROUNDS(void);
 #define OrgApacheCommonsCodecDigestMd5Crypt_ROUNDS 1000
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheCommonsCodecDigestMd5Crypt, ROUNDS, jint)
 

@@ -116,6 +116,8 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneQueryParserQueryParserTokenManager, jjstateSe
 
 __attribute__((unused)) static jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjStopStringLiteralDfa_3WithInt_withLong_(OrgApacheLuceneQueryParserQueryParserTokenManager *self, jint pos, jlong active0);
 
+__attribute__((unused)) static jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjStartNfa_3WithInt_withLong_(OrgApacheLuceneQueryParserQueryParserTokenManager *self, jint pos, jlong active0);
+
 __attribute__((unused)) static jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjStopAtPosWithInt_withInt_(OrgApacheLuceneQueryParserQueryParserTokenManager *self, jint pos, jint kind);
 
 __attribute__((unused)) static jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjMoveStringLiteralDfa0_3(OrgApacheLuceneQueryParserQueryParserTokenManager *self);
@@ -194,7 +196,7 @@ IOSLongArray *OrgApacheLuceneQueryParserQueryParserTokenManager_jjtoSkip;
 
 - (jint)jjStartNfa_3WithInt:(jint)pos
                    withLong:(jlong)active0 {
-  return OrgApacheLuceneQueryParserQueryParserTokenManager_jjMoveNfa_3WithInt_withInt_(self, OrgApacheLuceneQueryParserQueryParserTokenManager_jjStopStringLiteralDfa_3WithInt_withLong_(self, pos, active0), pos + 1);
+  return OrgApacheLuceneQueryParserQueryParserTokenManager_jjStartNfa_3WithInt_withLong_(self, pos, active0);
 }
 
 - (jint)jjStopAtPosWithInt:(jint)pos
@@ -584,6 +586,10 @@ jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjStopStringLiteralDfa_3W
     default:
     return -1;
   }
+}
+
+jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjStartNfa_3WithInt_withLong_(OrgApacheLuceneQueryParserQueryParserTokenManager *self, jint pos, jlong active0) {
+  return OrgApacheLuceneQueryParserQueryParserTokenManager_jjMoveNfa_3WithInt_withInt_(self, OrgApacheLuceneQueryParserQueryParserTokenManager_jjStopStringLiteralDfa_3WithInt_withLong_(self, pos, active0), pos + 1);
 }
 
 jint OrgApacheLuceneQueryParserQueryParserTokenManager_jjStopAtPosWithInt_withInt_(OrgApacheLuceneQueryParserQueryParserTokenManager *self, jint pos, jint kind) {

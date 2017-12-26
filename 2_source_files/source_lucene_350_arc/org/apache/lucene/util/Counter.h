@@ -36,7 +36,7 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneUtilCounter)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilCounter_init(OrgApacheLuceneUtilCounter *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilCounter *OrgApacheLuceneUtilCounter_newCounter();
+FOUNDATION_EXPORT OrgApacheLuceneUtilCounter *OrgApacheLuceneUtilCounter_newCounter(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneUtilCounter *OrgApacheLuceneUtilCounter_newCounterWithBoolean_(jboolean threadSafe);
 

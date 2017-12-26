@@ -32,7 +32,7 @@
 J2OBJC_FIELD_SETTER(OrgJsoupParserCharacterReader, input_, IOSCharArray *)
 J2OBJC_FIELD_SETTER(OrgJsoupParserCharacterReader, stringCache_, IOSObjectArray *)
 
-inline jint OrgJsoupParserCharacterReader_get_maxCacheLen();
+inline jint OrgJsoupParserCharacterReader_get_maxCacheLen(void);
 #define OrgJsoupParserCharacterReader_maxCacheLen 12
 J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserCharacterReader, maxCacheLen, jint)
 

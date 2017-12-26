@@ -58,6 +58,10 @@ withOrgApacheLuceneSearchCachingWrapperFilter_DeletesMode:(OrgApacheLuceneSearch
 - (OrgApacheLuceneSearchDocIdSet *)docIdSetToCacheWithOrgApacheLuceneSearchDocIdSet:(OrgApacheLuceneSearchDocIdSet *)docIdSet
                                                 withOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchCachingWrapperFilter)
@@ -96,17 +100,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneSearchCachingWrapperFilter_DeletesMod
   OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_Enum_DYNAMIC = 2,
 };
 
-@interface OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -115,16 +115,16 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_values_[];
 
-inline OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_get_IGNORE();
+inline OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_get_IGNORE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, IGNORE)
 
-inline OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_get_RECACHE();
+inline OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_get_RECACHE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, RECACHE)
 
-inline OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_get_DYNAMIC();
+inline OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_get_DYNAMIC(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode, DYNAMIC)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode *OrgApacheLuceneSearchCachingWrapperFilter_DeletesMode_valueOfWithNSString_(NSString *name);
 

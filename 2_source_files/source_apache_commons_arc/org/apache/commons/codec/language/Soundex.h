@@ -49,21 +49,21 @@
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecLanguageSoundex)
 
-inline NSString *OrgApacheCommonsCodecLanguageSoundex_get_US_ENGLISH_MAPPING_STRING();
+inline NSString *OrgApacheCommonsCodecLanguageSoundex_get_US_ENGLISH_MAPPING_STRING(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecLanguageSoundex_US_ENGLISH_MAPPING_STRING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageSoundex, US_ENGLISH_MAPPING_STRING, NSString *)
 
-inline OrgApacheCommonsCodecLanguageSoundex *OrgApacheCommonsCodecLanguageSoundex_get_US_ENGLISH();
+inline OrgApacheCommonsCodecLanguageSoundex *OrgApacheCommonsCodecLanguageSoundex_get_US_ENGLISH(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageSoundex *OrgApacheCommonsCodecLanguageSoundex_US_ENGLISH;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageSoundex, US_ENGLISH, OrgApacheCommonsCodecLanguageSoundex *)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecLanguageSoundex_init(OrgApacheCommonsCodecLanguageSoundex *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageSoundex *new_OrgApacheCommonsCodecLanguageSoundex_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageSoundex *new_OrgApacheCommonsCodecLanguageSoundex_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageSoundex *create_OrgApacheCommonsCodecLanguageSoundex_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecLanguageSoundex *create_OrgApacheCommonsCodecLanguageSoundex_init(void);
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecLanguageSoundex_initWithCharArray_(OrgApacheCommonsCodecLanguageSoundex *self, IOSCharArray *mapping);
 

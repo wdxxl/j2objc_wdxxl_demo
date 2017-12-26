@@ -20,11 +20,11 @@
 #include "org/apache/lucene/store/LockFactory.h"
 #include "org/apache/lucene/util/IOUtils.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDirectory__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDirectory__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDirectory__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDirectory__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDirectory__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDirectory__Annotations$2(void);
 
 @implementation OrgApacheLuceneStoreDirectory
 
@@ -109,7 +109,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)setLockFactoryWithOrgApacheLuceneStoreLockFactory:(OrgApacheLuceneStoreLockFactory *)lockFactory {
-  JreAssert((lockFactory != nil), (@"org/apache/lucene/store/Directory.java:178 condition failed: assert lockFactory != null;"));
+  JreAssert(lockFactory != nil, @"org/apache/lucene/store/Directory.java:178 condition failed: assert lockFactory != null;");
   self->lockFactory_ = lockFactory;
   [((OrgApacheLuceneStoreLockFactory *) nil_chk(lockFactory)) setLockPrefixWithNSString:[self getLockID]];
 }

@@ -55,7 +55,7 @@ withOrgApacheLuceneStoreDataOutput:(OrgApacheLuceneStoreDataOutput *)outArg;
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilFstByteSequenceOutputs)
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilFstByteSequenceOutputs *OrgApacheLuceneUtilFstByteSequenceOutputs_getSingleton();
+FOUNDATION_EXPORT OrgApacheLuceneUtilFstByteSequenceOutputs *OrgApacheLuceneUtilFstByteSequenceOutputs_getSingleton(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstByteSequenceOutputs)
 

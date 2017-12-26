@@ -45,13 +45,13 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreNRTCachingDirectory, cache_, OrgApacheLu
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreNRTCachingDirectory, delegate_, OrgApacheLuceneStoreDirectory *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreNRTCachingDirectory, merges_, JavaUtilConcurrentConcurrentHashMap *)
 
-inline jboolean OrgApacheLuceneStoreNRTCachingDirectory_get_VERBOSE();
+inline jboolean OrgApacheLuceneStoreNRTCachingDirectory_get_VERBOSE(void);
 #define OrgApacheLuceneStoreNRTCachingDirectory_VERBOSE false
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreNRTCachingDirectory, VERBOSE, jboolean)
 
 __attribute__((unused)) static void OrgApacheLuceneStoreNRTCachingDirectory_unCacheWithNSString_(OrgApacheLuceneStoreNRTCachingDirectory *self, NSString *fileName);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreNRTCachingDirectory__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreNRTCachingDirectory__Annotations$0(void);
 
 @interface OrgApacheLuceneStoreNRTCachingDirectory_1 : OrgApacheLuceneIndexConcurrentMergeScheduler {
  @public
@@ -172,7 +172,7 @@ __attribute__((unused)) static OrgApacheLuceneStoreNRTCachingDirectory_1 *create
 - (void)deleteFileWithNSString:(NSString *)name {
   @synchronized(self) {
     if ([((OrgApacheLuceneStoreRAMDirectory *) nil_chk(cache_)) fileExistsWithNSString:name]) {
-      JreAssert((![((OrgApacheLuceneStoreDirectory *) nil_chk(delegate_)) fileExistsWithNSString:name]), (@"org/apache/lucene/store/NRTCachingDirectory.java:199 condition failed: assert !delegate.fileExists(name);"));
+      JreAssert(![((OrgApacheLuceneStoreDirectory *) nil_chk(delegate_)) fileExistsWithNSString:name], @"org/apache/lucene/store/NRTCachingDirectory.java:199 condition failed: assert !delegate.fileExists(name);");
       [cache_ deleteFileWithNSString:name];
     }
     else {
@@ -350,7 +350,7 @@ void OrgApacheLuceneStoreNRTCachingDirectory_unCacheWithNSString_(OrgApacheLucen
   OrgApacheLuceneStoreIndexOutput *out;
   @synchronized(self) {
     if (![((OrgApacheLuceneStoreDirectory *) nil_chk(self->delegate_)) fileExistsWithNSString:fileName]) {
-      JreAssert(([((OrgApacheLuceneStoreRAMDirectory *) nil_chk(self->cache_)) fileExistsWithNSString:fileName]), (@"org/apache/lucene/store/NRTCachingDirectory.java:308 condition failed: assert cache.fileExists(fileName);"));
+      JreAssert([((OrgApacheLuceneStoreRAMDirectory *) nil_chk(self->cache_)) fileExistsWithNSString:fileName], @"org/apache/lucene/store/NRTCachingDirectory.java:308 condition failed: assert cache.fileExists(fileName);");
       out = [self->delegate_ createOutputWithNSString:fileName];
     }
     else {

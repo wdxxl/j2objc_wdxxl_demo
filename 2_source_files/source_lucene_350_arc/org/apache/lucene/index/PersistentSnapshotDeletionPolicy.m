@@ -25,6 +25,8 @@
 #include "org/apache/lucene/store/Directory.h"
 #include "org/apache/lucene/util/Version.h"
 
+static id (*OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_super$_getSnapshots)(id, SEL);
+
 @interface OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy () {
  @public
   OrgApacheLuceneIndexIndexWriter *writer_;
@@ -37,9 +39,13 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy, writer_, OrgApacheLuceneIndexIndexWriter *)
 
-inline NSString *OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_get_SNAPSHOTS_ID();
+inline NSString *OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_get_SNAPSHOTS_ID(void);
 static NSString *OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_SNAPSHOTS_ID = @"$SNAPSHOTS_DOC$";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy, SNAPSHOTS_ID, NSString *)
+
+__attribute__((unused)) static void OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_persistSnapshotInfosWithNSString_withNSString_(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy *self, NSString *id_, NSString *segment);
+
+J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy)
 
 @implementation OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy
 
@@ -58,7 +64,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexPersistentSnapshotDeletionPoli
 - (void)onInitWithJavaUtilList:(id<JavaUtilList>)commits {
   @synchronized(self) {
     [super onInitWithJavaUtilList:commits];
-    [self persistSnapshotInfosWithNSString:nil withNSString:nil];
+    OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_persistSnapshotInfosWithNSString_withNSString_(self, nil, nil);
   }
 }
 
@@ -68,7 +74,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexPersistentSnapshotDeletionPoli
     if ([((NSString *) nil_chk(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_SNAPSHOTS_ID)) isEqual:id_]) {
       @throw new_JavaLangIllegalArgumentException_initWithNSString_(JreStrcat("$$", id_, @" is reserved and cannot be used as a snapshot id"));
     }
-    [self persistSnapshotInfosWithNSString:id_ withNSString:[((OrgApacheLuceneIndexIndexCommit *) nil_chk(lastCommit_)) getSegmentsFileName]];
+    OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_persistSnapshotInfosWithNSString_withNSString_(self, id_, [((OrgApacheLuceneIndexIndexCommit *) nil_chk(lastCommit_)) getSegmentsFileName]);
     return [super snapshotWithNSString:id_];
   }
 }
@@ -76,7 +82,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexPersistentSnapshotDeletionPoli
 - (void)release__WithNSString:(NSString *)id_ {
   @synchronized(self) {
     [super release__WithNSString:id_];
-    [self persistSnapshotInfosWithNSString:nil withNSString:nil];
+    OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_persistSnapshotInfosWithNSString_withNSString_(self, nil, nil);
   }
 }
 
@@ -86,17 +92,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexPersistentSnapshotDeletionPoli
 
 - (void)persistSnapshotInfosWithNSString:(NSString *)id_
                             withNSString:(NSString *)segment {
-  [((OrgApacheLuceneIndexIndexWriter *) nil_chk(writer_)) deleteAll];
-  OrgApacheLuceneDocumentDocument *d = new_OrgApacheLuceneDocumentDocument_init();
-  [d addWithOrgApacheLuceneDocumentFieldable:new_OrgApacheLuceneDocumentField_initWithNSString_withNSString_withOrgApacheLuceneDocumentField_Store_withOrgApacheLuceneDocumentField_Index_(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_SNAPSHOTS_ID, @"", JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), JreLoadEnum(OrgApacheLuceneDocumentField_Index, NO))];
-  for (id<JavaUtilMap_Entry> __strong e in nil_chk([((id<JavaUtilMap>) nil_chk([super getSnapshots])) entrySet])) {
-    [d addWithOrgApacheLuceneDocumentFieldable:new_OrgApacheLuceneDocumentField_initWithNSString_withNSString_withOrgApacheLuceneDocumentField_Store_withOrgApacheLuceneDocumentField_Index_([((id<JavaUtilMap_Entry>) nil_chk(e)) getKey], [e getValue], JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), JreLoadEnum(OrgApacheLuceneDocumentField_Index, NO))];
-  }
-  if (id_ != nil) {
-    [d addWithOrgApacheLuceneDocumentFieldable:new_OrgApacheLuceneDocumentField_initWithNSString_withNSString_withOrgApacheLuceneDocumentField_Store_withOrgApacheLuceneDocumentField_Index_(id_, segment, JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), JreLoadEnum(OrgApacheLuceneDocumentField_Index, NO))];
-  }
-  [writer_ addDocumentWithOrgApacheLuceneDocumentDocument:d];
-  [writer_ commit];
+  OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_persistSnapshotInfosWithNSString_withNSString_(self, id_, segment);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -126,6 +122,13 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexPersistentSnapshotDeletionPoli
   static const void *ptrTable[] = { "readSnapshotsInfo", "LOrgApacheLuceneStoreDirectory;", "LJavaIoIOException;", "(Lorg/apache/lucene/store/Directory;)Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;", "LOrgApacheLuceneIndexIndexDeletionPolicy;LOrgApacheLuceneStoreDirectory;LOrgApacheLuceneIndexIndexWriterConfig_OpenMode;LOrgApacheLuceneUtilVersion;", "LOrgApacheLuceneIndexCorruptIndexException;LOrgApacheLuceneStoreLockObtainFailedException;LJavaIoIOException;", "onInit", "LJavaUtilList;", "(Ljava/util/List<+Lorg/apache/lucene/index/IndexCommit;>;)V", "snapshot", "LNSString;", "release", "LOrgApacheLuceneIndexCorruptIndexException;LJavaIoIOException;", "persistSnapshotInfos", "LNSString;LNSString;", &OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_SNAPSHOTS_ID };
   static const J2ObjcClassInfo _OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy = { "PersistentSnapshotDeletionPolicy", "org.apache.lucene.index", ptrTable, methods, fields, 7, 0x1, 7, 2, -1, -1, -1, -1, -1 };
   return &_OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy;
+}
+
++ (void)initialize {
+  if (self == [OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy class]) {
+    OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_super$_getSnapshots = (id (*)(id, SEL))[OrgApacheLuceneIndexSnapshotDeletionPolicy instanceMethodForSelector:@selector(getSnapshots)];
+    J2OBJC_SET_INITIALIZED(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy)
+  }
 }
 
 @end
@@ -184,6 +187,20 @@ OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy *new_OrgApacheLuceneIndexPe
 
 OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy *create_OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_initWithOrgApacheLuceneIndexIndexDeletionPolicy_withOrgApacheLuceneStoreDirectory_withOrgApacheLuceneIndexIndexWriterConfig_OpenMode_withOrgApacheLuceneUtilVersion_(id<OrgApacheLuceneIndexIndexDeletionPolicy> primary, OrgApacheLuceneStoreDirectory *dir, OrgApacheLuceneIndexIndexWriterConfig_OpenMode *mode, OrgApacheLuceneUtilVersion *matchVersion) {
   J2OBJC_CREATE_IMPL(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy, initWithOrgApacheLuceneIndexIndexDeletionPolicy_withOrgApacheLuceneStoreDirectory_withOrgApacheLuceneIndexIndexWriterConfig_OpenMode_withOrgApacheLuceneUtilVersion_, primary, dir, mode, matchVersion)
+}
+
+void OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_persistSnapshotInfosWithNSString_withNSString_(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy *self, NSString *id_, NSString *segment) {
+  [((OrgApacheLuceneIndexIndexWriter *) nil_chk(self->writer_)) deleteAll];
+  OrgApacheLuceneDocumentDocument *d = new_OrgApacheLuceneDocumentDocument_init();
+  [d addWithOrgApacheLuceneDocumentFieldable:new_OrgApacheLuceneDocumentField_initWithNSString_withNSString_withOrgApacheLuceneDocumentField_Store_withOrgApacheLuceneDocumentField_Index_(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_SNAPSHOTS_ID, @"", JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), JreLoadEnum(OrgApacheLuceneDocumentField_Index, NO))];
+  for (id<JavaUtilMap_Entry> __strong e in nil_chk([((id<JavaUtilMap>) nil_chk(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy_super$_getSnapshots(self, @selector(getSnapshots)))) entrySet])) {
+    [d addWithOrgApacheLuceneDocumentFieldable:new_OrgApacheLuceneDocumentField_initWithNSString_withNSString_withOrgApacheLuceneDocumentField_Store_withOrgApacheLuceneDocumentField_Index_([((id<JavaUtilMap_Entry>) nil_chk(e)) getKey], [e getValue], JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), JreLoadEnum(OrgApacheLuceneDocumentField_Index, NO))];
+  }
+  if (id_ != nil) {
+    [d addWithOrgApacheLuceneDocumentFieldable:new_OrgApacheLuceneDocumentField_initWithNSString_withNSString_withOrgApacheLuceneDocumentField_Store_withOrgApacheLuceneDocumentField_Index_(id_, segment, JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), JreLoadEnum(OrgApacheLuceneDocumentField_Index, NO))];
+  }
+  [self->writer_ addDocumentWithOrgApacheLuceneDocumentDocument:d];
+  [self->writer_ commit];
 }
 
 J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexPersistentSnapshotDeletionPolicy)

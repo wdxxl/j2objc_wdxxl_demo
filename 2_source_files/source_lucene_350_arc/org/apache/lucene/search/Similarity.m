@@ -28,30 +28,30 @@
 
 @end
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneSearchSimilarity_get_withoutDocFreqMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneSearchSimilarity_get_withoutDocFreqMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneSearchSimilarity_withoutDocFreqMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSimilarity, withoutDocFreqMethod, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneSearchSimilarity_get_withDocFreqMethod();
+inline OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneSearchSimilarity_get_withDocFreqMethod(void);
 static OrgApacheLuceneUtilVirtualMethod *OrgApacheLuceneSearchSimilarity_withDocFreqMethod;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSimilarity, withDocFreqMethod, OrgApacheLuceneUtilVirtualMethod *)
 
-inline OrgApacheLuceneSearchSimilarity *OrgApacheLuceneSearchSimilarity_get_defaultImpl();
+inline OrgApacheLuceneSearchSimilarity *OrgApacheLuceneSearchSimilarity_get_defaultImpl(void);
 inline OrgApacheLuceneSearchSimilarity *OrgApacheLuceneSearchSimilarity_set_defaultImpl(OrgApacheLuceneSearchSimilarity *value);
 static OrgApacheLuceneSearchSimilarity *OrgApacheLuceneSearchSimilarity_defaultImpl;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneSearchSimilarity, defaultImpl, OrgApacheLuceneSearchSimilarity *)
 
-inline IOSFloatArray *OrgApacheLuceneSearchSimilarity_get_NORM_TABLE();
+inline IOSFloatArray *OrgApacheLuceneSearchSimilarity_get_NORM_TABLE(void);
 static IOSFloatArray *OrgApacheLuceneSearchSimilarity_NORM_TABLE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchSimilarity, NORM_TABLE, IOSFloatArray *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneSearchSimilarity__Annotations$3(void);
 
 @interface OrgApacheLuceneSearchSimilarity_1 : OrgApacheLuceneSearchExplanation_IDFExplanation {
  @public

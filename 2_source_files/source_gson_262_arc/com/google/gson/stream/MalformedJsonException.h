@@ -20,6 +20,8 @@
 #define INCLUDE_JavaIoIOException 1
 #include "java/io/IOException.h"
 
+@class JavaLangThrowable;
+
 @interface ComGoogleGsonStreamMalformedJsonException : JavaIoIOException
 
 #pragma mark Public
@@ -27,11 +29,13 @@
 - (instancetype)initWithNSString:(NSString *)msg;
 
 - (instancetype)initWithNSString:(NSString *)msg
-                 withNSException:(NSException *)throwable;
-#define withJavaLangThrowable withNSException
+           withJavaLangThrowable:(JavaLangThrowable *)throwable;
 
-- (instancetype)initWithNSException:(NSException *)throwable;
-#define initWithJavaLangThrowable initWithNSException
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)throwable;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -43,17 +47,17 @@ FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *new_ComGoogleGsonSt
 
 FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *create_ComGoogleGsonStreamMalformedJsonException_initWithNSString_(NSString *msg);
 
-FOUNDATION_EXPORT void ComGoogleGsonStreamMalformedJsonException_initWithNSString_withNSException_(ComGoogleGsonStreamMalformedJsonException *self, NSString *msg, NSException *throwable);
+FOUNDATION_EXPORT void ComGoogleGsonStreamMalformedJsonException_initWithNSString_withJavaLangThrowable_(ComGoogleGsonStreamMalformedJsonException *self, NSString *msg, JavaLangThrowable *throwable);
 
-FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *new_ComGoogleGsonStreamMalformedJsonException_initWithNSString_withNSException_(NSString *msg, NSException *throwable) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *new_ComGoogleGsonStreamMalformedJsonException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *throwable) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *create_ComGoogleGsonStreamMalformedJsonException_initWithNSString_withNSException_(NSString *msg, NSException *throwable);
+FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *create_ComGoogleGsonStreamMalformedJsonException_initWithNSString_withJavaLangThrowable_(NSString *msg, JavaLangThrowable *throwable);
 
-FOUNDATION_EXPORT void ComGoogleGsonStreamMalformedJsonException_initWithNSException_(ComGoogleGsonStreamMalformedJsonException *self, NSException *throwable);
+FOUNDATION_EXPORT void ComGoogleGsonStreamMalformedJsonException_initWithJavaLangThrowable_(ComGoogleGsonStreamMalformedJsonException *self, JavaLangThrowable *throwable);
 
-FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *new_ComGoogleGsonStreamMalformedJsonException_initWithNSException_(NSException *throwable) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *new_ComGoogleGsonStreamMalformedJsonException_initWithJavaLangThrowable_(JavaLangThrowable *throwable) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *create_ComGoogleGsonStreamMalformedJsonException_initWithNSException_(NSException *throwable);
+FOUNDATION_EXPORT ComGoogleGsonStreamMalformedJsonException *create_ComGoogleGsonStreamMalformedJsonException_initWithJavaLangThrowable_(JavaLangThrowable *throwable);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonStreamMalformedJsonException)
 

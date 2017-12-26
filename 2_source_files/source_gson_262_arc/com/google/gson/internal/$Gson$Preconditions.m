@@ -17,9 +17,9 @@
 
 __attribute__((unused)) static void ComGoogleGsonInternal_Gson_Preconditions_init(ComGoogleGsonInternal_Gson_Preconditions *self);
 
-__attribute__((unused)) static ComGoogleGsonInternal_Gson_Preconditions *new_ComGoogleGsonInternal_Gson_Preconditions_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternal_Gson_Preconditions *new_ComGoogleGsonInternal_Gson_Preconditions_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternal_Gson_Preconditions *create_ComGoogleGsonInternal_Gson_Preconditions_init();
+__attribute__((unused)) static ComGoogleGsonInternal_Gson_Preconditions *create_ComGoogleGsonInternal_Gson_Preconditions_init(void);
 
 @implementation ComGoogleGsonInternal_Gson_Preconditions
 

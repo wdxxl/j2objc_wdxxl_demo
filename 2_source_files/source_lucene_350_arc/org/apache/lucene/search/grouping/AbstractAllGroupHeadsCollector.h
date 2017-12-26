@@ -81,6 +81,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchGroupingAbstractAllGroupHeadsCol
 
 - (instancetype)initWithOrgApacheLuceneSearchGroupingAbstractAllGroupHeadsCollector:(OrgApacheLuceneSearchGroupingAbstractAllGroupHeadsCollector *)outer$;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingAbstractAllGroupHeadsCollector_TemporalResult)

@@ -20,6 +20,7 @@
 #define INCLUDE_OrgApacheLuceneIndexMergeScheduler 1
 #include "org/apache/lucene/index/MergeScheduler.h"
 
+@class JavaLangThrowable;
 @class OrgApacheLuceneIndexConcurrentMergeScheduler_MergeThread;
 @class OrgApacheLuceneIndexIndexWriter;
 @class OrgApacheLuceneIndexMergePolicy_OneMerge;
@@ -70,8 +71,7 @@
 - (OrgApacheLuceneIndexConcurrentMergeScheduler_MergeThread *)getMergeThreadWithOrgApacheLuceneIndexIndexWriter:(OrgApacheLuceneIndexIndexWriter *)writer
                                                                    withOrgApacheLuceneIndexMergePolicy_OneMerge:(OrgApacheLuceneIndexMergePolicy_OneMerge *)merge;
 
-- (void)handleMergeExceptionWithNSException:(NSException *)exc;
-#define handleMergeExceptionWithJavaLangThrowable handleMergeExceptionWithNSException
+- (void)handleMergeExceptionWithJavaLangThrowable:(JavaLangThrowable *)exc;
 
 - (jint)mergeThreadCount;
 
@@ -95,29 +95,29 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexConcurrentMergeScheduler, mergeThreads_,
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexConcurrentMergeScheduler, dir_, OrgApacheLuceneStoreDirectory *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexConcurrentMergeScheduler, writer_, OrgApacheLuceneIndexIndexWriter *)
 
-inline id<JavaUtilComparator> OrgApacheLuceneIndexConcurrentMergeScheduler_get_compareByMergeDocCount();
+inline id<JavaUtilComparator> OrgApacheLuceneIndexConcurrentMergeScheduler_get_compareByMergeDocCount(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<JavaUtilComparator> OrgApacheLuceneIndexConcurrentMergeScheduler_compareByMergeDocCount;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexConcurrentMergeScheduler, compareByMergeDocCount, id<JavaUtilComparator>)
 
-inline jboolean OrgApacheLuceneIndexConcurrentMergeScheduler_get_anyExceptions();
+inline jboolean OrgApacheLuceneIndexConcurrentMergeScheduler_get_anyExceptions(void);
 inline jboolean OrgApacheLuceneIndexConcurrentMergeScheduler_set_anyExceptions(jboolean value);
-inline jboolean *OrgApacheLuceneIndexConcurrentMergeScheduler_getRef_anyExceptions();
+inline jboolean *OrgApacheLuceneIndexConcurrentMergeScheduler_getRef_anyExceptions(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT jboolean OrgApacheLuceneIndexConcurrentMergeScheduler_anyExceptions;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneIndexConcurrentMergeScheduler, anyExceptions, jboolean)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexConcurrentMergeScheduler_init(OrgApacheLuceneIndexConcurrentMergeScheduler *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexConcurrentMergeScheduler *new_OrgApacheLuceneIndexConcurrentMergeScheduler_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexConcurrentMergeScheduler *new_OrgApacheLuceneIndexConcurrentMergeScheduler_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexConcurrentMergeScheduler *create_OrgApacheLuceneIndexConcurrentMergeScheduler_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexConcurrentMergeScheduler *create_OrgApacheLuceneIndexConcurrentMergeScheduler_init(void);
 
-FOUNDATION_EXPORT jboolean OrgApacheLuceneIndexConcurrentMergeScheduler_anyUnhandledExceptions();
+FOUNDATION_EXPORT jboolean OrgApacheLuceneIndexConcurrentMergeScheduler_anyUnhandledExceptions(void);
 
-FOUNDATION_EXPORT void OrgApacheLuceneIndexConcurrentMergeScheduler_clearUnhandledExceptions();
+FOUNDATION_EXPORT void OrgApacheLuceneIndexConcurrentMergeScheduler_clearUnhandledExceptions(void);
 
-FOUNDATION_EXPORT void OrgApacheLuceneIndexConcurrentMergeScheduler_setTestMode();
+FOUNDATION_EXPORT void OrgApacheLuceneIndexConcurrentMergeScheduler_setTestMode(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexConcurrentMergeScheduler)
 
@@ -130,9 +130,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexConcurrentMergeScheduler)
 #define INCLUDE_JavaLangThread 1
 #include "java/lang/Thread.h"
 
+@class JavaLangThreadGroup;
 @class OrgApacheLuceneIndexConcurrentMergeScheduler;
 @class OrgApacheLuceneIndexIndexWriter;
 @class OrgApacheLuceneIndexMergePolicy_OneMerge;
+@protocol JavaLangRunnable;
 
 @interface OrgApacheLuceneIndexConcurrentMergeScheduler_MergeThread : JavaLangThread {
  @public
@@ -158,6 +160,32 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexConcurrentMergeScheduler)
 - (void)setThreadPriorityWithInt:(jint)pri;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangRunnable:(id<JavaLangRunnable>)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangRunnable:(id<JavaLangRunnable>)arg0
+                            withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1
+                               withNSString:(NSString *)arg2 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                       withJavaLangRunnable:(id<JavaLangRunnable>)arg1
+                               withNSString:(NSString *)arg2
+                                   withLong:(jlong)arg3 NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThreadGroup:(JavaLangThreadGroup *)arg0
+                               withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
 @end
 

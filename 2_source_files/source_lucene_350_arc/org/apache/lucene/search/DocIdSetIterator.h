@@ -32,7 +32,7 @@
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchDocIdSetIterator)
 
-inline jint OrgApacheLuceneSearchDocIdSetIterator_get_NO_MORE_DOCS();
+inline jint OrgApacheLuceneSearchDocIdSetIterator_get_NO_MORE_DOCS(void);
 #define OrgApacheLuceneSearchDocIdSetIterator_NO_MORE_DOCS 2147483647
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchDocIdSetIterator, NO_MORE_DOCS, jint)
 

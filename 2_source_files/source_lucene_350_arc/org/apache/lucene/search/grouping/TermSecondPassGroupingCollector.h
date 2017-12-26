@@ -45,6 +45,16 @@
 
 - (OrgApacheLuceneSearchGroupingAbstractSecondPassGroupingCollector_SearchGroupDocs *)retrieveGroupWithInt:(jint)doc;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)arg0
+             withOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)arg1
+             withOrgApacheLuceneSearchSort:(OrgApacheLuceneSearchSort *)arg2
+                                   withInt:(jint)arg3
+                               withBoolean:(jboolean)arg4
+                               withBoolean:(jboolean)arg5
+                               withBoolean:(jboolean)arg6 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchGroupingTermSecondPassGroupingCollector)

@@ -85,115 +85,115 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonStreamJsonReader, stack_, IOSIntArray *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonStreamJsonReader, pathNames_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(ComGoogleGsonStreamJsonReader, pathIndices_, IOSIntArray *)
 
-inline IOSCharArray *ComGoogleGsonStreamJsonReader_get_NON_EXECUTE_PREFIX();
+inline IOSCharArray *ComGoogleGsonStreamJsonReader_get_NON_EXECUTE_PREFIX(void);
 static IOSCharArray *ComGoogleGsonStreamJsonReader_NON_EXECUTE_PREFIX;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonStreamJsonReader, NON_EXECUTE_PREFIX, IOSCharArray *)
 
-inline jlong ComGoogleGsonStreamJsonReader_get_MIN_INCOMPLETE_INTEGER();
+inline jlong ComGoogleGsonStreamJsonReader_get_MIN_INCOMPLETE_INTEGER(void);
 #define ComGoogleGsonStreamJsonReader_MIN_INCOMPLETE_INTEGER -922337203685477580LL
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, MIN_INCOMPLETE_INTEGER, jlong)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_NONE();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_NONE(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_NONE 0
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_NONE, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_BEGIN_OBJECT();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_BEGIN_OBJECT(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_BEGIN_OBJECT 1
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_BEGIN_OBJECT, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_END_OBJECT();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_END_OBJECT(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_END_OBJECT 2
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_END_OBJECT, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_BEGIN_ARRAY();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_BEGIN_ARRAY(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_BEGIN_ARRAY 3
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_BEGIN_ARRAY, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_END_ARRAY();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_END_ARRAY(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_END_ARRAY 4
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_END_ARRAY, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_TRUE();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_TRUE(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_TRUE 5
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_TRUE, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_FALSE();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_FALSE(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_FALSE 6
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_FALSE, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_NULL();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_NULL(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_NULL 7
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_NULL, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_SINGLE_QUOTED();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_SINGLE_QUOTED(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_SINGLE_QUOTED 8
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_SINGLE_QUOTED, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_DOUBLE_QUOTED();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_DOUBLE_QUOTED(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_DOUBLE_QUOTED 9
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_DOUBLE_QUOTED, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_UNQUOTED();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_UNQUOTED(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_UNQUOTED 10
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_UNQUOTED, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_BUFFERED();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_BUFFERED(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_BUFFERED 11
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_BUFFERED, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_SINGLE_QUOTED_NAME();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_SINGLE_QUOTED_NAME(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_SINGLE_QUOTED_NAME 12
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_SINGLE_QUOTED_NAME, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_DOUBLE_QUOTED_NAME();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_DOUBLE_QUOTED_NAME(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_DOUBLE_QUOTED_NAME 13
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_DOUBLE_QUOTED_NAME, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_UNQUOTED_NAME();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_UNQUOTED_NAME(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_UNQUOTED_NAME 14
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_UNQUOTED_NAME, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_LONG();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_LONG(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_LONG 15
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_LONG, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_NUMBER();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_NUMBER(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_NUMBER 16
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_NUMBER, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_EOF();
+inline jint ComGoogleGsonStreamJsonReader_get_PEEKED_EOF(void);
 #define ComGoogleGsonStreamJsonReader_PEEKED_EOF 17
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, PEEKED_EOF, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_NONE();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_NONE(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_NONE 0
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_NONE, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_SIGN();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_SIGN(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_SIGN 1
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_SIGN, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_DIGIT();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_DIGIT(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_DIGIT 2
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_DIGIT, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_DECIMAL();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_DECIMAL(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_DECIMAL 3
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_DECIMAL, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_FRACTION_DIGIT();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_FRACTION_DIGIT(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_FRACTION_DIGIT 4
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_FRACTION_DIGIT, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_EXP_E();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_EXP_E(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_EXP_E 5
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_EXP_E, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_EXP_SIGN();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_EXP_SIGN(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_EXP_SIGN 6
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_EXP_SIGN, jint)
 
-inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_EXP_DIGIT();
+inline jint ComGoogleGsonStreamJsonReader_get_NUMBER_CHAR_EXP_DIGIT(void);
 #define ComGoogleGsonStreamJsonReader_NUMBER_CHAR_EXP_DIGIT 7
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonStreamJsonReader, NUMBER_CHAR_EXP_DIGIT, jint)
 
@@ -241,9 +241,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonStreamJsonReader_1)
 
 __attribute__((unused)) static void ComGoogleGsonStreamJsonReader_1_init(ComGoogleGsonStreamJsonReader_1 *self);
 
-__attribute__((unused)) static ComGoogleGsonStreamJsonReader_1 *new_ComGoogleGsonStreamJsonReader_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonStreamJsonReader_1 *new_ComGoogleGsonStreamJsonReader_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonStreamJsonReader_1 *create_ComGoogleGsonStreamJsonReader_1_init();
+__attribute__((unused)) static ComGoogleGsonStreamJsonReader_1 *create_ComGoogleGsonStreamJsonReader_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(ComGoogleGsonStreamJsonReader)
 

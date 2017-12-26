@@ -111,8 +111,8 @@ __attribute__((unused)) static OrgApacheLuceneUtilFstFST_Arc *OrgApacheLuceneUti
       if (found) {
         arc->arcIdx_ = mid - 1;
         (void) [fst_ readNextRealArcWithOrgApacheLuceneUtilFstFST_Arc:arc withOrgApacheLuceneUtilFstFST_BytesReader:in];
-        JreAssert((arc->arcIdx_ == mid), (@"org/apache/lucene/util/fst/FSTEnum.java:172 condition failed: assert arc.arcIdx == mid;"));
-        JreAssert((arc->label_ == targetLabel), (JreStrcat("$I$I$I", @"arc.label=", arc->label_, @" vs targetLabel=", targetLabel, @" mid=", mid)));
+        JreAssert(arc->arcIdx_ == mid, @"org/apache/lucene/util/fst/FSTEnum.java:172 condition failed: assert arc.arcIdx == mid;");
+        JreAssert(arc->label_ == targetLabel, JreStrcat("$I$I$I", @"arc.label=", arc->label_, @" vs targetLabel=", targetLabel, @" mid=", mid));
         (void) IOSObjectArray_Set(nil_chk(output_), upto_, [((OrgApacheLuceneUtilFstOutputs *) nil_chk(fst_->outputs_)) addWithId:IOSObjectArray_Get(output_, upto_ - 1) withId:arc->output_]);
         if (targetLabel == OrgApacheLuceneUtilFstFST_END_LABEL) {
           return;
@@ -126,7 +126,7 @@ __attribute__((unused)) static OrgApacheLuceneUtilFstFST_Arc *OrgApacheLuceneUti
       else if (low == arc->numArcs_) {
         arc->arcIdx_ = arc->numArcs_ - 2;
         (void) [fst_ readNextRealArcWithOrgApacheLuceneUtilFstFST_Arc:arc withOrgApacheLuceneUtilFstFST_BytesReader:in];
-        JreAssert(([arc isLast]), (@"org/apache/lucene/util/fst/FSTEnum.java:187 condition failed: assert arc.isLast();"));
+        JreAssert([arc isLast], @"org/apache/lucene/util/fst/FSTEnum.java:187 condition failed: assert arc.isLast();");
         upto_--;
         while (true) {
           if (upto_ == 0) {
@@ -144,7 +144,7 @@ __attribute__((unused)) static OrgApacheLuceneUtilFstFST_Arc *OrgApacheLuceneUti
       else {
         arc->arcIdx_ = (low > high ? low : high) - 1;
         (void) [fst_ readNextRealArcWithOrgApacheLuceneUtilFstFST_Arc:arc withOrgApacheLuceneUtilFstFST_BytesReader:in];
-        JreAssert((arc->label_ > targetLabel), (@"org/apache/lucene/util/fst/FSTEnum.java:207 condition failed: assert arc.label > targetLabel;"));
+        JreAssert(arc->label_ > targetLabel, @"org/apache/lucene/util/fst/FSTEnum.java:207 condition failed: assert arc.label > targetLabel;");
         OrgApacheLuceneUtilFstFSTEnum_pushFirst(self);
         return;
       }
@@ -212,8 +212,8 @@ __attribute__((unused)) static OrgApacheLuceneUtilFstFST_Arc *OrgApacheLuceneUti
       if (found) {
         arc->arcIdx_ = mid - 1;
         (void) [fst_ readNextRealArcWithOrgApacheLuceneUtilFstFST_Arc:arc withOrgApacheLuceneUtilFstFST_BytesReader:in];
-        JreAssert((arc->arcIdx_ == mid), (@"org/apache/lucene/util/fst/FSTEnum.java:311 condition failed: assert arc.arcIdx == mid;"));
-        JreAssert((arc->label_ == targetLabel), (JreStrcat("$I$I$I", @"arc.label=", arc->label_, @" vs targetLabel=", targetLabel, @" mid=", mid)));
+        JreAssert(arc->arcIdx_ == mid, @"org/apache/lucene/util/fst/FSTEnum.java:311 condition failed: assert arc.arcIdx == mid;");
+        JreAssert(arc->label_ == targetLabel, JreStrcat("$I$I$I", @"arc.label=", arc->label_, @" vs targetLabel=", targetLabel, @" mid=", mid));
         (void) IOSObjectArray_Set(nil_chk(output_), upto_, [((OrgApacheLuceneUtilFstOutputs *) nil_chk(fst_->outputs_)) addWithId:IOSObjectArray_Get(output_, upto_ - 1) withId:arc->output_]);
         if (targetLabel == OrgApacheLuceneUtilFstFST_END_LABEL) {
           return;
@@ -245,8 +245,8 @@ __attribute__((unused)) static OrgApacheLuceneUtilFstFST_Arc *OrgApacheLuceneUti
       else {
         arc->arcIdx_ = (low > high ? high : low) - 1;
         (void) [fst_ readNextRealArcWithOrgApacheLuceneUtilFstFST_Arc:arc withOrgApacheLuceneUtilFstFST_BytesReader:in];
-        JreAssert(([arc isLast] || [fst_ readNextArcLabelWithOrgApacheLuceneUtilFstFST_Arc:arc] > targetLabel), (@"org/apache/lucene/util/fst/FSTEnum.java:354 condition failed: assert arc.isLast() || fst.readNextArcLabel(arc) > targetLabel;"));
-        JreAssert((arc->label_ < targetLabel), (@"org/apache/lucene/util/fst/FSTEnum.java:355 condition failed: assert arc.label < targetLabel;"));
+        JreAssert([arc isLast] || [fst_ readNextArcLabelWithOrgApacheLuceneUtilFstFST_Arc:arc] > targetLabel, @"org/apache/lucene/util/fst/FSTEnum.java:354 condition failed: assert arc.isLast() || fst.readNextArcLabel(arc) > targetLabel;");
+        JreAssert(arc->label_ < targetLabel, @"org/apache/lucene/util/fst/FSTEnum.java:355 condition failed: assert arc.label < targetLabel;");
         OrgApacheLuceneUtilFstFSTEnum_pushLast(self);
         return;
       }
@@ -411,7 +411,7 @@ void OrgApacheLuceneUtilFstFSTEnum_incr(OrgApacheLuceneUtilFstFSTEnum *self) {
 
 void OrgApacheLuceneUtilFstFSTEnum_pushFirst(OrgApacheLuceneUtilFstFSTEnum *self) {
   OrgApacheLuceneUtilFstFST_Arc *arc = IOSObjectArray_Get(nil_chk(self->arcs_), self->upto_);
-  JreAssert((arc != nil), (@"org/apache/lucene/util/fst/FSTEnum.java:435 condition failed: assert arc != null;"));
+  JreAssert(arc != nil, @"org/apache/lucene/util/fst/FSTEnum.java:435 condition failed: assert arc != null;");
   while (true) {
     (void) IOSObjectArray_Set(nil_chk(self->output_), self->upto_, [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(self->fst_))->outputs_)) addWithId:IOSObjectArray_Get(self->output_, self->upto_ - 1) withId:((OrgApacheLuceneUtilFstFST_Arc *) nil_chk(arc))->output_]);
     if (arc->label_ == OrgApacheLuceneUtilFstFST_END_LABEL) {
@@ -427,7 +427,7 @@ void OrgApacheLuceneUtilFstFSTEnum_pushFirst(OrgApacheLuceneUtilFstFSTEnum *self
 
 void OrgApacheLuceneUtilFstFSTEnum_pushLast(OrgApacheLuceneUtilFstFSTEnum *self) {
   OrgApacheLuceneUtilFstFST_Arc *arc = IOSObjectArray_Get(nil_chk(self->arcs_), self->upto_);
-  JreAssert((arc != nil), (@"org/apache/lucene/util/fst/FSTEnum.java:458 condition failed: assert arc != null;"));
+  JreAssert(arc != nil, @"org/apache/lucene/util/fst/FSTEnum.java:458 condition failed: assert arc != null;");
   while (true) {
     [self setCurrentLabelWithInt:((OrgApacheLuceneUtilFstFST_Arc *) nil_chk(arc))->label_];
     (void) IOSObjectArray_Set(nil_chk(self->output_), self->upto_, [((OrgApacheLuceneUtilFstOutputs *) nil_chk(((OrgApacheLuceneUtilFstFST *) nil_chk(self->fst_))->outputs_)) addWithId:IOSObjectArray_Get(self->output_, self->upto_ - 1) withId:arc->output_]);

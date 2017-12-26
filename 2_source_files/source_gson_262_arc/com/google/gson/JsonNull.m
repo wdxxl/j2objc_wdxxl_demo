@@ -11,7 +11,7 @@
 #include "java/lang/Deprecated.h"
 #include "java/lang/annotation/Annotation.h"
 
-__attribute__((unused)) static IOSObjectArray *ComGoogleGsonJsonNull__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *ComGoogleGsonJsonNull__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(ComGoogleGsonJsonNull)
 

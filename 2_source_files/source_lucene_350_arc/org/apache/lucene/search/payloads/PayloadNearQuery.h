@@ -52,6 +52,13 @@
 
 - (NSString *)toStringWithNSString:(NSString *)field;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSpansSpanQueryArray:(IOSObjectArray *)arg0
+                                                         withInt:(jint)arg1
+                                                     withBoolean:(jboolean)arg2
+                                                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchPayloadsPayloadNearQuery)
@@ -99,6 +106,11 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchPayloadsPayloadNearQuery)
 - (OrgApacheLuceneSearchScorer *)scorerWithOrgApacheLuceneIndexIndexReader:(OrgApacheLuceneIndexIndexReader *)reader
                                                                withBoolean:(jboolean)scoreDocsInOrder
                                                                withBoolean:(jboolean)topScorer;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSpansSpanQuery:(OrgApacheLuceneSearchSpansSpanQuery *)arg0
+                          withOrgApacheLuceneSearchSearcher:(OrgApacheLuceneSearchSearcher *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -158,6 +170,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchPayloadsPayloadNearQuery_Payload
                                       withInt:(jint)end;
 
 - (jboolean)setFreqCurrentDoc;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchSpansSpans:(OrgApacheLuceneSearchSpansSpans *)arg0
+                        withOrgApacheLuceneSearchWeight:(OrgApacheLuceneSearchWeight *)arg1
+                    withOrgApacheLuceneSearchSimilarity:(OrgApacheLuceneSearchSimilarity *)arg2
+                                          withByteArray:(IOSByteArray *)arg3 NS_UNAVAILABLE;
 
 @end
 

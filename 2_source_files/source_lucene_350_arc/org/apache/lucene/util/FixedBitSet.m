@@ -77,7 +77,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (jboolean)getWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:92 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/FixedBitSet.java:92 condition failed: assert index >= 0 && index < numBits;");
   jint i = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -85,7 +85,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (void)setWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:102 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/FixedBitSet.java:102 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -93,7 +93,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (jboolean)getAndSetWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:110 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/FixedBitSet.java:110 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -103,7 +103,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (void)clearWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:120 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/FixedBitSet.java:120 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x03f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -111,7 +111,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (jboolean)getAndClearWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:128 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/FixedBitSet.java:128 condition failed: assert index >= 0 && index < numBits;");
   jint wordNum = JreRShift32(index, 6);
   jint bit = index & (jint) 0x3f;
   jlong bitmask = JreLShift64(1LL, bit);
@@ -121,7 +121,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (jint)nextSetBitWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:141 condition failed: assert index >= 0 && index < numBits;"));
+  JreAssert(index >= 0 && index < numBits_, @"org/apache/lucene/util/FixedBitSet.java:141 condition failed: assert index >= 0 && index < numBits;");
   jint i = JreRShift32(index, 6);
   jint subIndex = index & (jint) 0x3f;
   jlong word = JreRShift64(IOSLongArray_Get(nil_chk(bits_), i), subIndex);
@@ -138,7 +138,7 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 }
 
 - (jint)prevSetBitWithInt:(jint)index {
-  JreAssert((index >= 0 && index < numBits_), (JreStrcat("$I$I", @"index=", index, @" numBits=", numBits_)));
+  JreAssert(index >= 0 && index < numBits_, JreStrcat("$I$I", @"index=", index, @" numBits=", numBits_));
   jint i = JreRShift32(index, 6);
   jint subIndex = index & (jint) 0x3f;
   jlong word = (JreLShift64(IOSLongArray_Get(nil_chk(bits_), i), (63 - subIndex)));
@@ -232,8 +232,8 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 
 - (void)flipWithInt:(jint)startIndex
             withInt:(jint)endIndex {
-  JreAssert((startIndex >= 0 && startIndex < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:292 condition failed: assert startIndex >= 0 && startIndex < numBits;"));
-  JreAssert((endIndex >= 0 && endIndex <= numBits_), (@"org/apache/lucene/util/FixedBitSet.java:293 condition failed: assert endIndex >= 0 && endIndex <= numBits;"));
+  JreAssert(startIndex >= 0 && startIndex < numBits_, @"org/apache/lucene/util/FixedBitSet.java:292 condition failed: assert startIndex >= 0 && startIndex < numBits;");
+  JreAssert(endIndex >= 0 && endIndex <= numBits_, @"org/apache/lucene/util/FixedBitSet.java:293 condition failed: assert endIndex >= 0 && endIndex <= numBits;");
   if (endIndex <= startIndex) {
     return;
   }
@@ -254,8 +254,8 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 
 - (void)setWithInt:(jint)startIndex
            withInt:(jint)endIndex {
-  JreAssert((startIndex >= 0 && startIndex < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:331 condition failed: assert startIndex >= 0 && startIndex < numBits;"));
-  JreAssert((endIndex >= 0 && endIndex <= numBits_), (@"org/apache/lucene/util/FixedBitSet.java:332 condition failed: assert endIndex >= 0 && endIndex <= numBits;"));
+  JreAssert(startIndex >= 0 && startIndex < numBits_, @"org/apache/lucene/util/FixedBitSet.java:331 condition failed: assert startIndex >= 0 && startIndex < numBits;");
+  JreAssert(endIndex >= 0 && endIndex <= numBits_, @"org/apache/lucene/util/FixedBitSet.java:332 condition failed: assert endIndex >= 0 && endIndex <= numBits;");
   if (endIndex <= startIndex) {
     return;
   }
@@ -274,8 +274,8 @@ __attribute__((unused)) static void OrgApacheLuceneUtilFixedBitSet_andNotWithLon
 
 - (void)clearWithInt:(jint)startIndex
              withInt:(jint)endIndex {
-  JreAssert((startIndex >= 0 && startIndex < numBits_), (@"org/apache/lucene/util/FixedBitSet.java:359 condition failed: assert startIndex >= 0 && startIndex < numBits;"));
-  JreAssert((endIndex >= 0 && endIndex <= numBits_), (@"org/apache/lucene/util/FixedBitSet.java:360 condition failed: assert endIndex >= 0 && endIndex <= numBits;"));
+  JreAssert(startIndex >= 0 && startIndex < numBits_, @"org/apache/lucene/util/FixedBitSet.java:359 condition failed: assert startIndex >= 0 && startIndex < numBits;");
+  JreAssert(endIndex >= 0 && endIndex <= numBits_, @"org/apache/lucene/util/FixedBitSet.java:360 condition failed: assert endIndex >= 0 && endIndex <= numBits;");
   if (endIndex <= startIndex) {
     return;
   }

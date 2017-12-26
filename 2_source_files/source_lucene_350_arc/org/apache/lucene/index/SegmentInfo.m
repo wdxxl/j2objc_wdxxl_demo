@@ -329,13 +329,13 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir
     }
     else delCount_ = 0;
   }
-  JreAssert((delCount_ <= docCount_), (@"org/apache/lucene/index/SegmentInfo.java:552 condition failed: assert delCount <= docCount;"));
+  JreAssert(delCount_ <= docCount_, @"org/apache/lucene/index/SegmentInfo.java:552 condition failed: assert delCount <= docCount;");
   return delCount_;
 }
 
 - (void)setDelCountWithInt:(jint)delCount {
   self->delCount_ = delCount;
-  JreAssert((delCount <= docCount_), (@"org/apache/lucene/index/SegmentInfo.java:558 condition failed: assert delCount <= docCount;"));
+  JreAssert(delCount <= docCount_, @"org/apache/lucene/index/SegmentInfo.java:558 condition failed: assert delCount <= docCount;");
 }
 
 - (jint)getDocStoreOffset {
@@ -374,7 +374,7 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir
 }
 
 - (void)writeWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)output {
-  JreAssert((delCount_ <= docCount_), (JreStrcat("$I$I$$", @"delCount=", delCount_, @" docCount=", docCount_, @" segment=", name_)));
+  JreAssert(delCount_ <= docCount_, JreStrcat("$I$I$$", @"delCount=", delCount_, @" docCount=", docCount_, @" segment=", name_));
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(output)) writeStringWithNSString:version__];
   [output writeStringWithNSString:name_];
   [output writeIntWithInt:docCount_];
@@ -436,7 +436,7 @@ withOrgApacheLuceneStoreDirectory:(OrgApacheLuceneStoreDirectory *)dir
     }
   }
   if (docStoreOffset_ != -1) {
-    JreAssert((docStoreSegment_ != nil), (@"org/apache/lucene/index/SegmentInfo.java:668 condition failed: assert docStoreSegment != null;"));
+    JreAssert(docStoreSegment_ != nil, @"org/apache/lucene/index/SegmentInfo.java:668 condition failed: assert docStoreSegment != null;");
     if (docStoreIsCompoundFile_) {
       [filesSet addWithId:OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(docStoreSegment_, OrgApacheLuceneIndexIndexFileNames_COMPOUND_FILE_STORE_EXTENSION)];
     }
@@ -815,7 +815,7 @@ void OrgApacheLuceneIndexSegmentInfo_initWithOrgApacheLuceneStoreDirectory_withI
     self->preLockless_ = (self->isCompoundFile_ == OrgApacheLuceneIndexSegmentInfo_CHECK_DIR);
     if (format <= OrgApacheLuceneIndexSegmentInfos_FORMAT_DEL_COUNT) {
       self->delCount_ = [input readInt];
-      JreAssert((self->delCount_ <= self->docCount_), (@"org/apache/lucene/index/SegmentInfo.java:209 condition failed: assert delCount <= docCount;"));
+      JreAssert(self->delCount_ <= self->docCount_, @"org/apache/lucene/index/SegmentInfo.java:209 condition failed: assert delCount <= docCount;");
     }
     else self->delCount_ = -1;
     if (format <= OrgApacheLuceneIndexSegmentInfos_FORMAT_HAS_PROX) self->hasProx_ = ([input readByte] == 1);

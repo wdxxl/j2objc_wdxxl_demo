@@ -70,7 +70,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexBufferedDeletesStream, infoStream_, Java
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexBufferedDeletesStream, bytesUsed_, JavaUtilConcurrentAtomicAtomicLong *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexBufferedDeletesStream, numTerms_, JavaUtilConcurrentAtomicAtomicInteger *)
 
-inline id<JavaUtilComparator> OrgApacheLuceneIndexBufferedDeletesStream_get_sortByDelGen();
+inline id<JavaUtilComparator> OrgApacheLuceneIndexBufferedDeletesStream_get_sortByDelGen(void);
 static id<JavaUtilComparator> OrgApacheLuceneIndexBufferedDeletesStream_sortByDelGen;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneIndexBufferedDeletesStream, sortByDelGen, id<JavaUtilComparator>)
 
@@ -99,9 +99,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexBufferedDeletesStream_1)
 
 __attribute__((unused)) static void OrgApacheLuceneIndexBufferedDeletesStream_1_init(OrgApacheLuceneIndexBufferedDeletesStream_1 *self);
 
-__attribute__((unused)) static OrgApacheLuceneIndexBufferedDeletesStream_1 *new_OrgApacheLuceneIndexBufferedDeletesStream_1_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneIndexBufferedDeletesStream_1 *new_OrgApacheLuceneIndexBufferedDeletesStream_1_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneIndexBufferedDeletesStream_1 *create_OrgApacheLuceneIndexBufferedDeletesStream_1_init();
+__attribute__((unused)) static OrgApacheLuceneIndexBufferedDeletesStream_1 *create_OrgApacheLuceneIndexBufferedDeletesStream_1_init(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
 
@@ -124,16 +124,16 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
 
 - (void)pushWithOrgApacheLuceneIndexFrozenBufferedDeletes:(OrgApacheLuceneIndexFrozenBufferedDeletes *)packet {
   @synchronized(self) {
-    JreAssert(([((OrgApacheLuceneIndexFrozenBufferedDeletes *) nil_chk(packet)) any]), (@"org/apache/lucene/index/BufferedDeletesStream.java:86 condition failed: assert packet.any();"));
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:87 condition failed: assert checkDeleteStats();"));
-    JreAssert((packet->gen_ < nextGen_), (@"org/apache/lucene/index/BufferedDeletesStream.java:88 condition failed: assert packet.gen < nextGen;"));
+    JreAssert([((OrgApacheLuceneIndexFrozenBufferedDeletes *) nil_chk(packet)) any], @"org/apache/lucene/index/BufferedDeletesStream.java:86 condition failed: assert packet.any();");
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:87 condition failed: assert checkDeleteStats();");
+    JreAssert(packet->gen_ < nextGen_, @"org/apache/lucene/index/BufferedDeletesStream.java:88 condition failed: assert packet.gen < nextGen;");
     [((id<JavaUtilList>) nil_chk(deletes_)) addWithId:packet];
     [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(numTerms_)) addAndGetWithInt:packet->numTermDeletes_];
     [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(bytesUsed_)) addAndGetWithLong:packet->bytesUsed_];
     if (infoStream_ != nil) {
       OrgApacheLuceneIndexBufferedDeletesStream_messageWithNSString_(self, JreStrcat("$@$J$I", @"push deletes ", packet, @" delGen=", packet->gen_, @" packetCount=", [deletes_ size]));
     }
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:95 condition failed: assert checkDeleteStats();"));
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:95 condition failed: assert checkDeleteStats();");
   }
 }
 
@@ -165,7 +165,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
     if ([((id<JavaUtilList>) nil_chk(infos)) size] == 0) {
       return new_OrgApacheLuceneIndexBufferedDeletesStream_ApplyDeletesResult_initWithBoolean_withLong_withJavaUtilList_(false, nextGen_++, nil);
     }
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:159 condition failed: assert checkDeleteStats();"));
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:159 condition failed: assert checkDeleteStats();");
     if (![self any]) {
       OrgApacheLuceneIndexBufferedDeletesStream_messageWithNSString_(self, @"applyDeletes: no deletes; skipping");
       return new_OrgApacheLuceneIndexBufferedDeletesStream_ApplyDeletesResult_initWithBoolean_withLong_withJavaUtilList_(false, nextGen_++, nil);
@@ -193,7 +193,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
         delIDX--;
       }
       else if (packet != nil && segGen == packet->gen_) {
-        JreAssert(([((OrgApacheLuceneIndexIndexWriter_ReaderPool *) nil_chk(readerPool)) infoIsLiveWithOrgApacheLuceneIndexSegmentInfo:info]), (@"org/apache/lucene/index/BufferedDeletesStream.java:200 condition failed: assert readerPool.infoIsLive(info);"));
+        JreAssert([((OrgApacheLuceneIndexIndexWriter_ReaderPool *) nil_chk(readerPool)) infoIsLiveWithOrgApacheLuceneIndexSegmentInfo:info], @"org/apache/lucene/index/BufferedDeletesStream.java:200 condition failed: assert readerPool.infoIsLive(info);");
         OrgApacheLuceneIndexSegmentReader *reader = [readerPool getWithOrgApacheLuceneIndexSegmentInfo:info withBoolean:false];
         jint delCount = 0;
         jboolean segAllDeletes;
@@ -228,7 +228,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
       }
       else {
         if (coalescedDeletes != nil) {
-          JreAssert(([((OrgApacheLuceneIndexIndexWriter_ReaderPool *) nil_chk(readerPool)) infoIsLiveWithOrgApacheLuceneIndexSegmentInfo:info]), (@"org/apache/lucene/index/BufferedDeletesStream.java:244 condition failed: assert readerPool.infoIsLive(info);"));
+          JreAssert([((OrgApacheLuceneIndexIndexWriter_ReaderPool *) nil_chk(readerPool)) infoIsLiveWithOrgApacheLuceneIndexSegmentInfo:info], @"org/apache/lucene/index/BufferedDeletesStream.java:244 condition failed: assert readerPool.infoIsLive(info);");
           OrgApacheLuceneIndexSegmentReader *reader = [readerPool getWithOrgApacheLuceneIndexSegmentInfo:info withBoolean:false];
           jint delCount = 0;
           jboolean segAllDeletes;
@@ -255,7 +255,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
         infosIDX--;
       }
     }
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:274 condition failed: assert checkDeleteStats();"));
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:274 condition failed: assert checkDeleteStats();");
     if (infoStream_ != nil) {
       OrgApacheLuceneIndexBufferedDeletesStream_messageWithNSString_(self, JreStrcat("$J$", @"applyDeletes took ", (JavaLangSystem_currentTimeMillis() - t0), @" msec"));
     }
@@ -271,7 +271,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
 
 - (void)pruneWithOrgApacheLuceneIndexSegmentInfos:(OrgApacheLuceneIndexSegmentInfos *)segmentInfos {
   @synchronized(self) {
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:292 condition failed: assert checkDeleteStats();"));
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:292 condition failed: assert checkDeleteStats();");
     jlong minGen = JavaLangLong_MAX_VALUE;
     for (OrgApacheLuceneIndexSegmentInfo * __strong info in nil_chk(segmentInfos)) {
       minGen = JavaLangMath_minWithLong_withLong_([((OrgApacheLuceneIndexSegmentInfo *) nil_chk(info)) getBufferedDeletesGen], minGen);
@@ -283,13 +283,13 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexBufferedDeletesStream)
     for (jint delIDX = 0; delIDX < limit; delIDX++) {
       if (((OrgApacheLuceneIndexFrozenBufferedDeletes *) nil_chk([deletes_ getWithInt:delIDX]))->gen_ >= minGen) {
         OrgApacheLuceneIndexBufferedDeletesStream_pruneWithInt_(self, delIDX);
-        JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:306 condition failed: assert checkDeleteStats();"));
+        JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:306 condition failed: assert checkDeleteStats();");
         return;
       }
     }
     OrgApacheLuceneIndexBufferedDeletesStream_pruneWithInt_(self, limit);
-    JreAssert((![self any]), (@"org/apache/lucene/index/BufferedDeletesStream.java:313 condition failed: assert !any();"));
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self)), (@"org/apache/lucene/index/BufferedDeletesStream.java:314 condition failed: assert checkDeleteStats();"));
+    JreAssert(![self any], @"org/apache/lucene/index/BufferedDeletesStream.java:313 condition failed: assert !any();");
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(self), @"org/apache/lucene/index/BufferedDeletesStream.java:314 condition failed: assert checkDeleteStats();");
   }
 }
 
@@ -411,9 +411,9 @@ void OrgApacheLuceneIndexBufferedDeletesStream_pruneWithInt_(OrgApacheLuceneInde
       for (jint delIDX = 0; delIDX < count; delIDX++) {
         OrgApacheLuceneIndexFrozenBufferedDeletes *packet = [((id<JavaUtilList>) nil_chk(self->deletes_)) getWithInt:delIDX];
         [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(self->numTerms_)) addAndGetWithInt:-((OrgApacheLuceneIndexFrozenBufferedDeletes *) nil_chk(packet))->numTermDeletes_];
-        JreAssert(([self->numTerms_ get] >= 0), (@"org/apache/lucene/index/BufferedDeletesStream.java:325 condition failed: assert numTerms.get() >= 0;"));
+        JreAssert([self->numTerms_ get] >= 0, @"org/apache/lucene/index/BufferedDeletesStream.java:325 condition failed: assert numTerms.get() >= 0;");
         [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(self->bytesUsed_)) addAndGetWithLong:-packet->bytesUsed_];
-        JreAssert(([self->bytesUsed_ get] >= 0), (@"org/apache/lucene/index/BufferedDeletesStream.java:327 condition failed: assert bytesUsed.get() >= 0;"));
+        JreAssert([self->bytesUsed_ get] >= 0, @"org/apache/lucene/index/BufferedDeletesStream.java:327 condition failed: assert bytesUsed.get() >= 0;");
       }
       [((id<JavaUtilList>) nil_chk([((id<JavaUtilList>) nil_chk(self->deletes_)) subListWithInt:0 withInt:count])) clear];
     }
@@ -423,10 +423,10 @@ void OrgApacheLuceneIndexBufferedDeletesStream_pruneWithInt_(OrgApacheLuceneInde
 jlong OrgApacheLuceneIndexBufferedDeletesStream_applyTermDeletesWithJavaLangIterable_withOrgApacheLuceneIndexSegmentReader_(OrgApacheLuceneIndexBufferedDeletesStream *self, id<JavaLangIterable> termsIter, OrgApacheLuceneIndexSegmentReader *reader) {
   @synchronized(self) {
     jlong delCount = 0;
-    JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteTermWithOrgApacheLuceneIndexTerm_(self, nil)), (@"org/apache/lucene/index/BufferedDeletesStream.java:337 condition failed: assert checkDeleteTerm(null);"));
+    JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteTermWithOrgApacheLuceneIndexTerm_(self, nil), @"org/apache/lucene/index/BufferedDeletesStream.java:337 condition failed: assert checkDeleteTerm(null);");
     id<OrgApacheLuceneIndexTermDocs> docs = [((OrgApacheLuceneIndexSegmentReader *) nil_chk(reader)) termDocs];
     for (OrgApacheLuceneIndexTerm * __strong term in nil_chk(termsIter)) {
-      JreAssert((OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteTermWithOrgApacheLuceneIndexTerm_(self, term)), (@"org/apache/lucene/index/BufferedDeletesStream.java:346 condition failed: assert checkDeleteTerm(term);"));
+      JreAssert(OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteTermWithOrgApacheLuceneIndexTerm_(self, term), @"org/apache/lucene/index/BufferedDeletesStream.java:346 condition failed: assert checkDeleteTerm(term);");
       [((id<OrgApacheLuceneIndexTermDocs>) nil_chk(docs)) seekWithOrgApacheLuceneIndexTerm:term];
       while ([docs next]) {
         jint docID = [docs doc];
@@ -463,7 +463,7 @@ jlong OrgApacheLuceneIndexBufferedDeletesStream_applyQueryDeletesWithJavaLangIte
 
 jboolean OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteTermWithOrgApacheLuceneIndexTerm_(OrgApacheLuceneIndexBufferedDeletesStream *self, OrgApacheLuceneIndexTerm *term) {
   if (term != nil) {
-    JreAssert((self->lastDeleteTerm_ == nil || [term compareToWithId:self->lastDeleteTerm_] > 0), (JreStrcat("$@$@", @"lastTerm=", self->lastDeleteTerm_, @" vs term=", term)));
+    JreAssert(self->lastDeleteTerm_ == nil || [term compareToWithId:self->lastDeleteTerm_] > 0, JreStrcat("$@$@", @"lastTerm=", self->lastDeleteTerm_, @" vs term=", term));
   }
   self->lastDeleteTerm_ = term == nil ? nil : new_OrgApacheLuceneIndexTerm_initWithNSString_withNSString_([term field], [term text]);
   return true;
@@ -476,8 +476,8 @@ jboolean OrgApacheLuceneIndexBufferedDeletesStream_checkDeleteStats(OrgApacheLuc
     numTerms2 += ((OrgApacheLuceneIndexFrozenBufferedDeletes *) nil_chk(packet))->numTermDeletes_;
     bytesUsed2 += packet->bytesUsed_;
   }
-  JreAssert((numTerms2 == [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(self->numTerms_)) get]), (JreStrcat("$I$I", @"numTerms2=", numTerms2, @" vs ", [self->numTerms_ get])));
-  JreAssert((bytesUsed2 == [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(self->bytesUsed_)) get]), (JreStrcat("$J$@", @"bytesUsed2=", bytesUsed2, @" vs ", self->bytesUsed_)));
+  JreAssert(numTerms2 == [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(self->numTerms_)) get], JreStrcat("$I$I", @"numTerms2=", numTerms2, @" vs ", [self->numTerms_ get]));
+  JreAssert(bytesUsed2 == [((JavaUtilConcurrentAtomicAtomicLong *) nil_chk(self->bytesUsed_)) get], JreStrcat("$J$@", @"bytesUsed2=", bytesUsed2, @" vs ", self->bytesUsed_));
   return true;
 }
 

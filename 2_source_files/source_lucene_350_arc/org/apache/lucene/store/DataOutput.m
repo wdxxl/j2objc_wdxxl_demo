@@ -25,17 +25,17 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneStoreDataOutput, copyBuffer_, IOSByteArray *)
 
-inline jint OrgApacheLuceneStoreDataOutput_get_COPY_BUFFER_SIZE();
+inline jint OrgApacheLuceneStoreDataOutput_get_COPY_BUFFER_SIZE(void);
 inline jint OrgApacheLuceneStoreDataOutput_set_COPY_BUFFER_SIZE(jint value);
-inline jint *OrgApacheLuceneStoreDataOutput_getRef_COPY_BUFFER_SIZE();
+inline jint *OrgApacheLuceneStoreDataOutput_getRef_COPY_BUFFER_SIZE(void);
 static jint OrgApacheLuceneStoreDataOutput_COPY_BUFFER_SIZE = 16384;
 J2OBJC_STATIC_FIELD_PRIMITIVE(OrgApacheLuceneStoreDataOutput, COPY_BUFFER_SIZE, jint)
 
 __attribute__((unused)) static void OrgApacheLuceneStoreDataOutput_writeVIntWithInt_(OrgApacheLuceneStoreDataOutput *self, jint i);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDataOutput__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDataOutput__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDataOutput__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreDataOutput__Annotations$1(void);
 
 @implementation OrgApacheLuceneStoreDataOutput
 
@@ -96,7 +96,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 - (void)copyBytesWithOrgApacheLuceneStoreDataInput:(OrgApacheLuceneStoreDataInput *)input
                                           withLong:(jlong)numBytes {
-  JreAssert((numBytes >= 0), (JreStrcat("$J", @"numBytes=", numBytes)));
+  JreAssert(numBytes >= 0, JreStrcat("$J", @"numBytes=", numBytes));
   jlong left = numBytes;
   if (copyBuffer_ == nil) copyBuffer_ = [IOSByteArray newArrayWithLength:OrgApacheLuceneStoreDataOutput_COPY_BUFFER_SIZE];
   while (left > 0) {

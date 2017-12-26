@@ -40,9 +40,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheCommonsCodecDigestCrypt)
 
 FOUNDATION_EXPORT void OrgApacheCommonsCodecDigestCrypt_init(OrgApacheCommonsCodecDigestCrypt *self);
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestCrypt *new_OrgApacheCommonsCodecDigestCrypt_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestCrypt *new_OrgApacheCommonsCodecDigestCrypt_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheCommonsCodecDigestCrypt *create_OrgApacheCommonsCodecDigestCrypt_init();
+FOUNDATION_EXPORT OrgApacheCommonsCodecDigestCrypt *create_OrgApacheCommonsCodecDigestCrypt_init(void);
 
 FOUNDATION_EXPORT NSString *OrgApacheCommonsCodecDigestCrypt_cryptWithByteArray_(IOSByteArray *keyBytes);
 

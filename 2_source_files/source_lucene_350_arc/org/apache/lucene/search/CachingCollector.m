@@ -32,15 +32,15 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchCachingCollector, lastReader_, OrgApacheLuceneIndexIndexReader *)
 
-inline jint OrgApacheLuceneSearchCachingCollector_get_MAX_ARRAY_SIZE();
+inline jint OrgApacheLuceneSearchCachingCollector_get_MAX_ARRAY_SIZE(void);
 #define OrgApacheLuceneSearchCachingCollector_MAX_ARRAY_SIZE 524288
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchCachingCollector, MAX_ARRAY_SIZE, jint)
 
-inline jint OrgApacheLuceneSearchCachingCollector_get_INITIAL_ARRAY_SIZE();
+inline jint OrgApacheLuceneSearchCachingCollector_get_INITIAL_ARRAY_SIZE(void);
 #define OrgApacheLuceneSearchCachingCollector_INITIAL_ARRAY_SIZE 128
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchCachingCollector, INITIAL_ARRAY_SIZE, jint)
 
-inline IOSIntArray *OrgApacheLuceneSearchCachingCollector_get_EMPTY_INT_ARRAY();
+inline IOSIntArray *OrgApacheLuceneSearchCachingCollector_get_EMPTY_INT_ARRAY(void);
 static IOSIntArray *OrgApacheLuceneSearchCachingCollector_EMPTY_INT_ARRAY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchCachingCollector, EMPTY_INT_ARRAY, IOSIntArray *)
 
@@ -97,9 +97,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchCachingCollector_CachedScorer)
 
 __attribute__((unused)) static void OrgApacheLuceneSearchCachingCollector_CachedScorer_init(OrgApacheLuceneSearchCachingCollector_CachedScorer *self);
 
-__attribute__((unused)) static OrgApacheLuceneSearchCachingCollector_CachedScorer *new_OrgApacheLuceneSearchCachingCollector_CachedScorer_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static OrgApacheLuceneSearchCachingCollector_CachedScorer *new_OrgApacheLuceneSearchCachingCollector_CachedScorer_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static OrgApacheLuceneSearchCachingCollector_CachedScorer *create_OrgApacheLuceneSearchCachingCollector_CachedScorer_init();
+__attribute__((unused)) static OrgApacheLuceneSearchCachingCollector_CachedScorer *create_OrgApacheLuceneSearchCachingCollector_CachedScorer_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchCachingCollector_CachedScorer)
 

@@ -39,9 +39,9 @@
 
 __attribute__((unused)) static void ComGoogleGsonInternal_Gson_Types_init(ComGoogleGsonInternal_Gson_Types *self);
 
-__attribute__((unused)) static ComGoogleGsonInternal_Gson_Types *new_ComGoogleGsonInternal_Gson_Types_init() NS_RETURNS_RETAINED;
+__attribute__((unused)) static ComGoogleGsonInternal_Gson_Types *new_ComGoogleGsonInternal_Gson_Types_init(void) NS_RETURNS_RETAINED;
 
-__attribute__((unused)) static ComGoogleGsonInternal_Gson_Types *create_ComGoogleGsonInternal_Gson_Types_init();
+__attribute__((unused)) static ComGoogleGsonInternal_Gson_Types *create_ComGoogleGsonInternal_Gson_Types_init(void);
 
 __attribute__((unused)) static jint ComGoogleGsonInternal_Gson_Types_indexOfWithNSObjectArray_withId_(IOSObjectArray *array, id toFind);
 
@@ -78,7 +78,7 @@ J2OBJC_FIELD_SETTER(ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl, owne
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl, rawType_, id<JavaLangReflectType>)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl, typeArguments_, IOSObjectArray *)
 
-inline jlong ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl_get_serialVersionUID();
+inline jlong ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl_get_serialVersionUID(void);
 #define ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl_serialVersionUID 0LL
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonInternal_Gson_Types_ParameterizedTypeImpl, serialVersionUID, jlong)
 
@@ -111,7 +111,7 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl)
 
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl, componentType_, id<JavaLangReflectType>)
 
-inline jlong ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl_get_serialVersionUID();
+inline jlong ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl_get_serialVersionUID(void);
 #define ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl_serialVersionUID 0LL
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonInternal_Gson_Types_GenericArrayTypeImpl, serialVersionUID, jlong)
 
@@ -149,7 +149,7 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl, upperBound_, id<JavaLangReflectType>)
 J2OBJC_FIELD_SETTER(ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl, lowerBound_, id<JavaLangReflectType>)
 
-inline jlong ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl_get_serialVersionUID();
+inline jlong ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl_get_serialVersionUID(void);
 #define ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl_serialVersionUID 0LL
 J2OBJC_STATIC_FIELD_CONSTANT(ComGoogleGsonInternal_Gson_Types_WildcardTypeImpl, serialVersionUID, jlong)
 

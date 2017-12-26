@@ -22,11 +22,11 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecBinaryHex, charset_, JavaNioCharsetCharset *)
 
-inline IOSCharArray *OrgApacheCommonsCodecBinaryHex_get_DIGITS_LOWER();
+inline IOSCharArray *OrgApacheCommonsCodecBinaryHex_get_DIGITS_LOWER(void);
 static IOSCharArray *OrgApacheCommonsCodecBinaryHex_DIGITS_LOWER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryHex, DIGITS_LOWER, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecBinaryHex_get_DIGITS_UPPER();
+inline IOSCharArray *OrgApacheCommonsCodecBinaryHex_get_DIGITS_UPPER(void);
 static IOSCharArray *OrgApacheCommonsCodecBinaryHex_DIGITS_UPPER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecBinaryHex, DIGITS_UPPER, IOSCharArray *)
 
@@ -91,7 +91,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return OrgApacheCommonsCodecBinaryHex_decodeHexWithCharArray_(charArray);
   }
   @catch (JavaLangClassCastException *e) {
-    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecDecoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 
@@ -105,7 +105,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     return OrgApacheCommonsCodecBinaryHex_encodeHexWithByteArray_(byteArray);
   }
   @catch (JavaLangClassCastException *e) {
-    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withNSException_([e getMessage], e);
+    @throw new_OrgApacheCommonsCodecEncoderException_initWithNSString_withJavaLangThrowable_([e getMessage], e);
   }
 }
 

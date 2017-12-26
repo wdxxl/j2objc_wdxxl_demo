@@ -47,6 +47,10 @@
 
 - (NSString *)toStringWithNSString:(NSString *)field;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchFunctionValueSourceQuery)
@@ -104,6 +108,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFunctionValueSourceQuery)
                                                                withBoolean:(jboolean)topScorer;
 
 - (jfloat)sumOfSquaredWeights;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

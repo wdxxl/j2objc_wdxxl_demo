@@ -87,6 +87,10 @@
 
 - (id<JavaUtilMap>)createDocFrequencyMapWithJavaUtilSet:(id<JavaUtilSet>)terms;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchMultiSearcher)
@@ -130,6 +134,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchMultiSearcher)
                                        withIntArray:(IOSIntArray *)starts;
 
 - (OrgApacheLuceneSearchTopDocs *)call;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 
@@ -176,6 +184,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchMultiSearcher_MultiSearcherCalla
                                        withIntArray:(IOSIntArray *)starts;
 
 - (OrgApacheLuceneSearchTopFieldDocs *)call;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

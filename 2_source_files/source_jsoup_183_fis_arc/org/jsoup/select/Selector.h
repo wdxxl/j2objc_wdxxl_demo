@@ -40,6 +40,10 @@
 + (OrgJsoupSelectElements *)filterOutWithJavaUtilCollection:(id<JavaUtilCollection>)elements
                                      withJavaUtilCollection:(id<JavaUtilCollection>)outs;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgJsoupSelectSelector)
@@ -64,6 +68,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectSelector)
 #include "java/lang/IllegalStateException.h"
 
 @class IOSObjectArray;
+@class JavaLangThrowable;
 
 @interface OrgJsoupSelectSelector_SelectorParseException : JavaLangIllegalStateException
 
@@ -71,6 +76,17 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectSelector)
 
 - (instancetype)initWithNSString:(NSString *)msg
                withNSObjectArray:(IOSObjectArray *)params;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
 
 @end
 

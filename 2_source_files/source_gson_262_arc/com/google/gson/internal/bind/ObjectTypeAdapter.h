@@ -38,11 +38,15 @@
 
 - (instancetype)initWithComGoogleGsonGson:(ComGoogleGsonGson *)gson;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(ComGoogleGsonInternalBindObjectTypeAdapter)
 
-inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindObjectTypeAdapter_get_FACTORY();
+inline id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindObjectTypeAdapter_get_FACTORY(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT id<ComGoogleGsonTypeAdapterFactory> ComGoogleGsonInternalBindObjectTypeAdapter_FACTORY;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(ComGoogleGsonInternalBindObjectTypeAdapter, FACTORY, id<ComGoogleGsonTypeAdapterFactory>)

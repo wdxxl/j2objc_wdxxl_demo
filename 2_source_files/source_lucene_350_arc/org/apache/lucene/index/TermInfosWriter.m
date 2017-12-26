@@ -126,9 +126,9 @@ __attribute__((unused)) static void OrgApacheLuceneIndexTermInfosWriter_writeTer
      withByteArray:(IOSByteArray *)termBytes
            withInt:(jint)termBytesLength
 withOrgApacheLuceneIndexTermInfo:(OrgApacheLuceneIndexTermInfo *)ti {
-  JreAssert((OrgApacheLuceneIndexTermInfosWriter_compareToLastTermWithInt_withByteArray_withInt_(self, fieldNumber, termBytes, termBytesLength) < 0 || (isIndex_ && termBytesLength == 0 && lastTermBytesLength_ == 0)), (JreStrcat("$$$I$$$I$$$$", @"Terms are out of order: field=", [((OrgApacheLuceneIndexFieldInfos *) nil_chk(fieldInfos_)) fieldNameWithInt:fieldNumber], @" (number ", fieldNumber, @") lastField=", [((OrgApacheLuceneIndexFieldInfos *) nil_chk(fieldInfos_)) fieldNameWithInt:lastFieldNumber_], @" (number ", lastFieldNumber_, @") text=", [NSString java_stringWithBytes:termBytes offset:0 length:termBytesLength charsetName:@"UTF-8"], @" lastText=", [NSString java_stringWithBytes:lastTermBytes_ offset:0 length:lastTermBytesLength_ charsetName:@"UTF-8"])));
-  JreAssert((((OrgApacheLuceneIndexTermInfo *) nil_chk(ti))->freqPointer_ >= ((OrgApacheLuceneIndexTermInfo *) nil_chk(lastTi_))->freqPointer_), (JreStrcat("$J$JC", @"freqPointer out of order (", ti->freqPointer_, @" < ", lastTi_->freqPointer_, ')')));
-  JreAssert((ti->proxPointer_ >= lastTi_->proxPointer_), (JreStrcat("$J$JC", @"proxPointer out of order (", ti->proxPointer_, @" < ", lastTi_->proxPointer_, ')')));
+  JreAssert(OrgApacheLuceneIndexTermInfosWriter_compareToLastTermWithInt_withByteArray_withInt_(self, fieldNumber, termBytes, termBytesLength) < 0 || (isIndex_ && termBytesLength == 0 && lastTermBytesLength_ == 0), JreStrcat("$$$I$$$I$$$$", @"Terms are out of order: field=", [((OrgApacheLuceneIndexFieldInfos *) nil_chk(fieldInfos_)) fieldNameWithInt:fieldNumber], @" (number ", fieldNumber, @") lastField=", [((OrgApacheLuceneIndexFieldInfos *) nil_chk(fieldInfos_)) fieldNameWithInt:lastFieldNumber_], @" (number ", lastFieldNumber_, @") text=", [NSString java_stringWithBytes:termBytes offset:0 length:termBytesLength charsetName:@"UTF-8"], @" lastText=", [NSString java_stringWithBytes:lastTermBytes_ offset:0 length:lastTermBytesLength_ charsetName:@"UTF-8"]));
+  JreAssert(((OrgApacheLuceneIndexTermInfo *) nil_chk(ti))->freqPointer_ >= ((OrgApacheLuceneIndexTermInfo *) nil_chk(lastTi_))->freqPointer_, JreStrcat("$J$JC", @"freqPointer out of order (", ti->freqPointer_, @" < ", lastTi_->freqPointer_, ')'));
+  JreAssert(ti->proxPointer_ >= lastTi_->proxPointer_, JreStrcat("$J$JC", @"proxPointer out of order (", ti->proxPointer_, @" < ", lastTi_->proxPointer_, ')'));
   if (!isIndex_ && size_ % indexInterval_ == 0) [((OrgApacheLuceneIndexTermInfosWriter *) nil_chk(other_)) addWithInt:lastFieldNumber_ withByteArray:lastTermBytes_ withInt:lastTermBytesLength_ withOrgApacheLuceneIndexTermInfo:lastTi_];
   OrgApacheLuceneIndexTermInfosWriter_writeTermWithInt_withByteArray_withInt_(self, fieldNumber, termBytes, termBytesLength);
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(output_)) writeVIntWithInt:ti->docFreq_];
@@ -286,7 +286,7 @@ void OrgApacheLuceneIndexTermInfosWriter_initialize__WithOrgApacheLuceneStoreDir
     [((OrgApacheLuceneStoreIndexOutput *) nil_chk(self->output_)) writeIntWithInt:self->indexInterval_];
     [((OrgApacheLuceneStoreIndexOutput *) nil_chk(self->output_)) writeIntWithInt:self->skipInterval_];
     [((OrgApacheLuceneStoreIndexOutput *) nil_chk(self->output_)) writeIntWithInt:self->maxSkipLevels_];
-    JreAssert((OrgApacheLuceneIndexTermInfosWriter_initUTF16Results(self)), (@"org/apache/lucene/index/TermInfosWriter.java:118 condition failed: assert initUTF16Results();"));
+    JreAssert(OrgApacheLuceneIndexTermInfosWriter_initUTF16Results(self), @"org/apache/lucene/index/TermInfosWriter.java:118 condition failed: assert initUTF16Results();");
     success = true;
   }
   @finally {

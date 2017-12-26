@@ -8,7 +8,7 @@
 #include "org/apache/commons/codec/language/AbstractCaverphone.h"
 #include "org/apache/commons/codec/language/Caverphone1.h"
 
-inline NSString *OrgApacheCommonsCodecLanguageCaverphone1_get_SIX_1();
+inline NSString *OrgApacheCommonsCodecLanguageCaverphone1_get_SIX_1(void);
 static NSString *OrgApacheCommonsCodecLanguageCaverphone1_SIX_1 = @"111111";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageCaverphone1, SIX_1, NSString *)
 

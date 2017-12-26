@@ -21,6 +21,7 @@
 #include "org/apache/lucene/search/function/ValueSourceQuery.h"
 
 @class OrgApacheLuceneSearchFunctionFieldScoreQuery_Type;
+@class OrgApacheLuceneSearchFunctionValueSource;
 
 @interface OrgApacheLuceneSearchFunctionFieldScoreQuery : OrgApacheLuceneSearchFunctionValueSourceQuery
 
@@ -28,6 +29,10 @@
 
 - (instancetype)initWithNSString:(NSString *)field
 withOrgApacheLuceneSearchFunctionFieldScoreQuery_Type:(OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *)type;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithOrgApacheLuceneSearchFunctionValueSource:(OrgApacheLuceneSearchFunctionValueSource *)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -52,26 +57,30 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneSearchFunctionFieldScoreQuery)
 
 - (NSString *)description;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneSearchFunctionFieldScoreQuery_Type)
 
-inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_BYTE();
+inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_BYTE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_BYTE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFunctionFieldScoreQuery_Type, BYTE, OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *)
 
-inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_SHORT();
+inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_SHORT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_SHORT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFunctionFieldScoreQuery_Type, SHORT, OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *)
 
-inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_INT();
+inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_INT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_INT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFunctionFieldScoreQuery_Type, INT, OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *)
 
-inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_FLOAT();
+inline OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_get_FLOAT(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *OrgApacheLuceneSearchFunctionFieldScoreQuery_Type_FLOAT;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneSearchFunctionFieldScoreQuery_Type, FLOAT, OrgApacheLuceneSearchFunctionFieldScoreQuery_Type *)

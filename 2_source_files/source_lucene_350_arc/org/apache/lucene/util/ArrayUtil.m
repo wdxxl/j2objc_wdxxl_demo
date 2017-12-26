@@ -43,7 +43,7 @@ __attribute__((unused)) static OrgApacheLuceneUtilSorterTemplate *OrgApacheLucen
 
 __attribute__((unused)) static OrgApacheLuceneUtilSorterTemplate *OrgApacheLuceneUtilArrayUtil_getSorterWithJavaLangComparableArray_(IOSObjectArray *a);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilArrayUtil__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneUtilArrayUtil__Annotations$0(void);
 
 @interface OrgApacheLuceneUtilArrayUtil_1 : OrgApacheLuceneUtilSorterTemplate {
  @public
@@ -631,7 +631,7 @@ jint OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(jint cur
 
 IOSShortArray *OrgApacheLuceneUtilArrayUtil_growWithShortArray_withInt_(IOSShortArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSShortArray *) nil_chk(array))->size_ < minSize) {
     IOSShortArray *newArray = [IOSShortArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_SHORT)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -647,7 +647,7 @@ IOSShortArray *OrgApacheLuceneUtilArrayUtil_growWithShortArray_(IOSShortArray *a
 
 IOSFloatArray *OrgApacheLuceneUtilArrayUtil_growWithFloatArray_withInt_(IOSFloatArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSFloatArray *) nil_chk(array))->size_ < minSize) {
     IOSFloatArray *newArray = [IOSFloatArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_FLOAT)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -663,7 +663,7 @@ IOSFloatArray *OrgApacheLuceneUtilArrayUtil_growWithFloatArray_(IOSFloatArray *a
 
 IOSDoubleArray *OrgApacheLuceneUtilArrayUtil_growWithDoubleArray_withInt_(IOSDoubleArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSDoubleArray *) nil_chk(array))->size_ < minSize) {
     IOSDoubleArray *newArray = [IOSDoubleArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_DOUBLE)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -679,7 +679,7 @@ IOSDoubleArray *OrgApacheLuceneUtilArrayUtil_growWithDoubleArray_(IOSDoubleArray
 
 IOSShortArray *OrgApacheLuceneUtilArrayUtil_shrinkWithShortArray_withInt_(IOSShortArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSShortArray *) nil_chk(array))->size_, targetSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_SHORT);
   if (newSize != array->size_) {
     IOSShortArray *newArray = [IOSShortArray newArrayWithLength:newSize];
@@ -691,7 +691,7 @@ IOSShortArray *OrgApacheLuceneUtilArrayUtil_shrinkWithShortArray_withInt_(IOSSho
 
 IOSIntArray *OrgApacheLuceneUtilArrayUtil_growWithIntArray_withInt_(IOSIntArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSIntArray *) nil_chk(array))->size_ < minSize) {
     IOSIntArray *newArray = [IOSIntArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_INT)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -707,7 +707,7 @@ IOSIntArray *OrgApacheLuceneUtilArrayUtil_growWithIntArray_(IOSIntArray *array) 
 
 IOSIntArray *OrgApacheLuceneUtilArrayUtil_shrinkWithIntArray_withInt_(IOSIntArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSIntArray *) nil_chk(array))->size_, targetSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_INT);
   if (newSize != array->size_) {
     IOSIntArray *newArray = [IOSIntArray newArrayWithLength:newSize];
@@ -719,7 +719,7 @@ IOSIntArray *OrgApacheLuceneUtilArrayUtil_shrinkWithIntArray_withInt_(IOSIntArra
 
 IOSLongArray *OrgApacheLuceneUtilArrayUtil_growWithLongArray_withInt_(IOSLongArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSLongArray *) nil_chk(array))->size_ < minSize) {
     IOSLongArray *newArray = [IOSLongArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_LONG)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -735,7 +735,7 @@ IOSLongArray *OrgApacheLuceneUtilArrayUtil_growWithLongArray_(IOSLongArray *arra
 
 IOSLongArray *OrgApacheLuceneUtilArrayUtil_shrinkWithLongArray_withInt_(IOSLongArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSLongArray *) nil_chk(array))->size_, targetSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_LONG);
   if (newSize != array->size_) {
     IOSLongArray *newArray = [IOSLongArray newArrayWithLength:newSize];
@@ -747,7 +747,7 @@ IOSLongArray *OrgApacheLuceneUtilArrayUtil_shrinkWithLongArray_withInt_(IOSLongA
 
 IOSByteArray *OrgApacheLuceneUtilArrayUtil_growWithByteArray_withInt_(IOSByteArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSByteArray *) nil_chk(array))->size_ < minSize) {
     IOSByteArray *newArray = [IOSByteArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, 1)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -763,7 +763,7 @@ IOSByteArray *OrgApacheLuceneUtilArrayUtil_growWithByteArray_(IOSByteArray *arra
 
 IOSByteArray *OrgApacheLuceneUtilArrayUtil_shrinkWithByteArray_withInt_(IOSByteArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSByteArray *) nil_chk(array))->size_, targetSize, 1);
   if (newSize != array->size_) {
     IOSByteArray *newArray = [IOSByteArray newArrayWithLength:newSize];
@@ -775,7 +775,7 @@ IOSByteArray *OrgApacheLuceneUtilArrayUtil_shrinkWithByteArray_withInt_(IOSByteA
 
 IOSBooleanArray *OrgApacheLuceneUtilArrayUtil_growWithBooleanArray_withInt_(IOSBooleanArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSBooleanArray *) nil_chk(array))->size_ < minSize) {
     IOSBooleanArray *newArray = [IOSBooleanArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, 1)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -791,7 +791,7 @@ IOSBooleanArray *OrgApacheLuceneUtilArrayUtil_growWithBooleanArray_(IOSBooleanAr
 
 IOSBooleanArray *OrgApacheLuceneUtilArrayUtil_shrinkWithBooleanArray_withInt_(IOSBooleanArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSBooleanArray *) nil_chk(array))->size_, targetSize, 1);
   if (newSize != array->size_) {
     IOSBooleanArray *newArray = [IOSBooleanArray newArrayWithLength:newSize];
@@ -803,7 +803,7 @@ IOSBooleanArray *OrgApacheLuceneUtilArrayUtil_shrinkWithBooleanArray_withInt_(IO
 
 IOSCharArray *OrgApacheLuceneUtilArrayUtil_growWithCharArray_withInt_(IOSCharArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSCharArray *) nil_chk(array))->size_ < minSize) {
     IOSCharArray *newArray = [IOSCharArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_CHAR)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -819,7 +819,7 @@ IOSCharArray *OrgApacheLuceneUtilArrayUtil_growWithCharArray_(IOSCharArray *arra
 
 IOSCharArray *OrgApacheLuceneUtilArrayUtil_shrinkWithCharArray_withInt_(IOSCharArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSCharArray *) nil_chk(array))->size_, targetSize, OrgApacheLuceneUtilRamUsageEstimator_NUM_BYTES_CHAR);
   if (newSize != array->size_) {
     IOSCharArray *newArray = [IOSCharArray newArrayWithLength:newSize];
@@ -831,7 +831,7 @@ IOSCharArray *OrgApacheLuceneUtilArrayUtil_shrinkWithCharArray_withInt_(IOSCharA
 
 IOSObjectArray *OrgApacheLuceneUtilArrayUtil_growWithIntArray2_withInt_(IOSObjectArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSObjectArray *) nil_chk(array))->size_ < minSize) {
     IOSObjectArray *newArray = [IOSObjectArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF)) type:IOSClass_intArray(1)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -849,7 +849,7 @@ IOSObjectArray *OrgApacheLuceneUtilArrayUtil_growWithIntArray2_(IOSObjectArray *
 
 IOSObjectArray *OrgApacheLuceneUtilArrayUtil_shrinkWithIntArray2_withInt_(IOSObjectArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSObjectArray *) nil_chk(array))->size_, targetSize, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF));
   if (newSize != array->size_) {
     IOSObjectArray *newArray = [IOSObjectArray newArrayWithLength:newSize type:IOSClass_intArray(1)];
@@ -863,7 +863,7 @@ IOSObjectArray *OrgApacheLuceneUtilArrayUtil_shrinkWithIntArray2_withInt_(IOSObj
 
 IOSObjectArray *OrgApacheLuceneUtilArrayUtil_growWithFloatArray2_withInt_(IOSObjectArray *array, jint minSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((minSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?")));
+  JreAssert(minSize >= 0, JreStrcat("$I$", @"size must be positive (got ", minSize, @"): likely integer overflow?"));
   if (((IOSObjectArray *) nil_chk(array))->size_ < minSize) {
     IOSObjectArray *newArray = [IOSObjectArray newArrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(minSize, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF)) type:IOSClass_floatArray(1)];
     JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(array, 0, newArray, 0, array->size_);
@@ -881,7 +881,7 @@ IOSObjectArray *OrgApacheLuceneUtilArrayUtil_growWithFloatArray2_(IOSObjectArray
 
 IOSObjectArray *OrgApacheLuceneUtilArrayUtil_shrinkWithFloatArray2_withInt_(IOSObjectArray *array, jint targetSize) {
   OrgApacheLuceneUtilArrayUtil_initialize();
-  JreAssert((targetSize >= 0), (JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?")));
+  JreAssert(targetSize >= 0, JreStrcat("$I$", @"size must be positive (got ", targetSize, @"): likely integer overflow?"));
   jint newSize = OrgApacheLuceneUtilArrayUtil_getShrinkSizeWithInt_withInt_withInt_(((IOSObjectArray *) nil_chk(array))->size_, targetSize, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF));
   if (newSize != array->size_) {
     IOSObjectArray *newArray = [IOSObjectArray newArrayWithLength:newSize type:IOSClass_floatArray(1)];
@@ -941,7 +941,7 @@ IOSIntArray *OrgApacheLuceneUtilArrayUtil_toIntArrayWithJavaUtilCollection_(id<J
     jint v = [((JavaLangInteger *) nil_chk(boxed__)) intValue];
     *IOSIntArray_GetRef(result, upto++) = v;
   }
-  JreAssert((upto == result->size_), (@"org/apache/lucene/util/ArrayUtil.java:554 condition failed: assert upto == result.length;"));
+  JreAssert(upto == result->size_, @"org/apache/lucene/util/ArrayUtil.java:554 condition failed: assert upto == result.length;");
   return result;
 }
 

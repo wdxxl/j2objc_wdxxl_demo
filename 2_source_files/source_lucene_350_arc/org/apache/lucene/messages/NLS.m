@@ -11,6 +11,7 @@
 #include "java/lang/IllegalArgumentException.h"
 #include "java/lang/SecurityManager.h"
 #include "java/lang/System.h"
+#include "java/lang/Throwable.h"
 #include "java/lang/Void.h"
 #include "java/lang/reflect/Field.h"
 #include "java/lang/reflect/Modifier.h"
@@ -44,7 +45,7 @@
 
 @end
 
-inline id<JavaUtilMap> OrgApacheLuceneMessagesNLS_get_bundles();
+inline id<JavaUtilMap> OrgApacheLuceneMessagesNLS_get_bundles(void);
 inline id<JavaUtilMap> OrgApacheLuceneMessagesNLS_set_bundles(id<JavaUtilMap> value);
 static id<JavaUtilMap> OrgApacheLuceneMessagesNLS_bundles;
 J2OBJC_STATIC_FIELD_OBJ(OrgApacheLuceneMessagesNLS, bundles, id<JavaUtilMap>)
@@ -229,7 +230,7 @@ void OrgApacheLuceneMessagesNLS_initializeMessagesWithNSString_withIOSClass_(NSS
     OrgApacheLuceneMessagesNLS_load__WithIOSClass_(clazz);
     if (![((id<JavaUtilMap>) nil_chk(OrgApacheLuceneMessagesNLS_bundles)) containsKeyWithId:bundleName]) (void) [((id<JavaUtilMap>) nil_chk(OrgApacheLuceneMessagesNLS_bundles)) putWithId:bundleName withId:clazz];
   }
-  @catch (NSException *e) {
+  @catch (JavaLangThrowable *e) {
   }
 }
 
@@ -290,7 +291,7 @@ void OrgApacheLuceneMessagesNLS_validateMessageWithNSString_withIOSClass_(NSStri
   @catch (JavaUtilMissingResourceException *e) {
     [((JavaIoPrintStream *) nil_chk(JreLoadStatic(JavaLangSystem, err))) printlnWithNSString:JreStrcat("$$$@$", @"WARN: Message with key:", key, @" and locale: ", JavaUtilLocale_getDefault(), @" not found.")];
   }
-  @catch (NSException *e) {
+  @catch (JavaLangThrowable *e) {
   }
 }
 

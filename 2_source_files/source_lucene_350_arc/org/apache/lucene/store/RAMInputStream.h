@@ -50,11 +50,17 @@
 
 - (void)seekWithLong:(jlong)pos;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreRAMInputStream)
 
-inline jint OrgApacheLuceneStoreRAMInputStream_get_BUFFER_SIZE();
+inline jint OrgApacheLuceneStoreRAMInputStream_get_BUFFER_SIZE(void);
 #define OrgApacheLuceneStoreRAMInputStream_BUFFER_SIZE 1024
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreRAMInputStream, BUFFER_SIZE, jint)
 

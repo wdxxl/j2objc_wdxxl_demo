@@ -31,22 +31,22 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexByteSliceWriter, pool_, OrgApacheLuceneI
 
 - (void)init__WithInt:(jint)address {
   slice_ = IOSObjectArray_Get(nil_chk(((OrgApacheLuceneIndexByteBlockPool *) nil_chk(pool_))->buffers_), JreRShift32(address, OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_SHIFT));
-  JreAssert((slice_ != nil), (@"org/apache/lucene/index/ByteSliceWriter.java:44 condition failed: assert slice != null;"));
+  JreAssert(slice_ != nil, @"org/apache/lucene/index/ByteSliceWriter.java:44 condition failed: assert slice != null;");
   upto_ = address & OrgApacheLuceneIndexDocumentsWriter_BYTE_BLOCK_MASK;
   offset0_ = address;
-  JreAssert((upto_ < ((IOSByteArray *) nil_chk(slice_))->size_), (@"org/apache/lucene/index/ByteSliceWriter.java:47 condition failed: assert upto < slice.length;"));
+  JreAssert(upto_ < ((IOSByteArray *) nil_chk(slice_))->size_, @"org/apache/lucene/index/ByteSliceWriter.java:47 condition failed: assert upto < slice.length;");
 }
 
 - (void)writeByteWithByte:(jbyte)b {
-  JreAssert((slice_ != nil), (@"org/apache/lucene/index/ByteSliceWriter.java:52 condition failed: assert slice != null;"));
+  JreAssert(slice_ != nil, @"org/apache/lucene/index/ByteSliceWriter.java:52 condition failed: assert slice != null;");
   if (IOSByteArray_Get(nil_chk(slice_), upto_) != 0) {
     upto_ = [((OrgApacheLuceneIndexByteBlockPool *) nil_chk(pool_)) allocSliceWithByteArray:slice_ withInt:upto_];
     slice_ = pool_->buffer_;
     offset0_ = pool_->byteOffset_;
-    JreAssert((slice_ != nil), (@"org/apache/lucene/index/ByteSliceWriter.java:57 condition failed: assert slice != null;"));
+    JreAssert(slice_ != nil, @"org/apache/lucene/index/ByteSliceWriter.java:57 condition failed: assert slice != null;");
   }
   *IOSByteArray_GetRef(nil_chk(slice_), upto_++) = b;
-  JreAssert((upto_ != slice_->size_), (@"org/apache/lucene/index/ByteSliceWriter.java:60 condition failed: assert upto != slice.length;"));
+  JreAssert(upto_ != slice_->size_, @"org/apache/lucene/index/ByteSliceWriter.java:60 condition failed: assert upto != slice.length;");
 }
 
 - (void)writeBytesWithByteArray:(IOSByteArray *)b
@@ -60,7 +60,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexByteSliceWriter, pool_, OrgApacheLuceneI
       offset0_ = pool_->byteOffset_;
     }
     *IOSByteArray_GetRef(nil_chk(slice_), upto_++) = IOSByteArray_Get(nil_chk(b), offset++);
-    JreAssert((upto_ != slice_->size_), (@"org/apache/lucene/index/ByteSliceWriter.java:74 condition failed: assert upto != slice.length;"));
+    JreAssert(upto_ != slice_->size_, @"org/apache/lucene/index/ByteSliceWriter.java:74 condition failed: assert upto != slice.length;");
   }
 }
 

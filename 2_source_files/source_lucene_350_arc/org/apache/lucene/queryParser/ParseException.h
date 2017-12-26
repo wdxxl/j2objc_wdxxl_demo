@@ -21,6 +21,7 @@
 #include "java/lang/Exception.h"
 
 @class IOSObjectArray;
+@class JavaLangThrowable;
 @class OrgApacheLuceneQueryParserToken;
 
 @interface OrgApacheLuceneQueryParserParseException : JavaLangException {
@@ -48,6 +49,18 @@
 
 - (NSString *)add_escapesWithNSString:(NSString *)str;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)initWithJavaLangThrowable:(JavaLangThrowable *)arg0 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1 NS_UNAVAILABLE;
+
+- (instancetype)initWithNSString:(NSString *)arg0
+           withJavaLangThrowable:(JavaLangThrowable *)arg1
+                     withBoolean:(jboolean)arg2
+                     withBoolean:(jboolean)arg3 NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneQueryParserParseException)
@@ -65,9 +78,9 @@ FOUNDATION_EXPORT OrgApacheLuceneQueryParserParseException *create_OrgApacheLuce
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserParseException_init(OrgApacheLuceneQueryParserParseException *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserParseException *new_OrgApacheLuceneQueryParserParseException_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserParseException *new_OrgApacheLuceneQueryParserParseException_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneQueryParserParseException *create_OrgApacheLuceneQueryParserParseException_init();
+FOUNDATION_EXPORT OrgApacheLuceneQueryParserParseException *create_OrgApacheLuceneQueryParserParseException_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneQueryParserParseException_initWithNSString_(OrgApacheLuceneQueryParserParseException *self, NSString *message);
 

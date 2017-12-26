@@ -51,6 +51,10 @@
 
 - (jboolean)termCompareWithOrgApacheLuceneIndexTerm:(OrgApacheLuceneIndexTerm *)term;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneSearchWildcardTermEnum)
@@ -60,11 +64,11 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchWildcardTermEnum, field_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchWildcardTermEnum, text_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneSearchWildcardTermEnum, pre_, NSString *)
 
-inline jchar OrgApacheLuceneSearchWildcardTermEnum_get_WILDCARD_STRING();
+inline jchar OrgApacheLuceneSearchWildcardTermEnum_get_WILDCARD_STRING(void);
 #define OrgApacheLuceneSearchWildcardTermEnum_WILDCARD_STRING '*'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchWildcardTermEnum, WILDCARD_STRING, jchar)
 
-inline jchar OrgApacheLuceneSearchWildcardTermEnum_get_WILDCARD_CHAR();
+inline jchar OrgApacheLuceneSearchWildcardTermEnum_get_WILDCARD_CHAR(void);
 #define OrgApacheLuceneSearchWildcardTermEnum_WILDCARD_CHAR '?'
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchWildcardTermEnum, WILDCARD_CHAR, jchar)
 

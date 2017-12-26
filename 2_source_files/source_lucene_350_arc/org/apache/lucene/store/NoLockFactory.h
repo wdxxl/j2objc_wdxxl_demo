@@ -40,11 +40,11 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneStoreNoLockFactory)
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreNoLockFactory_init(OrgApacheLuceneStoreNoLockFactory *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNoLockFactory *new_OrgApacheLuceneStoreNoLockFactory_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneStoreNoLockFactory *new_OrgApacheLuceneStoreNoLockFactory_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNoLockFactory *create_OrgApacheLuceneStoreNoLockFactory_init();
+FOUNDATION_EXPORT OrgApacheLuceneStoreNoLockFactory *create_OrgApacheLuceneStoreNoLockFactory_init(void);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNoLockFactory *OrgApacheLuceneStoreNoLockFactory_getNoLockFactory();
+FOUNDATION_EXPORT OrgApacheLuceneStoreNoLockFactory *OrgApacheLuceneStoreNoLockFactory_getNoLockFactory(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreNoLockFactory)
 
@@ -79,9 +79,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreNoLock)
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreNoLock_init(OrgApacheLuceneStoreNoLock *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNoLock *new_OrgApacheLuceneStoreNoLock_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneStoreNoLock *new_OrgApacheLuceneStoreNoLock_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreNoLock *create_OrgApacheLuceneStoreNoLock_init();
+FOUNDATION_EXPORT OrgApacheLuceneStoreNoLock *create_OrgApacheLuceneStoreNoLock_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreNoLock)
 

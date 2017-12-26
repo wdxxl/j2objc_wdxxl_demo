@@ -28,7 +28,7 @@
 
 @end
 
-inline jint OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_get_DEFAULT_INITIAL_SIZE();
+inline jint OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_get_DEFAULT_INITIAL_SIZE(void);
 #define OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector_DEFAULT_INITIAL_SIZE 128
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneSearchGroupingTermAllGroupHeadsCollector, DEFAULT_INITIAL_SIZE, jint)
 

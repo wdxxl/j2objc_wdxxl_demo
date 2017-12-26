@@ -31,17 +31,17 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisCharArraySet, map_, OrgApacheLuceneAnalysisCharArrayMap *)
 
-inline id OrgApacheLuceneAnalysisCharArraySet_get_PLACEHOLDER();
+inline id OrgApacheLuceneAnalysisCharArraySet_get_PLACEHOLDER(void);
 static id OrgApacheLuceneAnalysisCharArraySet_PLACEHOLDER;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneAnalysisCharArraySet, PLACEHOLDER, id)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet__Annotations$3(void);
 
 @interface OrgApacheLuceneAnalysisCharArraySet_CharArraySetIterator () {
  @public
@@ -62,7 +62,7 @@ __attribute__((unused)) static OrgApacheLuceneAnalysisCharArraySet_CharArraySetI
 
 __attribute__((unused)) static void OrgApacheLuceneAnalysisCharArraySet_CharArraySetIterator_goNext(OrgApacheLuceneAnalysisCharArraySet_CharArraySetIterator *self);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet_CharArraySetIterator__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisCharArraySet_CharArraySetIterator__Annotations$0(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneAnalysisCharArraySet)
 

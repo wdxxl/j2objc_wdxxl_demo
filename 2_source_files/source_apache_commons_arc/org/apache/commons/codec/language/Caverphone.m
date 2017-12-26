@@ -21,7 +21,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageCaverphone, encoder_, OrgApacheCommonsCodecLanguageCaverphone2 *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageCaverphone__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageCaverphone__Annotations$0(void);
 
 @implementation OrgApacheCommonsCodecLanguageCaverphone
 

@@ -16,15 +16,15 @@
 
 @end
 
-inline NSString *OrgJsoupNodesDocumentType_get_NAME();
+inline NSString *OrgJsoupNodesDocumentType_get_NAME(void);
 static NSString *OrgJsoupNodesDocumentType_NAME = @"name";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesDocumentType, NAME, NSString *)
 
-inline NSString *OrgJsoupNodesDocumentType_get_PUBLIC_ID();
+inline NSString *OrgJsoupNodesDocumentType_get_PUBLIC_ID(void);
 static NSString *OrgJsoupNodesDocumentType_PUBLIC_ID = @"publicId";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesDocumentType, PUBLIC_ID, NSString *)
 
-inline NSString *OrgJsoupNodesDocumentType_get_SYSTEM_ID();
+inline NSString *OrgJsoupNodesDocumentType_get_SYSTEM_ID(void);
 static NSString *OrgJsoupNodesDocumentType_SYSTEM_ID = @"systemId";
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesDocumentType, SYSTEM_ID, NSString *)
 

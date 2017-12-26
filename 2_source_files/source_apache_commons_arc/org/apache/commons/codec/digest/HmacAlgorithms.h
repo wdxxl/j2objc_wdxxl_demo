@@ -35,7 +35,7 @@ typedef NS_ENUM(NSUInteger, OrgApacheCommonsCodecDigestHmacAlgorithms_Enum) {
   OrgApacheCommonsCodecDigestHmacAlgorithms_Enum_HMAC_SHA_512 = 4,
 };
 
-@interface OrgApacheCommonsCodecDigestHmacAlgorithms : JavaLangEnum < NSCopying >
+@interface OrgApacheCommonsCodecDigestHmacAlgorithms : JavaLangEnum
 
 #pragma mark Public
 
@@ -45,10 +45,6 @@ typedef NS_ENUM(NSUInteger, OrgApacheCommonsCodecDigestHmacAlgorithms_Enum) {
 
 + (IOSObjectArray *)values;
 
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
-
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheCommonsCodecDigestHmacAlgorithms)
@@ -56,22 +52,22 @@ J2OBJC_STATIC_INIT(OrgApacheCommonsCodecDigestHmacAlgorithms)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_values_[];
 
-inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_MD5();
+inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_MD5(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_MD5)
 
-inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_1();
+inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_1(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_1)
 
-inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_256();
+inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_256(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_256)
 
-inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_384();
+inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_384(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_384)
 
-inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_512();
+inline OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_get_HMAC_SHA_512(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheCommonsCodecDigestHmacAlgorithms, HMAC_SHA_512)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheCommonsCodecDigestHmacAlgorithms_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheCommonsCodecDigestHmacAlgorithms_values(void);
 
 FOUNDATION_EXPORT OrgApacheCommonsCodecDigestHmacAlgorithms *OrgApacheCommonsCodecDigestHmacAlgorithms_valueOfWithNSString_(NSString *name);
 

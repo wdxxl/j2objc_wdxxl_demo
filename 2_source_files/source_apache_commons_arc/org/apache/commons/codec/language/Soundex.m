@@ -32,7 +32,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheCommonsCodecLanguageSoundex, soundexMapping_, IOSCharArray *)
 
-inline IOSCharArray *OrgApacheCommonsCodecLanguageSoundex_get_US_ENGLISH_MAPPING();
+inline IOSCharArray *OrgApacheCommonsCodecLanguageSoundex_get_US_ENGLISH_MAPPING(void);
 static IOSCharArray *OrgApacheCommonsCodecLanguageSoundex_US_ENGLISH_MAPPING;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheCommonsCodecLanguageSoundex, US_ENGLISH_MAPPING, IOSCharArray *)
 
@@ -42,11 +42,11 @@ __attribute__((unused)) static IOSCharArray *OrgApacheCommonsCodecLanguageSounde
 
 __attribute__((unused)) static jchar OrgApacheCommonsCodecLanguageSoundex_mapWithChar_(OrgApacheCommonsCodecLanguageSoundex *self, jchar ch);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageSoundex__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageSoundex__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageSoundex__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageSoundex__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageSoundex__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecLanguageSoundex__Annotations$2(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheCommonsCodecLanguageSoundex)
 

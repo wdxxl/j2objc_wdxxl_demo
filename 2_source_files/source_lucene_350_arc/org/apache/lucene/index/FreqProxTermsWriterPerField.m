@@ -89,7 +89,7 @@
 }
 
 - (void)newTermWithInt:(jint)termID {
-  JreAssert(([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"FreqProxTermsWriterPerField.newTerm start"]), (@"org/apache/lucene/index/FreqProxTermsWriterPerField.java:118 condition failed: assert docState.testPoint(\"FreqProxTermsWriterPerField.newTerm start\");"));
+  JreAssert([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"FreqProxTermsWriterPerField.newTerm start"], @"org/apache/lucene/index/FreqProxTermsWriterPerField.java:118 condition failed: assert docState.testPoint(\"FreqProxTermsWriterPerField.newTerm start\");");
   OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *postings = (OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) cast_chk(((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(termsHashPerField_))->postingsArray_, [OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray class]);
   *IOSIntArray_GetRef(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings))->lastDocIDs_), termID) = docState_->docID_;
   if (indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY)) {
@@ -107,12 +107,12 @@
 }
 
 - (void)addTermWithInt:(jint)termID {
-  JreAssert(([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"FreqProxTermsWriterPerField.addTerm start"]), (@"org/apache/lucene/index/FreqProxTermsWriterPerField.java:138 condition failed: assert docState.testPoint(\"FreqProxTermsWriterPerField.addTerm start\");"));
+  JreAssert([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"FreqProxTermsWriterPerField.addTerm start"], @"org/apache/lucene/index/FreqProxTermsWriterPerField.java:138 condition failed: assert docState.testPoint(\"FreqProxTermsWriterPerField.addTerm start\");");
   OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *postings = (OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) cast_chk(((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(termsHashPerField_))->postingsArray_, [OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray class]);
-  JreAssert((indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY) || IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings))->docFreqs_), termID) > 0), (@"org/apache/lucene/index/FreqProxTermsWriterPerField.java:142 condition failed: assert indexOptions == IndexOptions.DOCS_ONLY || postings.docFreqs[termID] > 0;"));
+  JreAssert(indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY) || IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings))->docFreqs_), termID) > 0, @"org/apache/lucene/index/FreqProxTermsWriterPerField.java:142 condition failed: assert indexOptions == IndexOptions.DOCS_ONLY || postings.docFreqs[termID] > 0;");
   if (indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY)) {
     if (docState_->docID_ != IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings))->lastDocIDs_), termID)) {
-      JreAssert((docState_->docID_ > IOSIntArray_Get(postings->lastDocIDs_, termID)), (@"org/apache/lucene/index/FreqProxTermsWriterPerField.java:146 condition failed: assert docState.docID > postings.lastDocIDs[termID];"));
+      JreAssert(docState_->docID_ > IOSIntArray_Get(postings->lastDocIDs_, termID), @"org/apache/lucene/index/FreqProxTermsWriterPerField.java:146 condition failed: assert docState.docID > postings.lastDocIDs[termID];");
       [termsHashPerField_ writeVIntWithInt:0 withInt:IOSIntArray_Get(nil_chk(postings->lastDocCodes_), termID)];
       *IOSIntArray_GetRef(nil_chk(postings->lastDocCodes_), termID) = docState_->docID_ - IOSIntArray_Get(nil_chk(postings->lastDocIDs_), termID);
       *IOSIntArray_GetRef(postings->lastDocIDs_, termID) = docState_->docID_;
@@ -121,7 +121,7 @@
   }
   else {
     if (docState_->docID_ != IOSIntArray_Get(nil_chk(((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(postings))->lastDocIDs_), termID)) {
-      JreAssert((docState_->docID_ > IOSIntArray_Get(postings->lastDocIDs_, termID)), (@"org/apache/lucene/index/FreqProxTermsWriterPerField.java:154 condition failed: assert docState.docID > postings.lastDocIDs[termID];"));
+      JreAssert(docState_->docID_ > IOSIntArray_Get(postings->lastDocIDs_, termID), @"org/apache/lucene/index/FreqProxTermsWriterPerField.java:154 condition failed: assert docState.docID > postings.lastDocIDs[termID];");
       if (1 == IOSIntArray_Get(nil_chk(postings->docFreqs_), termID)) [termsHashPerField_ writeVIntWithInt:0 withInt:IOSIntArray_Get(nil_chk(postings->lastDocCodes_), termID) | 1];
       else {
         [termsHashPerField_ writeVIntWithInt:0 withInt:IOSIntArray_Get(nil_chk(postings->lastDocCodes_), termID)];
@@ -234,7 +234,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexFreqProxTermsWriterPerField
 
 - (void)copyToWithOrgApacheLuceneIndexParallelPostingsArray:(OrgApacheLuceneIndexParallelPostingsArray *)toArray
                                                     withInt:(jint)numToCopy {
-  JreAssert(([toArray isKindOfClass:[OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray class]]), (@"org/apache/lucene/index/FreqProxTermsWriterPerField.java:209 condition failed: assert toArray instanceof FreqProxPostingsArray;"));
+  JreAssert([toArray isKindOfClass:[OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray class]], @"org/apache/lucene/index/FreqProxTermsWriterPerField.java:209 condition failed: assert toArray instanceof FreqProxPostingsArray;");
   OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *to = (OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) cast_chk(toArray, [OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray class]);
   [super copyToWithOrgApacheLuceneIndexParallelPostingsArray:toArray withInt:numToCopy];
   JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(docFreqs_, 0, ((OrgApacheLuceneIndexFreqProxTermsWriterPerField_FreqProxPostingsArray *) nil_chk(to))->docFreqs_, 0, numToCopy);

@@ -74,9 +74,9 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldInvertState, attributeSource_, OrgA
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldInvertState_init(OrgApacheLuceneIndexFieldInvertState *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInvertState *new_OrgApacheLuceneIndexFieldInvertState_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInvertState *new_OrgApacheLuceneIndexFieldInvertState_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInvertState *create_OrgApacheLuceneIndexFieldInvertState_init();
+FOUNDATION_EXPORT OrgApacheLuceneIndexFieldInvertState *create_OrgApacheLuceneIndexFieldInvertState_init(void);
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexFieldInvertState_initWithInt_withInt_withInt_withInt_withFloat_(OrgApacheLuceneIndexFieldInvertState *self, jint position, jint length, jint numOverlap, jint offset, jfloat boost);
 

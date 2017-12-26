@@ -79,6 +79,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneAnalysisReusableAnalyzerBase)
 
 - (jboolean)resetWithJavaIoReader:(JavaIoReader *)reader;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneAnalysisReusableAnalyzerBase_TokenStreamComponents)

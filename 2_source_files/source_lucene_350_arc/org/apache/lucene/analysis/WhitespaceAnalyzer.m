@@ -23,7 +23,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisWhitespaceAnalyzer, matchVersion_, OrgApacheLuceneUtilVersion *)
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisWhitespaceAnalyzer__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneAnalysisWhitespaceAnalyzer__Annotations$0(void);
 
 @implementation OrgApacheLuceneAnalysisWhitespaceAnalyzer
 

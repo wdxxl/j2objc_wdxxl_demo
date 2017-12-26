@@ -37,17 +37,13 @@ typedef NS_ENUM(NSUInteger, OrgApacheLuceneDocumentFieldSelectorResult_Enum) {
   OrgApacheLuceneDocumentFieldSelectorResult_Enum_LATENT = 6,
 };
 
-@interface OrgApacheLuceneDocumentFieldSelectorResult : JavaLangEnum < NSCopying >
+@interface OrgApacheLuceneDocumentFieldSelectorResult : JavaLangEnum
 
 #pragma mark Public
 
 + (OrgApacheLuceneDocumentFieldSelectorResult *)valueOfWithNSString:(NSString *)name;
 
 + (IOSObjectArray *)values;
-
-#pragma mark Package-Private
-
-- (id)copyWithZone:(NSZone *)zone;
 
 @end
 
@@ -56,28 +52,28 @@ J2OBJC_STATIC_INIT(OrgApacheLuceneDocumentFieldSelectorResult)
 /*! INTERNAL ONLY - Use enum accessors declared below. */
 FOUNDATION_EXPORT OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_values_[];
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LOAD();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LOAD(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, LOAD)
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LAZY_LOAD();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LAZY_LOAD(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, LAZY_LOAD)
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_NO_LOAD();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_NO_LOAD(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, NO_LOAD)
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LOAD_AND_BREAK();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LOAD_AND_BREAK(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, LOAD_AND_BREAK)
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_SIZE();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_SIZE(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, SIZE)
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_SIZE_AND_BREAK();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_SIZE_AND_BREAK(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, SIZE_AND_BREAK)
 
-inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LATENT();
+inline OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_get_LATENT(void);
 J2OBJC_ENUM_CONSTANT(OrgApacheLuceneDocumentFieldSelectorResult, LATENT)
 
-FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentFieldSelectorResult_values();
+FOUNDATION_EXPORT IOSObjectArray *OrgApacheLuceneDocumentFieldSelectorResult_values(void);
 
 FOUNDATION_EXPORT OrgApacheLuceneDocumentFieldSelectorResult *OrgApacheLuceneDocumentFieldSelectorResult_valueOfWithNSString_(NSString *name);
 

@@ -54,7 +54,7 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneAnalysisPorterStemmer, b_, IOSCharArray *)
 
-inline jint OrgApacheLuceneAnalysisPorterStemmer_get_INITIAL_SIZE();
+inline jint OrgApacheLuceneAnalysisPorterStemmer_get_INITIAL_SIZE(void);
 #define OrgApacheLuceneAnalysisPorterStemmer_INITIAL_SIZE 50
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneAnalysisPorterStemmer, INITIAL_SIZE, jint)
 

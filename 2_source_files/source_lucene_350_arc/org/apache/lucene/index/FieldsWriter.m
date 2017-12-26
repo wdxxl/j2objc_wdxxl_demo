@@ -44,13 +44,13 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, segment_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, fieldsStream_, OrgApacheLuceneStoreIndexOutput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, indexStream_, OrgApacheLuceneStoreIndexOutput *)
 
-inline jint OrgApacheLuceneIndexFieldsWriter_get__NUMERIC_BIT_SHIFT();
+inline jint OrgApacheLuceneIndexFieldsWriter_get__NUMERIC_BIT_SHIFT(void);
 #define OrgApacheLuceneIndexFieldsWriter__NUMERIC_BIT_SHIFT 3
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneIndexFieldsWriter, _NUMERIC_BIT_SHIFT, jint)
 
 __attribute__((unused)) static void OrgApacheLuceneIndexFieldsWriter_writeFieldWithOrgApacheLuceneIndexFieldInfo_withOrgApacheLuceneDocumentFieldable_(OrgApacheLuceneIndexFieldsWriter *self, OrgApacheLuceneIndexFieldInfo *fi, id<OrgApacheLuceneDocumentFieldable> field);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexFieldsWriter__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneIndexFieldsWriter__Annotations$0(void);
 
 @implementation OrgApacheLuceneIndexFieldsWriter
 
@@ -130,7 +130,7 @@ withOrgApacheLuceneStoreRAMOutputStream:(OrgApacheLuceneStoreRAMOutputStream *)b
     position += IOSIntArray_Get(nil_chk(lengths), i);
   }
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(fieldsStream_)) copyBytesWithOrgApacheLuceneStoreDataInput:stream withLong:position - start];
-  JreAssert(([((OrgApacheLuceneStoreIndexOutput *) nil_chk(fieldsStream_)) getFilePointer] == position), (@"org/apache/lucene/index/FieldsWriter.java:217 condition failed: assert fieldsStream.getFilePointer() == position;"));
+  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(fieldsStream_)) getFilePointer] == position, @"org/apache/lucene/index/FieldsWriter.java:217 condition failed: assert fieldsStream.getFilePointer() == position;");
 }
 
 - (void)addDocumentWithOrgApacheLuceneDocumentDocument:(OrgApacheLuceneDocumentDocument *)doc {
@@ -265,7 +265,7 @@ void OrgApacheLuceneIndexFieldsWriter_writeFieldWithOrgApacheLuceneIndexFieldInf
       bits |= OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_DOUBLE;
       break;
       default:
-      JreAssert((false), (@"Should never get here"));
+      JreAssert(false, @"Should never get here");
     }
   }
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(self->fieldsStream_)) writeByteWithByte:(jbyte) bits];
@@ -296,7 +296,7 @@ void OrgApacheLuceneIndexFieldsWriter_writeFieldWithOrgApacheLuceneIndexFieldInf
       [((OrgApacheLuceneStoreIndexOutput *) nil_chk(self->fieldsStream_)) writeLongWithLong:JavaLangDouble_doubleToLongBitsWithDouble_([((NSNumber *) nil_chk(n)) doubleValue])];
       break;
       default:
-      JreAssert((false), (@"Should never get here"));
+      JreAssert(false, @"Should never get here");
     }
   }
   else {

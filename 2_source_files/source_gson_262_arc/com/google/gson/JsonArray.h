@@ -103,9 +103,9 @@ J2OBJC_EMPTY_STATIC_INIT(ComGoogleGsonJsonArray)
 
 FOUNDATION_EXPORT void ComGoogleGsonJsonArray_init(ComGoogleGsonJsonArray *self);
 
-FOUNDATION_EXPORT ComGoogleGsonJsonArray *new_ComGoogleGsonJsonArray_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT ComGoogleGsonJsonArray *new_ComGoogleGsonJsonArray_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT ComGoogleGsonJsonArray *create_ComGoogleGsonJsonArray_init();
+FOUNDATION_EXPORT ComGoogleGsonJsonArray *create_ComGoogleGsonJsonArray_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(ComGoogleGsonJsonArray)
 

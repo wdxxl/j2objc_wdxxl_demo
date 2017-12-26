@@ -46,16 +46,16 @@ withJavaUtilConcurrentTimeUnit:(JavaUtilConcurrentTimeUnit *)unit;
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilDummyConcurrentLock)
 
-inline OrgApacheLuceneUtilDummyConcurrentLock *OrgApacheLuceneUtilDummyConcurrentLock_get_INSTANCE();
+inline OrgApacheLuceneUtilDummyConcurrentLock *OrgApacheLuceneUtilDummyConcurrentLock_get_INSTANCE(void);
 /*! INTERNAL ONLY - Use accessor function from above. */
 FOUNDATION_EXPORT OrgApacheLuceneUtilDummyConcurrentLock *OrgApacheLuceneUtilDummyConcurrentLock_INSTANCE;
 J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgApacheLuceneUtilDummyConcurrentLock, INSTANCE, OrgApacheLuceneUtilDummyConcurrentLock *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneUtilDummyConcurrentLock_init(OrgApacheLuceneUtilDummyConcurrentLock *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilDummyConcurrentLock *new_OrgApacheLuceneUtilDummyConcurrentLock_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneUtilDummyConcurrentLock *new_OrgApacheLuceneUtilDummyConcurrentLock_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneUtilDummyConcurrentLock *create_OrgApacheLuceneUtilDummyConcurrentLock_init();
+FOUNDATION_EXPORT OrgApacheLuceneUtilDummyConcurrentLock *create_OrgApacheLuceneUtilDummyConcurrentLock_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilDummyConcurrentLock)
 

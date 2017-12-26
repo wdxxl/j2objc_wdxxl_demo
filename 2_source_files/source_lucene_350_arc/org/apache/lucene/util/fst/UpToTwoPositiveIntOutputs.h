@@ -57,6 +57,10 @@
 - (void)writeWithId:(id)_output
 withOrgApacheLuceneStoreDataOutput:(OrgApacheLuceneStoreDataOutput *)outArg;
 
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
+
 @end
 
 J2OBJC_STATIC_INIT(OrgApacheLuceneUtilFstUpToTwoPositiveIntOutputs)
@@ -86,6 +90,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneUtilFstUpToTwoPositiveIntOutputs)
 - (NSUInteger)hash;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

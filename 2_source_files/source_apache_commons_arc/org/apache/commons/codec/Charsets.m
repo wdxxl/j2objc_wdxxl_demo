@@ -12,17 +12,17 @@
 #include "org/apache/commons/codec/CharEncoding.h"
 #include "org/apache/commons/codec/Charsets.h"
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$0(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$1();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$1(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$2();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$2(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$3();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$3(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$4();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$4(void);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$5();
+__attribute__((unused)) static IOSObjectArray *OrgApacheCommonsCodecCharsets__Annotations$5(void);
 
 J2OBJC_INITIALIZED_DEFN(OrgApacheCommonsCodecCharsets)
 

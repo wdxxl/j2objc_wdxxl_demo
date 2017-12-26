@@ -37,7 +37,7 @@
 
 @end
 
-inline jlong OrgApacheLuceneStoreRAMDirectory_get_serialVersionUID();
+inline jlong OrgApacheLuceneStoreRAMDirectory_get_serialVersionUID(void);
 #define OrgApacheLuceneStoreRAMDirectory_serialVersionUID 1LL
 J2OBJC_STATIC_FIELD_CONSTANT(OrgApacheLuceneStoreRAMDirectory, serialVersionUID, jlong)
 
@@ -47,7 +47,7 @@ __attribute__((unused)) static OrgApacheLuceneStoreRAMDirectory *new_OrgApacheLu
 
 __attribute__((unused)) static OrgApacheLuceneStoreRAMDirectory *create_OrgApacheLuceneStoreRAMDirectory_initWithOrgApacheLuceneStoreDirectory_withBoolean_(OrgApacheLuceneStoreDirectory *dir, jboolean closeDir);
 
-__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreRAMDirectory__Annotations$0();
+__attribute__((unused)) static IOSObjectArray *OrgApacheLuceneStoreRAMDirectory__Annotations$0(void);
 
 @implementation OrgApacheLuceneStoreRAMDirectory
 

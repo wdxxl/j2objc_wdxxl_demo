@@ -38,9 +38,9 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneStoreSingleInstanceLockFactory)
 
 FOUNDATION_EXPORT void OrgApacheLuceneStoreSingleInstanceLockFactory_init(OrgApacheLuceneStoreSingleInstanceLockFactory *self);
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreSingleInstanceLockFactory *new_OrgApacheLuceneStoreSingleInstanceLockFactory_init() NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT OrgApacheLuceneStoreSingleInstanceLockFactory *new_OrgApacheLuceneStoreSingleInstanceLockFactory_init(void) NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT OrgApacheLuceneStoreSingleInstanceLockFactory *create_OrgApacheLuceneStoreSingleInstanceLockFactory_init();
+FOUNDATION_EXPORT OrgApacheLuceneStoreSingleInstanceLockFactory *create_OrgApacheLuceneStoreSingleInstanceLockFactory_init(void);
 
 J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreSingleInstanceLockFactory)
 
@@ -72,6 +72,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneStoreSingleInstanceLockFactory)
 - (void)release__;
 
 - (NSString *)description;
+
+// Disallowed inherited constructors, do not use.
+
+- (instancetype)init NS_UNAVAILABLE;
 
 @end
 

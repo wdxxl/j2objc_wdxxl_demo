@@ -59,11 +59,11 @@
     if (((OrgApacheLuceneIndexTermVectorsTermsWriterPerThread *) nil_chk(perThread_))->doc_ == nil) {
       perThread_->doc_ = [((OrgApacheLuceneIndexTermVectorsTermsWriter *) nil_chk(termsWriter_)) getPerDoc];
       ((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(perThread_->doc_))->docID_ = ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->docID_;
-      JreAssert((perThread_->doc_->numVectorFields_ == 0), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:77 condition failed: assert perThread.doc.numVectorFields == 0;"));
-      JreAssert((0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(perThread_->doc_->perDocTvf_)) length]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:78 condition failed: assert 0 == perThread.doc.perDocTvf.length();"));
-      JreAssert((0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(perThread_->doc_))->perDocTvf_)) getFilePointer]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:79 condition failed: assert 0 == perThread.doc.perDocTvf.getFilePointer();"));
+      JreAssert(perThread_->doc_->numVectorFields_ == 0, @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:77 condition failed: assert perThread.doc.numVectorFields == 0;");
+      JreAssert(0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(perThread_->doc_->perDocTvf_)) length], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:78 condition failed: assert 0 == perThread.doc.perDocTvf.length();");
+      JreAssert(0 == [((OrgApacheLuceneStoreRAMOutputStream *) nil_chk(((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(perThread_->doc_))->perDocTvf_)) getFilePointer], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:79 condition failed: assert 0 == perThread.doc.perDocTvf.getFilePointer();");
     }
-    JreAssert((((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(perThread_->doc_))->docID_ == ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->docID_), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:82 condition failed: assert perThread.doc.docID == docState.docID;"));
+    JreAssert(((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(perThread_->doc_))->docID_ == ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->docID_, @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:82 condition failed: assert perThread.doc.docID == docState.docID;");
     if (((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(termsHashPerField_))->numPostings_ != 0) {
       [termsHashPerField_ reset];
       [((OrgApacheLuceneIndexTermsHashPerThread *) nil_chk(perThread_->termsHashPerThread_)) resetWithBoolean:false];
@@ -76,14 +76,14 @@
 }
 
 - (void)finish {
-  JreAssert(([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"TermVectorsTermsWriterPerField.finish start"]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:108 condition failed: assert docState.testPoint(\"TermVectorsTermsWriterPerField.finish start\");"));
+  JreAssert([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"TermVectorsTermsWriterPerField.finish start"], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:108 condition failed: assert docState.testPoint(\"TermVectorsTermsWriterPerField.finish start\");");
   jint numPostings = ((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(termsHashPerField_))->numPostings_;
-  JreAssert((numPostings >= 0), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:112 condition failed: assert numPostings >= 0;"));
+  JreAssert(numPostings >= 0, @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:112 condition failed: assert numPostings >= 0;");
   if (!doVectors_ || numPostings == 0) return;
   if (numPostings > maxNumPostings_) maxNumPostings_ = numPostings;
   OrgApacheLuceneStoreIndexOutput *tvf = ((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(((OrgApacheLuceneIndexTermVectorsTermsWriterPerThread *) nil_chk(perThread_))->doc_))->perDocTvf_;
-  JreAssert((((OrgApacheLuceneIndexFieldInfo *) nil_chk(fieldInfo_))->storeTermVector_), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:126 condition failed: assert fieldInfo.storeTermVector;"));
-  JreAssert(([perThread_ vectorFieldsInOrderWithOrgApacheLuceneIndexFieldInfo:fieldInfo_]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:127 condition failed: assert perThread.vectorFieldsInOrder(fieldInfo);"));
+  JreAssert(((OrgApacheLuceneIndexFieldInfo *) nil_chk(fieldInfo_))->storeTermVector_, @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:126 condition failed: assert fieldInfo.storeTermVector;");
+  JreAssert([perThread_ vectorFieldsInOrderWithOrgApacheLuceneIndexFieldInfo:fieldInfo_], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:127 condition failed: assert perThread.vectorFieldsInOrder(fieldInfo);");
   [((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(perThread_->doc_)) addFieldWithInt:((OrgApacheLuceneIndexFieldInfo *) nil_chk(termsHashPerField_->fieldInfo_))->number_];
   OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *postings = (OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) cast_chk(termsHashPerField_->postingsArray_, [OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray class]);
   IOSIntArray *termIDs = [termsHashPerField_ sortPostings];
@@ -148,7 +148,7 @@
 }
 
 - (void)newTermWithInt:(jint)termID {
-  JreAssert(([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"TermVectorsTermsWriterPerField.newTerm start"]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:222 condition failed: assert docState.testPoint(\"TermVectorsTermsWriterPerField.newTerm start\");"));
+  JreAssert([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"TermVectorsTermsWriterPerField.newTerm start"], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:222 condition failed: assert docState.testPoint(\"TermVectorsTermsWriterPerField.newTerm start\");");
   OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *postings = (OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) cast_chk(((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(termsHashPerField_))->postingsArray_, [OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray class]);
   *IOSIntArray_GetRef(nil_chk(((OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) nil_chk(postings))->freqs_), termID) = 1;
   if (doVectorOffsets_) {
@@ -165,7 +165,7 @@
 }
 
 - (void)addTermWithInt:(jint)termID {
-  JreAssert(([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"TermVectorsTermsWriterPerField.addTerm start"]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:246 condition failed: assert docState.testPoint(\"TermVectorsTermsWriterPerField.addTerm start\");"));
+  JreAssert([((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_)) testPointWithNSString:@"TermVectorsTermsWriterPerField.addTerm start"], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:246 condition failed: assert docState.testPoint(\"TermVectorsTermsWriterPerField.addTerm start\");");
   OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *postings = (OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) cast_chk(((OrgApacheLuceneIndexTermsHashPerField *) nil_chk(termsHashPerField_))->postingsArray_, [OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray class]);
   (*IOSIntArray_GetRef(nil_chk(((OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) nil_chk(postings))->freqs_), termID))++;
   if (doVectorOffsets_) {
@@ -270,7 +270,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexTermVectorsTermsWriterPerFi
 
 - (void)copyToWithOrgApacheLuceneIndexParallelPostingsArray:(OrgApacheLuceneIndexParallelPostingsArray *)toArray
                                                     withInt:(jint)numToCopy {
-  JreAssert(([toArray isKindOfClass:[OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray class]]), (@"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:294 condition failed: assert toArray instanceof TermVectorsPostingsArray;"));
+  JreAssert([toArray isKindOfClass:[OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray class]], @"org/apache/lucene/index/TermVectorsTermsWriterPerField.java:294 condition failed: assert toArray instanceof TermVectorsPostingsArray;");
   OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *to = (OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) cast_chk(toArray, [OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray class]);
   [super copyToWithOrgApacheLuceneIndexParallelPostingsArray:toArray withInt:numToCopy];
   JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(freqs_, 0, ((OrgApacheLuceneIndexTermVectorsTermsWriterPerField_TermVectorsPostingsArray *) nil_chk(to))->freqs_, 0, size_);
