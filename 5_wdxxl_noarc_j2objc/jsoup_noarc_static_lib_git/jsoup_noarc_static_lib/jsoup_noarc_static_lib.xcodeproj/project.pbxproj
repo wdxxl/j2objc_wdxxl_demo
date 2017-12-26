@@ -1,0 +1,863 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1146E08B1FF24C5300C5E219 /* jsoup_aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1146E08C1FF24C5300C5E219 /* Build configuration list for PBXAggregateTarget "jsoup_aggregate" */;
+			buildPhases = (
+				1146E08F1FF24C6B00C5E219 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = jsoup_aggregate;
+			productName = jsoup_aggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1146DF9F1FF24B2A00C5E219 /* jsoup_noarc_static_lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DF9E1FF24B2A00C5E219 /* jsoup_noarc_static_lib.m */; };
+		1146DFA01FF24B2A00C5E219 /* jsoup_noarc_static_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DF9D1FF24B2A00C5E219 /* jsoup_noarc_static_lib.h */; };
+		1146E01D1FF24B5100C5E219 /* Connection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFAA1FF24B5100C5E219 /* Connection.m */; };
+		1146E01E1FF24B5100C5E219 /* HtmlToPlainText.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFAD1FF24B5100C5E219 /* HtmlToPlainText.m */; };
+		1146E01F1FF24B5100C5E219 /* ListLinks.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFAF1FF24B5100C5E219 /* ListLinks.m */; };
+		1146E0201FF24B5100C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFB11FF24B5100C5E219 /* package-info.m */; };
+		1146E0211FF24B5100C5E219 /* DataUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFB41FF24B5100C5E219 /* DataUtil.m */; };
+		1146E0221FF24B5100C5E219 /* DescendableLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFB61FF24B5100C5E219 /* DescendableLinkedList.m */; };
+		1146E0231FF24B5100C5E219 /* HttpConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFB81FF24B5100C5E219 /* HttpConnection.m */; };
+		1146E0241FF24B5100C5E219 /* StringUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFBA1FF24B5100C5E219 /* StringUtil.m */; };
+		1146E0251FF24B5100C5E219 /* Validate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFBC1FF24B5100C5E219 /* Validate.m */; };
+		1146E0261FF24B5100C5E219 /* W3CDom.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFBE1FF24B5100C5E219 /* W3CDom.m */; };
+		1146E0271FF24B5100C5E219 /* HttpStatusException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFC01FF24B5100C5E219 /* HttpStatusException.m */; };
+		1146E0281FF24B5100C5E219 /* Jsoup.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFC21FF24B5100C5E219 /* Jsoup.m */; };
+		1146E0291FF24B5100C5E219 /* Attribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFC51FF24B5100C5E219 /* Attribute.m */; };
+		1146E02A1FF24B5100C5E219 /* Attributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFC71FF24B5100C5E219 /* Attributes.m */; };
+		1146E02B1FF24B5100C5E219 /* BooleanAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFC91FF24B5100C5E219 /* BooleanAttribute.m */; };
+		1146E02C1FF24B5100C5E219 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFCB1FF24B5100C5E219 /* Comment.m */; };
+		1146E02D1FF24B5100C5E219 /* DataNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFCD1FF24B5100C5E219 /* DataNode.m */; };
+		1146E02E1FF24B5100C5E219 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFCF1FF24B5100C5E219 /* Document.m */; };
+		1146E02F1FF24B5100C5E219 /* DocumentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFD11FF24B5100C5E219 /* DocumentType.m */; };
+		1146E0301FF24B5100C5E219 /* Element.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFD31FF24B5100C5E219 /* Element.m */; };
+		1146E0311FF24B5100C5E219 /* Entities.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFD51FF24B5100C5E219 /* Entities.m */; };
+		1146E0321FF24B5100C5E219 /* FormElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFD71FF24B5100C5E219 /* FormElement.m */; };
+		1146E0331FF24B5100C5E219 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFD91FF24B5100C5E219 /* Node.m */; };
+		1146E0341FF24B5100C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFDB1FF24B5100C5E219 /* package-info.m */; };
+		1146E0351FF24B5100C5E219 /* TextNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFDD1FF24B5100C5E219 /* TextNode.m */; };
+		1146E0361FF24B5100C5E219 /* XmlDeclaration.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFDF1FF24B5100C5E219 /* XmlDeclaration.m */; };
+		1146E0371FF24B5100C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFE11FF24B5100C5E219 /* package-info.m */; };
+		1146E0381FF24B5100C5E219 /* CharacterReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFE41FF24B5100C5E219 /* CharacterReader.m */; };
+		1146E0391FF24B5100C5E219 /* HtmlTreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFE61FF24B5100C5E219 /* HtmlTreeBuilder.m */; };
+		1146E03A1FF24B5100C5E219 /* HtmlTreeBuilderState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFE81FF24B5100C5E219 /* HtmlTreeBuilderState.m */; };
+		1146E03B1FF24B5100C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFEA1FF24B5100C5E219 /* package-info.m */; };
+		1146E03C1FF24B5100C5E219 /* ParseError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFEC1FF24B5100C5E219 /* ParseError.m */; };
+		1146E03D1FF24B5100C5E219 /* ParseErrorList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFEE1FF24B5100C5E219 /* ParseErrorList.m */; };
+		1146E03E1FF24B5100C5E219 /* Parser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFF01FF24B5100C5E219 /* Parser.m */; };
+		1146E03F1FF24B5100C5E219 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFF21FF24B5100C5E219 /* Tag.m */; };
+		1146E0401FF24B5100C5E219 /* Token.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFF41FF24B5100C5E219 /* Token.m */; };
+		1146E0411FF24B5100C5E219 /* Tokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFF61FF24B5100C5E219 /* Tokeniser.m */; };
+		1146E0421FF24B5100C5E219 /* TokeniserState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFF81FF24B5100C5E219 /* TokeniserState.m */; };
+		1146E0431FF24B5100C5E219 /* TokenQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFFA1FF24B5100C5E219 /* TokenQueue.m */; };
+		1146E0441FF24B5100C5E219 /* TreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFFC1FF24B5100C5E219 /* TreeBuilder.m */; };
+		1146E0451FF24B5100C5E219 /* XmlTreeBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146DFFE1FF24B5100C5E219 /* XmlTreeBuilder.m */; };
+		1146E0461FF24B5100C5E219 /* Cleaner.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0011FF24B5100C5E219 /* Cleaner.m */; };
+		1146E0471FF24B5100C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0031FF24B5100C5E219 /* package-info.m */; };
+		1146E0481FF24B5100C5E219 /* Whitelist.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0051FF24B5100C5E219 /* Whitelist.m */; };
+		1146E0491FF24B5100C5E219 /* Collector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0081FF24B5100C5E219 /* Collector.m */; };
+		1146E04A1FF24B5100C5E219 /* CombiningEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E00A1FF24B5100C5E219 /* CombiningEvaluator.m */; };
+		1146E04B1FF24B5100C5E219 /* Elements.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E00C1FF24B5100C5E219 /* Elements.m */; };
+		1146E04C1FF24B5100C5E219 /* Evaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E00E1FF24B5100C5E219 /* Evaluator.m */; };
+		1146E04D1FF24B5100C5E219 /* NodeTraversor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0101FF24B5100C5E219 /* NodeTraversor.m */; };
+		1146E04E1FF24B5100C5E219 /* NodeVisitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0121FF24B5100C5E219 /* NodeVisitor.m */; };
+		1146E04F1FF24B5100C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0141FF24B5100C5E219 /* package-info.m */; };
+		1146E0501FF24B5100C5E219 /* QueryParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0161FF24B5100C5E219 /* QueryParser.m */; };
+		1146E0511FF24B5100C5E219 /* Selector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0181FF24B5100C5E219 /* Selector.m */; };
+		1146E0521FF24B5100C5E219 /* StructuralEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E01A1FF24B5100C5E219 /* StructuralEvaluator.m */; };
+		1146E0531FF24B5100C5E219 /* UnsupportedMimeTypeException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E01C1FF24B5100C5E219 /* UnsupportedMimeTypeException.m */; };
+		1146E0541FF24BEB00C5E219 /* Connection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFA91FF24B5100C5E219 /* Connection.h */; };
+		1146E0551FF24BEB00C5E219 /* HtmlToPlainText.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFAC1FF24B5100C5E219 /* HtmlToPlainText.h */; };
+		1146E0561FF24BEB00C5E219 /* ListLinks.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFAE1FF24B5100C5E219 /* ListLinks.h */; };
+		1146E0571FF24BEB00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFB01FF24B5100C5E219 /* package-info.h */; };
+		1146E0581FF24BEB00C5E219 /* DataUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFB31FF24B5100C5E219 /* DataUtil.h */; };
+		1146E0591FF24BEB00C5E219 /* DescendableLinkedList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFB51FF24B5100C5E219 /* DescendableLinkedList.h */; };
+		1146E05A1FF24BEB00C5E219 /* HttpConnection.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFB71FF24B5100C5E219 /* HttpConnection.h */; };
+		1146E05B1FF24BEB00C5E219 /* StringUtil.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFB91FF24B5100C5E219 /* StringUtil.h */; };
+		1146E05C1FF24BEB00C5E219 /* Validate.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFBB1FF24B5100C5E219 /* Validate.h */; };
+		1146E05D1FF24BEB00C5E219 /* W3CDom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFBD1FF24B5100C5E219 /* W3CDom.h */; };
+		1146E05E1FF24BEB00C5E219 /* HttpStatusException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFBF1FF24B5100C5E219 /* HttpStatusException.h */; };
+		1146E05F1FF24BEB00C5E219 /* Jsoup.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFC11FF24B5100C5E219 /* Jsoup.h */; };
+		1146E0601FF24BEB00C5E219 /* Attribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFC41FF24B5100C5E219 /* Attribute.h */; };
+		1146E0611FF24BEB00C5E219 /* Attributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFC61FF24B5100C5E219 /* Attributes.h */; };
+		1146E0621FF24BEB00C5E219 /* BooleanAttribute.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFC81FF24B5100C5E219 /* BooleanAttribute.h */; };
+		1146E0631FF24BEB00C5E219 /* Comment.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFCA1FF24B5100C5E219 /* Comment.h */; };
+		1146E0641FF24BEB00C5E219 /* DataNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFCC1FF24B5100C5E219 /* DataNode.h */; };
+		1146E0651FF24BEB00C5E219 /* Document.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFCE1FF24B5100C5E219 /* Document.h */; };
+		1146E0661FF24BEB00C5E219 /* DocumentType.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFD01FF24B5100C5E219 /* DocumentType.h */; };
+		1146E0671FF24BEB00C5E219 /* Element.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFD21FF24B5100C5E219 /* Element.h */; };
+		1146E0681FF24BEB00C5E219 /* Entities.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFD41FF24B5100C5E219 /* Entities.h */; };
+		1146E0691FF24BEB00C5E219 /* FormElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFD61FF24B5100C5E219 /* FormElement.h */; };
+		1146E06A1FF24BEB00C5E219 /* Node.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFD81FF24B5100C5E219 /* Node.h */; };
+		1146E06B1FF24BEB00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFDA1FF24B5100C5E219 /* package-info.h */; };
+		1146E06C1FF24BEB00C5E219 /* TextNode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFDC1FF24B5100C5E219 /* TextNode.h */; };
+		1146E06D1FF24BEB00C5E219 /* XmlDeclaration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFDE1FF24B5100C5E219 /* XmlDeclaration.h */; };
+		1146E06E1FF24BEB00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFE01FF24B5100C5E219 /* package-info.h */; };
+		1146E06F1FF24BEB00C5E219 /* CharacterReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFE31FF24B5100C5E219 /* CharacterReader.h */; };
+		1146E0701FF24BEB00C5E219 /* HtmlTreeBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFE51FF24B5100C5E219 /* HtmlTreeBuilder.h */; };
+		1146E0711FF24BEB00C5E219 /* HtmlTreeBuilderState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFE71FF24B5100C5E219 /* HtmlTreeBuilderState.h */; };
+		1146E0721FF24BEB00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFE91FF24B5100C5E219 /* package-info.h */; };
+		1146E0731FF24BEB00C5E219 /* ParseError.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFEB1FF24B5100C5E219 /* ParseError.h */; };
+		1146E0741FF24BEB00C5E219 /* ParseErrorList.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFED1FF24B5100C5E219 /* ParseErrorList.h */; };
+		1146E0751FF24BEB00C5E219 /* Parser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFEF1FF24B5100C5E219 /* Parser.h */; };
+		1146E0761FF24BEB00C5E219 /* Tag.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFF11FF24B5100C5E219 /* Tag.h */; };
+		1146E0771FF24BEB00C5E219 /* Token.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFF31FF24B5100C5E219 /* Token.h */; };
+		1146E0781FF24BEB00C5E219 /* Tokeniser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFF51FF24B5100C5E219 /* Tokeniser.h */; };
+		1146E0791FF24BEB00C5E219 /* TokeniserState.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFF71FF24B5100C5E219 /* TokeniserState.h */; };
+		1146E07A1FF24BEB00C5E219 /* TokenQueue.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFF91FF24B5100C5E219 /* TokenQueue.h */; };
+		1146E07B1FF24BEB00C5E219 /* TreeBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFFB1FF24B5100C5E219 /* TreeBuilder.h */; };
+		1146E07C1FF24BEB00C5E219 /* XmlTreeBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146DFFD1FF24B5100C5E219 /* XmlTreeBuilder.h */; };
+		1146E07D1FF24BEB00C5E219 /* Cleaner.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0001FF24B5100C5E219 /* Cleaner.h */; };
+		1146E07E1FF24BEB00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0021FF24B5100C5E219 /* package-info.h */; };
+		1146E07F1FF24BEB00C5E219 /* Whitelist.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0041FF24B5100C5E219 /* Whitelist.h */; };
+		1146E0801FF24BEB00C5E219 /* Collector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0071FF24B5100C5E219 /* Collector.h */; };
+		1146E0811FF24BEB00C5E219 /* CombiningEvaluator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0091FF24B5100C5E219 /* CombiningEvaluator.h */; };
+		1146E0821FF24BEB00C5E219 /* Elements.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E00B1FF24B5100C5E219 /* Elements.h */; };
+		1146E0831FF24BEB00C5E219 /* Evaluator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E00D1FF24B5100C5E219 /* Evaluator.h */; };
+		1146E0841FF24BEB00C5E219 /* NodeTraversor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E00F1FF24B5100C5E219 /* NodeTraversor.h */; };
+		1146E0851FF24BEB00C5E219 /* NodeVisitor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0111FF24B5100C5E219 /* NodeVisitor.h */; };
+		1146E0861FF24BEB00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0131FF24B5100C5E219 /* package-info.h */; };
+		1146E0871FF24BEB00C5E219 /* QueryParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0151FF24B5100C5E219 /* QueryParser.h */; };
+		1146E0881FF24BEB00C5E219 /* Selector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0171FF24B5100C5E219 /* Selector.h */; };
+		1146E0891FF24BEB00C5E219 /* StructuralEvaluator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0191FF24B5100C5E219 /* StructuralEvaluator.h */; };
+		1146E08A1FF24BEB00C5E219 /* UnsupportedMimeTypeException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E01B1FF24B5100C5E219 /* UnsupportedMimeTypeException.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1146DF981FF24B2A00C5E219 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1146E0541FF24BEB00C5E219 /* Connection.h in CopyFiles */,
+				1146E0551FF24BEB00C5E219 /* HtmlToPlainText.h in CopyFiles */,
+				1146E0561FF24BEB00C5E219 /* ListLinks.h in CopyFiles */,
+				1146E0571FF24BEB00C5E219 /* package-info.h in CopyFiles */,
+				1146E0581FF24BEB00C5E219 /* DataUtil.h in CopyFiles */,
+				1146E0591FF24BEB00C5E219 /* DescendableLinkedList.h in CopyFiles */,
+				1146E05A1FF24BEB00C5E219 /* HttpConnection.h in CopyFiles */,
+				1146E05B1FF24BEB00C5E219 /* StringUtil.h in CopyFiles */,
+				1146E05C1FF24BEB00C5E219 /* Validate.h in CopyFiles */,
+				1146E05D1FF24BEB00C5E219 /* W3CDom.h in CopyFiles */,
+				1146E05E1FF24BEB00C5E219 /* HttpStatusException.h in CopyFiles */,
+				1146E05F1FF24BEB00C5E219 /* Jsoup.h in CopyFiles */,
+				1146E0601FF24BEB00C5E219 /* Attribute.h in CopyFiles */,
+				1146E0611FF24BEB00C5E219 /* Attributes.h in CopyFiles */,
+				1146E0621FF24BEB00C5E219 /* BooleanAttribute.h in CopyFiles */,
+				1146E0631FF24BEB00C5E219 /* Comment.h in CopyFiles */,
+				1146E0641FF24BEB00C5E219 /* DataNode.h in CopyFiles */,
+				1146E0651FF24BEB00C5E219 /* Document.h in CopyFiles */,
+				1146E0661FF24BEB00C5E219 /* DocumentType.h in CopyFiles */,
+				1146E0671FF24BEB00C5E219 /* Element.h in CopyFiles */,
+				1146E0681FF24BEB00C5E219 /* Entities.h in CopyFiles */,
+				1146E0691FF24BEB00C5E219 /* FormElement.h in CopyFiles */,
+				1146E06A1FF24BEB00C5E219 /* Node.h in CopyFiles */,
+				1146E06B1FF24BEB00C5E219 /* package-info.h in CopyFiles */,
+				1146E06C1FF24BEB00C5E219 /* TextNode.h in CopyFiles */,
+				1146E06D1FF24BEB00C5E219 /* XmlDeclaration.h in CopyFiles */,
+				1146E06E1FF24BEB00C5E219 /* package-info.h in CopyFiles */,
+				1146E06F1FF24BEB00C5E219 /* CharacterReader.h in CopyFiles */,
+				1146E0701FF24BEB00C5E219 /* HtmlTreeBuilder.h in CopyFiles */,
+				1146E0711FF24BEB00C5E219 /* HtmlTreeBuilderState.h in CopyFiles */,
+				1146E0721FF24BEB00C5E219 /* package-info.h in CopyFiles */,
+				1146E0731FF24BEB00C5E219 /* ParseError.h in CopyFiles */,
+				1146E0741FF24BEB00C5E219 /* ParseErrorList.h in CopyFiles */,
+				1146E0751FF24BEB00C5E219 /* Parser.h in CopyFiles */,
+				1146E0761FF24BEB00C5E219 /* Tag.h in CopyFiles */,
+				1146E0771FF24BEB00C5E219 /* Token.h in CopyFiles */,
+				1146E0781FF24BEB00C5E219 /* Tokeniser.h in CopyFiles */,
+				1146E0791FF24BEB00C5E219 /* TokeniserState.h in CopyFiles */,
+				1146E07A1FF24BEB00C5E219 /* TokenQueue.h in CopyFiles */,
+				1146E07B1FF24BEB00C5E219 /* TreeBuilder.h in CopyFiles */,
+				1146E07C1FF24BEB00C5E219 /* XmlTreeBuilder.h in CopyFiles */,
+				1146E07D1FF24BEB00C5E219 /* Cleaner.h in CopyFiles */,
+				1146E07E1FF24BEB00C5E219 /* package-info.h in CopyFiles */,
+				1146E07F1FF24BEB00C5E219 /* Whitelist.h in CopyFiles */,
+				1146E0801FF24BEB00C5E219 /* Collector.h in CopyFiles */,
+				1146E0811FF24BEB00C5E219 /* CombiningEvaluator.h in CopyFiles */,
+				1146E0821FF24BEB00C5E219 /* Elements.h in CopyFiles */,
+				1146E0831FF24BEB00C5E219 /* Evaluator.h in CopyFiles */,
+				1146E0841FF24BEB00C5E219 /* NodeTraversor.h in CopyFiles */,
+				1146E0851FF24BEB00C5E219 /* NodeVisitor.h in CopyFiles */,
+				1146E0861FF24BEB00C5E219 /* package-info.h in CopyFiles */,
+				1146E0871FF24BEB00C5E219 /* QueryParser.h in CopyFiles */,
+				1146E0881FF24BEB00C5E219 /* Selector.h in CopyFiles */,
+				1146E0891FF24BEB00C5E219 /* StructuralEvaluator.h in CopyFiles */,
+				1146E08A1FF24BEB00C5E219 /* UnsupportedMimeTypeException.h in CopyFiles */,
+				1146DFA01FF24B2A00C5E219 /* jsoup_noarc_static_lib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1146DF9A1FF24B2A00C5E219 /* libjsoup_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libjsoup_noarc_static_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1146DF9D1FF24B2A00C5E219 /* jsoup_noarc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = jsoup_noarc_static_lib.h; sourceTree = "<group>"; };
+		1146DF9E1FF24B2A00C5E219 /* jsoup_noarc_static_lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jsoup_noarc_static_lib.m; sourceTree = "<group>"; };
+		1146DFA91FF24B5100C5E219 /* Connection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Connection.h; sourceTree = "<group>"; };
+		1146DFAA1FF24B5100C5E219 /* Connection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Connection.m; sourceTree = "<group>"; };
+		1146DFAC1FF24B5100C5E219 /* HtmlToPlainText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlToPlainText.h; sourceTree = "<group>"; };
+		1146DFAD1FF24B5100C5E219 /* HtmlToPlainText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlToPlainText.m; sourceTree = "<group>"; };
+		1146DFAE1FF24B5100C5E219 /* ListLinks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListLinks.h; sourceTree = "<group>"; };
+		1146DFAF1FF24B5100C5E219 /* ListLinks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListLinks.m; sourceTree = "<group>"; };
+		1146DFB01FF24B5100C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146DFB11FF24B5100C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146DFB31FF24B5100C5E219 /* DataUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataUtil.h; sourceTree = "<group>"; };
+		1146DFB41FF24B5100C5E219 /* DataUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataUtil.m; sourceTree = "<group>"; };
+		1146DFB51FF24B5100C5E219 /* DescendableLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescendableLinkedList.h; sourceTree = "<group>"; };
+		1146DFB61FF24B5100C5E219 /* DescendableLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DescendableLinkedList.m; sourceTree = "<group>"; };
+		1146DFB71FF24B5100C5E219 /* HttpConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpConnection.h; sourceTree = "<group>"; };
+		1146DFB81FF24B5100C5E219 /* HttpConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpConnection.m; sourceTree = "<group>"; };
+		1146DFB91FF24B5100C5E219 /* StringUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtil.h; sourceTree = "<group>"; };
+		1146DFBA1FF24B5100C5E219 /* StringUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtil.m; sourceTree = "<group>"; };
+		1146DFBB1FF24B5100C5E219 /* Validate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Validate.h; sourceTree = "<group>"; };
+		1146DFBC1FF24B5100C5E219 /* Validate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Validate.m; sourceTree = "<group>"; };
+		1146DFBD1FF24B5100C5E219 /* W3CDom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = W3CDom.h; sourceTree = "<group>"; };
+		1146DFBE1FF24B5100C5E219 /* W3CDom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = W3CDom.m; sourceTree = "<group>"; };
+		1146DFBF1FF24B5100C5E219 /* HttpStatusException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpStatusException.h; sourceTree = "<group>"; };
+		1146DFC01FF24B5100C5E219 /* HttpStatusException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpStatusException.m; sourceTree = "<group>"; };
+		1146DFC11FF24B5100C5E219 /* Jsoup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Jsoup.h; sourceTree = "<group>"; };
+		1146DFC21FF24B5100C5E219 /* Jsoup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Jsoup.m; sourceTree = "<group>"; };
+		1146DFC41FF24B5100C5E219 /* Attribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attribute.h; sourceTree = "<group>"; };
+		1146DFC51FF24B5100C5E219 /* Attribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attribute.m; sourceTree = "<group>"; };
+		1146DFC61FF24B5100C5E219 /* Attributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Attributes.h; sourceTree = "<group>"; };
+		1146DFC71FF24B5100C5E219 /* Attributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Attributes.m; sourceTree = "<group>"; };
+		1146DFC81FF24B5100C5E219 /* BooleanAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BooleanAttribute.h; sourceTree = "<group>"; };
+		1146DFC91FF24B5100C5E219 /* BooleanAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooleanAttribute.m; sourceTree = "<group>"; };
+		1146DFCA1FF24B5100C5E219 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		1146DFCB1FF24B5100C5E219 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		1146DFCC1FF24B5100C5E219 /* DataNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataNode.h; sourceTree = "<group>"; };
+		1146DFCD1FF24B5100C5E219 /* DataNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataNode.m; sourceTree = "<group>"; };
+		1146DFCE1FF24B5100C5E219 /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		1146DFCF1FF24B5100C5E219 /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		1146DFD01FF24B5100C5E219 /* DocumentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentType.h; sourceTree = "<group>"; };
+		1146DFD11FF24B5100C5E219 /* DocumentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentType.m; sourceTree = "<group>"; };
+		1146DFD21FF24B5100C5E219 /* Element.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Element.h; sourceTree = "<group>"; };
+		1146DFD31FF24B5100C5E219 /* Element.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Element.m; sourceTree = "<group>"; };
+		1146DFD41FF24B5100C5E219 /* Entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
+		1146DFD51FF24B5100C5E219 /* Entities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Entities.m; sourceTree = "<group>"; };
+		1146DFD61FF24B5100C5E219 /* FormElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormElement.h; sourceTree = "<group>"; };
+		1146DFD71FF24B5100C5E219 /* FormElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormElement.m; sourceTree = "<group>"; };
+		1146DFD81FF24B5100C5E219 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
+		1146DFD91FF24B5100C5E219 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		1146DFDA1FF24B5100C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146DFDB1FF24B5100C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146DFDC1FF24B5100C5E219 /* TextNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextNode.h; sourceTree = "<group>"; };
+		1146DFDD1FF24B5100C5E219 /* TextNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextNode.m; sourceTree = "<group>"; };
+		1146DFDE1FF24B5100C5E219 /* XmlDeclaration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlDeclaration.h; sourceTree = "<group>"; };
+		1146DFDF1FF24B5100C5E219 /* XmlDeclaration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlDeclaration.m; sourceTree = "<group>"; };
+		1146DFE01FF24B5100C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146DFE11FF24B5100C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146DFE31FF24B5100C5E219 /* CharacterReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterReader.h; sourceTree = "<group>"; };
+		1146DFE41FF24B5100C5E219 /* CharacterReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterReader.m; sourceTree = "<group>"; };
+		1146DFE51FF24B5100C5E219 /* HtmlTreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlTreeBuilder.h; sourceTree = "<group>"; };
+		1146DFE61FF24B5100C5E219 /* HtmlTreeBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlTreeBuilder.m; sourceTree = "<group>"; };
+		1146DFE71FF24B5100C5E219 /* HtmlTreeBuilderState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlTreeBuilderState.h; sourceTree = "<group>"; };
+		1146DFE81FF24B5100C5E219 /* HtmlTreeBuilderState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlTreeBuilderState.m; sourceTree = "<group>"; };
+		1146DFE91FF24B5100C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146DFEA1FF24B5100C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146DFEB1FF24B5100C5E219 /* ParseError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseError.h; sourceTree = "<group>"; };
+		1146DFEC1FF24B5100C5E219 /* ParseError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseError.m; sourceTree = "<group>"; };
+		1146DFED1FF24B5100C5E219 /* ParseErrorList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseErrorList.h; sourceTree = "<group>"; };
+		1146DFEE1FF24B5100C5E219 /* ParseErrorList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseErrorList.m; sourceTree = "<group>"; };
+		1146DFEF1FF24B5100C5E219 /* Parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parser.h; sourceTree = "<group>"; };
+		1146DFF01FF24B5100C5E219 /* Parser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Parser.m; sourceTree = "<group>"; };
+		1146DFF11FF24B5100C5E219 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		1146DFF21FF24B5100C5E219 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		1146DFF31FF24B5100C5E219 /* Token.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Token.h; sourceTree = "<group>"; };
+		1146DFF41FF24B5100C5E219 /* Token.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Token.m; sourceTree = "<group>"; };
+		1146DFF51FF24B5100C5E219 /* Tokeniser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tokeniser.h; sourceTree = "<group>"; };
+		1146DFF61FF24B5100C5E219 /* Tokeniser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tokeniser.m; sourceTree = "<group>"; };
+		1146DFF71FF24B5100C5E219 /* TokeniserState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokeniserState.h; sourceTree = "<group>"; };
+		1146DFF81FF24B5100C5E219 /* TokeniserState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokeniserState.m; sourceTree = "<group>"; };
+		1146DFF91FF24B5100C5E219 /* TokenQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TokenQueue.h; sourceTree = "<group>"; };
+		1146DFFA1FF24B5100C5E219 /* TokenQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TokenQueue.m; sourceTree = "<group>"; };
+		1146DFFB1FF24B5100C5E219 /* TreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeBuilder.h; sourceTree = "<group>"; };
+		1146DFFC1FF24B5100C5E219 /* TreeBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeBuilder.m; sourceTree = "<group>"; };
+		1146DFFD1FF24B5100C5E219 /* XmlTreeBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XmlTreeBuilder.h; sourceTree = "<group>"; };
+		1146DFFE1FF24B5100C5E219 /* XmlTreeBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XmlTreeBuilder.m; sourceTree = "<group>"; };
+		1146E0001FF24B5100C5E219 /* Cleaner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cleaner.h; sourceTree = "<group>"; };
+		1146E0011FF24B5100C5E219 /* Cleaner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cleaner.m; sourceTree = "<group>"; };
+		1146E0021FF24B5100C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146E0031FF24B5100C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146E0041FF24B5100C5E219 /* Whitelist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Whitelist.h; sourceTree = "<group>"; };
+		1146E0051FF24B5100C5E219 /* Whitelist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Whitelist.m; sourceTree = "<group>"; };
+		1146E0071FF24B5100C5E219 /* Collector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Collector.h; sourceTree = "<group>"; };
+		1146E0081FF24B5100C5E219 /* Collector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Collector.m; sourceTree = "<group>"; };
+		1146E0091FF24B5100C5E219 /* CombiningEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CombiningEvaluator.h; sourceTree = "<group>"; };
+		1146E00A1FF24B5100C5E219 /* CombiningEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CombiningEvaluator.m; sourceTree = "<group>"; };
+		1146E00B1FF24B5100C5E219 /* Elements.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Elements.h; sourceTree = "<group>"; };
+		1146E00C1FF24B5100C5E219 /* Elements.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Elements.m; sourceTree = "<group>"; };
+		1146E00D1FF24B5100C5E219 /* Evaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Evaluator.h; sourceTree = "<group>"; };
+		1146E00E1FF24B5100C5E219 /* Evaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Evaluator.m; sourceTree = "<group>"; };
+		1146E00F1FF24B5100C5E219 /* NodeTraversor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeTraversor.h; sourceTree = "<group>"; };
+		1146E0101FF24B5100C5E219 /* NodeTraversor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeTraversor.m; sourceTree = "<group>"; };
+		1146E0111FF24B5100C5E219 /* NodeVisitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeVisitor.h; sourceTree = "<group>"; };
+		1146E0121FF24B5100C5E219 /* NodeVisitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NodeVisitor.m; sourceTree = "<group>"; };
+		1146E0131FF24B5100C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146E0141FF24B5100C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146E0151FF24B5100C5E219 /* QueryParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueryParser.h; sourceTree = "<group>"; };
+		1146E0161FF24B5100C5E219 /* QueryParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueryParser.m; sourceTree = "<group>"; };
+		1146E0171FF24B5100C5E219 /* Selector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Selector.h; sourceTree = "<group>"; };
+		1146E0181FF24B5100C5E219 /* Selector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Selector.m; sourceTree = "<group>"; };
+		1146E0191FF24B5100C5E219 /* StructuralEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StructuralEvaluator.h; sourceTree = "<group>"; };
+		1146E01A1FF24B5100C5E219 /* StructuralEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StructuralEvaluator.m; sourceTree = "<group>"; };
+		1146E01B1FF24B5100C5E219 /* UnsupportedMimeTypeException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsupportedMimeTypeException.h; sourceTree = "<group>"; };
+		1146E01C1FF24B5100C5E219 /* UnsupportedMimeTypeException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsupportedMimeTypeException.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1146DF971FF24B2A00C5E219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1146DF911FF24B2A00C5E219 = {
+			isa = PBXGroup;
+			children = (
+				1146DFA61FF24B5100C5E219 /* source_jsoup_183_fis_noarc */,
+				1146DF9C1FF24B2A00C5E219 /* jsoup_noarc_static_lib */,
+				1146DF9B1FF24B2A00C5E219 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1146DF9B1FF24B2A00C5E219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1146DF9A1FF24B2A00C5E219 /* libjsoup_noarc_static_lib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1146DF9C1FF24B2A00C5E219 /* jsoup_noarc_static_lib */ = {
+			isa = PBXGroup;
+			children = (
+				1146DF9D1FF24B2A00C5E219 /* jsoup_noarc_static_lib.h */,
+				1146DF9E1FF24B2A00C5E219 /* jsoup_noarc_static_lib.m */,
+			);
+			path = jsoup_noarc_static_lib;
+			sourceTree = "<group>";
+		};
+		1146DFA61FF24B5100C5E219 /* source_jsoup_183_fis_noarc */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFA71FF24B5100C5E219 /* org */,
+			);
+			path = source_jsoup_183_fis_noarc;
+			sourceTree = "<group>";
+		};
+		1146DFA71FF24B5100C5E219 /* org */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFA81FF24B5100C5E219 /* jsoup */,
+			);
+			path = org;
+			sourceTree = "<group>";
+		};
+		1146DFA81FF24B5100C5E219 /* jsoup */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFA91FF24B5100C5E219 /* Connection.h */,
+				1146DFAA1FF24B5100C5E219 /* Connection.m */,
+				1146DFAB1FF24B5100C5E219 /* examples */,
+				1146DFB21FF24B5100C5E219 /* helper */,
+				1146DFBF1FF24B5100C5E219 /* HttpStatusException.h */,
+				1146DFC01FF24B5100C5E219 /* HttpStatusException.m */,
+				1146DFC11FF24B5100C5E219 /* Jsoup.h */,
+				1146DFC21FF24B5100C5E219 /* Jsoup.m */,
+				1146DFC31FF24B5100C5E219 /* nodes */,
+				1146DFE01FF24B5100C5E219 /* package-info.h */,
+				1146DFE11FF24B5100C5E219 /* package-info.m */,
+				1146DFE21FF24B5100C5E219 /* parser */,
+				1146DFFF1FF24B5100C5E219 /* safety */,
+				1146E0061FF24B5100C5E219 /* select */,
+				1146E01B1FF24B5100C5E219 /* UnsupportedMimeTypeException.h */,
+				1146E01C1FF24B5100C5E219 /* UnsupportedMimeTypeException.m */,
+			);
+			path = jsoup;
+			sourceTree = "<group>";
+		};
+		1146DFAB1FF24B5100C5E219 /* examples */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFAC1FF24B5100C5E219 /* HtmlToPlainText.h */,
+				1146DFAD1FF24B5100C5E219 /* HtmlToPlainText.m */,
+				1146DFAE1FF24B5100C5E219 /* ListLinks.h */,
+				1146DFAF1FF24B5100C5E219 /* ListLinks.m */,
+				1146DFB01FF24B5100C5E219 /* package-info.h */,
+				1146DFB11FF24B5100C5E219 /* package-info.m */,
+			);
+			path = examples;
+			sourceTree = "<group>";
+		};
+		1146DFB21FF24B5100C5E219 /* helper */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFB31FF24B5100C5E219 /* DataUtil.h */,
+				1146DFB41FF24B5100C5E219 /* DataUtil.m */,
+				1146DFB51FF24B5100C5E219 /* DescendableLinkedList.h */,
+				1146DFB61FF24B5100C5E219 /* DescendableLinkedList.m */,
+				1146DFB71FF24B5100C5E219 /* HttpConnection.h */,
+				1146DFB81FF24B5100C5E219 /* HttpConnection.m */,
+				1146DFB91FF24B5100C5E219 /* StringUtil.h */,
+				1146DFBA1FF24B5100C5E219 /* StringUtil.m */,
+				1146DFBB1FF24B5100C5E219 /* Validate.h */,
+				1146DFBC1FF24B5100C5E219 /* Validate.m */,
+				1146DFBD1FF24B5100C5E219 /* W3CDom.h */,
+				1146DFBE1FF24B5100C5E219 /* W3CDom.m */,
+			);
+			path = helper;
+			sourceTree = "<group>";
+		};
+		1146DFC31FF24B5100C5E219 /* nodes */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFC41FF24B5100C5E219 /* Attribute.h */,
+				1146DFC51FF24B5100C5E219 /* Attribute.m */,
+				1146DFC61FF24B5100C5E219 /* Attributes.h */,
+				1146DFC71FF24B5100C5E219 /* Attributes.m */,
+				1146DFC81FF24B5100C5E219 /* BooleanAttribute.h */,
+				1146DFC91FF24B5100C5E219 /* BooleanAttribute.m */,
+				1146DFCA1FF24B5100C5E219 /* Comment.h */,
+				1146DFCB1FF24B5100C5E219 /* Comment.m */,
+				1146DFCC1FF24B5100C5E219 /* DataNode.h */,
+				1146DFCD1FF24B5100C5E219 /* DataNode.m */,
+				1146DFCE1FF24B5100C5E219 /* Document.h */,
+				1146DFCF1FF24B5100C5E219 /* Document.m */,
+				1146DFD01FF24B5100C5E219 /* DocumentType.h */,
+				1146DFD11FF24B5100C5E219 /* DocumentType.m */,
+				1146DFD21FF24B5100C5E219 /* Element.h */,
+				1146DFD31FF24B5100C5E219 /* Element.m */,
+				1146DFD41FF24B5100C5E219 /* Entities.h */,
+				1146DFD51FF24B5100C5E219 /* Entities.m */,
+				1146DFD61FF24B5100C5E219 /* FormElement.h */,
+				1146DFD71FF24B5100C5E219 /* FormElement.m */,
+				1146DFD81FF24B5100C5E219 /* Node.h */,
+				1146DFD91FF24B5100C5E219 /* Node.m */,
+				1146DFDA1FF24B5100C5E219 /* package-info.h */,
+				1146DFDB1FF24B5100C5E219 /* package-info.m */,
+				1146DFDC1FF24B5100C5E219 /* TextNode.h */,
+				1146DFDD1FF24B5100C5E219 /* TextNode.m */,
+				1146DFDE1FF24B5100C5E219 /* XmlDeclaration.h */,
+				1146DFDF1FF24B5100C5E219 /* XmlDeclaration.m */,
+			);
+			path = nodes;
+			sourceTree = "<group>";
+		};
+		1146DFE21FF24B5100C5E219 /* parser */ = {
+			isa = PBXGroup;
+			children = (
+				1146DFE31FF24B5100C5E219 /* CharacterReader.h */,
+				1146DFE41FF24B5100C5E219 /* CharacterReader.m */,
+				1146DFE51FF24B5100C5E219 /* HtmlTreeBuilder.h */,
+				1146DFE61FF24B5100C5E219 /* HtmlTreeBuilder.m */,
+				1146DFE71FF24B5100C5E219 /* HtmlTreeBuilderState.h */,
+				1146DFE81FF24B5100C5E219 /* HtmlTreeBuilderState.m */,
+				1146DFE91FF24B5100C5E219 /* package-info.h */,
+				1146DFEA1FF24B5100C5E219 /* package-info.m */,
+				1146DFEB1FF24B5100C5E219 /* ParseError.h */,
+				1146DFEC1FF24B5100C5E219 /* ParseError.m */,
+				1146DFED1FF24B5100C5E219 /* ParseErrorList.h */,
+				1146DFEE1FF24B5100C5E219 /* ParseErrorList.m */,
+				1146DFEF1FF24B5100C5E219 /* Parser.h */,
+				1146DFF01FF24B5100C5E219 /* Parser.m */,
+				1146DFF11FF24B5100C5E219 /* Tag.h */,
+				1146DFF21FF24B5100C5E219 /* Tag.m */,
+				1146DFF31FF24B5100C5E219 /* Token.h */,
+				1146DFF41FF24B5100C5E219 /* Token.m */,
+				1146DFF51FF24B5100C5E219 /* Tokeniser.h */,
+				1146DFF61FF24B5100C5E219 /* Tokeniser.m */,
+				1146DFF71FF24B5100C5E219 /* TokeniserState.h */,
+				1146DFF81FF24B5100C5E219 /* TokeniserState.m */,
+				1146DFF91FF24B5100C5E219 /* TokenQueue.h */,
+				1146DFFA1FF24B5100C5E219 /* TokenQueue.m */,
+				1146DFFB1FF24B5100C5E219 /* TreeBuilder.h */,
+				1146DFFC1FF24B5100C5E219 /* TreeBuilder.m */,
+				1146DFFD1FF24B5100C5E219 /* XmlTreeBuilder.h */,
+				1146DFFE1FF24B5100C5E219 /* XmlTreeBuilder.m */,
+			);
+			path = parser;
+			sourceTree = "<group>";
+		};
+		1146DFFF1FF24B5100C5E219 /* safety */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0001FF24B5100C5E219 /* Cleaner.h */,
+				1146E0011FF24B5100C5E219 /* Cleaner.m */,
+				1146E0021FF24B5100C5E219 /* package-info.h */,
+				1146E0031FF24B5100C5E219 /* package-info.m */,
+				1146E0041FF24B5100C5E219 /* Whitelist.h */,
+				1146E0051FF24B5100C5E219 /* Whitelist.m */,
+			);
+			path = safety;
+			sourceTree = "<group>";
+		};
+		1146E0061FF24B5100C5E219 /* select */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0071FF24B5100C5E219 /* Collector.h */,
+				1146E0081FF24B5100C5E219 /* Collector.m */,
+				1146E0091FF24B5100C5E219 /* CombiningEvaluator.h */,
+				1146E00A1FF24B5100C5E219 /* CombiningEvaluator.m */,
+				1146E00B1FF24B5100C5E219 /* Elements.h */,
+				1146E00C1FF24B5100C5E219 /* Elements.m */,
+				1146E00D1FF24B5100C5E219 /* Evaluator.h */,
+				1146E00E1FF24B5100C5E219 /* Evaluator.m */,
+				1146E00F1FF24B5100C5E219 /* NodeTraversor.h */,
+				1146E0101FF24B5100C5E219 /* NodeTraversor.m */,
+				1146E0111FF24B5100C5E219 /* NodeVisitor.h */,
+				1146E0121FF24B5100C5E219 /* NodeVisitor.m */,
+				1146E0131FF24B5100C5E219 /* package-info.h */,
+				1146E0141FF24B5100C5E219 /* package-info.m */,
+				1146E0151FF24B5100C5E219 /* QueryParser.h */,
+				1146E0161FF24B5100C5E219 /* QueryParser.m */,
+				1146E0171FF24B5100C5E219 /* Selector.h */,
+				1146E0181FF24B5100C5E219 /* Selector.m */,
+				1146E0191FF24B5100C5E219 /* StructuralEvaluator.h */,
+				1146E01A1FF24B5100C5E219 /* StructuralEvaluator.m */,
+			);
+			path = select;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1146DF991FF24B2A00C5E219 /* jsoup_noarc_static_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1146DFA31FF24B2A00C5E219 /* Build configuration list for PBXNativeTarget "jsoup_noarc_static_lib" */;
+			buildPhases = (
+				1146DF961FF24B2A00C5E219 /* Sources */,
+				1146DF971FF24B2A00C5E219 /* Frameworks */,
+				1146DF981FF24B2A00C5E219 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = jsoup_noarc_static_lib;
+			productName = jsoup_noarc_static_lib;
+			productReference = 1146DF9A1FF24B2A00C5E219 /* libjsoup_noarc_static_lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1146DF921FF24B2A00C5E219 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = jsoup_noarc_static_lib;
+				TargetAttributes = {
+					1146DF991FF24B2A00C5E219 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 646945T82S;
+						ProvisioningStyle = Automatic;
+					};
+					1146E08B1FF24C5300C5E219 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 646945T82S;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1146DF951FF24B2A00C5E219 /* Build configuration list for PBXProject "jsoup_noarc_static_lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1146DF911FF24B2A00C5E219;
+			productRefGroup = 1146DF9B1FF24B2A00C5E219 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1146DF991FF24B2A00C5E219 /* jsoup_noarc_static_lib */,
+				1146E08B1FF24C5300C5E219 /* jsoup_aggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1146E08F1FF24C6B00C5E219 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ImageFilters ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ImageFilters -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1146DF961FF24B2A00C5E219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1146E03F1FF24B5100C5E219 /* Tag.m in Sources */,
+				1146E0441FF24B5100C5E219 /* TreeBuilder.m in Sources */,
+				1146DF9F1FF24B2A00C5E219 /* jsoup_noarc_static_lib.m in Sources */,
+				1146E02B1FF24B5100C5E219 /* BooleanAttribute.m in Sources */,
+				1146E0201FF24B5100C5E219 /* package-info.m in Sources */,
+				1146E02D1FF24B5100C5E219 /* DataNode.m in Sources */,
+				1146E0521FF24B5100C5E219 /* StructuralEvaluator.m in Sources */,
+				1146E0291FF24B5100C5E219 /* Attribute.m in Sources */,
+				1146E0321FF24B5100C5E219 /* FormElement.m in Sources */,
+				1146E0371FF24B5100C5E219 /* package-info.m in Sources */,
+				1146E04E1FF24B5100C5E219 /* NodeVisitor.m in Sources */,
+				1146E02C1FF24B5100C5E219 /* Comment.m in Sources */,
+				1146E0311FF24B5100C5E219 /* Entities.m in Sources */,
+				1146E0401FF24B5100C5E219 /* Token.m in Sources */,
+				1146E0351FF24B5100C5E219 /* TextNode.m in Sources */,
+				1146E0221FF24B5100C5E219 /* DescendableLinkedList.m in Sources */,
+				1146E04D1FF24B5100C5E219 /* NodeTraversor.m in Sources */,
+				1146E0471FF24B5100C5E219 /* package-info.m in Sources */,
+				1146E0271FF24B5100C5E219 /* HttpStatusException.m in Sources */,
+				1146E0381FF24B5100C5E219 /* CharacterReader.m in Sources */,
+				1146E03A1FF24B5100C5E219 /* HtmlTreeBuilderState.m in Sources */,
+				1146E03B1FF24B5100C5E219 /* package-info.m in Sources */,
+				1146E0491FF24B5100C5E219 /* Collector.m in Sources */,
+				1146E0241FF24B5100C5E219 /* StringUtil.m in Sources */,
+				1146E0231FF24B5100C5E219 /* HttpConnection.m in Sources */,
+				1146E01D1FF24B5100C5E219 /* Connection.m in Sources */,
+				1146E02A1FF24B5100C5E219 /* Attributes.m in Sources */,
+				1146E0531FF24B5100C5E219 /* UnsupportedMimeTypeException.m in Sources */,
+				1146E0431FF24B5100C5E219 /* TokenQueue.m in Sources */,
+				1146E03E1FF24B5100C5E219 /* Parser.m in Sources */,
+				1146E0501FF24B5100C5E219 /* QueryParser.m in Sources */,
+				1146E0301FF24B5100C5E219 /* Element.m in Sources */,
+				1146E0211FF24B5100C5E219 /* DataUtil.m in Sources */,
+				1146E04F1FF24B5100C5E219 /* package-info.m in Sources */,
+				1146E0341FF24B5100C5E219 /* package-info.m in Sources */,
+				1146E0251FF24B5100C5E219 /* Validate.m in Sources */,
+				1146E0411FF24B5100C5E219 /* Tokeniser.m in Sources */,
+				1146E0451FF24B5100C5E219 /* XmlTreeBuilder.m in Sources */,
+				1146E02F1FF24B5100C5E219 /* DocumentType.m in Sources */,
+				1146E01E1FF24B5100C5E219 /* HtmlToPlainText.m in Sources */,
+				1146E04B1FF24B5100C5E219 /* Elements.m in Sources */,
+				1146E0361FF24B5100C5E219 /* XmlDeclaration.m in Sources */,
+				1146E0281FF24B5100C5E219 /* Jsoup.m in Sources */,
+				1146E0261FF24B5100C5E219 /* W3CDom.m in Sources */,
+				1146E01F1FF24B5100C5E219 /* ListLinks.m in Sources */,
+				1146E02E1FF24B5100C5E219 /* Document.m in Sources */,
+				1146E0391FF24B5100C5E219 /* HtmlTreeBuilder.m in Sources */,
+				1146E0461FF24B5100C5E219 /* Cleaner.m in Sources */,
+				1146E0331FF24B5100C5E219 /* Node.m in Sources */,
+				1146E04A1FF24B5100C5E219 /* CombiningEvaluator.m in Sources */,
+				1146E0481FF24B5100C5E219 /* Whitelist.m in Sources */,
+				1146E0421FF24B5100C5E219 /* TokeniserState.m in Sources */,
+				1146E0511FF24B5100C5E219 /* Selector.m in Sources */,
+				1146E04C1FF24B5100C5E219 /* Evaluator.m in Sources */,
+				1146E03D1FF24B5100C5E219 /* ParseErrorList.m in Sources */,
+				1146E03C1FF24B5100C5E219 /* ParseError.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1146DFA11FF24B2A00C5E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				J2OBJC_HOME = "/j2objc-dist";
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include ${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		1146DFA21FF24B2A00C5E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				J2OBJC_HOME = "/j2objc-dist";
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include ${SRCROOT}/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1146DFA41FF24B2A00C5E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = 646945T82S;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1146DFA51FF24B2A00C5E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				DEVELOPMENT_TEAM = 646945T82S;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1146E08D1FF24C5300C5E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 646945T82S;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1146E08E1FF24C5300C5E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 646945T82S;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1146DF951FF24B2A00C5E219 /* Build configuration list for PBXProject "jsoup_noarc_static_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1146DFA11FF24B2A00C5E219 /* Debug */,
+				1146DFA21FF24B2A00C5E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1146DFA31FF24B2A00C5E219 /* Build configuration list for PBXNativeTarget "jsoup_noarc_static_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1146DFA41FF24B2A00C5E219 /* Debug */,
+				1146DFA51FF24B2A00C5E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1146E08C1FF24C5300C5E219 /* Build configuration list for PBXAggregateTarget "jsoup_aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1146E08D1FF24C5300C5E219 /* Debug */,
+				1146E08E1FF24C5300C5E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1146DF921FF24B2A00C5E219 /* Project object */;
+}

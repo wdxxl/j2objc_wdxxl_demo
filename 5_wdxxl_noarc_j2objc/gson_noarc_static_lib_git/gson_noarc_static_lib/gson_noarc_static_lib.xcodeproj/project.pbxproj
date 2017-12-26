@@ -1,0 +1,967 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		1146E1BB1FF24E8000C5E219 /* gson_aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1146E1BC1FF24E8000C5E219 /* Build configuration list for PBXAggregateTarget "gson_aggregate" */;
+			buildPhases = (
+				118222321FF24E94005BCD23 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = gson_aggregate;
+			productName = gson_aggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1146E09E1FF24DB300C5E219 /* gson_noarc_static_lib.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E09D1FF24DB300C5E219 /* gson_noarc_static_lib.m */; };
+		1146E09F1FF24DB300C5E219 /* gson_noarc_static_lib.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E09C1FF24DB300C5E219 /* gson_noarc_static_lib.h */; };
+		1146E1351FF24E2700C5E219 /* Expose.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0AB1FF24E2700C5E219 /* Expose.m */; };
+		1146E1361FF24E2700C5E219 /* JsonAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0AD1FF24E2700C5E219 /* JsonAdapter.m */; };
+		1146E1371FF24E2700C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0AF1FF24E2700C5E219 /* package-info.m */; };
+		1146E1381FF24E2700C5E219 /* SerializedName.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0B11FF24E2700C5E219 /* SerializedName.m */; };
+		1146E1391FF24E2700C5E219 /* Since.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0B31FF24E2700C5E219 /* Since.m */; };
+		1146E13A1FF24E2700C5E219 /* Until.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0B51FF24E2700C5E219 /* Until.m */; };
+		1146E13B1FF24E2700C5E219 /* DefaultDateTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0B71FF24E2700C5E219 /* DefaultDateTypeAdapter.m */; };
+		1146E13C1FF24E2700C5E219 /* ExclusionStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0B91FF24E2700C5E219 /* ExclusionStrategy.m */; };
+		1146E13D1FF24E2700C5E219 /* FieldAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0BB1FF24E2700C5E219 /* FieldAttributes.m */; };
+		1146E13E1FF24E2700C5E219 /* FieldNamingPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0BD1FF24E2700C5E219 /* FieldNamingPolicy.m */; };
+		1146E13F1FF24E2700C5E219 /* FieldNamingStrategy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0BF1FF24E2700C5E219 /* FieldNamingStrategy.m */; };
+		1146E1401FF24E2700C5E219 /* Gson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0C11FF24E2700C5E219 /* Gson.m */; };
+		1146E1411FF24E2700C5E219 /* GsonBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0C31FF24E2700C5E219 /* GsonBuilder.m */; };
+		1146E1421FF24E2700C5E219 /* InstanceCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0C51FF24E2700C5E219 /* InstanceCreator.m */; };
+		1146E1431FF24E2700C5E219 /* $Gson$Preconditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0C81FF24E2700C5E219 /* $Gson$Preconditions.m */; };
+		1146E1441FF24E2700C5E219 /* $Gson$Types.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0CA1FF24E2700C5E219 /* $Gson$Types.m */; };
+		1146E1451FF24E2700C5E219 /* ArrayTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0CD1FF24E2700C5E219 /* ArrayTypeAdapter.m */; };
+		1146E1461FF24E2700C5E219 /* CollectionTypeAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0CF1FF24E2700C5E219 /* CollectionTypeAdapterFactory.m */; };
+		1146E1471FF24E2700C5E219 /* DateTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0D11FF24E2700C5E219 /* DateTypeAdapter.m */; };
+		1146E1481FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0D31FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.m */; };
+		1146E1491FF24E2700C5E219 /* JsonTreeReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0D51FF24E2700C5E219 /* JsonTreeReader.m */; };
+		1146E14A1FF24E2700C5E219 /* JsonTreeWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0D71FF24E2700C5E219 /* JsonTreeWriter.m */; };
+		1146E14B1FF24E2700C5E219 /* MapTypeAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0D91FF24E2700C5E219 /* MapTypeAdapterFactory.m */; };
+		1146E14C1FF24E2700C5E219 /* ObjectTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0DB1FF24E2700C5E219 /* ObjectTypeAdapter.m */; };
+		1146E14D1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0DD1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.m */; };
+		1146E14E1FF24E2700C5E219 /* SqlDateTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0DF1FF24E2700C5E219 /* SqlDateTypeAdapter.m */; };
+		1146E14F1FF24E2700C5E219 /* TimeTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0E11FF24E2700C5E219 /* TimeTypeAdapter.m */; };
+		1146E1501FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0E31FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.m */; };
+		1146E1511FF24E2700C5E219 /* TypeAdapters.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0E51FF24E2700C5E219 /* TypeAdapters.m */; };
+		1146E1521FF24E2700C5E219 /* ISO8601Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0E81FF24E2700C5E219 /* ISO8601Utils.m */; };
+		1146E1531FF24E2700C5E219 /* ConstructorConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0EA1FF24E2700C5E219 /* ConstructorConstructor.m */; };
+		1146E1541FF24E2700C5E219 /* Excluder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0EC1FF24E2700C5E219 /* Excluder.m */; };
+		1146E1551FF24E2700C5E219 /* JsonReaderInternalAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0EE1FF24E2700C5E219 /* JsonReaderInternalAccess.m */; };
+		1146E1561FF24E2700C5E219 /* LazilyParsedNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0F01FF24E2700C5E219 /* LazilyParsedNumber.m */; };
+		1146E1571FF24E2700C5E219 /* LinkedHashTreeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0F21FF24E2700C5E219 /* LinkedHashTreeMap.m */; };
+		1146E1581FF24E2700C5E219 /* LinkedTreeMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0F41FF24E2700C5E219 /* LinkedTreeMap.m */; };
+		1146E1591FF24E2700C5E219 /* ObjectConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0F61FF24E2700C5E219 /* ObjectConstructor.m */; };
+		1146E15A1FF24E2700C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0F81FF24E2700C5E219 /* package-info.m */; };
+		1146E15B1FF24E2700C5E219 /* Primitives.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0FA1FF24E2700C5E219 /* Primitives.m */; };
+		1146E15C1FF24E2700C5E219 /* Streams.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0FC1FF24E2700C5E219 /* Streams.m */; };
+		1146E15D1FF24E2700C5E219 /* UnsafeAllocator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E0FE1FF24E2700C5E219 /* UnsafeAllocator.m */; };
+		1146E15E1FF24E2700C5E219 /* JsonArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1001FF24E2700C5E219 /* JsonArray.m */; };
+		1146E15F1FF24E2700C5E219 /* JsonDeserializationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1021FF24E2700C5E219 /* JsonDeserializationContext.m */; };
+		1146E1601FF24E2700C5E219 /* JsonDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1041FF24E2700C5E219 /* JsonDeserializer.m */; };
+		1146E1611FF24E2700C5E219 /* JsonElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1061FF24E2700C5E219 /* JsonElement.m */; };
+		1146E1621FF24E2700C5E219 /* JsonIOException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1081FF24E2700C5E219 /* JsonIOException.m */; };
+		1146E1631FF24E2700C5E219 /* JsonNull.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E10A1FF24E2700C5E219 /* JsonNull.m */; };
+		1146E1641FF24E2700C5E219 /* JsonObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E10C1FF24E2700C5E219 /* JsonObject.m */; };
+		1146E1651FF24E2700C5E219 /* JsonParseException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E10E1FF24E2700C5E219 /* JsonParseException.m */; };
+		1146E1661FF24E2700C5E219 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1101FF24E2700C5E219 /* JsonParser.m */; };
+		1146E1671FF24E2700C5E219 /* JsonPrimitive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1121FF24E2700C5E219 /* JsonPrimitive.m */; };
+		1146E1681FF24E2700C5E219 /* JsonSerializationContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1141FF24E2700C5E219 /* JsonSerializationContext.m */; };
+		1146E1691FF24E2700C5E219 /* JsonSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1161FF24E2700C5E219 /* JsonSerializer.m */; };
+		1146E16A1FF24E2700C5E219 /* JsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1181FF24E2700C5E219 /* JsonStreamParser.m */; };
+		1146E16B1FF24E2700C5E219 /* JsonSyntaxException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E11A1FF24E2700C5E219 /* JsonSyntaxException.m */; };
+		1146E16C1FF24E2700C5E219 /* LongSerializationPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E11C1FF24E2700C5E219 /* LongSerializationPolicy.m */; };
+		1146E16D1FF24E2700C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E11E1FF24E2700C5E219 /* package-info.m */; };
+		1146E16E1FF24E2700C5E219 /* package-info.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1211FF24E2700C5E219 /* package-info.m */; };
+		1146E16F1FF24E2700C5E219 /* TypeToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1231FF24E2700C5E219 /* TypeToken.m */; };
+		1146E1701FF24E2700C5E219 /* JsonReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1261FF24E2700C5E219 /* JsonReader.m */; };
+		1146E1711FF24E2700C5E219 /* JsonScope.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1281FF24E2700C5E219 /* JsonScope.m */; };
+		1146E1721FF24E2700C5E219 /* JsonToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E12A1FF24E2700C5E219 /* JsonToken.m */; };
+		1146E1731FF24E2700C5E219 /* JsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E12C1FF24E2700C5E219 /* JsonWriter.m */; };
+		1146E1741FF24E2700C5E219 /* MalformedJsonException.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E12E1FF24E2700C5E219 /* MalformedJsonException.m */; };
+		1146E1751FF24E2700C5E219 /* TreeTypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1301FF24E2700C5E219 /* TreeTypeAdapter.m */; };
+		1146E1761FF24E2700C5E219 /* TypeAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1321FF24E2700C5E219 /* TypeAdapter.m */; };
+		1146E1771FF24E2700C5E219 /* TypeAdapterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1146E1341FF24E2700C5E219 /* TypeAdapterFactory.m */; };
+		1146E1781FF24E3B00C5E219 /* Expose.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0AA1FF24E2700C5E219 /* Expose.h */; };
+		1146E1791FF24E3B00C5E219 /* JsonAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0AC1FF24E2700C5E219 /* JsonAdapter.h */; };
+		1146E17A1FF24E3B00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0AE1FF24E2700C5E219 /* package-info.h */; };
+		1146E17B1FF24E3B00C5E219 /* SerializedName.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0B01FF24E2700C5E219 /* SerializedName.h */; };
+		1146E17C1FF24E3B00C5E219 /* Since.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0B21FF24E2700C5E219 /* Since.h */; };
+		1146E17D1FF24E3B00C5E219 /* Until.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0B41FF24E2700C5E219 /* Until.h */; };
+		1146E17E1FF24E3B00C5E219 /* DefaultDateTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0B61FF24E2700C5E219 /* DefaultDateTypeAdapter.h */; };
+		1146E17F1FF24E3B00C5E219 /* ExclusionStrategy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0B81FF24E2700C5E219 /* ExclusionStrategy.h */; };
+		1146E1801FF24E3B00C5E219 /* FieldAttributes.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0BA1FF24E2700C5E219 /* FieldAttributes.h */; };
+		1146E1811FF24E3B00C5E219 /* FieldNamingPolicy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0BC1FF24E2700C5E219 /* FieldNamingPolicy.h */; };
+		1146E1821FF24E3B00C5E219 /* FieldNamingStrategy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0BE1FF24E2700C5E219 /* FieldNamingStrategy.h */; };
+		1146E1831FF24E3B00C5E219 /* Gson.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0C01FF24E2700C5E219 /* Gson.h */; };
+		1146E1841FF24E3B00C5E219 /* GsonBuilder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0C21FF24E2700C5E219 /* GsonBuilder.h */; };
+		1146E1851FF24E3B00C5E219 /* InstanceCreator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0C41FF24E2700C5E219 /* InstanceCreator.h */; };
+		1146E1861FF24E3B00C5E219 /* $Gson$Preconditions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0C71FF24E2700C5E219 /* $Gson$Preconditions.h */; };
+		1146E1871FF24E3B00C5E219 /* $Gson$Types.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0C91FF24E2700C5E219 /* $Gson$Types.h */; };
+		1146E1881FF24E3B00C5E219 /* ArrayTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0CC1FF24E2700C5E219 /* ArrayTypeAdapter.h */; };
+		1146E1891FF24E3B00C5E219 /* CollectionTypeAdapterFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0CE1FF24E2700C5E219 /* CollectionTypeAdapterFactory.h */; };
+		1146E18A1FF24E3B00C5E219 /* DateTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0D01FF24E2700C5E219 /* DateTypeAdapter.h */; };
+		1146E18B1FF24E3B00C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0D21FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.h */; };
+		1146E18C1FF24E3B00C5E219 /* JsonTreeReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0D41FF24E2700C5E219 /* JsonTreeReader.h */; };
+		1146E18D1FF24E3B00C5E219 /* JsonTreeWriter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0D61FF24E2700C5E219 /* JsonTreeWriter.h */; };
+		1146E18E1FF24E3B00C5E219 /* MapTypeAdapterFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0D81FF24E2700C5E219 /* MapTypeAdapterFactory.h */; };
+		1146E18F1FF24E3B00C5E219 /* ObjectTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0DA1FF24E2700C5E219 /* ObjectTypeAdapter.h */; };
+		1146E1901FF24E3B00C5E219 /* ReflectiveTypeAdapterFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0DC1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.h */; };
+		1146E1911FF24E3B00C5E219 /* SqlDateTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0DE1FF24E2700C5E219 /* SqlDateTypeAdapter.h */; };
+		1146E1921FF24E3B00C5E219 /* TimeTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0E01FF24E2700C5E219 /* TimeTypeAdapter.h */; };
+		1146E1931FF24E3B00C5E219 /* TypeAdapterRuntimeTypeWrapper.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0E21FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.h */; };
+		1146E1941FF24E3B00C5E219 /* TypeAdapters.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0E41FF24E2700C5E219 /* TypeAdapters.h */; };
+		1146E1951FF24E3B00C5E219 /* ISO8601Utils.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0E71FF24E2700C5E219 /* ISO8601Utils.h */; };
+		1146E1961FF24E3B00C5E219 /* ConstructorConstructor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0E91FF24E2700C5E219 /* ConstructorConstructor.h */; };
+		1146E1971FF24E3B00C5E219 /* Excluder.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0EB1FF24E2700C5E219 /* Excluder.h */; };
+		1146E1981FF24E3B00C5E219 /* JsonReaderInternalAccess.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0ED1FF24E2700C5E219 /* JsonReaderInternalAccess.h */; };
+		1146E1991FF24E3B00C5E219 /* LazilyParsedNumber.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0EF1FF24E2700C5E219 /* LazilyParsedNumber.h */; };
+		1146E19A1FF24E3B00C5E219 /* LinkedHashTreeMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0F11FF24E2700C5E219 /* LinkedHashTreeMap.h */; };
+		1146E19B1FF24E3B00C5E219 /* LinkedTreeMap.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0F31FF24E2700C5E219 /* LinkedTreeMap.h */; };
+		1146E19C1FF24E3B00C5E219 /* ObjectConstructor.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0F51FF24E2700C5E219 /* ObjectConstructor.h */; };
+		1146E19D1FF24E3B00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0F71FF24E2700C5E219 /* package-info.h */; };
+		1146E19E1FF24E3B00C5E219 /* Primitives.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0F91FF24E2700C5E219 /* Primitives.h */; };
+		1146E19F1FF24E3B00C5E219 /* Streams.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0FB1FF24E2700C5E219 /* Streams.h */; };
+		1146E1A01FF24E3B00C5E219 /* UnsafeAllocator.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0FD1FF24E2700C5E219 /* UnsafeAllocator.h */; };
+		1146E1A11FF24E3B00C5E219 /* JsonArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E0FF1FF24E2700C5E219 /* JsonArray.h */; };
+		1146E1A21FF24E3B00C5E219 /* JsonDeserializationContext.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1011FF24E2700C5E219 /* JsonDeserializationContext.h */; };
+		1146E1A31FF24E3B00C5E219 /* JsonDeserializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1031FF24E2700C5E219 /* JsonDeserializer.h */; };
+		1146E1A41FF24E3B00C5E219 /* JsonElement.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1051FF24E2700C5E219 /* JsonElement.h */; };
+		1146E1A51FF24E3B00C5E219 /* JsonIOException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1071FF24E2700C5E219 /* JsonIOException.h */; };
+		1146E1A61FF24E3B00C5E219 /* JsonNull.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1091FF24E2700C5E219 /* JsonNull.h */; };
+		1146E1A71FF24E3B00C5E219 /* JsonObject.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E10B1FF24E2700C5E219 /* JsonObject.h */; };
+		1146E1A81FF24E3B00C5E219 /* JsonParseException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E10D1FF24E2700C5E219 /* JsonParseException.h */; };
+		1146E1A91FF24E3B00C5E219 /* JsonParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E10F1FF24E2700C5E219 /* JsonParser.h */; };
+		1146E1AA1FF24E3B00C5E219 /* JsonPrimitive.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1111FF24E2700C5E219 /* JsonPrimitive.h */; };
+		1146E1AB1FF24E3B00C5E219 /* JsonSerializationContext.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1131FF24E2700C5E219 /* JsonSerializationContext.h */; };
+		1146E1AC1FF24E3B00C5E219 /* JsonSerializer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1151FF24E2700C5E219 /* JsonSerializer.h */; };
+		1146E1AD1FF24E3B00C5E219 /* JsonStreamParser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1171FF24E2700C5E219 /* JsonStreamParser.h */; };
+		1146E1AE1FF24E3B00C5E219 /* JsonSyntaxException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1191FF24E2700C5E219 /* JsonSyntaxException.h */; };
+		1146E1AF1FF24E3B00C5E219 /* LongSerializationPolicy.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E11B1FF24E2700C5E219 /* LongSerializationPolicy.h */; };
+		1146E1B01FF24E3B00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E11D1FF24E2700C5E219 /* package-info.h */; };
+		1146E1B11FF24E3B00C5E219 /* package-info.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1201FF24E2700C5E219 /* package-info.h */; };
+		1146E1B21FF24E3B00C5E219 /* TypeToken.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1221FF24E2700C5E219 /* TypeToken.h */; };
+		1146E1B31FF24E3B00C5E219 /* JsonReader.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1251FF24E2700C5E219 /* JsonReader.h */; };
+		1146E1B41FF24E3B00C5E219 /* JsonScope.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1271FF24E2700C5E219 /* JsonScope.h */; };
+		1146E1B51FF24E3B00C5E219 /* JsonToken.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1291FF24E2700C5E219 /* JsonToken.h */; };
+		1146E1B61FF24E3B00C5E219 /* JsonWriter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E12B1FF24E2700C5E219 /* JsonWriter.h */; };
+		1146E1B71FF24E3B00C5E219 /* MalformedJsonException.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E12D1FF24E2700C5E219 /* MalformedJsonException.h */; };
+		1146E1B81FF24E3B00C5E219 /* TreeTypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E12F1FF24E2700C5E219 /* TreeTypeAdapter.h */; };
+		1146E1B91FF24E3B00C5E219 /* TypeAdapter.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1311FF24E2700C5E219 /* TypeAdapter.h */; };
+		1146E1BA1FF24E3B00C5E219 /* TypeAdapterFactory.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1146E1331FF24E2700C5E219 /* TypeAdapterFactory.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1146E0971FF24DB300C5E219 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				1146E1781FF24E3B00C5E219 /* Expose.h in CopyFiles */,
+				1146E1791FF24E3B00C5E219 /* JsonAdapter.h in CopyFiles */,
+				1146E17A1FF24E3B00C5E219 /* package-info.h in CopyFiles */,
+				1146E17B1FF24E3B00C5E219 /* SerializedName.h in CopyFiles */,
+				1146E17C1FF24E3B00C5E219 /* Since.h in CopyFiles */,
+				1146E17D1FF24E3B00C5E219 /* Until.h in CopyFiles */,
+				1146E17E1FF24E3B00C5E219 /* DefaultDateTypeAdapter.h in CopyFiles */,
+				1146E17F1FF24E3B00C5E219 /* ExclusionStrategy.h in CopyFiles */,
+				1146E1801FF24E3B00C5E219 /* FieldAttributes.h in CopyFiles */,
+				1146E1811FF24E3B00C5E219 /* FieldNamingPolicy.h in CopyFiles */,
+				1146E1821FF24E3B00C5E219 /* FieldNamingStrategy.h in CopyFiles */,
+				1146E1831FF24E3B00C5E219 /* Gson.h in CopyFiles */,
+				1146E1841FF24E3B00C5E219 /* GsonBuilder.h in CopyFiles */,
+				1146E1851FF24E3B00C5E219 /* InstanceCreator.h in CopyFiles */,
+				1146E1861FF24E3B00C5E219 /* $Gson$Preconditions.h in CopyFiles */,
+				1146E1871FF24E3B00C5E219 /* $Gson$Types.h in CopyFiles */,
+				1146E1881FF24E3B00C5E219 /* ArrayTypeAdapter.h in CopyFiles */,
+				1146E1891FF24E3B00C5E219 /* CollectionTypeAdapterFactory.h in CopyFiles */,
+				1146E18A1FF24E3B00C5E219 /* DateTypeAdapter.h in CopyFiles */,
+				1146E18B1FF24E3B00C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.h in CopyFiles */,
+				1146E18C1FF24E3B00C5E219 /* JsonTreeReader.h in CopyFiles */,
+				1146E18D1FF24E3B00C5E219 /* JsonTreeWriter.h in CopyFiles */,
+				1146E18E1FF24E3B00C5E219 /* MapTypeAdapterFactory.h in CopyFiles */,
+				1146E18F1FF24E3B00C5E219 /* ObjectTypeAdapter.h in CopyFiles */,
+				1146E1901FF24E3B00C5E219 /* ReflectiveTypeAdapterFactory.h in CopyFiles */,
+				1146E1911FF24E3B00C5E219 /* SqlDateTypeAdapter.h in CopyFiles */,
+				1146E1921FF24E3B00C5E219 /* TimeTypeAdapter.h in CopyFiles */,
+				1146E1931FF24E3B00C5E219 /* TypeAdapterRuntimeTypeWrapper.h in CopyFiles */,
+				1146E1941FF24E3B00C5E219 /* TypeAdapters.h in CopyFiles */,
+				1146E1951FF24E3B00C5E219 /* ISO8601Utils.h in CopyFiles */,
+				1146E1961FF24E3B00C5E219 /* ConstructorConstructor.h in CopyFiles */,
+				1146E1971FF24E3B00C5E219 /* Excluder.h in CopyFiles */,
+				1146E1981FF24E3B00C5E219 /* JsonReaderInternalAccess.h in CopyFiles */,
+				1146E1991FF24E3B00C5E219 /* LazilyParsedNumber.h in CopyFiles */,
+				1146E19A1FF24E3B00C5E219 /* LinkedHashTreeMap.h in CopyFiles */,
+				1146E19B1FF24E3B00C5E219 /* LinkedTreeMap.h in CopyFiles */,
+				1146E19C1FF24E3B00C5E219 /* ObjectConstructor.h in CopyFiles */,
+				1146E19D1FF24E3B00C5E219 /* package-info.h in CopyFiles */,
+				1146E19E1FF24E3B00C5E219 /* Primitives.h in CopyFiles */,
+				1146E19F1FF24E3B00C5E219 /* Streams.h in CopyFiles */,
+				1146E1A01FF24E3B00C5E219 /* UnsafeAllocator.h in CopyFiles */,
+				1146E1A11FF24E3B00C5E219 /* JsonArray.h in CopyFiles */,
+				1146E1A21FF24E3B00C5E219 /* JsonDeserializationContext.h in CopyFiles */,
+				1146E1A31FF24E3B00C5E219 /* JsonDeserializer.h in CopyFiles */,
+				1146E1A41FF24E3B00C5E219 /* JsonElement.h in CopyFiles */,
+				1146E1A51FF24E3B00C5E219 /* JsonIOException.h in CopyFiles */,
+				1146E1A61FF24E3B00C5E219 /* JsonNull.h in CopyFiles */,
+				1146E1A71FF24E3B00C5E219 /* JsonObject.h in CopyFiles */,
+				1146E1A81FF24E3B00C5E219 /* JsonParseException.h in CopyFiles */,
+				1146E1A91FF24E3B00C5E219 /* JsonParser.h in CopyFiles */,
+				1146E1AA1FF24E3B00C5E219 /* JsonPrimitive.h in CopyFiles */,
+				1146E1AB1FF24E3B00C5E219 /* JsonSerializationContext.h in CopyFiles */,
+				1146E1AC1FF24E3B00C5E219 /* JsonSerializer.h in CopyFiles */,
+				1146E1AD1FF24E3B00C5E219 /* JsonStreamParser.h in CopyFiles */,
+				1146E1AE1FF24E3B00C5E219 /* JsonSyntaxException.h in CopyFiles */,
+				1146E1AF1FF24E3B00C5E219 /* LongSerializationPolicy.h in CopyFiles */,
+				1146E1B01FF24E3B00C5E219 /* package-info.h in CopyFiles */,
+				1146E1B11FF24E3B00C5E219 /* package-info.h in CopyFiles */,
+				1146E1B21FF24E3B00C5E219 /* TypeToken.h in CopyFiles */,
+				1146E1B31FF24E3B00C5E219 /* JsonReader.h in CopyFiles */,
+				1146E1B41FF24E3B00C5E219 /* JsonScope.h in CopyFiles */,
+				1146E1B51FF24E3B00C5E219 /* JsonToken.h in CopyFiles */,
+				1146E1B61FF24E3B00C5E219 /* JsonWriter.h in CopyFiles */,
+				1146E1B71FF24E3B00C5E219 /* MalformedJsonException.h in CopyFiles */,
+				1146E1B81FF24E3B00C5E219 /* TreeTypeAdapter.h in CopyFiles */,
+				1146E1B91FF24E3B00C5E219 /* TypeAdapter.h in CopyFiles */,
+				1146E1BA1FF24E3B00C5E219 /* TypeAdapterFactory.h in CopyFiles */,
+				1146E09F1FF24DB300C5E219 /* gson_noarc_static_lib.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1146E0991FF24DB300C5E219 /* libgson_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libgson_noarc_static_lib.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1146E09C1FF24DB300C5E219 /* gson_noarc_static_lib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = gson_noarc_static_lib.h; sourceTree = "<group>"; };
+		1146E09D1FF24DB300C5E219 /* gson_noarc_static_lib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gson_noarc_static_lib.m; sourceTree = "<group>"; };
+		1146E0AA1FF24E2700C5E219 /* Expose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Expose.h; sourceTree = "<group>"; };
+		1146E0AB1FF24E2700C5E219 /* Expose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Expose.m; sourceTree = "<group>"; };
+		1146E0AC1FF24E2700C5E219 /* JsonAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonAdapter.h; sourceTree = "<group>"; };
+		1146E0AD1FF24E2700C5E219 /* JsonAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonAdapter.m; sourceTree = "<group>"; };
+		1146E0AE1FF24E2700C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146E0AF1FF24E2700C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146E0B01FF24E2700C5E219 /* SerializedName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SerializedName.h; sourceTree = "<group>"; };
+		1146E0B11FF24E2700C5E219 /* SerializedName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SerializedName.m; sourceTree = "<group>"; };
+		1146E0B21FF24E2700C5E219 /* Since.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Since.h; sourceTree = "<group>"; };
+		1146E0B31FF24E2700C5E219 /* Since.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Since.m; sourceTree = "<group>"; };
+		1146E0B41FF24E2700C5E219 /* Until.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Until.h; sourceTree = "<group>"; };
+		1146E0B51FF24E2700C5E219 /* Until.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Until.m; sourceTree = "<group>"; };
+		1146E0B61FF24E2700C5E219 /* DefaultDateTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefaultDateTypeAdapter.h; sourceTree = "<group>"; };
+		1146E0B71FF24E2700C5E219 /* DefaultDateTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefaultDateTypeAdapter.m; sourceTree = "<group>"; };
+		1146E0B81FF24E2700C5E219 /* ExclusionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExclusionStrategy.h; sourceTree = "<group>"; };
+		1146E0B91FF24E2700C5E219 /* ExclusionStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExclusionStrategy.m; sourceTree = "<group>"; };
+		1146E0BA1FF24E2700C5E219 /* FieldAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldAttributes.h; sourceTree = "<group>"; };
+		1146E0BB1FF24E2700C5E219 /* FieldAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldAttributes.m; sourceTree = "<group>"; };
+		1146E0BC1FF24E2700C5E219 /* FieldNamingPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldNamingPolicy.h; sourceTree = "<group>"; };
+		1146E0BD1FF24E2700C5E219 /* FieldNamingPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldNamingPolicy.m; sourceTree = "<group>"; };
+		1146E0BE1FF24E2700C5E219 /* FieldNamingStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FieldNamingStrategy.h; sourceTree = "<group>"; };
+		1146E0BF1FF24E2700C5E219 /* FieldNamingStrategy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FieldNamingStrategy.m; sourceTree = "<group>"; };
+		1146E0C01FF24E2700C5E219 /* Gson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Gson.h; sourceTree = "<group>"; };
+		1146E0C11FF24E2700C5E219 /* Gson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Gson.m; sourceTree = "<group>"; };
+		1146E0C21FF24E2700C5E219 /* GsonBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GsonBuilder.h; sourceTree = "<group>"; };
+		1146E0C31FF24E2700C5E219 /* GsonBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GsonBuilder.m; sourceTree = "<group>"; };
+		1146E0C41FF24E2700C5E219 /* InstanceCreator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InstanceCreator.h; sourceTree = "<group>"; };
+		1146E0C51FF24E2700C5E219 /* InstanceCreator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InstanceCreator.m; sourceTree = "<group>"; };
+		1146E0C71FF24E2700C5E219 /* $Gson$Preconditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = $Gson$Preconditions.h; sourceTree = "<group>"; };
+		1146E0C81FF24E2700C5E219 /* $Gson$Preconditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = $Gson$Preconditions.m; sourceTree = "<group>"; };
+		1146E0C91FF24E2700C5E219 /* $Gson$Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = $Gson$Types.h; sourceTree = "<group>"; };
+		1146E0CA1FF24E2700C5E219 /* $Gson$Types.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = $Gson$Types.m; sourceTree = "<group>"; };
+		1146E0CC1FF24E2700C5E219 /* ArrayTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArrayTypeAdapter.h; sourceTree = "<group>"; };
+		1146E0CD1FF24E2700C5E219 /* ArrayTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArrayTypeAdapter.m; sourceTree = "<group>"; };
+		1146E0CE1FF24E2700C5E219 /* CollectionTypeAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionTypeAdapterFactory.h; sourceTree = "<group>"; };
+		1146E0CF1FF24E2700C5E219 /* CollectionTypeAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionTypeAdapterFactory.m; sourceTree = "<group>"; };
+		1146E0D01FF24E2700C5E219 /* DateTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateTypeAdapter.h; sourceTree = "<group>"; };
+		1146E0D11FF24E2700C5E219 /* DateTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateTypeAdapter.m; sourceTree = "<group>"; };
+		1146E0D21FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonAdapterAnnotationTypeAdapterFactory.h; sourceTree = "<group>"; };
+		1146E0D31FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonAdapterAnnotationTypeAdapterFactory.m; sourceTree = "<group>"; };
+		1146E0D41FF24E2700C5E219 /* JsonTreeReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonTreeReader.h; sourceTree = "<group>"; };
+		1146E0D51FF24E2700C5E219 /* JsonTreeReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonTreeReader.m; sourceTree = "<group>"; };
+		1146E0D61FF24E2700C5E219 /* JsonTreeWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonTreeWriter.h; sourceTree = "<group>"; };
+		1146E0D71FF24E2700C5E219 /* JsonTreeWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonTreeWriter.m; sourceTree = "<group>"; };
+		1146E0D81FF24E2700C5E219 /* MapTypeAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapTypeAdapterFactory.h; sourceTree = "<group>"; };
+		1146E0D91FF24E2700C5E219 /* MapTypeAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapTypeAdapterFactory.m; sourceTree = "<group>"; };
+		1146E0DA1FF24E2700C5E219 /* ObjectTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectTypeAdapter.h; sourceTree = "<group>"; };
+		1146E0DB1FF24E2700C5E219 /* ObjectTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectTypeAdapter.m; sourceTree = "<group>"; };
+		1146E0DC1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReflectiveTypeAdapterFactory.h; sourceTree = "<group>"; };
+		1146E0DD1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReflectiveTypeAdapterFactory.m; sourceTree = "<group>"; };
+		1146E0DE1FF24E2700C5E219 /* SqlDateTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SqlDateTypeAdapter.h; sourceTree = "<group>"; };
+		1146E0DF1FF24E2700C5E219 /* SqlDateTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SqlDateTypeAdapter.m; sourceTree = "<group>"; };
+		1146E0E01FF24E2700C5E219 /* TimeTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeTypeAdapter.h; sourceTree = "<group>"; };
+		1146E0E11FF24E2700C5E219 /* TimeTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeTypeAdapter.m; sourceTree = "<group>"; };
+		1146E0E21FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeAdapterRuntimeTypeWrapper.h; sourceTree = "<group>"; };
+		1146E0E31FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeAdapterRuntimeTypeWrapper.m; sourceTree = "<group>"; };
+		1146E0E41FF24E2700C5E219 /* TypeAdapters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeAdapters.h; sourceTree = "<group>"; };
+		1146E0E51FF24E2700C5E219 /* TypeAdapters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeAdapters.m; sourceTree = "<group>"; };
+		1146E0E71FF24E2700C5E219 /* ISO8601Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ISO8601Utils.h; sourceTree = "<group>"; };
+		1146E0E81FF24E2700C5E219 /* ISO8601Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ISO8601Utils.m; sourceTree = "<group>"; };
+		1146E0E91FF24E2700C5E219 /* ConstructorConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstructorConstructor.h; sourceTree = "<group>"; };
+		1146E0EA1FF24E2700C5E219 /* ConstructorConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstructorConstructor.m; sourceTree = "<group>"; };
+		1146E0EB1FF24E2700C5E219 /* Excluder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Excluder.h; sourceTree = "<group>"; };
+		1146E0EC1FF24E2700C5E219 /* Excluder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Excluder.m; sourceTree = "<group>"; };
+		1146E0ED1FF24E2700C5E219 /* JsonReaderInternalAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonReaderInternalAccess.h; sourceTree = "<group>"; };
+		1146E0EE1FF24E2700C5E219 /* JsonReaderInternalAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonReaderInternalAccess.m; sourceTree = "<group>"; };
+		1146E0EF1FF24E2700C5E219 /* LazilyParsedNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LazilyParsedNumber.h; sourceTree = "<group>"; };
+		1146E0F01FF24E2700C5E219 /* LazilyParsedNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LazilyParsedNumber.m; sourceTree = "<group>"; };
+		1146E0F11FF24E2700C5E219 /* LinkedHashTreeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedHashTreeMap.h; sourceTree = "<group>"; };
+		1146E0F21FF24E2700C5E219 /* LinkedHashTreeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedHashTreeMap.m; sourceTree = "<group>"; };
+		1146E0F31FF24E2700C5E219 /* LinkedTreeMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedTreeMap.h; sourceTree = "<group>"; };
+		1146E0F41FF24E2700C5E219 /* LinkedTreeMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedTreeMap.m; sourceTree = "<group>"; };
+		1146E0F51FF24E2700C5E219 /* ObjectConstructor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ObjectConstructor.h; sourceTree = "<group>"; };
+		1146E0F61FF24E2700C5E219 /* ObjectConstructor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectConstructor.m; sourceTree = "<group>"; };
+		1146E0F71FF24E2700C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146E0F81FF24E2700C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146E0F91FF24E2700C5E219 /* Primitives.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Primitives.h; sourceTree = "<group>"; };
+		1146E0FA1FF24E2700C5E219 /* Primitives.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Primitives.m; sourceTree = "<group>"; };
+		1146E0FB1FF24E2700C5E219 /* Streams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Streams.h; sourceTree = "<group>"; };
+		1146E0FC1FF24E2700C5E219 /* Streams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Streams.m; sourceTree = "<group>"; };
+		1146E0FD1FF24E2700C5E219 /* UnsafeAllocator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnsafeAllocator.h; sourceTree = "<group>"; };
+		1146E0FE1FF24E2700C5E219 /* UnsafeAllocator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnsafeAllocator.m; sourceTree = "<group>"; };
+		1146E0FF1FF24E2700C5E219 /* JsonArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonArray.h; sourceTree = "<group>"; };
+		1146E1001FF24E2700C5E219 /* JsonArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonArray.m; sourceTree = "<group>"; };
+		1146E1011FF24E2700C5E219 /* JsonDeserializationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDeserializationContext.h; sourceTree = "<group>"; };
+		1146E1021FF24E2700C5E219 /* JsonDeserializationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDeserializationContext.m; sourceTree = "<group>"; };
+		1146E1031FF24E2700C5E219 /* JsonDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonDeserializer.h; sourceTree = "<group>"; };
+		1146E1041FF24E2700C5E219 /* JsonDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonDeserializer.m; sourceTree = "<group>"; };
+		1146E1051FF24E2700C5E219 /* JsonElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonElement.h; sourceTree = "<group>"; };
+		1146E1061FF24E2700C5E219 /* JsonElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonElement.m; sourceTree = "<group>"; };
+		1146E1071FF24E2700C5E219 /* JsonIOException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonIOException.h; sourceTree = "<group>"; };
+		1146E1081FF24E2700C5E219 /* JsonIOException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonIOException.m; sourceTree = "<group>"; };
+		1146E1091FF24E2700C5E219 /* JsonNull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonNull.h; sourceTree = "<group>"; };
+		1146E10A1FF24E2700C5E219 /* JsonNull.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonNull.m; sourceTree = "<group>"; };
+		1146E10B1FF24E2700C5E219 /* JsonObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonObject.h; sourceTree = "<group>"; };
+		1146E10C1FF24E2700C5E219 /* JsonObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonObject.m; sourceTree = "<group>"; };
+		1146E10D1FF24E2700C5E219 /* JsonParseException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonParseException.h; sourceTree = "<group>"; };
+		1146E10E1FF24E2700C5E219 /* JsonParseException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonParseException.m; sourceTree = "<group>"; };
+		1146E10F1FF24E2700C5E219 /* JsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
+		1146E1101FF24E2700C5E219 /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
+		1146E1111FF24E2700C5E219 /* JsonPrimitive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonPrimitive.h; sourceTree = "<group>"; };
+		1146E1121FF24E2700C5E219 /* JsonPrimitive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonPrimitive.m; sourceTree = "<group>"; };
+		1146E1131FF24E2700C5E219 /* JsonSerializationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSerializationContext.h; sourceTree = "<group>"; };
+		1146E1141FF24E2700C5E219 /* JsonSerializationContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonSerializationContext.m; sourceTree = "<group>"; };
+		1146E1151FF24E2700C5E219 /* JsonSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSerializer.h; sourceTree = "<group>"; };
+		1146E1161FF24E2700C5E219 /* JsonSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonSerializer.m; sourceTree = "<group>"; };
+		1146E1171FF24E2700C5E219 /* JsonStreamParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonStreamParser.h; sourceTree = "<group>"; };
+		1146E1181FF24E2700C5E219 /* JsonStreamParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonStreamParser.m; sourceTree = "<group>"; };
+		1146E1191FF24E2700C5E219 /* JsonSyntaxException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonSyntaxException.h; sourceTree = "<group>"; };
+		1146E11A1FF24E2700C5E219 /* JsonSyntaxException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonSyntaxException.m; sourceTree = "<group>"; };
+		1146E11B1FF24E2700C5E219 /* LongSerializationPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongSerializationPolicy.h; sourceTree = "<group>"; };
+		1146E11C1FF24E2700C5E219 /* LongSerializationPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongSerializationPolicy.m; sourceTree = "<group>"; };
+		1146E11D1FF24E2700C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146E11E1FF24E2700C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146E1201FF24E2700C5E219 /* package-info.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "package-info.h"; sourceTree = "<group>"; };
+		1146E1211FF24E2700C5E219 /* package-info.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "package-info.m"; sourceTree = "<group>"; };
+		1146E1221FF24E2700C5E219 /* TypeToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeToken.h; sourceTree = "<group>"; };
+		1146E1231FF24E2700C5E219 /* TypeToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeToken.m; sourceTree = "<group>"; };
+		1146E1251FF24E2700C5E219 /* JsonReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonReader.h; sourceTree = "<group>"; };
+		1146E1261FF24E2700C5E219 /* JsonReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonReader.m; sourceTree = "<group>"; };
+		1146E1271FF24E2700C5E219 /* JsonScope.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonScope.h; sourceTree = "<group>"; };
+		1146E1281FF24E2700C5E219 /* JsonScope.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonScope.m; sourceTree = "<group>"; };
+		1146E1291FF24E2700C5E219 /* JsonToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonToken.h; sourceTree = "<group>"; };
+		1146E12A1FF24E2700C5E219 /* JsonToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonToken.m; sourceTree = "<group>"; };
+		1146E12B1FF24E2700C5E219 /* JsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonWriter.h; sourceTree = "<group>"; };
+		1146E12C1FF24E2700C5E219 /* JsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonWriter.m; sourceTree = "<group>"; };
+		1146E12D1FF24E2700C5E219 /* MalformedJsonException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MalformedJsonException.h; sourceTree = "<group>"; };
+		1146E12E1FF24E2700C5E219 /* MalformedJsonException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MalformedJsonException.m; sourceTree = "<group>"; };
+		1146E12F1FF24E2700C5E219 /* TreeTypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreeTypeAdapter.h; sourceTree = "<group>"; };
+		1146E1301FF24E2700C5E219 /* TreeTypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreeTypeAdapter.m; sourceTree = "<group>"; };
+		1146E1311FF24E2700C5E219 /* TypeAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeAdapter.h; sourceTree = "<group>"; };
+		1146E1321FF24E2700C5E219 /* TypeAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeAdapter.m; sourceTree = "<group>"; };
+		1146E1331FF24E2700C5E219 /* TypeAdapterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TypeAdapterFactory.h; sourceTree = "<group>"; };
+		1146E1341FF24E2700C5E219 /* TypeAdapterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TypeAdapterFactory.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1146E0961FF24DB300C5E219 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1146E0901FF24DB300C5E219 = {
+			isa = PBXGroup;
+			children = (
+				1146E0A51FF24E2700C5E219 /* source_gson_262_noarc */,
+				1146E09B1FF24DB300C5E219 /* gson_noarc_static_lib */,
+				1146E09A1FF24DB300C5E219 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1146E09A1FF24DB300C5E219 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0991FF24DB300C5E219 /* libgson_noarc_static_lib.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1146E09B1FF24DB300C5E219 /* gson_noarc_static_lib */ = {
+			isa = PBXGroup;
+			children = (
+				1146E09C1FF24DB300C5E219 /* gson_noarc_static_lib.h */,
+				1146E09D1FF24DB300C5E219 /* gson_noarc_static_lib.m */,
+			);
+			path = gson_noarc_static_lib;
+			sourceTree = "<group>";
+		};
+		1146E0A51FF24E2700C5E219 /* source_gson_262_noarc */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0A61FF24E2700C5E219 /* com */,
+			);
+			path = source_gson_262_noarc;
+			sourceTree = "<group>";
+		};
+		1146E0A61FF24E2700C5E219 /* com */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0A71FF24E2700C5E219 /* google */,
+			);
+			path = com;
+			sourceTree = "<group>";
+		};
+		1146E0A71FF24E2700C5E219 /* google */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0A81FF24E2700C5E219 /* gson */,
+			);
+			path = google;
+			sourceTree = "<group>";
+		};
+		1146E0A81FF24E2700C5E219 /* gson */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0A91FF24E2700C5E219 /* annotations */,
+				1146E0B61FF24E2700C5E219 /* DefaultDateTypeAdapter.h */,
+				1146E0B71FF24E2700C5E219 /* DefaultDateTypeAdapter.m */,
+				1146E0B81FF24E2700C5E219 /* ExclusionStrategy.h */,
+				1146E0B91FF24E2700C5E219 /* ExclusionStrategy.m */,
+				1146E0BA1FF24E2700C5E219 /* FieldAttributes.h */,
+				1146E0BB1FF24E2700C5E219 /* FieldAttributes.m */,
+				1146E0BC1FF24E2700C5E219 /* FieldNamingPolicy.h */,
+				1146E0BD1FF24E2700C5E219 /* FieldNamingPolicy.m */,
+				1146E0BE1FF24E2700C5E219 /* FieldNamingStrategy.h */,
+				1146E0BF1FF24E2700C5E219 /* FieldNamingStrategy.m */,
+				1146E0C01FF24E2700C5E219 /* Gson.h */,
+				1146E0C11FF24E2700C5E219 /* Gson.m */,
+				1146E0C21FF24E2700C5E219 /* GsonBuilder.h */,
+				1146E0C31FF24E2700C5E219 /* GsonBuilder.m */,
+				1146E0C41FF24E2700C5E219 /* InstanceCreator.h */,
+				1146E0C51FF24E2700C5E219 /* InstanceCreator.m */,
+				1146E0C61FF24E2700C5E219 /* internal */,
+				1146E0FF1FF24E2700C5E219 /* JsonArray.h */,
+				1146E1001FF24E2700C5E219 /* JsonArray.m */,
+				1146E1011FF24E2700C5E219 /* JsonDeserializationContext.h */,
+				1146E1021FF24E2700C5E219 /* JsonDeserializationContext.m */,
+				1146E1031FF24E2700C5E219 /* JsonDeserializer.h */,
+				1146E1041FF24E2700C5E219 /* JsonDeserializer.m */,
+				1146E1051FF24E2700C5E219 /* JsonElement.h */,
+				1146E1061FF24E2700C5E219 /* JsonElement.m */,
+				1146E1071FF24E2700C5E219 /* JsonIOException.h */,
+				1146E1081FF24E2700C5E219 /* JsonIOException.m */,
+				1146E1091FF24E2700C5E219 /* JsonNull.h */,
+				1146E10A1FF24E2700C5E219 /* JsonNull.m */,
+				1146E10B1FF24E2700C5E219 /* JsonObject.h */,
+				1146E10C1FF24E2700C5E219 /* JsonObject.m */,
+				1146E10D1FF24E2700C5E219 /* JsonParseException.h */,
+				1146E10E1FF24E2700C5E219 /* JsonParseException.m */,
+				1146E10F1FF24E2700C5E219 /* JsonParser.h */,
+				1146E1101FF24E2700C5E219 /* JsonParser.m */,
+				1146E1111FF24E2700C5E219 /* JsonPrimitive.h */,
+				1146E1121FF24E2700C5E219 /* JsonPrimitive.m */,
+				1146E1131FF24E2700C5E219 /* JsonSerializationContext.h */,
+				1146E1141FF24E2700C5E219 /* JsonSerializationContext.m */,
+				1146E1151FF24E2700C5E219 /* JsonSerializer.h */,
+				1146E1161FF24E2700C5E219 /* JsonSerializer.m */,
+				1146E1171FF24E2700C5E219 /* JsonStreamParser.h */,
+				1146E1181FF24E2700C5E219 /* JsonStreamParser.m */,
+				1146E1191FF24E2700C5E219 /* JsonSyntaxException.h */,
+				1146E11A1FF24E2700C5E219 /* JsonSyntaxException.m */,
+				1146E11B1FF24E2700C5E219 /* LongSerializationPolicy.h */,
+				1146E11C1FF24E2700C5E219 /* LongSerializationPolicy.m */,
+				1146E11D1FF24E2700C5E219 /* package-info.h */,
+				1146E11E1FF24E2700C5E219 /* package-info.m */,
+				1146E11F1FF24E2700C5E219 /* reflect */,
+				1146E1241FF24E2700C5E219 /* stream */,
+				1146E12F1FF24E2700C5E219 /* TreeTypeAdapter.h */,
+				1146E1301FF24E2700C5E219 /* TreeTypeAdapter.m */,
+				1146E1311FF24E2700C5E219 /* TypeAdapter.h */,
+				1146E1321FF24E2700C5E219 /* TypeAdapter.m */,
+				1146E1331FF24E2700C5E219 /* TypeAdapterFactory.h */,
+				1146E1341FF24E2700C5E219 /* TypeAdapterFactory.m */,
+			);
+			path = gson;
+			sourceTree = "<group>";
+		};
+		1146E0A91FF24E2700C5E219 /* annotations */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0AA1FF24E2700C5E219 /* Expose.h */,
+				1146E0AB1FF24E2700C5E219 /* Expose.m */,
+				1146E0AC1FF24E2700C5E219 /* JsonAdapter.h */,
+				1146E0AD1FF24E2700C5E219 /* JsonAdapter.m */,
+				1146E0AE1FF24E2700C5E219 /* package-info.h */,
+				1146E0AF1FF24E2700C5E219 /* package-info.m */,
+				1146E0B01FF24E2700C5E219 /* SerializedName.h */,
+				1146E0B11FF24E2700C5E219 /* SerializedName.m */,
+				1146E0B21FF24E2700C5E219 /* Since.h */,
+				1146E0B31FF24E2700C5E219 /* Since.m */,
+				1146E0B41FF24E2700C5E219 /* Until.h */,
+				1146E0B51FF24E2700C5E219 /* Until.m */,
+			);
+			path = annotations;
+			sourceTree = "<group>";
+		};
+		1146E0C61FF24E2700C5E219 /* internal */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0C71FF24E2700C5E219 /* $Gson$Preconditions.h */,
+				1146E0C81FF24E2700C5E219 /* $Gson$Preconditions.m */,
+				1146E0C91FF24E2700C5E219 /* $Gson$Types.h */,
+				1146E0CA1FF24E2700C5E219 /* $Gson$Types.m */,
+				1146E0CB1FF24E2700C5E219 /* bind */,
+				1146E0E91FF24E2700C5E219 /* ConstructorConstructor.h */,
+				1146E0EA1FF24E2700C5E219 /* ConstructorConstructor.m */,
+				1146E0EB1FF24E2700C5E219 /* Excluder.h */,
+				1146E0EC1FF24E2700C5E219 /* Excluder.m */,
+				1146E0ED1FF24E2700C5E219 /* JsonReaderInternalAccess.h */,
+				1146E0EE1FF24E2700C5E219 /* JsonReaderInternalAccess.m */,
+				1146E0EF1FF24E2700C5E219 /* LazilyParsedNumber.h */,
+				1146E0F01FF24E2700C5E219 /* LazilyParsedNumber.m */,
+				1146E0F11FF24E2700C5E219 /* LinkedHashTreeMap.h */,
+				1146E0F21FF24E2700C5E219 /* LinkedHashTreeMap.m */,
+				1146E0F31FF24E2700C5E219 /* LinkedTreeMap.h */,
+				1146E0F41FF24E2700C5E219 /* LinkedTreeMap.m */,
+				1146E0F51FF24E2700C5E219 /* ObjectConstructor.h */,
+				1146E0F61FF24E2700C5E219 /* ObjectConstructor.m */,
+				1146E0F71FF24E2700C5E219 /* package-info.h */,
+				1146E0F81FF24E2700C5E219 /* package-info.m */,
+				1146E0F91FF24E2700C5E219 /* Primitives.h */,
+				1146E0FA1FF24E2700C5E219 /* Primitives.m */,
+				1146E0FB1FF24E2700C5E219 /* Streams.h */,
+				1146E0FC1FF24E2700C5E219 /* Streams.m */,
+				1146E0FD1FF24E2700C5E219 /* UnsafeAllocator.h */,
+				1146E0FE1FF24E2700C5E219 /* UnsafeAllocator.m */,
+			);
+			path = internal;
+			sourceTree = "<group>";
+		};
+		1146E0CB1FF24E2700C5E219 /* bind */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0CC1FF24E2700C5E219 /* ArrayTypeAdapter.h */,
+				1146E0CD1FF24E2700C5E219 /* ArrayTypeAdapter.m */,
+				1146E0CE1FF24E2700C5E219 /* CollectionTypeAdapterFactory.h */,
+				1146E0CF1FF24E2700C5E219 /* CollectionTypeAdapterFactory.m */,
+				1146E0D01FF24E2700C5E219 /* DateTypeAdapter.h */,
+				1146E0D11FF24E2700C5E219 /* DateTypeAdapter.m */,
+				1146E0D21FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.h */,
+				1146E0D31FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.m */,
+				1146E0D41FF24E2700C5E219 /* JsonTreeReader.h */,
+				1146E0D51FF24E2700C5E219 /* JsonTreeReader.m */,
+				1146E0D61FF24E2700C5E219 /* JsonTreeWriter.h */,
+				1146E0D71FF24E2700C5E219 /* JsonTreeWriter.m */,
+				1146E0D81FF24E2700C5E219 /* MapTypeAdapterFactory.h */,
+				1146E0D91FF24E2700C5E219 /* MapTypeAdapterFactory.m */,
+				1146E0DA1FF24E2700C5E219 /* ObjectTypeAdapter.h */,
+				1146E0DB1FF24E2700C5E219 /* ObjectTypeAdapter.m */,
+				1146E0DC1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.h */,
+				1146E0DD1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.m */,
+				1146E0DE1FF24E2700C5E219 /* SqlDateTypeAdapter.h */,
+				1146E0DF1FF24E2700C5E219 /* SqlDateTypeAdapter.m */,
+				1146E0E01FF24E2700C5E219 /* TimeTypeAdapter.h */,
+				1146E0E11FF24E2700C5E219 /* TimeTypeAdapter.m */,
+				1146E0E21FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.h */,
+				1146E0E31FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.m */,
+				1146E0E41FF24E2700C5E219 /* TypeAdapters.h */,
+				1146E0E51FF24E2700C5E219 /* TypeAdapters.m */,
+				1146E0E61FF24E2700C5E219 /* util */,
+			);
+			path = bind;
+			sourceTree = "<group>";
+		};
+		1146E0E61FF24E2700C5E219 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				1146E0E71FF24E2700C5E219 /* ISO8601Utils.h */,
+				1146E0E81FF24E2700C5E219 /* ISO8601Utils.m */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		1146E11F1FF24E2700C5E219 /* reflect */ = {
+			isa = PBXGroup;
+			children = (
+				1146E1201FF24E2700C5E219 /* package-info.h */,
+				1146E1211FF24E2700C5E219 /* package-info.m */,
+				1146E1221FF24E2700C5E219 /* TypeToken.h */,
+				1146E1231FF24E2700C5E219 /* TypeToken.m */,
+			);
+			path = reflect;
+			sourceTree = "<group>";
+		};
+		1146E1241FF24E2700C5E219 /* stream */ = {
+			isa = PBXGroup;
+			children = (
+				1146E1251FF24E2700C5E219 /* JsonReader.h */,
+				1146E1261FF24E2700C5E219 /* JsonReader.m */,
+				1146E1271FF24E2700C5E219 /* JsonScope.h */,
+				1146E1281FF24E2700C5E219 /* JsonScope.m */,
+				1146E1291FF24E2700C5E219 /* JsonToken.h */,
+				1146E12A1FF24E2700C5E219 /* JsonToken.m */,
+				1146E12B1FF24E2700C5E219 /* JsonWriter.h */,
+				1146E12C1FF24E2700C5E219 /* JsonWriter.m */,
+				1146E12D1FF24E2700C5E219 /* MalformedJsonException.h */,
+				1146E12E1FF24E2700C5E219 /* MalformedJsonException.m */,
+			);
+			path = stream;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1146E0981FF24DB300C5E219 /* gson_noarc_static_lib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1146E0A21FF24DB300C5E219 /* Build configuration list for PBXNativeTarget "gson_noarc_static_lib" */;
+			buildPhases = (
+				1146E0951FF24DB300C5E219 /* Sources */,
+				1146E0961FF24DB300C5E219 /* Frameworks */,
+				1146E0971FF24DB300C5E219 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = gson_noarc_static_lib;
+			productName = gson_noarc_static_lib;
+			productReference = 1146E0991FF24DB300C5E219 /* libgson_noarc_static_lib.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1146E0911FF24DB300C5E219 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = gson_noarc_static_lib;
+				TargetAttributes = {
+					1146E0981FF24DB300C5E219 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 646945T82S;
+						ProvisioningStyle = Automatic;
+					};
+					1146E1BB1FF24E8000C5E219 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 646945T82S;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 1146E0941FF24DB300C5E219 /* Build configuration list for PBXProject "gson_noarc_static_lib" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1146E0901FF24DB300C5E219;
+			productRefGroup = 1146E09A1FF24DB300C5E219 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1146E0981FF24DB300C5E219 /* gson_noarc_static_lib */,
+				1146E1BB1FF24E8000C5E219 /* gson_aggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		118222321FF24E94005BCD23 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target ImageFilters ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target ImageFilters -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1146E0951FF24DB300C5E219 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1146E16B1FF24E2700C5E219 /* JsonSyntaxException.m in Sources */,
+				1146E1431FF24E2700C5E219 /* $Gson$Preconditions.m in Sources */,
+				1146E1591FF24E2700C5E219 /* ObjectConstructor.m in Sources */,
+				1146E1401FF24E2700C5E219 /* Gson.m in Sources */,
+				1146E16E1FF24E2700C5E219 /* package-info.m in Sources */,
+				1146E15D1FF24E2700C5E219 /* UnsafeAllocator.m in Sources */,
+				1146E1421FF24E2700C5E219 /* InstanceCreator.m in Sources */,
+				1146E1391FF24E2700C5E219 /* Since.m in Sources */,
+				1146E13F1FF24E2700C5E219 /* FieldNamingStrategy.m in Sources */,
+				1146E1751FF24E2700C5E219 /* TreeTypeAdapter.m in Sources */,
+				1146E1651FF24E2700C5E219 /* JsonParseException.m in Sources */,
+				1146E1471FF24E2700C5E219 /* DateTypeAdapter.m in Sources */,
+				1146E1491FF24E2700C5E219 /* JsonTreeReader.m in Sources */,
+				1146E1451FF24E2700C5E219 /* ArrayTypeAdapter.m in Sources */,
+				1146E1611FF24E2700C5E219 /* JsonElement.m in Sources */,
+				1146E1661FF24E2700C5E219 /* JsonParser.m in Sources */,
+				1146E1501FF24E2700C5E219 /* TypeAdapterRuntimeTypeWrapper.m in Sources */,
+				1146E1581FF24E2700C5E219 /* LinkedTreeMap.m in Sources */,
+				1146E1511FF24E2700C5E219 /* TypeAdapters.m in Sources */,
+				1146E13B1FF24E2700C5E219 /* DefaultDateTypeAdapter.m in Sources */,
+				1146E1671FF24E2700C5E219 /* JsonPrimitive.m in Sources */,
+				1146E1571FF24E2700C5E219 /* LinkedHashTreeMap.m in Sources */,
+				1146E1681FF24E2700C5E219 /* JsonSerializationContext.m in Sources */,
+				1146E09E1FF24DB300C5E219 /* gson_noarc_static_lib.m in Sources */,
+				1146E1541FF24E2700C5E219 /* Excluder.m in Sources */,
+				1146E1351FF24E2700C5E219 /* Expose.m in Sources */,
+				1146E15A1FF24E2700C5E219 /* package-info.m in Sources */,
+				1146E14D1FF24E2700C5E219 /* ReflectiveTypeAdapterFactory.m in Sources */,
+				1146E1481FF24E2700C5E219 /* JsonAdapterAnnotationTypeAdapterFactory.m in Sources */,
+				1146E1741FF24E2700C5E219 /* MalformedJsonException.m in Sources */,
+				1146E1601FF24E2700C5E219 /* JsonDeserializer.m in Sources */,
+				1146E1691FF24E2700C5E219 /* JsonSerializer.m in Sources */,
+				1146E15F1FF24E2700C5E219 /* JsonDeserializationContext.m in Sources */,
+				1146E1521FF24E2700C5E219 /* ISO8601Utils.m in Sources */,
+				1146E1411FF24E2700C5E219 /* GsonBuilder.m in Sources */,
+				1146E1641FF24E2700C5E219 /* JsonObject.m in Sources */,
+				1146E1441FF24E2700C5E219 /* $Gson$Types.m in Sources */,
+				1146E13E1FF24E2700C5E219 /* FieldNamingPolicy.m in Sources */,
+				1146E1711FF24E2700C5E219 /* JsonScope.m in Sources */,
+				1146E1461FF24E2700C5E219 /* CollectionTypeAdapterFactory.m in Sources */,
+				1146E14E1FF24E2700C5E219 /* SqlDateTypeAdapter.m in Sources */,
+				1146E1621FF24E2700C5E219 /* JsonIOException.m in Sources */,
+				1146E15C1FF24E2700C5E219 /* Streams.m in Sources */,
+				1146E15E1FF24E2700C5E219 /* JsonArray.m in Sources */,
+				1146E13C1FF24E2700C5E219 /* ExclusionStrategy.m in Sources */,
+				1146E16C1FF24E2700C5E219 /* LongSerializationPolicy.m in Sources */,
+				1146E1371FF24E2700C5E219 /* package-info.m in Sources */,
+				1146E1361FF24E2700C5E219 /* JsonAdapter.m in Sources */,
+				1146E1551FF24E2700C5E219 /* JsonReaderInternalAccess.m in Sources */,
+				1146E1701FF24E2700C5E219 /* JsonReader.m in Sources */,
+				1146E14B1FF24E2700C5E219 /* MapTypeAdapterFactory.m in Sources */,
+				1146E14C1FF24E2700C5E219 /* ObjectTypeAdapter.m in Sources */,
+				1146E13A1FF24E2700C5E219 /* Until.m in Sources */,
+				1146E16F1FF24E2700C5E219 /* TypeToken.m in Sources */,
+				1146E1771FF24E2700C5E219 /* TypeAdapterFactory.m in Sources */,
+				1146E1381FF24E2700C5E219 /* SerializedName.m in Sources */,
+				1146E14A1FF24E2700C5E219 /* JsonTreeWriter.m in Sources */,
+				1146E1721FF24E2700C5E219 /* JsonToken.m in Sources */,
+				1146E1631FF24E2700C5E219 /* JsonNull.m in Sources */,
+				1146E15B1FF24E2700C5E219 /* Primitives.m in Sources */,
+				1146E16D1FF24E2700C5E219 /* package-info.m in Sources */,
+				1146E16A1FF24E2700C5E219 /* JsonStreamParser.m in Sources */,
+				1146E1561FF24E2700C5E219 /* LazilyParsedNumber.m in Sources */,
+				1146E14F1FF24E2700C5E219 /* TimeTypeAdapter.m in Sources */,
+				1146E13D1FF24E2700C5E219 /* FieldAttributes.m in Sources */,
+				1146E1731FF24E2700C5E219 /* JsonWriter.m in Sources */,
+				1146E1531FF24E2700C5E219 /* ConstructorConstructor.m in Sources */,
+				1146E1761FF24E2700C5E219 /* TypeAdapter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1146E0A01FF24DB300C5E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				J2OBJC_HOME = "/j2objc-dist";
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include ${SRCROOT}/**";
+			};
+			name = Debug;
+		};
+		1146E0A11FF24DB300C5E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "${J2OBJC_HOME}/frameworks";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				J2OBJC_HOME = "/j2objc-dist";
+				LIBRARY_SEARCH_PATHS = "${J2OBJC_HOME}/lib";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				SDKROOT = iphoneos;
+				USER_HEADER_SEARCH_PATHS = "${J2OBJC_HOME}/include ${SRCROOT}/**";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1146E0A31FF24DB300C5E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 646945T82S;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		1146E0A41FF24DB300C5E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 646945T82S;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-ljre_emul",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		1146E1BD1FF24E8000C5E219 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 646945T82S;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1146E1BE1FF24E8000C5E219 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 646945T82S;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1146E0941FF24DB300C5E219 /* Build configuration list for PBXProject "gson_noarc_static_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1146E0A01FF24DB300C5E219 /* Debug */,
+				1146E0A11FF24DB300C5E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1146E0A21FF24DB300C5E219 /* Build configuration list for PBXNativeTarget "gson_noarc_static_lib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1146E0A31FF24DB300C5E219 /* Debug */,
+				1146E0A41FF24DB300C5E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1146E1BC1FF24E8000C5E219 /* Build configuration list for PBXAggregateTarget "gson_aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1146E1BD1FF24E8000C5E219 /* Debug */,
+				1146E1BE1FF24E8000C5E219 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1146E0911FF24DB300C5E219 /* Project object */;
+}
