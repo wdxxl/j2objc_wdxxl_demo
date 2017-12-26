@@ -29,15 +29,15 @@
     <framework src="libz.tbd"/>
     <!-- Lucene Index -->
     <header-file src="src/ios/org" />
-    <source-file framework="true" src="src/ios/libs/liblucene_arc_static_lib.a" target-dir="../../.."/>
+    <source-file framework="true" src="src/ios/libs/liblucene_noarc_static_lib.a" target-dir="../../.."/>
     <!-- customer code-->
     <header-file src="src/ios/com" />
     <!-- Commons-lang3-3.4 & Commons-codec1.10 -->
-    <source-file framework="true" src="src/ios/libs/libcommons_arc_static_lib.a" target-dir="../../.."/>
+    <source-file framework="true" src="src/ios/libs/libcommons_noarc_static_lib.a" target-dir="../../.."/>
     <!-- jsoup-1.8.3 -->
-    <source-file framework="true" src="src/ios/libs/libjsoup_arc_static_lib.a" target-dir="../../.."/>
+    <source-file framework="true" src="src/ios/libs/libjsoup_noarc_static_lib.a" target-dir="../../.."/>
     <!-- gson-2.6.2 -->
-    <source-file framework="true" src="src/ios/libs/libgson_arc_static_lib.a" target-dir="../../.."/>
+    <source-file framework="true" src="src/ios/libs/libgson_noarc_static_lib.a" target-dir="../../.."/>
     <!-- sync index Start -->
     <source-file src="src/ios/com/flatirons/ppmob/sync/index/IDoIndexService.m" compile-flags="-Icordova_lucene_tunning/plugins/com.wdxxl.plugin.lucene/src/ios/com/flatirons/ppmob/sync/index/IDoIndexService.m" />
     <source-file src="src/ios/com/flatirons/ppmob/sync/index/impl/DoIndexServiceImpl.m" compile-flags="-Icordova_lucene_tunning/plugins/com.wdxxl.plugin.lucene/src/ios/com/flatirons/ppmob/sync/index/impl/DoIndexServiceImpl.m" />
