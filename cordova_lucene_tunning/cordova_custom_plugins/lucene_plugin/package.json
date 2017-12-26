@@ -1,0 +1,14 @@
+{
+  "name": "lucene_plugin",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.wdxxl.plugin.lucene",
+    "platforms": []
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "",
+  "license": "ISC"
+}
