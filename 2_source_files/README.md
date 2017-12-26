@@ -19,3 +19,9 @@ j2objc -use-arc -d source_jsoup_183_fis_arc jsoup-1.8.3-fis-sources.jar
 ```
 j2objc -use-arc -d source_gson_262_arc gson-2.6.2-sources.jar
 ```
+
+### Step 5: remove all method files keep headers
+```
+javac RemoveMethodFiles_Arc.java
+java RemoveMethodFiles_Arc
+```
