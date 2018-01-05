@@ -9,7 +9,18 @@
 
 #import "java/lang/NullPointerException.h"
 
+@interface HelloWorldNative () {
+ @public
+  NSString *tableId_;
+}
+
+@end
+
+J2OBJC_FIELD_SETTER(HelloWorldNative, tableId_, NSString *)
+
 @implementation HelloWorldNative
+
+@synthesize tableId = tableId_;
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
 - (instancetype)init {
@@ -22,6 +33,11 @@ J2OBJC_IGNORE_DESIGNATED_END
   HelloWorldNative_mainWithNSStringArray_(args);
 }
 
+- (void)dealloc {
+  RELEASE_(tableId_);
+  [super dealloc];
+}
+
 + (const J2ObjcClassInfo *)__metadata {
   static J2ObjcMethodInfo methods[] = {
     { NULL, NULL, 0x1, -1, -1, -1, -1, -1, -1 },
@@ -32,8 +48,11 @@ J2OBJC_IGNORE_DESIGNATED_END
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(mainWithNSStringArray:);
   #pragma clang diagnostic pop
+  static const J2ObjcFieldInfo fields[] = {
+    { "tableId_", "LNSString;", .constantValue.asLong = 0, 0x2, -1, -1, -1, -1 },
+  };
   static const void *ptrTable[] = { "main", "[LNSString;" };
-  static const J2ObjcClassInfo _HelloWorldNative = { "HelloWorldNative", NULL, ptrTable, methods, NULL, 7, 0x1, 2, 0, -1, -1, -1, -1, -1 };
+  static const J2ObjcClassInfo _HelloWorldNative = { "HelloWorldNative", NULL, ptrTable, methods, fields, 7, 0x1, 2, 1, -1, -1, -1, -1, -1 };
   return &_HelloWorldNative;
 }
 

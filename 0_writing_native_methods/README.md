@@ -15,3 +15,7 @@ Exception in thread "main" java.lang.NullPointerException
 	at 0x00000001044a3794 java.lang.reflect.Method.invoke:object:() + 22
 	at 0x00000001044a339e java.lang.reflect.Method.invoke() + 332
 ```
+
+
+##### @property in Header files & @synthesize declaration in .m files
+[@Property annotations](https://github.com/google/j2objc/issues/927)

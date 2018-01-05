@@ -19,6 +19,7 @@
 @class IOSObjectArray;
 
 @interface HelloWorldNative : NSObject
+@property (copy, nonatomic) NSString *tableId;
 
 #pragma mark Public
 
@@ -32,9 +33,9 @@ J2OBJC_EMPTY_STATIC_INIT(HelloWorldNative)
 
 FOUNDATION_EXPORT void HelloWorldNative_init(HelloWorldNative *self);
 
-FOUNDATION_EXPORT HelloWorldNative *new_HelloWorldNative_init(void) NS_RETURNS_RETAINED;
+FOUNDATION_EXPORT HelloWorldNative *new_HelloWorldNative_init() NS_RETURNS_RETAINED;
 
-FOUNDATION_EXPORT HelloWorldNative *create_HelloWorldNative_init(void);
+FOUNDATION_EXPORT HelloWorldNative *create_HelloWorldNative_init();
 
 FOUNDATION_EXPORT void HelloWorldNative_mainWithNSStringArray_(IOSObjectArray *args);
 
