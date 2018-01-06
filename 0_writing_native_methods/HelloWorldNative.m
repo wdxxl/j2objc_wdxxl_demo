@@ -29,6 +29,7 @@ J2OBJC_IGNORE_DESIGNATED_BEGIN
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
+
 + (void)mainWithNSStringArray:(IOSObjectArray *)args {
   HelloWorldNative_mainWithNSStringArray_(args);
 }

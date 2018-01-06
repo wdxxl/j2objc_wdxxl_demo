@@ -7,6 +7,10 @@ public class HelloWorldNative {
   @Property("nonatomic, copy")
   private String tableId;
 
+  /*-HEADER[
+  @property (nonatomic, assign) void (^callbackBlockFailed)(FISOperationCallbackModel *failedModel);
+  ]-*/
+
   public static native void main(String[] args) /*-[
       NSLog(@"%s", "HelloWorldNative");
       @throw [[JavaLangNullPointerException alloc] init];

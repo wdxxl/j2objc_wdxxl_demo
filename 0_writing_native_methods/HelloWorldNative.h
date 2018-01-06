@@ -27,6 +27,8 @@
 
 + (void)mainWithNSStringArray:(IOSObjectArray *)args;
 
+@property (nonatomic, assign) void (^callbackBlockFailed)(FISOperationCallbackModel *failedModel);
+
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(HelloWorldNative)
