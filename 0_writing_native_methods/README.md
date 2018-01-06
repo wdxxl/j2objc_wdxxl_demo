@@ -14,8 +14,13 @@ Exception in thread "main" java.lang.NullPointerException
 	at 0x000000010421979d HelloWorldNative.main() + 29
 	at 0x00000001044a3794 java.lang.reflect.Method.invoke:object:() + 22
 	at 0x00000001044a339e java.lang.reflect.Method.invoke() + 332
+
+$ pwd
+/Users/wdxxl/J2OBJC_Github/j2objc_wdxxl_demo/0_writing_native_methods/src/main/java/com/wdxxl/service
+j2objc ILogService.java impl/IOSLogServiceImpl.java
 ```
 
 
 ##### @property in Header files & @synthesize declaration in .m files
 [@Property annotations](https://github.com/google/j2objc/issues/927)
+
