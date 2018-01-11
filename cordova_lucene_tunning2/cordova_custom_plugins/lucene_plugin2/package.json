@@ -1,0 +1,17 @@
+{
+  "name": "lucene_plugin2",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "com.wdxxl.plugin.lucene",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "",
+  "license": "ISC"
+}
