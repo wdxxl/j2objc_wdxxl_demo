@@ -11,6 +11,7 @@ j2objc -d source_lucene_350_fis_noarc lucene-core-grouping-3.5.0-sources.jar
 j2objc -use-arc -d source_lucene_350_fis_arc lucene-core-grouping-3.5.0-sources.jar
 
 j2objc -use-arc -d source_lucene_350_weak_fis_arc lucene_fis-core-grouping-3.5.0-sources.jar
+j2objc -d source_lucene_350_weak_fis_noarc lucene_fis-core-grouping-3.5.0-sources.jar
 ```
 ### Step 2: commons codec & lang3
 ```
