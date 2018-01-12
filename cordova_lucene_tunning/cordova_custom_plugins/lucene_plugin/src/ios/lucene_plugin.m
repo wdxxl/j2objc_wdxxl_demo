@@ -131,7 +131,7 @@
       }
 
       NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) objectAtIndex: 0];
-      NSString *_unzipPath = [documentPath stringByAppendingPathComponent:@"flatirons/extract/96d361f0-bbb7-48cd-bea4-949e881ee3fd_Offline_frmfim_1129_2"];
+      NSString *_unzipPath = [documentPath stringByAppendingPathComponent:@"flatirons/extract/96d361f0-bbb7-48cd-bea4-949e881ee3fd_Offline_frmfim_1129_1"];
       //unzip it into _extractPath
       NSError *errorUnzip;
       if ([SSZipArchive unzipFileAtPath:_zipPath toDestination:_unzipPath overwrite:YES password:nil error:&errorUnzip delegate:nil]) {
@@ -141,7 +141,7 @@
       _extractPath = @"flatirons/extract/";
 
 
-      NSString *_folderName = @"96d361f0-bbb7-48cd-bea4-949e881ee3fd_Offline_frmfim_1129_2";
+      NSString *_folderName = @"96d361f0-bbb7-48cd-bea4-949e881ee3fd_Offline_frmfim_1129_1";
 
       // TODO paramCommonServices
       ComFlatironsPpmobCommonLogImplIOSLogServiceImpl *iLogServiceImpl = create_ComFlatironsPpmobCommonLogImplIOSLogServiceImpl_init();
