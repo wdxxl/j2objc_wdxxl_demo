@@ -27,4 +27,7 @@
         <preference name="ios-XCBuildConfiguration-USER_HEADER_SEARCH_PATHS" value="${J2OBJC_HOME}/include ${SRCROOT}/**" />
         <preference name="ios-XCBuildConfiguration-OTHER_LDFLAGS" value="-ObjC -ljre_emul" />
     </platform>
+    <plugin name="com.lucene.noarc" spec="cordova_custom_plugins/lucene_plugin" />
+    <plugin name="cordova-custom-config" spec="cordova_custom_plugins/cordova-custom-config" />
+    <engine name="ios" spec="~4.4.0" />
 </widget>

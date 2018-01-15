@@ -1,0 +1,43 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"lucene_plugin\"><param name=\"ios-package\" value=\"lucene_plugin\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "com.lucene.noarc": {
+            "PACKAGE_NAME": "com.wdxxl.noarc"
+        },
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "com.wdxxl.noarc"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.lucene.noarc.lucene_plugin",
+            "file": "plugins/com.lucene.noarc/www/lucene_plugin.js",
+            "pluginId": "com.lucene.noarc",
+            "clobbers": [
+                "cordova.plugins.lucene_plugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "com.lucene.noarc": "1.0.0",
+        "cordova-custom-config": "4.0.2"
+    }
+}

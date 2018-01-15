@@ -1,1 +1,18 @@
-{}
+{
+    "com.lucene.noarc": {
+        "source": {
+            "type": "local",
+            "path": "/Users/wdxxl/J2OBJC_Github/j2objc_wdxxl_demo/cordova_lucene_noarc/node_modules/lucene_plugin"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-custom-config": {
+        "source": {
+            "type": "local",
+            "path": "/Users/wdxxl/J2OBJC_Github/j2objc_wdxxl_demo/cordova_lucene_noarc/node_modules/cordova-custom-config"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

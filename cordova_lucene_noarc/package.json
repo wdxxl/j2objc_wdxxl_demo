@@ -10,10 +10,18 @@
     "author": "Apache Cordova Team",
     "license": "Apache-2.0",
     "dependencies": {
-        "lucene_plugin": "file://cordova_custom_plugins/lucene_plugin"
+        "cordova-custom-config": "file://cordova_custom_plugins/cordova-custom-config",
+        "cordova-ios": "^4.4.0",
+        "lucene_plugin": "file://cordova_custom_plugins/lucene_plugin",
+        "com.lucene.noarc": "cordova_custom_plugins/lucene_plugin"
     },
     "cordova": {
-        "plugins": {},
-        "platforms": []
+        "plugins": {
+            "com.lucene.noarc": {},
+            "cordova-custom-config": {}
+        },
+        "platforms": [
+            "ios"
+        ]
     }
 }
