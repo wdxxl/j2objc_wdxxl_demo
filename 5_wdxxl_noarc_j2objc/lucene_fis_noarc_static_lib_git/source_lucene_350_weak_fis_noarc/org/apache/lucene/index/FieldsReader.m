@@ -43,7 +43,7 @@
 
 @interface OrgApacheLuceneIndexFieldsReader () {
  @public
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneStoreIndexInput *cloneableFieldsStream_;
   OrgApacheLuceneStoreIndexInput *fieldsStream_;
   OrgApacheLuceneStoreIndexInput *cloneableIndexStream_;
@@ -107,7 +107,6 @@
 
 @end
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsReader, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsReader, cloneableFieldsStream_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsReader, fieldsStream_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsReader, cloneableIndexStream_, OrgApacheLuceneStoreIndexInput *)
@@ -333,7 +332,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFieldsReader_LazyField)
   while (count < numDocs) {
     jlong offset;
     jint docID = docStoreOffset_ + startDocID + count + 1;
-    JreAssert(docID <= numTotalDocs_, @"org/apache/lucene/index/FieldsReader.java:290 condition failed: assert docID <= numTotalDocs;");
+    JreAssert(docID <= numTotalDocs_, @"org/apache/lucene/index/FieldsReader.java:293 condition failed: assert docID <= numTotalDocs;");
     if (docID < numTotalDocs_) offset = [indexStream_ readLong];
     else offset = [((OrgApacheLuceneStoreIndexInput *) nil_chk(fieldsStream_)) length];
     *IOSIntArray_GetRef(nil_chk(lengths), count++) = (jint) (offset - lastOffset);
@@ -391,8 +390,12 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexFieldsReader_LazyField)
   return OrgApacheLuceneIndexFieldsReader_uncompressWithByteArray_(self, b);
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexFieldsReader *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
-  RELEASE_(fieldInfos_);
   RELEASE_(cloneableFieldsStream_);
   RELEASE_(fieldsStream_);
   RELEASE_(cloneableIndexStream_);
@@ -494,7 +497,7 @@ void OrgApacheLuceneIndexFieldsReader_initWithOrgApacheLuceneIndexFieldInfos_wit
   NSObject_init(self);
   JreStrongAssignAndConsume(&self->fieldsStreamTL_, new_OrgApacheLuceneUtilCloseableThreadLocal_init());
   self->isOriginal_ = false;
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
   self->numTotalDocs_ = numTotalDocs;
   self->size_ = size;
   self->format_ = format;
@@ -545,7 +548,7 @@ void OrgApacheLuceneIndexFieldsReader_initWithOrgApacheLuceneStoreDirectory_with
   jboolean success = false;
   self->isOriginal_ = true;
   @try {
-    JreStrongAssign(&self->fieldInfos_, fn);
+    self->fieldInfos_ = fn;
     JreStrongAssign(&self->cloneableFieldsStream_, [((OrgApacheLuceneStoreDirectory *) nil_chk(d)) openInputWithNSString:OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(segment, OrgApacheLuceneIndexIndexFileNames_FIELDS_EXTENSION) withInt:readBufferSize]);
     NSString *indexStreamFN = OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(segment, OrgApacheLuceneIndexIndexFileNames_FIELDS_INDEX_EXTENSION);
     JreStrongAssign(&self->cloneableIndexStream_, [d openInputWithNSString:indexStreamFN withInt:readBufferSize]);
@@ -638,7 +641,7 @@ void OrgApacheLuceneIndexFieldsReader_skipFieldBytesWithBoolean_withBoolean_with
 }
 
 OrgApacheLuceneDocumentNumericField *OrgApacheLuceneIndexFieldsReader_loadNumericFieldWithOrgApacheLuceneIndexFieldInfo_withInt_(OrgApacheLuceneIndexFieldsReader *self, OrgApacheLuceneIndexFieldInfo *fi, jint numeric) {
-  JreAssert(numeric != 0, @"org/apache/lucene/index/FieldsReader.java:339 condition failed: assert numeric != 0;");
+  JreAssert(numeric != 0, @"org/apache/lucene/index/FieldsReader.java:342 condition failed: assert numeric != 0;");
   switch (numeric) {
     case OrgApacheLuceneIndexFieldsWriter_FIELD_IS_NUMERIC_INT:
     return [create_OrgApacheLuceneDocumentNumericField_initWithNSString_withOrgApacheLuceneDocumentField_Store_withBoolean_(((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->name_, JreLoadEnum(OrgApacheLuceneDocumentField_Store, YES), fi->isIndexed_) setIntValueWithInt:[((OrgApacheLuceneStoreIndexInput *) nil_chk(self->fieldsStream_)) readInt]];

@@ -8,7 +8,6 @@
 #include "IOSPrimitiveArray.h"
 #include "J2ObjC_source.h"
 #include "java/io/Closeable.h"
-#include "java/lang/ref/WeakReference.h"
 #include "org/apache/lucene/index/CorruptIndexException.h"
 #include "org/apache/lucene/index/DefaultSkipListWriter.h"
 #include "org/apache/lucene/index/FieldInfo.h"
@@ -67,7 +66,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, termInfo_, Org
     [((OrgApacheLuceneStoreIndexOutput *) nil_chk(out_)) writeVIntWithInt:JreLShift32(delta, 1)];
     [out_ writeVIntWithInt:termDocFreq];
   }
-  return [create_JavaLangRefWeakReference_initWithId_(posWriter_) get];
+  return posWriter_;
 }
 
 - (void)finish {
@@ -85,10 +84,14 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, termInfo_, Org
   OrgApacheLuceneUtilIOUtils_closeWithJavaIoCloseableArray_([IOSObjectArray arrayWithObjects:(id[]){ out_, posWriter_ } count:2 type:JavaIoCloseable_class_()]);
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexFormatPostingsDocsWriter *)original {
+  [super __javaClone:original];
+  [parent_ release];
+  [posWriter_ release];
+}
+
 - (void)dealloc {
   RELEASE_(out_);
-  RELEASE_(parent_);
-  RELEASE_(posWriter_);
   RELEASE_(skipListWriter_);
   RELEASE_(fieldInfo_);
   RELEASE_(termInfo_);
@@ -139,15 +142,15 @@ void OrgApacheLuceneIndexFormatPostingsDocsWriter_initWithOrgApacheLuceneIndexSe
   OrgApacheLuceneIndexFormatPostingsDocsConsumer_init(self);
   JreStrongAssignAndConsume(&self->termInfo_, new_OrgApacheLuceneIndexTermInfo_init());
   JreStrongAssignAndConsume(&self->utf8_, new_OrgApacheLuceneUtilUnicodeUtil_UTF8Result_init());
-  JreStrongAssign(&self->parent_, [create_JavaLangRefWeakReference_initWithId_(parent) get]);
-  JreStrongAssign(&self->out_, [create_JavaLangRefWeakReference_initWithId_([((OrgApacheLuceneStoreDirectory *) nil_chk(((OrgApacheLuceneIndexFormatPostingsFieldsWriter *) nil_chk(((OrgApacheLuceneIndexFormatPostingsTermsWriter *) nil_chk(parent))->parent_))->dir_)) createOutputWithNSString:OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(parent->parent_->segment_, OrgApacheLuceneIndexIndexFileNames_FREQ_EXTENSION)]) get]);
+  self->parent_ = parent;
+  JreStrongAssign(&self->out_, [((OrgApacheLuceneStoreDirectory *) nil_chk(((OrgApacheLuceneIndexFormatPostingsFieldsWriter *) nil_chk(((OrgApacheLuceneIndexFormatPostingsTermsWriter *) nil_chk(parent))->parent_))->dir_)) createOutputWithNSString:OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(parent->parent_->segment_, OrgApacheLuceneIndexIndexFileNames_FREQ_EXTENSION)]);
   jboolean success = false;
   @try {
     self->totalNumDocs_ = parent->parent_->totalNumDocs_;
     self->skipInterval_ = ((OrgApacheLuceneIndexTermInfosWriter *) nil_chk(parent->parent_->termsOut_))->skipInterval_;
-    JreStrongAssign(&self->skipListWriter_, [create_JavaLangRefWeakReference_initWithId_(parent->parent_->skipListWriter_) get]);
+    JreStrongAssign(&self->skipListWriter_, parent->parent_->skipListWriter_);
     [((OrgApacheLuceneIndexDefaultSkipListWriter *) nil_chk(self->skipListWriter_)) setFreqOutputWithOrgApacheLuceneStoreIndexOutput:self->out_];
-    JreStrongAssignAndConsume(&self->posWriter_, new_OrgApacheLuceneIndexFormatPostingsPositionsWriter_initWithOrgApacheLuceneIndexSegmentWriteState_withOrgApacheLuceneIndexFormatPostingsDocsWriter_(state, self));
+    self->posWriter_ = create_OrgApacheLuceneIndexFormatPostingsPositionsWriter_initWithOrgApacheLuceneIndexSegmentWriteState_withOrgApacheLuceneIndexFormatPostingsDocsWriter_(state, self);
     success = true;
   }
   @finally {

@@ -32,7 +32,7 @@
     "/"
   ],
   "_resolved": "file:cordova_custom_plugins/lucene_plugin",
-  "_shasum": "85b3017afe281563ad25def2756704ed0459da87",
+  "_shasum": "99371f0e32ac0b29266d50c125fb27ea10681a45",
   "_shrinkwrap": null,
   "_spec": "/Users/wdxxl/J2OBJC_Github/j2objc_wdxxl_demo/cordova_lucene_noarc/cordova_custom_plugins/lucene_plugin",
   "_where": "/Users/wdxxl/J2OBJC_Github/j2objc_wdxxl_demo/cordova_lucene_noarc/node_modules",

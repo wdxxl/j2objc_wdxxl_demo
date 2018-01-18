@@ -5,7 +5,6 @@
 
 #include "IOSPrimitiveArray.h"
 #include "J2ObjC_source.h"
-#include "java/lang/ref/WeakReference.h"
 #include "java/util/Arrays.h"
 #include "org/apache/lucene/index/DefaultSkipListWriter.h"
 #include "org/apache/lucene/index/MultiLevelSkipListWriter.h"
@@ -47,13 +46,11 @@ withOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)proxOutpu
 }
 
 - (void)setFreqOutputWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)freqOutput {
-  OrgApacheLuceneStoreIndexOutput *temp = [create_JavaLangRefWeakReference_initWithId_(freqOutput) get];
-  JreStrongAssign(&self->freqOutput_, temp);
+  JreStrongAssign(&self->freqOutput_, freqOutput);
 }
 
 - (void)setProxOutputWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)proxOutput {
-  OrgApacheLuceneStoreIndexOutput *temp = [create_JavaLangRefWeakReference_initWithId_(proxOutput) get];
-  JreStrongAssign(&self->proxOutput_, temp);
+  JreStrongAssign(&self->proxOutput_, proxOutput);
 }
 
 - (void)setSkipDataWithInt:(jint)doc
@@ -147,8 +144,8 @@ withOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)skipBuffe
 
 void OrgApacheLuceneIndexDefaultSkipListWriter_initWithInt_withInt_withInt_withOrgApacheLuceneStoreIndexOutput_withOrgApacheLuceneStoreIndexOutput_(OrgApacheLuceneIndexDefaultSkipListWriter *self, jint skipInterval, jint numberOfSkipLevels, jint docCount, OrgApacheLuceneStoreIndexOutput *freqOutput, OrgApacheLuceneStoreIndexOutput *proxOutput) {
   OrgApacheLuceneIndexMultiLevelSkipListWriter_initWithInt_withInt_withInt_(self, skipInterval, numberOfSkipLevels, docCount);
-  [self setFreqOutputWithOrgApacheLuceneStoreIndexOutput:freqOutput];
-  [self setProxOutputWithOrgApacheLuceneStoreIndexOutput:proxOutput];
+  JreStrongAssign(&self->freqOutput_, freqOutput);
+  JreStrongAssign(&self->proxOutput_, proxOutput);
   JreStrongAssignAndConsume(&self->lastSkipDoc_, [IOSIntArray newArrayWithLength:numberOfSkipLevels]);
   JreStrongAssignAndConsume(&self->lastSkipPayloadLength_, [IOSIntArray newArrayWithLength:numberOfSkipLevels]);
   JreStrongAssignAndConsume(&self->lastSkipFreqPointer_, [IOSLongArray newArrayWithLength:numberOfSkipLevels]);

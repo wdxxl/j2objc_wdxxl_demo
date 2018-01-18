@@ -32,7 +32,7 @@
 @interface OrgApacheLuceneIndexDocFieldProcessor : OrgApacheLuceneIndexDocConsumer {
  @public
   OrgApacheLuceneIndexDocumentsWriter *docWriter_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneIndexDocFieldConsumer *consumer_;
   OrgApacheLuceneIndexStoredFieldsWriter *fieldsWriter_;
 }
@@ -60,7 +60,6 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexDocFieldProcessor)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessor, docWriter_, OrgApacheLuceneIndexDocumentsWriter *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessor, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessor, consumer_, OrgApacheLuceneIndexDocFieldConsumer *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessor, fieldsWriter_, OrgApacheLuceneIndexStoredFieldsWriter *)
 

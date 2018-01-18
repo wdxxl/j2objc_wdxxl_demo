@@ -141,7 +141,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexDocFieldProcessorPerThread)
       field = field->next_;
     }
   }
-  JreAssert([fields size] == totalFieldCount_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:120 condition failed: assert fields.size() == totalFieldCount;");
+  JreAssert([fields size] == totalFieldCount_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:125 condition failed: assert fields.size() == totalFieldCount;");
   return fields;
 }
 
@@ -173,7 +173,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexDocFieldProcessorPerThread)
   [((OrgApacheLuceneIndexDocFieldConsumerPerThread *) nil_chk(consumer_)) startDocument];
   [((OrgApacheLuceneIndexStoredFieldsWriterPerThread *) nil_chk(fieldsWriter_)) startDocument];
   OrgApacheLuceneDocumentDocument *doc = ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->doc_;
-  JreAssert([((OrgApacheLuceneIndexIndexWriter *) nil_chk(((OrgApacheLuceneIndexDocumentsWriter *) nil_chk(((OrgApacheLuceneIndexDocFieldProcessor *) nil_chk(docFieldProcessor_))->docWriter_))->writer_)) testPointWithNSString:@"DocumentsWriter.ThreadState.init start"], @"org/apache/lucene/index/DocFieldProcessorPerThread.java:193 condition failed: assert docFieldProcessor.docWriter.writer.testPoint(\"DocumentsWriter.ThreadState.init start\");");
+  JreAssert([((OrgApacheLuceneIndexIndexWriter *) nil_chk(((OrgApacheLuceneIndexDocumentsWriter *) nil_chk(((OrgApacheLuceneIndexDocFieldProcessor *) nil_chk(docFieldProcessor_))->docWriter_))->writer_)) testPointWithNSString:@"DocumentsWriter.ThreadState.init start"], @"org/apache/lucene/index/DocFieldProcessorPerThread.java:198 condition failed: assert docFieldProcessor.docWriter.writer.testPoint(\"DocumentsWriter.ThreadState.init start\");");
   fieldCount_ = 0;
   jint thisFieldGen = fieldGen_++;
   id<JavaUtilList> docFields = [((OrgApacheLuceneDocumentDocument *) nil_chk(doc)) getFields];
@@ -233,8 +233,8 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexDocFieldProcessorPerThread)
   else {
     OrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc *both = [self getPerDoc];
     ((OrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc *) nil_chk(both))->docID_ = docState_->docID_;
-    JreAssert(one->docID_ == docState_->docID_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:294 condition failed: assert one.docID == docState.docID;");
-    JreAssert(two->docID_ == docState_->docID_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:295 condition failed: assert two.docID == docState.docID;");
+    JreAssert(one->docID_ == docState_->docID_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:299 condition failed: assert one.docID == docState.docID;");
+    JreAssert(two->docID_ == docState_->docID_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:300 condition failed: assert two.docID == docState.docID;");
     JreStrongAssign(&both->one_, one);
     JreStrongAssign(&both->two_, two);
     return both;
@@ -246,7 +246,7 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexDocFieldProcessorPerThread)
     if (freeCount_ == 0) {
       allocCount_++;
       if (allocCount_ > ((IOSObjectArray *) nil_chk(docFreeList_))->size_) {
-        JreAssert(allocCount_ == 1 + docFreeList_->size_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:319 condition failed: assert allocCount == 1+docFreeList.length;");
+        JreAssert(allocCount_ == 1 + docFreeList_->size_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:324 condition failed: assert allocCount == 1+docFreeList.length;");
         JreStrongAssign(&docFreeList_, JreRetainedLocalValue([IOSObjectArray arrayWithLength:OrgApacheLuceneUtilArrayUtil_oversizeWithInt_withInt_(allocCount_, JreLoadStatic(OrgApacheLuceneUtilRamUsageEstimator, NUM_BYTES_OBJECT_REF)) type:OrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc_class_()]));
       }
       return JreRetainedLocalValue(create_OrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc_initWithOrgApacheLuceneIndexDocFieldProcessorPerThread_(self));
@@ -257,14 +257,18 @@ J2OBJC_INITIALIZED_DEFN(OrgApacheLuceneIndexDocFieldProcessorPerThread)
 
 - (void)freePerDocWithOrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc:(OrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc *)perDoc {
   @synchronized(self) {
-    JreAssert(freeCount_ < ((IOSObjectArray *) nil_chk(docFreeList_))->size_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:328 condition failed: assert freeCount < docFreeList.length;");
+    JreAssert(freeCount_ < ((IOSObjectArray *) nil_chk(docFreeList_))->size_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:333 condition failed: assert freeCount < docFreeList.length;");
     IOSObjectArray_Set(docFreeList_, freeCount_++, perDoc);
   }
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexDocFieldProcessorPerThread *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(docFieldProcessor_);
-  RELEASE_(fieldInfos_);
   RELEASE_(consumer_);
   RELEASE_(fields_);
   RELEASE_(fieldHash_);
@@ -336,7 +340,7 @@ void OrgApacheLuceneIndexDocFieldProcessorPerThread_initWithOrgApacheLuceneIndex
   JreStrongAssignAndConsume(&self->docFreeList_, [IOSObjectArray newArrayWithLength:1 type:OrgApacheLuceneIndexDocFieldProcessorPerThread_PerDoc_class_()]);
   JreStrongAssign(&self->docState_, ((OrgApacheLuceneIndexDocumentsWriterThreadState *) nil_chk(threadState))->docState_);
   JreStrongAssign(&self->docFieldProcessor_, docFieldProcessor);
-  JreStrongAssign(&self->fieldInfos_, ((OrgApacheLuceneIndexDocFieldProcessor *) nil_chk(docFieldProcessor))->fieldInfos_);
+  self->fieldInfos_ = ((OrgApacheLuceneIndexDocFieldProcessor *) nil_chk(docFieldProcessor))->fieldInfos_;
   JreStrongAssign(&self->consumer_, [((OrgApacheLuceneIndexDocFieldConsumer *) nil_chk(docFieldProcessor->consumer_)) addThreadWithOrgApacheLuceneIndexDocFieldProcessorPerThread:self]);
   JreStrongAssign(&self->fieldsWriter_, [((OrgApacheLuceneIndexStoredFieldsWriter *) nil_chk(docFieldProcessor->fieldsWriter_)) addThreadWithOrgApacheLuceneIndexDocumentsWriter_DocState:self->docState_]);
 }
@@ -351,7 +355,7 @@ OrgApacheLuceneIndexDocFieldProcessorPerThread *create_OrgApacheLuceneIndexDocFi
 
 void OrgApacheLuceneIndexDocFieldProcessorPerThread_rehash(OrgApacheLuceneIndexDocFieldProcessorPerThread *self) {
   jint newHashSize = (((IOSObjectArray *) nil_chk(self->fieldHash_))->size_ * 2);
-  JreAssert(newHashSize > self->fieldHash_->size_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:164 condition failed: assert newHashSize > fieldHash.length;");
+  JreAssert(newHashSize > self->fieldHash_->size_, @"org/apache/lucene/index/DocFieldProcessorPerThread.java:169 condition failed: assert newHashSize > fieldHash.length;");
   IOSObjectArray *newHashArray = [IOSObjectArray arrayWithLength:newHashSize type:OrgApacheLuceneIndexDocFieldProcessorPerField_class_()];
   jint newHashMask = newHashSize - 1;
   for (jint j = 0; j < ((IOSObjectArray *) nil_chk(self->fieldHash_))->size_; j++) {

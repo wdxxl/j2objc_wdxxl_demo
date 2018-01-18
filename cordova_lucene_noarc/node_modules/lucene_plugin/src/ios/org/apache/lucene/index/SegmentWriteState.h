@@ -27,7 +27,7 @@
   JavaIoPrintStream *infoStream_;
   OrgApacheLuceneStoreDirectory *directory_;
   NSString *segmentName_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   jint numDocs_;
   jboolean hasVectors_;
   OrgApacheLuceneIndexBufferedDeletes *segDeletes_;
@@ -56,7 +56,6 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentWriteState)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, infoStream_, JavaIoPrintStream *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, directory_, OrgApacheLuceneStoreDirectory *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, segmentName_, NSString *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, segDeletes_, OrgApacheLuceneIndexBufferedDeletes *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentWriteState, deletedDocs_, OrgApacheLuceneUtilBitVector *)
 

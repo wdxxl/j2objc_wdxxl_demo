@@ -27,7 +27,7 @@
 
 @interface OrgApacheLuceneIndexSegmentTermEnum : OrgApacheLuceneIndexTermEnum < NSCopying > {
  @public
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   jlong size_;
   jlong position_;
   jlong indexPointer_;
@@ -80,8 +80,6 @@ withOrgApacheLuceneIndexTermInfo:(OrgApacheLuceneIndexTermInfo *)ti;
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentTermEnum)
-
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentTermEnum, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexSegmentTermEnum_initWithOrgApacheLuceneStoreIndexInput_withOrgApacheLuceneIndexFieldInfos_withBoolean_(OrgApacheLuceneIndexSegmentTermEnum *self, OrgApacheLuceneStoreIndexInput *i, OrgApacheLuceneIndexFieldInfos *fis, jboolean isi);
 

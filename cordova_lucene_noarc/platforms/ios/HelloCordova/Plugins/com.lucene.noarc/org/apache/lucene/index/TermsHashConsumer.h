@@ -24,7 +24,7 @@
 
 @interface OrgApacheLuceneIndexTermsHashConsumer : NSObject {
  @public
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
 }
 
 #pragma mark Package-Private
@@ -43,8 +43,6 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermsHashConsumer)
-
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermsHashConsumer, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexTermsHashConsumer_init(OrgApacheLuceneIndexTermsHashConsumer *self);
 

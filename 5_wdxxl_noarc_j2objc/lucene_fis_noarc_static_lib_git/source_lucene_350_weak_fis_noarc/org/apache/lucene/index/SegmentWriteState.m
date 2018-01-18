@@ -24,11 +24,15 @@
   return self;
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexSegmentWriteState *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(infoStream_);
   RELEASE_(directory_);
   RELEASE_(segmentName_);
-  RELEASE_(fieldInfos_);
   RELEASE_(segDeletes_);
   RELEASE_(deletedDocs_);
   [super dealloc];
@@ -68,7 +72,7 @@ void OrgApacheLuceneIndexSegmentWriteState_initWithJavaIoPrintStream_withOrgApac
   JreStrongAssign(&self->segDeletes_, segDeletes);
   JreStrongAssign(&self->directory_, directory);
   JreStrongAssign(&self->segmentName_, segmentName);
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
   self->numDocs_ = numDocs;
   self->termIndexInterval_ = termIndexInterval;
 }

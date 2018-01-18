@@ -25,7 +25,7 @@
  @public
   OrgApacheLuceneStoreDirectory *directory_;
   NSString *segment_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneUtilCloseableThreadLocal *threadResources_;
   OrgApacheLuceneIndexSegmentTermEnum *origEnum_;
   jlong size_;
@@ -51,7 +51,6 @@
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReader, directory_, OrgApacheLuceneStoreDirectory *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReader, segment_, NSString *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReader, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReader, threadResources_, OrgApacheLuceneUtilCloseableThreadLocal *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReader, origEnum_, OrgApacheLuceneIndexSegmentTermEnum *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermInfosReader, index_, OrgApacheLuceneIndexTermInfosReaderIndex *)
@@ -214,10 +213,14 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgApacheLuceneIndexTermInfosReader_ThreadResources)
   return (OrgApacheLuceneIndexSegmentTermEnum *) cast_chk([((OrgApacheLuceneIndexSegmentTermEnum *) nil_chk(((OrgApacheLuceneIndexTermInfosReader_ThreadResources *) nil_chk(OrgApacheLuceneIndexTermInfosReader_getThreadResources(self)))->termEnum_)) java_clone], [OrgApacheLuceneIndexSegmentTermEnum class]);
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexTermInfosReader *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(directory_);
   RELEASE_(segment_);
-  RELEASE_(fieldInfos_);
   RELEASE_(threadResources_);
   RELEASE_(origEnum_);
   RELEASE_(index_);
@@ -288,7 +291,7 @@ void OrgApacheLuceneIndexTermInfosReader_initWithOrgApacheLuceneStoreDirectory_w
   @try {
     JreStrongAssign(&self->directory_, dir);
     JreStrongAssign(&self->segment_, seg);
-    JreStrongAssign(&self->fieldInfos_, fis);
+    self->fieldInfos_ = fis;
     JreStrongAssignAndConsume(&self->origEnum_, new_OrgApacheLuceneIndexSegmentTermEnum_initWithOrgApacheLuceneStoreIndexInput_withOrgApacheLuceneIndexFieldInfos_withBoolean_([((OrgApacheLuceneStoreDirectory *) nil_chk(self->directory_)) openInputWithNSString:OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(self->segment_, OrgApacheLuceneIndexIndexFileNames_TERMS_EXTENSION) withInt:readBufferSize], self->fieldInfos_, false));
     self->size_ = self->origEnum_->size_;
     if (indexDivisor != -1) {
@@ -362,8 +365,8 @@ OrgApacheLuceneIndexTermInfo *OrgApacheLuceneIndexTermInfosReader_getWithOrgApac
             [self->termsCache_ putWithOrgApacheLuceneUtilDoubleBarrelLRUCache_CloneableKey:cacheKey withId:create_OrgApacheLuceneIndexTermInfosReader_TermInfoAndOrd_initWithOrgApacheLuceneIndexTermInfo_withLong_(ti, enumerator->position_)];
           }
           else {
-            JreAssert(OrgApacheLuceneIndexTermInfosReader_sameTermInfoWithOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexSegmentTermEnum_(self, ti, tiOrd, enumerator), @"org/apache/lucene/index/TermInfosReader.java:214 condition failed: assert sameTermInfo(ti, tiOrd, enumerator);");
-            JreAssert((jint) enumerator->position_ == tiOrd->termOrd_, @"org/apache/lucene/index/TermInfosReader.java:215 condition failed: assert (int) enumerator.position == tiOrd.termOrd;");
+            JreAssert(OrgApacheLuceneIndexTermInfosReader_sameTermInfoWithOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexSegmentTermEnum_(self, ti, tiOrd, enumerator), @"org/apache/lucene/index/TermInfosReader.java:217 condition failed: assert sameTermInfo(ti, tiOrd, enumerator);");
+            JreAssert((jint) enumerator->position_ == tiOrd->termOrd_, @"org/apache/lucene/index/TermInfosReader.java:218 condition failed: assert (int) enumerator.position == tiOrd.termOrd;");
           }
         }
       }
@@ -389,8 +392,8 @@ OrgApacheLuceneIndexTermInfo *OrgApacheLuceneIndexTermInfosReader_getWithOrgApac
       [self->termsCache_ putWithOrgApacheLuceneUtilDoubleBarrelLRUCache_CloneableKey:cacheKey withId:create_OrgApacheLuceneIndexTermInfosReader_TermInfoAndOrd_initWithOrgApacheLuceneIndexTermInfo_withLong_(ti, enumerator->position_)];
     }
     else {
-      JreAssert(OrgApacheLuceneIndexTermInfosReader_sameTermInfoWithOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexSegmentTermEnum_(self, ti, tiOrd, enumerator), @"org/apache/lucene/index/TermInfosReader.java:243 condition failed: assert sameTermInfo(ti, tiOrd, enumerator);");
-      JreAssert(enumerator->position_ == tiOrd->termOrd_, @"org/apache/lucene/index/TermInfosReader.java:244 condition failed: assert enumerator.position == tiOrd.termOrd;");
+      JreAssert(OrgApacheLuceneIndexTermInfosReader_sameTermInfoWithOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexTermInfo_withOrgApacheLuceneIndexSegmentTermEnum_(self, ti, tiOrd, enumerator), @"org/apache/lucene/index/TermInfosReader.java:246 condition failed: assert sameTermInfo(ti, tiOrd, enumerator);");
+      JreAssert(enumerator->position_ == tiOrd->termOrd_, @"org/apache/lucene/index/TermInfosReader.java:247 condition failed: assert enumerator.position == tiOrd.termOrd;");
     }
   }
   else {
@@ -451,7 +454,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgApacheLuceneIndexTermInfosReader)
 
 void OrgApacheLuceneIndexTermInfosReader_TermInfoAndOrd_initWithOrgApacheLuceneIndexTermInfo_withLong_(OrgApacheLuceneIndexTermInfosReader_TermInfoAndOrd *self, OrgApacheLuceneIndexTermInfo *ti, jlong termOrd) {
   OrgApacheLuceneIndexTermInfo_initWithOrgApacheLuceneIndexTermInfo_(self, ti);
-  JreAssert(termOrd >= 0, @"org/apache/lucene/index/TermInfosReader.java:53 condition failed: assert termOrd >= 0;");
+  JreAssert(termOrd >= 0, @"org/apache/lucene/index/TermInfosReader.java:56 condition failed: assert termOrd >= 0;");
   self->termOrd_ = termOrd;
 }
 

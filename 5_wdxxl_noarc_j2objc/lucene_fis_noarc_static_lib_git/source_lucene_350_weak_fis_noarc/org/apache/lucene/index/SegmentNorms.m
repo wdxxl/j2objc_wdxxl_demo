@@ -9,7 +9,6 @@
 #include "java/lang/RuntimeException.h"
 #include "java/lang/System.h"
 #include "java/lang/Throwable.h"
-#include "java/lang/ref/WeakReference.h"
 #include "java/util/concurrent/atomic/AtomicInteger.h"
 #include "org/apache/lucene/index/SegmentInfo.h"
 #include "org/apache/lucene/index/SegmentNorms.h"
@@ -20,7 +19,7 @@
 
 @interface OrgApacheLuceneIndexSegmentNorms () {
  @public
-  OrgApacheLuceneIndexSegmentNorms *origNorm_;
+  __unsafe_unretained OrgApacheLuceneIndexSegmentNorms *origNorm_;
   OrgApacheLuceneStoreIndexInput *in_;
   jlong normSeek_;
   JavaUtilConcurrentAtomicAtomicInteger *bytesRef_;
@@ -33,7 +32,6 @@
 
 @end
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentNorms, origNorm_, OrgApacheLuceneIndexSegmentNorms *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentNorms, in_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentNorms, bytesRef_, JavaUtilConcurrentAtomicAtomicInteger *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentNorms, bytes_, IOSByteArray *)
@@ -57,7 +55,7 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
 
 - (void)incRef {
   @synchronized(self) {
-    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:68 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
+    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:71 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
     refCount_++;
   }
 }
@@ -68,23 +66,23 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
 
 - (void)decRef {
   @synchronized(self) {
-    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:91 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
+    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:94 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
     if (--refCount_ == 0) {
       if (origNorm_ != nil) {
         [origNorm_ decRef];
-        JreStrongAssign(&origNorm_, nil);
+        origNorm_ = nil;
       }
       else {
         OrgApacheLuceneIndexSegmentNorms_closeInput(self);
       }
       if (bytes_ != nil) {
-        JreAssert(bytesRef_ != nil, @"org/apache/lucene/index/SegmentNorms.java:102 condition failed: assert bytesRef != null;");
+        JreAssert(bytesRef_ != nil, @"org/apache/lucene/index/SegmentNorms.java:105 condition failed: assert bytesRef != null;");
         [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(bytesRef_)) decrementAndGet];
         JreStrongAssign(&bytes_, nil);
         JreStrongAssign(&bytesRef_, nil);
       }
       else {
-        JreAssert(bytesRef_ == nil, @"org/apache/lucene/index/SegmentNorms.java:107 condition failed: assert bytesRef == null;");
+        JreAssert(bytesRef_ == nil, @"org/apache/lucene/index/SegmentNorms.java:110 condition failed: assert bytesRef == null;");
       }
     }
   }
@@ -94,9 +92,9 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
                    withInt:(jint)offset
                    withInt:(jint)len {
   @synchronized(self) {
-    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:115 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
+    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:118 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
     if (bytes_ != nil) {
-      JreAssert(len <= [((OrgApacheLuceneIndexSegmentReader *) nil_chk(owner_)) maxDoc], @"org/apache/lucene/index/SegmentNorms.java:118 condition failed: assert len <= owner.maxDoc();");
+      JreAssert(len <= [((OrgApacheLuceneIndexSegmentReader *) nil_chk(owner_)) maxDoc], @"org/apache/lucene/index/SegmentNorms.java:121 condition failed: assert len <= owner.maxDoc();");
       JavaLangSystem_arraycopyWithId_withInt_withId_withInt_withInt_(bytes_, 0, bytesOut, offset, len);
     }
     else {
@@ -115,20 +113,20 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
 
 - (IOSByteArray *)bytes {
   @synchronized(self) {
-    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:137 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
+    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:140 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
     if (bytes_ == nil) {
-      JreAssert(bytesRef_ == nil, @"org/apache/lucene/index/SegmentNorms.java:139 condition failed: assert bytesRef == null;");
+      JreAssert(bytesRef_ == nil, @"org/apache/lucene/index/SegmentNorms.java:142 condition failed: assert bytesRef == null;");
       if (origNorm_ != nil) {
         JreStrongAssign(&bytes_, [origNorm_ bytes]);
         JreStrongAssign(&bytesRef_, ((OrgApacheLuceneIndexSegmentNorms *) nil_chk(origNorm_))->bytesRef_);
         [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(bytesRef_)) incrementAndGet];
         [((OrgApacheLuceneIndexSegmentNorms *) nil_chk(origNorm_)) decRef];
-        JreStrongAssign(&origNorm_, nil);
+        origNorm_ = nil;
       }
       else {
         jint count = [((OrgApacheLuceneIndexSegmentReader *) nil_chk(owner_)) maxDoc];
         JreStrongAssignAndConsume(&bytes_, [IOSByteArray newArrayWithLength:count]);
-        JreAssert(in_ != nil, @"org/apache/lucene/index/SegmentNorms.java:160 condition failed: assert in != null;");
+        JreAssert(in_ != nil, @"org/apache/lucene/index/SegmentNorms.java:163 condition failed: assert in != null;");
         @synchronized(in_) {
           [((OrgApacheLuceneStoreIndexInput *) nil_chk(in_)) seekWithLong:normSeek_];
           [((OrgApacheLuceneStoreIndexInput *) nil_chk(in_)) readBytesWithByteArray:bytes_ withInt:0 withInt:count withBoolean:false];
@@ -147,12 +145,12 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
 
 - (IOSByteArray *)copyOnWrite {
   @synchronized(self) {
-    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:184 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
+    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:187 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
     [self bytes];
-    JreAssert(bytes_ != nil, @"org/apache/lucene/index/SegmentNorms.java:186 condition failed: assert bytes != null;");
-    JreAssert(bytesRef_ != nil, @"org/apache/lucene/index/SegmentNorms.java:187 condition failed: assert bytesRef != null;");
+    JreAssert(bytes_ != nil, @"org/apache/lucene/index/SegmentNorms.java:189 condition failed: assert bytes != null;");
+    JreAssert(bytesRef_ != nil, @"org/apache/lucene/index/SegmentNorms.java:190 condition failed: assert bytesRef != null;");
     if ([((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(bytesRef_)) get] > 1) {
-      JreAssert(refCount_ == 1, @"org/apache/lucene/index/SegmentNorms.java:192 condition failed: assert refCount == 1;");
+      JreAssert(refCount_ == 1, @"org/apache/lucene/index/SegmentNorms.java:195 condition failed: assert refCount == 1;");
       JavaUtilConcurrentAtomicAtomicInteger *oldRef = bytesRef_;
       JreStrongAssign(&bytes_, [((OrgApacheLuceneIndexSegmentReader *) nil_chk(owner_)) cloneNormBytesWithByteArray:bytes_]);
       JreStrongAssignAndConsume(&bytesRef_, new_JavaUtilConcurrentAtomicAtomicInteger_initWithInt_(1));
@@ -165,7 +163,7 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
 
 - (id)java_clone {
   @synchronized(self) {
-    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:206 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
+    JreAssert(refCount_ > 0 && (origNorm_ == nil || origNorm_->refCount_ > 0), @"org/apache/lucene/index/SegmentNorms.java:209 condition failed: assert refCount > 0 && (origNorm == null || origNorm.refCount > 0);");
     OrgApacheLuceneIndexSegmentNorms *clone;
     @try {
       clone = (OrgApacheLuceneIndexSegmentNorms *) cast_chk([super java_clone], [OrgApacheLuceneIndexSegmentNorms class]);
@@ -175,14 +173,14 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
     }
     ((OrgApacheLuceneIndexSegmentNorms *) nil_chk(clone))->refCount_ = 1;
     if (bytes_ != nil) {
-      JreAssert(bytesRef_ != nil, @"org/apache/lucene/index/SegmentNorms.java:218 condition failed: assert bytesRef != null;");
-      JreAssert(origNorm_ == nil, @"org/apache/lucene/index/SegmentNorms.java:219 condition failed: assert origNorm == null;");
+      JreAssert(bytesRef_ != nil, @"org/apache/lucene/index/SegmentNorms.java:221 condition failed: assert bytesRef != null;");
+      JreAssert(origNorm_ == nil, @"org/apache/lucene/index/SegmentNorms.java:222 condition failed: assert origNorm == null;");
       [((JavaUtilConcurrentAtomicAtomicInteger *) nil_chk(clone->bytesRef_)) incrementAndGet];
     }
     else {
-      JreAssert(bytesRef_ == nil, @"org/apache/lucene/index/SegmentNorms.java:224 condition failed: assert bytesRef == null;");
+      JreAssert(bytesRef_ == nil, @"org/apache/lucene/index/SegmentNorms.java:227 condition failed: assert bytesRef == null;");
       if (origNorm_ == nil) {
-        JreStrongAssign(&clone->origNorm_, self);
+        clone->origNorm_ = self;
       }
       [clone->origNorm_ incRef];
     }
@@ -219,8 +217,12 @@ IOSByteArray *OrgApacheLuceneIndexSegmentNorms_NORMS_HEADER;
   self->dirty_ = false;
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexSegmentNorms *)original {
+  [super __javaClone:original];
+  [origNorm_ release];
+}
+
 - (void)dealloc {
-  RELEASE_(origNorm_);
   RELEASE_(in_);
   RELEASE_(bytesRef_);
   RELEASE_(bytes_);
@@ -291,7 +293,7 @@ void OrgApacheLuceneIndexSegmentNorms_initWithOrgApacheLuceneStoreIndexInput_wit
   JreStrongAssign(&self->in_, inArg);
   self->number_ = number;
   self->normSeek_ = normSeek;
-  JreStrongAssign(&self->owner_, [create_JavaLangRefWeakReference_initWithId_(owner) get]);
+  JreStrongAssign(&self->owner_, owner);
 }
 
 OrgApacheLuceneIndexSegmentNorms *new_OrgApacheLuceneIndexSegmentNorms_initWithOrgApacheLuceneStoreIndexInput_withInt_withLong_withOrgApacheLuceneIndexSegmentReader_(OrgApacheLuceneStoreIndexInput *inArg, jint number, jlong normSeek, OrgApacheLuceneIndexSegmentReader *owner) {

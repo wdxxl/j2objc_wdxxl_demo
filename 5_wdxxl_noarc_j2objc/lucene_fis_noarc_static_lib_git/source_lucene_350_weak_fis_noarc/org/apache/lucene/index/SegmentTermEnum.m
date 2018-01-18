@@ -125,9 +125,13 @@ withOrgApacheLuceneIndexTermInfo:(OrgApacheLuceneIndexTermInfo *)ti {
   [((OrgApacheLuceneStoreIndexInput *) nil_chk(input_)) close];
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexSegmentTermEnum *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(input_);
-  RELEASE_(fieldInfos_);
   RELEASE_(termBuffer_);
   RELEASE_(prevBuffer_);
   RELEASE_(scanBuffer_);
@@ -207,7 +211,7 @@ void OrgApacheLuceneIndexSegmentTermEnum_initWithOrgApacheLuceneStoreIndexInput_
   self->isIndex_ = false;
   self->indexPointer_ = 0;
   JreStrongAssign(&self->input_, i);
-  JreStrongAssign(&self->fieldInfos_, fis);
+  self->fieldInfos_ = fis;
   self->isIndex_ = isi;
   self->maxSkipLevels_ = 1;
   jint firstInt = [((OrgApacheLuceneStoreIndexInput *) nil_chk(self->input_)) readInt];

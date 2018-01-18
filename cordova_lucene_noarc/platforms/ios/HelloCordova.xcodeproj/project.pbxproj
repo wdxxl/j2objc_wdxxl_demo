@@ -8,67 +8,67 @@
 
 /* Begin PBXBuildFile section */
 		0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0207DA571B56EA530066E2B4 /* Images.xcassets */; };
-		05EA1A0141DC43A2B756F32B /* ServiceCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = E55823DD63B548E2BE5D35FB /* ServiceCategory.m */; };
-		094932235407408989066CF1 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFECAC6BCCB4AA8817E3A91 /* SSZipArchive.m */; };
-		0A76F1CF940946969CC53B29 /* unzip.h in Sources */ = {isa = PBXBuildFile; fileRef = B908FF17AA6146A5816E0174 /* unzip.h */; };
-		0B5FDF20F943495CA04CD6E2 /* libjsoup_noarc_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B02A7431D643454D9906FA8F /* libjsoup_noarc_static_lib.a */; };
-		0D285253711241AAAE01077D /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 599053E384DE4A78A74BFFC4 /* fileenc.c */; };
-		1022D709EEFC4B87B627DBB2 /* DoIndexServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = E6A20B66784B4D87943A4A34 /* DoIndexServiceImpl.m */; };
+		05EF8367804D42B5B7ADB51E /* ICallbackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 91D2EB374EDA4AF4AFDF754C /* ICallbackService.m */; };
+		0A1D7CA02BC1459DA0FFD3F8 /* lucene_plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = D69C8D7AC5594D35B3F50848 /* lucene_plugin.m */; };
+		0B4404278E7C4D91A3E4EE2D /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 18DA35EFC7874AEF955EB612 /* pwd2key.c */; };
+		1799E3B47C034785AAC906C2 /* ILogService.m in Sources */ = {isa = PBXBuildFile; fileRef = C6F652B98D7B4BCE8AF28E4C /* ILogService.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
-		1DE821D2A7844CD18FCFB7B6 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D0C5EDEA3B1A4B9980FF2F07 /* libz.tbd */; };
-		1F8AC0EB731E48B58F2ECA60 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = A76235794E164F3AB1574343 /* pwd2key.c */; };
-		1FEF60E2B1D6477B911B806B /* crypt.h in Sources */ = {isa = PBXBuildFile; fileRef = F1A33CF542424E1E9BCE2001 /* crypt.h */; };
-		20DE93D8C9C04CE687A0FB5F /* prng.h in Sources */ = {isa = PBXBuildFile; fileRef = F8EC2EB5305E47F9A3BD36E0 /* prng.h */; };
+		26CCABEBDBB64F4287F734D1 /* prng.h in Sources */ = {isa = PBXBuildFile; fileRef = 34084DFC68CC4D1696C0003A /* prng.h */; };
 		301BF552109A68D80062928A /* libCordova.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 301BF535109A57CC0062928A /* libCordova.a */; };
 		302D95F114D2391D003F00A1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 302D95EF14D2391D003F00A1 /* MainViewController.m */; };
 		302D95F214D2391D003F00A1 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302D95F014D2391D003F00A1 /* MainViewController.xib */; };
-		3D09C17E242F423292F4EB5B /* aes_via_ace.h in Sources */ = {isa = PBXBuildFile; fileRef = 96A0CAA93F2E41BEB5396F31 /* aes_via_ace.h */; };
-		3F7B6AAE58464E5A8E9BFBD5 /* IDoIndexService.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC48A3B56564C5282B46F5D /* IDoIndexService.m */; };
-		4BA56E2A48AC4356997AA9B6 /* libcommons_noarc_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF60B7CF0B954C4B9D19AC4D /* libcommons_noarc_static_lib.a */; };
-		5137A48049214942AE5C32A0 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = DA343056A25F4DF3AD1A9244 /* prng.c */; };
-		5A5544FA4208423A9D5F8C2F /* aesopt.h in Sources */ = {isa = PBXBuildFile; fileRef = 0DDC49B7625A4009A8CFAF2D /* aesopt.h */; };
-		5EF662C4DA23410292CFD485 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9553716854264A7F8E002DA2 /* sha1.c */; };
-		650BC08BA49641F3BDDBE751 /* aes.h in Sources */ = {isa = PBXBuildFile; fileRef = 5CEBE568FFA64B4ABB79B6F3 /* aes.h */; };
+		35A83A0C275742C9B085FF7F /* FISOperationCallbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 64DB05B91E074B58862B72CA /* FISOperationCallbackModel.m */; };
+		3A2F415C5F374456BDACB654 /* libjsoup_noarc_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 61136834098E407AAE47C1A1 /* libjsoup_noarc_static_lib.a */; };
+		41DA0E5871C34CB48728CED1 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = B1B27351524B426F8F2623FF /* libz.tbd */; };
+		53134F1260C841CEABFD3EFF /* aesopt.h in Sources */ = {isa = PBXBuildFile; fileRef = F285689E90F24ABDB5139D91 /* aesopt.h */; };
+		56D573ED6E9345EC8480795C /* crypt.h in Sources */ = {isa = PBXBuildFile; fileRef = 5F84F9A24A424467B87EB1C0 /* crypt.h */; };
+		56F08A69F50C442BA5DCFB8F /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 97ECD9E9BD234334BC98FED5 /* fileenc.c */; };
+		5B246DF94F4849E7ACB43316 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 1C8DE947748D4A8B9BE402DE /* sha1.c */; };
+		61B16DAE0E034A2790369B63 /* FISLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E97753929194B1484931478 /* FISLogManager.m */; };
+		64D551604B6947DCB590107E /* ServiceCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A4C3C5A4165446CBBB3057F /* ServiceCategory.m */; };
+		6992EE5E106644579B15CC12 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 035D7565E80B48D5825B2921 /* entropy.c */; };
 		6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */; };
-		6DB74F3E6D9A4A3CA3BA3963 /* DoIndexServiceImplOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 55A4C8B9EAFD4A3B898FCEB2 /* DoIndexServiceImplOld.m */; };
-		76764EEC4344499B84806C53 /* fileenc.h in Sources */ = {isa = PBXBuildFile; fileRef = 52A9BBBEB2A545FE80D135F3 /* fileenc.h */; };
-		7AE601A1EEB74B2FBC69A159 /* brg_types.h in Sources */ = {isa = PBXBuildFile; fileRef = E0578E6C518D4169BE5899DA /* brg_types.h */; };
-		7B6DE832DB714CB09FDDD8C3 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D8F0990DDDC143FE8948D268 /* libiconv.dylib */; };
-		803F658BFF0F4F9AB18AB419 /* FISOperationCallbackModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B171CB10FF49E698E674EB /* FISOperationCallbackModel.m */; };
-		848FD1416E254C61A47F8355 /* mztools.h in Sources */ = {isa = PBXBuildFile; fileRef = 72EB85379666408A8EEBA665 /* mztools.h */; };
-		9118CE626DB0487992689254 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 9DC39D37979C42DBBFC6B361 /* unzip.c */; };
-		99CE0478EB4044558B90C76B /* IFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = A3C4904BD9D24107998ECBE9 /* IFileService.m */; };
-		9B7FAE06993C4BA3B45CD43A /* FISLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B513E40D7833419D96052FD4 /* FISLogManager.m */; };
-		9FA720A754F540F0AF6151B8 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 85ED5AFF4F5F4CE69C0F559A /* entropy.c */; };
-		A0C5985EEA6B4A1E9F06D534 /* hmac.h in Sources */ = {isa = PBXBuildFile; fileRef = 778AB36111AF4934A2C02F55 /* hmac.h */; };
-		AB950C728BDC4398A83DA6CE /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 67CAE18112244A85A2FFE1DF /* mztools.c */; };
-		AE0B43049D7E46468B1EF69C /* lucene_plugin.m in Sources */ = {isa = PBXBuildFile; fileRef = 35AD0F9D8F5A4600ADB369CB /* lucene_plugin.m */; };
-		AF088B162B8A48339972FB93 /* pwd2key.h in Sources */ = {isa = PBXBuildFile; fileRef = 6AED28E3FC494AB5A707CA02 /* pwd2key.h */; };
-		B0EBF9718575402BBB1762C4 /* ioapi.h in Sources */ = {isa = PBXBuildFile; fileRef = 09EC82F113424C0D871A643F /* ioapi.h */; };
-		B4B76C2F7EE9404FAEE60BC7 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = 6E199331B93D446A95A17616 /* hmac.c */; };
-		BD9F2CF2CCA84B279EDB0C2B /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 95CDD22CB5F04AAE8E885816 /* aeskey.c */; };
-		BE291B5E3C7C4CAB97C1FBC5 /* entropy.h in Sources */ = {isa = PBXBuildFile; fileRef = 2B0058C8ECF346FF848350D5 /* entropy.h */; };
-		C0A8469BCD674BC99A2E1315 /* brg_endian.h in Sources */ = {isa = PBXBuildFile; fileRef = 0EF3DE29E9F349C9A5A46DF9 /* brg_endian.h */; };
-		C3BD2F117A7241C68513172D /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 1A261A2EDB644674A6BEF80E /* aescrypt.c */; };
-		C692C775DBC14A1DA7DA7DC8 /* ILogService.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E26C532178348B4833BAEEA /* ILogService.m */; };
-		C82E18C534B04C2585FCFED6 /* libgson_noarc_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 938B1A97B7D147AC93BEA49B /* libgson_noarc_static_lib.a */; };
-		C960EC3890F64556BE4BAD8A /* IOSCallbackServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = F6CE433B85AA465BA26C7600 /* IOSCallbackServiceImpl.m */; };
-		CA9F57053EA14D94AD8DFF4C /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = FD67CD1848C44AA69366F9F7 /* ioapi.c */; };
-		CC3AB3C55AE746369A29DA72 /* ICommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 820D85970E0644A9B5CB6462 /* ICommonService.m */; };
-		D31E9FBFC14840C0A3946A88 /* IOSLogServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B0EF04DF6704EE392D17DF8 /* IOSLogServiceImpl.m */; };
-		E1CF0571199E4F23B04A119E /* ICallbackService.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F1BEC0653504C15B93616BF /* ICallbackService.m */; };
-		E3119F51F8874FAFA6B2CC5A /* IOSFileServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 364925BF1A0B4AA7902CF517 /* IOSFileServiceImpl.m */; };
-		E4E982AFBE964562AEE335A4 /* sha1.h in Sources */ = {isa = PBXBuildFile; fileRef = F4B9C2ECE41E43D082F38171 /* sha1.h */; };
-		E82137045F974010866CE108 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = E0A6D074EFC34409B88099D8 /* zip.c */; };
-		F0EE0835990C477EB9361E2C /* aestab.h in Sources */ = {isa = PBXBuildFile; fileRef = FF5289E1C7824123B0C91AFD /* aestab.h */; };
-		FA067E8B381944EA9582E756 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E2B77882E1F4205BD08C0AD /* aestab.c */; };
-		FDB122F792374401B74702E2 /* zip.h in Sources */ = {isa = PBXBuildFile; fileRef = 8F10266035A64276AB759697 /* zip.h */; };
-		FFC9ACCEC7D44A88B8880338 /* liblucene_fis_noarc_static_lib_git.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 33289716D905489FA916631A /* liblucene_fis_noarc_static_lib_git.a */; };
+		6D53FA6C092445749F92F5AA /* libgson_noarc_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65F8C4861DF4472D85E96788 /* libgson_noarc_static_lib.a */; };
+		702C041FE7334BD7BAFEEB7D /* zip.h in Sources */ = {isa = PBXBuildFile; fileRef = 0FDF427539CD499186473EFB /* zip.h */; };
+		703A60303C864E558B811B51 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = FB4C5875A2244DB497328B06 /* prng.c */; };
+		714759629EE54B61B1493B03 /* aes_via_ace.h in Sources */ = {isa = PBXBuildFile; fileRef = AE7238282ECB4D3C8EBDB0A5 /* aes_via_ace.h */; };
+		75F5AFDC691844878C8D1061 /* liblucene_fis_noarc_static_lib_git.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 157725C386284C2899EAF276 /* liblucene_fis_noarc_static_lib_git.a */; };
+		782F75FE88434694B4723B0F /* ioapi.h in Sources */ = {isa = PBXBuildFile; fileRef = 183C47E854AC4EB69E0A9113 /* ioapi.h */; };
+		78413D43B4AD498F9FE05791 /* brg_types.h in Sources */ = {isa = PBXBuildFile; fileRef = 2B375BB1E2FE493BB14B5B36 /* brg_types.h */; };
+		7E63D172DEB940F49EA89582 /* unzip.h in Sources */ = {isa = PBXBuildFile; fileRef = 517CCD77BCDE4B7AA2B85F8D /* unzip.h */; };
+		7F64D847C008403CB2D43011 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 90AB78398BB04AA7A531A128 /* aestab.c */; };
+		805AB69DD30242828A3A6DF6 /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B300FA5467F3432E945303B7 /* libiconv.dylib */; };
+		8080E38E36E849899DEC6FBA /* fileenc.h in Sources */ = {isa = PBXBuildFile; fileRef = 6C24F9D491A94A29A1B60F41 /* fileenc.h */; };
+		8561C8518A644F2A9DEE264C /* IOSLogServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C3E9D5C8C7D4AE58216B59B /* IOSLogServiceImpl.m */; };
+		8D82A981D1D1431F8E0F8E2E /* DoIndexServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5405D44D75474991AD041035 /* DoIndexServiceImpl.m */; };
+		8EF9FBA7D49C4928898FDFB7 /* IOSFileServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DAF6D6C0DC94E89B5B0D494 /* IOSFileServiceImpl.m */; };
+		9211126AD4FE4EA090246002 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = D884D48BB75E455496687801 /* aescrypt.c */; };
+		9F17A2C3EE464A9F86BD8637 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = CE2BA97E7C334B7B80A31116 /* hmac.c */; };
+		A342E47B46C44EB582F5AA3E /* aes.h in Sources */ = {isa = PBXBuildFile; fileRef = 38ABE7F48C9D44279DA0011C /* aes.h */; };
+		ACE020D03E6C4B07963AE31A /* mztools.h in Sources */ = {isa = PBXBuildFile; fileRef = DF6CC77CB3014B1E8D8D6DFF /* mztools.h */; };
+		AD695455A2044E8599F155CA /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 7CF0E0BDB55C4110BF1E4404 /* aeskey.c */; };
+		AE49865D968A4297AAD93A83 /* entropy.h in Sources */ = {isa = PBXBuildFile; fileRef = F4053943DA7B45CFB6F794EE /* entropy.h */; };
+		AF0B994192554006B570C3EE /* IFileService.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B98F3231EC144FFB6332103 /* IFileService.m */; };
+		AFCBA60597604E8BBD7D37D9 /* IOSCallbackServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2CA9FEE4B545F7BC08A912 /* IOSCallbackServiceImpl.m */; };
+		BAB9482AC871411BBE30271A /* IDoIndexService.m in Sources */ = {isa = PBXBuildFile; fileRef = F46AACA469874BCBA57AF409 /* IDoIndexService.m */; };
+		BB129D637D86493EA37F4847 /* brg_endian.h in Sources */ = {isa = PBXBuildFile; fileRef = 4629F4EF010B4E69B575A167 /* brg_endian.h */; };
+		C4D3D6595AE14C739A313A3B /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = B938CE3F27464E958B491EFB /* SSZipArchive.m */; };
+		C8D6841271D143DEAD796D03 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 120E3AC483344B6D98D0A9BB /* unzip.c */; };
+		C9045BD2018043468D35A5A4 /* aestab.h in Sources */ = {isa = PBXBuildFile; fileRef = AB777EBAB2AE4598AFCEE044 /* aestab.h */; };
+		CA99879A41F0409CA06A6D17 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 906D52FB1744477282784A8B /* mztools.c */; };
+		CE00B23AFFC5496D9BD70FF0 /* sha1.h in Sources */ = {isa = PBXBuildFile; fileRef = EA2BA58D7F924256AB53282A /* sha1.h */; };
+		D038A83366CF4BAF95F18204 /* libcommons_noarc_static_lib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB1E055914E497E82F43D6B /* libcommons_noarc_static_lib.a */; };
+		D3EA4B46FA684939A03BD0D3 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 8EFA03F6C61C42D29103B037 /* ioapi.c */; };
+		D68A84B663D9468ABEB1F883 /* ICommonService.m in Sources */ = {isa = PBXBuildFile; fileRef = 33BB1500D925451B9742A1DD /* ICommonService.m */; };
+		DBA22E85B3B844A0A3C7C7F1 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = BD2F94FAADD34DA08E57BF49 /* zip.c */; };
+		E200817921AC4ED7A36694ED /* hmac.h in Sources */ = {isa = PBXBuildFile; fileRef = B1BE71B7742B4918B5830D27 /* hmac.h */; };
+		E7FDC63E978C4478946D17FC /* pwd2key.h in Sources */ = {isa = PBXBuildFile; fileRef = 12289034E4764488995E0274 /* pwd2key.h */; };
+		F3BA5319BF13433E97DCD07B /* DoIndexServiceImplOld.m in Sources */ = {isa = PBXBuildFile; fileRef = 60A97A1AB63C4D62B2F801A9 /* DoIndexServiceImplOld.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		11931EE0200CABE7003EAAED /* PBXContainerItemProxy */ = {
+		118BD6D12010448C00AD5ECB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */;
 			proxyType = 2;
@@ -93,20 +93,21 @@
 
 /* Begin PBXFileReference section */
 		0207DA571B56EA530066E2B4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = HelloCordova/Images.xcassets; sourceTree = SOURCE_ROOT; };
-		09EC82F113424C0D871A643F /* ioapi.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = com.lucene.noarc/ioapi.h; sourceTree = "<group>"; };
-		0DDC49B7625A4009A8CFAF2D /* aesopt.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = com.lucene.noarc/aesopt.h; sourceTree = "<group>"; };
-		0EF3DE29E9F349C9A5A46DF9 /* brg_endian.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = com.lucene.noarc/brg_endian.h; sourceTree = "<group>"; };
-		0EFECAC6BCCB4AA8817E3A91 /* SSZipArchive.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = com.lucene.noarc/SSZipArchive.m; sourceTree = "<group>"; };
-		12F28A7C72E04AA19EFF4B98 /* com */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = com; path = com.lucene.noarc/com; sourceTree = "<group>"; };
-		1A261A2EDB644674A6BEF80E /* aescrypt.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aescrypt.c; path = com.lucene.noarc/aescrypt.c; sourceTree = "<group>"; };
+		035D7565E80B48D5825B2921 /* entropy.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = entropy.c; path = com.lucene.noarc/entropy.c; sourceTree = "<group>"; };
+		0C3E9D5C8C7D4AE58216B59B /* IOSLogServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IOSLogServiceImpl.m; path = com.lucene.noarc/IOSLogServiceImpl.m; sourceTree = "<group>"; };
+		0D2CA9FEE4B545F7BC08A912 /* IOSCallbackServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IOSCallbackServiceImpl.m; path = com.lucene.noarc/IOSCallbackServiceImpl.m; sourceTree = "<group>"; };
+		0FDF427539CD499186473EFB /* zip.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = zip.h; path = com.lucene.noarc/zip.h; sourceTree = "<group>"; };
+		120E3AC483344B6D98D0A9BB /* unzip.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = unzip.c; path = com.lucene.noarc/unzip.c; sourceTree = "<group>"; };
+		12289034E4764488995E0274 /* pwd2key.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = com.lucene.noarc/pwd2key.h; sourceTree = "<group>"; };
+		157725C386284C2899EAF276 /* liblucene_fis_noarc_static_lib_git.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = liblucene_fis_noarc_static_lib_git.a; sourceTree = "<group>"; };
+		183C47E854AC4EB69E0A9113 /* ioapi.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = com.lucene.noarc/ioapi.h; sourceTree = "<group>"; };
+		18DA35EFC7874AEF955EB612 /* pwd2key.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = pwd2key.c; path = com.lucene.noarc/pwd2key.c; sourceTree = "<group>"; };
+		1C8DE947748D4A8B9BE402DE /* sha1.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = sha1.c; path = com.lucene.noarc/sha1.c; sourceTree = "<group>"; };
 		1D3623240D0F684500981E51 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		1D6058910D05DD3D006BFB54 /* HelloCordova.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloCordova.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		22B171CB10FF49E698E674EB /* FISOperationCallbackModel.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FISOperationCallbackModel.m; path = com.lucene.noarc/FISOperationCallbackModel.m; sourceTree = "<group>"; };
-		256E210E6E5A407F878F9F15 /* ZipArchive.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = com.lucene.noarc/ZipArchive.h; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2B0058C8ECF346FF848350D5 /* entropy.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = com.lucene.noarc/entropy.h; sourceTree = "<group>"; };
-		2B0EF04DF6704EE392D17DF8 /* IOSLogServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IOSLogServiceImpl.m; path = com.lucene.noarc/IOSLogServiceImpl.m; sourceTree = "<group>"; };
+		2B375BB1E2FE493BB14B5B36 /* brg_types.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = com.lucene.noarc/brg_types.h; sourceTree = "<group>"; };
 		301BF52D109A57CC0062928A /* CordovaLib/CordovaLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = CordovaLib/CordovaLib.xcodeproj; sourceTree = "<group>"; };
 		301BF56E109A69640062928A /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; path = www; sourceTree = SOURCE_ROOT; };
 		302D95EE14D2391D003F00A1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
@@ -116,60 +117,59 @@
 		3047A5101AB8059700498E2A /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "build-release.xcconfig"; path = "cordova/build-release.xcconfig"; sourceTree = SOURCE_ROOT; };
 		3047A5111AB8059700498E2A /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = cordova/build.xcconfig; sourceTree = SOURCE_ROOT; };
 		32CA4F630368D1EE00C91783 /* HelloCordova-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HelloCordova-Prefix.pch"; sourceTree = "<group>"; };
-		33289716D905489FA916631A /* liblucene_fis_noarc_static_lib_git.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = liblucene_fis_noarc_static_lib_git.a; sourceTree = "<group>"; };
-		35AD0F9D8F5A4600ADB369CB /* lucene_plugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = lucene_plugin.m; path = com.lucene.noarc/lucene_plugin.m; sourceTree = "<group>"; };
-		364925BF1A0B4AA7902CF517 /* IOSFileServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IOSFileServiceImpl.m; path = com.lucene.noarc/IOSFileServiceImpl.m; sourceTree = "<group>"; };
-		477B4011C74C42D9A4BF7058 /* SSZipArchive.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = com.lucene.noarc/SSZipArchive.h; sourceTree = "<group>"; };
-		52A9BBBEB2A545FE80D135F3 /* fileenc.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = com.lucene.noarc/fileenc.h; sourceTree = "<group>"; };
-		54DCFB9D03FB42E99AFFD63C /* FISOperationCallbackModel.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FISOperationCallbackModel.h; path = com.lucene.noarc/FISOperationCallbackModel.h; sourceTree = "<group>"; };
-		55A4C8B9EAFD4A3B898FCEB2 /* DoIndexServiceImplOld.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = DoIndexServiceImplOld.m; path = com.lucene.noarc/DoIndexServiceImplOld.m; sourceTree = "<group>"; };
-		599053E384DE4A78A74BFFC4 /* fileenc.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = fileenc.c; path = com.lucene.noarc/fileenc.c; sourceTree = "<group>"; };
-		5CEBE568FFA64B4ABB79B6F3 /* aes.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aes.h; path = com.lucene.noarc/aes.h; sourceTree = "<group>"; };
-		67CAE18112244A85A2FFE1DF /* mztools.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = mztools.c; path = com.lucene.noarc/mztools.c; sourceTree = "<group>"; };
-		6AED28E3FC494AB5A707CA02 /* pwd2key.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = com.lucene.noarc/pwd2key.h; sourceTree = "<group>"; };
+		33BB1500D925451B9742A1DD /* ICommonService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ICommonService.m; path = com.lucene.noarc/ICommonService.m; sourceTree = "<group>"; };
+		34084DFC68CC4D1696C0003A /* prng.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = prng.h; path = com.lucene.noarc/prng.h; sourceTree = "<group>"; };
+		38ABE7F48C9D44279DA0011C /* aes.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aes.h; path = com.lucene.noarc/aes.h; sourceTree = "<group>"; };
+		4191A16C1E4E41ECA986281C /* ZipArchive.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = com.lucene.noarc/ZipArchive.h; sourceTree = "<group>"; };
+		4629F4EF010B4E69B575A167 /* brg_endian.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = com.lucene.noarc/brg_endian.h; sourceTree = "<group>"; };
+		4A4C3C5A4165446CBBB3057F /* ServiceCategory.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ServiceCategory.m; path = com.lucene.noarc/ServiceCategory.m; sourceTree = "<group>"; };
+		4E97753929194B1484931478 /* FISLogManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FISLogManager.m; path = com.lucene.noarc/FISLogManager.m; sourceTree = "<group>"; };
+		517CCD77BCDE4B7AA2B85F8D /* unzip.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = com.lucene.noarc/unzip.h; sourceTree = "<group>"; };
+		5405D44D75474991AD041035 /* DoIndexServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = DoIndexServiceImpl.m; path = com.lucene.noarc/DoIndexServiceImpl.m; sourceTree = "<group>"; };
+		5F84F9A24A424467B87EB1C0 /* crypt.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = com.lucene.noarc/crypt.h; sourceTree = "<group>"; };
+		60A97A1AB63C4D62B2F801A9 /* DoIndexServiceImplOld.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = DoIndexServiceImplOld.m; path = com.lucene.noarc/DoIndexServiceImplOld.m; sourceTree = "<group>"; };
+		61136834098E407AAE47C1A1 /* libjsoup_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libjsoup_noarc_static_lib.a; sourceTree = "<group>"; };
+		62B12B10D76442CF93498A6E /* com */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = com; path = com.lucene.noarc/com; sourceTree = "<group>"; };
+		64DB05B91E074B58862B72CA /* FISOperationCallbackModel.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FISOperationCallbackModel.m; path = com.lucene.noarc/FISOperationCallbackModel.m; sourceTree = "<group>"; };
+		65F8C4861DF4472D85E96788 /* libgson_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libgson_noarc_static_lib.a; sourceTree = "<group>"; };
 		6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = CDVLaunchScreen.storyboard; path = HelloCordova/CDVLaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		6E199331B93D446A95A17616 /* hmac.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = hmac.c; path = com.lucene.noarc/hmac.c; sourceTree = "<group>"; };
-		6E26C532178348B4833BAEEA /* ILogService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ILogService.m; path = com.lucene.noarc/ILogService.m; sourceTree = "<group>"; };
-		72EB85379666408A8EEBA665 /* mztools.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = com.lucene.noarc/mztools.h; sourceTree = "<group>"; };
-		778AB36111AF4934A2C02F55 /* hmac.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = com.lucene.noarc/hmac.h; sourceTree = "<group>"; };
-		7F1BEC0653504C15B93616BF /* ICallbackService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ICallbackService.m; path = com.lucene.noarc/ICallbackService.m; sourceTree = "<group>"; };
-		820D85970E0644A9B5CB6462 /* ICommonService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ICommonService.m; path = com.lucene.noarc/ICommonService.m; sourceTree = "<group>"; };
-		85ED5AFF4F5F4CE69C0F559A /* entropy.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = entropy.c; path = com.lucene.noarc/entropy.c; sourceTree = "<group>"; };
+		6C24F9D491A94A29A1B60F41 /* fileenc.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = com.lucene.noarc/fileenc.h; sourceTree = "<group>"; };
+		6DAF6D6C0DC94E89B5B0D494 /* IOSFileServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IOSFileServiceImpl.m; path = com.lucene.noarc/IOSFileServiceImpl.m; sourceTree = "<group>"; };
+		7CF0E0BDB55C4110BF1E4404 /* aeskey.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aeskey.c; path = com.lucene.noarc/aeskey.c; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* HelloCordova-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "HelloCordova-Info.plist"; path = "HelloCordova/HelloCordova-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = SOURCE_ROOT; };
-		8F10266035A64276AB759697 /* zip.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = zip.h; path = com.lucene.noarc/zip.h; sourceTree = "<group>"; };
-		938B1A97B7D147AC93BEA49B /* libgson_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libgson_noarc_static_lib.a; sourceTree = "<group>"; };
-		9553716854264A7F8E002DA2 /* sha1.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = sha1.c; path = com.lucene.noarc/sha1.c; sourceTree = "<group>"; };
-		95CDD22CB5F04AAE8E885816 /* aeskey.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aeskey.c; path = com.lucene.noarc/aeskey.c; sourceTree = "<group>"; };
-		96A0CAA93F2E41BEB5396F31 /* aes_via_ace.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = com.lucene.noarc/aes_via_ace.h; sourceTree = "<group>"; };
-		9D2761AE211642D8B3F33415 /* FISLogManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FISLogManager.h; path = com.lucene.noarc/FISLogManager.h; sourceTree = "<group>"; };
-		9DC39D37979C42DBBFC6B361 /* unzip.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = unzip.c; path = com.lucene.noarc/unzip.c; sourceTree = "<group>"; };
-		9E2B77882E1F4205BD08C0AD /* aestab.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aestab.c; path = com.lucene.noarc/aestab.c; sourceTree = "<group>"; };
-		A3C4904BD9D24107998ECBE9 /* IFileService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IFileService.m; path = com.lucene.noarc/IFileService.m; sourceTree = "<group>"; };
-		A76235794E164F3AB1574343 /* pwd2key.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = pwd2key.c; path = com.lucene.noarc/pwd2key.c; sourceTree = "<group>"; };
-		B02A7431D643454D9906FA8F /* libjsoup_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libjsoup_noarc_static_lib.a; sourceTree = "<group>"; };
-		B513E40D7833419D96052FD4 /* FISLogManager.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = FISLogManager.m; path = com.lucene.noarc/FISLogManager.m; sourceTree = "<group>"; };
-		B908FF17AA6146A5816E0174 /* unzip.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = com.lucene.noarc/unzip.h; sourceTree = "<group>"; };
-		CF60B7CF0B954C4B9D19AC4D /* libcommons_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcommons_noarc_static_lib.a; sourceTree = "<group>"; };
-		D0C5EDEA3B1A4B9980FF2F07 /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
-		D8F0990DDDC143FE8948D268 /* libiconv.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
-		DA343056A25F4DF3AD1A9244 /* prng.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = prng.c; path = com.lucene.noarc/prng.c; sourceTree = "<group>"; };
-		DAE3EB2F137945FEAE3D2C94 /* SSZipCommon.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = com.lucene.noarc/SSZipCommon.h; sourceTree = "<group>"; };
-		E0578E6C518D4169BE5899DA /* brg_types.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = com.lucene.noarc/brg_types.h; sourceTree = "<group>"; };
-		E0A6D074EFC34409B88099D8 /* zip.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = zip.c; path = com.lucene.noarc/zip.c; sourceTree = "<group>"; };
-		E1A43986ED774A8BA2054D99 /* org */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = org; path = com.lucene.noarc/org; sourceTree = "<group>"; };
-		E55823DD63B548E2BE5D35FB /* ServiceCategory.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ServiceCategory.m; path = com.lucene.noarc/ServiceCategory.m; sourceTree = "<group>"; };
-		E6A20B66784B4D87943A4A34 /* DoIndexServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = DoIndexServiceImpl.m; path = com.lucene.noarc/DoIndexServiceImpl.m; sourceTree = "<group>"; };
+		8EFA03F6C61C42D29103B037 /* ioapi.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = ioapi.c; path = com.lucene.noarc/ioapi.c; sourceTree = "<group>"; };
+		906D52FB1744477282784A8B /* mztools.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = mztools.c; path = com.lucene.noarc/mztools.c; sourceTree = "<group>"; };
+		90AB78398BB04AA7A531A128 /* aestab.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aestab.c; path = com.lucene.noarc/aestab.c; sourceTree = "<group>"; };
+		91D2EB374EDA4AF4AFDF754C /* ICallbackService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ICallbackService.m; path = com.lucene.noarc/ICallbackService.m; sourceTree = "<group>"; };
+		97ECD9E9BD234334BC98FED5 /* fileenc.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = fileenc.c; path = com.lucene.noarc/fileenc.c; sourceTree = "<group>"; };
+		9B98F3231EC144FFB6332103 /* IFileService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IFileService.m; path = com.lucene.noarc/IFileService.m; sourceTree = "<group>"; };
+		9E087E2882B24D2182A3EC6B /* FISLogManager.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FISLogManager.h; path = com.lucene.noarc/FISLogManager.h; sourceTree = "<group>"; };
+		A713810DDB9B469A8CA82A98 /* SSZipArchive.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = com.lucene.noarc/SSZipArchive.h; sourceTree = "<group>"; };
+		AB777EBAB2AE4598AFCEE044 /* aestab.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = com.lucene.noarc/aestab.h; sourceTree = "<group>"; };
+		ABB1E055914E497E82F43D6B /* libcommons_noarc_static_lib.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libcommons_noarc_static_lib.a; sourceTree = "<group>"; };
+		AE7238282ECB4D3C8EBDB0A5 /* aes_via_ace.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = com.lucene.noarc/aes_via_ace.h; sourceTree = "<group>"; };
+		B1B27351524B426F8F2623FF /* libz.tbd */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		B1BE71B7742B4918B5830D27 /* hmac.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = com.lucene.noarc/hmac.h; sourceTree = "<group>"; };
+		B300FA5467F3432E945303B7 /* libiconv.dylib */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
+		B938CE3F27464E958B491EFB /* SSZipArchive.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = com.lucene.noarc/SSZipArchive.m; sourceTree = "<group>"; };
+		BD2F94FAADD34DA08E57BF49 /* zip.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = zip.c; path = com.lucene.noarc/zip.c; sourceTree = "<group>"; };
+		C6F652B98D7B4BCE8AF28E4C /* ILogService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = ILogService.m; path = com.lucene.noarc/ILogService.m; sourceTree = "<group>"; };
+		CE2BA97E7C334B7B80A31116 /* hmac.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = hmac.c; path = com.lucene.noarc/hmac.c; sourceTree = "<group>"; };
+		D489474A4D4745C4B7B5424E /* org */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = org; path = com.lucene.noarc/org; sourceTree = "<group>"; };
+		D69C8D7AC5594D35B3F50848 /* lucene_plugin.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = lucene_plugin.m; path = com.lucene.noarc/lucene_plugin.m; sourceTree = "<group>"; };
+		D884D48BB75E455496687801 /* aescrypt.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = aescrypt.c; path = com.lucene.noarc/aescrypt.c; sourceTree = "<group>"; };
+		DF6CC77CB3014B1E8D8D6DFF /* mztools.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = com.lucene.noarc/mztools.h; sourceTree = "<group>"; };
+		E19354146AB6470D85CF4551 /* SSZipCommon.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = com.lucene.noarc/SSZipCommon.h; sourceTree = "<group>"; };
+		EA2BA58D7F924256AB53282A /* sha1.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = com.lucene.noarc/sha1.h; sourceTree = "<group>"; };
 		EB87FDF31871DA8E0020F90C /* www */ = {isa = PBXFileReference; lastKnownFileType = folder; name = www; path = ../../www; sourceTree = "<group>"; };
 		EB87FDF41871DAF40020F90C /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = ../../config.xml; sourceTree = "<group>"; };
-		EBC48A3B56564C5282B46F5D /* IDoIndexService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IDoIndexService.m; path = com.lucene.noarc/IDoIndexService.m; sourceTree = "<group>"; };
 		ED33DF2A687741AEAF9F8254 /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		F1A33CF542424E1E9BCE2001 /* crypt.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = com.lucene.noarc/crypt.h; sourceTree = "<group>"; };
-		F4B9C2ECE41E43D082F38171 /* sha1.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = com.lucene.noarc/sha1.h; sourceTree = "<group>"; };
-		F6CE433B85AA465BA26C7600 /* IOSCallbackServiceImpl.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IOSCallbackServiceImpl.m; path = com.lucene.noarc/IOSCallbackServiceImpl.m; sourceTree = "<group>"; };
+		F285689E90F24ABDB5139D91 /* aesopt.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = com.lucene.noarc/aesopt.h; sourceTree = "<group>"; };
+		F4053943DA7B45CFB6F794EE /* entropy.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = com.lucene.noarc/entropy.h; sourceTree = "<group>"; };
+		F46AACA469874BCBA57AF409 /* IDoIndexService.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = IDoIndexService.m; path = com.lucene.noarc/IDoIndexService.m; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = HelloCordova/config.xml; sourceTree = "<group>"; };
-		F8EC2EB5305E47F9A3BD36E0 /* prng.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = prng.h; path = com.lucene.noarc/prng.h; sourceTree = "<group>"; };
-		FD67CD1848C44AA69366F9F7 /* ioapi.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = ioapi.c; path = com.lucene.noarc/ioapi.c; sourceTree = "<group>"; };
-		FF5289E1C7824123B0C91AFD /* aestab.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = com.lucene.noarc/aestab.h; sourceTree = "<group>"; };
+		F90FA039C946435494C9FAAD /* FISOperationCallbackModel.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = FISOperationCallbackModel.h; path = com.lucene.noarc/FISOperationCallbackModel.h; sourceTree = "<group>"; };
+		FB4C5875A2244DB497328B06 /* prng.c */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = prng.c; path = com.lucene.noarc/prng.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,12 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				301BF552109A68D80062928A /* libCordova.a in Frameworks */,
-				FFC9ACCEC7D44A88B8880338 /* liblucene_fis_noarc_static_lib_git.a in Frameworks */,
-				4BA56E2A48AC4356997AA9B6 /* libcommons_noarc_static_lib.a in Frameworks */,
-				0B5FDF20F943495CA04CD6E2 /* libjsoup_noarc_static_lib.a in Frameworks */,
-				C82E18C534B04C2585FCFED6 /* libgson_noarc_static_lib.a in Frameworks */,
-				7B6DE832DB714CB09FDDD8C3 /* libiconv.dylib in Frameworks */,
-				1DE821D2A7844CD18FCFB7B6 /* libz.tbd in Frameworks */,
+				75F5AFDC691844878C8D1061 /* liblucene_fis_noarc_static_lib_git.a in Frameworks */,
+				D038A83366CF4BAF95F18204 /* libcommons_noarc_static_lib.a in Frameworks */,
+				3A2F415C5F374456BDACB654 /* libjsoup_noarc_static_lib.a in Frameworks */,
+				6D53FA6C092445749F92F5AA /* libgson_noarc_static_lib.a in Frameworks */,
+				805AB69DD30242828A3A6DF6 /* libiconv.dylib in Frameworks */,
+				41DA0E5871C34CB48728CED1 /* libz.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,12 +254,12 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				33289716D905489FA916631A /* liblucene_fis_noarc_static_lib_git.a */,
-				CF60B7CF0B954C4B9D19AC4D /* libcommons_noarc_static_lib.a */,
-				B02A7431D643454D9906FA8F /* libjsoup_noarc_static_lib.a */,
-				938B1A97B7D147AC93BEA49B /* libgson_noarc_static_lib.a */,
-				D8F0990DDDC143FE8948D268 /* libiconv.dylib */,
-				D0C5EDEA3B1A4B9980FF2F07 /* libz.tbd */,
+				157725C386284C2899EAF276 /* liblucene_fis_noarc_static_lib_git.a */,
+				ABB1E055914E497E82F43D6B /* libcommons_noarc_static_lib.a */,
+				61136834098E407AAE47C1A1 /* libjsoup_noarc_static_lib.a */,
+				65F8C4861DF4472D85E96788 /* libgson_noarc_static_lib.a */,
+				B300FA5467F3432E945303B7 /* libiconv.dylib */,
+				B1B27351524B426F8F2623FF /* libz.tbd */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,7 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				301BF535109A57CC0062928A /* libCordova.a */,
-				11931EE1200CABE7003EAAED /* Cordova.framework */,
+				118BD6D22010448C00AD5ECB /* Cordova.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,58 +286,58 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				35AD0F9D8F5A4600ADB369CB /* lucene_plugin.m */,
-				B513E40D7833419D96052FD4 /* FISLogManager.m */,
-				22B171CB10FF49E698E674EB /* FISOperationCallbackModel.m */,
-				EBC48A3B56564C5282B46F5D /* IDoIndexService.m */,
-				E6A20B66784B4D87943A4A34 /* DoIndexServiceImpl.m */,
-				55A4C8B9EAFD4A3B898FCEB2 /* DoIndexServiceImplOld.m */,
-				6E26C532178348B4833BAEEA /* ILogService.m */,
-				2B0EF04DF6704EE392D17DF8 /* IOSLogServiceImpl.m */,
-				A3C4904BD9D24107998ECBE9 /* IFileService.m */,
-				364925BF1A0B4AA7902CF517 /* IOSFileServiceImpl.m */,
-				7F1BEC0653504C15B93616BF /* ICallbackService.m */,
-				F6CE433B85AA465BA26C7600 /* IOSCallbackServiceImpl.m */,
-				820D85970E0644A9B5CB6462 /* ICommonService.m */,
-				E55823DD63B548E2BE5D35FB /* ServiceCategory.m */,
-				0EFECAC6BCCB4AA8817E3A91 /* SSZipArchive.m */,
-				F1A33CF542424E1E9BCE2001 /* crypt.h */,
-				FD67CD1848C44AA69366F9F7 /* ioapi.c */,
-				09EC82F113424C0D871A643F /* ioapi.h */,
-				67CAE18112244A85A2FFE1DF /* mztools.c */,
-				72EB85379666408A8EEBA665 /* mztools.h */,
-				9DC39D37979C42DBBFC6B361 /* unzip.c */,
-				B908FF17AA6146A5816E0174 /* unzip.h */,
-				E0A6D074EFC34409B88099D8 /* zip.c */,
-				8F10266035A64276AB759697 /* zip.h */,
-				5CEBE568FFA64B4ABB79B6F3 /* aes.h */,
-				96A0CAA93F2E41BEB5396F31 /* aes_via_ace.h */,
-				1A261A2EDB644674A6BEF80E /* aescrypt.c */,
-				95CDD22CB5F04AAE8E885816 /* aeskey.c */,
-				0DDC49B7625A4009A8CFAF2D /* aesopt.h */,
-				9E2B77882E1F4205BD08C0AD /* aestab.c */,
-				FF5289E1C7824123B0C91AFD /* aestab.h */,
-				0EF3DE29E9F349C9A5A46DF9 /* brg_endian.h */,
-				E0578E6C518D4169BE5899DA /* brg_types.h */,
-				85ED5AFF4F5F4CE69C0F559A /* entropy.c */,
-				2B0058C8ECF346FF848350D5 /* entropy.h */,
-				599053E384DE4A78A74BFFC4 /* fileenc.c */,
-				52A9BBBEB2A545FE80D135F3 /* fileenc.h */,
-				6E199331B93D446A95A17616 /* hmac.c */,
-				778AB36111AF4934A2C02F55 /* hmac.h */,
-				DA343056A25F4DF3AD1A9244 /* prng.c */,
-				F8EC2EB5305E47F9A3BD36E0 /* prng.h */,
-				A76235794E164F3AB1574343 /* pwd2key.c */,
-				6AED28E3FC494AB5A707CA02 /* pwd2key.h */,
-				9553716854264A7F8E002DA2 /* sha1.c */,
-				F4B9C2ECE41E43D082F38171 /* sha1.h */,
-				9D2761AE211642D8B3F33415 /* FISLogManager.h */,
-				54DCFB9D03FB42E99AFFD63C /* FISOperationCallbackModel.h */,
-				E1A43986ED774A8BA2054D99 /* org */,
-				12F28A7C72E04AA19EFF4B98 /* com */,
-				477B4011C74C42D9A4BF7058 /* SSZipArchive.h */,
-				DAE3EB2F137945FEAE3D2C94 /* SSZipCommon.h */,
-				256E210E6E5A407F878F9F15 /* ZipArchive.h */,
+				D69C8D7AC5594D35B3F50848 /* lucene_plugin.m */,
+				4E97753929194B1484931478 /* FISLogManager.m */,
+				64DB05B91E074B58862B72CA /* FISOperationCallbackModel.m */,
+				F46AACA469874BCBA57AF409 /* IDoIndexService.m */,
+				5405D44D75474991AD041035 /* DoIndexServiceImpl.m */,
+				60A97A1AB63C4D62B2F801A9 /* DoIndexServiceImplOld.m */,
+				C6F652B98D7B4BCE8AF28E4C /* ILogService.m */,
+				0C3E9D5C8C7D4AE58216B59B /* IOSLogServiceImpl.m */,
+				9B98F3231EC144FFB6332103 /* IFileService.m */,
+				6DAF6D6C0DC94E89B5B0D494 /* IOSFileServiceImpl.m */,
+				91D2EB374EDA4AF4AFDF754C /* ICallbackService.m */,
+				0D2CA9FEE4B545F7BC08A912 /* IOSCallbackServiceImpl.m */,
+				33BB1500D925451B9742A1DD /* ICommonService.m */,
+				4A4C3C5A4165446CBBB3057F /* ServiceCategory.m */,
+				B938CE3F27464E958B491EFB /* SSZipArchive.m */,
+				5F84F9A24A424467B87EB1C0 /* crypt.h */,
+				8EFA03F6C61C42D29103B037 /* ioapi.c */,
+				183C47E854AC4EB69E0A9113 /* ioapi.h */,
+				906D52FB1744477282784A8B /* mztools.c */,
+				DF6CC77CB3014B1E8D8D6DFF /* mztools.h */,
+				120E3AC483344B6D98D0A9BB /* unzip.c */,
+				517CCD77BCDE4B7AA2B85F8D /* unzip.h */,
+				BD2F94FAADD34DA08E57BF49 /* zip.c */,
+				0FDF427539CD499186473EFB /* zip.h */,
+				38ABE7F48C9D44279DA0011C /* aes.h */,
+				AE7238282ECB4D3C8EBDB0A5 /* aes_via_ace.h */,
+				D884D48BB75E455496687801 /* aescrypt.c */,
+				7CF0E0BDB55C4110BF1E4404 /* aeskey.c */,
+				F285689E90F24ABDB5139D91 /* aesopt.h */,
+				90AB78398BB04AA7A531A128 /* aestab.c */,
+				AB777EBAB2AE4598AFCEE044 /* aestab.h */,
+				4629F4EF010B4E69B575A167 /* brg_endian.h */,
+				2B375BB1E2FE493BB14B5B36 /* brg_types.h */,
+				035D7565E80B48D5825B2921 /* entropy.c */,
+				F4053943DA7B45CFB6F794EE /* entropy.h */,
+				97ECD9E9BD234334BC98FED5 /* fileenc.c */,
+				6C24F9D491A94A29A1B60F41 /* fileenc.h */,
+				CE2BA97E7C334B7B80A31116 /* hmac.c */,
+				B1BE71B7742B4918B5830D27 /* hmac.h */,
+				FB4C5875A2244DB497328B06 /* prng.c */,
+				34084DFC68CC4D1696C0003A /* prng.h */,
+				18DA35EFC7874AEF955EB612 /* pwd2key.c */,
+				12289034E4764488995E0274 /* pwd2key.h */,
+				1C8DE947748D4A8B9BE402DE /* sha1.c */,
+				EA2BA58D7F924256AB53282A /* sha1.h */,
+				9E087E2882B24D2182A3EC6B /* FISLogManager.h */,
+				F90FA039C946435494C9FAAD /* FISOperationCallbackModel.h */,
+				D489474A4D4745C4B7B5424E /* org */,
+				62B12B10D76442CF93498A6E /* com */,
+				A713810DDB9B469A8CA82A98 /* SSZipArchive.h */,
+				E19354146AB6470D85CF4551 /* SSZipCommon.h */,
+				4191A16C1E4E41ECA986281C /* ZipArchive.h */,
 			);
 			name = Plugins;
 			path = HelloCordova/Plugins;
@@ -410,11 +410,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		11931EE1200CABE7003EAAED /* Cordova.framework */ = {
+		118BD6D22010448C00AD5ECB /* Cordova.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Cordova.framework;
-			remoteRef = 11931EE0200CABE7003EAAED /* PBXContainerItemProxy */;
+			remoteRef = 118BD6D12010448C00AD5ECB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		301BF535109A57CC0062928A /* libCordova.a */ = {
@@ -465,51 +465,51 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
-				AE0B43049D7E46468B1EF69C /* lucene_plugin.m in Sources */,
-				9B7FAE06993C4BA3B45CD43A /* FISLogManager.m in Sources */,
-				803F658BFF0F4F9AB18AB419 /* FISOperationCallbackModel.m in Sources */,
-				3F7B6AAE58464E5A8E9BFBD5 /* IDoIndexService.m in Sources */,
-				1022D709EEFC4B87B627DBB2 /* DoIndexServiceImpl.m in Sources */,
-				6DB74F3E6D9A4A3CA3BA3963 /* DoIndexServiceImplOld.m in Sources */,
-				C692C775DBC14A1DA7DA7DC8 /* ILogService.m in Sources */,
-				D31E9FBFC14840C0A3946A88 /* IOSLogServiceImpl.m in Sources */,
-				99CE0478EB4044558B90C76B /* IFileService.m in Sources */,
-				E3119F51F8874FAFA6B2CC5A /* IOSFileServiceImpl.m in Sources */,
-				E1CF0571199E4F23B04A119E /* ICallbackService.m in Sources */,
-				C960EC3890F64556BE4BAD8A /* IOSCallbackServiceImpl.m in Sources */,
-				CC3AB3C55AE746369A29DA72 /* ICommonService.m in Sources */,
-				05EA1A0141DC43A2B756F32B /* ServiceCategory.m in Sources */,
-				094932235407408989066CF1 /* SSZipArchive.m in Sources */,
-				1FEF60E2B1D6477B911B806B /* crypt.h in Sources */,
-				CA9F57053EA14D94AD8DFF4C /* ioapi.c in Sources */,
-				B0EBF9718575402BBB1762C4 /* ioapi.h in Sources */,
-				AB950C728BDC4398A83DA6CE /* mztools.c in Sources */,
-				848FD1416E254C61A47F8355 /* mztools.h in Sources */,
-				9118CE626DB0487992689254 /* unzip.c in Sources */,
-				0A76F1CF940946969CC53B29 /* unzip.h in Sources */,
-				E82137045F974010866CE108 /* zip.c in Sources */,
-				FDB122F792374401B74702E2 /* zip.h in Sources */,
-				650BC08BA49641F3BDDBE751 /* aes.h in Sources */,
-				3D09C17E242F423292F4EB5B /* aes_via_ace.h in Sources */,
-				C3BD2F117A7241C68513172D /* aescrypt.c in Sources */,
-				BD9F2CF2CCA84B279EDB0C2B /* aeskey.c in Sources */,
-				5A5544FA4208423A9D5F8C2F /* aesopt.h in Sources */,
-				FA067E8B381944EA9582E756 /* aestab.c in Sources */,
-				F0EE0835990C477EB9361E2C /* aestab.h in Sources */,
-				C0A8469BCD674BC99A2E1315 /* brg_endian.h in Sources */,
-				7AE601A1EEB74B2FBC69A159 /* brg_types.h in Sources */,
-				9FA720A754F540F0AF6151B8 /* entropy.c in Sources */,
-				BE291B5E3C7C4CAB97C1FBC5 /* entropy.h in Sources */,
-				0D285253711241AAAE01077D /* fileenc.c in Sources */,
-				76764EEC4344499B84806C53 /* fileenc.h in Sources */,
-				B4B76C2F7EE9404FAEE60BC7 /* hmac.c in Sources */,
-				A0C5985EEA6B4A1E9F06D534 /* hmac.h in Sources */,
-				5137A48049214942AE5C32A0 /* prng.c in Sources */,
-				20DE93D8C9C04CE687A0FB5F /* prng.h in Sources */,
-				1F8AC0EB731E48B58F2ECA60 /* pwd2key.c in Sources */,
-				AF088B162B8A48339972FB93 /* pwd2key.h in Sources */,
-				5EF662C4DA23410292CFD485 /* sha1.c in Sources */,
-				E4E982AFBE964562AEE335A4 /* sha1.h in Sources */,
+				0A1D7CA02BC1459DA0FFD3F8 /* lucene_plugin.m in Sources */,
+				61B16DAE0E034A2790369B63 /* FISLogManager.m in Sources */,
+				35A83A0C275742C9B085FF7F /* FISOperationCallbackModel.m in Sources */,
+				BAB9482AC871411BBE30271A /* IDoIndexService.m in Sources */,
+				8D82A981D1D1431F8E0F8E2E /* DoIndexServiceImpl.m in Sources */,
+				F3BA5319BF13433E97DCD07B /* DoIndexServiceImplOld.m in Sources */,
+				1799E3B47C034785AAC906C2 /* ILogService.m in Sources */,
+				8561C8518A644F2A9DEE264C /* IOSLogServiceImpl.m in Sources */,
+				AF0B994192554006B570C3EE /* IFileService.m in Sources */,
+				8EF9FBA7D49C4928898FDFB7 /* IOSFileServiceImpl.m in Sources */,
+				05EF8367804D42B5B7ADB51E /* ICallbackService.m in Sources */,
+				AFCBA60597604E8BBD7D37D9 /* IOSCallbackServiceImpl.m in Sources */,
+				D68A84B663D9468ABEB1F883 /* ICommonService.m in Sources */,
+				64D551604B6947DCB590107E /* ServiceCategory.m in Sources */,
+				C4D3D6595AE14C739A313A3B /* SSZipArchive.m in Sources */,
+				56D573ED6E9345EC8480795C /* crypt.h in Sources */,
+				D3EA4B46FA684939A03BD0D3 /* ioapi.c in Sources */,
+				782F75FE88434694B4723B0F /* ioapi.h in Sources */,
+				CA99879A41F0409CA06A6D17 /* mztools.c in Sources */,
+				ACE020D03E6C4B07963AE31A /* mztools.h in Sources */,
+				C8D6841271D143DEAD796D03 /* unzip.c in Sources */,
+				7E63D172DEB940F49EA89582 /* unzip.h in Sources */,
+				DBA22E85B3B844A0A3C7C7F1 /* zip.c in Sources */,
+				702C041FE7334BD7BAFEEB7D /* zip.h in Sources */,
+				A342E47B46C44EB582F5AA3E /* aes.h in Sources */,
+				714759629EE54B61B1493B03 /* aes_via_ace.h in Sources */,
+				9211126AD4FE4EA090246002 /* aescrypt.c in Sources */,
+				AD695455A2044E8599F155CA /* aeskey.c in Sources */,
+				53134F1260C841CEABFD3EFF /* aesopt.h in Sources */,
+				7F64D847C008403CB2D43011 /* aestab.c in Sources */,
+				C9045BD2018043468D35A5A4 /* aestab.h in Sources */,
+				BB129D637D86493EA37F4847 /* brg_endian.h in Sources */,
+				78413D43B4AD498F9FE05791 /* brg_types.h in Sources */,
+				6992EE5E106644579B15CC12 /* entropy.c in Sources */,
+				AE49865D968A4297AAD93A83 /* entropy.h in Sources */,
+				56F08A69F50C442BA5DCFB8F /* fileenc.c in Sources */,
+				8080E38E36E849899DEC6FBA /* fileenc.h in Sources */,
+				9F17A2C3EE464A9F86BD8637 /* hmac.c in Sources */,
+				E200817921AC4ED7A36694ED /* hmac.h in Sources */,
+				703A60303C864E558B811B51 /* prng.c in Sources */,
+				26CCABEBDBB64F4287F734D1 /* prng.h in Sources */,
+				0B4404278E7C4D91A3E4EE2D /* pwd2key.c in Sources */,
+				E7FDC63E978C4478946D17FC /* pwd2key.h in Sources */,
+				5B246DF94F4849E7ACB43316 /* sha1.c in Sources */,
+				CE00B23AFFC5496D9BD70FF0 /* sha1.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,7 +27,7 @@
 
 @interface OrgApacheLuceneIndexTermVectorsReader () {
  @public
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneStoreIndexInput *tvx_;
   OrgApacheLuceneStoreIndexInput *tvd_;
   OrgApacheLuceneStoreIndexInput *tvf_;
@@ -60,7 +60,6 @@ withOrgApacheLuceneIndexTermVectorMapper:(OrgApacheLuceneIndexTermVectorMapper *
 
 @end
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsReader, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsReader, tvx_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsReader, tvd_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsReader, tvf_, OrgApacheLuceneStoreIndexInput *)
@@ -162,7 +161,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelArrayTermVectorMapper, field_, N
   jint count = 0;
   while (count < numDocs) {
     jint docID = docStoreOffset_ + startDocID + count + 1;
-    JreAssert(docID <= numTotalDocs_, @"org/apache/lucene/index/TermVectorsReader.java:180 condition failed: assert docID <= numTotalDocs;");
+    JreAssert(docID <= numTotalDocs_, @"org/apache/lucene/index/TermVectorsReader.java:182 condition failed: assert docID <= numTotalDocs;");
     if (docID < numTotalDocs_) {
       tvdPosition = [((OrgApacheLuceneStoreIndexInput *) nil_chk(tvx_)) readLong];
       tvfPosition = [((OrgApacheLuceneStoreIndexInput *) nil_chk(tvx_)) readLong];
@@ -170,7 +169,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexParallelArrayTermVectorMapper, field_, N
     else {
       tvdPosition = [((OrgApacheLuceneStoreIndexInput *) nil_chk(tvd_)) length];
       tvfPosition = [((OrgApacheLuceneStoreIndexInput *) nil_chk(tvf_)) length];
-      JreAssert(count == numDocs - 1, @"org/apache/lucene/index/TermVectorsReader.java:187 condition failed: assert count == numDocs-1;");
+      JreAssert(count == numDocs - 1, @"org/apache/lucene/index/TermVectorsReader.java:189 condition failed: assert count == numDocs-1;");
     }
     *IOSIntArray_GetRef(nil_chk(tvdLengths), count) = (jint) (tvdPosition - lastTvdPosition);
     *IOSIntArray_GetRef(nil_chk(tvfLengths), count) = (jint) (tvfPosition - lastTvfPosition);
@@ -303,8 +302,12 @@ withOrgApacheLuceneIndexTermVectorMapper:(OrgApacheLuceneIndexTermVectorMapper *
   return clone;
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexTermVectorsReader *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
-  RELEASE_(fieldInfos_);
   RELEASE_(tvx_);
   RELEASE_(tvd_);
   RELEASE_(tvf_);
@@ -424,26 +427,26 @@ void OrgApacheLuceneIndexTermVectorsReader_initWithOrgApacheLuceneStoreDirectory
     fn = OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(segment, OrgApacheLuceneIndexIndexFileNames_VECTORS_FIELDS_EXTENSION);
     JreStrongAssign(&self->tvf_, [d openInputWithNSString:fn withInt:readBufferSize]);
     jint tvfFormat = OrgApacheLuceneIndexTermVectorsReader_checkValidFormatWithNSString_withOrgApacheLuceneStoreIndexInput_(self, fn, self->tvf_);
-    JreAssert(self->format_ == tvdFormat, @"org/apache/lucene/index/TermVectorsReader.java:90 condition failed: assert format == tvdFormat;");
-    JreAssert(self->format_ == tvfFormat, @"org/apache/lucene/index/TermVectorsReader.java:91 condition failed: assert format == tvfFormat;");
+    JreAssert(self->format_ == tvdFormat, @"org/apache/lucene/index/TermVectorsReader.java:92 condition failed: assert format == tvdFormat;");
+    JreAssert(self->format_ == tvfFormat, @"org/apache/lucene/index/TermVectorsReader.java:93 condition failed: assert format == tvfFormat;");
     if (self->format_ >= OrgApacheLuceneIndexTermVectorsReader_FORMAT_VERSION2) {
       self->numTotalDocs_ = (jint) (JreRShift64([((OrgApacheLuceneStoreIndexInput *) nil_chk(self->tvx_)) length], 4));
     }
     else {
-      JreAssert(([((OrgApacheLuceneStoreIndexInput *) nil_chk(self->tvx_)) length] - OrgApacheLuceneIndexTermVectorsReader_FORMAT_SIZE) % 8 == 0, @"org/apache/lucene/index/TermVectorsReader.java:96 condition failed: assert (tvx.length()-FORMAT_SIZE) % 8 == 0;");
+      JreAssert(([((OrgApacheLuceneStoreIndexInput *) nil_chk(self->tvx_)) length] - OrgApacheLuceneIndexTermVectorsReader_FORMAT_SIZE) % 8 == 0, @"org/apache/lucene/index/TermVectorsReader.java:98 condition failed: assert (tvx.length()-FORMAT_SIZE) % 8 == 0;");
       self->numTotalDocs_ = (jint) (JreRShift64([((OrgApacheLuceneStoreIndexInput *) nil_chk(self->tvx_)) length], 3));
     }
     if (-1 == docStoreOffset) {
       self->docStoreOffset_ = 0;
       self->size_ = self->numTotalDocs_;
-      JreAssert(size == 0 || self->numTotalDocs_ == size, @"org/apache/lucene/index/TermVectorsReader.java:103 condition failed: assert size == 0 || numTotalDocs == size;");
+      JreAssert(size == 0 || self->numTotalDocs_ == size, @"org/apache/lucene/index/TermVectorsReader.java:105 condition failed: assert size == 0 || numTotalDocs == size;");
     }
     else {
       self->docStoreOffset_ = docStoreOffset;
       self->size_ = size;
       JreAssert(self->numTotalDocs_ >= size + docStoreOffset, JreStrcat("$I$I$I", @"numTotalDocs=", self->numTotalDocs_, @" size=", size, @" docStoreOffset=", docStoreOffset));
     }
-    JreStrongAssign(&self->fieldInfos_, fieldInfos);
+    self->fieldInfos_ = fieldInfos;
     success = true;
   }
   @finally {

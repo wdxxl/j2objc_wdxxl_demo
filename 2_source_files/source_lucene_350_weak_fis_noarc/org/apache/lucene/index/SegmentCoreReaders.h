@@ -29,7 +29,7 @@
 @interface OrgApacheLuceneIndexSegmentCoreReaders : NSObject {
  @public
   NSString *segment_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneStoreIndexInput *freqStream_;
   OrgApacheLuceneStoreIndexInput *proxStream_;
   OrgApacheLuceneIndexTermInfosReader *tisNoIndex_;
@@ -84,7 +84,6 @@
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexSegmentCoreReaders)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, segment_, NSString *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, freqStream_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, proxStream_, OrgApacheLuceneStoreIndexInput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentCoreReaders, tisNoIndex_, OrgApacheLuceneIndexTermInfosReader *)

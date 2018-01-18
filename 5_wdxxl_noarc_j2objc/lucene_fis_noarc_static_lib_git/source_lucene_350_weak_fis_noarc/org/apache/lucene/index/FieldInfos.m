@@ -22,8 +22,8 @@
 
 @interface OrgApacheLuceneIndexFieldInfos () {
  @public
-  JavaUtilArrayList *byNumber_;
-  JavaUtilHashMap *byName_;
+  __unsafe_unretained JavaUtilArrayList *byNumber_;
+  __unsafe_unretained JavaUtilHashMap *byName_;
   jint format_;
 }
 
@@ -40,9 +40,6 @@
                                   withNSString:(NSString *)fileName;
 
 @end
-
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldInfos, byNumber_, JavaUtilArrayList *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldInfos, byName_, JavaUtilHashMap *)
 
 __attribute__((unused)) static OrgApacheLuceneIndexFieldInfo *OrgApacheLuceneIndexFieldInfos_addInternalWithNSString_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withOrgApacheLuceneIndexFieldInfo_IndexOptions_(OrgApacheLuceneIndexFieldInfos *self, NSString *name, jboolean isIndexed, jboolean storeTermVector, jboolean storePositionWithTermVector, jboolean storeOffsetWithTermVector, jboolean omitNorms, jboolean storePayloads, OrgApacheLuceneIndexFieldInfo_IndexOptions *indexOptions);
 
@@ -86,14 +83,16 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jboolean)hasProx {
-  jint numFields = [((JavaUtilArrayList *) nil_chk(byNumber_)) size];
-  for (jint i = 0; i < numFields; i++) {
-    OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithInt:i];
-    if (((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->isIndexed_ && fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)) {
-      return true;
+  @autoreleasepool {
+    jint numFields = [((JavaUtilArrayList *) nil_chk(byNumber_)) size];
+    for (jint i = 0; i < numFields; i++) {
+      OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithInt:i];
+      if (((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->isIndexed_ && fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)) {
+        return true;
+      }
     }
+    return false;
   }
-  return false;
 }
 
 - (void)addIndexedWithJavaUtilCollection:(id<JavaUtilCollection>)names
@@ -168,7 +167,7 @@ J2OBJC_IGNORE_DESIGNATED_END
     else {
       [fi updateWithBoolean:isIndexed withBoolean:storeTermVector withBoolean:storePositionWithTermVector withBoolean:storeOffsetWithTermVector withBoolean:omitNorms withBoolean:storePayloads withOrgApacheLuceneIndexFieldInfo_IndexOptions:indexOptions];
     }
-    JreAssert(fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_, @"org/apache/lucene/index/FieldInfos.java:249 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;");
+    JreAssert(fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_, @"org/apache/lucene/index/FieldInfos.java:263 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;");
     return JreRetainedLocalValue(fi);
   }
 }
@@ -191,12 +190,15 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (jint)fieldNumberWithNSString:(NSString *)fieldName {
-  OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithNSString:fieldName];
-  return (fi != nil) ? ((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->number_ : -1;
+  @autoreleasepool {
+    OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithNSString:fieldName];
+    return (fi != nil) ? ((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->number_ : -1;
+  }
 }
 
 - (OrgApacheLuceneIndexFieldInfo *)fieldInfoWithNSString:(NSString *)fieldName {
-  return [((JavaUtilHashMap *) nil_chk(byName_)) getWithId:fieldName];
+  OrgApacheLuceneIndexFieldInfo *fi = [((JavaUtilHashMap *) nil_chk(byName_)) getWithId:fieldName];
+  return fi;
 }
 
 - (NSString *)fieldNameWithInt:(jint)fieldNumber {
@@ -235,22 +237,24 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)writeWithOrgApacheLuceneStoreIndexOutput:(OrgApacheLuceneStoreIndexOutput *)output {
-  [((OrgApacheLuceneStoreIndexOutput *) nil_chk(output)) writeVIntWithInt:OrgApacheLuceneIndexFieldInfos_CURRENT_FORMAT];
-  [output writeVIntWithInt:[self size]];
-  for (jint i = 0; i < [self size]; i++) {
-    OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithInt:i];
-    JreAssert(((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_, @"org/apache/lucene/index/FieldInfos.java:331 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;");
-    jbyte bits = (jint) 0x0;
-    if (fi->isIndexed_) bits |= OrgApacheLuceneIndexFieldInfos_IS_INDEXED;
-    if (fi->storeTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_TERMVECTOR;
-    if (fi->storePositionWithTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_POSITIONS_WITH_TERMVECTOR;
-    if (fi->storeOffsetWithTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_OFFSET_WITH_TERMVECTOR;
-    if (fi->omitNorms_) bits |= OrgApacheLuceneIndexFieldInfos_OMIT_NORMS;
-    if (fi->storePayloads_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_PAYLOADS;
-    if (fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY)) bits |= OrgApacheLuceneIndexFieldInfos_OMIT_TERM_FREQ_AND_POSITIONS;
-    else if (fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS)) bits |= OrgApacheLuceneIndexFieldInfos_OMIT_POSITIONS;
-    [output writeStringWithNSString:fi->name_];
-    [output writeByteWithByte:bits];
+  @autoreleasepool {
+    [((OrgApacheLuceneStoreIndexOutput *) nil_chk(output)) writeVIntWithInt:OrgApacheLuceneIndexFieldInfos_CURRENT_FORMAT];
+    [output writeVIntWithInt:[self size]];
+    for (jint i = 0; i < [self size]; i++) {
+      OrgApacheLuceneIndexFieldInfo *fi = [self fieldInfoWithInt:i];
+      JreAssert(((OrgApacheLuceneIndexFieldInfo *) nil_chk(fi))->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS) || !fi->storePayloads_, @"org/apache/lucene/index/FieldInfos.java:350 condition failed: assert fi.indexOptions == IndexOptions.DOCS_AND_FREQS_AND_POSITIONS || !fi.storePayloads;");
+      jbyte bits = (jint) 0x0;
+      if (fi->isIndexed_) bits |= OrgApacheLuceneIndexFieldInfos_IS_INDEXED;
+      if (fi->storeTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_TERMVECTOR;
+      if (fi->storePositionWithTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_POSITIONS_WITH_TERMVECTOR;
+      if (fi->storeOffsetWithTermVector_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_OFFSET_WITH_TERMVECTOR;
+      if (fi->omitNorms_) bits |= OrgApacheLuceneIndexFieldInfos_OMIT_NORMS;
+      if (fi->storePayloads_) bits |= OrgApacheLuceneIndexFieldInfos_STORE_PAYLOADS;
+      if (fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY)) bits |= OrgApacheLuceneIndexFieldInfos_OMIT_TERM_FREQ_AND_POSITIONS;
+      else if (fi->indexOptions_ == JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS)) bits |= OrgApacheLuceneIndexFieldInfos_OMIT_POSITIONS;
+      [output writeStringWithNSString:fi->name_];
+      [output writeByteWithByte:bits];
+    }
   }
 }
 
@@ -259,10 +263,10 @@ J2OBJC_IGNORE_DESIGNATED_END
   OrgApacheLuceneIndexFieldInfos_readWithOrgApacheLuceneStoreIndexInput_withNSString_(self, input, fileName);
 }
 
-- (void)dealloc {
-  RELEASE_(byNumber_);
-  RELEASE_(byName_);
-  [super dealloc];
+- (void)__javaClone:(OrgApacheLuceneIndexFieldInfos *)original {
+  [super __javaClone:original];
+  [byNumber_ release];
+  [byName_ release];
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -343,8 +347,8 @@ J2OBJC_IGNORE_DESIGNATED_END
 
 void OrgApacheLuceneIndexFieldInfos_init(OrgApacheLuceneIndexFieldInfos *self) {
   NSObject_init(self);
-  JreStrongAssignAndConsume(&self->byNumber_, new_JavaUtilArrayList_init());
-  JreStrongAssignAndConsume(&self->byName_, new_JavaUtilHashMap_init());
+  self->byNumber_ = create_JavaUtilArrayList_init();
+  self->byName_ = create_JavaUtilHashMap_init();
 }
 
 OrgApacheLuceneIndexFieldInfos *new_OrgApacheLuceneIndexFieldInfos_init() {
@@ -357,8 +361,8 @@ OrgApacheLuceneIndexFieldInfos *create_OrgApacheLuceneIndexFieldInfos_init() {
 
 void OrgApacheLuceneIndexFieldInfos_initWithOrgApacheLuceneStoreDirectory_withNSString_(OrgApacheLuceneIndexFieldInfos *self, OrgApacheLuceneStoreDirectory *d, NSString *name) {
   NSObject_init(self);
-  JreStrongAssignAndConsume(&self->byNumber_, new_JavaUtilArrayList_init());
-  JreStrongAssignAndConsume(&self->byName_, new_JavaUtilHashMap_init());
+  self->byNumber_ = create_JavaUtilArrayList_init();
+  self->byName_ = create_JavaUtilHashMap_init();
   OrgApacheLuceneStoreIndexInput *input = [((OrgApacheLuceneStoreDirectory *) nil_chk(d)) openInputWithNSString:name];
   @try {
     @try {
@@ -404,54 +408,56 @@ OrgApacheLuceneIndexFieldInfo *OrgApacheLuceneIndexFieldInfos_addInternalWithNSS
 }
 
 void OrgApacheLuceneIndexFieldInfos_readWithOrgApacheLuceneStoreIndexInput_withNSString_(OrgApacheLuceneIndexFieldInfos *self, OrgApacheLuceneStoreIndexInput *input, NSString *fileName) {
-  jint firstInt = [((OrgApacheLuceneStoreIndexInput *) nil_chk(input)) readVInt];
-  if (firstInt < 0) {
-    self->format_ = firstInt;
-  }
-  else {
-    self->format_ = OrgApacheLuceneIndexFieldInfos_FORMAT_PRE;
-  }
-  if (self->format_ != OrgApacheLuceneIndexFieldInfos_FORMAT_PRE && self->format_ != OrgApacheLuceneIndexFieldInfos_FORMAT_START && self->format_ != OrgApacheLuceneIndexFieldInfos_FORMAT_OMIT_POSITIONS) {
-    @throw create_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$I$$C", @"unrecognized format ", self->format_, @" in file \"", fileName, '"'));
-  }
-  jint size;
-  if (self->format_ == OrgApacheLuceneIndexFieldInfos_FORMAT_PRE) {
-    size = firstInt;
-  }
-  else {
-    size = [input readVInt];
-  }
-  for (jint i = 0; i < size; i++) {
-    NSString *name = OrgApacheLuceneUtilStringHelper_internWithNSString_([input readString]);
-    jbyte bits = [input readByte];
-    jboolean isIndexed = (bits & OrgApacheLuceneIndexFieldInfos_IS_INDEXED) != 0;
-    jboolean storeTermVector = (bits & OrgApacheLuceneIndexFieldInfos_STORE_TERMVECTOR) != 0;
-    jboolean storePositionsWithTermVector = (bits & OrgApacheLuceneIndexFieldInfos_STORE_POSITIONS_WITH_TERMVECTOR) != 0;
-    jboolean storeOffsetWithTermVector = (bits & OrgApacheLuceneIndexFieldInfos_STORE_OFFSET_WITH_TERMVECTOR) != 0;
-    jboolean omitNorms = (bits & OrgApacheLuceneIndexFieldInfos_OMIT_NORMS) != 0;
-    jboolean storePayloads = (bits & OrgApacheLuceneIndexFieldInfos_STORE_PAYLOADS) != 0;
-    OrgApacheLuceneIndexFieldInfo_IndexOptions *indexOptions;
-    if ((bits & OrgApacheLuceneIndexFieldInfos_OMIT_TERM_FREQ_AND_POSITIONS) != 0) {
-      indexOptions = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY);
-    }
-    else if ((bits & OrgApacheLuceneIndexFieldInfos_OMIT_POSITIONS) != 0) {
-      if (self->format_ <= OrgApacheLuceneIndexFieldInfos_FORMAT_OMIT_POSITIONS) {
-        indexOptions = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS);
-      }
-      else {
-        @throw create_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$I$@C", @"Corrupt fieldinfos, OMIT_POSITIONS set but format=", self->format_, @" (resource: ", input, ')'));
-      }
+  @autoreleasepool {
+    jint firstInt = [((OrgApacheLuceneStoreIndexInput *) nil_chk(input)) readVInt];
+    if (firstInt < 0) {
+      self->format_ = firstInt;
     }
     else {
-      indexOptions = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS);
+      self->format_ = OrgApacheLuceneIndexFieldInfos_FORMAT_PRE;
     }
-    if (indexOptions != JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)) {
-      storePayloads = false;
+    if (self->format_ != OrgApacheLuceneIndexFieldInfos_FORMAT_PRE && self->format_ != OrgApacheLuceneIndexFieldInfos_FORMAT_START && self->format_ != OrgApacheLuceneIndexFieldInfos_FORMAT_OMIT_POSITIONS) {
+      @throw create_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$I$$C", @"unrecognized format ", self->format_, @" in file \"", fileName, '"'));
     }
-    OrgApacheLuceneIndexFieldInfos_addInternalWithNSString_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withOrgApacheLuceneIndexFieldInfo_IndexOptions_(self, name, isIndexed, storeTermVector, storePositionsWithTermVector, storeOffsetWithTermVector, omitNorms, storePayloads, indexOptions);
-  }
-  if ([input getFilePointer] != [input length]) {
-    @throw create_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$$$J$J$@C", @"did not read all bytes from file \"", fileName, @"\": read ", [input getFilePointer], @" vs size ", [input length], @" (resource: ", input, ')'));
+    jint size;
+    if (self->format_ == OrgApacheLuceneIndexFieldInfos_FORMAT_PRE) {
+      size = firstInt;
+    }
+    else {
+      size = [input readVInt];
+    }
+    for (jint i = 0; i < size; i++) {
+      NSString *name = OrgApacheLuceneUtilStringHelper_internWithNSString_([input readString]);
+      jbyte bits = [input readByte];
+      jboolean isIndexed = (bits & OrgApacheLuceneIndexFieldInfos_IS_INDEXED) != 0;
+      jboolean storeTermVector = (bits & OrgApacheLuceneIndexFieldInfos_STORE_TERMVECTOR) != 0;
+      jboolean storePositionsWithTermVector = (bits & OrgApacheLuceneIndexFieldInfos_STORE_POSITIONS_WITH_TERMVECTOR) != 0;
+      jboolean storeOffsetWithTermVector = (bits & OrgApacheLuceneIndexFieldInfos_STORE_OFFSET_WITH_TERMVECTOR) != 0;
+      jboolean omitNorms = (bits & OrgApacheLuceneIndexFieldInfos_OMIT_NORMS) != 0;
+      jboolean storePayloads = (bits & OrgApacheLuceneIndexFieldInfos_STORE_PAYLOADS) != 0;
+      OrgApacheLuceneIndexFieldInfo_IndexOptions *indexOptions;
+      if ((bits & OrgApacheLuceneIndexFieldInfos_OMIT_TERM_FREQ_AND_POSITIONS) != 0) {
+        indexOptions = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_ONLY);
+      }
+      else if ((bits & OrgApacheLuceneIndexFieldInfos_OMIT_POSITIONS) != 0) {
+        if (self->format_ <= OrgApacheLuceneIndexFieldInfos_FORMAT_OMIT_POSITIONS) {
+          indexOptions = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS);
+        }
+        else {
+          @throw create_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$I$@C", @"Corrupt fieldinfos, OMIT_POSITIONS set but format=", self->format_, @" (resource: ", input, ')'));
+        }
+      }
+      else {
+        indexOptions = JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS);
+      }
+      if (indexOptions != JreLoadEnum(OrgApacheLuceneIndexFieldInfo_IndexOptions, DOCS_AND_FREQS_AND_POSITIONS)) {
+        storePayloads = false;
+      }
+      OrgApacheLuceneIndexFieldInfos_addInternalWithNSString_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withBoolean_withOrgApacheLuceneIndexFieldInfo_IndexOptions_(self, name, isIndexed, storeTermVector, storePositionsWithTermVector, storeOffsetWithTermVector, omitNorms, storePayloads, indexOptions);
+    }
+    if ([input getFilePointer] != [input length]) {
+      @throw create_OrgApacheLuceneIndexCorruptIndexException_initWithNSString_(JreStrcat("$$$J$J$@C", @"did not read all bytes from file \"", fileName, @"\": read ", [input getFilePointer], @" vs size ", [input length], @" (resource: ", input, ')'));
+    }
   }
 }
 

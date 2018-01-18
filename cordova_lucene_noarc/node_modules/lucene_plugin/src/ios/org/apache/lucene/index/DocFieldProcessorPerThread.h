@@ -37,7 +37,7 @@
   jfloat docBoost_;
   jint fieldGen_;
   OrgApacheLuceneIndexDocFieldProcessor *docFieldProcessor_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneIndexDocFieldConsumerPerThread *consumer_;
   IOSObjectArray *fields_;
   jint fieldCount_;
@@ -79,7 +79,6 @@
 J2OBJC_STATIC_INIT(OrgApacheLuceneIndexDocFieldProcessorPerThread)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessorPerThread, docFieldProcessor_, OrgApacheLuceneIndexDocFieldProcessor *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessorPerThread, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessorPerThread, consumer_, OrgApacheLuceneIndexDocFieldConsumerPerThread *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessorPerThread, fields_, IOSObjectArray *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldProcessorPerThread, fieldHash_, IOSObjectArray *)

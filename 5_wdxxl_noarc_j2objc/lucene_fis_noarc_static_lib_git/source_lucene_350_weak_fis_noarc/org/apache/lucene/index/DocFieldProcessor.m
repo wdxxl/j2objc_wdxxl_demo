@@ -60,9 +60,13 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
   return create_OrgApacheLuceneIndexDocFieldProcessorPerThread_initWithOrgApacheLuceneIndexDocumentsWriterThreadState_withOrgApacheLuceneIndexDocFieldProcessor_(threadState, self);
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexDocFieldProcessor *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(docWriter_);
-  RELEASE_(fieldInfos_);
   RELEASE_(consumer_);
   RELEASE_(fieldsWriter_);
   [super dealloc];
@@ -101,7 +105,7 @@ void OrgApacheLuceneIndexDocFieldProcessor_initWithOrgApacheLuceneIndexDocuments
   OrgApacheLuceneIndexDocConsumer_init(self);
   JreStrongAssign(&self->docWriter_, docWriter);
   JreStrongAssign(&self->consumer_, consumer);
-  JreStrongAssign(&self->fieldInfos_, [((OrgApacheLuceneIndexDocumentsWriter *) nil_chk(docWriter)) getFieldInfos]);
+  self->fieldInfos_ = [((OrgApacheLuceneIndexDocumentsWriter *) nil_chk(docWriter)) getFieldInfos];
   [((OrgApacheLuceneIndexDocFieldConsumer *) nil_chk(consumer)) setFieldInfosWithOrgApacheLuceneIndexFieldInfos:self->fieldInfos_];
   JreStrongAssignAndConsume(&self->fieldsWriter_, new_OrgApacheLuceneIndexStoredFieldsWriter_initWithOrgApacheLuceneIndexDocumentsWriter_withOrgApacheLuceneIndexFieldInfos_(docWriter, self->fieldInfos_));
 }

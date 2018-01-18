@@ -178,8 +178,7 @@
                                       withNSString:@"_libId"
                                       withNSString:@"_pubId"];
           }
-          doServiceImpl = nil;
-          
+
       } @catch (NSException *exception) {
           NSLog(@"Something Wrong with Java Lucene 350.");
       } @finally {

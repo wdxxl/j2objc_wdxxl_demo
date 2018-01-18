@@ -53,7 +53,7 @@
   NSString *segment_;
   jint termIndexInterval_;
   id<JavaUtilList> readers_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   jint mergedDocs_;
   OrgApacheLuceneIndexSegmentMerger_CheckAbort *checkAbort_;
   OrgApacheLuceneIndexSegmentWriteState *segmentWriteState_;
@@ -113,7 +113,6 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, directory_, OrgApacheLuceneStoreDirectory *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, segment_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, readers_, id<JavaUtilList>)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, checkAbort_, OrgApacheLuceneIndexSegmentMerger_CheckAbort *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, segmentWriteState_, OrgApacheLuceneIndexSegmentWriteState *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexSegmentMerger, payloadProcessorProvider_, OrgApacheLuceneIndexPayloadProcessorProvider *)
@@ -288,7 +287,7 @@ __attribute__((unused)) static OrgApacheLuceneIndexSegmentMerger_1 *create_OrgAp
 }
 
 - (jboolean)getAnyNonBulkMerges {
-  JreAssert(matchedCount_ <= [((id<JavaUtilList>) nil_chk(readers_)) size], @"org/apache/lucene/index/SegmentMerger.java:620 condition failed: assert matchedCount <= readers.size();");
+  JreAssert(matchedCount_ <= [((id<JavaUtilList>) nil_chk(readers_)) size], @"org/apache/lucene/index/SegmentMerger.java:623 condition failed: assert matchedCount <= readers.size();");
   return matchedCount_ != [((id<JavaUtilList>) nil_chk(readers_)) size];
 }
 
@@ -296,11 +295,15 @@ __attribute__((unused)) static OrgApacheLuceneIndexSegmentMerger_1 *create_OrgAp
   OrgApacheLuceneIndexSegmentMerger_mergeNorms(self);
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexSegmentMerger *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(directory_);
   RELEASE_(segment_);
   RELEASE_(readers_);
-  RELEASE_(fieldInfos_);
   RELEASE_(checkAbort_);
   RELEASE_(segmentWriteState_);
   RELEASE_(payloadProcessorProvider_);
@@ -392,7 +395,7 @@ void OrgApacheLuceneIndexSegmentMerger_initWithOrgApacheLuceneStoreDirectory_wit
   JreStrongAssign(&self->queue_, nil);
   JreStrongAssign(&self->payloadProcessorProvider_, payloadProcessorProvider);
   JreStrongAssign(&self->directory_, dir);
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
   JreStrongAssign(&self->segment_, name);
   if (merge != nil) {
     JreStrongAssignAndConsume(&self->checkAbort_, new_OrgApacheLuceneIndexSegmentMerger_CheckAbort_initWithOrgApacheLuceneIndexMergePolicy_OneMerge_withOrgApacheLuceneStoreDirectory_(merge, self->directory_));
@@ -685,7 +688,7 @@ void OrgApacheLuceneIndexSegmentMerger_mergeTermInfosWithOrgApacheLuceneIndexFor
       IOSObjectArray_Set(self->docMaps_, i, docMap);
     }
     base += [reader numDocs];
-    JreAssert([reader numDocs] == [reader maxDoc] - smi->delCount_, @"org/apache/lucene/index/SegmentMerger.java:508 condition failed: assert reader.numDocs() == reader.maxDoc() - smi.delCount;");
+    JreAssert([reader numDocs] == [reader maxDoc] - smi->delCount_, @"org/apache/lucene/index/SegmentMerger.java:511 condition failed: assert reader.numDocs() == reader.maxDoc() - smi.delCount;");
     if ([smi next]) [((OrgApacheLuceneIndexSegmentMergeQueue *) nil_chk(self->queue_)) addWithId:smi];
     else [smi close];
   }
@@ -724,7 +727,7 @@ jint OrgApacheLuceneIndexSegmentMerger_appendPostingsWithOrgApacheLuceneIndexFor
   for (jint i = 0; i < n; i++) {
     OrgApacheLuceneIndexSegmentMergeInfo *smi = IOSObjectArray_Get(smis, i);
     id<OrgApacheLuceneIndexTermPositions> postings = [((OrgApacheLuceneIndexSegmentMergeInfo *) nil_chk(smi)) getPositions];
-    JreAssert(postings != nil, @"org/apache/lucene/index/SegmentMerger.java:575 condition failed: assert postings != null;");
+    JreAssert(postings != nil, @"org/apache/lucene/index/SegmentMerger.java:578 condition failed: assert postings != null;");
     jint base = smi->base_;
     IOSIntArray *docMap = [smi getDocMap];
     [((id<OrgApacheLuceneIndexTermPositions>) nil_chk(postings)) seekWithOrgApacheLuceneIndexTermEnum:smi->termEnum_];

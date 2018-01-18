@@ -38,12 +38,12 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
 }
 
 - (void)setFieldInfosWithOrgApacheLuceneIndexFieldInfos:(OrgApacheLuceneIndexFieldInfos *)fieldInfos {
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
 }
 
-- (void)dealloc {
-  RELEASE_(fieldInfos_);
-  [super dealloc];
+- (void)__javaClone:(OrgApacheLuceneIndexTermsHashConsumer *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
 }
 
 + (const J2ObjcClassInfo *)__metadata {

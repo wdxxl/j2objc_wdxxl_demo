@@ -36,8 +36,8 @@
 @interface OrgApacheLuceneIndexFormatPostingsDocsWriter : OrgApacheLuceneIndexFormatPostingsDocsConsumer < JavaIoCloseable > {
  @public
   OrgApacheLuceneStoreIndexOutput *out_;
-  OrgApacheLuceneIndexFormatPostingsTermsWriter *parent_;
-  OrgApacheLuceneIndexFormatPostingsPositionsWriter *posWriter_;
+  __unsafe_unretained OrgApacheLuceneIndexFormatPostingsTermsWriter *parent_;
+  __unsafe_unretained OrgApacheLuceneIndexFormatPostingsPositionsWriter *posWriter_;
   OrgApacheLuceneIndexDefaultSkipListWriter *skipListWriter_;
   jint skipInterval_;
   jint totalNumDocs_;
@@ -75,8 +75,6 @@
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexFormatPostingsDocsWriter)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, out_, OrgApacheLuceneStoreIndexOutput *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, parent_, OrgApacheLuceneIndexFormatPostingsTermsWriter *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, posWriter_, OrgApacheLuceneIndexFormatPostingsPositionsWriter *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, skipListWriter_, OrgApacheLuceneIndexDefaultSkipListWriter *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, fieldInfo_, OrgApacheLuceneIndexFieldInfo *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFormatPostingsDocsWriter, utf8_, OrgApacheLuceneUtilUnicodeUtil_UTF8Result *)

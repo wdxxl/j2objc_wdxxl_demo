@@ -29,7 +29,7 @@
 
 @interface OrgApacheLuceneIndexFieldsWriter () {
  @public
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   OrgApacheLuceneStoreDirectory *directory_;
   NSString *segment_;
   OrgApacheLuceneStoreIndexOutput *fieldsStream_;
@@ -38,7 +38,6 @@
 
 @end
 
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, directory_, OrgApacheLuceneStoreDirectory *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, segment_, NSString *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexFieldsWriter, fieldsStream_, OrgApacheLuceneStoreIndexOutput *)
@@ -130,7 +129,7 @@ withOrgApacheLuceneStoreRAMOutputStream:(OrgApacheLuceneStoreRAMOutputStream *)b
     position += IOSIntArray_Get(nil_chk(lengths), i);
   }
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(fieldsStream_)) copyBytesWithOrgApacheLuceneStoreDataInput:stream withLong:position - start];
-  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(fieldsStream_)) getFilePointer] == position, @"org/apache/lucene/index/FieldsWriter.java:217 condition failed: assert fieldsStream.getFilePointer() == position;");
+  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(fieldsStream_)) getFilePointer] == position, @"org/apache/lucene/index/FieldsWriter.java:220 condition failed: assert fieldsStream.getFilePointer() == position;");
 }
 
 - (void)addDocumentWithOrgApacheLuceneDocumentDocument:(OrgApacheLuceneDocumentDocument *)doc {
@@ -146,8 +145,12 @@ withOrgApacheLuceneStoreRAMOutputStream:(OrgApacheLuceneStoreRAMOutputStream *)b
   }
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexFieldsWriter *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
-  RELEASE_(fieldInfos_);
   RELEASE_(directory_);
   RELEASE_(segment_);
   RELEASE_(fieldsStream_);
@@ -213,7 +216,7 @@ void OrgApacheLuceneIndexFieldsWriter_initWithOrgApacheLuceneStoreDirectory_with
   NSObject_init(self);
   JreStrongAssign(&self->directory_, directory);
   JreStrongAssign(&self->segment_, segment);
-  JreStrongAssign(&self->fieldInfos_, fn);
+  self->fieldInfos_ = fn;
   jboolean success = false;
   @try {
     JreStrongAssign(&self->fieldsStream_, [((OrgApacheLuceneStoreDirectory *) nil_chk(directory)) createOutputWithNSString:OrgApacheLuceneIndexIndexFileNames_segmentFileNameWithNSString_withNSString_(segment, OrgApacheLuceneIndexIndexFileNames_FIELDS_EXTENSION)]);
@@ -241,7 +244,7 @@ void OrgApacheLuceneIndexFieldsWriter_initWithOrgApacheLuceneStoreIndexOutput_wi
   NSObject_init(self);
   JreStrongAssign(&self->directory_, nil);
   JreStrongAssign(&self->segment_, nil);
-  JreStrongAssign(&self->fieldInfos_, fn);
+  self->fieldInfos_ = fn;
   JreStrongAssign(&self->fieldsStream_, fdt);
   JreStrongAssign(&self->indexStream_, fdx);
 }

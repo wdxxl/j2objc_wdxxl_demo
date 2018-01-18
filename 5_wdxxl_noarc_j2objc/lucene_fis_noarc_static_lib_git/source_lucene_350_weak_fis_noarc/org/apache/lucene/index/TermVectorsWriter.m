@@ -28,7 +28,7 @@
   OrgApacheLuceneStoreIndexOutput *tvx_;
   OrgApacheLuceneStoreIndexOutput *tvd_;
   OrgApacheLuceneStoreIndexOutput *tvf_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
 }
 
 @end
@@ -36,7 +36,6 @@
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, tvx_, OrgApacheLuceneStoreIndexOutput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, tvd_, OrgApacheLuceneStoreIndexOutput *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, tvf_, OrgApacheLuceneStoreIndexOutput *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 
 @implementation OrgApacheLuceneIndexTermVectorsWriter
 
@@ -94,7 +93,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApach
         if (storePositions) {
           IOSIntArray *positions = [((id<OrgApacheLuceneIndexTermPositionVector>) nil_chk(tpVector)) getTermPositionsWithInt:j];
           if (positions == nil) @throw create_JavaLangIllegalStateException_initWithNSString_(@"Trying to write positions that are null!");
-          JreAssert(positions->size_ == termFreq, @"org/apache/lucene/index/TermVectorsWriter.java:135 condition failed: assert positions.length == termFreq;");
+          JreAssert(positions->size_ == termFreq, @"org/apache/lucene/index/TermVectorsWriter.java:138 condition failed: assert positions.length == termFreq;");
           jint lastPosition = 0;
           for (jint k = 0; k < positions->size_; k++) {
             jint position = IOSIntArray_Get(positions, k);
@@ -105,7 +104,7 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApach
         if (storeOffsets) {
           IOSObjectArray *offsets = [((id<OrgApacheLuceneIndexTermPositionVector>) nil_chk(tpVector)) getOffsetsWithInt:j];
           if (offsets == nil) @throw create_JavaLangIllegalStateException_initWithNSString_(@"Trying to write offsets that are null!");
-          JreAssert(offsets->size_ == termFreq, @"org/apache/lucene/index/TermVectorsWriter.java:150 condition failed: assert offsets.length == termFreq;");
+          JreAssert(offsets->size_ == termFreq, @"org/apache/lucene/index/TermVectorsWriter.java:153 condition failed: assert offsets.length == termFreq;");
           jint lastEndOffset = 0;
           for (jint k = 0; k < offsets->size_; k++) {
             jint startOffset = [((OrgApacheLuceneIndexTermVectorOffsetInfo *) nil_chk(IOSObjectArray_Get(offsets, k))) getStartOffset];
@@ -145,19 +144,23 @@ J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsWriter, fieldInfos_, OrgApach
   }
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvd_)) copyBytesWithOrgApacheLuceneStoreDataInput:[((OrgApacheLuceneIndexTermVectorsReader *) nil_chk(reader)) getTvdStream] withLong:tvdPosition - tvdStart];
   [((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvf_)) copyBytesWithOrgApacheLuceneStoreDataInput:[reader getTvfStream] withLong:tvfPosition - tvfStart];
-  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvd_)) getFilePointer] == tvdPosition, @"org/apache/lucene/index/TermVectorsWriter.java:196 condition failed: assert tvd.getFilePointer() == tvdPosition;");
-  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvf_)) getFilePointer] == tvfPosition, @"org/apache/lucene/index/TermVectorsWriter.java:197 condition failed: assert tvf.getFilePointer() == tvfPosition;");
+  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvd_)) getFilePointer] == tvdPosition, @"org/apache/lucene/index/TermVectorsWriter.java:199 condition failed: assert tvd.getFilePointer() == tvdPosition;");
+  JreAssert([((OrgApacheLuceneStoreIndexOutput *) nil_chk(tvf_)) getFilePointer] == tvfPosition, @"org/apache/lucene/index/TermVectorsWriter.java:200 condition failed: assert tvf.getFilePointer() == tvfPosition;");
 }
 
 - (void)close {
   OrgApacheLuceneUtilIOUtils_closeWithJavaIoCloseableArray_([IOSObjectArray arrayWithObjects:(id[]){ tvx_, tvd_, tvf_ } count:3 type:JavaIoCloseable_class_()]);
 }
 
+- (void)__javaClone:(OrgApacheLuceneIndexTermVectorsWriter *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
+}
+
 - (void)dealloc {
   RELEASE_(tvx_);
   RELEASE_(tvd_);
   RELEASE_(tvf_);
-  RELEASE_(fieldInfos_);
   RELEASE_(utf8Results_);
   [super dealloc];
 }
@@ -211,7 +214,7 @@ void OrgApacheLuceneIndexTermVectorsWriter_initWithOrgApacheLuceneStoreDirectory
       OrgApacheLuceneUtilIOUtils_closeWhileHandlingExceptionWithJavaIoCloseableArray_([IOSObjectArray arrayWithObjects:(id[]){ self->tvx_, self->tvd_, self->tvf_ } count:3 type:JavaIoCloseable_class_()]);
     }
   }
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
 }
 
 OrgApacheLuceneIndexTermVectorsWriter *new_OrgApacheLuceneIndexTermVectorsWriter_initWithOrgApacheLuceneStoreDirectory_withNSString_withOrgApacheLuceneIndexFieldInfos_(OrgApacheLuceneStoreDirectory *directory, NSString *segment, OrgApacheLuceneIndexFieldInfos *fieldInfos) {

@@ -44,7 +44,7 @@
 }
 
 - (void)setFieldInfosWithOrgApacheLuceneIndexFieldInfos:(OrgApacheLuceneIndexFieldInfos *)fieldInfos {
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
   [((OrgApacheLuceneIndexTermsHashConsumer *) nil_chk(consumer_)) setFieldInfosWithOrgApacheLuceneIndexFieldInfos:fieldInfos];
 }
 

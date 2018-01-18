@@ -29,7 +29,7 @@
  @public
   OrgApacheLuceneIndexFieldsWriter *fieldsWriter_;
   OrgApacheLuceneIndexDocumentsWriter *docWriter_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
   jint lastDocID_;
   IOSObjectArray *docFreeList_;
   jint freeCount_;
@@ -67,7 +67,6 @@ J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexStoredFieldsWriter)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexStoredFieldsWriter, fieldsWriter_, OrgApacheLuceneIndexFieldsWriter *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexStoredFieldsWriter, docWriter_, OrgApacheLuceneIndexDocumentsWriter *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexStoredFieldsWriter, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexStoredFieldsWriter, docFreeList_, IOSObjectArray *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexStoredFieldsWriter_initWithOrgApacheLuceneIndexDocumentsWriter_withOrgApacheLuceneIndexFieldInfos_(OrgApacheLuceneIndexStoredFieldsWriter *self, OrgApacheLuceneIndexDocumentsWriter *docWriter, OrgApacheLuceneIndexFieldInfos *fieldInfos);

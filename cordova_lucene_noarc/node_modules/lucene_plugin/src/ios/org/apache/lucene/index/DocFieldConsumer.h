@@ -24,7 +24,7 @@
 
 @interface OrgApacheLuceneIndexDocFieldConsumer : NSObject {
  @public
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
 }
 
 #pragma mark Package-Private
@@ -45,8 +45,6 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
 @end
 
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexDocFieldConsumer)
-
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexDocFieldConsumer, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 
 FOUNDATION_EXPORT void OrgApacheLuceneIndexDocFieldConsumer_init(OrgApacheLuceneIndexDocFieldConsumer *self);
 

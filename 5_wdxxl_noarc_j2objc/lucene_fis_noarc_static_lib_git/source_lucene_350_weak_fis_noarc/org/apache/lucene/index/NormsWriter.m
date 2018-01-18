@@ -35,12 +35,10 @@
 @interface OrgApacheLuceneIndexNormsWriter () {
  @public
   jbyte defaultNorm_;
-  OrgApacheLuceneIndexFieldInfos *fieldInfos_;
+  __unsafe_unretained OrgApacheLuceneIndexFieldInfos *fieldInfos_;
 }
 
 @end
-
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexNormsWriter, fieldInfos_, OrgApacheLuceneIndexFieldInfos *)
 
 @implementation OrgApacheLuceneIndexNormsWriter
 
@@ -62,7 +60,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (void)setFieldInfosWithOrgApacheLuceneIndexFieldInfos:(OrgApacheLuceneIndexFieldInfos *)fieldInfos {
-  JreStrongAssign(&self->fieldInfos_, fieldInfos);
+  self->fieldInfos_ = fieldInfos;
 }
 
 - (void)flushWithJavaUtilMap:(id<JavaUtilMap>)threadsAndFields
@@ -113,7 +111,7 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
               minLoc = j;
             }
           }
-          JreAssert(minDocID < state->numDocs_, @"org/apache/lucene/index/NormsWriter.java:137 condition failed: assert minDocID < state.numDocs;");
+          JreAssert(minDocID < state->numDocs_, @"org/apache/lucene/index/NormsWriter.java:140 condition failed: assert minDocID < state.numDocs;");
           for (; upto < minDocID; upto++) [normsOut writeByteWithByte:defaultNorm_];
           [normsOut writeByteWithByte:IOSByteArray_Get(nil_chk(((OrgApacheLuceneIndexNormsWriterPerField *) nil_chk(IOSObjectArray_Get(fields, minLoc)))->norms_), IOSIntArray_Get(uptos, minLoc))];
           (*IOSIntArray_GetRef(uptos, minLoc))++;
@@ -147,9 +145,9 @@ withOrgApacheLuceneIndexSegmentWriteState:(OrgApacheLuceneIndexSegmentWriteState
   }
 }
 
-- (void)dealloc {
-  RELEASE_(fieldInfos_);
-  [super dealloc];
+- (void)__javaClone:(OrgApacheLuceneIndexNormsWriter *)original {
+  [super __javaClone:original];
+  [fieldInfos_ release];
 }
 
 + (const J2ObjcClassInfo *)__metadata {
