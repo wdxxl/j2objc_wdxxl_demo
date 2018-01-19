@@ -29,7 +29,7 @@ __attribute__((unused)) static jboolean OrgApacheLuceneIndexTermVectorsTermsWrit
 }
 
 - (void)startDocument {
-  JreAssert(OrgApacheLuceneIndexTermVectorsTermsWriterPerThread_clearLastVectorFieldName(self), @"org/apache/lucene/index/TermVectorsTermsWriterPerThread.java:44 condition failed: assert clearLastVectorFieldName();");
+  JreAssert(OrgApacheLuceneIndexTermVectorsTermsWriterPerThread_clearLastVectorFieldName(self), @"org/apache/lucene/index/TermVectorsTermsWriterPerThread.java:46 condition failed: assert clearLastVectorFieldName();");
   if (doc_ != nil) {
     [doc_ reset];
     ((OrgApacheLuceneIndexTermVectorsTermsWriter_PerDoc *) nil_chk(doc_))->docID_ = ((OrgApacheLuceneIndexDocumentsWriter_DocState *) nil_chk(docState_))->docID_;
@@ -47,7 +47,8 @@ __attribute__((unused)) static jboolean OrgApacheLuceneIndexTermVectorsTermsWrit
 
 - (OrgApacheLuceneIndexTermsHashConsumerPerField *)addFieldWithOrgApacheLuceneIndexTermsHashPerField:(OrgApacheLuceneIndexTermsHashPerField *)termsHashPerField
                                                                    withOrgApacheLuceneIndexFieldInfo:(OrgApacheLuceneIndexFieldInfo *)fieldInfo {
-  return create_OrgApacheLuceneIndexTermVectorsTermsWriterPerField_initWithOrgApacheLuceneIndexTermsHashPerField_withOrgApacheLuceneIndexTermVectorsTermsWriterPerThread_withOrgApacheLuceneIndexFieldInfo_(termsHashPerField, self, fieldInfo);
+  OrgApacheLuceneIndexTermsHashConsumerPerField *thcpf = create_OrgApacheLuceneIndexTermVectorsTermsWriterPerField_initWithOrgApacheLuceneIndexTermsHashPerField_withOrgApacheLuceneIndexTermVectorsTermsWriterPerThread_withOrgApacheLuceneIndexFieldInfo_(termsHashPerField, self, fieldInfo);
+  return thcpf;
 }
 
 - (void)abort {

@@ -34,7 +34,7 @@
 @interface OrgApacheLuceneIndexTermVectorsTermsWriterPerField : OrgApacheLuceneIndexTermsHashConsumerPerField {
  @public
   OrgApacheLuceneIndexTermVectorsTermsWriterPerThread *perThread_;
-  OrgApacheLuceneIndexTermsHashPerField *termsHashPerField_;
+  __unsafe_unretained OrgApacheLuceneIndexTermsHashPerField *termsHashPerField_;
   OrgApacheLuceneIndexTermVectorsTermsWriter *termsWriter_;
   OrgApacheLuceneIndexFieldInfo *fieldInfo_;
   OrgApacheLuceneIndexDocumentsWriter_DocState *docState_;
@@ -84,7 +84,6 @@
 J2OBJC_EMPTY_STATIC_INIT(OrgApacheLuceneIndexTermVectorsTermsWriterPerField)
 
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsTermsWriterPerField, perThread_, OrgApacheLuceneIndexTermVectorsTermsWriterPerThread *)
-J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsTermsWriterPerField, termsHashPerField_, OrgApacheLuceneIndexTermsHashPerField *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsTermsWriterPerField, termsWriter_, OrgApacheLuceneIndexTermVectorsTermsWriter *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsTermsWriterPerField, fieldInfo_, OrgApacheLuceneIndexFieldInfo *)
 J2OBJC_FIELD_SETTER(OrgApacheLuceneIndexTermVectorsTermsWriterPerField, docState_, OrgApacheLuceneIndexDocumentsWriter_DocState *)
